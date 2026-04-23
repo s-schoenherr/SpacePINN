@@ -1,0 +1,26 @@
+# Virtual environment directories
+venv/
+.venv/
+
+# Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+*.egg-info/
+*.eggs/
+
+# IDE files (Optional - depending on your editor)
+.idea/
+.vscode/
+
+# OS-specific files (Optional)
+.DS_Store   # macOS
+**/.DS_Store
+Thumbs.db   # Windows
+**/desktop.ini
+**/*.docx
+
+temp/   
+runs/
+AGENTS.md
+agents/
