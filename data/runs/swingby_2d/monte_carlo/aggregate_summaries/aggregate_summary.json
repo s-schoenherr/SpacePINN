@@ -1,0 +1,112 @@
+{
+  "baseline_comparison": {
+    "baselines": [
+      {
+        "comparisons": [
+          {
+            "delta_v_mean": 0.0020573976519517602,
+            "delta_v_variance_sample": 5.597557081040102e-07,
+            "label": "PINN with exact BC",
+            "n": 100,
+            "relative_mean_improvement_vs_baseline": -21086.200054787125,
+            "runtime_seconds_mean": 23.509598680000003
+          },
+          {
+            "delta_v_mean": 56.79775023227092,
+            "delta_v_variance_sample": 322532.1529592718,
+            "label": "PINN with soft BC",
+            "n": 100,
+            "relative_mean_improvement_vs_baseline": -582145857.2270274,
+            "runtime_seconds_mean": 30.61364031
+          }
+        ],
+        "delta_v": 9.756618453879082e-08,
+        "label": "Baseline (OpenGoddard)",
+        "runtime_seconds": 34.720853000000005,
+        "solver": {
+          "backend": "OpenGoddard",
+          "converged": true,
+          "ftol": 1e-11,
+          "message": "Optimization terminated successfully",
+          "objective_value": 1.5689083198303038e-13,
+          "outer_iteration_budget": 100,
+          "outer_iterations_completed": 5,
+          "slsqp_maxiter": 25,
+          "status_code": 0,
+          "stopped_reason": "converged"
+        }
+      }
+    ]
+  },
+  "label": "three_bodies_2d_monte_carlo",
+  "monte_carlo_summary": {
+    "groups": [
+      {
+        "delta_v": {
+          "max": 0.00648061279207468,
+          "mean": 0.0020573976519517602,
+          "min": 0.0010134781477972865,
+          "std_population": 0.0007444179948274827,
+          "std_sample": 0.0007481682351610567,
+          "variance_population": 5.541581510229701e-07,
+          "variance_sample": 5.597557081040102e-07
+        },
+        "label": "PINN with exact BC",
+        "n": 100,
+        "runtime_seconds": {
+          "max": 30.26646800000003,
+          "mean": 23.509598680000003,
+          "min": 10.727010999999948,
+          "std_population": 4.055563096709868,
+          "std_sample": 4.07599427436317,
+          "variance_population": 16.447592031394933,
+          "variance_sample": 16.613729324641348
+        },
+        "t_total": {
+          "max": 1.8602451086044312,
+          "mean": 1.2948270899057388,
+          "min": 0.9764653444290161,
+          "std_population": 0.20534243332561858,
+          "std_sample": 0.20637691056959012,
+          "variance_population": 0.04216551492408611,
+          "variance_sample": 0.042591429216248596
+        }
+      },
+      {
+        "delta_v": {
+          "max": 5679.197265625,
+          "mean": 56.79775023227092,
+          "min": 0.002695193514227867,
+          "std_population": 565.0724125540718,
+          "std_sample": 567.9191429765965,
+          "variance_population": 319306.83142967906,
+          "variance_sample": 322532.1529592718
+        },
+        "label": "PINN with soft BC",
+        "n": 100,
+        "runtime_seconds": {
+          "max": 54.53204800000003,
+          "mean": 30.61364031,
+          "min": 12.9112429999999,
+          "std_population": 6.511430979246213,
+          "std_sample": 6.544234365592765,
+          "variance_population": 42.39873339748729,
+          "variance_sample": 42.827003431805345
+        },
+        "t_total": {
+          "max": 441514592.0,
+          "mean": 4415147.967886802,
+          "min": 1.4752779006958008,
+          "std_population": 43930147.028105125,
+          "std_sample": 44151458.99314275,
+          "variance_population": 1929857817910933.8,
+          "variance_sample": 1949351331223165.5
+        }
+      }
+    ]
+  },
+  "num_entries": 201,
+  "run_dir": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo",
+  "run_id": "20260415_070903_three_bodies_2d_monte_carlo",
+  "title": "three_bodies_2d_monte_carlo"
+}

@@ -1,0 +1,73 @@
+{
+  "baseline_comparison": {
+    "baselines": [
+      {
+        "comparisons": [
+          {
+            "delta_v_mean": 1.210962233543396,
+            "delta_v_variance_sample": 2.9674628287852325e-05,
+            "label": "PINN with exact BC",
+            "n": 100,
+            "relative_mean_improvement_vs_baseline": 0.44248597675985546,
+            "runtime_seconds_mean": 2.0524344799999996
+          }
+        ],
+        "delta_v": 2.1720749309686584,
+        "label": "Baseline (OpenGoddard)",
+        "runtime_seconds": 577.5737889999999,
+        "solver": {
+          "backend": "OpenGoddard",
+          "converged": false,
+          "ftol": 1e-11,
+          "message": "Iteration limit reached",
+          "objective_value": 1.719428095624674e-05,
+          "outer_iteration_budget": 100,
+          "outer_iterations_completed": 100,
+          "slsqp_maxiter": 25,
+          "status_code": 9,
+          "stopped_reason": "iteration_budget"
+        }
+      }
+    ]
+  },
+  "label": "hohnmann_transfer_monte_carlo",
+  "monte_carlo_summary": {
+    "groups": [
+      {
+        "delta_v": {
+          "max": 1.2196494340896606,
+          "mean": 1.210962233543396,
+          "min": 1.1972002983093262,
+          "std_population": 0.005420136714601745,
+          "std_sample": 0.0054474423620495815,
+          "variance_population": 2.93778820049738e-05,
+          "variance_sample": 2.9674628287852325e-05
+        },
+        "label": "PINN with exact BC",
+        "n": 100,
+        "runtime_seconds": {
+          "max": 5.830276,
+          "mean": 2.0524344799999996,
+          "min": 0.724342,
+          "std_population": 1.3286837177096547,
+          "std_sample": 1.335377380817399,
+          "variance_population": 1.7654004217067492,
+          "variance_sample": 1.7832327491987365
+        },
+        "t_total": {
+          "max": 3315.10888671875,
+          "mean": 3315.107529296875,
+          "min": 3315.106201171875,
+          "std_population": 0.000571852186404584,
+          "std_sample": 0.0005747330720752668,
+          "variance_population": 3.2701492309570306e-07,
+          "variance_sample": 3.3031810413707377e-07
+        }
+      }
+    ]
+  },
+  "num_entries": 101,
+  "run_dir": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260413_181745_hohnmann_transfer_monte_carlo",
+  "run_id": "20260413_181745_hohnmann_transfer_monte_carlo",
+  "title": "hohnmann_transfer_monte_carlo"
+}

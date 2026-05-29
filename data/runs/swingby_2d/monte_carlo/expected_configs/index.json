@@ -1,0 +1,1614 @@
+{
+  "entries": [
+    {
+      "entry_id": "00_pinn-with-exact-bc---seed-1000",
+      "expected_config_json": "expected_configs/00_pinn-with-exact-bc---seed-1000.json",
+      "label": "PINN with exact BC | seed=1000",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/00_pinn-with-exact-bc---seed-1000.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "01_pinn-with-soft-bc---seed-1000",
+      "expected_config_json": "expected_configs/01_pinn-with-soft-bc---seed-1000.json",
+      "label": "PINN with soft BC | seed=1000",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/01_pinn-with-soft-bc---seed-1000.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "02_pinn-with-exact-bc---seed-1001",
+      "expected_config_json": "expected_configs/02_pinn-with-exact-bc---seed-1001.json",
+      "label": "PINN with exact BC | seed=1001",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/02_pinn-with-exact-bc---seed-1001.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "03_pinn-with-soft-bc---seed-1001",
+      "expected_config_json": "expected_configs/03_pinn-with-soft-bc---seed-1001.json",
+      "label": "PINN with soft BC | seed=1001",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/03_pinn-with-soft-bc---seed-1001.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "04_pinn-with-exact-bc---seed-1002",
+      "expected_config_json": "expected_configs/04_pinn-with-exact-bc---seed-1002.json",
+      "label": "PINN with exact BC | seed=1002",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/04_pinn-with-exact-bc---seed-1002.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "05_pinn-with-soft-bc---seed-1002",
+      "expected_config_json": "expected_configs/05_pinn-with-soft-bc---seed-1002.json",
+      "label": "PINN with soft BC | seed=1002",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/05_pinn-with-soft-bc---seed-1002.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "06_pinn-with-exact-bc---seed-1003",
+      "expected_config_json": "expected_configs/06_pinn-with-exact-bc---seed-1003.json",
+      "label": "PINN with exact BC | seed=1003",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/06_pinn-with-exact-bc---seed-1003.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "07_pinn-with-soft-bc---seed-1003",
+      "expected_config_json": "expected_configs/07_pinn-with-soft-bc---seed-1003.json",
+      "label": "PINN with soft BC | seed=1003",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/07_pinn-with-soft-bc---seed-1003.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "08_pinn-with-exact-bc---seed-1004",
+      "expected_config_json": "expected_configs/08_pinn-with-exact-bc---seed-1004.json",
+      "label": "PINN with exact BC | seed=1004",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/08_pinn-with-exact-bc---seed-1004.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "09_pinn-with-soft-bc---seed-1004",
+      "expected_config_json": "expected_configs/09_pinn-with-soft-bc---seed-1004.json",
+      "label": "PINN with soft BC | seed=1004",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/09_pinn-with-soft-bc---seed-1004.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "10_pinn-with-exact-bc---seed-1005",
+      "expected_config_json": "expected_configs/10_pinn-with-exact-bc---seed-1005.json",
+      "label": "PINN with exact BC | seed=1005",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/10_pinn-with-exact-bc---seed-1005.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "11_pinn-with-soft-bc---seed-1005",
+      "expected_config_json": "expected_configs/11_pinn-with-soft-bc---seed-1005.json",
+      "label": "PINN with soft BC | seed=1005",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/11_pinn-with-soft-bc---seed-1005.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "12_pinn-with-exact-bc---seed-1006",
+      "expected_config_json": "expected_configs/12_pinn-with-exact-bc---seed-1006.json",
+      "label": "PINN with exact BC | seed=1006",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/12_pinn-with-exact-bc---seed-1006.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "13_pinn-with-soft-bc---seed-1006",
+      "expected_config_json": "expected_configs/13_pinn-with-soft-bc---seed-1006.json",
+      "label": "PINN with soft BC | seed=1006",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/13_pinn-with-soft-bc---seed-1006.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "14_pinn-with-exact-bc---seed-1007",
+      "expected_config_json": "expected_configs/14_pinn-with-exact-bc---seed-1007.json",
+      "label": "PINN with exact BC | seed=1007",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/14_pinn-with-exact-bc---seed-1007.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "15_pinn-with-soft-bc---seed-1007",
+      "expected_config_json": "expected_configs/15_pinn-with-soft-bc---seed-1007.json",
+      "label": "PINN with soft BC | seed=1007",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/15_pinn-with-soft-bc---seed-1007.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "16_pinn-with-exact-bc---seed-1008",
+      "expected_config_json": "expected_configs/16_pinn-with-exact-bc---seed-1008.json",
+      "label": "PINN with exact BC | seed=1008",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/16_pinn-with-exact-bc---seed-1008.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "17_pinn-with-soft-bc---seed-1008",
+      "expected_config_json": "expected_configs/17_pinn-with-soft-bc---seed-1008.json",
+      "label": "PINN with soft BC | seed=1008",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/17_pinn-with-soft-bc---seed-1008.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "18_pinn-with-exact-bc---seed-1009",
+      "expected_config_json": "expected_configs/18_pinn-with-exact-bc---seed-1009.json",
+      "label": "PINN with exact BC | seed=1009",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/18_pinn-with-exact-bc---seed-1009.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "19_pinn-with-soft-bc---seed-1009",
+      "expected_config_json": "expected_configs/19_pinn-with-soft-bc---seed-1009.json",
+      "label": "PINN with soft BC | seed=1009",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/19_pinn-with-soft-bc---seed-1009.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "20_pinn-with-exact-bc---seed-1010",
+      "expected_config_json": "expected_configs/20_pinn-with-exact-bc---seed-1010.json",
+      "label": "PINN with exact BC | seed=1010",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/20_pinn-with-exact-bc---seed-1010.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "21_pinn-with-soft-bc---seed-1010",
+      "expected_config_json": "expected_configs/21_pinn-with-soft-bc---seed-1010.json",
+      "label": "PINN with soft BC | seed=1010",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/21_pinn-with-soft-bc---seed-1010.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "22_pinn-with-exact-bc---seed-1011",
+      "expected_config_json": "expected_configs/22_pinn-with-exact-bc---seed-1011.json",
+      "label": "PINN with exact BC | seed=1011",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/22_pinn-with-exact-bc---seed-1011.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "23_pinn-with-soft-bc---seed-1011",
+      "expected_config_json": "expected_configs/23_pinn-with-soft-bc---seed-1011.json",
+      "label": "PINN with soft BC | seed=1011",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/23_pinn-with-soft-bc---seed-1011.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "24_pinn-with-exact-bc---seed-1012",
+      "expected_config_json": "expected_configs/24_pinn-with-exact-bc---seed-1012.json",
+      "label": "PINN with exact BC | seed=1012",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/24_pinn-with-exact-bc---seed-1012.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "25_pinn-with-soft-bc---seed-1012",
+      "expected_config_json": "expected_configs/25_pinn-with-soft-bc---seed-1012.json",
+      "label": "PINN with soft BC | seed=1012",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/25_pinn-with-soft-bc---seed-1012.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "26_pinn-with-exact-bc---seed-1013",
+      "expected_config_json": "expected_configs/26_pinn-with-exact-bc---seed-1013.json",
+      "label": "PINN with exact BC | seed=1013",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/26_pinn-with-exact-bc---seed-1013.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "27_pinn-with-soft-bc---seed-1013",
+      "expected_config_json": "expected_configs/27_pinn-with-soft-bc---seed-1013.json",
+      "label": "PINN with soft BC | seed=1013",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/27_pinn-with-soft-bc---seed-1013.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "28_pinn-with-exact-bc---seed-1014",
+      "expected_config_json": "expected_configs/28_pinn-with-exact-bc---seed-1014.json",
+      "label": "PINN with exact BC | seed=1014",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/28_pinn-with-exact-bc---seed-1014.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "29_pinn-with-soft-bc---seed-1014",
+      "expected_config_json": "expected_configs/29_pinn-with-soft-bc---seed-1014.json",
+      "label": "PINN with soft BC | seed=1014",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/29_pinn-with-soft-bc---seed-1014.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "30_pinn-with-exact-bc---seed-1015",
+      "expected_config_json": "expected_configs/30_pinn-with-exact-bc---seed-1015.json",
+      "label": "PINN with exact BC | seed=1015",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/30_pinn-with-exact-bc---seed-1015.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "31_pinn-with-soft-bc---seed-1015",
+      "expected_config_json": "expected_configs/31_pinn-with-soft-bc---seed-1015.json",
+      "label": "PINN with soft BC | seed=1015",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/31_pinn-with-soft-bc---seed-1015.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "32_pinn-with-exact-bc---seed-1016",
+      "expected_config_json": "expected_configs/32_pinn-with-exact-bc---seed-1016.json",
+      "label": "PINN with exact BC | seed=1016",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/32_pinn-with-exact-bc---seed-1016.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "33_pinn-with-soft-bc---seed-1016",
+      "expected_config_json": "expected_configs/33_pinn-with-soft-bc---seed-1016.json",
+      "label": "PINN with soft BC | seed=1016",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/33_pinn-with-soft-bc---seed-1016.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "34_pinn-with-exact-bc---seed-1017",
+      "expected_config_json": "expected_configs/34_pinn-with-exact-bc---seed-1017.json",
+      "label": "PINN with exact BC | seed=1017",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/34_pinn-with-exact-bc---seed-1017.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "35_pinn-with-soft-bc---seed-1017",
+      "expected_config_json": "expected_configs/35_pinn-with-soft-bc---seed-1017.json",
+      "label": "PINN with soft BC | seed=1017",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/35_pinn-with-soft-bc---seed-1017.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "36_pinn-with-exact-bc---seed-1018",
+      "expected_config_json": "expected_configs/36_pinn-with-exact-bc---seed-1018.json",
+      "label": "PINN with exact BC | seed=1018",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/36_pinn-with-exact-bc---seed-1018.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "37_pinn-with-soft-bc---seed-1018",
+      "expected_config_json": "expected_configs/37_pinn-with-soft-bc---seed-1018.json",
+      "label": "PINN with soft BC | seed=1018",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/37_pinn-with-soft-bc---seed-1018.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "38_pinn-with-exact-bc---seed-1019",
+      "expected_config_json": "expected_configs/38_pinn-with-exact-bc---seed-1019.json",
+      "label": "PINN with exact BC | seed=1019",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/38_pinn-with-exact-bc---seed-1019.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "39_pinn-with-soft-bc---seed-1019",
+      "expected_config_json": "expected_configs/39_pinn-with-soft-bc---seed-1019.json",
+      "label": "PINN with soft BC | seed=1019",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/39_pinn-with-soft-bc---seed-1019.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "40_pinn-with-exact-bc---seed-1020",
+      "expected_config_json": "expected_configs/40_pinn-with-exact-bc---seed-1020.json",
+      "label": "PINN with exact BC | seed=1020",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/40_pinn-with-exact-bc---seed-1020.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "41_pinn-with-soft-bc---seed-1020",
+      "expected_config_json": "expected_configs/41_pinn-with-soft-bc---seed-1020.json",
+      "label": "PINN with soft BC | seed=1020",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/41_pinn-with-soft-bc---seed-1020.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "42_pinn-with-exact-bc---seed-1021",
+      "expected_config_json": "expected_configs/42_pinn-with-exact-bc---seed-1021.json",
+      "label": "PINN with exact BC | seed=1021",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/42_pinn-with-exact-bc---seed-1021.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "43_pinn-with-soft-bc---seed-1021",
+      "expected_config_json": "expected_configs/43_pinn-with-soft-bc---seed-1021.json",
+      "label": "PINN with soft BC | seed=1021",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/43_pinn-with-soft-bc---seed-1021.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "44_pinn-with-exact-bc---seed-1022",
+      "expected_config_json": "expected_configs/44_pinn-with-exact-bc---seed-1022.json",
+      "label": "PINN with exact BC | seed=1022",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/44_pinn-with-exact-bc---seed-1022.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "45_pinn-with-soft-bc---seed-1022",
+      "expected_config_json": "expected_configs/45_pinn-with-soft-bc---seed-1022.json",
+      "label": "PINN with soft BC | seed=1022",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/45_pinn-with-soft-bc---seed-1022.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "46_pinn-with-exact-bc---seed-1023",
+      "expected_config_json": "expected_configs/46_pinn-with-exact-bc---seed-1023.json",
+      "label": "PINN with exact BC | seed=1023",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/46_pinn-with-exact-bc---seed-1023.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "47_pinn-with-soft-bc---seed-1023",
+      "expected_config_json": "expected_configs/47_pinn-with-soft-bc---seed-1023.json",
+      "label": "PINN with soft BC | seed=1023",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/47_pinn-with-soft-bc---seed-1023.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "48_pinn-with-exact-bc---seed-1024",
+      "expected_config_json": "expected_configs/48_pinn-with-exact-bc---seed-1024.json",
+      "label": "PINN with exact BC | seed=1024",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/48_pinn-with-exact-bc---seed-1024.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "49_pinn-with-soft-bc---seed-1024",
+      "expected_config_json": "expected_configs/49_pinn-with-soft-bc---seed-1024.json",
+      "label": "PINN with soft BC | seed=1024",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/49_pinn-with-soft-bc---seed-1024.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "50_pinn-with-exact-bc---seed-1025",
+      "expected_config_json": "expected_configs/50_pinn-with-exact-bc---seed-1025.json",
+      "label": "PINN with exact BC | seed=1025",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/50_pinn-with-exact-bc---seed-1025.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "51_pinn-with-soft-bc---seed-1025",
+      "expected_config_json": "expected_configs/51_pinn-with-soft-bc---seed-1025.json",
+      "label": "PINN with soft BC | seed=1025",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/51_pinn-with-soft-bc---seed-1025.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "52_pinn-with-exact-bc---seed-1026",
+      "expected_config_json": "expected_configs/52_pinn-with-exact-bc---seed-1026.json",
+      "label": "PINN with exact BC | seed=1026",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/52_pinn-with-exact-bc---seed-1026.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "53_pinn-with-soft-bc---seed-1026",
+      "expected_config_json": "expected_configs/53_pinn-with-soft-bc---seed-1026.json",
+      "label": "PINN with soft BC | seed=1026",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/53_pinn-with-soft-bc---seed-1026.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "54_pinn-with-exact-bc---seed-1027",
+      "expected_config_json": "expected_configs/54_pinn-with-exact-bc---seed-1027.json",
+      "label": "PINN with exact BC | seed=1027",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/54_pinn-with-exact-bc---seed-1027.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "55_pinn-with-soft-bc---seed-1027",
+      "expected_config_json": "expected_configs/55_pinn-with-soft-bc---seed-1027.json",
+      "label": "PINN with soft BC | seed=1027",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/55_pinn-with-soft-bc---seed-1027.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "56_pinn-with-exact-bc---seed-1028",
+      "expected_config_json": "expected_configs/56_pinn-with-exact-bc---seed-1028.json",
+      "label": "PINN with exact BC | seed=1028",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/56_pinn-with-exact-bc---seed-1028.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "57_pinn-with-soft-bc---seed-1028",
+      "expected_config_json": "expected_configs/57_pinn-with-soft-bc---seed-1028.json",
+      "label": "PINN with soft BC | seed=1028",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/57_pinn-with-soft-bc---seed-1028.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "58_pinn-with-exact-bc---seed-1029",
+      "expected_config_json": "expected_configs/58_pinn-with-exact-bc---seed-1029.json",
+      "label": "PINN with exact BC | seed=1029",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/58_pinn-with-exact-bc---seed-1029.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "59_pinn-with-soft-bc---seed-1029",
+      "expected_config_json": "expected_configs/59_pinn-with-soft-bc---seed-1029.json",
+      "label": "PINN with soft BC | seed=1029",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/59_pinn-with-soft-bc---seed-1029.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "60_pinn-with-exact-bc---seed-1030",
+      "expected_config_json": "expected_configs/60_pinn-with-exact-bc---seed-1030.json",
+      "label": "PINN with exact BC | seed=1030",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/60_pinn-with-exact-bc---seed-1030.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "61_pinn-with-soft-bc---seed-1030",
+      "expected_config_json": "expected_configs/61_pinn-with-soft-bc---seed-1030.json",
+      "label": "PINN with soft BC | seed=1030",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/61_pinn-with-soft-bc---seed-1030.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "62_pinn-with-exact-bc---seed-1031",
+      "expected_config_json": "expected_configs/62_pinn-with-exact-bc---seed-1031.json",
+      "label": "PINN with exact BC | seed=1031",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/62_pinn-with-exact-bc---seed-1031.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "63_pinn-with-soft-bc---seed-1031",
+      "expected_config_json": "expected_configs/63_pinn-with-soft-bc---seed-1031.json",
+      "label": "PINN with soft BC | seed=1031",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/63_pinn-with-soft-bc---seed-1031.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "64_pinn-with-exact-bc---seed-1032",
+      "expected_config_json": "expected_configs/64_pinn-with-exact-bc---seed-1032.json",
+      "label": "PINN with exact BC | seed=1032",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/64_pinn-with-exact-bc---seed-1032.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "65_pinn-with-soft-bc---seed-1032",
+      "expected_config_json": "expected_configs/65_pinn-with-soft-bc---seed-1032.json",
+      "label": "PINN with soft BC | seed=1032",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/65_pinn-with-soft-bc---seed-1032.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "66_pinn-with-exact-bc---seed-1033",
+      "expected_config_json": "expected_configs/66_pinn-with-exact-bc---seed-1033.json",
+      "label": "PINN with exact BC | seed=1033",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/66_pinn-with-exact-bc---seed-1033.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "67_pinn-with-soft-bc---seed-1033",
+      "expected_config_json": "expected_configs/67_pinn-with-soft-bc---seed-1033.json",
+      "label": "PINN with soft BC | seed=1033",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/67_pinn-with-soft-bc---seed-1033.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "68_pinn-with-exact-bc---seed-1034",
+      "expected_config_json": "expected_configs/68_pinn-with-exact-bc---seed-1034.json",
+      "label": "PINN with exact BC | seed=1034",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/68_pinn-with-exact-bc---seed-1034.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "69_pinn-with-soft-bc---seed-1034",
+      "expected_config_json": "expected_configs/69_pinn-with-soft-bc---seed-1034.json",
+      "label": "PINN with soft BC | seed=1034",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/69_pinn-with-soft-bc---seed-1034.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "70_pinn-with-exact-bc---seed-1035",
+      "expected_config_json": "expected_configs/70_pinn-with-exact-bc---seed-1035.json",
+      "label": "PINN with exact BC | seed=1035",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/70_pinn-with-exact-bc---seed-1035.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "71_pinn-with-soft-bc---seed-1035",
+      "expected_config_json": "expected_configs/71_pinn-with-soft-bc---seed-1035.json",
+      "label": "PINN with soft BC | seed=1035",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/71_pinn-with-soft-bc---seed-1035.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "72_pinn-with-exact-bc---seed-1036",
+      "expected_config_json": "expected_configs/72_pinn-with-exact-bc---seed-1036.json",
+      "label": "PINN with exact BC | seed=1036",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/72_pinn-with-exact-bc---seed-1036.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "73_pinn-with-soft-bc---seed-1036",
+      "expected_config_json": "expected_configs/73_pinn-with-soft-bc---seed-1036.json",
+      "label": "PINN with soft BC | seed=1036",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/73_pinn-with-soft-bc---seed-1036.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "74_pinn-with-exact-bc---seed-1037",
+      "expected_config_json": "expected_configs/74_pinn-with-exact-bc---seed-1037.json",
+      "label": "PINN with exact BC | seed=1037",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/74_pinn-with-exact-bc---seed-1037.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "75_pinn-with-soft-bc---seed-1037",
+      "expected_config_json": "expected_configs/75_pinn-with-soft-bc---seed-1037.json",
+      "label": "PINN with soft BC | seed=1037",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/75_pinn-with-soft-bc---seed-1037.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "76_pinn-with-exact-bc---seed-1038",
+      "expected_config_json": "expected_configs/76_pinn-with-exact-bc---seed-1038.json",
+      "label": "PINN with exact BC | seed=1038",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/76_pinn-with-exact-bc---seed-1038.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "77_pinn-with-soft-bc---seed-1038",
+      "expected_config_json": "expected_configs/77_pinn-with-soft-bc---seed-1038.json",
+      "label": "PINN with soft BC | seed=1038",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/77_pinn-with-soft-bc---seed-1038.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "78_pinn-with-exact-bc---seed-1039",
+      "expected_config_json": "expected_configs/78_pinn-with-exact-bc---seed-1039.json",
+      "label": "PINN with exact BC | seed=1039",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/78_pinn-with-exact-bc---seed-1039.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "79_pinn-with-soft-bc---seed-1039",
+      "expected_config_json": "expected_configs/79_pinn-with-soft-bc---seed-1039.json",
+      "label": "PINN with soft BC | seed=1039",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/79_pinn-with-soft-bc---seed-1039.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "80_pinn-with-exact-bc---seed-1040",
+      "expected_config_json": "expected_configs/80_pinn-with-exact-bc---seed-1040.json",
+      "label": "PINN with exact BC | seed=1040",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/80_pinn-with-exact-bc---seed-1040.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "81_pinn-with-soft-bc---seed-1040",
+      "expected_config_json": "expected_configs/81_pinn-with-soft-bc---seed-1040.json",
+      "label": "PINN with soft BC | seed=1040",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/81_pinn-with-soft-bc---seed-1040.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "82_pinn-with-exact-bc---seed-1041",
+      "expected_config_json": "expected_configs/82_pinn-with-exact-bc---seed-1041.json",
+      "label": "PINN with exact BC | seed=1041",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/82_pinn-with-exact-bc---seed-1041.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "83_pinn-with-soft-bc---seed-1041",
+      "expected_config_json": "expected_configs/83_pinn-with-soft-bc---seed-1041.json",
+      "label": "PINN with soft BC | seed=1041",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/83_pinn-with-soft-bc---seed-1041.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "84_pinn-with-exact-bc---seed-1042",
+      "expected_config_json": "expected_configs/84_pinn-with-exact-bc---seed-1042.json",
+      "label": "PINN with exact BC | seed=1042",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/84_pinn-with-exact-bc---seed-1042.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "85_pinn-with-soft-bc---seed-1042",
+      "expected_config_json": "expected_configs/85_pinn-with-soft-bc---seed-1042.json",
+      "label": "PINN with soft BC | seed=1042",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/85_pinn-with-soft-bc---seed-1042.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "86_pinn-with-exact-bc---seed-1043",
+      "expected_config_json": "expected_configs/86_pinn-with-exact-bc---seed-1043.json",
+      "label": "PINN with exact BC | seed=1043",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/86_pinn-with-exact-bc---seed-1043.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "87_pinn-with-soft-bc---seed-1043",
+      "expected_config_json": "expected_configs/87_pinn-with-soft-bc---seed-1043.json",
+      "label": "PINN with soft BC | seed=1043",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/87_pinn-with-soft-bc---seed-1043.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "88_pinn-with-exact-bc---seed-1044",
+      "expected_config_json": "expected_configs/88_pinn-with-exact-bc---seed-1044.json",
+      "label": "PINN with exact BC | seed=1044",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/88_pinn-with-exact-bc---seed-1044.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "89_pinn-with-soft-bc---seed-1044",
+      "expected_config_json": "expected_configs/89_pinn-with-soft-bc---seed-1044.json",
+      "label": "PINN with soft BC | seed=1044",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/89_pinn-with-soft-bc---seed-1044.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "90_pinn-with-exact-bc---seed-1045",
+      "expected_config_json": "expected_configs/90_pinn-with-exact-bc---seed-1045.json",
+      "label": "PINN with exact BC | seed=1045",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/90_pinn-with-exact-bc---seed-1045.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "91_pinn-with-soft-bc---seed-1045",
+      "expected_config_json": "expected_configs/91_pinn-with-soft-bc---seed-1045.json",
+      "label": "PINN with soft BC | seed=1045",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/91_pinn-with-soft-bc---seed-1045.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "92_pinn-with-exact-bc---seed-1046",
+      "expected_config_json": "expected_configs/92_pinn-with-exact-bc---seed-1046.json",
+      "label": "PINN with exact BC | seed=1046",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/92_pinn-with-exact-bc---seed-1046.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "93_pinn-with-soft-bc---seed-1046",
+      "expected_config_json": "expected_configs/93_pinn-with-soft-bc---seed-1046.json",
+      "label": "PINN with soft BC | seed=1046",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/93_pinn-with-soft-bc---seed-1046.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "94_pinn-with-exact-bc---seed-1047",
+      "expected_config_json": "expected_configs/94_pinn-with-exact-bc---seed-1047.json",
+      "label": "PINN with exact BC | seed=1047",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/94_pinn-with-exact-bc---seed-1047.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "95_pinn-with-soft-bc---seed-1047",
+      "expected_config_json": "expected_configs/95_pinn-with-soft-bc---seed-1047.json",
+      "label": "PINN with soft BC | seed=1047",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/95_pinn-with-soft-bc---seed-1047.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "96_pinn-with-exact-bc---seed-1048",
+      "expected_config_json": "expected_configs/96_pinn-with-exact-bc---seed-1048.json",
+      "label": "PINN with exact BC | seed=1048",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/96_pinn-with-exact-bc---seed-1048.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "97_pinn-with-soft-bc---seed-1048",
+      "expected_config_json": "expected_configs/97_pinn-with-soft-bc---seed-1048.json",
+      "label": "PINN with soft BC | seed=1048",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/97_pinn-with-soft-bc---seed-1048.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "98_pinn-with-exact-bc---seed-1049",
+      "expected_config_json": "expected_configs/98_pinn-with-exact-bc---seed-1049.json",
+      "label": "PINN with exact BC | seed=1049",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/98_pinn-with-exact-bc---seed-1049.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "99_pinn-with-soft-bc---seed-1049",
+      "expected_config_json": "expected_configs/99_pinn-with-soft-bc---seed-1049.json",
+      "label": "PINN with soft BC | seed=1049",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/99_pinn-with-soft-bc---seed-1049.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "100_pinn-with-exact-bc---seed-1050",
+      "expected_config_json": "expected_configs/100_pinn-with-exact-bc---seed-1050.json",
+      "label": "PINN with exact BC | seed=1050",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/100_pinn-with-exact-bc---seed-1050.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "101_pinn-with-soft-bc---seed-1050",
+      "expected_config_json": "expected_configs/101_pinn-with-soft-bc---seed-1050.json",
+      "label": "PINN with soft BC | seed=1050",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/101_pinn-with-soft-bc---seed-1050.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "102_pinn-with-exact-bc---seed-1051",
+      "expected_config_json": "expected_configs/102_pinn-with-exact-bc---seed-1051.json",
+      "label": "PINN with exact BC | seed=1051",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/102_pinn-with-exact-bc---seed-1051.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "103_pinn-with-soft-bc---seed-1051",
+      "expected_config_json": "expected_configs/103_pinn-with-soft-bc---seed-1051.json",
+      "label": "PINN with soft BC | seed=1051",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/103_pinn-with-soft-bc---seed-1051.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "104_pinn-with-exact-bc---seed-1052",
+      "expected_config_json": "expected_configs/104_pinn-with-exact-bc---seed-1052.json",
+      "label": "PINN with exact BC | seed=1052",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/104_pinn-with-exact-bc---seed-1052.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "105_pinn-with-soft-bc---seed-1052",
+      "expected_config_json": "expected_configs/105_pinn-with-soft-bc---seed-1052.json",
+      "label": "PINN with soft BC | seed=1052",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/105_pinn-with-soft-bc---seed-1052.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "106_pinn-with-exact-bc---seed-1053",
+      "expected_config_json": "expected_configs/106_pinn-with-exact-bc---seed-1053.json",
+      "label": "PINN with exact BC | seed=1053",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/106_pinn-with-exact-bc---seed-1053.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "107_pinn-with-soft-bc---seed-1053",
+      "expected_config_json": "expected_configs/107_pinn-with-soft-bc---seed-1053.json",
+      "label": "PINN with soft BC | seed=1053",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/107_pinn-with-soft-bc---seed-1053.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "108_pinn-with-exact-bc---seed-1054",
+      "expected_config_json": "expected_configs/108_pinn-with-exact-bc---seed-1054.json",
+      "label": "PINN with exact BC | seed=1054",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/108_pinn-with-exact-bc---seed-1054.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "109_pinn-with-soft-bc---seed-1054",
+      "expected_config_json": "expected_configs/109_pinn-with-soft-bc---seed-1054.json",
+      "label": "PINN with soft BC | seed=1054",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/109_pinn-with-soft-bc---seed-1054.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "110_pinn-with-exact-bc---seed-1055",
+      "expected_config_json": "expected_configs/110_pinn-with-exact-bc---seed-1055.json",
+      "label": "PINN with exact BC | seed=1055",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/110_pinn-with-exact-bc---seed-1055.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "111_pinn-with-soft-bc---seed-1055",
+      "expected_config_json": "expected_configs/111_pinn-with-soft-bc---seed-1055.json",
+      "label": "PINN with soft BC | seed=1055",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/111_pinn-with-soft-bc---seed-1055.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "112_pinn-with-exact-bc---seed-1056",
+      "expected_config_json": "expected_configs/112_pinn-with-exact-bc---seed-1056.json",
+      "label": "PINN with exact BC | seed=1056",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/112_pinn-with-exact-bc---seed-1056.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "113_pinn-with-soft-bc---seed-1056",
+      "expected_config_json": "expected_configs/113_pinn-with-soft-bc---seed-1056.json",
+      "label": "PINN with soft BC | seed=1056",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/113_pinn-with-soft-bc---seed-1056.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "114_pinn-with-exact-bc---seed-1057",
+      "expected_config_json": "expected_configs/114_pinn-with-exact-bc---seed-1057.json",
+      "label": "PINN with exact BC | seed=1057",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/114_pinn-with-exact-bc---seed-1057.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "115_pinn-with-soft-bc---seed-1057",
+      "expected_config_json": "expected_configs/115_pinn-with-soft-bc---seed-1057.json",
+      "label": "PINN with soft BC | seed=1057",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/115_pinn-with-soft-bc---seed-1057.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "116_pinn-with-exact-bc---seed-1058",
+      "expected_config_json": "expected_configs/116_pinn-with-exact-bc---seed-1058.json",
+      "label": "PINN with exact BC | seed=1058",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/116_pinn-with-exact-bc---seed-1058.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "117_pinn-with-soft-bc---seed-1058",
+      "expected_config_json": "expected_configs/117_pinn-with-soft-bc---seed-1058.json",
+      "label": "PINN with soft BC | seed=1058",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/117_pinn-with-soft-bc---seed-1058.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "118_pinn-with-exact-bc---seed-1059",
+      "expected_config_json": "expected_configs/118_pinn-with-exact-bc---seed-1059.json",
+      "label": "PINN with exact BC | seed=1059",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/118_pinn-with-exact-bc---seed-1059.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "119_pinn-with-soft-bc---seed-1059",
+      "expected_config_json": "expected_configs/119_pinn-with-soft-bc---seed-1059.json",
+      "label": "PINN with soft BC | seed=1059",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/119_pinn-with-soft-bc---seed-1059.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "120_pinn-with-exact-bc---seed-1060",
+      "expected_config_json": "expected_configs/120_pinn-with-exact-bc---seed-1060.json",
+      "label": "PINN with exact BC | seed=1060",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/120_pinn-with-exact-bc---seed-1060.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "121_pinn-with-soft-bc---seed-1060",
+      "expected_config_json": "expected_configs/121_pinn-with-soft-bc---seed-1060.json",
+      "label": "PINN with soft BC | seed=1060",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/121_pinn-with-soft-bc---seed-1060.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "122_pinn-with-exact-bc---seed-1061",
+      "expected_config_json": "expected_configs/122_pinn-with-exact-bc---seed-1061.json",
+      "label": "PINN with exact BC | seed=1061",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/122_pinn-with-exact-bc---seed-1061.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "123_pinn-with-soft-bc---seed-1061",
+      "expected_config_json": "expected_configs/123_pinn-with-soft-bc---seed-1061.json",
+      "label": "PINN with soft BC | seed=1061",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/123_pinn-with-soft-bc---seed-1061.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "124_pinn-with-exact-bc---seed-1062",
+      "expected_config_json": "expected_configs/124_pinn-with-exact-bc---seed-1062.json",
+      "label": "PINN with exact BC | seed=1062",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/124_pinn-with-exact-bc---seed-1062.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "125_pinn-with-soft-bc---seed-1062",
+      "expected_config_json": "expected_configs/125_pinn-with-soft-bc---seed-1062.json",
+      "label": "PINN with soft BC | seed=1062",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/125_pinn-with-soft-bc---seed-1062.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "126_pinn-with-exact-bc---seed-1063",
+      "expected_config_json": "expected_configs/126_pinn-with-exact-bc---seed-1063.json",
+      "label": "PINN with exact BC | seed=1063",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/126_pinn-with-exact-bc---seed-1063.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "127_pinn-with-soft-bc---seed-1063",
+      "expected_config_json": "expected_configs/127_pinn-with-soft-bc---seed-1063.json",
+      "label": "PINN with soft BC | seed=1063",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/127_pinn-with-soft-bc---seed-1063.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "128_pinn-with-exact-bc---seed-1064",
+      "expected_config_json": "expected_configs/128_pinn-with-exact-bc---seed-1064.json",
+      "label": "PINN with exact BC | seed=1064",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/128_pinn-with-exact-bc---seed-1064.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "129_pinn-with-soft-bc---seed-1064",
+      "expected_config_json": "expected_configs/129_pinn-with-soft-bc---seed-1064.json",
+      "label": "PINN with soft BC | seed=1064",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/129_pinn-with-soft-bc---seed-1064.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "130_pinn-with-exact-bc---seed-1065",
+      "expected_config_json": "expected_configs/130_pinn-with-exact-bc---seed-1065.json",
+      "label": "PINN with exact BC | seed=1065",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/130_pinn-with-exact-bc---seed-1065.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "131_pinn-with-soft-bc---seed-1065",
+      "expected_config_json": "expected_configs/131_pinn-with-soft-bc---seed-1065.json",
+      "label": "PINN with soft BC | seed=1065",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/131_pinn-with-soft-bc---seed-1065.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "132_pinn-with-exact-bc---seed-1066",
+      "expected_config_json": "expected_configs/132_pinn-with-exact-bc---seed-1066.json",
+      "label": "PINN with exact BC | seed=1066",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/132_pinn-with-exact-bc---seed-1066.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "133_pinn-with-soft-bc---seed-1066",
+      "expected_config_json": "expected_configs/133_pinn-with-soft-bc---seed-1066.json",
+      "label": "PINN with soft BC | seed=1066",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/133_pinn-with-soft-bc---seed-1066.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "134_pinn-with-exact-bc---seed-1067",
+      "expected_config_json": "expected_configs/134_pinn-with-exact-bc---seed-1067.json",
+      "label": "PINN with exact BC | seed=1067",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/134_pinn-with-exact-bc---seed-1067.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "135_pinn-with-soft-bc---seed-1067",
+      "expected_config_json": "expected_configs/135_pinn-with-soft-bc---seed-1067.json",
+      "label": "PINN with soft BC | seed=1067",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/135_pinn-with-soft-bc---seed-1067.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "136_pinn-with-exact-bc---seed-1068",
+      "expected_config_json": "expected_configs/136_pinn-with-exact-bc---seed-1068.json",
+      "label": "PINN with exact BC | seed=1068",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/136_pinn-with-exact-bc---seed-1068.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "137_pinn-with-soft-bc---seed-1068",
+      "expected_config_json": "expected_configs/137_pinn-with-soft-bc---seed-1068.json",
+      "label": "PINN with soft BC | seed=1068",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/137_pinn-with-soft-bc---seed-1068.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "138_pinn-with-exact-bc---seed-1069",
+      "expected_config_json": "expected_configs/138_pinn-with-exact-bc---seed-1069.json",
+      "label": "PINN with exact BC | seed=1069",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/138_pinn-with-exact-bc---seed-1069.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "139_pinn-with-soft-bc---seed-1069",
+      "expected_config_json": "expected_configs/139_pinn-with-soft-bc---seed-1069.json",
+      "label": "PINN with soft BC | seed=1069",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/139_pinn-with-soft-bc---seed-1069.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "140_pinn-with-exact-bc---seed-1070",
+      "expected_config_json": "expected_configs/140_pinn-with-exact-bc---seed-1070.json",
+      "label": "PINN with exact BC | seed=1070",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/140_pinn-with-exact-bc---seed-1070.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "141_pinn-with-soft-bc---seed-1070",
+      "expected_config_json": "expected_configs/141_pinn-with-soft-bc---seed-1070.json",
+      "label": "PINN with soft BC | seed=1070",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/141_pinn-with-soft-bc---seed-1070.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "142_pinn-with-exact-bc---seed-1071",
+      "expected_config_json": "expected_configs/142_pinn-with-exact-bc---seed-1071.json",
+      "label": "PINN with exact BC | seed=1071",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/142_pinn-with-exact-bc---seed-1071.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "143_pinn-with-soft-bc---seed-1071",
+      "expected_config_json": "expected_configs/143_pinn-with-soft-bc---seed-1071.json",
+      "label": "PINN with soft BC | seed=1071",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/143_pinn-with-soft-bc---seed-1071.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "144_pinn-with-exact-bc---seed-1072",
+      "expected_config_json": "expected_configs/144_pinn-with-exact-bc---seed-1072.json",
+      "label": "PINN with exact BC | seed=1072",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/144_pinn-with-exact-bc---seed-1072.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "145_pinn-with-soft-bc---seed-1072",
+      "expected_config_json": "expected_configs/145_pinn-with-soft-bc---seed-1072.json",
+      "label": "PINN with soft BC | seed=1072",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/145_pinn-with-soft-bc---seed-1072.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "146_pinn-with-exact-bc---seed-1073",
+      "expected_config_json": "expected_configs/146_pinn-with-exact-bc---seed-1073.json",
+      "label": "PINN with exact BC | seed=1073",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/146_pinn-with-exact-bc---seed-1073.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "147_pinn-with-soft-bc---seed-1073",
+      "expected_config_json": "expected_configs/147_pinn-with-soft-bc---seed-1073.json",
+      "label": "PINN with soft BC | seed=1073",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/147_pinn-with-soft-bc---seed-1073.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "148_pinn-with-exact-bc---seed-1074",
+      "expected_config_json": "expected_configs/148_pinn-with-exact-bc---seed-1074.json",
+      "label": "PINN with exact BC | seed=1074",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/148_pinn-with-exact-bc---seed-1074.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "149_pinn-with-soft-bc---seed-1074",
+      "expected_config_json": "expected_configs/149_pinn-with-soft-bc---seed-1074.json",
+      "label": "PINN with soft BC | seed=1074",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/149_pinn-with-soft-bc---seed-1074.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "150_pinn-with-exact-bc---seed-1075",
+      "expected_config_json": "expected_configs/150_pinn-with-exact-bc---seed-1075.json",
+      "label": "PINN with exact BC | seed=1075",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/150_pinn-with-exact-bc---seed-1075.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "151_pinn-with-soft-bc---seed-1075",
+      "expected_config_json": "expected_configs/151_pinn-with-soft-bc---seed-1075.json",
+      "label": "PINN with soft BC | seed=1075",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/151_pinn-with-soft-bc---seed-1075.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "152_pinn-with-exact-bc---seed-1076",
+      "expected_config_json": "expected_configs/152_pinn-with-exact-bc---seed-1076.json",
+      "label": "PINN with exact BC | seed=1076",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/152_pinn-with-exact-bc---seed-1076.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "153_pinn-with-soft-bc---seed-1076",
+      "expected_config_json": "expected_configs/153_pinn-with-soft-bc---seed-1076.json",
+      "label": "PINN with soft BC | seed=1076",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/153_pinn-with-soft-bc---seed-1076.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "154_pinn-with-exact-bc---seed-1077",
+      "expected_config_json": "expected_configs/154_pinn-with-exact-bc---seed-1077.json",
+      "label": "PINN with exact BC | seed=1077",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/154_pinn-with-exact-bc---seed-1077.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "155_pinn-with-soft-bc---seed-1077",
+      "expected_config_json": "expected_configs/155_pinn-with-soft-bc---seed-1077.json",
+      "label": "PINN with soft BC | seed=1077",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/155_pinn-with-soft-bc---seed-1077.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "156_pinn-with-exact-bc---seed-1078",
+      "expected_config_json": "expected_configs/156_pinn-with-exact-bc---seed-1078.json",
+      "label": "PINN with exact BC | seed=1078",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/156_pinn-with-exact-bc---seed-1078.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "157_pinn-with-soft-bc---seed-1078",
+      "expected_config_json": "expected_configs/157_pinn-with-soft-bc---seed-1078.json",
+      "label": "PINN with soft BC | seed=1078",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/157_pinn-with-soft-bc---seed-1078.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "158_pinn-with-exact-bc---seed-1079",
+      "expected_config_json": "expected_configs/158_pinn-with-exact-bc---seed-1079.json",
+      "label": "PINN with exact BC | seed=1079",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/158_pinn-with-exact-bc---seed-1079.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "159_pinn-with-soft-bc---seed-1079",
+      "expected_config_json": "expected_configs/159_pinn-with-soft-bc---seed-1079.json",
+      "label": "PINN with soft BC | seed=1079",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/159_pinn-with-soft-bc---seed-1079.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "160_pinn-with-exact-bc---seed-1080",
+      "expected_config_json": "expected_configs/160_pinn-with-exact-bc---seed-1080.json",
+      "label": "PINN with exact BC | seed=1080",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/160_pinn-with-exact-bc---seed-1080.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "161_pinn-with-soft-bc---seed-1080",
+      "expected_config_json": "expected_configs/161_pinn-with-soft-bc---seed-1080.json",
+      "label": "PINN with soft BC | seed=1080",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/161_pinn-with-soft-bc---seed-1080.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "162_pinn-with-exact-bc---seed-1081",
+      "expected_config_json": "expected_configs/162_pinn-with-exact-bc---seed-1081.json",
+      "label": "PINN with exact BC | seed=1081",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/162_pinn-with-exact-bc---seed-1081.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "163_pinn-with-soft-bc---seed-1081",
+      "expected_config_json": "expected_configs/163_pinn-with-soft-bc---seed-1081.json",
+      "label": "PINN with soft BC | seed=1081",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/163_pinn-with-soft-bc---seed-1081.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "164_pinn-with-exact-bc---seed-1082",
+      "expected_config_json": "expected_configs/164_pinn-with-exact-bc---seed-1082.json",
+      "label": "PINN with exact BC | seed=1082",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/164_pinn-with-exact-bc---seed-1082.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "165_pinn-with-soft-bc---seed-1082",
+      "expected_config_json": "expected_configs/165_pinn-with-soft-bc---seed-1082.json",
+      "label": "PINN with soft BC | seed=1082",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/165_pinn-with-soft-bc---seed-1082.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "166_pinn-with-exact-bc---seed-1083",
+      "expected_config_json": "expected_configs/166_pinn-with-exact-bc---seed-1083.json",
+      "label": "PINN with exact BC | seed=1083",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/166_pinn-with-exact-bc---seed-1083.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "167_pinn-with-soft-bc---seed-1083",
+      "expected_config_json": "expected_configs/167_pinn-with-soft-bc---seed-1083.json",
+      "label": "PINN with soft BC | seed=1083",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/167_pinn-with-soft-bc---seed-1083.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "168_pinn-with-exact-bc---seed-1084",
+      "expected_config_json": "expected_configs/168_pinn-with-exact-bc---seed-1084.json",
+      "label": "PINN with exact BC | seed=1084",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/168_pinn-with-exact-bc---seed-1084.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "169_pinn-with-soft-bc---seed-1084",
+      "expected_config_json": "expected_configs/169_pinn-with-soft-bc---seed-1084.json",
+      "label": "PINN with soft BC | seed=1084",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/169_pinn-with-soft-bc---seed-1084.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "170_pinn-with-exact-bc---seed-1085",
+      "expected_config_json": "expected_configs/170_pinn-with-exact-bc---seed-1085.json",
+      "label": "PINN with exact BC | seed=1085",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/170_pinn-with-exact-bc---seed-1085.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "171_pinn-with-soft-bc---seed-1085",
+      "expected_config_json": "expected_configs/171_pinn-with-soft-bc---seed-1085.json",
+      "label": "PINN with soft BC | seed=1085",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/171_pinn-with-soft-bc---seed-1085.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "172_pinn-with-exact-bc---seed-1086",
+      "expected_config_json": "expected_configs/172_pinn-with-exact-bc---seed-1086.json",
+      "label": "PINN with exact BC | seed=1086",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/172_pinn-with-exact-bc---seed-1086.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "173_pinn-with-soft-bc---seed-1086",
+      "expected_config_json": "expected_configs/173_pinn-with-soft-bc---seed-1086.json",
+      "label": "PINN with soft BC | seed=1086",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/173_pinn-with-soft-bc---seed-1086.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "174_pinn-with-exact-bc---seed-1087",
+      "expected_config_json": "expected_configs/174_pinn-with-exact-bc---seed-1087.json",
+      "label": "PINN with exact BC | seed=1087",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/174_pinn-with-exact-bc---seed-1087.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "175_pinn-with-soft-bc---seed-1087",
+      "expected_config_json": "expected_configs/175_pinn-with-soft-bc---seed-1087.json",
+      "label": "PINN with soft BC | seed=1087",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/175_pinn-with-soft-bc---seed-1087.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "176_pinn-with-exact-bc---seed-1088",
+      "expected_config_json": "expected_configs/176_pinn-with-exact-bc---seed-1088.json",
+      "label": "PINN with exact BC | seed=1088",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/176_pinn-with-exact-bc---seed-1088.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "177_pinn-with-soft-bc---seed-1088",
+      "expected_config_json": "expected_configs/177_pinn-with-soft-bc---seed-1088.json",
+      "label": "PINN with soft BC | seed=1088",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/177_pinn-with-soft-bc---seed-1088.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "178_pinn-with-exact-bc---seed-1089",
+      "expected_config_json": "expected_configs/178_pinn-with-exact-bc---seed-1089.json",
+      "label": "PINN with exact BC | seed=1089",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/178_pinn-with-exact-bc---seed-1089.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "179_pinn-with-soft-bc---seed-1089",
+      "expected_config_json": "expected_configs/179_pinn-with-soft-bc---seed-1089.json",
+      "label": "PINN with soft BC | seed=1089",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/179_pinn-with-soft-bc---seed-1089.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "180_pinn-with-exact-bc---seed-1090",
+      "expected_config_json": "expected_configs/180_pinn-with-exact-bc---seed-1090.json",
+      "label": "PINN with exact BC | seed=1090",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/180_pinn-with-exact-bc---seed-1090.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "181_pinn-with-soft-bc---seed-1090",
+      "expected_config_json": "expected_configs/181_pinn-with-soft-bc---seed-1090.json",
+      "label": "PINN with soft BC | seed=1090",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/181_pinn-with-soft-bc---seed-1090.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "182_pinn-with-exact-bc---seed-1091",
+      "expected_config_json": "expected_configs/182_pinn-with-exact-bc---seed-1091.json",
+      "label": "PINN with exact BC | seed=1091",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/182_pinn-with-exact-bc---seed-1091.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "183_pinn-with-soft-bc---seed-1091",
+      "expected_config_json": "expected_configs/183_pinn-with-soft-bc---seed-1091.json",
+      "label": "PINN with soft BC | seed=1091",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/183_pinn-with-soft-bc---seed-1091.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "184_pinn-with-exact-bc---seed-1092",
+      "expected_config_json": "expected_configs/184_pinn-with-exact-bc---seed-1092.json",
+      "label": "PINN with exact BC | seed=1092",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/184_pinn-with-exact-bc---seed-1092.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "185_pinn-with-soft-bc---seed-1092",
+      "expected_config_json": "expected_configs/185_pinn-with-soft-bc---seed-1092.json",
+      "label": "PINN with soft BC | seed=1092",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/185_pinn-with-soft-bc---seed-1092.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "186_pinn-with-exact-bc---seed-1093",
+      "expected_config_json": "expected_configs/186_pinn-with-exact-bc---seed-1093.json",
+      "label": "PINN with exact BC | seed=1093",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/186_pinn-with-exact-bc---seed-1093.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "187_pinn-with-soft-bc---seed-1093",
+      "expected_config_json": "expected_configs/187_pinn-with-soft-bc---seed-1093.json",
+      "label": "PINN with soft BC | seed=1093",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/187_pinn-with-soft-bc---seed-1093.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "188_pinn-with-exact-bc---seed-1094",
+      "expected_config_json": "expected_configs/188_pinn-with-exact-bc---seed-1094.json",
+      "label": "PINN with exact BC | seed=1094",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/188_pinn-with-exact-bc---seed-1094.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "189_pinn-with-soft-bc---seed-1094",
+      "expected_config_json": "expected_configs/189_pinn-with-soft-bc---seed-1094.json",
+      "label": "PINN with soft BC | seed=1094",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/189_pinn-with-soft-bc---seed-1094.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "190_pinn-with-exact-bc---seed-1095",
+      "expected_config_json": "expected_configs/190_pinn-with-exact-bc---seed-1095.json",
+      "label": "PINN with exact BC | seed=1095",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/190_pinn-with-exact-bc---seed-1095.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "191_pinn-with-soft-bc---seed-1095",
+      "expected_config_json": "expected_configs/191_pinn-with-soft-bc---seed-1095.json",
+      "label": "PINN with soft BC | seed=1095",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/191_pinn-with-soft-bc---seed-1095.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "192_pinn-with-exact-bc---seed-1096",
+      "expected_config_json": "expected_configs/192_pinn-with-exact-bc---seed-1096.json",
+      "label": "PINN with exact BC | seed=1096",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/192_pinn-with-exact-bc---seed-1096.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "193_pinn-with-soft-bc---seed-1096",
+      "expected_config_json": "expected_configs/193_pinn-with-soft-bc---seed-1096.json",
+      "label": "PINN with soft BC | seed=1096",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/193_pinn-with-soft-bc---seed-1096.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "194_pinn-with-exact-bc---seed-1097",
+      "expected_config_json": "expected_configs/194_pinn-with-exact-bc---seed-1097.json",
+      "label": "PINN with exact BC | seed=1097",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/194_pinn-with-exact-bc---seed-1097.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "195_pinn-with-soft-bc---seed-1097",
+      "expected_config_json": "expected_configs/195_pinn-with-soft-bc---seed-1097.json",
+      "label": "PINN with soft BC | seed=1097",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/195_pinn-with-soft-bc---seed-1097.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "196_pinn-with-exact-bc---seed-1098",
+      "expected_config_json": "expected_configs/196_pinn-with-exact-bc---seed-1098.json",
+      "label": "PINN with exact BC | seed=1098",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/196_pinn-with-exact-bc---seed-1098.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "197_pinn-with-soft-bc---seed-1098",
+      "expected_config_json": "expected_configs/197_pinn-with-soft-bc---seed-1098.json",
+      "label": "PINN with soft BC | seed=1098",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/197_pinn-with-soft-bc---seed-1098.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "198_pinn-with-exact-bc---seed-1099",
+      "expected_config_json": "expected_configs/198_pinn-with-exact-bc---seed-1099.json",
+      "label": "PINN with exact BC | seed=1099",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/198_pinn-with-exact-bc---seed-1099.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "199_pinn-with-soft-bc---seed-1099",
+      "expected_config_json": "expected_configs/199_pinn-with-soft-bc---seed-1099.json",
+      "label": "PINN with soft BC | seed=1099",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/199_pinn-with-soft-bc---seed-1099.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "200_baseline--opengoddard",
+      "expected_config_json": "expected_configs/200_baseline--opengoddard.json",
+      "label": "Baseline (OpenGoddard)",
+      "source": "opengoddard",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260415_070903_three_bodies_2d_monte_carlo/configs/200_baseline--opengoddard.json",
+      "source_log_file": "source_logs/200_baseline--opengoddard.log"
+    }
+  ],
+  "record_id": "three_bodies_2d_monte_carlo",
+  "source_run_id": "20260415_070903_three_bodies_2d_monte_carlo"
+}

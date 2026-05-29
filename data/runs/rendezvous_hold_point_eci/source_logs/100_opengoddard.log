@@ -1,0 +1,1100 @@
+---- iteration : 1 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 3.1336421891381e-09
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 2 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 2.2376929917775775e-09
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 3 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 1.9761047943182574e-09
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 4 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 1.8298750539303315e-09
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 5 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 1.7213670099641377e-09
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 6 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 1.499999661350899e-09
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 7 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 1.3889238091162194e-09
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 8 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 1.3599974361993986e-09
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 9 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 1.3226612817555982e-09
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 10 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 1.2992020084419911e-09
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 11 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 1.2360603214086548e-09
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 12 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 1.1855483847512799e-09
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 13 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 1.1484033614478622e-09
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 14 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 1.116379702501653e-09
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 15 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 1.0908922402598919e-09
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 16 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 1.0673370109844831e-09
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 17 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 1.0575875890823369e-09
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 18 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 1.043874994728576e-09
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 19 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 1.0309026510401867e-09
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 20 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 1.01862953984722e-09
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 21 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 1.0105489913806844e-09
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 22 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 9.912224254466723e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 23 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 9.73577545592728e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 24 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 9.686475399445902e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 25 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 9.485690486463482e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 26 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 9.301604010776338e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 27 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 9.239524765273364e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 28 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 9.164886091413739e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 29 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 9.094854717217181e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 30 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 9.036893674702564e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 31 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 8.996827042280275e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 32 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 8.495045432915502e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 33 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 8.118425425941141e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 34 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 7.933552645613327e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 35 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 7.766207236630067e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 36 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 7.711211035395105e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 37 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 7.666692169974242e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 38 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 7.644527090405614e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 39 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 7.614891955323517e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 40 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 7.576641369870005e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 41 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 7.544840461648644e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 42 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 7.510158776306227e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 43 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 7.477748834022718e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 44 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 7.444286820067922e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 45 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 7.412631292970011e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 46 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 7.380023188010227e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 47 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 7.349055772138415e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 48 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 7.317173974291392e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 49 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 7.286809739055695e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 50 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 7.255562153922149e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 51 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 7.225833280699212e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 52 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 7.195318172591217e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 53 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 7.166177145647103e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 54 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 7.136296066428098e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 55 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 7.107865309123876e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 56 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 7.078731383526668e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 57 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 7.05079334886792e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 58 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 7.022189440941378e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 59 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.994882055522873e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 60 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.966968702864449e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 61 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.940243875615431e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 62 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.912935060790651e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 63 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.900050994857688e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 64 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.873214428046475e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 65 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.846799487971107e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 66 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.821625884968665e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 67 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.79697948683521e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 68 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.773523564052331e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 69 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.750328845673325e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 70 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.730457599139358e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 71 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.711627669832342e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 72 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.697658694934119e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 73 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.686324524582007e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 74 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.634997581835234e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 75 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.585672219246165e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 76 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.54060361706979e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 77 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.496588793192597e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 78 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.459560477157882e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 79 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.422662543612061e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 80 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.388753088229719e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 81 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.354721176915289e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 82 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.322611840528912e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 83 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.289996448732651e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 84 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.261753361586431e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 85 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.233687687214231e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 86 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.214820805063908e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 87 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.197345829802041e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 88 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.185803171235954e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 89 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.174384250076285e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 90 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.163645690647996e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 91 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.152415616706344e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00000
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 92 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.142983677953676e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00001
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 93 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.134456742431785e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00001
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 94 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.125406914024936e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00001
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 95 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.116475675756383e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00001
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 96 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.107836629244584e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00001
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 97 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.099310036485598e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00001
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 98 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.090911229260373e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00001
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 99 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.082630420562815e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00001
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+
+---- iteration : 100 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.074433297005702e-10
+            Iterations: 25
+            Function evaluations: 15050
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 900.00001
+hold_rho: 6878.03000
+hold_alpha: 0.99613
+

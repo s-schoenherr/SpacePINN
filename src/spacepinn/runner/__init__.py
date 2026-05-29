@@ -4,9 +4,11 @@ import copy
 import pickle
 from typing import Any
 
+import numpy as np
 import torch
 
 from .context import RunCollectionContext, RunContext
+from .context.common import _to_jsonable
 from .execution import execute_single_experiment
 from .loading import load_run
 from .runtime import _prepare_runtime_config
@@ -23,7 +25,87 @@ _PLOTTING_ENTRY_KEYS = {
     "zorder",
 }
 
+def _tensor_scalar_or_list(value: Any) -> Any:
+    if value is None:
+        return None
+    if isinstance(value, torch.nn.Parameter):
+        value = value.detach()
+    if isinstance(value, torch.Tensor):
+        if value.numel() == 1:
+            return float(value.detach().cpu().item())
+        return value.detach().cpu().numpy().tolist()
+    try:
+        array = np.asarray(value, dtype=np.float64)
+    except Exception:
+        return _to_jsonable(value)
+    if array.ndim == 0:
+        return float(array.item())
+    return array.tolist()
 
+
+def _scenario_initial_guess(scenario: dict[str, Any] | None) -> dict[str, Any] | None:
+    if not isinstance(scenario, dict):
+        return None
+    keys = [
+        key
+        for key in scenario.keys()
+        if "guess" in key or "initial" in key
+    ]
+    if not keys:
+        return None
+    return {key: _to_jsonable(scenario[key]) for key in sorted(keys)}
+
+
+def _final_trainable_parameters(config_runtime: dict[str, Any]) -> dict[str, Any] | None:
+    params = config_runtime.get("extra_parameters", {})
+    if not isinstance(params, dict) or not params:
+        return None
+    return {str(name): _tensor_scalar_or_list(param) for name, param in params.items()}
+
+
+def _result_terminal_state(result: Any) -> dict[str, Any]:
+    payload: dict[str, Any] = {
+        "coordinate_system": getattr(result, "coordinate_system", None),
+        "t_total_final": getattr(result, "t_total", None),
+    }
+    for name, attr in (
+        ("r0_actual", "r"),
+        ("v0_actual", "v"),
+    ):
+        values = getattr(result, attr, None)
+        if values is not None:
+            array = np.asarray(values)
+            if array.ndim >= 2 and array.shape[0] >= 1:
+                payload[name] = _tensor_scalar_or_list(array[0])
+    for name, attr in (
+        ("r_final", "r"),
+        ("v_final", "v"),
+        ("a_final", "a"),
+        ("F_final", "F"),
+        ("G_final", "G"),
+    ):
+        values = getattr(result, attr, None)
+        if values is not None:
+            array = np.asarray(values)
+            if array.ndim >= 2 and array.shape[0] >= 1:
+                payload[name] = _tensor_scalar_or_list(array[-1])
+    if getattr(result, "r0", None) is not None:
+        payload["r0_target"] = _tensor_scalar_or_list(getattr(result, "r0"))
+    if getattr(result, "rN", None) is not None:
+        payload["rN_target"] = _tensor_scalar_or_list(getattr(result, "rN"))
+    if getattr(result, "delta_v", None) is not None:
+        payload["delta_v"] = float(getattr(result, "delta_v"))
+    return payload
+
+
+def _augment_config_with_run_state(config_runtime: dict[str, Any], result: Any) -> dict[str, Any]:
+    augmented = copy.deepcopy(config_runtime)
+    augmented["resolved_run_state"] = {
+        "initial_guess": _scenario_initial_guess(augmented.get("scenario")),
+        "final_trainable_parameters": _final_trainable_parameters(config_runtime),
+        "terminal_state": _result_terminal_state(result),
+    }
+    return augmented
 def run_experiment(config: dict[str, Any], model=None, run_root: str = "runs") -> dict[str, Any]:
     config_runtime = _prepare_runtime_config(copy.deepcopy(config))
     run_context = RunContext(
@@ -35,6 +117,8 @@ def run_experiment(config: dict[str, Any], model=None, run_root: str = "runs") -
 
     try:
         model, result = execute_single_experiment(config_runtime, model=model)
+        config_runtime = _augment_config_with_run_state(config_runtime, result)
+        run_context.update_config(config_runtime)
 
         model_path = run_context.model_dir / "model_state_dict.pt"
         torch.save(model.state_dict(), model_path)
@@ -88,6 +172,7 @@ def run_experiment_collection(
         for config in configs:
             config_runtime = _prepare_runtime_config(copy.deepcopy(config))
             model, result = execute_single_experiment(config_runtime)
+            config_runtime = _augment_config_with_run_state(config_runtime, result)
             collection_context.add_entry(
                 label=config_runtime["label"],
                 result=result,
@@ -114,6 +199,8 @@ def run_experiment_collection(
             additional_result = entry["result"]
             additional_model = entry.get("model")
             additional_config = copy.deepcopy(entry.get("config")) if entry.get("config") is not None else None
+            if additional_config is not None:
+                additional_config = _augment_config_with_run_state(additional_config, additional_result)
             additional_source = entry.get("source", "external")
             additional_plotting = dict(entry.get("plotting", {}))
             for key in _PLOTTING_ENTRY_KEYS:

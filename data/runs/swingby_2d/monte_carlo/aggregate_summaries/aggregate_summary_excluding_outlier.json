@@ -1,0 +1,45 @@
+{
+  "run_id": "20260415_070903_three_bodies_2d_monte_carlo",
+  "excluded_labels": [
+    "PINN with soft BC | seed=1052"
+  ],
+  "baseline": {
+    "label": "Baseline (OpenGoddard)",
+    "delta_v": 9.756618453879082e-08,
+    "runtime_seconds": 34.720853000000005,
+    "solver": {
+      "backend": "OpenGoddard",
+      "converged": true,
+      "ftol": 1e-11,
+      "message": "Optimization terminated successfully",
+      "objective_value": 1.5689083198303038e-13,
+      "outer_iteration_budget": 100,
+      "outer_iterations_completed": 5,
+      "slsqp_maxiter": 25,
+      "status_code": 0,
+      "stopped_reason": "converged"
+    }
+  },
+  "groups": [
+    {
+      "label": "PINN with exact BC",
+      "n": 100,
+      "delta_v_mean": 0.0020573976519517602,
+      "delta_v_variance_sample": 5.597557081040103e-07,
+      "runtime_seconds_mean": 23.509598680000003,
+      "relative_mean_improvement_vs_baseline": -21086.200054787125,
+      "delta_v_min": 0.0010134781477972865,
+      "delta_v_max": 0.00648061279207468
+    },
+    {
+      "label": "PINN with soft BC",
+      "n": 99,
+      "delta_v_mean": 0.005835935374665441,
+      "delta_v_variance_sample": 8.759402069161067e-06,
+      "runtime_seconds_mean": 30.69913165656566,
+      "relative_mean_improvement_vs_baseline": -59814.14396870939,
+      "delta_v_min": 0.002695193514227867,
+      "delta_v_max": 0.02093559317290783
+    }
+  ]
+}

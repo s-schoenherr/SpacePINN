@@ -1,0 +1,3434 @@
+{
+  "entries": [
+    {
+      "entry_id": "00_pinn-with-exact-bc---seed-1000",
+      "label": "PINN with exact BC | seed=1000",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0024774211924523115,
+        "epochs_total": 4330,
+        "final_loss": 6.929751179995947e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 25.024548,
+        "solver": null,
+        "t_total": 1.17295241355896
+      }
+    },
+    {
+      "entry_id": "01_pinn-with-soft-bc---seed-1000",
+      "label": "PINN with soft BC | seed=1000",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00019661606347654015,
+        "boundary_error_start": 0.00028269056929275393,
+        "delta_v": 0.00444163428619504,
+        "epochs_total": 5458,
+        "final_loss": 8.613151294412091e-06,
+        "final_loss_bc": 1.9204852819143525e-08,
+        "final_loss_physics": 8.593946404289454e-06,
+        "runtime_seconds": 25.952594000000005,
+        "solver": null,
+        "t_total": 1.6748117208480835
+      }
+    },
+    {
+      "entry_id": "02_pinn-with-exact-bc---seed-1001",
+      "label": "PINN with exact BC | seed=1001",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0014285814249888062,
+        "epochs_total": 4142,
+        "final_loss": 1.1208676369278692e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 22.050237999999993,
+        "solver": null,
+        "t_total": 1.4789683818817139
+      }
+    },
+    {
+      "entry_id": "03_pinn-with-soft-bc---seed-1001",
+      "label": "PINN with soft BC | seed=1001",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00047499092761427164,
+        "boundary_error_start": 0.0005063266144134104,
+        "delta_v": 0.007455980405211449,
+        "epochs_total": 5228,
+        "final_loss": 1.0066162758448627e-05,
+        "final_loss_bc": 7.806612245531142e-08,
+        "final_loss_physics": 9.988096280721948e-06,
+        "runtime_seconds": 26.330330000000004,
+        "solver": null,
+        "t_total": 2.6753242015838623
+      }
+    },
+    {
+      "entry_id": "04_pinn-with-exact-bc---seed-1002",
+      "label": "PINN with exact BC | seed=1002",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001663045841269195,
+        "epochs_total": 3643,
+        "final_loss": 3.5447528716758825e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 22.851844,
+        "solver": null,
+        "t_total": 1.0933281183242798
+      }
+    },
+    {
+      "entry_id": "05_pinn-with-soft-bc---seed-1002",
+      "label": "PINN with soft BC | seed=1002",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 8.802215597825125e-05,
+        "boundary_error_start": 0.00018103112233802676,
+        "delta_v": 0.00279415724799037,
+        "epochs_total": 5630,
+        "final_loss": 3.943575393350329e-06,
+        "final_loss_bc": 6.55995346932059e-09,
+        "final_loss_physics": 3.937015662813792e-06,
+        "runtime_seconds": 31.857545000000002,
+        "solver": null,
+        "t_total": 1.61617910861969
+      }
+    },
+    {
+      "entry_id": "06_pinn-with-exact-bc---seed-1003",
+      "label": "PINN with exact BC | seed=1003",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001573867746628821,
+        "epochs_total": 3868,
+        "final_loss": 1.5705227269791067e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 22.201168,
+        "solver": null,
+        "t_total": 1.3863381147384644
+      }
+    },
+    {
+      "entry_id": "07_pinn-with-soft-bc---seed-1003",
+      "label": "PINN with soft BC | seed=1003",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0013167865108698606,
+        "boundary_error_start": 0.0013819967862218618,
+        "delta_v": 0.012292636558413506,
+        "epochs_total": 4822,
+        "final_loss": 6.314957136055455e-05,
+        "final_loss_bc": 5.902624593545625e-07,
+        "final_loss_physics": 6.255930929910392e-05,
+        "runtime_seconds": 22.814714000000002,
+        "solver": null,
+        "t_total": 1.8064792156219482
+      }
+    },
+    {
+      "entry_id": "08_pinn-with-exact-bc---seed-1004",
+      "label": "PINN with exact BC | seed=1004",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0020023356191813946,
+        "epochs_total": 3990,
+        "final_loss": 2.2138517579151085e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 21.625577,
+        "solver": null,
+        "t_total": 1.5321398973464966
+      }
+    },
+    {
+      "entry_id": "09_pinn-with-soft-bc---seed-1004",
+      "label": "PINN with soft BC | seed=1004",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00017605828179512173,
+        "boundary_error_start": 9.289226727560163e-05,
+        "delta_v": 0.004283640533685684,
+        "epochs_total": 6009,
+        "final_loss": 7.86630334914662e-06,
+        "final_loss_bc": 6.4262271060044895e-09,
+        "final_loss_physics": 7.859876859583892e-06,
+        "runtime_seconds": 29.36209799999999,
+        "solver": null,
+        "t_total": 1.704172134399414
+      }
+    },
+    {
+      "entry_id": "10_pinn-with-exact-bc---seed-1005",
+      "label": "PINN with exact BC | seed=1005",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0020363416988402605,
+        "epochs_total": 3852,
+        "final_loss": 4.558556156553095e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.657246999999998,
+        "solver": null,
+        "t_total": 1.1260812282562256
+      }
+    },
+    {
+      "entry_id": "11_pinn-with-soft-bc---seed-1005",
+      "label": "PINN with soft BC | seed=1005",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0001436987950000912,
+        "boundary_error_start": 0.0003467127971816808,
+        "delta_v": 0.005456944461911917,
+        "epochs_total": 5342,
+        "final_loss": 1.2797971976397093e-05,
+        "final_loss_bc": 2.2824975687285587e-08,
+        "final_loss_physics": 1.27751472973614e-05,
+        "runtime_seconds": 30.088835000000003,
+        "solver": null,
+        "t_total": 1.7426080703735352
+      }
+    },
+    {
+      "entry_id": "12_pinn-with-exact-bc---seed-1006",
+      "label": "PINN with exact BC | seed=1006",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0016752260271459818,
+        "epochs_total": 4057,
+        "final_loss": 1.7041040791809792e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 23.194299,
+        "solver": null,
+        "t_total": 1.4153742790222168
+      }
+    },
+    {
+      "entry_id": "13_pinn-with-soft-bc---seed-1006",
+      "label": "PINN with soft BC | seed=1006",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0001756387937348336,
+        "boundary_error_start": 0.00027943452005274594,
+        "delta_v": 0.00552996713668108,
+        "epochs_total": 4988,
+        "final_loss": 8.423002327617723e-06,
+        "final_loss_bc": 1.7646774708168778e-08,
+        "final_loss_physics": 8.405355401919223e-06,
+        "runtime_seconds": 23.541104,
+        "solver": null,
+        "t_total": 2.2307660579681396
+      }
+    },
+    {
+      "entry_id": "14_pinn-with-exact-bc---seed-1007",
+      "label": "PINN with exact BC | seed=1007",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0020641142036765814,
+        "epochs_total": 3541,
+        "final_loss": 5.485055226017721e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 18.789255000000004,
+        "solver": null,
+        "t_total": 1.0738683938980103
+      }
+    },
+    {
+      "entry_id": "15_pinn-with-soft-bc---seed-1007",
+      "label": "PINN with soft BC | seed=1007",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00034640697413124144,
+        "boundary_error_start": 0.00037042578333057463,
+        "delta_v": 0.0043973359279334545,
+        "epochs_total": 5231,
+        "final_loss": 6.631357337028021e-06,
+        "final_loss_bc": 4.169487510807812e-08,
+        "final_loss_physics": 6.589662461919943e-06,
+        "runtime_seconds": 24.714765999999997,
+        "solver": null,
+        "t_total": 2.2495293617248535
+      }
+    },
+    {
+      "entry_id": "16_pinn-with-exact-bc---seed-1008",
+      "label": "PINN with exact BC | seed=1008",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0015741053503006697,
+        "epochs_total": 4372,
+        "final_loss": 1.483595383433567e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 27.545142999999996,
+        "solver": null,
+        "t_total": 1.521742582321167
+      }
+    },
+    {
+      "entry_id": "17_pinn-with-soft-bc---seed-1008",
+      "label": "PINN with soft BC | seed=1008",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0001514320756541565,
+        "boundary_error_start": 0.0005601656739600003,
+        "delta_v": 0.007578857243061066,
+        "epochs_total": 6593,
+        "final_loss": 1.1058264135499485e-05,
+        "final_loss_bc": 5.4590088893746724e-08,
+        "final_loss_physics": 1.100367444450967e-05,
+        "runtime_seconds": 37.982183000000006,
+        "solver": null,
+        "t_total": 2.6179683208465576
+      }
+    },
+    {
+      "entry_id": "18_pinn-with-exact-bc---seed-1009",
+      "label": "PINN with exact BC | seed=1009",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0017309797694906592,
+        "epochs_total": 4135,
+        "final_loss": 1.56113674165681e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 23.742397,
+        "solver": null,
+        "t_total": 1.6755554676055908
+      }
+    },
+    {
+      "entry_id": "19_pinn-with-soft-bc---seed-1009",
+      "label": "PINN with soft BC | seed=1009",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 7.023160287644714e-05,
+        "boundary_error_start": 0.0004888478433713317,
+        "delta_v": 0.006145141553133726,
+        "epochs_total": 6227,
+        "final_loss": 1.0391263458586764e-05,
+        "final_loss_bc": 3.9484753244778403e-08,
+        "final_loss_physics": 1.0351778655603994e-05,
+        "runtime_seconds": 29.641175000000004,
+        "solver": null,
+        "t_total": 2.041724920272827
+      }
+    },
+    {
+      "entry_id": "20_pinn-with-exact-bc---seed-1010",
+      "label": "PINN with exact BC | seed=1010",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.002200082177296281,
+        "epochs_total": 3652,
+        "final_loss": 5.366673121898202e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 19.261877,
+        "solver": null,
+        "t_total": 1.0677003860473633
+      }
+    },
+    {
+      "entry_id": "21_pinn-with-soft-bc---seed-1010",
+      "label": "PINN with soft BC | seed=1010",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00013955436588730663,
+        "boundary_error_start": 0.00018411953351460397,
+        "delta_v": 0.004881149157881737,
+        "epochs_total": 6663,
+        "final_loss": 4.822288246941753e-06,
+        "final_loss_bc": 8.63658122796096e-09,
+        "final_loss_physics": 4.813651685253717e-06,
+        "runtime_seconds": 35.358898999999994,
+        "solver": null,
+        "t_total": 2.5338196754455566
+      }
+    },
+    {
+      "entry_id": "22_pinn-with-exact-bc---seed-1011",
+      "label": "PINN with exact BC | seed=1011",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0016023594653233886,
+        "epochs_total": 4191,
+        "final_loss": 3.051304929613252e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 26.90114100000001,
+        "solver": null,
+        "t_total": 1.1236909627914429
+      }
+    },
+    {
+      "entry_id": "23_pinn-with-soft-bc---seed-1011",
+      "label": "PINN with soft BC | seed=1011",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00022745189198758453,
+        "boundary_error_start": 0.0005594971007667482,
+        "delta_v": 0.004339378792792559,
+        "epochs_total": 5565,
+        "final_loss": 8.628836440038867e-06,
+        "final_loss_bc": 5.905942046524615e-08,
+        "final_loss_physics": 8.569776582589839e-06,
+        "runtime_seconds": 31.566247000000004,
+        "solver": null,
+        "t_total": 1.625818133354187
+      }
+    },
+    {
+      "entry_id": "24_pinn-with-exact-bc---seed-1012",
+      "label": "PINN with exact BC | seed=1012",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0015356375370174646,
+        "epochs_total": 4264,
+        "final_loss": 1.7856087879408733e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.593456999999997,
+        "solver": null,
+        "t_total": 1.2815935611724854
+      }
+    },
+    {
+      "entry_id": "25_pinn-with-soft-bc---seed-1012",
+      "label": "PINN with soft BC | seed=1012",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0002716369344852865,
+        "boundary_error_start": 0.0003175929596181959,
+        "delta_v": 0.004812185186892748,
+        "epochs_total": 6795,
+        "final_loss": 8.466653525829315e-06,
+        "final_loss_bc": 2.8277330699211234e-08,
+        "final_loss_physics": 8.438376426056493e-06,
+        "runtime_seconds": 32.817155,
+        "solver": null,
+        "t_total": 2.0095858573913574
+      }
+    },
+    {
+      "entry_id": "26_pinn-with-exact-bc---seed-1013",
+      "label": "PINN with exact BC | seed=1013",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0029975210782140493,
+        "epochs_total": 3712,
+        "final_loss": 1.1211771379748825e-05,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 19.157098999999995,
+        "solver": null,
+        "t_total": 0.9764653444290161
+      }
+    },
+    {
+      "entry_id": "27_pinn-with-soft-bc---seed-1013",
+      "label": "PINN with soft BC | seed=1013",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00011536745296325535,
+        "boundary_error_start": 0.00024023011792451143,
+        "delta_v": 0.004053272772580385,
+        "epochs_total": 5361,
+        "final_loss": 5.938289177720435e-06,
+        "final_loss_bc": 1.1500194574409761e-08,
+        "final_loss_physics": 5.926789071963867e-06,
+        "runtime_seconds": 28.404563999999993,
+        "solver": null,
+        "t_total": 1.979034423828125
+      }
+    },
+    {
+      "entry_id": "28_pinn-with-exact-bc---seed-1014",
+      "label": "PINN with exact BC | seed=1014",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0028052087873220444,
+        "epochs_total": 4160,
+        "final_loss": 6.328114523057593e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 26.738784999999993,
+        "solver": null,
+        "t_total": 1.2379742860794067
+      }
+    },
+    {
+      "entry_id": "29_pinn-with-soft-bc---seed-1014",
+      "label": "PINN with soft BC | seed=1014",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00012512174725998193,
+        "boundary_error_start": 6.130443944130093e-05,
+        "delta_v": 0.0027375214267522097,
+        "epochs_total": 5990,
+        "final_loss": 4.455795533431228e-06,
+        "final_loss_bc": 3.1502591646415112e-09,
+        "final_loss_physics": 4.452645498531638e-06,
+        "runtime_seconds": 34.43306100000001,
+        "solver": null,
+        "t_total": 1.5363097190856934
+      }
+    },
+    {
+      "entry_id": "30_pinn-with-exact-bc---seed-1015",
+      "label": "PINN with exact BC | seed=1015",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0021032162476330996,
+        "epochs_total": 3849,
+        "final_loss": 1.7214932768183644e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 22.016253000000003,
+        "solver": null,
+        "t_total": 1.7213410139083862
+      }
+    },
+    {
+      "entry_id": "31_pinn-with-soft-bc---seed-1015",
+      "label": "PINN with soft BC | seed=1015",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0005592006491497159,
+        "boundary_error_start": 0.00018780895334202796,
+        "delta_v": 0.010893266648054123,
+        "epochs_total": 6713,
+        "final_loss": 3.750053292606026e-05,
+        "final_loss_bc": 5.635736144427028e-08,
+        "final_loss_physics": 3.74441769963596e-05,
+        "runtime_seconds": 32.215392,
+        "solver": null,
+        "t_total": 2.0250167846679688
+      }
+    },
+    {
+      "entry_id": "32_pinn-with-exact-bc---seed-1016",
+      "label": "PINN with exact BC | seed=1016",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0016783263999968767,
+        "epochs_total": 3643,
+        "final_loss": 3.1329095691035036e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 19.18448200000001,
+        "solver": null,
+        "t_total": 1.1504849195480347
+      }
+    },
+    {
+      "entry_id": "33_pinn-with-soft-bc---seed-1016",
+      "label": "PINN with soft BC | seed=1016",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0005218202131800354,
+        "boundary_error_start": 0.0004350384697318077,
+        "delta_v": 0.014921213500201702,
+        "epochs_total": 5591,
+        "final_loss": 3.179703344358131e-05,
+        "final_loss_bc": 7.481262542796685e-08,
+        "final_loss_physics": 3.172222204739228e-05,
+        "runtime_seconds": 29.011340999999987,
+        "solver": null,
+        "t_total": 2.8934578895568848
+      }
+    },
+    {
+      "entry_id": "34_pinn-with-exact-bc---seed-1017",
+      "label": "PINN with exact BC | seed=1017",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001487570465542376,
+        "epochs_total": 4393,
+        "final_loss": 1.0094720437336946e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 28.39645399999999,
+        "solver": null,
+        "t_total": 1.6424599885940552
+      }
+    },
+    {
+      "entry_id": "35_pinn-with-soft-bc---seed-1017",
+      "label": "PINN with soft BC | seed=1017",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00027573201805353165,
+        "boundary_error_start": 0.0007260693819262087,
+        "delta_v": 0.0075145140290260315,
+        "epochs_total": 6390,
+        "final_loss": 1.2989704373467248e-05,
+        "final_loss_bc": 9.772097087079601e-08,
+        "final_loss_physics": 1.2891983715235256e-05,
+        "runtime_seconds": 36.824171999999976,
+        "solver": null,
+        "t_total": 2.641126871109009
+      }
+    },
+    {
+      "entry_id": "36_pinn-with-exact-bc---seed-1018",
+      "label": "PINN with exact BC | seed=1018",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.002880943939089775,
+        "epochs_total": 3653,
+        "final_loss": 5.942559255345259e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 20.618074999999997,
+        "solver": null,
+        "t_total": 1.517209768295288
+      }
+    },
+    {
+      "entry_id": "37_pinn-with-soft-bc---seed-1018",
+      "label": "PINN with soft BC | seed=1018",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0010438114404678345,
+        "boundary_error_start": 0.0017406453844159842,
+        "delta_v": 0.02093559317290783,
+        "epochs_total": 5183,
+        "final_loss": 7.074927270878106e-05,
+        "final_loss_bc": 6.671248797829321e-07,
+        "final_loss_physics": 7.00821474310942e-05,
+        "runtime_seconds": 24.500726999999998,
+        "solver": null,
+        "t_total": 3.058562994003296
+      }
+    },
+    {
+      "entry_id": "38_pinn-with-exact-bc---seed-1019",
+      "label": "PINN with exact BC | seed=1019",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0022999835200607777,
+        "epochs_total": 3860,
+        "final_loss": 3.838512384390924e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 20.7654,
+        "solver": null,
+        "t_total": 1.2913700342178345
+      }
+    },
+    {
+      "entry_id": "39_pinn-with-soft-bc---seed-1019",
+      "label": "PINN with soft BC | seed=1019",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00026796889142133296,
+        "boundary_error_start": 0.000403130950871855,
+        "delta_v": 0.006506803911179304,
+        "epochs_total": 6182,
+        "final_loss": 1.3588983165391255e-05,
+        "final_loss_bc": 3.7939173580525676e-08,
+        "final_loss_physics": 1.3551043593906797e-05,
+        "runtime_seconds": 29.992477000000008,
+        "solver": null,
+        "t_total": 2.127859115600586
+      }
+    },
+    {
+      "entry_id": "40_pinn-with-exact-bc---seed-1020",
+      "label": "PINN with exact BC | seed=1020",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0022264064755290747,
+        "epochs_total": 4224,
+        "final_loss": 3.1010606562631438e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 27.14013200000001,
+        "solver": null,
+        "t_total": 1.3719735145568848
+      }
+    },
+    {
+      "entry_id": "41_pinn-with-soft-bc---seed-1020",
+      "label": "PINN with soft BC | seed=1020",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00022936990717425942,
+        "boundary_error_start": 0.00039401845424436033,
+        "delta_v": 0.004210130777209997,
+        "epochs_total": 5658,
+        "final_loss": 8.609730684838723e-06,
+        "final_loss_bc": 3.371792800521689e-08,
+        "final_loss_physics": 8.576012987759896e-06,
+        "runtime_seconds": 31.916297,
+        "solver": null,
+        "t_total": 1.75800359249115
+      }
+    },
+    {
+      "entry_id": "42_pinn-with-exact-bc---seed-1021",
+      "label": "PINN with exact BC | seed=1021",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0025203344412148,
+        "epochs_total": 4244,
+        "final_loss": 3.9135761653597e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.266918999999998,
+        "solver": null,
+        "t_total": 1.412018060684204
+      }
+    },
+    {
+      "entry_id": "43_pinn-with-soft-bc---seed-1021",
+      "label": "PINN with soft BC | seed=1021",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0002649816742632538,
+        "boundary_error_start": 0.0001991783210542053,
+        "delta_v": 0.0050830417312681675,
+        "epochs_total": 6503,
+        "final_loss": 8.548081495973747e-06,
+        "final_loss_bc": 1.7807884944431862e-08,
+        "final_loss_physics": 8.530273589713033e-06,
+        "runtime_seconds": 30.868427000000004,
+        "solver": null,
+        "t_total": 2.0351812839508057
+      }
+    },
+    {
+      "entry_id": "44_pinn-with-exact-bc---seed-1022",
+      "label": "PINN with exact BC | seed=1022",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0020116085652261972,
+        "epochs_total": 3918,
+        "final_loss": 3.531767788444995e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 20.417144,
+        "solver": null,
+        "t_total": 1.2641606330871582
+      }
+    },
+    {
+      "entry_id": "45_pinn-with-soft-bc---seed-1022",
+      "label": "PINN with soft BC | seed=1022",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 4.840286055696197e-05,
+        "boundary_error_start": 0.00032544159330427647,
+        "delta_v": 0.00451359897851944,
+        "epochs_total": 5799,
+        "final_loss": 9.747888725541998e-06,
+        "final_loss_bc": 1.753519107694501e-08,
+        "final_loss_physics": 9.730353667691816e-06,
+        "runtime_seconds": 31.052133999999995,
+        "solver": null,
+        "t_total": 2.0527431964874268
+      }
+    },
+    {
+      "entry_id": "46_pinn-with-exact-bc---seed-1023",
+      "label": "PINN with exact BC | seed=1023",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.00209627952426672,
+        "epochs_total": 4230,
+        "final_loss": 3.4930014862766257e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 26.988731000000016,
+        "solver": null,
+        "t_total": 1.2149510383605957
+      }
+    },
+    {
+      "entry_id": "47_pinn-with-soft-bc---seed-1023",
+      "label": "PINN with soft BC | seed=1023",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00011155454558320343,
+        "boundary_error_start": 0.0007822205079719424,
+        "delta_v": 0.006431779824197292,
+        "epochs_total": 8300,
+        "final_loss": 1.3792019672109745e-05,
+        "final_loss_bc": 1.0107471126730161e-07,
+        "final_loss_physics": 1.3690944797417615e-05,
+        "runtime_seconds": 49.20825399999998,
+        "solver": null,
+        "t_total": 2.0611162185668945
+      }
+    },
+    {
+      "entry_id": "48_pinn-with-exact-bc---seed-1024",
+      "label": "PINN with exact BC | seed=1024",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.002852572128176689,
+        "epochs_total": 3997,
+        "final_loss": 4.8293027248291764e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 22.731936,
+        "solver": null,
+        "t_total": 1.513021469116211
+      }
+    },
+    {
+      "entry_id": "49_pinn-with-soft-bc---seed-1024",
+      "label": "PINN with soft BC | seed=1024",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0005113034276291728,
+        "boundary_error_start": 0.0006225359393283725,
+        "delta_v": 0.004753625951707363,
+        "epochs_total": 5893,
+        "final_loss": 1.0115178156411275e-05,
+        "final_loss_bc": 1.051351077308027e-07,
+        "final_loss_physics": 1.001004329737043e-05,
+        "runtime_seconds": 28.045244999999998,
+        "solver": null,
+        "t_total": 1.7082257270812988
+      }
+    },
+    {
+      "entry_id": "50_pinn-with-exact-bc---seed-1025",
+      "label": "PINN with exact BC | seed=1025",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0017561200074851513,
+        "epochs_total": 4371,
+        "final_loss": 2.873233142963727e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 23.168913000000003,
+        "solver": null,
+        "t_total": 1.2618064880371094
+      }
+    },
+    {
+      "entry_id": "51_pinn-with-soft-bc---seed-1025",
+      "label": "PINN with soft BC | seed=1025",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00033330050064250827,
+        "boundary_error_start": 0.00028508322429843247,
+        "delta_v": 0.0043777949176728725,
+        "epochs_total": 5806,
+        "final_loss": 5.51020139027969e-06,
+        "final_loss_bc": 3.116468150210494e-08,
+        "final_loss_physics": 5.479036644828739e-06,
+        "runtime_seconds": 30.397092,
+        "solver": null,
+        "t_total": 2.0113534927368164
+      }
+    },
+    {
+      "entry_id": "52_pinn-with-exact-bc---seed-1026",
+      "label": "PINN with exact BC | seed=1026",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.00648061279207468,
+        "epochs_total": 3091,
+        "final_loss": 4.819723835680634e-05,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 18.652648,
+        "solver": null,
+        "t_total": 1.0338116884231567
+      }
+    },
+    {
+      "entry_id": "53_pinn-with-soft-bc---seed-1026",
+      "label": "PINN with soft BC | seed=1026",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00010723655577749014,
+        "boundary_error_start": 0.00019659759709611535,
+        "delta_v": 0.00597913796082139,
+        "epochs_total": 5379,
+        "final_loss": 9.315997886005789e-06,
+        "final_loss_bc": 8.129503292764184e-09,
+        "final_loss_physics": 9.307868822361343e-06,
+        "runtime_seconds": 30.122423000000012,
+        "solver": null,
+        "t_total": 2.22064208984375
+      }
+    },
+    {
+      "entry_id": "54_pinn-with-exact-bc---seed-1027",
+      "label": "PINN with exact BC | seed=1027",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0024215460289269686,
+        "epochs_total": 3589,
+        "final_loss": 6.416711130441399e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 20.373252,
+        "solver": null,
+        "t_total": 1.0697963237762451
+      }
+    },
+    {
+      "entry_id": "55_pinn-with-soft-bc---seed-1027",
+      "label": "PINN with soft BC | seed=1027",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00027503588353283703,
+        "boundary_error_start": 0.0003759716637432575,
+        "delta_v": 0.006041510961949825,
+        "epochs_total": 5853,
+        "final_loss": 9.439322639082093e-06,
+        "final_loss_bc": 3.5151586530446366e-08,
+        "final_loss_physics": 9.404170668858569e-06,
+        "runtime_seconds": 28.22741,
+        "solver": null,
+        "t_total": 2.1535837650299072
+      }
+    },
+    {
+      "entry_id": "56_pinn-with-exact-bc---seed-1028",
+      "label": "PINN with exact BC | seed=1028",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0015268555143848062,
+        "epochs_total": 4135,
+        "final_loss": 2.4202804524975363e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 22.190529000000005,
+        "solver": null,
+        "t_total": 1.13486909866333
+      }
+    },
+    {
+      "entry_id": "57_pinn-with-soft-bc---seed-1028",
+      "label": "PINN with soft BC | seed=1028",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00037388046621344984,
+        "boundary_error_start": 0.0003277901269029826,
+        "delta_v": 0.006077496334910393,
+        "epochs_total": 7443,
+        "final_loss": 1.5853702279855497e-05,
+        "final_loss_bc": 4.006071208095818e-08,
+        "final_loss_physics": 1.5813640857231803e-05,
+        "runtime_seconds": 40.12231799999999,
+        "solver": null,
+        "t_total": 1.7255051136016846
+      }
+    },
+    {
+      "entry_id": "58_pinn-with-exact-bc---seed-1029",
+      "label": "PINN with exact BC | seed=1029",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0019937532488256693,
+        "epochs_total": 3957,
+        "final_loss": 3.647043968157959e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 25.19473999999998,
+        "solver": null,
+        "t_total": 1.1643402576446533
+      }
+    },
+    {
+      "entry_id": "59_pinn-with-soft-bc---seed-1029",
+      "label": "PINN with soft BC | seed=1029",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0001839421020122245,
+        "boundary_error_start": 0.000252762547461316,
+        "delta_v": 0.005692843813449144,
+        "epochs_total": 5414,
+        "final_loss": 1.5233911653922405e-05,
+        "final_loss_bc": 1.5839196620959228e-08,
+        "final_loss_physics": 1.521807280369103e-05,
+        "runtime_seconds": 30.733553,
+        "solver": null,
+        "t_total": 1.6573715209960938
+      }
+    },
+    {
+      "entry_id": "60_pinn-with-exact-bc---seed-1030",
+      "label": "PINN with exact BC | seed=1030",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0019045466324314475,
+        "epochs_total": 3703,
+        "final_loss": 4.1537091419741046e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 23.592793999999998,
+        "solver": null,
+        "t_total": 1.054656744003296
+      }
+    },
+    {
+      "entry_id": "61_pinn-with-soft-bc---seed-1030",
+      "label": "PINN with soft BC | seed=1030",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00019192918261978775,
+        "boundary_error_start": 0.00025633713812567294,
+        "delta_v": 0.004056705627590418,
+        "epochs_total": 6512,
+        "final_loss": 8.292116945085581e-06,
+        "final_loss_bc": 1.6598168173231898e-08,
+        "final_loss_physics": 8.275518666778225e-06,
+        "runtime_seconds": 37.955873,
+        "solver": null,
+        "t_total": 1.6841442584991455
+      }
+    },
+    {
+      "entry_id": "62_pinn-with-exact-bc---seed-1031",
+      "label": "PINN with exact BC | seed=1031",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0018088564975187182,
+        "epochs_total": 3905,
+        "final_loss": 3.470235697022872e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 25.231325,
+        "solver": null,
+        "t_total": 1.106259822845459
+      }
+    },
+    {
+      "entry_id": "63_pinn-with-soft-bc---seed-1031",
+      "label": "PINN with soft BC | seed=1031",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0001892479631351307,
+        "boundary_error_start": 0.00022759755665902048,
+        "delta_v": 0.0032042008824646473,
+        "epochs_total": 6320,
+        "final_loss": 4.236367658450035e-06,
+        "final_loss_bc": 1.4203842546578471e-08,
+        "final_loss_physics": 4.222163624945097e-06,
+        "runtime_seconds": 36.778470999999996,
+        "solver": null,
+        "t_total": 1.7759807109832764
+      }
+    },
+    {
+      "entry_id": "64_pinn-with-exact-bc---seed-1032",
+      "label": "PINN with exact BC | seed=1032",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0019333973759785295,
+        "epochs_total": 4163,
+        "final_loss": 4.546096988633508e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.97405200000003,
+        "solver": null,
+        "t_total": 1.113195776939392
+      }
+    },
+    {
+      "entry_id": "65_pinn-with-soft-bc---seed-1032",
+      "label": "PINN with soft BC | seed=1032",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 3.5165579902241006e-05,
+        "boundary_error_start": 0.0001973514154087752,
+        "delta_v": 0.0028018581215292215,
+        "epochs_total": 5296,
+        "final_loss": 2.9451696264004568e-06,
+        "final_loss_bc": 6.513478645331361e-09,
+        "final_loss_physics": 2.9386560527200345e-06,
+        "runtime_seconds": 28.737684,
+        "solver": null,
+        "t_total": 1.9817394018173218
+      }
+    },
+    {
+      "entry_id": "66_pinn-with-exact-bc---seed-1033",
+      "label": "PINN with exact BC | seed=1033",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0022930277045816183,
+        "epochs_total": 3662,
+        "final_loss": 4.501101102505345e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 22.930380999999983,
+        "solver": null,
+        "t_total": 1.2895208597183228
+      }
+    },
+    {
+      "entry_id": "67_pinn-with-soft-bc---seed-1033",
+      "label": "PINN with soft BC | seed=1033",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00041691886144690216,
+        "boundary_error_start": 0.00014580738206859678,
+        "delta_v": 0.0079219751060009,
+        "epochs_total": 5546,
+        "final_loss": 1.582195909577422e-05,
+        "final_loss_bc": 3.157948214038697e-08,
+        "final_loss_physics": 1.579037962073926e-05,
+        "runtime_seconds": 31.14266999999998,
+        "solver": null,
+        "t_total": 2.3562192916870117
+      }
+    },
+    {
+      "entry_id": "68_pinn-with-exact-bc---seed-1034",
+      "label": "PINN with exact BC | seed=1034",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.002579294377937913,
+        "epochs_total": 3819,
+        "final_loss": 4.991283731214935e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.384723000000008,
+        "solver": null,
+        "t_total": 1.3239456415176392
+      }
+    },
+    {
+      "entry_id": "69_pinn-with-soft-bc---seed-1034",
+      "label": "PINN with soft BC | seed=1034",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00010830323299160227,
+        "boundary_error_start": 0.00020069704623892903,
+        "delta_v": 0.0033175216522067785,
+        "epochs_total": 5998,
+        "final_loss": 4.35633273809799e-06,
+        "final_loss_bc": 8.419028141304352e-09,
+        "final_loss_physics": 4.347913545643678e-06,
+        "runtime_seconds": 34.38526900000002,
+        "solver": null,
+        "t_total": 1.6900789737701416
+      }
+    },
+    {
+      "entry_id": "70_pinn-with-exact-bc---seed-1035",
+      "label": "PINN with exact BC | seed=1035",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0028174417093396187,
+        "epochs_total": 3968,
+        "final_loss": 6.921736257936573e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 23.104077000000018,
+        "solver": null,
+        "t_total": 1.2830218076705933
+      }
+    },
+    {
+      "entry_id": "71_pinn-with-soft-bc---seed-1035",
+      "label": "PINN with soft BC | seed=1035",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0006035161786712706,
+        "boundary_error_start": 0.0003123143396805972,
+        "delta_v": 0.004304736852645874,
+        "epochs_total": 7470,
+        "final_loss": 8.666744179208763e-06,
+        "final_loss_bc": 7.48581001630555e-08,
+        "final_loss_physics": 8.591886398789939e-06,
+        "runtime_seconds": 42.884829999999965,
+        "solver": null,
+        "t_total": 1.745617389678955
+      }
+    },
+    {
+      "entry_id": "72_pinn-with-exact-bc---seed-1036",
+      "label": "PINN with exact BC | seed=1036",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0014388555428013206,
+        "epochs_total": 3751,
+        "final_loss": 2.260088876937516e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 23.712728999999996,
+        "solver": null,
+        "t_total": 1.1141666173934937
+      }
+    },
+    {
+      "entry_id": "73_pinn-with-soft-bc---seed-1036",
+      "label": "PINN with soft BC | seed=1036",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00012188543769298121,
+        "boundary_error_start": 0.0001379564346279949,
+        "delta_v": 0.002780195325613022,
+        "epochs_total": 5818,
+        "final_loss": 4.218158210278489e-06,
+        "final_loss_bc": 5.4870836763143416e-09,
+        "final_loss_physics": 4.212671228742693e-06,
+        "runtime_seconds": 33.26138,
+        "solver": null,
+        "t_total": 1.4752779006958008
+      }
+    },
+    {
+      "entry_id": "74_pinn-with-exact-bc---seed-1037",
+      "label": "PINN with exact BC | seed=1037",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001622371724806726,
+        "epochs_total": 3670,
+        "final_loss": 3.0390945084945997e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 23.346168000000006,
+        "solver": null,
+        "t_total": 1.1377639770507812
+      }
+    },
+    {
+      "entry_id": "75_pinn-with-soft-bc---seed-1037",
+      "label": "PINN with soft BC | seed=1037",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00028939155163243413,
+        "boundary_error_start": 0.0003783067804761231,
+        "delta_v": 0.005444121081382036,
+        "epochs_total": 5334,
+        "final_loss": 1.2650350981857628e-05,
+        "final_loss_bc": 3.6741948150620374e-08,
+        "final_loss_physics": 1.2613609214895405e-05,
+        "runtime_seconds": 30.227442999999994,
+        "solver": null,
+        "t_total": 2.038809061050415
+      }
+    },
+    {
+      "entry_id": "76_pinn-with-exact-bc---seed-1038",
+      "label": "PINN with exact BC | seed=1038",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0020732153207063675,
+        "epochs_total": 4007,
+        "final_loss": 3.7900981624261476e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 23.598938999999973,
+        "solver": null,
+        "t_total": 1.243652582168579
+      }
+    },
+    {
+      "entry_id": "77_pinn-with-soft-bc---seed-1038",
+      "label": "PINN with soft BC | seed=1038",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 6.941103492863476e-05,
+        "boundary_error_start": 0.00032126173027791083,
+        "delta_v": 0.004921004641801119,
+        "epochs_total": 5067,
+        "final_loss": 6.597648734896211e-06,
+        "final_loss_bc": 1.750385791865483e-08,
+        "final_loss_physics": 6.58014505461324e-06,
+        "runtime_seconds": 28.521792000000005,
+        "solver": null,
+        "t_total": 2.24428653717041
+      }
+    },
+    {
+      "entry_id": "78_pinn-with-exact-bc---seed-1039",
+      "label": "PINN with exact BC | seed=1039",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0016935173189267516,
+        "epochs_total": 4030,
+        "final_loss": 2.9176546831877204e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 25.665740999999997,
+        "solver": null,
+        "t_total": 1.1007025241851807
+      }
+    },
+    {
+      "entry_id": "79_pinn-with-soft-bc---seed-1039",
+      "label": "PINN with soft BC | seed=1039",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00012666360998991877,
+        "boundary_error_start": 0.00023256728309206665,
+        "delta_v": 0.003718063933774829,
+        "epochs_total": 5991,
+        "final_loss": 3.5594309792941203e-06,
+        "final_loss_bc": 1.1361009910615394e-08,
+        "final_loss_physics": 3.548070026226924e-06,
+        "runtime_seconds": 34.229547,
+        "solver": null,
+        "t_total": 2.6439578533172607
+      }
+    },
+    {
+      "entry_id": "80_pinn-with-exact-bc---seed-1040",
+      "label": "PINN with exact BC | seed=1040",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0014659295557066798,
+        "epochs_total": 4015,
+        "final_loss": 2.4839036996127106e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 25.76158000000001,
+        "solver": null,
+        "t_total": 1.1675678491592407
+      }
+    },
+    {
+      "entry_id": "81_pinn-with-soft-bc---seed-1040",
+      "label": "PINN with soft BC | seed=1040",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 9.246471017831936e-05,
+        "boundary_error_start": 0.0005071617779321969,
+        "delta_v": 0.004309582524001598,
+        "epochs_total": 6200,
+        "final_loss": 7.71929080656264e-06,
+        "final_loss_bc": 4.30193516365307e-08,
+        "final_loss_physics": 7.67627170716878e-06,
+        "runtime_seconds": 35.84676299999998,
+        "solver": null,
+        "t_total": 2.071530818939209
+      }
+    },
+    {
+      "entry_id": "82_pinn-with-exact-bc---seed-1041",
+      "label": "PINN with exact BC | seed=1041",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0017506757285445929,
+        "epochs_total": 4289,
+        "final_loss": 2.7416672310209833e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 25.68924800000002,
+        "solver": null,
+        "t_total": 1.2915116548538208
+      }
+    },
+    {
+      "entry_id": "83_pinn-with-soft-bc---seed-1041",
+      "label": "PINN with soft BC | seed=1041",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0002839163935277611,
+        "boundary_error_start": 0.00020178848353680223,
+        "delta_v": 0.0028750102501362562,
+        "epochs_total": 6418,
+        "final_loss": 4.883929250354413e-06,
+        "final_loss_bc": 1.965897666877936e-08,
+        "final_loss_physics": 4.86427006762824e-06,
+        "runtime_seconds": 35.89097099999998,
+        "solver": null,
+        "t_total": 1.7093844413757324
+      }
+    },
+    {
+      "entry_id": "84_pinn-with-exact-bc---seed-1042",
+      "label": "PINN with exact BC | seed=1042",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0026119519025087357,
+        "epochs_total": 3973,
+        "final_loss": 4.8271958803525195e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 25.196818999999977,
+        "solver": null,
+        "t_total": 1.4510910511016846
+      }
+    },
+    {
+      "entry_id": "85_pinn-with-soft-bc---seed-1042",
+      "label": "PINN with soft BC | seed=1042",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00019760977011173964,
+        "boundary_error_start": 0.0006213426240719855,
+        "delta_v": 0.005277673248201609,
+        "epochs_total": 5322,
+        "final_loss": 1.5678129784646444e-05,
+        "final_loss_bc": 6.886535430794538e-08,
+        "final_loss_physics": 1.56092646648176e-05,
+        "runtime_seconds": 29.894261,
+        "solver": null,
+        "t_total": 1.5765159130096436
+      }
+    },
+    {
+      "entry_id": "86_pinn-with-exact-bc---seed-1043",
+      "label": "PINN with exact BC | seed=1043",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0019606556743383408,
+        "epochs_total": 4013,
+        "final_loss": 3.924065822502598e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 25.907117,
+        "solver": null,
+        "t_total": 1.1546200513839722
+      }
+    },
+    {
+      "entry_id": "87_pinn-with-soft-bc---seed-1043",
+      "label": "PINN with soft BC | seed=1043",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00033905243617482483,
+        "boundary_error_start": 0.00017316888261120766,
+        "delta_v": 0.004293319769203663,
+        "epochs_total": 5675,
+        "final_loss": 5.172286819288274e-06,
+        "final_loss_bc": 2.3470329679753377e-08,
+        "final_loss_physics": 5.148816399014322e-06,
+        "runtime_seconds": 32.31437299999999,
+        "solver": null,
+        "t_total": 2.160203218460083
+      }
+    },
+    {
+      "entry_id": "88_pinn-with-exact-bc---seed-1044",
+      "label": "PINN with exact BC | seed=1044",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0016427836380898952,
+        "epochs_total": 4362,
+        "final_loss": 1.4285827774074278e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 26.31543099999999,
+        "solver": null,
+        "t_total": 1.508029818534851
+      }
+    },
+    {
+      "entry_id": "89_pinn-with-soft-bc---seed-1044",
+      "label": "PINN with soft BC | seed=1044",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 9.35538555495441e-05,
+        "boundary_error_start": 0.0004637349920812994,
+        "delta_v": 0.0038966566789895296,
+        "epochs_total": 5101,
+        "final_loss": 8.781191354501061e-06,
+        "final_loss_bc": 3.6262097324879505e-08,
+        "final_loss_physics": 8.744928891246673e-06,
+        "runtime_seconds": 28.509334999999965,
+        "solver": null,
+        "t_total": 1.659590244293213
+      }
+    },
+    {
+      "entry_id": "90_pinn-with-exact-bc---seed-1045",
+      "label": "PINN with exact BC | seed=1045",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.002490960992872715,
+        "epochs_total": 3853,
+        "final_loss": 2.5507406462565996e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.212041999999997,
+        "solver": null,
+        "t_total": 1.7649120092391968
+      }
+    },
+    {
+      "entry_id": "91_pinn-with-soft-bc---seed-1045",
+      "label": "PINN with soft BC | seed=1045",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00014973993529565632,
+        "boundary_error_start": 0.00020293793932069093,
+        "delta_v": 0.004341762512922287,
+        "epochs_total": 5935,
+        "final_loss": 6.599297648790525e-06,
+        "final_loss_bc": 1.0304813002903757e-08,
+        "final_loss_physics": 6.588992619072087e-06,
+        "runtime_seconds": 34.385283999999984,
+        "solver": null,
+        "t_total": 2.1338865756988525
+      }
+    },
+    {
+      "entry_id": "92_pinn-with-exact-bc---seed-1046",
+      "label": "PINN with exact BC | seed=1046",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0017518081003800035,
+        "epochs_total": 4562,
+        "final_loss": 1.2914633771288209e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 30.09614099999999,
+        "solver": null,
+        "t_total": 1.7589209079742432
+      }
+    },
+    {
+      "entry_id": "93_pinn-with-soft-bc---seed-1046",
+      "label": "PINN with soft BC | seed=1046",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0007398215821012855,
+        "boundary_error_start": 0.0007478845654986799,
+        "delta_v": 0.009492725133895874,
+        "epochs_total": 6479,
+        "final_loss": 2.7439840778242797e-05,
+        "final_loss_bc": 1.7923039763445558e-07,
+        "final_loss_physics": 2.7260610295343213e-05,
+        "runtime_seconds": 35.300077999999985,
+        "solver": null,
+        "t_total": 2.19831919670105
+      }
+    },
+    {
+      "entry_id": "94_pinn-with-exact-bc---seed-1047",
+      "label": "PINN with exact BC | seed=1047",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0016209622845053673,
+        "epochs_total": 4129,
+        "final_loss": 1.6095358432721696e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 27.044384000000036,
+        "solver": null,
+        "t_total": 1.5294127464294434
+      }
+    },
+    {
+      "entry_id": "95_pinn-with-soft-bc---seed-1047",
+      "label": "PINN with soft BC | seed=1047",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0002150584914488718,
+        "boundary_error_start": 0.00018705207912717015,
+        "delta_v": 0.0030650284606963396,
+        "epochs_total": 5482,
+        "final_loss": 4.239488589519169e-06,
+        "final_loss_bc": 1.3132369858226411e-08,
+        "final_loss_physics": 4.22635639552027e-06,
+        "runtime_seconds": 30.108090000000004,
+        "solver": null,
+        "t_total": 1.6942365169525146
+      }
+    },
+    {
+      "entry_id": "96_pinn-with-exact-bc---seed-1048",
+      "label": "PINN with exact BC | seed=1048",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0016135136829689145,
+        "epochs_total": 4301,
+        "final_loss": 1.6289238828903763e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 27.46579299999999,
+        "solver": null,
+        "t_total": 1.4393357038497925
+      }
+    },
+    {
+      "entry_id": "97_pinn-with-soft-bc---seed-1048",
+      "label": "PINN with soft BC | seed=1048",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 8.115502714645118e-05,
+        "boundary_error_start": 0.00044682715088129044,
+        "delta_v": 0.0051695071160793304,
+        "epochs_total": 5776,
+        "final_loss": 1.1605946383497212e-05,
+        "final_loss_bc": 3.343575016856448e-08,
+        "final_loss_physics": 1.1572510629775934e-05,
+        "runtime_seconds": 33.267943,
+        "solver": null,
+        "t_total": 2.0296778678894043
+      }
+    },
+    {
+      "entry_id": "98_pinn-with-exact-bc---seed-1049",
+      "label": "PINN with exact BC | seed=1049",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0015624884981662035,
+        "epochs_total": 4170,
+        "final_loss": 2.1603586901619565e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 27.111028000000005,
+        "solver": null,
+        "t_total": 1.2539516687393188
+      }
+    },
+    {
+      "entry_id": "99_pinn-with-soft-bc---seed-1049",
+      "label": "PINN with soft BC | seed=1049",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00014807051047682762,
+        "boundary_error_start": 0.0006951104151085019,
+        "delta_v": 0.005247342865914106,
+        "epochs_total": 6065,
+        "final_loss": 1.2114162018406205e-05,
+        "final_loss_bc": 8.184483135664777e-08,
+        "final_loss_physics": 1.203231749968836e-05,
+        "runtime_seconds": 32.495979999999975,
+        "solver": null,
+        "t_total": 2.2304108142852783
+      }
+    },
+    {
+      "entry_id": "100_pinn-with-exact-bc---seed-1050",
+      "label": "PINN with exact BC | seed=1050",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0021683678496629,
+        "epochs_total": 3720,
+        "final_loss": 5.865412731509423e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 23.658870999999976,
+        "solver": null,
+        "t_total": 1.0527275800704956
+      }
+    },
+    {
+      "entry_id": "101_pinn-with-soft-bc---seed-1050",
+      "label": "PINN with soft BC | seed=1050",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.000996620045043528,
+        "boundary_error_start": 0.00017045324784703553,
+        "delta_v": 0.006209922023117542,
+        "epochs_total": 5432,
+        "final_loss": 1.8299419025424868e-05,
+        "final_loss_bc": 1.6563726035201398e-07,
+        "final_loss_physics": 1.8133781850337982e-05,
+        "runtime_seconds": 29.894475999999997,
+        "solver": null,
+        "t_total": 1.8495453596115112
+      }
+    },
+    {
+      "entry_id": "102_pinn-with-exact-bc---seed-1051",
+      "label": "PINN with exact BC | seed=1051",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0022005510982125998,
+        "epochs_total": 3673,
+        "final_loss": 4.669114332500612e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 22.88373899999999,
+        "solver": null,
+        "t_total": 1.2975105047225952
+      }
+    },
+    {
+      "entry_id": "103_pinn-with-soft-bc---seed-1051",
+      "label": "PINN with soft BC | seed=1051",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0001954342151293531,
+        "boundary_error_start": 0.0006506826030090451,
+        "delta_v": 0.00741999689489603,
+        "epochs_total": 5205,
+        "final_loss": 1.7782938812160864e-05,
+        "final_loss_bc": 7.474173457922006e-08,
+        "final_loss_physics": 1.7708196537569165e-05,
+        "runtime_seconds": 29.610580999999996,
+        "solver": null,
+        "t_total": 2.365760087966919
+      }
+    },
+    {
+      "entry_id": "104_pinn-with-exact-bc---seed-1052",
+      "label": "PINN with exact BC | seed=1052",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0019486024975776672,
+        "epochs_total": 4390,
+        "final_loss": 1.8587944623504882e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 28.944835000000012,
+        "solver": null,
+        "t_total": 1.6859688758850098
+      }
+    },
+    {
+      "entry_id": "105_pinn-with-soft-bc---seed-1052",
+      "label": "PINN with soft BC | seed=1052",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 107.56393432617188,
+        "boundary_error_start": 158.5496826171875,
+        "delta_v": 5679.197265625,
+        "epochs_total": 4067,
+        "final_loss": 14473.2255859375,
+        "final_loss_bc": 14473.2255859375,
+        "final_loss_physics": 1.0924938287359964e-08,
+        "runtime_seconds": 22.149996999999985,
+        "solver": null,
+        "t_total": 441514592.0
+      }
+    },
+    {
+      "entry_id": "106_pinn-with-exact-bc---seed-1053",
+      "label": "PINN with exact BC | seed=1053",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0029255750123411417,
+        "epochs_total": 3511,
+        "final_loss": 6.143598056951305e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 19.846167000000037,
+        "solver": null,
+        "t_total": 1.3279268741607666
+      }
+    },
+    {
+      "entry_id": "107_pinn-with-soft-bc---seed-1053",
+      "label": "PINN with soft BC | seed=1053",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 4.448894833330996e-05,
+        "boundary_error_start": 5.815287659061141e-05,
+        "delta_v": 0.0035867001861333847,
+        "epochs_total": 5365,
+        "final_loss": 3.2205421121034306e-06,
+        "final_loss_bc": 8.652090155436554e-10,
+        "final_loss_physics": 3.219676955268369e-06,
+        "runtime_seconds": 30.388585000000035,
+        "solver": null,
+        "t_total": 2.1885759830474854
+      }
+    },
+    {
+      "entry_id": "108_pinn-with-exact-bc---seed-1054",
+      "label": "PINN with exact BC | seed=1054",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.002086424035951495,
+        "epochs_total": 3661,
+        "final_loss": 2.4802727693895577e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 22.689181999999988,
+        "solver": null,
+        "t_total": 1.6278581619262695
+      }
+    },
+    {
+      "entry_id": "109_pinn-with-soft-bc---seed-1054",
+      "label": "PINN with soft BC | seed=1054",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00020626792684197426,
+        "boundary_error_start": 0.0009354286012239754,
+        "delta_v": 0.007943437434732914,
+        "epochs_total": 6853,
+        "final_loss": 3.1708743335912004e-05,
+        "final_loss_bc": 1.486072420675555e-07,
+        "final_loss_physics": 3.1560135539621115e-05,
+        "runtime_seconds": 40.38964899999999,
+        "solver": null,
+        "t_total": 1.71072256565094
+      }
+    },
+    {
+      "entry_id": "110_pinn-with-exact-bc---seed-1055",
+      "label": "PINN with exact BC | seed=1055",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.002095482312142849,
+        "epochs_total": 4246,
+        "final_loss": 5.357639111025492e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 27.711787999999984,
+        "solver": null,
+        "t_total": 1.1760309934616089
+      }
+    },
+    {
+      "entry_id": "111_pinn-with-soft-bc---seed-1055",
+      "label": "PINN with soft BC | seed=1055",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0002883005072362721,
+        "boundary_error_start": 0.00043936888687312603,
+        "delta_v": 0.004017265047878027,
+        "epochs_total": 6471,
+        "final_loss": 7.380452643701574e-06,
+        "final_loss_bc": 4.4724611569790795e-08,
+        "final_loss_physics": 7.33572824174189e-06,
+        "runtime_seconds": 35.40943699999997,
+        "solver": null,
+        "t_total": 1.8000938892364502
+      }
+    },
+    {
+      "entry_id": "112_pinn-with-exact-bc---seed-1056",
+      "label": "PINN with exact BC | seed=1056",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001925410469993949,
+        "epochs_total": 4251,
+        "final_loss": 2.078586703646579e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 27.872428000000014,
+        "solver": null,
+        "t_total": 1.5715000629425049
+      }
+    },
+    {
+      "entry_id": "113_pinn-with-soft-bc---seed-1056",
+      "label": "PINN with soft BC | seed=1056",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 9.853671508608386e-05,
+        "boundary_error_start": 0.00017649006622377783,
+        "delta_v": 0.002695193514227867,
+        "epochs_total": 6372,
+        "final_loss": 4.144433660258073e-06,
+        "final_loss_bc": 6.622282278101466e-09,
+        "final_loss_physics": 4.137811174587114e-06,
+        "runtime_seconds": 35.75307299999997,
+        "solver": null,
+        "t_total": 1.7001646757125854
+      }
+    },
+    {
+      "entry_id": "114_pinn-with-exact-bc---seed-1057",
+      "label": "PINN with exact BC | seed=1057",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.002482327166944742,
+        "epochs_total": 3875,
+        "final_loss": 7.3109044933517e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.85173599999999,
+        "solver": null,
+        "t_total": 1.1137651205062866
+      }
+    },
+    {
+      "entry_id": "115_pinn-with-soft-bc---seed-1057",
+      "label": "PINN with soft BC | seed=1057",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0004663064319174737,
+        "boundary_error_start": 0.0003020058502443135,
+        "delta_v": 0.005007781088352203,
+        "epochs_total": 6954,
+        "final_loss": 8.554702617402654e-06,
+        "final_loss_bc": 5.006625514170082e-08,
+        "final_loss_physics": 8.504636753059458e-06,
+        "runtime_seconds": 40.69145600000002,
+        "solver": null,
+        "t_total": 2.0868964195251465
+      }
+    },
+    {
+      "entry_id": "116_pinn-with-exact-bc---seed-1058",
+      "label": "PINN with exact BC | seed=1058",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.002632573014125228,
+        "epochs_total": 4197,
+        "final_loss": 4.3091881707368884e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 27.53773700000002,
+        "solver": null,
+        "t_total": 1.5532517433166504
+      }
+    },
+    {
+      "entry_id": "117_pinn-with-soft-bc---seed-1058",
+      "label": "PINN with soft BC | seed=1058",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0008215242996811867,
+        "boundary_error_start": 0.00019629082817118615,
+        "delta_v": 0.013753858394920826,
+        "epochs_total": 6392,
+        "final_loss": 2.817869790305849e-05,
+        "final_loss_bc": 1.15592818872301e-07,
+        "final_loss_physics": 2.806310476444196e-05,
+        "runtime_seconds": 34.698455000000024,
+        "solver": null,
+        "t_total": 2.9595963954925537
+      }
+    },
+    {
+      "entry_id": "118_pinn-with-exact-bc---seed-1059",
+      "label": "PINN with exact BC | seed=1059",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0017524647992104292,
+        "epochs_total": 4070,
+        "final_loss": 2.031363919741125e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 25.34437200000002,
+        "solver": null,
+        "t_total": 1.424493432044983
+      }
+    },
+    {
+      "entry_id": "119_pinn-with-soft-bc---seed-1059",
+      "label": "PINN with soft BC | seed=1059",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.000109324864752125,
+        "boundary_error_start": 0.0005098950350657105,
+        "delta_v": 0.00536207715049386,
+        "epochs_total": 5060,
+        "final_loss": 7.136035947041819e-06,
+        "final_loss_bc": 4.4124160325509365e-08,
+        "final_loss_physics": 7.091911811585305e-06,
+        "runtime_seconds": 28.299019999999985,
+        "solver": null,
+        "t_total": 2.2557291984558105
+      }
+    },
+    {
+      "entry_id": "120_pinn-with-exact-bc---seed-1060",
+      "label": "PINN with exact BC | seed=1060",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0012645245296880603,
+        "epochs_total": 3879,
+        "final_loss": 1.5504014072575956e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 23.983176999999955,
+        "solver": null,
+        "t_total": 1.1755492687225342
+      }
+    },
+    {
+      "entry_id": "121_pinn-with-soft-bc---seed-1060",
+      "label": "PINN with soft BC | seed=1060",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00020080315880477428,
+        "boundary_error_start": 0.0005510540213435888,
+        "delta_v": 0.005837601143866777,
+        "epochs_total": 5124,
+        "final_loss": 1.0467513675394002e-05,
+        "final_loss_bc": 5.5679301169675455e-08,
+        "final_loss_physics": 1.0411834409751464e-05,
+        "runtime_seconds": 28.573345000000018,
+        "solver": null,
+        "t_total": 2.39157772064209
+      }
+    },
+    {
+      "entry_id": "122_pinn-with-exact-bc---seed-1061",
+      "label": "PINN with exact BC | seed=1061",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001694216625764966,
+        "epochs_total": 3986,
+        "final_loss": 2.5814363198151113e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 26.22836000000001,
+        "solver": null,
+        "t_total": 1.2134275436401367
+      }
+    },
+    {
+      "entry_id": "123_pinn-with-soft-bc---seed-1061",
+      "label": "PINN with soft BC | seed=1061",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0008835813496261835,
+        "boundary_error_start": 0.0017693275585770607,
+        "delta_v": 0.010342488065361977,
+        "epochs_total": 4906,
+        "final_loss": 4.916615944239311e-05,
+        "final_loss_bc": 6.335093871712161e-07,
+        "final_loss_physics": 4.853264908888377e-05,
+        "runtime_seconds": 27.204232999999988,
+        "solver": null,
+        "t_total": 1.7362477779388428
+      }
+    },
+    {
+      "entry_id": "124_pinn-with-exact-bc---seed-1062",
+      "label": "PINN with exact BC | seed=1062",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0020455578342080116,
+        "epochs_total": 4215,
+        "final_loss": 1.961644557013642e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 27.83895100000001,
+        "solver": null,
+        "t_total": 1.6664971113204956
+      }
+    },
+    {
+      "entry_id": "125_pinn-with-soft-bc---seed-1062",
+      "label": "PINN with soft BC | seed=1062",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 5.317603063303977e-05,
+        "boundary_error_start": 0.00023906875867396593,
+        "delta_v": 0.004241281654685736,
+        "epochs_total": 6335,
+        "final_loss": 5.752349352405872e-06,
+        "final_loss_bc": 9.713132520516865e-09,
+        "final_loss_physics": 5.742636403738288e-06,
+        "runtime_seconds": 36.79841499999998,
+        "solver": null,
+        "t_total": 2.057433605194092
+      }
+    },
+    {
+      "entry_id": "126_pinn-with-exact-bc---seed-1063",
+      "label": "PINN with exact BC | seed=1063",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0018386291339993477,
+        "epochs_total": 4053,
+        "final_loss": 1.6899069805731415e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 25.513922999999977,
+        "solver": null,
+        "t_total": 1.5865485668182373
+      }
+    },
+    {
+      "entry_id": "127_pinn-with-soft-bc---seed-1063",
+      "label": "PINN with soft BC | seed=1063",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0002502830175217241,
+        "boundary_error_start": 0.0003263324615545571,
+        "delta_v": 0.005971084348857403,
+        "epochs_total": 5788,
+        "final_loss": 1.0225671758234967e-05,
+        "final_loss_bc": 2.7384450262957216e-08,
+        "final_loss_physics": 1.0198286872764584e-05,
+        "runtime_seconds": 32.759630000000016,
+        "solver": null,
+        "t_total": 2.1769518852233887
+      }
+    },
+    {
+      "entry_id": "128_pinn-with-exact-bc---seed-1064",
+      "label": "PINN with exact BC | seed=1064",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0019942237995564938,
+        "epochs_total": 4060,
+        "final_loss": 4.370715942059178e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 26.62923999999998,
+        "solver": null,
+        "t_total": 1.2303507328033447
+      }
+    },
+    {
+      "entry_id": "129_pinn-with-soft-bc---seed-1064",
+      "label": "PINN with soft BC | seed=1064",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 8.971201896201819e-05,
+        "boundary_error_start": 0.0009085815399885178,
+        "delta_v": 0.006090837065130472,
+        "epochs_total": 4640,
+        "final_loss": 1.9888846509275027e-05,
+        "final_loss_bc": 1.350048535186943e-07,
+        "final_loss_physics": 1.9753841115743853e-05,
+        "runtime_seconds": 25.726485000000025,
+        "solver": null,
+        "t_total": 2.0458383560180664
+      }
+    },
+    {
+      "entry_id": "130_pinn-with-exact-bc---seed-1065",
+      "label": "PINN with exact BC | seed=1065",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0018217142205685377,
+        "epochs_total": 3671,
+        "final_loss": 3.540667194101843e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 23.868273000000045,
+        "solver": null,
+        "t_total": 1.0924162864685059
+      }
+    },
+    {
+      "entry_id": "131_pinn-with-soft-bc---seed-1065",
+      "label": "PINN with soft BC | seed=1065",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 6.045818008715287e-05,
+        "boundary_error_start": 0.00029952797922305763,
+        "delta_v": 0.004617967642843723,
+        "epochs_total": 5774,
+        "final_loss": 5.652908839692827e-06,
+        "final_loss_bc": 1.5140070530605954e-08,
+        "final_loss_physics": 5.637768936139764e-06,
+        "runtime_seconds": 33.29281900000001,
+        "solver": null,
+        "t_total": 2.18512225151062
+      }
+    },
+    {
+      "entry_id": "132_pinn-with-exact-bc---seed-1066",
+      "label": "PINN with exact BC | seed=1066",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0032321461476385593,
+        "epochs_total": 4322,
+        "final_loss": 5.1228921620349865e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 26.893365000000017,
+        "solver": null,
+        "t_total": 1.5935660600662231
+      }
+    },
+    {
+      "entry_id": "133_pinn-with-soft-bc---seed-1066",
+      "label": "PINN with soft BC | seed=1066",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00013360485900193453,
+        "boundary_error_start": 0.0003288937732577324,
+        "delta_v": 0.005005739629268646,
+        "epochs_total": 6298,
+        "final_loss": 7.997400643944275e-06,
+        "final_loss_bc": 2.0440994674686408e-08,
+        "final_loss_physics": 7.976959750521928e-06,
+        "runtime_seconds": 36.434330999999986,
+        "solver": null,
+        "t_total": 1.93678617477417
+      }
+    },
+    {
+      "entry_id": "134_pinn-with-exact-bc---seed-1067",
+      "label": "PINN with exact BC | seed=1067",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.006005716975778341,
+        "epochs_total": 3099,
+        "final_loss": 4.472053478821181e-05,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 18.873080000000016,
+        "solver": null,
+        "t_total": 0.993831992149353
+      }
+    },
+    {
+      "entry_id": "135_pinn-with-soft-bc---seed-1067",
+      "label": "PINN with soft BC | seed=1067",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00010366472997702658,
+        "boundary_error_start": 0.0004342178290244192,
+        "delta_v": 0.006521868985146284,
+        "epochs_total": 5824,
+        "final_loss": 1.3009193025936838e-05,
+        "final_loss_bc": 3.226952927093407e-08,
+        "final_loss_physics": 1.2976923244423233e-05,
+        "runtime_seconds": 33.40643600000004,
+        "solver": null,
+        "t_total": 2.2451467514038086
+      }
+    },
+    {
+      "entry_id": "136_pinn-with-exact-bc---seed-1068",
+      "label": "PINN with exact BC | seed=1068",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0016103580128401518,
+        "epochs_total": 4144,
+        "final_loss": 2.8517345072032185e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 27.01356400000003,
+        "solver": null,
+        "t_total": 1.2485997676849365
+      }
+    },
+    {
+      "entry_id": "137_pinn-with-soft-bc---seed-1068",
+      "label": "PINN with soft BC | seed=1068",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 2.997497358592227e-05,
+        "boundary_error_start": 0.00043603990343399346,
+        "delta_v": 0.003473991062492132,
+        "epochs_total": 5067,
+        "final_loss": 4.926072051603114e-06,
+        "final_loss_bc": 3.094230649480778e-08,
+        "final_loss_physics": 4.8951296776067466e-06,
+        "runtime_seconds": 28.072991000000002,
+        "solver": null,
+        "t_total": 2.057324171066284
+      }
+    },
+    {
+      "entry_id": "138_pinn-with-exact-bc---seed-1069",
+      "label": "PINN with exact BC | seed=1069",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001648177276365459,
+        "epochs_total": 3835,
+        "final_loss": 2.9019568046351196e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.473023000000012,
+        "solver": null,
+        "t_total": 1.1620362997055054
+      }
+    },
+    {
+      "entry_id": "139_pinn-with-soft-bc---seed-1069",
+      "label": "PINN with soft BC | seed=1069",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00015080033335834742,
+        "boundary_error_start": 0.0001407797244610265,
+        "delta_v": 0.0032527900766581297,
+        "epochs_total": 6137,
+        "final_loss": 5.409505774878198e-06,
+        "final_loss_bc": 6.891700543576462e-09,
+        "final_loss_physics": 5.402614078775514e-06,
+        "runtime_seconds": 35.72427600000003,
+        "solver": null,
+        "t_total": 1.7094221115112305
+      }
+    },
+    {
+      "entry_id": "140_pinn-with-exact-bc---seed-1070",
+      "label": "PINN with exact BC | seed=1070",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0015345501014962792,
+        "epochs_total": 4069,
+        "final_loss": 1.8099739236276946e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 26.24914100000001,
+        "solver": null,
+        "t_total": 1.4468622207641602
+      }
+    },
+    {
+      "entry_id": "141_pinn-with-soft-bc---seed-1070",
+      "label": "PINN with soft BC | seed=1070",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.000292060460196808,
+        "boundary_error_start": 0.0002621165185701102,
+        "delta_v": 0.006853449158370495,
+        "epochs_total": 8978,
+        "final_loss": 9.223502274835482e-06,
+        "final_loss_bc": 2.4953612509648337e-08,
+        "final_loss_physics": 9.198548468702938e-06,
+        "runtime_seconds": 54.53204800000003,
+        "solver": null,
+        "t_total": 2.504312038421631
+      }
+    },
+    {
+      "entry_id": "142_pinn-with-exact-bc---seed-1071",
+      "label": "PINN with exact BC | seed=1071",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0014992455253377557,
+        "epochs_total": 4445,
+        "final_loss": 1.2950831660418771e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 28.326283999999987,
+        "solver": null,
+        "t_total": 1.4327831268310547
+      }
+    },
+    {
+      "entry_id": "143_pinn-with-soft-bc---seed-1071",
+      "label": "PINN with soft BC | seed=1071",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0004361015453469008,
+        "boundary_error_start": 0.0004893969744443893,
+        "delta_v": 0.010559775866568089,
+        "epochs_total": 6438,
+        "final_loss": 1.8817296222550794e-05,
+        "final_loss_bc": 6.965836973904516e-08,
+        "final_loss_physics": 1.8747638023342006e-05,
+        "runtime_seconds": 28.51626200000004,
+        "solver": null,
+        "t_total": 2.755932569503784
+      }
+    },
+    {
+      "entry_id": "144_pinn-with-exact-bc---seed-1072",
+      "label": "PINN with exact BC | seed=1072",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0018820292316377163,
+        "epochs_total": 3526,
+        "final_loss": 4.5731185309705324e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 22.136605999999972,
+        "solver": null,
+        "t_total": 1.0509576797485352
+      }
+    },
+    {
+      "entry_id": "145_pinn-with-soft-bc---seed-1072",
+      "label": "PINN with soft BC | seed=1072",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0002613973047118634,
+        "boundary_error_start": 0.0005564134917221963,
+        "delta_v": 0.005873770918697119,
+        "epochs_total": 6774,
+        "final_loss": 1.568594598211348e-05,
+        "final_loss_bc": 6.1227908076944e-08,
+        "final_loss_physics": 1.5624718798790127e-05,
+        "runtime_seconds": 39.488044,
+        "solver": null,
+        "t_total": 1.7174887657165527
+      }
+    },
+    {
+      "entry_id": "146_pinn-with-exact-bc---seed-1073",
+      "label": "PINN with exact BC | seed=1073",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0013872608542442322,
+        "epochs_total": 3971,
+        "final_loss": 1.822469016588002e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 25.302756000000045,
+        "solver": null,
+        "t_total": 1.2758371829986572
+      }
+    },
+    {
+      "entry_id": "147_pinn-with-soft-bc---seed-1073",
+      "label": "PINN with soft BC | seed=1073",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 5.472030898090452e-05,
+        "boundary_error_start": 0.00027070409851148725,
+        "delta_v": 0.0035314064007252455,
+        "epochs_total": 5893,
+        "final_loss": 3.675259449664736e-06,
+        "final_loss_bc": 1.2351997646931068e-08,
+        "final_loss_physics": 3.6629073747462826e-06,
+        "runtime_seconds": 34.08029600000003,
+        "solver": null,
+        "t_total": 1.9980785846710205
+      }
+    },
+    {
+      "entry_id": "148_pinn-with-exact-bc---seed-1074",
+      "label": "PINN with exact BC | seed=1074",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0016497325850650668,
+        "epochs_total": 3761,
+        "final_loss": 2.84560246655019e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.17718500000001,
+        "solver": null,
+        "t_total": 1.083592414855957
+      }
+    },
+    {
+      "entry_id": "149_pinn-with-soft-bc---seed-1074",
+      "label": "PINN with soft BC | seed=1074",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00013501130160875618,
+        "boundary_error_start": 0.0004049892886541784,
+        "delta_v": 0.005029229447245598,
+        "epochs_total": 5636,
+        "final_loss": 7.405049018416321e-06,
+        "final_loss_bc": 2.9515392796497508e-08,
+        "final_loss_physics": 7.375533641607035e-06,
+        "runtime_seconds": 27.74601100000001,
+        "solver": null,
+        "t_total": 2.5849151611328125
+      }
+    },
+    {
+      "entry_id": "150_pinn-with-exact-bc---seed-1075",
+      "label": "PINN with exact BC | seed=1075",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0017991953063756227,
+        "epochs_total": 4133,
+        "final_loss": 3.175013944201055e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 26.67936500000002,
+        "solver": null,
+        "t_total": 1.286861538887024
+      }
+    },
+    {
+      "entry_id": "151_pinn-with-soft-bc---seed-1075",
+      "label": "PINN with soft BC | seed=1075",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0004019661573693156,
+        "boundary_error_start": 0.00033707835245877504,
+        "delta_v": 0.006571284495294094,
+        "epochs_total": 5682,
+        "final_loss": 9.14034535526298e-06,
+        "final_loss_bc": 4.458271973817318e-08,
+        "final_loss_physics": 9.095762834476773e-06,
+        "runtime_seconds": 32.46501000000001,
+        "solver": null,
+        "t_total": 2.6987617015838623
+      }
+    },
+    {
+      "entry_id": "152_pinn-with-exact-bc---seed-1076",
+      "label": "PINN with exact BC | seed=1076",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.002343753119930625,
+        "epochs_total": 3564,
+        "final_loss": 6.276761268964037e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 22.174455000000023,
+        "solver": null,
+        "t_total": 1.0787770748138428
+      }
+    },
+    {
+      "entry_id": "153_pinn-with-soft-bc---seed-1076",
+      "label": "PINN with soft BC | seed=1076",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00032084359554573894,
+        "boundary_error_start": 0.0005153737147338688,
+        "delta_v": 0.0064606936648488045,
+        "epochs_total": 4720,
+        "final_loss": 1.4545508747687563e-05,
+        "final_loss_bc": 5.967701355302779e-08,
+        "final_loss_physics": 1.448583134333603e-05,
+        "runtime_seconds": 26.34187800000001,
+        "solver": null,
+        "t_total": 2.1529910564422607
+      }
+    },
+    {
+      "entry_id": "154_pinn-with-exact-bc---seed-1077",
+      "label": "PINN with exact BC | seed=1077",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.002086594235152006,
+        "epochs_total": 3806,
+        "final_loss": 4.403983894007979e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.34626700000001,
+        "solver": null,
+        "t_total": 1.1300103664398193
+      }
+    },
+    {
+      "entry_id": "155_pinn-with-soft-bc---seed-1077",
+      "label": "PINN with soft BC | seed=1077",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00015690337750129402,
+        "boundary_error_start": 0.00012245574907865375,
+        "delta_v": 0.003696543863043189,
+        "epochs_total": 5671,
+        "final_loss": 3.3517844713060185e-06,
+        "final_loss_bc": 6.420997067380085e-09,
+        "final_loss_physics": 3.3453634387115017e-06,
+        "runtime_seconds": 30.04782499999999,
+        "solver": null,
+        "t_total": 2.2607197761535645
+      }
+    },
+    {
+      "entry_id": "156_pinn-with-exact-bc---seed-1078",
+      "label": "PINN with exact BC | seed=1078",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0018249541753903031,
+        "epochs_total": 3840,
+        "final_loss": 3.870458385790698e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.501912000000004,
+        "solver": null,
+        "t_total": 1.1214425563812256
+      }
+    },
+    {
+      "entry_id": "157_pinn-with-soft-bc---seed-1078",
+      "label": "PINN with soft BC | seed=1078",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00017325565568171442,
+        "boundary_error_start": 0.0006451964727602899,
+        "delta_v": 0.006055561359971762,
+        "epochs_total": 4920,
+        "final_loss": 1.702573717921041e-05,
+        "final_loss_bc": 7.232147680724665e-08,
+        "final_loss_physics": 1.695341597951483e-05,
+        "runtime_seconds": 27.705584999999985,
+        "solver": null,
+        "t_total": 2.0177557468414307
+      }
+    },
+    {
+      "entry_id": "158_pinn-with-exact-bc---seed-1079",
+      "label": "PINN with exact BC | seed=1079",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0010134781477972865,
+        "epochs_total": 3824,
+        "final_loss": 8.62472518292634e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.215101000000004,
+        "solver": null,
+        "t_total": 1.2859909534454346
+      }
+    },
+    {
+      "entry_id": "159_pinn-with-soft-bc---seed-1079",
+      "label": "PINN with soft BC | seed=1079",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00068268011091277,
+        "boundary_error_start": 0.002220995258539915,
+        "delta_v": 0.008859332650899887,
+        "epochs_total": 5181,
+        "final_loss": 4.8967685870593414e-05,
+        "final_loss_bc": 8.745998911763309e-07,
+        "final_loss_physics": 4.809308666153811e-05,
+        "runtime_seconds": 29.491314000000045,
+        "solver": null,
+        "t_total": 1.7471773624420166
+      }
+    },
+    {
+      "entry_id": "160_pinn-with-exact-bc---seed-1080",
+      "label": "PINN with exact BC | seed=1080",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001025174162350595,
+        "epochs_total": 4540,
+        "final_loss": 8.189805384972715e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 30.26646800000003,
+        "solver": null,
+        "t_total": 1.4222519397735596
+      }
+    },
+    {
+      "entry_id": "161_pinn-with-soft-bc---seed-1080",
+      "label": "PINN with soft BC | seed=1080",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00022845427156426013,
+        "boundary_error_start": 0.0004421164921950549,
+        "delta_v": 0.00459413044154644,
+        "epochs_total": 5283,
+        "final_loss": 8.418683137279004e-06,
+        "final_loss_bc": 4.012481369386478e-08,
+        "final_loss_physics": 8.378558050026186e-06,
+        "runtime_seconds": 26.196451000000025,
+        "solver": null,
+        "t_total": 2.1509792804718018
+      }
+    },
+    {
+      "entry_id": "162_pinn-with-exact-bc---seed-1081",
+      "label": "PINN with exact BC | seed=1081",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0017939088866114616,
+        "epochs_total": 3835,
+        "final_loss": 3.353302645336953e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.178173000000015,
+        "solver": null,
+        "t_total": 1.1451581716537476
+      }
+    },
+    {
+      "entry_id": "163_pinn-with-soft-bc---seed-1081",
+      "label": "PINN with soft BC | seed=1081",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 8.720233017811552e-05,
+        "boundary_error_start": 0.00022601525415666401,
+        "delta_v": 0.004530371632426977,
+        "epochs_total": 5325,
+        "final_loss": 5.741799213865306e-06,
+        "final_loss_bc": 9.499674824553495e-09,
+        "final_loss_physics": 5.732299541705288e-06,
+        "runtime_seconds": 30.46561300000002,
+        "solver": null,
+        "t_total": 2.1972293853759766
+      }
+    },
+    {
+      "entry_id": "164_pinn-with-exact-bc---seed-1082",
+      "label": "PINN with exact BC | seed=1082",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001610230770893395,
+        "epochs_total": 4097,
+        "final_loss": 3.0050155146454927e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 26.68101999999999,
+        "solver": null,
+        "t_total": 1.1265349388122559
+      }
+    },
+    {
+      "entry_id": "165_pinn-with-soft-bc---seed-1082",
+      "label": "PINN with soft BC | seed=1082",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0002458185772411525,
+        "boundary_error_start": 0.0006906340713612735,
+        "delta_v": 0.006467549595981836,
+        "epochs_total": 6859,
+        "final_loss": 1.7856869817478582e-05,
+        "final_loss_bc": 8.706705756367228e-08,
+        "final_loss_physics": 1.7769802070688456e-05,
+        "runtime_seconds": 40.42653100000001,
+        "solver": null,
+        "t_total": 1.7303093671798706
+      }
+    },
+    {
+      "entry_id": "166_pinn-with-exact-bc---seed-1083",
+      "label": "PINN with exact BC | seed=1083",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.002306561218574643,
+        "epochs_total": 4369,
+        "final_loss": 3.676987034850754e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 27.636370999999997,
+        "solver": null,
+        "t_total": 1.391563892364502
+      }
+    },
+    {
+      "entry_id": "167_pinn-with-soft-bc---seed-1083",
+      "label": "PINN with soft BC | seed=1083",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00014879845548421144,
+        "boundary_error_start": 0.00021925596229266375,
+        "delta_v": 0.004766553174704313,
+        "epochs_total": 5938,
+        "final_loss": 7.976020242494997e-06,
+        "final_loss_bc": 1.1381358078210724e-08,
+        "final_loss_physics": 7.96463882579701e-06,
+        "runtime_seconds": 25.70133999999996,
+        "solver": null,
+        "t_total": 2.055055618286133
+      }
+    },
+    {
+      "entry_id": "168_pinn-with-exact-bc---seed-1084",
+      "label": "PINN with exact BC | seed=1084",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.002341431798413396,
+        "epochs_total": 4058,
+        "final_loss": 2.958251570817083e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 26.260310000000004,
+        "solver": null,
+        "t_total": 1.4623737335205078
+      }
+    },
+    {
+      "entry_id": "169_pinn-with-soft-bc---seed-1084",
+      "label": "PINN with soft BC | seed=1084",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 7.936599286040291e-05,
+        "boundary_error_start": 0.00023163153673522174,
+        "delta_v": 0.003700575092807412,
+        "epochs_total": 5762,
+        "final_loss": 5.414953193394467e-06,
+        "final_loss_bc": 9.717512128304406e-09,
+        "final_loss_physics": 5.405235697253374e-06,
+        "runtime_seconds": 33.03793300000001,
+        "solver": null,
+        "t_total": 2.118868827819824
+      }
+    },
+    {
+      "entry_id": "170_pinn-with-exact-bc---seed-1085",
+      "label": "PINN with exact BC | seed=1085",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0014716940931975842,
+        "epochs_total": 4417,
+        "final_loss": 1.127309474213689e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 29.468248000000017,
+        "solver": null,
+        "t_total": 1.5629092454910278
+      }
+    },
+    {
+      "entry_id": "171_pinn-with-soft-bc---seed-1085",
+      "label": "PINN with soft BC | seed=1085",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 3.8700676668668166e-05,
+        "boundary_error_start": 0.0006523606134578586,
+        "delta_v": 0.006625089328736067,
+        "epochs_total": 5638,
+        "final_loss": 1.5772320693940856e-05,
+        "final_loss_bc": 6.919140105310362e-08,
+        "final_loss_physics": 1.5703129975008778e-05,
+        "runtime_seconds": 32.49357199999997,
+        "solver": null,
+        "t_total": 2.1178736686706543
+      }
+    },
+    {
+      "entry_id": "172_pinn-with-exact-bc---seed-1086",
+      "label": "PINN with exact BC | seed=1086",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001949042547494173,
+        "epochs_total": 3619,
+        "final_loss": 3.585460945032537e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 20.843478000000005,
+        "solver": null,
+        "t_total": 1.2429986000061035
+      }
+    },
+    {
+      "entry_id": "173_pinn-with-soft-bc---seed-1086",
+      "label": "PINN with soft BC | seed=1086",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00015047901251818985,
+        "boundary_error_start": 0.00025231955805793405,
+        "delta_v": 0.004603812005370855,
+        "epochs_total": 5955,
+        "final_loss": 4.177775281277718e-06,
+        "final_loss_bc": 1.3970783641070739e-08,
+        "final_loss_physics": 4.163804533163784e-06,
+        "runtime_seconds": 26.04738100000003,
+        "solver": null,
+        "t_total": 2.629160165786743
+      }
+    },
+    {
+      "entry_id": "174_pinn-with-exact-bc---seed-1087",
+      "label": "PINN with exact BC | seed=1087",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0018053618259727955,
+        "epochs_total": 3845,
+        "final_loss": 2.6155571504205e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.842649999999992,
+        "solver": null,
+        "t_total": 1.3357138633728027
+      }
+    },
+    {
+      "entry_id": "175_pinn-with-soft-bc---seed-1087",
+      "label": "PINN with soft BC | seed=1087",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00032628534245304763,
+        "boundary_error_start": 0.00025805909535847604,
+        "delta_v": 0.005752377677708864,
+        "epochs_total": 5782,
+        "final_loss": 1.0728669622039888e-05,
+        "final_loss_bc": 2.806897292373378e-08,
+        "final_loss_physics": 1.0700600796553772e-05,
+        "runtime_seconds": 32.942406000000005,
+        "solver": null,
+        "t_total": 2.0292744636535645
+      }
+    },
+    {
+      "entry_id": "176_pinn-with-exact-bc---seed-1088",
+      "label": "PINN with exact BC | seed=1088",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.002277500694617629,
+        "epochs_total": 3582,
+        "final_loss": 5.457439783640439e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 22.960848,
+        "solver": null,
+        "t_total": 1.0823622941970825
+      }
+    },
+    {
+      "entry_id": "177_pinn-with-soft-bc---seed-1088",
+      "label": "PINN with soft BC | seed=1088",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00018913031090050936,
+        "boundary_error_start": 0.00012849170889239758,
+        "delta_v": 0.004074993077665567,
+        "epochs_total": 5666,
+        "final_loss": 6.75635692459764e-06,
+        "final_loss_bc": 8.47326653286018e-09,
+        "final_loss_physics": 6.747883617208572e-06,
+        "runtime_seconds": 32.64020099999999,
+        "solver": null,
+        "t_total": 1.7459155321121216
+      }
+    },
+    {
+      "entry_id": "178_pinn-with-exact-bc---seed-1089",
+      "label": "PINN with exact BC | seed=1089",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0018035799730569124,
+        "epochs_total": 4212,
+        "final_loss": 2.8993015348532936e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.261325,
+        "solver": null,
+        "t_total": 1.2076948881149292
+      }
+    },
+    {
+      "entry_id": "179_pinn-with-soft-bc---seed-1089",
+      "label": "PINN with soft BC | seed=1089",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00011188850476173684,
+        "boundary_error_start": 0.00023926884750835598,
+        "delta_v": 0.002796996384859085,
+        "epochs_total": 6227,
+        "final_loss": 3.302001687188749e-06,
+        "final_loss_bc": 1.1273894706675947e-08,
+        "final_loss_physics": 3.2907278182392474e-06,
+        "runtime_seconds": 26.59153699999996,
+        "solver": null,
+        "t_total": 1.7861862182617188
+      }
+    },
+    {
+      "entry_id": "180_pinn-with-exact-bc---seed-1090",
+      "label": "PINN with exact BC | seed=1090",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001348526100628078,
+        "epochs_total": 4159,
+        "final_loss": 2.0499330730672227e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 21.11472200000003,
+        "solver": null,
+        "t_total": 1.1202043294906616
+      }
+    },
+    {
+      "entry_id": "181_pinn-with-soft-bc---seed-1090",
+      "label": "PINN with soft BC | seed=1090",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 5.130668796482496e-05,
+        "boundary_error_start": 0.0006446355837397277,
+        "delta_v": 0.005123887211084366,
+        "epochs_total": 5598,
+        "final_loss": 1.4599279893445782e-05,
+        "final_loss_bc": 6.774148886279363e-08,
+        "final_loss_physics": 1.453153799957363e-05,
+        "runtime_seconds": 23.453640000000064,
+        "solver": null,
+        "t_total": 2.001405715942383
+      }
+    },
+    {
+      "entry_id": "182_pinn-with-exact-bc---seed-1091",
+      "label": "PINN with exact BC | seed=1091",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0018647406250238419,
+        "epochs_total": 3911,
+        "final_loss": 2.464505087118596e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 11.932067000000075,
+        "solver": null,
+        "t_total": 1.4260588884353638
+      }
+    },
+    {
+      "entry_id": "183_pinn-with-soft-bc---seed-1091",
+      "label": "PINN with soft BC | seed=1091",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0002544123854022473,
+        "boundary_error_start": 0.000442377058789134,
+        "delta_v": 0.00457393005490303,
+        "epochs_total": 6633,
+        "final_loss": 7.2748339334793855e-06,
+        "final_loss_bc": 4.218574645165063e-08,
+        "final_loss_physics": 7.232648385979701e-06,
+        "runtime_seconds": 17.31521799999996,
+        "solver": null,
+        "t_total": 2.2789530754089355
+      }
+    },
+    {
+      "entry_id": "184_pinn-with-exact-bc---seed-1092",
+      "label": "PINN with exact BC | seed=1092",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0013631198089569807,
+        "epochs_total": 4369,
+        "final_loss": 1.4038639619684545e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 12.821866,
+        "solver": null,
+        "t_total": 1.3561062812805176
+      }
+    },
+    {
+      "entry_id": "185_pinn-with-soft-bc---seed-1092",
+      "label": "PINN with soft BC | seed=1092",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00040809641359373927,
+        "boundary_error_start": 4.099283250980079e-05,
+        "delta_v": 0.005997068714350462,
+        "epochs_total": 5630,
+        "final_loss": 1.3577206118497998e-05,
+        "final_loss_bc": 2.7239448030513813e-08,
+        "final_loss_physics": 1.3549966752179898e-05,
+        "runtime_seconds": 15.325305000000071,
+        "solver": null,
+        "t_total": 1.896065592765808
+      }
+    },
+    {
+      "entry_id": "186_pinn-with-exact-bc---seed-1093",
+      "label": "PINN with exact BC | seed=1093",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0024261975195258856,
+        "epochs_total": 4212,
+        "final_loss": 3.753835699171759e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 20.889201000000014,
+        "solver": null,
+        "t_total": 1.366610050201416
+      }
+    },
+    {
+      "entry_id": "187_pinn-with-soft-bc---seed-1093",
+      "label": "PINN with soft BC | seed=1093",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0002978988632094115,
+        "boundary_error_start": 0.0002974148956127465,
+        "delta_v": 0.004172005690634251,
+        "epochs_total": 5860,
+        "final_loss": 3.7426495964609785e-06,
+        "final_loss_bc": 2.8698742937649513e-08,
+        "final_loss_physics": 3.7139509458938846e-06,
+        "runtime_seconds": 24.223179999999957,
+        "solver": null,
+        "t_total": 2.49748158454895
+      }
+    },
+    {
+      "entry_id": "188_pinn-with-exact-bc---seed-1094",
+      "label": "PINN with exact BC | seed=1094",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0016401244793087244,
+        "epochs_total": 4050,
+        "final_loss": 3.0924827569833724e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 12.055294000000004,
+        "solver": null,
+        "t_total": 1.1395900249481201
+      }
+    },
+    {
+      "entry_id": "189_pinn-with-soft-bc---seed-1094",
+      "label": "PINN with soft BC | seed=1094",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.000169087914400734,
+        "boundary_error_start": 0.0003373628424014896,
+        "delta_v": 0.006762390024960041,
+        "epochs_total": 5476,
+        "final_loss": 9.826683708524797e-06,
+        "final_loss_bc": 2.3100515278429157e-08,
+        "final_loss_physics": 9.803583452594467e-06,
+        "runtime_seconds": 13.960665999999947,
+        "solver": null,
+        "t_total": 2.37129807472229
+      }
+    },
+    {
+      "entry_id": "190_pinn-with-exact-bc---seed-1095",
+      "label": "PINN with exact BC | seed=1095",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0022146040573716164,
+        "epochs_total": 4416,
+        "final_loss": 1.7404107666152413e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 12.980000000000018,
+        "solver": null,
+        "t_total": 1.8602451086044312
+      }
+    },
+    {
+      "entry_id": "191_pinn-with-soft-bc---seed-1095",
+      "label": "PINN with soft BC | seed=1095",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0009571638074703515,
+        "boundary_error_start": 0.0009578427998349071,
+        "delta_v": 0.013088488951325417,
+        "epochs_total": 7114,
+        "final_loss": 5.540631173062138e-05,
+        "final_loss_bc": 2.9702974302381335e-07,
+        "final_loss_physics": 5.5109281674958766e-05,
+        "runtime_seconds": 19.513762000000042,
+        "solver": null,
+        "t_total": 1.919236421585083
+      }
+    },
+    {
+      "entry_id": "192_pinn-with-exact-bc---seed-1096",
+      "label": "PINN with exact BC | seed=1096",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0028114174492657185,
+        "epochs_total": 3744,
+        "final_loss": 1.0310754078091122e-05,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 17.225135999999964,
+        "solver": null,
+        "t_total": 0.9945933222770691
+      }
+    },
+    {
+      "entry_id": "193_pinn-with-soft-bc---seed-1096",
+      "label": "PINN with soft BC | seed=1096",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0001863272045738995,
+        "boundary_error_start": 0.0002456092624925077,
+        "delta_v": 0.004471964668482542,
+        "epochs_total": 5281,
+        "final_loss": 5.65673190067173e-06,
+        "final_loss_bc": 1.535078197889561e-08,
+        "final_loss_physics": 5.6413809943478554e-06,
+        "runtime_seconds": 21.89471100000003,
+        "solver": null,
+        "t_total": 2.4315013885498047
+      }
+    },
+    {
+      "entry_id": "194_pinn-with-exact-bc---seed-1097",
+      "label": "PINN with exact BC | seed=1097",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.00241291057318449,
+        "epochs_total": 3753,
+        "final_loss": 6.660895905952202e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 11.224574999999959,
+        "solver": null,
+        "t_total": 1.056877613067627
+      }
+    },
+    {
+      "entry_id": "195_pinn-with-soft-bc---seed-1097",
+      "label": "PINN with soft BC | seed=1097",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00021930091315880418,
+        "boundary_error_start": 0.0003046695492230356,
+        "delta_v": 0.0028527246322482824,
+        "epochs_total": 5210,
+        "final_loss": 2.7574105843086727e-06,
+        "final_loss_bc": 2.2818197109586436e-08,
+        "final_loss_physics": 2.734592499109567e-06,
+        "runtime_seconds": 12.9112429999999,
+        "solver": null,
+        "t_total": 2.000598669052124
+      }
+    },
+    {
+      "entry_id": "196_pinn-with-exact-bc---seed-1098",
+      "label": "PINN with exact BC | seed=1098",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.002232559956610203,
+        "epochs_total": 3792,
+        "final_loss": 5.365904144127853e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 10.727010999999948,
+        "solver": null,
+        "t_total": 1.1022744178771973
+      }
+    },
+    {
+      "entry_id": "197_pinn-with-soft-bc---seed-1098",
+      "label": "PINN with soft BC | seed=1098",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0004485121462494135,
+        "boundary_error_start": 0.000541484507266432,
+        "delta_v": 0.008028965443372726,
+        "epochs_total": 6150,
+        "final_loss": 2.5096742319874465e-05,
+        "final_loss_bc": 8.005707030633857e-08,
+        "final_loss_physics": 2.5016684958245605e-05,
+        "runtime_seconds": 16.149842000000035,
+        "solver": null,
+        "t_total": 1.8052726984024048
+      }
+    },
+    {
+      "entry_id": "198_pinn-with-exact-bc---seed-1099",
+      "label": "PINN with exact BC | seed=1099",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.00230803107842803,
+        "epochs_total": 3656,
+        "final_loss": 6.639856110268738e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 16.04602699999998,
+        "solver": null,
+        "t_total": 1.0799877643585205
+      }
+    },
+    {
+      "entry_id": "199_pinn-with-soft-bc---seed-1099",
+      "label": "PINN with soft BC | seed=1099",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0008236013818532228,
+        "boundary_error_start": 0.002196535235270858,
+        "delta_v": 0.014359652064740658,
+        "epochs_total": 5159,
+        "final_loss": 8.179404539987445e-05,
+        "final_loss_bc": 8.913523288356373e-07,
+        "final_loss_physics": 8.090268966043368e-05,
+        "runtime_seconds": 20.140967000000046,
+        "solver": null,
+        "t_total": 1.8551987409591675
+      }
+    },
+    {
+      "entry_id": "200_baseline--opengoddard",
+      "label": "Baseline (OpenGoddard)",
+      "source": "opengoddard",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 9.756618453879082e-08,
+        "epochs_total": 1,
+        "final_loss": 2.3852754182405927e-13,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 34.720853000000005,
+        "solver": {
+          "backend": "OpenGoddard",
+          "converged": true,
+          "ftol": 1e-11,
+          "message": "Optimization terminated successfully",
+          "objective_value": 1.5689083198303038e-13,
+          "outer_iteration_budget": 100,
+          "outer_iterations_completed": 5,
+          "slsqp_maxiter": 25,
+          "status_code": 0,
+          "stopped_reason": "converged"
+        },
+        "t_total": 1.7159018933551473
+      }
+    }
+  ],
+  "record_id": "three_bodies_2d_monte_carlo",
+  "source_run_id": "20260415_070903_three_bodies_2d_monte_carlo"
+}

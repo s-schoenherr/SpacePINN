@@ -1,0 +1,5134 @@
+{
+  "entries": [
+    {
+      "entry_id": "00_pinn-with-exact-bc---seed-2000",
+      "label": "PINN with exact BC | seed=2000",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0013006626395508647,
+        "epochs_total": 2829,
+        "final_loss": 1.0339424534322461e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 27.056167,
+        "solver": null,
+        "t_total": 1.3848559856414795
+      }
+    },
+    {
+      "entry_id": "01_pinn-without-exact-bc---seed-2000",
+      "label": "PINN without exact BC | seed=2000",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 2.8062080673407763e-05,
+        "boundary_error_start": 0.00011223837645957246,
+        "delta_v": 0.0027319705113768578,
+        "epochs_total": 3035,
+        "final_loss": 1.5910342199276784e-06,
+        "final_loss_bc": 2.8194426793248795e-09,
+        "final_loss_physics": 1.5882147863521823e-06,
+        "runtime_seconds": 24.632467000000002,
+        "solver": null,
+        "t_total": 2.6660234928131104
+      }
+    },
+    {
+      "entry_id": "02_pinn-with-exact-bc-and-pre-conditioning---seed-2000",
+      "label": "PINN with exact BC and pre-conditioning | seed=2000",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001191618968732655,
+        "epochs_total": 4958,
+        "final_loss": 8.987002502180985e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 30.234294000000006,
+        "solver": null,
+        "t_total": 1.5152842998504639
+      }
+    },
+    {
+      "entry_id": "03_pinn-with-exact-bc---seed-2001",
+      "label": "PINN with exact BC | seed=2001",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0016042571514844894,
+        "epochs_total": 2665,
+        "final_loss": 1.006850880003185e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 25.691039999999987,
+        "solver": null,
+        "t_total": 1.7207270860671997
+      }
+    },
+    {
+      "entry_id": "04_pinn-without-exact-bc---seed-2001",
+      "label": "PINN without exact BC | seed=2001",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 2.9250571969896555e-05,
+        "boundary_error_start": 4.195097790216096e-05,
+        "delta_v": 0.0029233060777187347,
+        "epochs_total": 3576,
+        "final_loss": 1.2501770925155142e-06,
+        "final_loss_bc": 5.548195791682531e-10,
+        "final_loss_physics": 1.2496223007474327e-06,
+        "runtime_seconds": 28.603602999999993,
+        "solver": null,
+        "t_total": 3.0124402046203613
+      }
+    },
+    {
+      "entry_id": "05_pinn-with-exact-bc-and-pre-conditioning---seed-2001",
+      "label": "PINN with exact BC and pre-conditioning | seed=2001",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0020410013385117054,
+        "epochs_total": 4792,
+        "final_loss": 2.0299842162785353e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 25.88352499999999,
+        "solver": null,
+        "t_total": 1.5686131715774536
+      }
+    },
+    {
+      "entry_id": "06_pinn-with-exact-bc---seed-2002",
+      "label": "PINN with exact BC | seed=2002",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0011787135154008865,
+        "epochs_total": 2777,
+        "final_loss": 8.990854212242994e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 26.140952999999996,
+        "solver": null,
+        "t_total": 1.4701513051986694
+      }
+    },
+    {
+      "entry_id": "07_pinn-without-exact-bc---seed-2002",
+      "label": "PINN without exact BC | seed=2002",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 2.4244418455054983e-05,
+        "boundary_error_start": 7.045079837553203e-05,
+        "delta_v": 0.0015595831209793687,
+        "epochs_total": 3433,
+        "final_loss": 6.531737426485051e-07,
+        "final_loss_bc": 1.167678176372533e-09,
+        "final_loss_physics": 6.520060651382664e-07,
+        "runtime_seconds": 25.159903999999983,
+        "solver": null,
+        "t_total": 2.354149580001831
+      }
+    },
+    {
+      "entry_id": "08_pinn-with-exact-bc-and-pre-conditioning---seed-2002",
+      "label": "PINN with exact BC and pre-conditioning | seed=2002",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.48094797134399414,
+        "epochs_total": 6542,
+        "final_loss": 2.326178400835488e-05,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 43.65780000000001,
+        "solver": null,
+        "t_total": 1.6817795038223267
+      }
+    },
+    {
+      "entry_id": "09_pinn-with-exact-bc---seed-2003",
+      "label": "PINN with exact BC | seed=2003",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001206225249916315,
+        "epochs_total": 2919,
+        "final_loss": 2.9370653464866336e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 27.994400000000002,
+        "solver": null,
+        "t_total": 2.3368921279907227
+      }
+    },
+    {
+      "entry_id": "10_pinn-without-exact-bc---seed-2003",
+      "label": "PINN without exact BC | seed=2003",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 8.055061334744096e-05,
+        "boundary_error_start": 0.00014698866289108992,
+        "delta_v": 0.003954011015594006,
+        "epochs_total": 3066,
+        "final_loss": 3.755027819352108e-06,
+        "final_loss_bc": 5.922072610076157e-09,
+        "final_loss_physics": 3.7491056446015136e-06,
+        "runtime_seconds": 25.026384,
+        "solver": null,
+        "t_total": 2.406294107437134
+      }
+    },
+    {
+      "entry_id": "11_pinn-with-exact-bc-and-pre-conditioning---seed-2003",
+      "label": "PINN with exact BC and pre-conditioning | seed=2003",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.002451335545629263,
+        "epochs_total": 4631,
+        "final_loss": 2.9819648261764087e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 26.330099000000004,
+        "solver": null,
+        "t_total": 1.5739707946777344
+      }
+    },
+    {
+      "entry_id": "12_pinn-with-exact-bc---seed-2004",
+      "label": "PINN with exact BC | seed=2004",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0011955671943724155,
+        "epochs_total": 2722,
+        "final_loss": 3.9853654243415804e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 26.587174999999988,
+        "solver": null,
+        "t_total": 2.026697874069214
+      }
+    },
+    {
+      "entry_id": "13_pinn-without-exact-bc---seed-2004",
+      "label": "PINN without exact BC | seed=2004",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00014559518604073673,
+        "boundary_error_start": 0.00022417603759095073,
+        "delta_v": 0.003233363851904869,
+        "epochs_total": 3473,
+        "final_loss": 3.5602820389613044e-06,
+        "final_loss_bc": 1.503807389724443e-08,
+        "final_loss_physics": 3.54524399881484e-06,
+        "runtime_seconds": 27.770025000000004,
+        "solver": null,
+        "t_total": 2.154798984527588
+      }
+    },
+    {
+      "entry_id": "14_pinn-with-exact-bc-and-pre-conditioning---seed-2004",
+      "label": "PINN with exact BC and pre-conditioning | seed=2004",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0016321212751790881,
+        "epochs_total": 5202,
+        "final_loss": 1.3598820487459307e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 29.940444999999983,
+        "solver": null,
+        "t_total": 1.5777010917663574
+      }
+    },
+    {
+      "entry_id": "15_pinn-with-exact-bc---seed-2005",
+      "label": "PINN with exact BC | seed=2005",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0019676757510751486,
+        "epochs_total": 2609,
+        "final_loss": 2.3798113488737727e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.33756600000001,
+        "solver": null,
+        "t_total": 1.522031307220459
+      }
+    },
+    {
+      "entry_id": "16_pinn-without-exact-bc---seed-2005",
+      "label": "PINN without exact BC | seed=2005",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00010274317173752934,
+        "boundary_error_start": 0.0001861517521319911,
+        "delta_v": 0.0020877523347735405,
+        "epochs_total": 7221,
+        "final_loss": 1.9022318156203255e-06,
+        "final_loss_bc": 9.530737976604087e-09,
+        "final_loss_physics": 1.8927011069536093e-06,
+        "runtime_seconds": 55.94771300000002,
+        "solver": null,
+        "t_total": 1.698728084564209
+      }
+    },
+    {
+      "entry_id": "17_pinn-with-exact-bc-and-pre-conditioning---seed-2005",
+      "label": "PINN with exact BC and pre-conditioning | seed=2005",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0019708629697561264,
+        "epochs_total": 5057,
+        "final_loss": 1.7465271184846642e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 28.176105000000007,
+        "solver": null,
+        "t_total": 1.6279137134552002
+      }
+    },
+    {
+      "entry_id": "18_pinn-with-exact-bc---seed-2006",
+      "label": "PINN with exact BC | seed=2006",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001625463250093162,
+        "epochs_total": 2720,
+        "final_loss": 1.054814447343233e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 25.777032,
+        "solver": null,
+        "t_total": 1.7347853183746338
+      }
+    },
+    {
+      "entry_id": "19_pinn-without-exact-bc---seed-2006",
+      "label": "PINN without exact BC | seed=2006",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 4.507710036705248e-05,
+        "boundary_error_start": 7.118752546375617e-05,
+        "delta_v": 0.0030959683936089277,
+        "epochs_total": 3050,
+        "final_loss": 2.0045538349222625e-06,
+        "final_loss_bc": 1.4970817918680268e-09,
+        "final_loss_physics": 2.0030568066431442e-06,
+        "runtime_seconds": 24.741951999999998,
+        "solver": null,
+        "t_total": 2.672123432159424
+      }
+    },
+    {
+      "entry_id": "20_pinn-with-exact-bc-and-pre-conditioning---seed-2006",
+      "label": "PINN with exact BC and pre-conditioning | seed=2006",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0014267945662140846,
+        "epochs_total": 5067,
+        "final_loss": 1.4415738860407146e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 31.503919999999994,
+        "solver": null,
+        "t_total": 1.540073275566101
+      }
+    },
+    {
+      "entry_id": "21_pinn-with-exact-bc---seed-2007",
+      "label": "PINN with exact BC | seed=2007",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001466192421503365,
+        "epochs_total": 2764,
+        "final_loss": 6.51632149129e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 26.950291000000007,
+        "solver": null,
+        "t_total": 2.0910630226135254
+      }
+    },
+    {
+      "entry_id": "22_pinn-without-exact-bc---seed-2007",
+      "label": "PINN without exact BC | seed=2007",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0001313928369199857,
+        "boundary_error_start": 0.00011404964607208967,
+        "delta_v": 0.0039123473688960075,
+        "epochs_total": 3313,
+        "final_loss": 2.576204678916838e-06,
+        "final_loss_bc": 6.372686822686546e-09,
+        "final_loss_physics": 2.5698320769151906e-06,
+        "runtime_seconds": 26.147781999999978,
+        "solver": null,
+        "t_total": 3.1742823123931885
+      }
+    },
+    {
+      "entry_id": "23_pinn-with-exact-bc-and-pre-conditioning---seed-2007",
+      "label": "PINN with exact BC and pre-conditioning | seed=2007",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.002469833940267563,
+        "epochs_total": 4594,
+        "final_loss": 3.2891996397665935e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 27.694927999999976,
+        "solver": null,
+        "t_total": 1.55699622631073
+      }
+    },
+    {
+      "entry_id": "24_pinn-with-exact-bc---seed-2008",
+      "label": "PINN with exact BC | seed=2008",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0023810926359146833,
+        "epochs_total": 2598,
+        "final_loss": 1.486696987740288e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.477925,
+        "solver": null,
+        "t_total": 2.054865837097168
+      }
+    },
+    {
+      "entry_id": "25_pinn-without-exact-bc---seed-2008",
+      "label": "PINN without exact BC | seed=2008",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 9.951060201274231e-05,
+        "boundary_error_start": 9.379090624861419e-05,
+        "delta_v": 0.003008696949109435,
+        "epochs_total": 3248,
+        "final_loss": 1.7014986042340752e-06,
+        "final_loss_bc": 3.942011606028473e-09,
+        "final_loss_physics": 1.6975566268229159e-06,
+        "runtime_seconds": 23.43866299999999,
+        "solver": null,
+        "t_total": 2.800198554992676
+      }
+    },
+    {
+      "entry_id": "26_pinn-with-exact-bc-and-pre-conditioning---seed-2008",
+      "label": "PINN with exact BC and pre-conditioning | seed=2008",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0016688883770257235,
+        "epochs_total": 5076,
+        "final_loss": 1.235479089700675e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 28.474828000000002,
+        "solver": null,
+        "t_total": 1.5618733167648315
+      }
+    },
+    {
+      "entry_id": "27_pinn-with-exact-bc---seed-2009",
+      "label": "PINN with exact BC | seed=2009",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0012810132466256618,
+        "epochs_total": 2707,
+        "final_loss": 4.380015923288738e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 25.807208000000003,
+        "solver": null,
+        "t_total": 2.0358922481536865
+      }
+    },
+    {
+      "entry_id": "28_pinn-without-exact-bc---seed-2009",
+      "label": "PINN without exact BC | seed=2009",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00010103551903739572,
+        "boundary_error_start": 8.948509639594704e-05,
+        "delta_v": 0.003647151868790388,
+        "epochs_total": 3870,
+        "final_loss": 2.235917236248497e-06,
+        "final_loss_bc": 3.840905371532699e-09,
+        "final_loss_physics": 2.23207644012291e-06,
+        "runtime_seconds": 32.217397,
+        "solver": null,
+        "t_total": 2.9042160511016846
+      }
+    },
+    {
+      "entry_id": "29_pinn-with-exact-bc-and-pre-conditioning---seed-2009",
+      "label": "PINN with exact BC and pre-conditioning | seed=2009",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0017591203795745969,
+        "epochs_total": 4841,
+        "final_loss": 1.8874328588935896e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 29.188196000000005,
+        "solver": null,
+        "t_total": 1.5520434379577637
+      }
+    },
+    {
+      "entry_id": "30_pinn-with-exact-bc---seed-2010",
+      "label": "PINN with exact BC | seed=2010",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0015438810223713517,
+        "epochs_total": 2848,
+        "final_loss": 1.4133740933175432e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 28.378522000000004,
+        "solver": null,
+        "t_total": 1.399304747581482
+      }
+    },
+    {
+      "entry_id": "31_pinn-without-exact-bc---seed-2010",
+      "label": "PINN without exact BC | seed=2010",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00015663763042539358,
+        "boundary_error_start": 0.00011400507355574518,
+        "delta_v": 0.0024656059686094522,
+        "epochs_total": 3614,
+        "final_loss": 2.367664365010569e-06,
+        "final_loss_bc": 7.896682419072931e-09,
+        "final_loss_physics": 2.3597676772624254e-06,
+        "runtime_seconds": 28.010999999999996,
+        "solver": null,
+        "t_total": 1.7637766599655151
+      }
+    },
+    {
+      "entry_id": "32_pinn-with-exact-bc-and-pre-conditioning---seed-2010",
+      "label": "PINN with exact BC and pre-conditioning | seed=2010",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0016104665119200945,
+        "epochs_total": 5279,
+        "final_loss": 1.1920756151084788e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 31.775138,
+        "solver": null,
+        "t_total": 1.5755161046981812
+      }
+    },
+    {
+      "entry_id": "33_pinn-with-exact-bc---seed-2011",
+      "label": "PINN with exact BC | seed=2011",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0014791371067985892,
+        "epochs_total": 2626,
+        "final_loss": 4.3055274545622524e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 23.97297500000002,
+        "solver": null,
+        "t_total": 2.486468553543091
+      }
+    },
+    {
+      "entry_id": "34_pinn-without-exact-bc---seed-2011",
+      "label": "PINN without exact BC | seed=2011",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00010667472088243812,
+        "boundary_error_start": 6.864674651296809e-05,
+        "delta_v": 0.0034289734903723,
+        "epochs_total": 3383,
+        "final_loss": 2.384028903179569e-06,
+        "final_loss_bc": 3.3795570786310236e-09,
+        "final_loss_physics": 2.3806494482414564e-06,
+        "runtime_seconds": 24.818516999999986,
+        "solver": null,
+        "t_total": 2.522693157196045
+      }
+    },
+    {
+      "entry_id": "35_pinn-with-exact-bc-and-pre-conditioning---seed-2011",
+      "label": "PINN with exact BC and pre-conditioning | seed=2011",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0021670612040907145,
+        "epochs_total": 4695,
+        "final_loss": 2.166297235817183e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 28.451585000000023,
+        "solver": null,
+        "t_total": 1.598304033279419
+      }
+    },
+    {
+      "entry_id": "36_pinn-with-exact-bc---seed-2012",
+      "label": "PINN with exact BC | seed=2012",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0013315313262864947,
+        "epochs_total": 2891,
+        "final_loss": 6.994353043410229e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 27.726564,
+        "solver": null,
+        "t_total": 1.7735282182693481
+      }
+    },
+    {
+      "entry_id": "37_pinn-without-exact-bc---seed-2012",
+      "label": "PINN without exact BC | seed=2012",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 5.944111035205424e-05,
+        "boundary_error_start": 0.00012137442536186427,
+        "delta_v": 0.00415506586432457,
+        "epochs_total": 2613,
+        "final_loss": 3.705690005517681e-06,
+        "final_loss_bc": 3.8521381640066465e-09,
+        "final_loss_physics": 3.701837840708322e-06,
+        "runtime_seconds": 20.779827000000004,
+        "solver": null,
+        "t_total": 2.4617905616760254
+      }
+    },
+    {
+      "entry_id": "38_pinn-with-exact-bc-and-pre-conditioning---seed-2012",
+      "label": "PINN with exact BC and pre-conditioning | seed=2012",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0011212340323254466,
+        "epochs_total": 4969,
+        "final_loss": 6.660324061158462e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 30.625647999999998,
+        "solver": null,
+        "t_total": 1.5374101400375366
+      }
+    },
+    {
+      "entry_id": "39_pinn-with-exact-bc---seed-2013",
+      "label": "PINN with exact BC | seed=2013",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0013782709138467908,
+        "epochs_total": 3029,
+        "final_loss": 5.441214057100296e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 29.998593,
+        "solver": null,
+        "t_total": 2.169997453689575
+      }
+    },
+    {
+      "entry_id": "40_pinn-without-exact-bc---seed-2013",
+      "label": "PINN without exact BC | seed=2013",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 7.270300557138398e-05,
+        "boundary_error_start": 0.00012883383897133172,
+        "delta_v": 0.0031138602644205093,
+        "epochs_total": 3189,
+        "final_loss": 2.721301370911533e-06,
+        "final_loss_bc": 4.607176862236884e-09,
+        "final_loss_physics": 2.716694098126027e-06,
+        "runtime_seconds": 25.000662000000005,
+        "solver": null,
+        "t_total": 2.0605132579803467
+      }
+    },
+    {
+      "entry_id": "41_pinn-with-exact-bc-and-pre-conditioning---seed-2013",
+      "label": "PINN with exact BC and pre-conditioning | seed=2013",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0020640408620238304,
+        "epochs_total": 4888,
+        "final_loss": 2.2347221602103673e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 26.858305,
+        "solver": null,
+        "t_total": 1.5550514459609985
+      }
+    },
+    {
+      "entry_id": "42_pinn-with-exact-bc---seed-2014",
+      "label": "PINN with exact BC | seed=2014",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0015022311126813293,
+        "epochs_total": 2752,
+        "final_loss": 9.280715289605723e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 25.906144000000012,
+        "solver": null,
+        "t_total": 1.7389013767242432
+      }
+    },
+    {
+      "entry_id": "43_pinn-without-exact-bc---seed-2014",
+      "label": "PINN without exact BC | seed=2014",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00011575871758395806,
+        "boundary_error_start": 0.00016841432079672813,
+        "delta_v": 0.004322865977883339,
+        "epochs_total": 3520,
+        "final_loss": 3.830274636129616e-06,
+        "final_loss_bc": 8.800171258371847e-09,
+        "final_loss_physics": 3.821474365395261e-06,
+        "runtime_seconds": 25.79245400000002,
+        "solver": null,
+        "t_total": 2.813899517059326
+      }
+    },
+    {
+      "entry_id": "44_pinn-with-exact-bc-and-pre-conditioning---seed-2014",
+      "label": "PINN with exact BC and pre-conditioning | seed=2014",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0019792704842984676,
+        "epochs_total": 4572,
+        "final_loss": 1.98902171177906e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 27.96885400000002,
+        "solver": null,
+        "t_total": 1.5700677633285522
+      }
+    },
+    {
+      "entry_id": "45_pinn-with-exact-bc---seed-2015",
+      "label": "PINN with exact BC | seed=2015",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0013934033922851086,
+        "epochs_total": 3029,
+        "final_loss": 1.121492914535338e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 29.553609,
+        "solver": null,
+        "t_total": 1.4535561800003052
+      }
+    },
+    {
+      "entry_id": "46_pinn-without-exact-bc---seed-2015",
+      "label": "PINN without exact BC | seed=2015",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 5.597116978606209e-05,
+        "boundary_error_start": 0.00018592372362036258,
+        "delta_v": 0.0039163571782410145,
+        "epochs_total": 2949,
+        "final_loss": 3.860622200591024e-06,
+        "final_loss_bc": 7.940829327424126e-09,
+        "final_loss_physics": 3.8526814023498446e-06,
+        "runtime_seconds": 23.956711,
+        "solver": null,
+        "t_total": 2.4639511108398438
+      }
+    },
+    {
+      "entry_id": "47_pinn-with-exact-bc-and-pre-conditioning---seed-2015",
+      "label": "PINN with exact BC and pre-conditioning | seed=2015",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0019064501393586397,
+        "epochs_total": 5037,
+        "final_loss": 1.7678929680187139e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 31.216397999999998,
+        "solver": null,
+        "t_total": 1.570396065711975
+      }
+    },
+    {
+      "entry_id": "48_pinn-with-exact-bc---seed-2016",
+      "label": "PINN with exact BC | seed=2016",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0016776432748883963,
+        "epochs_total": 2626,
+        "final_loss": 1.1148239309477503e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 25.45091699999999,
+        "solver": null,
+        "t_total": 1.806433081626892
+      }
+    },
+    {
+      "entry_id": "49_pinn-without-exact-bc---seed-2016",
+      "label": "PINN without exact BC | seed=2016",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 5.419308217824437e-05,
+        "boundary_error_start": 3.942264083889313e-05,
+        "delta_v": 0.0019711367785930634,
+        "epochs_total": 3661,
+        "final_loss": 9.571070904712542e-07,
+        "final_loss_bc": 9.460190408816516e-10,
+        "final_loss_physics": 9.561611022945726e-07,
+        "runtime_seconds": 28.854967999999985,
+        "solver": null,
+        "t_total": 2.8391807079315186
+      }
+    },
+    {
+      "entry_id": "50_pinn-with-exact-bc-and-pre-conditioning---seed-2016",
+      "label": "PINN with exact BC and pre-conditioning | seed=2016",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0023198870476335287,
+        "epochs_total": 5153,
+        "final_loss": 2.863844883904676e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 30.264809999999983,
+        "solver": null,
+        "t_total": 1.609676718711853
+      }
+    },
+    {
+      "entry_id": "51_pinn-with-exact-bc---seed-2017",
+      "label": "PINN with exact BC | seed=2017",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.000963596859946847,
+        "epochs_total": 2939,
+        "final_loss": 4.140674718655646e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 27.078628999999978,
+        "solver": null,
+        "t_total": 1.584497094154358
+      }
+    },
+    {
+      "entry_id": "52_pinn-without-exact-bc---seed-2017",
+      "label": "PINN without exact BC | seed=2017",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0001733209064695984,
+        "boundary_error_start": 0.00012022837472613901,
+        "delta_v": 0.005284750368446112,
+        "epochs_total": 3173,
+        "final_loss": 5.6811536524037365e-06,
+        "final_loss_bc": 9.370681119946767e-09,
+        "final_loss_physics": 5.67178312849137e-06,
+        "runtime_seconds": 23.11183299999999,
+        "solver": null,
+        "t_total": 2.418393850326538
+      }
+    },
+    {
+      "entry_id": "53_pinn-with-exact-bc-and-pre-conditioning---seed-2017",
+      "label": "PINN with exact BC and pre-conditioning | seed=2017",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001907492522150278,
+        "epochs_total": 4800,
+        "final_loss": 2.0655206753872335e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 26.92447199999998,
+        "solver": null,
+        "t_total": 1.6066865921020508
+      }
+    },
+    {
+      "entry_id": "54_pinn-with-exact-bc---seed-2018",
+      "label": "PINN with exact BC | seed=2018",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001688794931396842,
+        "epochs_total": 2961,
+        "final_loss": 1.0350921684221248e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 28.633670000000002,
+        "solver": null,
+        "t_total": 1.7479658126831055
+      }
+    },
+    {
+      "entry_id": "55_pinn-without-exact-bc---seed-2018",
+      "label": "PINN without exact BC | seed=2018",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 4.645964509109035e-05,
+        "boundary_error_start": 2.7558546207728796e-05,
+        "delta_v": 0.0022632924374192953,
+        "epochs_total": 3083,
+        "final_loss": 1.0007871651396272e-06,
+        "final_loss_bc": 6.175934208485501e-10,
+        "final_loss_physics": 1.0001696182371234e-06,
+        "runtime_seconds": 25.147717999999998,
+        "solver": null,
+        "t_total": 2.479456663131714
+      }
+    },
+    {
+      "entry_id": "56_pinn-with-exact-bc-and-pre-conditioning---seed-2018",
+      "label": "PINN with exact BC and pre-conditioning | seed=2018",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0018948232755064964,
+        "epochs_total": 5416,
+        "final_loss": 1.8251452047479688e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 35.17664199999999,
+        "solver": null,
+        "t_total": 1.5604028701782227
+      }
+    },
+    {
+      "entry_id": "57_pinn-with-exact-bc---seed-2019",
+      "label": "PINN with exact BC | seed=2019",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0011912551708519459,
+        "epochs_total": 2758,
+        "final_loss": 6.003585895086871e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 27.49064699999998,
+        "solver": null,
+        "t_total": 1.7084414958953857
+      }
+    },
+    {
+      "entry_id": "58_pinn-without-exact-bc---seed-2019",
+      "label": "PINN without exact BC | seed=2019",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 7.65776276239194e-05,
+        "boundary_error_start": 9.446249168831855e-05,
+        "delta_v": 0.0035131387412548065,
+        "epochs_total": 3328,
+        "final_loss": 1.843013478719513e-06,
+        "final_loss_bc": 3.1123521537779197e-09,
+        "final_loss_physics": 1.8399010741632082e-06,
+        "runtime_seconds": 25.601207000000016,
+        "solver": null,
+        "t_total": 3.087055206298828
+      }
+    },
+    {
+      "entry_id": "59_pinn-with-exact-bc-and-pre-conditioning---seed-2019",
+      "label": "PINN with exact BC and pre-conditioning | seed=2019",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0020872626919299364,
+        "epochs_total": 4226,
+        "final_loss": 2.436484692225349e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 26.31313799999998,
+        "solver": null,
+        "t_total": 1.5117825269699097
+      }
+    },
+    {
+      "entry_id": "60_pinn-with-exact-bc---seed-2020",
+      "label": "PINN with exact BC | seed=2020",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.002249885117635131,
+        "epochs_total": 2960,
+        "final_loss": 3.787282139455783e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 28.095247,
+        "solver": null,
+        "t_total": 1.2382235527038574
+      }
+    },
+    {
+      "entry_id": "61_pinn-without-exact-bc---seed-2020",
+      "label": "PINN without exact BC | seed=2020",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 1.8569600797491148e-05,
+        "boundary_error_start": 0.0002000766253331676,
+        "delta_v": 0.0028247330337762833,
+        "epochs_total": 3297,
+        "final_loss": 3.0160022106429096e-06,
+        "final_loss_bc": 8.515486982219045e-09,
+        "final_loss_physics": 3.0074866117502097e-06,
+        "runtime_seconds": 23.955773000000022,
+        "solver": null,
+        "t_total": 1.9217448234558105
+      }
+    },
+    {
+      "entry_id": "62_pinn-with-exact-bc-and-pre-conditioning---seed-2020",
+      "label": "PINN with exact BC and pre-conditioning | seed=2020",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.002117142081260681,
+        "epochs_total": 4826,
+        "final_loss": 2.0539682736853138e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 26.22525300000001,
+        "solver": null,
+        "t_total": 1.5857603549957275
+      }
+    },
+    {
+      "entry_id": "63_pinn-with-exact-bc---seed-2021",
+      "label": "PINN with exact BC | seed=2021",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0016971863806247711,
+        "epochs_total": 3178,
+        "final_loss": 1.9629455891845282e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 31.219001,
+        "solver": null,
+        "t_total": 1.4160104990005493
+      }
+    },
+    {
+      "entry_id": "64_pinn-without-exact-bc---seed-2021",
+      "label": "PINN without exact BC | seed=2021",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0001305434270761907,
+        "boundary_error_start": 0.00011238042498007417,
+        "delta_v": 0.0035772838164120913,
+        "epochs_total": 3395,
+        "final_loss": 2.6639704628905747e-06,
+        "final_loss_bc": 6.259835316768658e-09,
+        "final_loss_physics": 2.657710638231947e-06,
+        "runtime_seconds": 27.693187,
+        "solver": null,
+        "t_total": 2.9382917881011963
+      }
+    },
+    {
+      "entry_id": "65_pinn-with-exact-bc-and-pre-conditioning---seed-2021",
+      "label": "PINN with exact BC and pre-conditioning | seed=2021",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001539703574962914,
+        "epochs_total": 4864,
+        "final_loss": 1.3595889640782843e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 28.878735000000006,
+        "solver": null,
+        "t_total": 1.5609217882156372
+      }
+    },
+    {
+      "entry_id": "66_pinn-with-exact-bc---seed-2022",
+      "label": "PINN with exact BC | seed=2022",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0011874862248077989,
+        "epochs_total": 2694,
+        "final_loss": 2.658903497376741e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 26.626862000000003,
+        "solver": null,
+        "t_total": 2.504849672317505
+      }
+    },
+    {
+      "entry_id": "67_pinn-without-exact-bc---seed-2022",
+      "label": "PINN without exact BC | seed=2022",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0001060214126482606,
+        "boundary_error_start": 0.00011608703061938286,
+        "delta_v": 0.004061151295900345,
+        "epochs_total": 3442,
+        "final_loss": 1.943847792063025e-06,
+        "final_loss_bc": 5.193582008899966e-09,
+        "final_loss_physics": 1.9386541225685505e-06,
+        "runtime_seconds": 26.593995000000007,
+        "solver": null,
+        "t_total": 3.3970863819122314
+      }
+    },
+    {
+      "entry_id": "68_pinn-with-exact-bc-and-pre-conditioning---seed-2022",
+      "label": "PINN with exact BC and pre-conditioning | seed=2022",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0023489256855100393,
+        "epochs_total": 4925,
+        "final_loss": 2.6414238618599484e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 27.916517999999996,
+        "solver": null,
+        "t_total": 1.5274152755737305
+      }
+    },
+    {
+      "entry_id": "69_pinn-with-exact-bc---seed-2023",
+      "label": "PINN with exact BC | seed=2023",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001270740176551044,
+        "epochs_total": 3012,
+        "final_loss": 6.511361902994395e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 27.862985000000037,
+        "solver": null,
+        "t_total": 1.713279366493225
+      }
+    },
+    {
+      "entry_id": "70_pinn-without-exact-bc---seed-2023",
+      "label": "PINN without exact BC | seed=2023",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 5.4103369620861486e-05,
+        "boundary_error_start": 0.00012016797700198367,
+        "delta_v": 0.0036535814870148897,
+        "epochs_total": 3246,
+        "final_loss": 2.515484538889723e-06,
+        "final_loss_bc": 3.6590093177579774e-09,
+        "final_loss_physics": 2.5118256417044904e-06,
+        "runtime_seconds": 23.74559099999999,
+        "solver": null,
+        "t_total": 2.8228776454925537
+      }
+    },
+    {
+      "entry_id": "71_pinn-with-exact-bc-and-pre-conditioning---seed-2023",
+      "label": "PINN with exact BC and pre-conditioning | seed=2023",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0014998125843703747,
+        "epochs_total": 4953,
+        "final_loss": 1.4610127436753828e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 27.664108999999996,
+        "solver": null,
+        "t_total": 1.539556622505188
+      }
+    },
+    {
+      "entry_id": "72_pinn-with-exact-bc---seed-2024",
+      "label": "PINN with exact BC | seed=2024",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0010944072855636477,
+        "epochs_total": 3047,
+        "final_loss": 6.295633170338988e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 29.465083999999997,
+        "solver": null,
+        "t_total": 1.5137625932693481
+      }
+    },
+    {
+      "entry_id": "73_pinn-without-exact-bc---seed-2024",
+      "label": "PINN without exact BC | seed=2024",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 7.89291225373745e-05,
+        "boundary_error_start": 5.199762017582543e-05,
+        "delta_v": 0.0019012538250535727,
+        "epochs_total": 3019,
+        "final_loss": 1.1003027111655683e-06,
+        "final_loss_bc": 1.8736443507805234e-09,
+        "final_loss_physics": 1.0984290383930784e-06,
+        "runtime_seconds": 24.375503000000002,
+        "solver": null,
+        "t_total": 2.2986347675323486
+      }
+    },
+    {
+      "entry_id": "74_pinn-with-exact-bc-and-pre-conditioning---seed-2024",
+      "label": "PINN with exact BC and pre-conditioning | seed=2024",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0016643968410789967,
+        "epochs_total": 4862,
+        "final_loss": 1.5238002788464655e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 29.192104999999998,
+        "solver": null,
+        "t_total": 1.6008635759353638
+      }
+    },
+    {
+      "entry_id": "75_pinn-with-exact-bc---seed-2025",
+      "label": "PINN with exact BC | seed=2025",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0010724464664235711,
+        "epochs_total": 2706,
+        "final_loss": 3.7500674920920574e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 26.249483999999995,
+        "solver": null,
+        "t_total": 1.976790428161621
+      }
+    },
+    {
+      "entry_id": "76_pinn-without-exact-bc---seed-2025",
+      "label": "PINN without exact BC | seed=2025",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0001685154129518196,
+        "boundary_error_start": 0.00013161168317310512,
+        "delta_v": 0.00393820833414793,
+        "epochs_total": 3178,
+        "final_loss": 3.529268042257172e-06,
+        "final_loss_bc": 9.642255882624795e-09,
+        "final_loss_physics": 3.519625806802651e-06,
+        "runtime_seconds": 24.910768999999988,
+        "solver": null,
+        "t_total": 2.7392382621765137
+      }
+    },
+    {
+      "entry_id": "77_pinn-with-exact-bc-and-pre-conditioning---seed-2025",
+      "label": "PINN with exact BC and pre-conditioning | seed=2025",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0017074901843443513,
+        "epochs_total": 4459,
+        "final_loss": 1.5134560271690134e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 26.517169999999993,
+        "solver": null,
+        "t_total": 1.5306556224822998
+      }
+    },
+    {
+      "entry_id": "78_pinn-with-exact-bc---seed-2026",
+      "label": "PINN with exact BC | seed=2026",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0017637042328715324,
+        "epochs_total": 3031,
+        "final_loss": 2.7220219180890126e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 28.929575999999997,
+        "solver": null,
+        "t_total": 1.237144112586975
+      }
+    },
+    {
+      "entry_id": "79_pinn-without-exact-bc---seed-2026",
+      "label": "PINN without exact BC | seed=2026",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 6.802245479775593e-05,
+        "boundary_error_start": 0.00010895713057834655,
+        "delta_v": 0.003987555857747793,
+        "epochs_total": 3139,
+        "final_loss": 2.828854803738068e-06,
+        "final_loss_bc": 3.4805465176646067e-09,
+        "final_loss_physics": 2.825374167514383e-06,
+        "runtime_seconds": 22.50159100000002,
+        "solver": null,
+        "t_total": 2.527660846710205
+      }
+    },
+    {
+      "entry_id": "80_pinn-with-exact-bc-and-pre-conditioning---seed-2026",
+      "label": "PINN with exact BC and pre-conditioning | seed=2026",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001846130471676588,
+        "epochs_total": 4985,
+        "final_loss": 1.8096926623911713e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 27.674547000000018,
+        "solver": null,
+        "t_total": 1.5274560451507568
+      }
+    },
+    {
+      "entry_id": "81_pinn-with-exact-bc---seed-2027",
+      "label": "PINN with exact BC | seed=2027",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0012191093992441893,
+        "epochs_total": 3467,
+        "final_loss": 8.744617048250802e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 34.597257,
+        "solver": null,
+        "t_total": 1.5013688802719116
+      }
+    },
+    {
+      "entry_id": "82_pinn-without-exact-bc---seed-2027",
+      "label": "PINN without exact BC | seed=2027",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 7.075690518831834e-05,
+        "boundary_error_start": 6.632923032157123e-05,
+        "delta_v": 0.002276872517541051,
+        "epochs_total": 3338,
+        "final_loss": 1.1880798638230772e-06,
+        "final_loss_bc": 1.982125352739672e-09,
+        "final_loss_physics": 1.1860977338074008e-06,
+        "runtime_seconds": 27.213183,
+        "solver": null,
+        "t_total": 2.438347816467285
+      }
+    },
+    {
+      "entry_id": "83_pinn-with-exact-bc-and-pre-conditioning---seed-2027",
+      "label": "PINN with exact BC and pre-conditioning | seed=2027",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.00172793073579669,
+        "epochs_total": 5030,
+        "final_loss": 1.4796960385865532e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 30.210019000000003,
+        "solver": null,
+        "t_total": 1.5581543445587158
+      }
+    },
+    {
+      "entry_id": "84_pinn-with-exact-bc---seed-2028",
+      "label": "PINN with exact BC | seed=2028",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001105930539779365,
+        "epochs_total": 2886,
+        "final_loss": 5.083861651655752e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 29.162745,
+        "solver": null,
+        "t_total": 1.8329366445541382
+      }
+    },
+    {
+      "entry_id": "85_pinn-without-exact-bc---seed-2028",
+      "label": "PINN without exact BC | seed=2028",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00029620868735946715,
+        "boundary_error_start": 0.00030538614373654127,
+        "delta_v": 0.007167148403823376,
+        "epochs_total": 5720,
+        "final_loss": 1.8293943867320195e-05,
+        "final_loss_bc": 3.813395821339327e-08,
+        "final_loss_physics": 1.825581057346426e-05,
+        "runtime_seconds": 44.96936600000001,
+        "solver": null,
+        "t_total": 1.81886625289917
+      }
+    },
+    {
+      "entry_id": "86_pinn-with-exact-bc-and-pre-conditioning---seed-2028",
+      "label": "PINN with exact BC and pre-conditioning | seed=2028",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.002426146063953638,
+        "epochs_total": 4831,
+        "final_loss": 2.8958963866898557e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 25.986863,
+        "solver": null,
+        "t_total": 1.5570980310440063
+      }
+    },
+    {
+      "entry_id": "87_pinn-with-exact-bc---seed-2029",
+      "label": "PINN with exact BC | seed=2029",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0012285882839933038,
+        "epochs_total": 2857,
+        "final_loss": 4.776040327669762e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 26.561638999999985,
+        "solver": null,
+        "t_total": 1.9089244604110718
+      }
+    },
+    {
+      "entry_id": "88_pinn-without-exact-bc---seed-2029",
+      "label": "PINN without exact BC | seed=2029",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 6.854708772152662e-05,
+        "boundary_error_start": 0.00012287969002500176,
+        "delta_v": 0.003724117064848542,
+        "epochs_total": 3412,
+        "final_loss": 2.5551605631335406e-06,
+        "final_loss_bc": 4.160169542188896e-09,
+        "final_loss_physics": 2.5510003069939557e-06,
+        "runtime_seconds": 24.73491999999999,
+        "solver": null,
+        "t_total": 2.7825236320495605
+      }
+    },
+    {
+      "entry_id": "89_pinn-with-exact-bc-and-pre-conditioning---seed-2029",
+      "label": "PINN with exact BC and pre-conditioning | seed=2029",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0016731569776311517,
+        "epochs_total": 5087,
+        "final_loss": 1.2002307130387635e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 30.27765899999997,
+        "solver": null,
+        "t_total": 1.6117881536483765
+      }
+    },
+    {
+      "entry_id": "90_pinn-with-exact-bc---seed-2030",
+      "label": "PINN with exact BC | seed=2030",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001443029846996069,
+        "epochs_total": 2817,
+        "final_loss": 1.1287820598226972e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 26.02133699999996,
+        "solver": null,
+        "t_total": 1.5565242767333984
+      }
+    },
+    {
+      "entry_id": "91_pinn-without-exact-bc---seed-2030",
+      "label": "PINN without exact BC | seed=2030",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 9.053346730070189e-05,
+        "boundary_error_start": 9.183242218568921e-05,
+        "delta_v": 0.003827819600701332,
+        "epochs_total": 3089,
+        "final_loss": 3.2146544981515035e-06,
+        "final_loss_bc": 3.4980334184808726e-09,
+        "final_loss_physics": 3.2111563541548094e-06,
+        "runtime_seconds": 22.46195899999998,
+        "solver": null,
+        "t_total": 2.528559446334839
+      }
+    },
+    {
+      "entry_id": "92_pinn-with-exact-bc-and-pre-conditioning---seed-2030",
+      "label": "PINN with exact BC and pre-conditioning | seed=2030",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0022529473062604666,
+        "epochs_total": 4263,
+        "final_loss": 3.058958100154996e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 21.687733000000037,
+        "solver": null,
+        "t_total": 1.536957859992981
+      }
+    },
+    {
+      "entry_id": "93_pinn-with-exact-bc---seed-2031",
+      "label": "PINN with exact BC | seed=2031",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0006555822328664362,
+        "epochs_total": 3193,
+        "final_loss": 1.393745066025076e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 29.62584499999997,
+        "solver": null,
+        "t_total": 1.9120450019836426
+      }
+    },
+    {
+      "entry_id": "94_pinn-without-exact-bc---seed-2031",
+      "label": "PINN without exact BC | seed=2031",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 2.2275176888797432e-05,
+        "boundary_error_start": 0.00012057852291036397,
+        "delta_v": 0.0029062086250633,
+        "epochs_total": 2944,
+        "final_loss": 1.7585284695087466e-06,
+        "final_loss_bc": 3.1755433838043245e-09,
+        "final_loss_physics": 1.7553529687575065e-06,
+        "runtime_seconds": 23.618481999999972,
+        "solver": null,
+        "t_total": 2.4697935581207275
+      }
+    },
+    {
+      "entry_id": "95_pinn-with-exact-bc-and-pre-conditioning---seed-2031",
+      "label": "PINN with exact BC and pre-conditioning | seed=2031",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0021752770990133286,
+        "epochs_total": 4570,
+        "final_loss": 2.6682589577831095e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 21.558697999999993,
+        "solver": null,
+        "t_total": 1.5525140762329102
+      }
+    },
+    {
+      "entry_id": "96_pinn-with-exact-bc---seed-2032",
+      "label": "PINN with exact BC | seed=2032",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0014078948879614472,
+        "epochs_total": 2738,
+        "final_loss": 6.52415849344834e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 23.37815599999999,
+        "solver": null,
+        "t_total": 1.9924957752227783
+      }
+    },
+    {
+      "entry_id": "97_pinn-without-exact-bc---seed-2032",
+      "label": "PINN without exact BC | seed=2032",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 5.017398143536411e-05,
+        "boundary_error_start": 0.00012047574273310602,
+        "delta_v": 0.0021434433292597532,
+        "epochs_total": 3745,
+        "final_loss": 1.4491977253783261e-06,
+        "final_loss_bc": 3.5810154841442454e-09,
+        "final_loss_physics": 1.445616703676933e-06,
+        "runtime_seconds": 27.529174000000012,
+        "solver": null,
+        "t_total": 2.065277338027954
+      }
+    },
+    {
+      "entry_id": "98_pinn-with-exact-bc-and-pre-conditioning---seed-2032",
+      "label": "PINN with exact BC and pre-conditioning | seed=2032",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0014095880324020982,
+        "epochs_total": 5107,
+        "final_loss": 1.0407026138636866e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 27.179093999999964,
+        "solver": null,
+        "t_total": 1.5739502906799316
+      }
+    },
+    {
+      "entry_id": "99_pinn-with-exact-bc---seed-2033",
+      "label": "PINN with exact BC | seed=2033",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0015039752470329404,
+        "epochs_total": 2687,
+        "final_loss": 6.77585205721698e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.707257000000027,
+        "solver": null,
+        "t_total": 2.007922649383545
+      }
+    },
+    {
+      "entry_id": "100_pinn-without-exact-bc---seed-2033",
+      "label": "PINN without exact BC | seed=2033",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00015706324484199286,
+        "boundary_error_start": 9.760336251929402e-05,
+        "delta_v": 0.0032546522561460733,
+        "epochs_total": 3242,
+        "final_loss": 3.3452176921855425e-06,
+        "final_loss_bc": 7.2013559559991336e-09,
+        "final_loss_physics": 3.3380163131369045e-06,
+        "runtime_seconds": 23.678391999999974,
+        "solver": null,
+        "t_total": 2.0327205657958984
+      }
+    },
+    {
+      "entry_id": "101_pinn-with-exact-bc-and-pre-conditioning---seed-2033",
+      "label": "PINN with exact BC and pre-conditioning | seed=2033",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0023230582010000944,
+        "epochs_total": 4728,
+        "final_loss": 2.6539255486568436e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 27.78366299999999,
+        "solver": null,
+        "t_total": 1.6056830883026123
+      }
+    },
+    {
+      "entry_id": "102_pinn-with-exact-bc---seed-2034",
+      "label": "PINN with exact BC | seed=2034",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001828475040383637,
+        "epochs_total": 2930,
+        "final_loss": 6.254969093788532e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 27.320073000000036,
+        "solver": null,
+        "t_total": 2.486654281616211
+      }
+    },
+    {
+      "entry_id": "103_pinn-without-exact-bc---seed-2034",
+      "label": "PINN without exact BC | seed=2034",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00016061683709267527,
+        "boundary_error_start": 0.00022400205489248037,
+        "delta_v": 0.004436138551682234,
+        "epochs_total": 2789,
+        "final_loss": 4.237193934386596e-06,
+        "final_loss_bc": 1.6017736470530508e-08,
+        "final_loss_physics": 4.221176368446322e-06,
+        "runtime_seconds": 22.213989000000026,
+        "solver": null,
+        "t_total": 2.7412173748016357
+      }
+    },
+    {
+      "entry_id": "104_pinn-with-exact-bc-and-pre-conditioning---seed-2034",
+      "label": "PINN with exact BC and pre-conditioning | seed=2034",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001411827513948083,
+        "epochs_total": 4819,
+        "final_loss": 1.1128158803330734e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 23.819592,
+        "solver": null,
+        "t_total": 1.5575283765792847
+      }
+    },
+    {
+      "entry_id": "105_pinn-with-exact-bc---seed-2035",
+      "label": "PINN with exact BC | seed=2035",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0009669069550000131,
+        "epochs_total": 3138,
+        "final_loss": 3.7305696309886116e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 28.099608999999987,
+        "solver": null,
+        "t_total": 1.7484910488128662
+      }
+    },
+    {
+      "entry_id": "106_pinn-without-exact-bc---seed-2035",
+      "label": "PINN without exact BC | seed=2035",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 5.89432347624097e-05,
+        "boundary_error_start": 0.00015754028572700918,
+        "delta_v": 0.00510953925549984,
+        "epochs_total": 3022,
+        "final_loss": 3.879591986333253e-06,
+        "final_loss_bc": 5.9532405671802735e-09,
+        "final_loss_physics": 3.873638888762798e-06,
+        "runtime_seconds": 21.239517999999975,
+        "solver": null,
+        "t_total": 2.905967950820923
+      }
+    },
+    {
+      "entry_id": "107_pinn-with-exact-bc-and-pre-conditioning---seed-2035",
+      "label": "PINN with exact BC and pre-conditioning | seed=2035",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0017918237717822194,
+        "epochs_total": 4798,
+        "final_loss": 1.6432786651421338e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.71953199999996,
+        "solver": null,
+        "t_total": 1.5679279565811157
+      }
+    },
+    {
+      "entry_id": "108_pinn-with-exact-bc---seed-2036",
+      "label": "PINN with exact BC | seed=2036",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0013385633938014507,
+        "epochs_total": 2884,
+        "final_loss": 8.85782526438561e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 26.624843,
+        "solver": null,
+        "t_total": 1.5415095090866089
+      }
+    },
+    {
+      "entry_id": "109_pinn-without-exact-bc---seed-2036",
+      "label": "PINN without exact BC | seed=2036",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 4.102278035134077e-05,
+        "boundary_error_start": 2.651768045325298e-05,
+        "delta_v": 0.0024517583660781384,
+        "epochs_total": 3620,
+        "final_loss": 1.5013426946097752e-06,
+        "final_loss_bc": 5.004437975131282e-10,
+        "final_loss_physics": 1.5008422451501247e-06,
+        "runtime_seconds": 27.018440999999996,
+        "solver": null,
+        "t_total": 2.2509195804595947
+      }
+    },
+    {
+      "entry_id": "110_pinn-with-exact-bc-and-pre-conditioning---seed-2036",
+      "label": "PINN with exact BC and pre-conditioning | seed=2036",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0016612100880593061,
+        "epochs_total": 5083,
+        "final_loss": 1.4637236063208547e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 26.545716000000027,
+        "solver": null,
+        "t_total": 1.6354682445526123
+      }
+    },
+    {
+      "entry_id": "111_pinn-with-exact-bc---seed-2037",
+      "label": "PINN with exact BC | seed=2037",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001378085114993155,
+        "epochs_total": 2840,
+        "final_loss": 6.862509849270282e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 28.67436600000002,
+        "solver": null,
+        "t_total": 1.886895775794983
+      }
+    },
+    {
+      "entry_id": "112_pinn-without-exact-bc---seed-2037",
+      "label": "PINN without exact BC | seed=2037",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00012820579286199063,
+        "boundary_error_start": 0.00010303767339792103,
+        "delta_v": 0.003388062585145235,
+        "epochs_total": 3047,
+        "final_loss": 3.816028311121045e-06,
+        "final_loss_bc": 5.712344375297107e-09,
+        "final_loss_physics": 3.8103160022728844e-06,
+        "runtime_seconds": 24.102332999999987,
+        "solver": null,
+        "t_total": 1.9511475563049316
+      }
+    },
+    {
+      "entry_id": "113_pinn-with-exact-bc-and-pre-conditioning---seed-2037",
+      "label": "PINN with exact BC and pre-conditioning | seed=2037",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0017633544048294425,
+        "epochs_total": 5140,
+        "final_loss": 1.6870030776772182e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 27.175463000000036,
+        "solver": null,
+        "t_total": 1.629756212234497
+      }
+    },
+    {
+      "entry_id": "114_pinn-with-exact-bc---seed-2038",
+      "label": "PINN with exact BC | seed=2038",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0012183251092210412,
+        "epochs_total": 2689,
+        "final_loss": 7.600480671499099e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.833369999999945,
+        "solver": null,
+        "t_total": 1.573297381401062
+      }
+    },
+    {
+      "entry_id": "115_pinn-without-exact-bc---seed-2038",
+      "label": "PINN without exact BC | seed=2038",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00010399764869362116,
+        "boundary_error_start": 0.00019650324247777462,
+        "delta_v": 0.0028150940779596567,
+        "epochs_total": 3035,
+        "final_loss": 1.780816546670394e-06,
+        "final_loss_bc": 1.0455689647415056e-08,
+        "final_loss_physics": 1.7703608818919747e-06,
+        "runtime_seconds": 20.617410000000064,
+        "solver": null,
+        "t_total": 2.2675843238830566
+      }
+    },
+    {
+      "entry_id": "116_pinn-with-exact-bc-and-pre-conditioning---seed-2038",
+      "label": "PINN with exact BC and pre-conditioning | seed=2038",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0017356449970975518,
+        "epochs_total": 5179,
+        "final_loss": 1.5981154319888446e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 27.856768999999986,
+        "solver": null,
+        "t_total": 1.621793270111084
+      }
+    },
+    {
+      "entry_id": "117_pinn-with-exact-bc---seed-2039",
+      "label": "PINN with exact BC | seed=2039",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0015328978188335896,
+        "epochs_total": 3111,
+        "final_loss": 1.4853037555440096e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 28.78130900000002,
+        "solver": null,
+        "t_total": 1.3894041776657104
+      }
+    },
+    {
+      "entry_id": "118_pinn-without-exact-bc---seed-2039",
+      "label": "PINN without exact BC | seed=2039",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 6.24139720457606e-05,
+        "boundary_error_start": 0.00014149972412269562,
+        "delta_v": 0.005596911069005728,
+        "epochs_total": 2884,
+        "final_loss": 4.765590801980579e-06,
+        "final_loss_bc": 5.035677652642789e-09,
+        "final_loss_physics": 4.7605549298168626e-06,
+        "runtime_seconds": 21.06377900000001,
+        "solver": null,
+        "t_total": 2.8391900062561035
+      }
+    },
+    {
+      "entry_id": "119_pinn-with-exact-bc-and-pre-conditioning---seed-2039",
+      "label": "PINN with exact BC and pre-conditioning | seed=2039",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0020415436010807753,
+        "epochs_total": 5007,
+        "final_loss": 2.408816953902715e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 25.804052000000013,
+        "solver": null,
+        "t_total": 1.5802074670791626
+      }
+    },
+    {
+      "entry_id": "120_pinn-with-exact-bc---seed-2040",
+      "label": "PINN with exact BC | seed=2040",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0013339925790205598,
+        "epochs_total": 2869,
+        "final_loss": 3.468334739409329e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 28.856604000000004,
+        "solver": null,
+        "t_total": 2.3660571575164795
+      }
+    },
+    {
+      "entry_id": "121_pinn-without-exact-bc---seed-2040",
+      "label": "PINN without exact BC | seed=2040",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 4.6382261643884704e-05,
+        "boundary_error_start": 7.76583983679302e-05,
+        "delta_v": 0.001470387214794755,
+        "epochs_total": 3484,
+        "final_loss": 5.611979645436804e-07,
+        "final_loss_bc": 1.7259027540461602e-09,
+        "final_loss_physics": 5.594720846602286e-07,
+        "runtime_seconds": 28.21803,
+        "solver": null,
+        "t_total": 2.3232576847076416
+      }
+    },
+    {
+      "entry_id": "122_pinn-with-exact-bc-and-pre-conditioning---seed-2040",
+      "label": "PINN with exact BC and pre-conditioning | seed=2040",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 1.1145329475402832,
+        "epochs_total": 7914,
+        "final_loss": 2.4087650672299787e-05,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 54.99249899999995,
+        "solver": null,
+        "t_total": 1.7229443788528442
+      }
+    },
+    {
+      "entry_id": "123_pinn-with-exact-bc---seed-2041",
+      "label": "PINN with exact BC | seed=2041",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001284338883124292,
+        "epochs_total": 2834,
+        "final_loss": 7.893535780567618e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.677588000000014,
+        "solver": null,
+        "t_total": 1.754379153251648
+      }
+    },
+    {
+      "entry_id": "124_pinn-without-exact-bc---seed-2041",
+      "label": "PINN without exact BC | seed=2041",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 9.778599633136764e-06,
+        "boundary_error_start": 5.978923218208365e-05,
+        "delta_v": 0.0028841067105531693,
+        "epochs_total": 2987,
+        "final_loss": 1.6393773876188789e-06,
+        "final_loss_bc": 7.744437868772991e-10,
+        "final_loss_physics": 1.6386029528803192e-06,
+        "runtime_seconds": 19.893867999999998,
+        "solver": null,
+        "t_total": 2.5612125396728516
+      }
+    },
+    {
+      "entry_id": "125_pinn-with-exact-bc-and-pre-conditioning---seed-2041",
+      "label": "PINN with exact BC and pre-conditioning | seed=2041",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 2.626141309738159,
+        "epochs_total": 8950,
+        "final_loss": 6.316250073723495e-05,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 63.04419299999995,
+        "solver": null,
+        "t_total": 1.6189278364181519
+      }
+    },
+    {
+      "entry_id": "126_pinn-with-exact-bc---seed-2042",
+      "label": "PINN with exact BC | seed=2042",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0018135476857423782,
+        "epochs_total": 2763,
+        "final_loss": 5.682729806721909e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 25.211162,
+        "solver": null,
+        "t_total": 2.6211020946502686
+      }
+    },
+    {
+      "entry_id": "127_pinn-without-exact-bc---seed-2042",
+      "label": "PINN without exact BC | seed=2042",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00034252353361807764,
+        "boundary_error_start": 0.0002083018480334431,
+        "delta_v": 0.0036592918913811445,
+        "epochs_total": 7798,
+        "final_loss": 5.547227374336217e-06,
+        "final_loss_bc": 3.385714464343437e-08,
+        "final_loss_physics": 5.513370069820667e-06,
+        "runtime_seconds": 58.33946599999996,
+        "solver": null,
+        "t_total": 1.7188740968704224
+      }
+    },
+    {
+      "entry_id": "128_pinn-with-exact-bc-and-pre-conditioning---seed-2042",
+      "label": "PINN with exact BC and pre-conditioning | seed=2042",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0016053152503445745,
+        "epochs_total": 4266,
+        "final_loss": 1.5419724377352395e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 30.961324999999988,
+        "solver": null,
+        "t_total": 1.51235032081604
+      }
+    },
+    {
+      "entry_id": "129_pinn-with-exact-bc---seed-2043",
+      "label": "PINN with exact BC | seed=2043",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0014832247979938984,
+        "epochs_total": 2899,
+        "final_loss": 4.168385316916101e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 30.260737000000006,
+        "solver": null,
+        "t_total": 2.5296857357025146
+      }
+    },
+    {
+      "entry_id": "130_pinn-without-exact-bc---seed-2043",
+      "label": "PINN without exact BC | seed=2043",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 8.368520502699539e-05,
+        "boundary_error_start": 9.069078078027815e-05,
+        "delta_v": 0.0033482182770967484,
+        "epochs_total": 3865,
+        "final_loss": 1.3010396742174635e-06,
+        "final_loss_bc": 3.2113898207342118e-09,
+        "final_loss_physics": 1.2978282484255033e-06,
+        "runtime_seconds": 27.373358000000053,
+        "solver": null,
+        "t_total": 3.310668468475342
+      }
+    },
+    {
+      "entry_id": "131_pinn-with-exact-bc-and-pre-conditioning---seed-2043",
+      "label": "PINN with exact BC and pre-conditioning | seed=2043",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 1.978637933731079,
+        "epochs_total": 7386,
+        "final_loss": 3.076143912039697e-05,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 48.780292999999915,
+        "solver": null,
+        "t_total": 1.710526943206787
+      }
+    },
+    {
+      "entry_id": "132_pinn-with-exact-bc---seed-2044",
+      "label": "PINN with exact BC | seed=2044",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.002097628777846694,
+        "epochs_total": 2820,
+        "final_loss": 1.9067807670580805e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.668518000000063,
+        "solver": null,
+        "t_total": 1.6580601930618286
+      }
+    },
+    {
+      "entry_id": "133_pinn-without-exact-bc---seed-2044",
+      "label": "PINN without exact BC | seed=2044",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 3.169960473314859e-05,
+        "boundary_error_start": 4.2322986701037735e-05,
+        "delta_v": 0.0022285364102572203,
+        "epochs_total": 3289,
+        "final_loss": 1.6267325690932921e-06,
+        "final_loss_bc": 5.874380981651939e-10,
+        "final_loss_physics": 1.6261451492027845e-06,
+        "runtime_seconds": 21.988605000000007,
+        "solver": null,
+        "t_total": 2.202192544937134
+      }
+    },
+    {
+      "entry_id": "134_pinn-with-exact-bc-and-pre-conditioning---seed-2044",
+      "label": "PINN with exact BC and pre-conditioning | seed=2044",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0023898270446807146,
+        "epochs_total": 4836,
+        "final_loss": 3.22707978739345e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.475772000000006,
+        "solver": null,
+        "t_total": 1.5452442169189453
+      }
+    },
+    {
+      "entry_id": "135_pinn-with-exact-bc---seed-2045",
+      "label": "PINN with exact BC | seed=2045",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0009554147836752236,
+        "epochs_total": 2623,
+        "final_loss": 2.5057954644580605e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 23.906190000000038,
+        "solver": null,
+        "t_total": 2.217045783996582
+      }
+    },
+    {
+      "entry_id": "136_pinn-without-exact-bc---seed-2045",
+      "label": "PINN without exact BC | seed=2045",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00017367395048495382,
+        "boundary_error_start": 0.00016641855472698808,
+        "delta_v": 0.0045239669270813465,
+        "epochs_total": 2954,
+        "final_loss": 3.4783083719958086e-06,
+        "final_loss_bc": 1.21824843546392e-08,
+        "final_loss_physics": 3.4661259178392356e-06,
+        "runtime_seconds": 21.89236699999998,
+        "solver": null,
+        "t_total": 3.0174148082733154
+      }
+    },
+    {
+      "entry_id": "137_pinn-with-exact-bc-and-pre-conditioning---seed-2045",
+      "label": "PINN with exact BC and pre-conditioning | seed=2045",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0020544463768601418,
+        "epochs_total": 4690,
+        "final_loss": 2.4013615984586067e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 23.010733999999957,
+        "solver": null,
+        "t_total": 1.5536304712295532
+      }
+    },
+    {
+      "entry_id": "138_pinn-with-exact-bc---seed-2046",
+      "label": "PINN with exact BC | seed=2046",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0009726399439387023,
+        "epochs_total": 2992,
+        "final_loss": 3.4656832781365665e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 31.147046999999986,
+        "solver": null,
+        "t_total": 1.8580554723739624
+      }
+    },
+    {
+      "entry_id": "139_pinn-without-exact-bc---seed-2046",
+      "label": "PINN without exact BC | seed=2046",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 5.464292553369887e-05,
+        "boundary_error_start": 0.00011739721230696887,
+        "delta_v": 0.0032503034453839064,
+        "epochs_total": 3031,
+        "final_loss": 2.1465916688612197e-06,
+        "final_loss_bc": 3.5383811436418e-09,
+        "final_loss_physics": 2.143053279723972e-06,
+        "runtime_seconds": 23.94933199999997,
+        "solver": null,
+        "t_total": 2.3919456005096436
+      }
+    },
+    {
+      "entry_id": "140_pinn-with-exact-bc-and-pre-conditioning---seed-2046",
+      "label": "PINN with exact BC and pre-conditioning | seed=2046",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001804269035346806,
+        "epochs_total": 5115,
+        "final_loss": 1.6469060710733174e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 27.072889000000032,
+        "solver": null,
+        "t_total": 1.5561069250106812
+      }
+    },
+    {
+      "entry_id": "141_pinn-with-exact-bc---seed-2047",
+      "label": "PINN with exact BC | seed=2047",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0013499641790986061,
+        "epochs_total": 2824,
+        "final_loss": 1.9708513718796894e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 26.22430799999995,
+        "solver": null,
+        "t_total": 1.2672100067138672
+      }
+    },
+    {
+      "entry_id": "142_pinn-without-exact-bc---seed-2047",
+      "label": "PINN without exact BC | seed=2047",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 4.547649223241024e-05,
+        "boundary_error_start": 5.6676435633562505e-05,
+        "delta_v": 0.0026049462612718344,
+        "epochs_total": 3086,
+        "final_loss": 2.2995611743681366e-06,
+        "final_loss_bc": 1.1120184773005803e-09,
+        "final_loss_physics": 2.2984490897215437e-06,
+        "runtime_seconds": 21.023834999999963,
+        "solver": null,
+        "t_total": 1.9202076196670532
+      }
+    },
+    {
+      "entry_id": "143_pinn-with-exact-bc-and-pre-conditioning---seed-2047",
+      "label": "PINN with exact BC and pre-conditioning | seed=2047",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0023814423475414515,
+        "epochs_total": 4848,
+        "final_loss": 3.2714742701500654e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.436778000000004,
+        "solver": null,
+        "t_total": 1.5411616563796997
+      }
+    },
+    {
+      "entry_id": "144_pinn-with-exact-bc---seed-2048",
+      "label": "PINN with exact BC | seed=2048",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0014486293075606227,
+        "epochs_total": 2940,
+        "final_loss": 1.3265090501590748e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 27.194612000000006,
+        "solver": null,
+        "t_total": 1.4480177164077759
+      }
+    },
+    {
+      "entry_id": "145_pinn-without-exact-bc---seed-2048",
+      "label": "PINN without exact BC | seed=2048",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.000142369739478454,
+        "boundary_error_start": 2.416426650597714e-05,
+        "delta_v": 0.004151358734816313,
+        "epochs_total": 3409,
+        "final_loss": 2.1656144326698268e-06,
+        "final_loss_bc": 4.394690833464665e-09,
+        "final_loss_physics": 2.16121975427086e-06,
+        "runtime_seconds": 25.497983999999974,
+        "solver": null,
+        "t_total": 3.221949577331543
+      }
+    },
+    {
+      "entry_id": "146_pinn-with-exact-bc-and-pre-conditioning---seed-2048",
+      "label": "PINN with exact BC and pre-conditioning | seed=2048",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0016706371679902077,
+        "epochs_total": 4801,
+        "final_loss": 1.248612647941627e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 25.30821599999996,
+        "solver": null,
+        "t_total": 1.6214970350265503
+      }
+    },
+    {
+      "entry_id": "147_pinn-with-exact-bc---seed-2049",
+      "label": "PINN with exact BC | seed=2049",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001521439291536808,
+        "epochs_total": 2961,
+        "final_loss": 1.5331431768572656e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 30.376156999999978,
+        "solver": null,
+        "t_total": 1.3380141258239746
+      }
+    },
+    {
+      "entry_id": "148_pinn-without-exact-bc---seed-2049",
+      "label": "PINN without exact BC | seed=2049",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 3.762235428439453e-05,
+        "boundary_error_start": 5.434186095953919e-05,
+        "delta_v": 0.0035391789861023426,
+        "epochs_total": 3243,
+        "final_loss": 2.2504741536977235e-06,
+        "final_loss_bc": 9.249871979477575e-10,
+        "final_loss_physics": 2.2495491975860205e-06,
+        "runtime_seconds": 26.512940999999955,
+        "solver": null,
+        "t_total": 2.6038529872894287
+      }
+    },
+    {
+      "entry_id": "149_pinn-with-exact-bc-and-pre-conditioning---seed-2049",
+      "label": "PINN with exact BC and pre-conditioning | seed=2049",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0013205381110310555,
+        "epochs_total": 4404,
+        "final_loss": 9.56577537181147e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 25.684990999999968,
+        "solver": null,
+        "t_total": 1.5529295206069946
+      }
+    },
+    {
+      "entry_id": "150_pinn-with-exact-bc---seed-2050",
+      "label": "PINN with exact BC | seed=2050",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0014837488997727633,
+        "epochs_total": 2721,
+        "final_loss": 4.6533699560313835e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 25.10267299999998,
+        "solver": null,
+        "t_total": 2.385026693344116
+      }
+    },
+    {
+      "entry_id": "151_pinn-without-exact-bc---seed-2050",
+      "label": "PINN without exact BC | seed=2050",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.000158768700202927,
+        "boundary_error_start": 0.00019219930982217193,
+        "delta_v": 0.006483682431280613,
+        "epochs_total": 3265,
+        "final_loss": 7.227001333376393e-06,
+        "final_loss_bc": 1.3061506543010637e-08,
+        "final_loss_physics": 7.213939625216881e-06,
+        "runtime_seconds": 22.321821999999997,
+        "solver": null,
+        "t_total": 2.8999745845794678
+      }
+    },
+    {
+      "entry_id": "152_pinn-with-exact-bc-and-pre-conditioning---seed-2050",
+      "label": "PINN with exact BC and pre-conditioning | seed=2050",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0015286540146917105,
+        "epochs_total": 5420,
+        "final_loss": 1.12845009425655e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 29.87110400000006,
+        "solver": null,
+        "t_total": 1.5882436037063599
+      }
+    },
+    {
+      "entry_id": "153_pinn-with-exact-bc---seed-2051",
+      "label": "PINN with exact BC | seed=2051",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.000860466796439141,
+        "epochs_total": 3177,
+        "final_loss": 3.2550676110076893e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 30.263350000000003,
+        "solver": null,
+        "t_total": 1.6637942790985107
+      }
+    },
+    {
+      "entry_id": "154_pinn-without-exact-bc---seed-2051",
+      "label": "PINN without exact BC | seed=2051",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 4.8512280045542866e-05,
+        "boundary_error_start": 6.267466233111918e-05,
+        "delta_v": 0.0025279370602220297,
+        "epochs_total": 3324,
+        "final_loss": 1.4475020861937082e-06,
+        "final_loss_bc": 1.3241066021407732e-09,
+        "final_loss_physics": 1.4461779755947646e-06,
+        "runtime_seconds": 23.235218999999972,
+        "solver": null,
+        "t_total": 2.5344488620758057
+      }
+    },
+    {
+      "entry_id": "155_pinn-with-exact-bc-and-pre-conditioning---seed-2051",
+      "label": "PINN with exact BC and pre-conditioning | seed=2051",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001726998365484178,
+        "epochs_total": 5205,
+        "final_loss": 1.516162569714652e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 32.67899700000004,
+        "solver": null,
+        "t_total": 1.541203260421753
+      }
+    },
+    {
+      "entry_id": "156_pinn-with-exact-bc---seed-2052",
+      "label": "PINN with exact BC | seed=2052",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0014682210749015212,
+        "epochs_total": 3223,
+        "final_loss": 6.849497253824666e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 33.63638000000003,
+        "solver": null,
+        "t_total": 1.9041709899902344
+      }
+    },
+    {
+      "entry_id": "157_pinn-without-exact-bc---seed-2052",
+      "label": "PINN without exact BC | seed=2052",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0001089182187570259,
+        "boundary_error_start": 0.00012058277934556827,
+        "delta_v": 0.002360804006457329,
+        "epochs_total": 3741,
+        "final_loss": 1.5845457710383926e-06,
+        "final_loss_bc": 5.5676458998732414e-09,
+        "final_loss_physics": 1.5789780718478141e-06,
+        "runtime_seconds": 26.74045200000006,
+        "solver": null,
+        "t_total": 2.053083658218384
+      }
+    },
+    {
+      "entry_id": "158_pinn-with-exact-bc-and-pre-conditioning---seed-2052",
+      "label": "PINN with exact BC and pre-conditioning | seed=2052",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0013758487766608596,
+        "epochs_total": 5268,
+        "final_loss": 9.273543923882244e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 29.380934000000025,
+        "solver": null,
+        "t_total": 1.5662376880645752
+      }
+    },
+    {
+      "entry_id": "159_pinn-with-exact-bc---seed-2053",
+      "label": "PINN with exact BC | seed=2053",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001265287515707314,
+        "epochs_total": 2974,
+        "final_loss": 6.976189865781635e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 25.351513000000068,
+        "solver": null,
+        "t_total": 1.649350643157959
+      }
+    },
+    {
+      "entry_id": "160_pinn-without-exact-bc---seed-2053",
+      "label": "PINN without exact BC | seed=2053",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00017142671276815236,
+        "boundary_error_start": 0.00020517027587629855,
+        "delta_v": 0.004373645875602961,
+        "epochs_total": 3063,
+        "final_loss": 3.629482080214075e-06,
+        "final_loss_bc": 1.505537383650335e-08,
+        "final_loss_physics": 3.6144267596682766e-06,
+        "runtime_seconds": 21.0536689999999,
+        "solver": null,
+        "t_total": 2.7974560260772705
+      }
+    },
+    {
+      "entry_id": "161_pinn-with-exact-bc-and-pre-conditioning---seed-2053",
+      "label": "PINN with exact BC and pre-conditioning | seed=2053",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0020503816194832325,
+        "epochs_total": 5081,
+        "final_loss": 2.4054556888586376e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 26.43767600000001,
+        "solver": null,
+        "t_total": 1.5313092470169067
+      }
+    },
+    {
+      "entry_id": "162_pinn-with-exact-bc---seed-2054",
+      "label": "PINN with exact BC | seed=2054",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001030219136737287,
+        "epochs_total": 2846,
+        "final_loss": 5.085626071377192e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 26.958921999999973,
+        "solver": null,
+        "t_total": 1.7344294786453247
+      }
+    },
+    {
+      "entry_id": "163_pinn-without-exact-bc---seed-2054",
+      "label": "PINN without exact BC | seed=2054",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 6.761275290045887e-05,
+        "boundary_error_start": 9.477461571805179e-05,
+        "delta_v": 0.0036011431366205215,
+        "epochs_total": 2826,
+        "final_loss": 3.316733682368067e-06,
+        "final_loss_bc": 2.8529054674208965e-09,
+        "final_loss_physics": 3.313880824862281e-06,
+        "runtime_seconds": 18.27040800000003,
+        "solver": null,
+        "t_total": 2.1198110580444336
+      }
+    },
+    {
+      "entry_id": "164_pinn-with-exact-bc-and-pre-conditioning---seed-2054",
+      "label": "PINN with exact BC and pre-conditioning | seed=2054",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.002254417398944497,
+        "epochs_total": 4821,
+        "final_loss": 2.5457584342802875e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 29.345098000000007,
+        "solver": null,
+        "t_total": 1.5505121946334839
+      }
+    },
+    {
+      "entry_id": "165_pinn-with-exact-bc---seed-2055",
+      "label": "PINN with exact BC | seed=2055",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0010363728506490588,
+        "epochs_total": 2692,
+        "final_loss": 2.294847831763036e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 27.307972000000007,
+        "solver": null,
+        "t_total": 2.4578444957733154
+      }
+    },
+    {
+      "entry_id": "166_pinn-without-exact-bc---seed-2055",
+      "label": "PINN without exact BC | seed=2055",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00010431008558953181,
+        "boundary_error_start": 0.00016435282304883003,
+        "delta_v": 0.004329993389546871,
+        "epochs_total": 3359,
+        "final_loss": 2.4180137643270427e-06,
+        "final_loss_bc": 7.978586680223998e-09,
+        "final_loss_physics": 2.4100352220557397e-06,
+        "runtime_seconds": 25.02576899999997,
+        "solver": null,
+        "t_total": 3.1397907733917236
+      }
+    },
+    {
+      "entry_id": "167_pinn-with-exact-bc-and-pre-conditioning---seed-2055",
+      "label": "PINN with exact BC and pre-conditioning | seed=2055",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0019416529685258865,
+        "epochs_total": 5176,
+        "final_loss": 1.8890926867243252e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 29.333474000000024,
+        "solver": null,
+        "t_total": 1.588034749031067
+      }
+    },
+    {
+      "entry_id": "168_pinn-with-exact-bc---seed-2056",
+      "label": "PINN with exact BC | seed=2056",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0008413488394580781,
+        "epochs_total": 2869,
+        "final_loss": 2.739482169999974e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.913581000000022,
+        "solver": null,
+        "t_total": 1.907401442527771
+      }
+    },
+    {
+      "entry_id": "169_pinn-without-exact-bc---seed-2056",
+      "label": "PINN without exact BC | seed=2056",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 8.86288471519947e-05,
+        "boundary_error_start": 7.469036063412204e-05,
+        "delta_v": 0.002976964460685849,
+        "epochs_total": 3368,
+        "final_loss": 1.7153618045995245e-06,
+        "final_loss_bc": 2.834143808527756e-09,
+        "final_loss_physics": 1.7125277054219623e-06,
+        "runtime_seconds": 22.786106000000018,
+        "solver": null,
+        "t_total": 3.0453298091888428
+      }
+    },
+    {
+      "entry_id": "170_pinn-with-exact-bc-and-pre-conditioning---seed-2056",
+      "label": "PINN with exact BC and pre-conditioning | seed=2056",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.002278111409395933,
+        "epochs_total": 4759,
+        "final_loss": 2.6150346457143314e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 23.81934000000001,
+        "solver": null,
+        "t_total": 1.5833112001419067
+      }
+    },
+    {
+      "entry_id": "171_pinn-with-exact-bc---seed-2057",
+      "label": "PINN with exact BC | seed=2057",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0015403236029669642,
+        "epochs_total": 2918,
+        "final_loss": 1.0965470664814347e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 27.704469000000017,
+        "solver": null,
+        "t_total": 1.5479048490524292
+      }
+    },
+    {
+      "entry_id": "172_pinn-without-exact-bc---seed-2057",
+      "label": "PINN without exact BC | seed=2057",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 8.248355152318254e-05,
+        "boundary_error_start": 8.438289660261944e-05,
+        "delta_v": 0.0034583108499646187,
+        "epochs_total": 3614,
+        "final_loss": 2.144802465409157e-06,
+        "final_loss_bc": 2.938663978824252e-09,
+        "final_loss_physics": 2.1418638880277285e-06,
+        "runtime_seconds": 24.00260000000003,
+        "solver": null,
+        "t_total": 3.0555715560913086
+      }
+    },
+    {
+      "entry_id": "173_pinn-with-exact-bc-and-pre-conditioning---seed-2057",
+      "label": "PINN with exact BC and pre-conditioning | seed=2057",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.002371907001361251,
+        "epochs_total": 4272,
+        "final_loss": 3.840259068965679e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 28.718546000000003,
+        "solver": null,
+        "t_total": 1.589377999305725
+      }
+    },
+    {
+      "entry_id": "174_pinn-with-exact-bc---seed-2058",
+      "label": "PINN with exact BC | seed=2058",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0013327901251614094,
+        "epochs_total": 2807,
+        "final_loss": 4.654083625155181e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 28.725157999999965,
+        "solver": null,
+        "t_total": 2.111112117767334
+      }
+    },
+    {
+      "entry_id": "175_pinn-without-exact-bc---seed-2058",
+      "label": "PINN without exact BC | seed=2058",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0002559248241595924,
+        "boundary_error_start": 0.00041630942723713815,
+        "delta_v": 0.005668961443006992,
+        "epochs_total": 6871,
+        "final_loss": 1.0247782483929768e-05,
+        "final_loss_bc": 5.023300175821532e-08,
+        "final_loss_physics": 1.0197549272561446e-05,
+        "runtime_seconds": 51.22141899999997,
+        "solver": null,
+        "t_total": 1.955051064491272
+      }
+    },
+    {
+      "entry_id": "176_pinn-with-exact-bc-and-pre-conditioning---seed-2058",
+      "label": "PINN with exact BC and pre-conditioning | seed=2058",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0019238753011450171,
+        "epochs_total": 4871,
+        "final_loss": 1.7991097820413415e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.919144000000074,
+        "solver": null,
+        "t_total": 1.6206730604171753
+      }
+    },
+    {
+      "entry_id": "177_pinn-with-exact-bc---seed-2059",
+      "label": "PINN with exact BC | seed=2059",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0014906572178006172,
+        "epochs_total": 3329,
+        "final_loss": 9.987558087232173e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 29.223180999999954,
+        "solver": null,
+        "t_total": 1.72080659866333
+      }
+    },
+    {
+      "entry_id": "178_pinn-without-exact-bc---seed-2059",
+      "label": "PINN without exact BC | seed=2059",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00010930928692687303,
+        "boundary_error_start": 0.0001613400672795251,
+        "delta_v": 0.002791438717395067,
+        "epochs_total": 3142,
+        "final_loss": 2.0783054424100555e-06,
+        "final_loss_bc": 8.009012120169245e-09,
+        "final_loss_physics": 2.070296432066243e-06,
+        "runtime_seconds": 20.83831399999997,
+        "solver": null,
+        "t_total": 2.205613851547241
+      }
+    },
+    {
+      "entry_id": "179_pinn-with-exact-bc-and-pre-conditioning---seed-2059",
+      "label": "PINN with exact BC and pre-conditioning | seed=2059",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.002152975182980299,
+        "epochs_total": 4742,
+        "final_loss": 3.1850288451096276e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 23.63024500000006,
+        "solver": null,
+        "t_total": 1.5668011903762817
+      }
+    },
+    {
+      "entry_id": "180_pinn-with-exact-bc---seed-2060",
+      "label": "PINN with exact BC | seed=2060",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0006999164470471442,
+        "epochs_total": 2999,
+        "final_loss": 1.4727699237937486e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 25.598614999999995,
+        "solver": null,
+        "t_total": 1.9457229375839233
+      }
+    },
+    {
+      "entry_id": "181_pinn-without-exact-bc---seed-2060",
+      "label": "PINN without exact BC | seed=2060",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 8.252222323790193e-05,
+        "boundary_error_start": 7.875735173001885e-05,
+        "delta_v": 0.0036246657837182283,
+        "epochs_total": 3416,
+        "final_loss": 2.6200373213214334e-06,
+        "final_loss_bc": 2.737431392674239e-09,
+        "final_loss_physics": 2.6172999696427723e-06,
+        "runtime_seconds": 23.054417000000058,
+        "solver": null,
+        "t_total": 2.5718650817871094
+      }
+    },
+    {
+      "entry_id": "182_pinn-with-exact-bc-and-pre-conditioning---seed-2060",
+      "label": "PINN with exact BC and pre-conditioning | seed=2060",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0013860309263691306,
+        "epochs_total": 4858,
+        "final_loss": 9.476806894781475e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 23.958258999999998,
+        "solver": null,
+        "t_total": 1.5738348960876465
+      }
+    },
+    {
+      "entry_id": "183_pinn-with-exact-bc---seed-2061",
+      "label": "PINN with exact BC | seed=2061",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0014546966413035989,
+        "epochs_total": 3002,
+        "final_loss": 9.036229471348634e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 25.39811700000007,
+        "solver": null,
+        "t_total": 1.6612330675125122
+      }
+    },
+    {
+      "entry_id": "184_pinn-without-exact-bc---seed-2061",
+      "label": "PINN without exact BC | seed=2061",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00016318926645908505,
+        "boundary_error_start": 7.971501327119768e-05,
+        "delta_v": 0.0052796914242208,
+        "epochs_total": 3151,
+        "final_loss": 3.972489594161743e-06,
+        "final_loss_bc": 6.953834841283424e-09,
+        "final_loss_physics": 3.9655355976719875e-06,
+        "runtime_seconds": 20.539118999999914,
+        "solver": null,
+        "t_total": 2.937281608581543
+      }
+    },
+    {
+      "entry_id": "185_pinn-with-exact-bc-and-pre-conditioning---seed-2061",
+      "label": "PINN with exact BC and pre-conditioning | seed=2061",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0015588937094435096,
+        "epochs_total": 4835,
+        "final_loss": 1.3119403092787252e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 25.05632700000001,
+        "solver": null,
+        "t_total": 1.5082552433013916
+      }
+    },
+    {
+      "entry_id": "186_pinn-with-exact-bc---seed-2062",
+      "label": "PINN with exact BC | seed=2062",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0009714093757793307,
+        "epochs_total": 3063,
+        "final_loss": 3.234707435240125e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 25.456906000000004,
+        "solver": null,
+        "t_total": 1.8808997869491577
+      }
+    },
+    {
+      "entry_id": "187_pinn-without-exact-bc---seed-2062",
+      "label": "PINN without exact BC | seed=2062",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 4.563235415844247e-05,
+        "boundary_error_start": 8.205955236917362e-05,
+        "delta_v": 0.002802466508001089,
+        "epochs_total": 3504,
+        "final_loss": 1.597922960172582e-06,
+        "final_loss_bc": 1.8525848632933162e-09,
+        "final_loss_physics": 1.5960703194650705e-06,
+        "runtime_seconds": 22.686894000000052,
+        "solver": null,
+        "t_total": 2.8979153633117676
+      }
+    },
+    {
+      "entry_id": "188_pinn-with-exact-bc-and-pre-conditioning---seed-2062",
+      "label": "PINN with exact BC and pre-conditioning | seed=2062",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0018982780165970325,
+        "epochs_total": 4946,
+        "final_loss": 2.202932591899298e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.523079000000052,
+        "solver": null,
+        "t_total": 1.5415130853652954
+      }
+    },
+    {
+      "entry_id": "189_pinn-with-exact-bc---seed-2063",
+      "label": "PINN with exact BC | seed=2063",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001026368117891252,
+        "epochs_total": 2969,
+        "final_loss": 3.267258819050767e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 25.45187199999998,
+        "solver": null,
+        "t_total": 1.9792934656143188
+      }
+    },
+    {
+      "entry_id": "190_pinn-without-exact-bc---seed-2063",
+      "label": "PINN without exact BC | seed=2063",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 6.022613888490014e-05,
+        "boundary_error_start": 0.00018096120038535446,
+        "delta_v": 0.003461704356595874,
+        "epochs_total": 2812,
+        "final_loss": 2.7835637865791796e-06,
+        "final_loss_bc": 7.659545886440355e-09,
+        "final_loss_physics": 2.7759042495745234e-06,
+        "runtime_seconds": 18.419877999999926,
+        "solver": null,
+        "t_total": 2.360470771789551
+      }
+    },
+    {
+      "entry_id": "191_pinn-with-exact-bc-and-pre-conditioning---seed-2063",
+      "label": "PINN with exact BC and pre-conditioning | seed=2063",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0019599406514316797,
+        "epochs_total": 4653,
+        "final_loss": 2.032155634879018e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 21.916364999999928,
+        "solver": null,
+        "t_total": 1.5986287593841553
+      }
+    },
+    {
+      "entry_id": "192_pinn-with-exact-bc---seed-2064",
+      "label": "PINN with exact BC | seed=2064",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001283736783079803,
+        "epochs_total": 3390,
+        "final_loss": 1.3875821878173156e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 28.864963999999986,
+        "solver": null,
+        "t_total": 1.193673849105835
+      }
+    },
+    {
+      "entry_id": "193_pinn-without-exact-bc---seed-2064",
+      "label": "PINN without exact BC | seed=2064",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 8.90273367986083e-05,
+        "boundary_error_start": 0.00015772358165122569,
+        "delta_v": 0.004100887570530176,
+        "epochs_total": 2748,
+        "final_loss": 4.025892394565744e-06,
+        "final_loss_bc": 6.916699657466552e-09,
+        "final_loss_physics": 4.018975687358761e-06,
+        "runtime_seconds": 17.47357999999997,
+        "solver": null,
+        "t_total": 2.1986680030822754
+      }
+    },
+    {
+      "entry_id": "194_pinn-with-exact-bc-and-pre-conditioning---seed-2064",
+      "label": "PINN with exact BC and pre-conditioning | seed=2064",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0018758883234113455,
+        "epochs_total": 4751,
+        "final_loss": 1.9418496322032297e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.350105999999982,
+        "solver": null,
+        "t_total": 1.5291050672531128
+      }
+    },
+    {
+      "entry_id": "195_pinn-with-exact-bc---seed-2065",
+      "label": "PINN with exact BC | seed=2065",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0009974497370421886,
+        "epochs_total": 2950,
+        "final_loss": 3.326992725760647e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.48903999999993,
+        "solver": null,
+        "t_total": 1.9309091567993164
+      }
+    },
+    {
+      "entry_id": "196_pinn-without-exact-bc---seed-2065",
+      "label": "PINN without exact BC | seed=2065",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00012042163871228695,
+        "boundary_error_start": 5.95212695770897e-05,
+        "delta_v": 0.0023042866960167885,
+        "epochs_total": 2886,
+        "final_loss": 1.943972620210843e-06,
+        "final_loss_bc": 3.797013370387958e-09,
+        "final_loss_physics": 1.9401757072046166e-06,
+        "runtime_seconds": 18.281991000000062,
+        "solver": null,
+        "t_total": 1.9942092895507812
+      }
+    },
+    {
+      "entry_id": "197_pinn-with-exact-bc-and-pre-conditioning---seed-2065",
+      "label": "PINN with exact BC and pre-conditioning | seed=2065",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0015127052320167422,
+        "epochs_total": 5009,
+        "final_loss": 1.0263122476317221e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.889463999999975,
+        "solver": null,
+        "t_total": 1.5741708278656006
+      }
+    },
+    {
+      "entry_id": "198_pinn-with-exact-bc---seed-2066",
+      "label": "PINN with exact BC | seed=2066",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001621286035515368,
+        "epochs_total": 2837,
+        "final_loss": 1.7306047084275633e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.335928999999965,
+        "solver": null,
+        "t_total": 1.361141324043274
+      }
+    },
+    {
+      "entry_id": "199_pinn-without-exact-bc---seed-2066",
+      "label": "PINN without exact BC | seed=2066",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 9.098642476601526e-05,
+        "boundary_error_start": 9.86602608463727e-05,
+        "delta_v": 0.002290549222379923,
+        "epochs_total": 3506,
+        "final_loss": 1.7269991303692223e-06,
+        "final_loss_bc": 3.787113289632771e-09,
+        "final_loss_physics": 1.7232119944310398e-06,
+        "runtime_seconds": 23.797593000000006,
+        "solver": null,
+        "t_total": 1.978410005569458
+      }
+    },
+    {
+      "entry_id": "200_pinn-with-exact-bc-and-pre-conditioning---seed-2066",
+      "label": "PINN with exact BC and pre-conditioning | seed=2066",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.5322790741920471,
+        "epochs_total": 7212,
+        "final_loss": 2.7356438295100816e-05,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 45.68960900000002,
+        "solver": null,
+        "t_total": 1.7136101722717285
+      }
+    },
+    {
+      "entry_id": "201_pinn-with-exact-bc---seed-2067",
+      "label": "PINN with exact BC | seed=2067",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0016406042268499732,
+        "epochs_total": 3117,
+        "final_loss": 1.8270245618623449e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 26.545814000000064,
+        "solver": null,
+        "t_total": 1.3540446758270264
+      }
+    },
+    {
+      "entry_id": "202_pinn-without-exact-bc---seed-2067",
+      "label": "PINN without exact BC | seed=2067",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 8.695725409779698e-05,
+        "boundary_error_start": 8.642020111437887e-05,
+        "delta_v": 0.003952657338231802,
+        "epochs_total": 3021,
+        "final_loss": 2.8233757802809123e-06,
+        "final_loss_bc": 3.1707512171408325e-09,
+        "final_loss_physics": 2.8202050543768564e-06,
+        "runtime_seconds": 20.61400299999991,
+        "solver": null,
+        "t_total": 2.8166048526763916
+      }
+    },
+    {
+      "entry_id": "203_pinn-with-exact-bc-and-pre-conditioning---seed-2067",
+      "label": "PINN with exact BC and pre-conditioning | seed=2067",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0020992865320295095,
+        "epochs_total": 4926,
+        "final_loss": 2.324290107935667e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.152503000000024,
+        "solver": null,
+        "t_total": 1.5705833435058594
+      }
+    },
+    {
+      "entry_id": "204_pinn-with-exact-bc---seed-2068",
+      "label": "PINN with exact BC | seed=2068",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0013746549375355244,
+        "epochs_total": 3224,
+        "final_loss": 1.5753015532027348e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 26.85687400000006,
+        "solver": null,
+        "t_total": 1.2105973958969116
+      }
+    },
+    {
+      "entry_id": "205_pinn-without-exact-bc---seed-2068",
+      "label": "PINN without exact BC | seed=2068",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0001257543044630438,
+        "boundary_error_start": 0.00011158965207869187,
+        "delta_v": 0.0027783287223428488,
+        "epochs_total": 3539,
+        "final_loss": 9.989685167965945e-07,
+        "final_loss_bc": 5.958635362901532e-09,
+        "final_loss_physics": 9.930098485710914e-07,
+        "runtime_seconds": 23.13350200000002,
+        "solver": null,
+        "t_total": 2.97249436378479
+      }
+    },
+    {
+      "entry_id": "206_pinn-with-exact-bc-and-pre-conditioning---seed-2068",
+      "label": "PINN with exact BC and pre-conditioning | seed=2068",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0018162603955715895,
+        "epochs_total": 4565,
+        "final_loss": 1.5126980770219234e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 26.713032999999996,
+        "solver": null,
+        "t_total": 1.584370732307434
+      }
+    },
+    {
+      "entry_id": "207_pinn-with-exact-bc---seed-2069",
+      "label": "PINN with exact BC | seed=2069",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0014296051813289523,
+        "epochs_total": 2685,
+        "final_loss": 6.280112074819044e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 22.911381000000006,
+        "solver": null,
+        "t_total": 1.9658045768737793
+      }
+    },
+    {
+      "entry_id": "208_pinn-without-exact-bc---seed-2069",
+      "label": "PINN without exact BC | seed=2069",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 5.125567986397073e-05,
+        "boundary_error_start": 0.00011379541683709249,
+        "delta_v": 0.0030594668351113796,
+        "epochs_total": 3266,
+        "final_loss": 1.4983329492679331e-06,
+        "final_loss_bc": 3.2834039931373127e-09,
+        "final_loss_physics": 1.4950495597076952e-06,
+        "runtime_seconds": 22.053125000000023,
+        "solver": null,
+        "t_total": 3.006371021270752
+      }
+    },
+    {
+      "entry_id": "209_pinn-with-exact-bc-and-pre-conditioning---seed-2069",
+      "label": "PINN with exact BC and pre-conditioning | seed=2069",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0016769323265179992,
+        "epochs_total": 5131,
+        "final_loss": 1.34290178266383e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 29.108012999999914,
+        "solver": null,
+        "t_total": 1.6226563453674316
+      }
+    },
+    {
+      "entry_id": "210_pinn-with-exact-bc---seed-2070",
+      "label": "PINN with exact BC | seed=2070",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0012583817588165402,
+        "epochs_total": 2867,
+        "final_loss": 8.731107641324343e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.00359400000002,
+        "solver": null,
+        "t_total": 1.4965434074401855
+      }
+    },
+    {
+      "entry_id": "211_pinn-without-exact-bc---seed-2070",
+      "label": "PINN without exact BC | seed=2070",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 2.102648613799829e-05,
+        "boundary_error_start": 0.00012617523316293955,
+        "delta_v": 0.0029422957450151443,
+        "epochs_total": 3360,
+        "final_loss": 2.0242268874426372e-06,
+        "final_loss_bc": 3.447903740294578e-09,
+        "final_loss_physics": 2.020778993028216e-06,
+        "runtime_seconds": 22.552151000000094,
+        "solver": null,
+        "t_total": 2.2786691188812256
+      }
+    },
+    {
+      "entry_id": "212_pinn-with-exact-bc-and-pre-conditioning---seed-2070",
+      "label": "PINN with exact BC and pre-conditioning | seed=2070",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0019554216414690018,
+        "epochs_total": 4798,
+        "final_loss": 2.3262839476956287e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 23.430854000000068,
+        "solver": null,
+        "t_total": 1.571471095085144
+      }
+    },
+    {
+      "entry_id": "213_pinn-with-exact-bc---seed-2071",
+      "label": "PINN with exact BC | seed=2071",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0010994714684784412,
+        "epochs_total": 3181,
+        "final_loss": 6.214161203388358e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 26.65121600000009,
+        "solver": null,
+        "t_total": 1.5022594928741455
+      }
+    },
+    {
+      "entry_id": "214_pinn-without-exact-bc---seed-2071",
+      "label": "PINN without exact BC | seed=2071",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 9.109572420129552e-05,
+        "boundary_error_start": 0.00022869333042763174,
+        "delta_v": 0.004277823958545923,
+        "epochs_total": 2843,
+        "final_loss": 4.415659532241989e-06,
+        "final_loss_bc": 1.2762985335257326e-08,
+        "final_loss_physics": 4.4028965930920094e-06,
+        "runtime_seconds": 18.044910000000073,
+        "solver": null,
+        "t_total": 2.2220475673675537
+      }
+    },
+    {
+      "entry_id": "215_pinn-with-exact-bc-and-pre-conditioning---seed-2071",
+      "label": "PINN with exact BC and pre-conditioning | seed=2071",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0017765297088772058,
+        "epochs_total": 4926,
+        "final_loss": 1.6041444723668974e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 26.445615999999973,
+        "solver": null,
+        "t_total": 1.5723493099212646
+      }
+    },
+    {
+      "entry_id": "216_pinn-with-exact-bc---seed-2072",
+      "label": "PINN with exact BC | seed=2072",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0009769635507836938,
+        "epochs_total": 2995,
+        "final_loss": 3.8955505488047493e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 25.706669999999917,
+        "solver": null,
+        "t_total": 1.7476047277450562
+      }
+    },
+    {
+      "entry_id": "217_pinn-without-exact-bc---seed-2072",
+      "label": "PINN without exact BC | seed=2072",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 2.9137136152712628e-05,
+        "boundary_error_start": 9.923023026203737e-05,
+        "delta_v": 0.0024436975363641977,
+        "epochs_total": 2734,
+        "final_loss": 1.5706561953265918e-06,
+        "final_loss_bc": 2.26387619761681e-09,
+        "final_loss_physics": 1.5683923493270413e-06,
+        "runtime_seconds": 18.197820999999976,
+        "solver": null,
+        "t_total": 2.1268746852874756
+      }
+    },
+    {
+      "entry_id": "218_pinn-with-exact-bc-and-pre-conditioning---seed-2072",
+      "label": "PINN with exact BC and pre-conditioning | seed=2072",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.29305383563041687,
+        "epochs_total": 7750,
+        "final_loss": 4.904082288703648e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 49.93020999999999,
+        "solver": null,
+        "t_total": 1.9850667715072632
+      }
+    },
+    {
+      "entry_id": "219_pinn-with-exact-bc---seed-2073",
+      "label": "PINN with exact BC | seed=2073",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001951046520844102,
+        "epochs_total": 2732,
+        "final_loss": 8.414271519541217e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 23.103640999999925,
+        "solver": null,
+        "t_total": 2.37353777885437
+      }
+    },
+    {
+      "entry_id": "220_pinn-without-exact-bc---seed-2073",
+      "label": "PINN without exact BC | seed=2073",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00015346465806942433,
+        "boundary_error_start": 0.00010953410674119368,
+        "delta_v": 0.0038849450647830963,
+        "epochs_total": 2843,
+        "final_loss": 4.719841854239348e-06,
+        "final_loss_bc": 7.482170438777302e-09,
+        "final_loss_physics": 4.712359896075213e-06,
+        "runtime_seconds": 19.19806099999994,
+        "solver": null,
+        "t_total": 1.9852560758590698
+      }
+    },
+    {
+      "entry_id": "221_pinn-with-exact-bc-and-pre-conditioning---seed-2073",
+      "label": "PINN with exact BC and pre-conditioning | seed=2073",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0014707812806591392,
+        "epochs_total": 4671,
+        "final_loss": 1.0053176993096713e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.74493599999994,
+        "solver": null,
+        "t_total": 1.590475082397461
+      }
+    },
+    {
+      "entry_id": "222_pinn-with-exact-bc---seed-2074",
+      "label": "PINN with exact BC | seed=2074",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0012665143003687263,
+        "epochs_total": 3070,
+        "final_loss": 9.308436119681573e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 25.43124499999999,
+        "solver": null,
+        "t_total": 1.6027164459228516
+      }
+    },
+    {
+      "entry_id": "223_pinn-without-exact-bc---seed-2074",
+      "label": "PINN without exact BC | seed=2074",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 3.62233113264665e-05,
+        "boundary_error_start": 9.77415475063026e-05,
+        "delta_v": 0.0038652075454592705,
+        "epochs_total": 3025,
+        "final_loss": 2.58084560300631e-06,
+        "final_loss_bc": 2.2817634448557556e-09,
+        "final_loss_physics": 2.578563908173237e-06,
+        "runtime_seconds": 19.29293700000005,
+        "solver": null,
+        "t_total": 2.7146384716033936
+      }
+    },
+    {
+      "entry_id": "224_pinn-with-exact-bc-and-pre-conditioning---seed-2074",
+      "label": "PINN with exact BC and pre-conditioning | seed=2074",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0024945195764303207,
+        "epochs_total": 4312,
+        "final_loss": 3.1399081308336463e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 23.26889200000005,
+        "solver": null,
+        "t_total": 1.5436455011367798
+      }
+    },
+    {
+      "entry_id": "225_pinn-with-exact-bc---seed-2075",
+      "label": "PINN with exact BC | seed=2075",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0015323065454140306,
+        "epochs_total": 2809,
+        "final_loss": 9.390161608280323e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.147543999999925,
+        "solver": null,
+        "t_total": 1.6780693531036377
+      }
+    },
+    {
+      "entry_id": "226_pinn-without-exact-bc---seed-2075",
+      "label": "PINN without exact BC | seed=2075",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00010139837104361504,
+        "boundary_error_start": 5.5503842304460704e-05,
+        "delta_v": 0.0024432523641735315,
+        "epochs_total": 3513,
+        "final_loss": 1.938956984304241e-06,
+        "final_loss_bc": 2.811213262177148e-09,
+        "final_loss_physics": 1.9361457361810608e-06,
+        "runtime_seconds": 23.431988000000047,
+        "solver": null,
+        "t_total": 1.9501087665557861
+      }
+    },
+    {
+      "entry_id": "227_pinn-with-exact-bc-and-pre-conditioning---seed-2075",
+      "label": "PINN with exact BC and pre-conditioning | seed=2075",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0017821879591792822,
+        "epochs_total": 4756,
+        "final_loss": 1.6431300764452317e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 22.857631999999967,
+        "solver": null,
+        "t_total": 1.5636380910873413
+      }
+    },
+    {
+      "entry_id": "228_pinn-with-exact-bc---seed-2076",
+      "label": "PINN with exact BC | seed=2076",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0006177513278089464,
+        "epochs_total": 3666,
+        "final_loss": 2.0285953894472186e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 31.92525999999998,
+        "solver": null,
+        "t_total": 1.619709849357605
+      }
+    },
+    {
+      "entry_id": "229_pinn-without-exact-bc---seed-2076",
+      "label": "PINN without exact BC | seed=2076",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 8.87667847564444e-05,
+        "boundary_error_start": 7.450671546394005e-05,
+        "delta_v": 0.0027413356583565474,
+        "epochs_total": 3022,
+        "final_loss": 2.3862528450990794e-06,
+        "final_loss_bc": 2.8235682680843865e-09,
+        "final_loss_physics": 2.3834293187974254e-06,
+        "runtime_seconds": 21.146671999999967,
+        "solver": null,
+        "t_total": 1.9494340419769287
+      }
+    },
+    {
+      "entry_id": "230_pinn-with-exact-bc-and-pre-conditioning---seed-2076",
+      "label": "PINN with exact BC and pre-conditioning | seed=2076",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0017571374773979187,
+        "epochs_total": 5143,
+        "final_loss": 1.439072775610839e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 25.98012200000005,
+        "solver": null,
+        "t_total": 1.611484408378601
+      }
+    },
+    {
+      "entry_id": "231_pinn-with-exact-bc---seed-2077",
+      "label": "PINN with exact BC | seed=2077",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0015692953020334244,
+        "epochs_total": 2923,
+        "final_loss": 1.43159002163884e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 23.97650699999997,
+        "solver": null,
+        "t_total": 1.504079818725586
+      }
+    },
+    {
+      "entry_id": "232_pinn-without-exact-bc---seed-2077",
+      "label": "PINN without exact BC | seed=2077",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00013402423064690083,
+        "boundary_error_start": 0.00022494778386317194,
+        "delta_v": 0.002716068411245942,
+        "epochs_total": 3292,
+        "final_loss": 1.863303509708203e-06,
+        "final_loss_bc": 1.4457359753805576e-08,
+        "final_loss_physics": 1.8488461819288204e-06,
+        "runtime_seconds": 21.360030999999935,
+        "solver": null,
+        "t_total": 2.945134401321411
+      }
+    },
+    {
+      "entry_id": "233_pinn-with-exact-bc-and-pre-conditioning---seed-2077",
+      "label": "PINN with exact BC and pre-conditioning | seed=2077",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0020568848121911287,
+        "epochs_total": 4923,
+        "final_loss": 2.114779817929957e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.081898000000024,
+        "solver": null,
+        "t_total": 1.5795540809631348
+      }
+    },
+    {
+      "entry_id": "234_pinn-with-exact-bc---seed-2078",
+      "label": "PINN with exact BC | seed=2078",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0011088192695751786,
+        "epochs_total": 2939,
+        "final_loss": 6.292302714427933e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 25.29746,
+        "solver": null,
+        "t_total": 1.7581411600112915
+      }
+    },
+    {
+      "entry_id": "235_pinn-without-exact-bc---seed-2078",
+      "label": "PINN without exact BC | seed=2078",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 5.141060319147073e-05,
+        "boundary_error_start": 7.18796145520173e-05,
+        "delta_v": 0.003044473472982645,
+        "epochs_total": 3684,
+        "final_loss": 1.683906020844006e-06,
+        "final_loss_bc": 1.6507835098877877e-09,
+        "final_loss_physics": 1.6822552879602881e-06,
+        "runtime_seconds": 24.522145000000023,
+        "solver": null,
+        "t_total": 2.9222240447998047
+      }
+    },
+    {
+      "entry_id": "236_pinn-with-exact-bc-and-pre-conditioning---seed-2078",
+      "label": "PINN with exact BC and pre-conditioning | seed=2078",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.002087201224640012,
+        "epochs_total": 4859,
+        "final_loss": 2.5261617793148616e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 23.94591700000001,
+        "solver": null,
+        "t_total": 1.5904812812805176
+      }
+    },
+    {
+      "entry_id": "237_pinn-with-exact-bc---seed-2079",
+      "label": "PINN with exact BC | seed=2079",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001341904397122562,
+        "epochs_total": 3127,
+        "final_loss": 8.042517833928287e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 27.352925000000027,
+        "solver": null,
+        "t_total": 1.6541754007339478
+      }
+    },
+    {
+      "entry_id": "238_pinn-without-exact-bc---seed-2079",
+      "label": "PINN without exact BC | seed=2079",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00013914141163695604,
+        "boundary_error_start": 0.00013658986426889896,
+        "delta_v": 0.005566841457039118,
+        "epochs_total": 3013,
+        "final_loss": 5.2649888857558835e-06,
+        "final_loss_bc": 8.011897811854851e-09,
+        "final_loss_physics": 5.256977146927966e-06,
+        "runtime_seconds": 20.419528000000014,
+        "solver": null,
+        "t_total": 2.875617504119873
+      }
+    },
+    {
+      "entry_id": "239_pinn-with-exact-bc-and-pre-conditioning---seed-2079",
+      "label": "PINN with exact BC and pre-conditioning | seed=2079",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0014349304838106036,
+        "epochs_total": 5180,
+        "final_loss": 1.1847588439195533e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 26.556081000000063,
+        "solver": null,
+        "t_total": 1.6452080011367798
+      }
+    },
+    {
+      "entry_id": "240_pinn-with-exact-bc---seed-2080",
+      "label": "PINN with exact BC | seed=2080",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0014108872273936868,
+        "epochs_total": 2630,
+        "final_loss": 5.983837922940438e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 21.49529300000006,
+        "solver": null,
+        "t_total": 2.1123173236846924
+      }
+    },
+    {
+      "entry_id": "241_pinn-without-exact-bc---seed-2080",
+      "label": "PINN without exact BC | seed=2080",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 3.5337441659066826e-05,
+        "boundary_error_start": 4.661920320359059e-05,
+        "delta_v": 0.0037578148767352104,
+        "epochs_total": 3529,
+        "final_loss": 1.5657562926207902e-06,
+        "final_loss_bc": 7.290907322321516e-10,
+        "final_loss_physics": 1.5650272189304815e-06,
+        "runtime_seconds": 23.124723000000017,
+        "solver": null,
+        "t_total": 3.2894632816314697
+      }
+    },
+    {
+      "entry_id": "242_pinn-with-exact-bc-and-pre-conditioning---seed-2080",
+      "label": "PINN with exact BC and pre-conditioning | seed=2080",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0018227343680337071,
+        "epochs_total": 4953,
+        "final_loss": 1.70888176853623e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.10142600000006,
+        "solver": null,
+        "t_total": 1.6351455450057983
+      }
+    },
+    {
+      "entry_id": "243_pinn-with-exact-bc---seed-2081",
+      "label": "PINN with exact BC | seed=2081",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0008685290813446045,
+        "epochs_total": 3099,
+        "final_loss": 4.087027321020287e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 26.067277999999988,
+        "solver": null,
+        "t_total": 1.5096938610076904
+      }
+    },
+    {
+      "entry_id": "244_pinn-without-exact-bc---seed-2081",
+      "label": "PINN without exact BC | seed=2081",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 6.145566294435412e-05,
+        "boundary_error_start": 0.00010171819303650409,
+        "delta_v": 0.0034757317043840885,
+        "epochs_total": 2983,
+        "final_loss": 2.2285714749159524e-06,
+        "final_loss_bc": 2.9789217759201847e-09,
+        "final_loss_physics": 2.2255926523939706e-06,
+        "runtime_seconds": 19.479086999999936,
+        "solver": null,
+        "t_total": 2.903287410736084
+      }
+    },
+    {
+      "entry_id": "245_pinn-with-exact-bc-and-pre-conditioning---seed-2081",
+      "label": "PINN with exact BC and pre-conditioning | seed=2081",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0021309133153408766,
+        "epochs_total": 4985,
+        "final_loss": 2.2836948119220324e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 25.588521000000014,
+        "solver": null,
+        "t_total": 1.6133970022201538
+      }
+    },
+    {
+      "entry_id": "246_pinn-with-exact-bc---seed-2082",
+      "label": "PINN with exact BC | seed=2082",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0014376627514138818,
+        "epochs_total": 2793,
+        "final_loss": 6.23599646587536e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.772680000000037,
+        "solver": null,
+        "t_total": 1.9879740476608276
+      }
+    },
+    {
+      "entry_id": "247_pinn-without-exact-bc---seed-2082",
+      "label": "PINN without exact BC | seed=2082",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 5.929781764280051e-05,
+        "boundary_error_start": 7.1885202487465e-05,
+        "delta_v": 0.0025176932103931904,
+        "epochs_total": 2934,
+        "final_loss": 2.0568577383528464e-06,
+        "final_loss_bc": 1.8256445244446695e-09,
+        "final_loss_physics": 2.0550321551127126e-06,
+        "runtime_seconds": 18.8050300000001,
+        "solver": null,
+        "t_total": 2.17680025100708
+      }
+    },
+    {
+      "entry_id": "248_pinn-with-exact-bc-and-pre-conditioning---seed-2082",
+      "label": "PINN with exact BC and pre-conditioning | seed=2082",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0017276364378631115,
+        "epochs_total": 5320,
+        "final_loss": 1.3548473134505912e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 27.659314999999992,
+        "solver": null,
+        "t_total": 1.6690313816070557
+      }
+    },
+    {
+      "entry_id": "249_pinn-with-exact-bc---seed-2083",
+      "label": "PINN with exact BC | seed=2083",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0009274876210838556,
+        "epochs_total": 2984,
+        "final_loss": 2.823213378633227e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.750312000000008,
+        "solver": null,
+        "t_total": 1.8942010402679443
+      }
+    },
+    {
+      "entry_id": "250_pinn-without-exact-bc---seed-2083",
+      "label": "PINN without exact BC | seed=2083",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00010239787661703303,
+        "boundary_error_start": 0.00018481088045518845,
+        "delta_v": 0.0031450055539608,
+        "epochs_total": 2858,
+        "final_loss": 2.234060730188503e-06,
+        "final_loss_bc": 9.389693467198867e-09,
+        "final_loss_physics": 2.2246711068873992e-06,
+        "runtime_seconds": 18.190011000000027,
+        "solver": null,
+        "t_total": 2.308401346206665
+      }
+    },
+    {
+      "entry_id": "251_pinn-with-exact-bc-and-pre-conditioning---seed-2083",
+      "label": "PINN with exact BC and pre-conditioning | seed=2083",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.00171535718254745,
+        "epochs_total": 4931,
+        "final_loss": 1.383619519401691e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 23.295123999999987,
+        "solver": null,
+        "t_total": 1.5713608264923096
+      }
+    },
+    {
+      "entry_id": "252_pinn-with-exact-bc---seed-2084",
+      "label": "PINN with exact BC | seed=2084",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0011721994960680604,
+        "epochs_total": 2898,
+        "final_loss": 5.088222110316565e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.16801099999998,
+        "solver": null,
+        "t_total": 1.8614426851272583
+      }
+    },
+    {
+      "entry_id": "253_pinn-without-exact-bc---seed-2084",
+      "label": "PINN without exact BC | seed=2084",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 7.280064892256632e-05,
+        "boundary_error_start": 2.446574035275262e-05,
+        "delta_v": 0.0027372934855520725,
+        "epochs_total": 3003,
+        "final_loss": 9.124100301960425e-07,
+        "final_loss_bc": 1.2439138608044686e-09,
+        "final_loss_physics": 9.111661256611114e-07,
+        "runtime_seconds": 19.6379740000001,
+        "solver": null,
+        "t_total": 3.180593490600586
+      }
+    },
+    {
+      "entry_id": "254_pinn-with-exact-bc-and-pre-conditioning---seed-2084",
+      "label": "PINN with exact BC and pre-conditioning | seed=2084",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0020394804887473583,
+        "epochs_total": 4881,
+        "final_loss": 2.664474777702708e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.645926999999915,
+        "solver": null,
+        "t_total": 1.589720368385315
+      }
+    },
+    {
+      "entry_id": "255_pinn-with-exact-bc---seed-2085",
+      "label": "PINN with exact BC | seed=2085",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0010781122837215662,
+        "epochs_total": 3340,
+        "final_loss": 4.4554960254572507e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 29.687898999999902,
+        "solver": null,
+        "t_total": 1.8024802207946777
+      }
+    },
+    {
+      "entry_id": "256_pinn-without-exact-bc---seed-2085",
+      "label": "PINN without exact BC | seed=2085",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 9.586651140125468e-05,
+        "boundary_error_start": 0.00014750208356417716,
+        "delta_v": 0.004689875058829784,
+        "epochs_total": 2896,
+        "final_loss": 4.739404175779782e-06,
+        "final_loss_bc": 6.506777783243933e-09,
+        "final_loss_physics": 4.732897195935948e-06,
+        "runtime_seconds": 18.597456999999963,
+        "solver": null,
+        "t_total": 2.57730770111084
+      }
+    },
+    {
+      "entry_id": "257_pinn-with-exact-bc-and-pre-conditioning---seed-2085",
+      "label": "PINN with exact BC and pre-conditioning | seed=2085",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0013786113122478127,
+        "epochs_total": 5265,
+        "final_loss": 1.2729715308523737e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 27.214059999999904,
+        "solver": null,
+        "t_total": 1.5566236972808838
+      }
+    },
+    {
+      "entry_id": "258_pinn-with-exact-bc---seed-2086",
+      "label": "PINN with exact BC | seed=2086",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0013741191942244768,
+        "epochs_total": 2673,
+        "final_loss": 1.1286384733466548e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 21.907772999999906,
+        "solver": null,
+        "t_total": 1.5366171598434448
+      }
+    },
+    {
+      "entry_id": "259_pinn-without-exact-bc---seed-2086",
+      "label": "PINN without exact BC | seed=2086",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 5.2471143135335296e-05,
+        "boundary_error_start": 8.8718363258522e-05,
+        "delta_v": 0.0040689255110919476,
+        "epochs_total": 3379,
+        "final_loss": 2.2426124814955983e-06,
+        "final_loss_bc": 2.2395421073184707e-09,
+        "final_loss_physics": 2.2403728507924825e-06,
+        "runtime_seconds": 21.981472000000053,
+        "solver": null,
+        "t_total": 2.966973304748535
+      }
+    },
+    {
+      "entry_id": "260_pinn-with-exact-bc-and-pre-conditioning---seed-2086",
+      "label": "PINN with exact BC and pre-conditioning | seed=2086",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0021264292299747467,
+        "epochs_total": 4667,
+        "final_loss": 2.3743459678371437e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 20.725885000000062,
+        "solver": null,
+        "t_total": 1.573864221572876
+      }
+    },
+    {
+      "entry_id": "261_pinn-with-exact-bc---seed-2087",
+      "label": "PINN with exact BC | seed=2087",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0015824254369363189,
+        "epochs_total": 3015,
+        "final_loss": 1.6706908354535699e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 25.471227,
+        "solver": null,
+        "t_total": 1.3327698707580566
+      }
+    },
+    {
+      "entry_id": "262_pinn-without-exact-bc---seed-2087",
+      "label": "PINN without exact BC | seed=2087",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 5.254454299574718e-05,
+        "boundary_error_start": 0.0001470983261242509,
+        "delta_v": 0.0035214123781770468,
+        "epochs_total": 3086,
+        "final_loss": 2.5120068585238187e-06,
+        "final_loss_bc": 5.146243431397579e-09,
+        "final_loss_physics": 2.506860710127512e-06,
+        "runtime_seconds": 20.325614000000087,
+        "solver": null,
+        "t_total": 2.77497935295105
+      }
+    },
+    {
+      "entry_id": "263_pinn-with-exact-bc-and-pre-conditioning---seed-2087",
+      "label": "PINN with exact BC and pre-conditioning | seed=2087",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001748940208926797,
+        "epochs_total": 5034,
+        "final_loss": 1.724702883620921e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 26.549701000000027,
+        "solver": null,
+        "t_total": 1.5707368850708008
+      }
+    },
+    {
+      "entry_id": "264_pinn-with-exact-bc---seed-2088",
+      "label": "PINN with exact BC | seed=2088",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0013591351453214884,
+        "epochs_total": 2979,
+        "final_loss": 1.087847181224788e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 25.792854000000034,
+        "solver": null,
+        "t_total": 1.5548549890518188
+      }
+    },
+    {
+      "entry_id": "265_pinn-without-exact-bc---seed-2088",
+      "label": "PINN without exact BC | seed=2088",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 3.3060892747016624e-05,
+        "boundary_error_start": 0.00011524644651217386,
+        "delta_v": 0.00328770256601274,
+        "epochs_total": 2912,
+        "final_loss": 2.226222704848624e-06,
+        "final_loss_bc": 3.031712880741111e-09,
+        "final_loss_physics": 2.2231909042602638e-06,
+        "runtime_seconds": 18.677666000000045,
+        "solver": null,
+        "t_total": 2.4763567447662354
+      }
+    },
+    {
+      "entry_id": "266_pinn-with-exact-bc-and-pre-conditioning---seed-2088",
+      "label": "PINN with exact BC and pre-conditioning | seed=2088",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.00199604663066566,
+        "epochs_total": 4746,
+        "final_loss": 1.9693216017913073e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 23.009862,
+        "solver": null,
+        "t_total": 1.5781207084655762
+      }
+    },
+    {
+      "entry_id": "267_pinn-with-exact-bc---seed-2089",
+      "label": "PINN with exact BC | seed=2089",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0018504622858017683,
+        "epochs_total": 2749,
+        "final_loss": 1.0273446378050721e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 22.713363999999956,
+        "solver": null,
+        "t_total": 1.9453109502792358
+      }
+    },
+    {
+      "entry_id": "268_pinn-without-exact-bc---seed-2089",
+      "label": "PINN without exact BC | seed=2089",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0003648510610219091,
+        "boundary_error_start": 0.0003463296452537179,
+        "delta_v": 0.0059328521601855755,
+        "epochs_total": 6021,
+        "final_loss": 1.3392829714575782e-05,
+        "final_loss_bc": 5.32936574870746e-08,
+        "final_loss_physics": 1.3339536053535994e-05,
+        "runtime_seconds": 41.04574000000002,
+        "solver": null,
+        "t_total": 1.8911868333816528
+      }
+    },
+    {
+      "entry_id": "269_pinn-with-exact-bc-and-pre-conditioning---seed-2089",
+      "label": "PINN with exact BC and pre-conditioning | seed=2089",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0017995418747887015,
+        "epochs_total": 5248,
+        "final_loss": 1.5836159263926675e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 23.405407999999966,
+        "solver": null,
+        "t_total": 1.6323579549789429
+      }
+    },
+    {
+      "entry_id": "270_pinn-with-exact-bc---seed-2090",
+      "label": "PINN with exact BC | seed=2090",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001012936932966113,
+        "epochs_total": 2935,
+        "final_loss": 4.6494784555761726e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.209693000000016,
+        "solver": null,
+        "t_total": 1.6361455917358398
+      }
+    },
+    {
+      "entry_id": "271_pinn-without-exact-bc---seed-2090",
+      "label": "PINN without exact BC | seed=2090",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 4.384461499284953e-05,
+        "boundary_error_start": 0.00011062255362048745,
+        "delta_v": 0.001995995407924056,
+        "epochs_total": 3481,
+        "final_loss": 1.2670799378611264e-06,
+        "final_loss_bc": 2.9842410764757688e-09,
+        "final_loss_physics": 1.264095658370934e-06,
+        "runtime_seconds": 22.633091000000036,
+        "solver": null,
+        "t_total": 1.9565240144729614
+      }
+    },
+    {
+      "entry_id": "272_pinn-with-exact-bc-and-pre-conditioning---seed-2090",
+      "label": "PINN with exact BC and pre-conditioning | seed=2090",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.002368764951825142,
+        "epochs_total": 4712,
+        "final_loss": 2.487028041286976e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 20.613009000000034,
+        "solver": null,
+        "t_total": 1.5872727632522583
+      }
+    },
+    {
+      "entry_id": "273_pinn-with-exact-bc---seed-2091",
+      "label": "PINN with exact BC | seed=2091",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0014060030225664377,
+        "epochs_total": 3100,
+        "final_loss": 1.0227186066913418e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 23.07603999999992,
+        "solver": null,
+        "t_total": 1.5133029222488403
+      }
+    },
+    {
+      "entry_id": "274_pinn-without-exact-bc---seed-2091",
+      "label": "PINN without exact BC | seed=2091",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 9.451431833440438e-05,
+        "boundary_error_start": 7.028397521935403e-05,
+        "delta_v": 0.00358277908526361,
+        "epochs_total": 3285,
+        "final_loss": 2.617425479911617e-06,
+        "final_loss_bc": 2.9305688986625e-09,
+        "final_loss_physics": 2.614494860608829e-06,
+        "runtime_seconds": 20.259234000000106,
+        "solver": null,
+        "t_total": 2.4959754943847656
+      }
+    },
+    {
+      "entry_id": "275_pinn-with-exact-bc-and-pre-conditioning---seed-2091",
+      "label": "PINN with exact BC and pre-conditioning | seed=2091",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0021725131664425135,
+        "epochs_total": 4791,
+        "final_loss": 2.5130213998636464e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 17.389372000000094,
+        "solver": null,
+        "t_total": 1.590884804725647
+      }
+    },
+    {
+      "entry_id": "276_pinn-with-exact-bc---seed-2092",
+      "label": "PINN with exact BC | seed=2092",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0009061542223207653,
+        "epochs_total": 3270,
+        "final_loss": 3.0036332532290544e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 19.248121999999967,
+        "solver": null,
+        "t_total": 1.976842999458313
+      }
+    },
+    {
+      "entry_id": "277_pinn-without-exact-bc---seed-2092",
+      "label": "PINN without exact BC | seed=2092",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 7.03861442161724e-05,
+        "boundary_error_start": 0.0001367346994811669,
+        "delta_v": 0.003870511194691062,
+        "epochs_total": 3027,
+        "final_loss": 2.5966014618461486e-06,
+        "final_loss_bc": 4.980281520516883e-09,
+        "final_loss_physics": 2.59162106885924e-06,
+        "runtime_seconds": 13.197787000000062,
+        "solver": null,
+        "t_total": 2.800438404083252
+      }
+    },
+    {
+      "entry_id": "278_pinn-with-exact-bc-and-pre-conditioning---seed-2092",
+      "label": "PINN with exact BC and pre-conditioning | seed=2092",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0010349260410293937,
+        "epochs_total": 5050,
+        "final_loss": 6.630652933381498e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 18.012358000000177,
+        "solver": null,
+        "t_total": 1.5465497970581055
+      }
+    },
+    {
+      "entry_id": "279_pinn-with-exact-bc---seed-2093",
+      "label": "PINN with exact BC | seed=2093",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0011309920810163021,
+        "epochs_total": 2797,
+        "final_loss": 4.291437960546318e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 22.98335099999997,
+        "solver": null,
+        "t_total": 1.8558934926986694
+      }
+    },
+    {
+      "entry_id": "280_pinn-without-exact-bc---seed-2093",
+      "label": "PINN without exact BC | seed=2093",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 3.3105810871347785e-05,
+        "boundary_error_start": 6.433940870920196e-05,
+        "delta_v": 0.004509224556386471,
+        "epochs_total": 3868,
+        "final_loss": 2.8994750209676567e-06,
+        "final_loss_bc": 1.1031074942380314e-09,
+        "final_loss_physics": 2.898371803894406e-06,
+        "runtime_seconds": 25.283821999999986,
+        "solver": null,
+        "t_total": 2.94578218460083
+      }
+    },
+    {
+      "entry_id": "281_pinn-with-exact-bc-and-pre-conditioning---seed-2093",
+      "label": "PINN with exact BC and pre-conditioning | seed=2093",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001981382956728339,
+        "epochs_total": 4705,
+        "final_loss": 2.4425562514807098e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 22.261379000000034,
+        "solver": null,
+        "t_total": 1.5069528818130493
+      }
+    },
+    {
+      "entry_id": "282_pinn-with-exact-bc---seed-2094",
+      "label": "PINN with exact BC | seed=2094",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.002112327143549919,
+        "epochs_total": 3281,
+        "final_loss": 3.492289124551462e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 26.808508999999958,
+        "solver": null,
+        "t_total": 1.2024571895599365
+      }
+    },
+    {
+      "entry_id": "283_pinn-without-exact-bc---seed-2094",
+      "label": "PINN without exact BC | seed=2094",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 8.805921243038028e-05,
+        "boundary_error_start": 5.6651591876288876e-05,
+        "delta_v": 0.002362555358558893,
+        "epochs_total": 3162,
+        "final_loss": 2.2629299110121792e-06,
+        "final_loss_bc": 2.3167248119904116e-09,
+        "final_loss_physics": 2.260613200633088e-06,
+        "runtime_seconds": 15.627375000000029,
+        "solver": null,
+        "t_total": 2.1965112686157227
+      }
+    },
+    {
+      "entry_id": "284_pinn-with-exact-bc-and-pre-conditioning---seed-2094",
+      "label": "PINN with exact BC and pre-conditioning | seed=2094",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 3.063478708267212,
+        "epochs_total": 10911,
+        "final_loss": 0.00011764991359086707,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 54.864663000000064,
+        "solver": null,
+        "t_total": 1.6597285270690918
+      }
+    },
+    {
+      "entry_id": "285_pinn-with-exact-bc---seed-2095",
+      "label": "PINN with exact BC | seed=2095",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0015555194113403559,
+        "epochs_total": 3050,
+        "final_loss": 1.8323112271900754e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 17.6171139999999,
+        "solver": null,
+        "t_total": 1.2663347721099854
+      }
+    },
+    {
+      "entry_id": "286_pinn-without-exact-bc---seed-2095",
+      "label": "PINN without exact BC | seed=2095",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 6.569804827449843e-05,
+        "boundary_error_start": 9.315375791629776e-05,
+        "delta_v": 0.002621469786390662,
+        "epochs_total": 2883,
+        "final_loss": 1.6208562101382995e-06,
+        "final_loss_bc": 2.7381337197596167e-09,
+        "final_loss_physics": 1.6181180626517744e-06,
+        "runtime_seconds": 12.300404000000071,
+        "solver": null,
+        "t_total": 2.4069793224334717
+      }
+    },
+    {
+      "entry_id": "287_pinn-with-exact-bc-and-pre-conditioning---seed-2095",
+      "label": "PINN with exact BC and pre-conditioning | seed=2095",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0016977200284600258,
+        "epochs_total": 5106,
+        "final_loss": 1.58458681198681e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 14.595978999999943,
+        "solver": null,
+        "t_total": 1.5363428592681885
+      }
+    },
+    {
+      "entry_id": "288_pinn-with-exact-bc---seed-2096",
+      "label": "PINN with exact BC | seed=2096",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0010938202030956745,
+        "epochs_total": 2971,
+        "final_loss": 4.809053280041553e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 24.60894799999994,
+        "solver": null,
+        "t_total": 1.8015929460525513
+      }
+    },
+    {
+      "entry_id": "289_pinn-without-exact-bc---seed-2096",
+      "label": "PINN without exact BC | seed=2096",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 8.297936437884346e-05,
+        "boundary_error_start": 0.0001587230945006013,
+        "delta_v": 0.0022439006716012955,
+        "epochs_total": 3464,
+        "final_loss": 1.6034865666370024e-06,
+        "final_loss_bc": 6.760841220199154e-09,
+        "final_loss_physics": 1.5967257240845356e-06,
+        "runtime_seconds": 21.76520800000003,
+        "solver": null,
+        "t_total": 2.042868137359619
+      }
+    },
+    {
+      "entry_id": "290_pinn-with-exact-bc-and-pre-conditioning---seed-2096",
+      "label": "PINN with exact BC and pre-conditioning | seed=2096",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0016151132294908166,
+        "epochs_total": 5363,
+        "final_loss": 1.2997325029573403e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 25.43955500000004,
+        "solver": null,
+        "t_total": 1.5929782390594482
+      }
+    },
+    {
+      "entry_id": "291_pinn-with-exact-bc---seed-2097",
+      "label": "PINN with exact BC | seed=2097",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0014885396230965853,
+        "epochs_total": 2932,
+        "final_loss": 1.5091618479345925e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 22.49299599999995,
+        "solver": null,
+        "t_total": 1.3125441074371338
+      }
+    },
+    {
+      "entry_id": "292_pinn-without-exact-bc---seed-2097",
+      "label": "PINN without exact BC | seed=2097",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 5.0519265641923994e-05,
+        "boundary_error_start": 0.00014912101323716342,
+        "delta_v": 0.002022118540480733,
+        "epochs_total": 3480,
+        "final_loss": 7.436158284690464e-07,
+        "final_loss_bc": 5.205166520028115e-09,
+        "final_loss_physics": 7.384106766039622e-07,
+        "runtime_seconds": 20.203978000000006,
+        "solver": null,
+        "t_total": 2.7859511375427246
+      }
+    },
+    {
+      "entry_id": "293_pinn-with-exact-bc-and-pre-conditioning---seed-2097",
+      "label": "PINN with exact BC and pre-conditioning | seed=2097",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0030850558541715145,
+        "epochs_total": 4691,
+        "final_loss": 4.7250841817003675e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 15.441659000000072,
+        "solver": null,
+        "t_total": 1.5711357593536377
+      }
+    },
+    {
+      "entry_id": "294_pinn-with-exact-bc---seed-2098",
+      "label": "PINN with exact BC | seed=2098",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001329042250290513,
+        "epochs_total": 2913,
+        "final_loss": 7.877291636759765e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 17.000446999999895,
+        "solver": null,
+        "t_total": 1.633378267288208
+      }
+    },
+    {
+      "entry_id": "295_pinn-without-exact-bc---seed-2098",
+      "label": "PINN without exact BC | seed=2098",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.00014018936781212687,
+        "boundary_error_start": 0.00011558674304978922,
+        "delta_v": 0.004151441156864166,
+        "epochs_total": 2936,
+        "final_loss": 3.3305498163826996e-06,
+        "final_loss_bc": 6.949843811554501e-09,
+        "final_loss_physics": 3.323599912619102e-06,
+        "runtime_seconds": 13.13424400000008,
+        "solver": null,
+        "t_total": 2.7692861557006836
+      }
+    },
+    {
+      "entry_id": "296_pinn-with-exact-bc-and-pre-conditioning---seed-2098",
+      "label": "PINN with exact BC and pre-conditioning | seed=2098",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0024225579109042883,
+        "epochs_total": 4637,
+        "final_loss": 2.922415660577826e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 15.279377000000068,
+        "solver": null,
+        "t_total": 1.589788794517517
+      }
+    },
+    {
+      "entry_id": "297_pinn-with-exact-bc---seed-2099",
+      "label": "PINN with exact BC | seed=2099",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0013449908001348376,
+        "epochs_total": 2882,
+        "final_loss": 7.215354571599164e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 23.7622879999999,
+        "solver": null,
+        "t_total": 1.702264666557312
+      }
+    },
+    {
+      "entry_id": "298_pinn-without-exact-bc---seed-2099",
+      "label": "PINN without exact BC | seed=2099",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 8.86315101524815e-05,
+        "boundary_error_start": 9.023299935506657e-05,
+        "delta_v": 0.0033229957334697247,
+        "epochs_total": 3648,
+        "final_loss": 1.5260487771229236e-06,
+        "final_loss_bc": 3.367728984571272e-09,
+        "final_loss_physics": 1.5226810319290962e-06,
+        "runtime_seconds": 22.117070000000012,
+        "solver": null,
+        "t_total": 3.2481658458709717
+      }
+    },
+    {
+      "entry_id": "299_pinn-with-exact-bc-and-pre-conditioning---seed-2099",
+      "label": "PINN with exact BC and pre-conditioning | seed=2099",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0016750978538766503,
+        "epochs_total": 5138,
+        "final_loss": 1.6399726519011892e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 25.79736200000002,
+        "solver": null,
+        "t_total": 1.560070514678955
+      }
+    },
+    {
+      "entry_id": "300_baseline--opengoddard",
+      "label": "Baseline (OpenGoddard)",
+      "source": "opengoddard",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 1.0740136781664459e-07,
+        "epochs_total": 1,
+        "final_loss": 2.740765662188828e-13,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 113.574769,
+        "solver": {
+          "backend": "OpenGoddard",
+          "converged": true,
+          "ftol": 1e-11,
+          "message": "Optimization terminated successfully",
+          "objective_value": 1.839496057317991e-13,
+          "outer_iteration_budget": 100,
+          "outer_iterations_completed": 5,
+          "slsqp_maxiter": 25,
+          "status_code": 0,
+          "stopped_reason": "converged"
+        },
+        "t_total": 1.7159019064862968
+      }
+    }
+  ],
+  "record_id": "three_bodies_3d_monte_carlo",
+  "source_run_id": "20260415_083231_three_bodies_3d_monte_carlo"
+}

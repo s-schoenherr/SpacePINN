@@ -52,13 +52,11 @@ def plot_loss(plotter, x_lim=None):
         ]
         if visible_lengths:
             ax.set_xlim(0, max(visible_lengths))
+    plotter.style_axes(ax)
     fig.tight_layout()
-    ax.legend()
+    legend = ax.legend()
+    plotter.style_legend(legend)
     figure_path = plotter._build_figure_path("loss")
-    fig.savefig(
-        figure_path,
-        bbox_inches="tight",
-        pad_inches=0.05,
-    )
+    plotter.save_figure(fig, figure_path)
     register_plot_artifact_if_possible(figure_path)
     plt.show()

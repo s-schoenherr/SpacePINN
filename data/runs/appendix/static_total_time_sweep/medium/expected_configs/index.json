@@ -1,0 +1,62 @@
+{
+  "entries": [
+    {
+      "entry_id": "00_t-1-00---mathrm-s",
+      "expected_config_json": "expected_configs/00_t-1-00---mathrm-s.json",
+      "label": "$T=1.00\\,\\mathrm{s}$",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/05/20260526_134746_static_total_time_sweep_medium/configs/00_t-1-00---mathrm-s.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "01_t-1-02---mathrm-s",
+      "expected_config_json": "expected_configs/01_t-1-02---mathrm-s.json",
+      "label": "$T=1.02\\,\\mathrm{s}$",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/05/20260526_134746_static_total_time_sweep_medium/configs/01_t-1-02---mathrm-s.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "02_t-1-04---mathrm-s",
+      "expected_config_json": "expected_configs/02_t-1-04---mathrm-s.json",
+      "label": "$T=1.04\\,\\mathrm{s}$",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/05/20260526_134746_static_total_time_sweep_medium/configs/02_t-1-04---mathrm-s.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "03_t-1-06---mathrm-s",
+      "expected_config_json": "expected_configs/03_t-1-06---mathrm-s.json",
+      "label": "$T=1.06\\,\\mathrm{s}$",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/05/20260526_134746_static_total_time_sweep_medium/configs/03_t-1-06---mathrm-s.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "04_t-1-08---mathrm-s",
+      "expected_config_json": "expected_configs/04_t-1-08---mathrm-s.json",
+      "label": "$T=1.08\\,\\mathrm{s}$",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/05/20260526_134746_static_total_time_sweep_medium/configs/04_t-1-08---mathrm-s.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "05_t-1-10---mathrm-s",
+      "expected_config_json": "expected_configs/05_t-1-10---mathrm-s.json",
+      "label": "$T=1.10\\,\\mathrm{s}$",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/05/20260526_134746_static_total_time_sweep_medium/configs/05_t-1-10---mathrm-s.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "06_direct-collocation--t-1-00---mathrm-s",
+      "expected_config_json": "expected_configs/06_direct-collocation--t-1-00---mathrm-s.json",
+      "label": "Direct collocation $T=1.00\\,\\mathrm{s}$",
+      "source": "opengoddard",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/05/20260526_134746_static_total_time_sweep_medium/configs/06_direct-collocation--t-1-00---mathrm-s.json",
+      "source_log_file": null
+    }
+  ],
+  "record_id": "paper_static_total_time_sweep_medium",
+  "source_run_id": "20260526_134746_static_total_time_sweep_medium"
+}

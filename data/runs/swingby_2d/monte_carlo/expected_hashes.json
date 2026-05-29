@@ -1,0 +1,3020 @@
+{
+  "entries": [
+    {
+      "entry_id": "00_pinn-with-exact-bc---seed-1000",
+      "hashes": {
+        "F": "5b30f490e120d87dd6d436cd4759a2f6bf924389a119c87c548dca1f6a7a5372",
+        "G": "8a3ae669c9e22156dc095cdfd047481fee196937bed23dc53fa99f731a2dd843",
+        "a": "7d902f153d4adb366c62bc97030d0ac0acd27db63141809d380c57fb343b2a64",
+        "loss": "1f24b7a75ca8ec569989a1072701f6f560d396d19d59628e79ebf08b1b4a61cd",
+        "r": "b40c9dee447dd551e2b310b9bca50007efacdb9a1e07de00766776d270e1e48b",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "44bab39ddd485da1f2137647c1eaeb77bc33f1661d10109decf8ac0f34f1fafa"
+      },
+      "label": "PINN with exact BC | seed=1000",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "01_pinn-with-soft-bc---seed-1000",
+      "hashes": {
+        "F": "7209c2ae2cfb1b38ef7d7de59914da08dffe9f1ec7fefa81997a55b760cd8b10",
+        "G": "6bde11c4c45c1934f368bfc21c076894549f470c3044695687ec222f82b43d6e",
+        "a": "91d8d42d6f5921abc997c9f408fe8a24f09d00f1b405c205218fb2e9d0a8f2d8",
+        "loss": "d8b77484b59e1d1511b209d30b464a3d56f9ce40e1d07f2f73f35e32fbc06fe3",
+        "loss_bc": "42f199defb2ce0a24feaf83d4faa6c4de7d653a7c2d551a683795dcb7767ccc3",
+        "loss_physics": "282ea56df3de4bf7e0c688b52835ff40fc5d95a1ba2bf7ca3625705208da0257",
+        "r": "8b2e354508d3ad60a102926d7f68009e5ddb024c362472923b012f57e18e25d5",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "9e5523fd9c9e832bf1d9ab44b5c61a99454da1e917d45a68c9c67ff95f18340d"
+      },
+      "label": "PINN with soft BC | seed=1000",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "02_pinn-with-exact-bc---seed-1001",
+      "hashes": {
+        "F": "304c53f4b7c09240a0890f473fe9d7024800bd68012aef531ee7009e2306125e",
+        "G": "9f30a3261bc58e8474f66c36caa1d7de9dc055da4486391304971d7f1e7f8d44",
+        "a": "87cdb1c87450d866de77eeed62eaad2f5f931060264ae717b4ad2abc829b95aa",
+        "loss": "b52140794a00dbe8a48d0d0dbb93d464421e4e51d1762a5738a94ffc148caa5c",
+        "r": "fd0552a88be8ba17c40dbda8a22bc9555868df734af9e1e5109121614e361cf4",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "631dbfd5b2500ea842e9e00c0002ff189dc9631719412f9e0c307c8ad9c90a5f"
+      },
+      "label": "PINN with exact BC | seed=1001",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "03_pinn-with-soft-bc---seed-1001",
+      "hashes": {
+        "F": "efadf3552da7cebfe79fa21242d0973b12d039467457f478326d007df8030b24",
+        "G": "7337ae2df7327941fffd45d7666e22190b8a99c353b035f5c0497bec65937ba6",
+        "a": "ca0193686bdd4c637989497ba5880e9ae545701c3a206565dec6ef92bbe73e27",
+        "loss": "1362165d4e2c8d0afe5f78266e8690aaeed9034d1186fc86cff4afa072664bf8",
+        "loss_bc": "ed81ab97b160dda928649733f0f0ee810a17c46cd45530d1fcd1abc682c6d9b0",
+        "loss_physics": "f7f9f5fb312ae6a80d30a020be675620445ab05787590a9f5e4f2e692bff3cd8",
+        "r": "6db85a84fde98d6b23991f26fb3cdc1e1e23c4e8fc019e7a5f2ed38e1e798bae",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "9c4b1b215f631fe2b1f44b5ec0d411bbdc80fb64e5a276389adbfef7069bf694"
+      },
+      "label": "PINN with soft BC | seed=1001",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "04_pinn-with-exact-bc---seed-1002",
+      "hashes": {
+        "F": "00ef4a35b940435b3b698277ebcb9d8866ff5d2d05daed77d019cbe7dbddd11d",
+        "G": "fc8526c513ebeaa8e830b9972c356ed867fec884360ea0918d11b2b2568390f5",
+        "a": "3e1ad155c6f91378a187396e6e3912f13914eb385cc0277a27f5d7075a616d00",
+        "loss": "d88cd72c03f85d42085347cf47b8331efc4ea43a996244124602b66ec86374b9",
+        "r": "2d29faf262269834510e532ba2f0eb30a6f6c8c5aebd53923d593a146bc6ed71",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "35386a455c9b72629031faeec8c8d2fa4d3c9e09354d3972ca1fa4ac400c8877"
+      },
+      "label": "PINN with exact BC | seed=1002",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "05_pinn-with-soft-bc---seed-1002",
+      "hashes": {
+        "F": "22f6912537cd272a3b9cd88a20af6831cc8b34d367d9ca3c77a296446aeec211",
+        "G": "db6aca3347ea3fc00052a22f99c8600ec4c0ff9ae5631e423bad16cdea4b0e96",
+        "a": "92dc1d12ff7a8304180fe7fe556c0d132726253deb7aff1752eafa0502a7a074",
+        "loss": "18bb9d41c40fc437813a806fa51c8045a9d0c538bc9ecce9891f9ac519fbbf39",
+        "loss_bc": "b2512f8a3c02f32e6f17e2a27dc5270a78ee149efea71e08329ed85e7c3ecf0a",
+        "loss_physics": "9b17c967096dd585941688a5fcb13d2011186a9c11edc24cdc80da52e7caae0b",
+        "r": "f058ccb2ecd528da17749932d7ba8a8feb84bcd5add5062740d7c0ff5bfbe409",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "15520ce1e88d7b0ff371fc8a55066a3c3d61dde82efa8ec247b94276e2028d48"
+      },
+      "label": "PINN with soft BC | seed=1002",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "06_pinn-with-exact-bc---seed-1003",
+      "hashes": {
+        "F": "7b6bc13c00df88767506aedbfa2d2239dfb81caf0055b4b1c4647fa68a4d1f9d",
+        "G": "7d584a48e7cd114e3206da854e2412e402a6ac5aff4a149dd4caa0d521b0373f",
+        "a": "aef338ef4e3c4b9a0b52ca832ab27745c1f50dd81f2e226bc27790189c67cfcf",
+        "loss": "d1c1c4846870013d57a69b5e9edcee825706ba3b7bd3ac268ad8f8a072aaf70a",
+        "r": "1916d4cf36505290e6449878c09589918d2169712836af4cd9fc769d8129e86b",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "a5b33008c623248a2be30fb55190c034cd6553d6793dfc66cd64cd7545db6710"
+      },
+      "label": "PINN with exact BC | seed=1003",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "07_pinn-with-soft-bc---seed-1003",
+      "hashes": {
+        "F": "cf372d91bcd2c6d2e612fd4b62168eb7ed300b214bddf2f575c9f2c95512f7ee",
+        "G": "64f88e64e0d52c09b6d4089ac585c673c6791f2f3b8b475c7912a91c0dd7321e",
+        "a": "2615d4d025cd33baf64476dc88f7396e6c26bff4491eaeb63023984e10e464c5",
+        "loss": "4777c62f768ccf36208244bf3f541f6c95f69347d0edcc7d48eb2bab14077f6b",
+        "loss_bc": "ba57174bf6b37c4a49961606505e0db1e75af7fb3c29687c8c9a84f5c9d53a41",
+        "loss_physics": "707892fb6dec9f7e5ced410387686a73e5c980d1c2c028f53265675a9c8bb3c5",
+        "r": "40d5a52abdec2f4b8b8eebc6091a8d9232ca8d81c6c88b56849ec714e5870566",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "abbe730050a8d23113140be1eb7f3346b0a2935df6da13de69bdf7408e12eb3d"
+      },
+      "label": "PINN with soft BC | seed=1003",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "08_pinn-with-exact-bc---seed-1004",
+      "hashes": {
+        "F": "be310901a136092b62c983ae69a58ce6ee4736232148c73dcd359c962213c283",
+        "G": "b111e84fcce80643d9aee1a60c9847a0fb10398885716fc42290ef8146dc76f5",
+        "a": "1ecacf702cc65afefde38cc9bb644d9f221931315ad45a1f7dcdcea0731a4d96",
+        "loss": "4c4655ee884dbaff990357e48a46a950e4c0ccb6e4a921ec0848ca334cea1504",
+        "r": "cde2cb42dfb0cefb4ca6af6f17d8907f3886435b93bc5c7c02e2f808b3bd20d7",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "24e3b2e972f0222260c9bee2ff9e20748810adac6ed39cf0a0fe9e402871017c"
+      },
+      "label": "PINN with exact BC | seed=1004",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "09_pinn-with-soft-bc---seed-1004",
+      "hashes": {
+        "F": "4bcaf8826bf0a9680c582dfa1bb34f1cd894e4fc5e59601533a1a710affded33",
+        "G": "93c10be066a8778868abb59ee38ddf166d7809af9bb50155a0363a58cca9c38b",
+        "a": "357ff078c61c004909836f5277b82107686bee367fba892d1b36c0a583cc560b",
+        "loss": "4a5c1ff97dc2af8bddf16d7815ed2b3d340394cc235acb2f4f3eda89072b4026",
+        "loss_bc": "cf0f277cd83b3bfe9ca0f4bc2fcfb6b854dfd3d1230712458c51968d564a534d",
+        "loss_physics": "0fd789049e882282d9fb074b4ecae80b92133d899908f11cc417326e181b6ea3",
+        "r": "27e4bb7be35952fba02b8e5af5ea9d8be5e4d9497e5a90015911a78d0c502ae5",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "83813d66e332b28a1f067bf80372843ac917468920a230d1309fb8592ccc7aa7"
+      },
+      "label": "PINN with soft BC | seed=1004",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "10_pinn-with-exact-bc---seed-1005",
+      "hashes": {
+        "F": "0c4a3fcc11e6c00c10de522bb45e6bf7f85c13549c6ad6dc59aa2c4a445aabb3",
+        "G": "b0cc8f40aead75934fc78f93ecc5740eda690d527429848352874270da6f586c",
+        "a": "19268e258de365ca1c721c9a046eee76bfad513232a705cabb6536de1ae0a9e9",
+        "loss": "5101a15b4b143fc0f970b740bb9a4821a06a834ca56f8455b6a3b8e59fde1532",
+        "r": "51a09164e963b34e41e3eba81106e5510b44c612e52c7b3d71e204ed5ad625df",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "7dd0823deeeb053202de25c9e011fbbdf2137cb75b50565a33a13402866348a5"
+      },
+      "label": "PINN with exact BC | seed=1005",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "11_pinn-with-soft-bc---seed-1005",
+      "hashes": {
+        "F": "01b40a9aa5c42181127909462161696eee25de41eebf235251eba8395496e87d",
+        "G": "c8ee62cb783b9d6ad71b545100e01a13f8a90119cee14f8499e9b0fe719ba464",
+        "a": "93296ff949e83657bdf49a07c4084f017278f8ba542b1a18fdae22ee4a94db99",
+        "loss": "5f70913c63ee8dd3ede1048516d37f4a0230ae213743ced864a072fbc31e3999",
+        "loss_bc": "f4e4cd6ceeffc5e44b4ce1230e19be153513833204b47f7a15ae29cce15f2c08",
+        "loss_physics": "e9cb2a8e12f508b1d6a93aedd70e2414cc70990e829cc651199f03b2ed9f8a9d",
+        "r": "83be655b00460653eff21eb591e60825841fc55df6d0de77737309bffcd5309f",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "f109c8eda106c4a469dbd40a0741095e4292cf758ee55e5021c68fb70de60685"
+      },
+      "label": "PINN with soft BC | seed=1005",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "12_pinn-with-exact-bc---seed-1006",
+      "hashes": {
+        "F": "29f67a5226cd9f7e8e295ea766c060d4fc1f2ed95f4fec8ad3541f51b81d3381",
+        "G": "ec557817d509d01580cc4a31a7b7ec4a2ff0e959c627dadbed215eb9076e781f",
+        "a": "c50b13b9e269af3a97179afe0aa3b37c50d921ec66a3206fdb9fc5e22cdcbd5f",
+        "loss": "d24930707b4af47dff4b8fc680afcfa33f606b5461d23a47403a5b843043de11",
+        "r": "26468717883634b9de19ada6b7b2160e9a963f626b317c235ef1acfb9c7b9528",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "cd4fb354ff61cd9d7c4f14afd713417bf85c1f12d91688a6eaa0ecac87d00771"
+      },
+      "label": "PINN with exact BC | seed=1006",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "13_pinn-with-soft-bc---seed-1006",
+      "hashes": {
+        "F": "207e5db2494e8e183a7b76b9f9779b9efecf26c64b1061a0d17196b8bafc1d55",
+        "G": "207898d577f3933897151cd7b4612f0465060a51c9f92085cc19278b2c3a00e3",
+        "a": "d455459558dd0666174f2e6e8b5356b3fcfe480c924c4e33a2168c3c58a6ec1b",
+        "loss": "9e72edc625d0b46a30ed596905f05103038f9e83881cdd06061d87a22fd1bd0c",
+        "loss_bc": "76687ee3393f804f4941443b50bfcdc415630e6719b6640518d8622548fb3f1f",
+        "loss_physics": "bf202a3a3562b7834504d262e07c423efc29603a8d6645258d1c903799e154f4",
+        "r": "d06d4333eac6ac782f3cb126f70c3cf1ea45bb69f4ef9dcdc0bc0bcede036923",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "800d95d2fe9656278ca3b81eb84c7c03d6137bff46d1a531290ad50344cace86"
+      },
+      "label": "PINN with soft BC | seed=1006",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "14_pinn-with-exact-bc---seed-1007",
+      "hashes": {
+        "F": "919531176ddeabc814c608310b97d21f508779b8944766cc6fde6316ed0cf322",
+        "G": "13fec2c26047bcd16d571d831fd9aa2d99b6b3e777be4146dac0ecbf18bbfd16",
+        "a": "53644c121edc00c72c4963fefd8e9e6aa06338e1dddd01ed653f61fedac8d5c8",
+        "loss": "3e8cdbfe0e2bcc3e47d9d40837059854a89085ab9b6d05da2ea1302cdb2293b8",
+        "r": "d1c0d4563894816d781ba38e6a6e5f4e3cc26c8d9060528d0a3a230b4878f1b0",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "d1276c62e360cdb12222dbcdadf6610bc104bf83da18432d1b9c531762c3199b"
+      },
+      "label": "PINN with exact BC | seed=1007",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "15_pinn-with-soft-bc---seed-1007",
+      "hashes": {
+        "F": "2d646baa7c2bf1d6181ca5df30ca2ecc912da3537f91c816d5ea62aaa938c621",
+        "G": "ec59034f55bf1dc7b7ca0d9bcc7893b80053215a0731f426ae61d0ba2dd8a708",
+        "a": "00755c2da9f77a18a9b6a1c73f511ab1ff4320b97962b9b0b1b02b27da522452",
+        "loss": "3ec6b788c9cbbc9e7b842eec75baf956c0be3b974e6499ef3e28583f4e040af2",
+        "loss_bc": "34b880e6c9f66ee598f153e78ebf7951c4c8d6c9e58db9b79bef558f03b77825",
+        "loss_physics": "f959ae3457035b1f971222647c0ac0f367f934078cd9c4d7fe3b1d0177ff826a",
+        "r": "74ae401f35588fd2dc0a7bc1a71676b2df7dafed81be6794dfccb9d4cace6d28",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "26545cd4754edbfc4e578c96bef7bcda02e488169633bbbdaadefe00699c9c6f"
+      },
+      "label": "PINN with soft BC | seed=1007",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "16_pinn-with-exact-bc---seed-1008",
+      "hashes": {
+        "F": "c69678481642241936d440726cf31e78e4db9bc2a5c3efa676166c0b6b70ca12",
+        "G": "16d86484eb0dfdcf8f62b4a1448ee83906095e964df8f42278d83928859b9fd6",
+        "a": "ce99c3cdb85a034eaacdc828904c602d145eaa55b76869281576f77d1e354d34",
+        "loss": "3a6245b568e4e633d4caa7f887c9dee207c1d3a9f1bfa2e74edcc0ccbd693469",
+        "r": "6ba99528e37a8edf3ba8d3139cb0190d405f5fe22da8ccecd696736efb7f729f",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "90853fe441337a91ab498b417268d1c5cbbd4dc8390bd07806a0c567f7af086f"
+      },
+      "label": "PINN with exact BC | seed=1008",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "17_pinn-with-soft-bc---seed-1008",
+      "hashes": {
+        "F": "363ff1ae8f482fd82ee3a30e47b187bfe8a2fed8c8b07c87e66fccb705194a2c",
+        "G": "b8dddb9319ea30ed35b409d982b3a8dae7b37de6d4b52956e00e3758fc028b9c",
+        "a": "c62f9986792906e8e44089a9eedc1bd346b26a68de64912530e82c73e43c7fb5",
+        "loss": "bdfe75e537139481dde2420c024521f0a515f53556390c1234a094277e9e7be2",
+        "loss_bc": "f01d176a5fe07461c8b9c69b0de3d602c675644cd571eba8aca3557d957a56ab",
+        "loss_physics": "e83f96fb7cd77e29f36c42642e0626aa0811feb4ed9f0fbc0759b5285703f9d5",
+        "r": "11fc5ae61caf5f3b37899d090b7a778bc7109b88b774705b3cff3e1443b85239",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "ca4c5fd8147ec539e03cdec1156c3b01fb04df4650bc6715a4c2f080e8acb538"
+      },
+      "label": "PINN with soft BC | seed=1008",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "18_pinn-with-exact-bc---seed-1009",
+      "hashes": {
+        "F": "2d13fb5de9d6fe8b079ac1be61facb7367c5a87c7afec2ed682475327b945cf3",
+        "G": "27b286e613ef06622caab7bc87fed952d58a6ce0f9dde4574c1c338c19392284",
+        "a": "c7933059c8c6cb0904328ea4883301225723f49c659e02b3bbe6da599582f77a",
+        "loss": "3bba75b2a8f34e09a4f9c39e7a96d74180c0ca751b30028ec1ef6b8010bf74db",
+        "r": "6a07c9e70bfabf124469f83903e72ee6532db535dbeaa26784a1d185b74345db",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "9841b5ff41e5e2d38d7813de029b2e07949e25b3b66c1193e0fa4e298294b585"
+      },
+      "label": "PINN with exact BC | seed=1009",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "19_pinn-with-soft-bc---seed-1009",
+      "hashes": {
+        "F": "7bd222f0c160fdeea8d8affc09ff17133c4718e745586e4fdbd34925c0617db7",
+        "G": "99bbbb93f4298de733d731e9c8f845df07284cf8aa9072fd04cff96674210ebd",
+        "a": "851d7b8c32436fa32ca395bfa87ddf712d88bfe7c3a6f0e7ca0f907f19102dad",
+        "loss": "a723acae824050eb6c7f89a465edd6a4d89498644e37e0239701ff6568f863c2",
+        "loss_bc": "505818285ed51a97417e6f35c876f8876de88a739910e59aaccce7312ab3ba68",
+        "loss_physics": "038b0d167694351d6d653c4f1936ca2628ce99c439aa7947c46fb88c02905bcf",
+        "r": "18a526fb2ff32e7151f5a96115032a14027df0d0a13786588e60965424cd5f9a",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "be01864b700040a3ee1f08ab01acce22dad7cdf75e5f6353eaf53b1ea42ed3a2"
+      },
+      "label": "PINN with soft BC | seed=1009",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "20_pinn-with-exact-bc---seed-1010",
+      "hashes": {
+        "F": "2295071406fc04e73242ed17d10f264dd5ecbe71911f240ef6694c0409966f80",
+        "G": "03c5d64b1196b8d777f77e309c9cc16b7a231f0c06048be1d9555bb028227fb1",
+        "a": "380a60403be3754f4ed14a1c92b72fe47dfe3f2a48cf83136e5a17565c1c0aa5",
+        "loss": "05e022c46ef00b49cb27f0727440ff575e33ec6dafa49fb83a875c772ce13b6b",
+        "r": "6e5a571f49f65cba798037b8558939e73465e77681d6276940e7533611d3b4c5",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "2a1a59ff1b6e5c58be80dcce561a7d3e4ac634799de02262a9cfc94f52c49eea"
+      },
+      "label": "PINN with exact BC | seed=1010",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "21_pinn-with-soft-bc---seed-1010",
+      "hashes": {
+        "F": "58e4959d7590a88c643fef94b7ffbd25e11e2d23fc2e330d7cf8bfcc03b37995",
+        "G": "802999e24bed8c65d80765031cd5e810fda96618d4d8b385b0a92b1996725e07",
+        "a": "51081695ae603fbb5529f7f33574213c1da31aabd8c133c40877237bbc4447c4",
+        "loss": "f03144afb9937b3fbad8243d291d5c280638ef8ef96fe1ce667fa08541501537",
+        "loss_bc": "56833fb052a403d26642e33b09c5de8991a40b97cfadeb9b9fc4a0df33fac66f",
+        "loss_physics": "c05eab7c4c15fe98f4a42105373b32189ea64d1a2854c7e129c7c91bc25dbd48",
+        "r": "ae8904e9296ea4ffe3fdce4726d65b143392c5d1e016051f72804f6ed54667c3",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "da2fd9aa3e08fee268bac681bbe92c1788336e7d049b9b1348f27ff368398b23"
+      },
+      "label": "PINN with soft BC | seed=1010",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "22_pinn-with-exact-bc---seed-1011",
+      "hashes": {
+        "F": "2ff1790f870bbab0980df3c9ddbc05c0161e5b3dba1589d5f4d60f2ba2f331fa",
+        "G": "42c5425768ef5accba86ea1481c32f6899cbd006d9345521c59c9cf68d119a70",
+        "a": "7639160fc7aecede9703318fa6c0fb0a37e973fe7a05a3de82044da0c3e0f02b",
+        "loss": "0f9e7fade8d943da4e80004d75a457717c767385125b3580e5fc3597c763459d",
+        "r": "6b5d0a7b2021ea8db778c325ee9d65e7f06408f2f019fa68e0c44f252170bbb4",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "fb9dbaf02d4a5db78530c411837a691bfee3478ea791663fb72f84f95dd491d7"
+      },
+      "label": "PINN with exact BC | seed=1011",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "23_pinn-with-soft-bc---seed-1011",
+      "hashes": {
+        "F": "75e2fe4db1d89677532e6bc2b7abb2a8d88b9fabb606c4fbde201790d628d217",
+        "G": "0b2858a67e3ebaa6b481978acb102ddca7c5ff75c086cf61e3b263c3648441cd",
+        "a": "925e1451c5a41014d67f8116795d90503eacfbc078a2aeeb4b4f186241d3a100",
+        "loss": "7fd191d6772dbb5d6ba2ffe271475bb9a2f730aee617681acdc69c978cdee98b",
+        "loss_bc": "2d0abf81e70e27bb0215347e6f617808609d6b3b3c7eba48a8f0e82044671159",
+        "loss_physics": "a8addc7be8dae99081300740e8c704e28a7d6914e1e90ae13bcfdff3a4c85c2e",
+        "r": "bed839bce650c1d90f736ed472ced3fd5e1f0d7b68ddb0f79f964c9407b86461",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "f9e9441cd688a67ab0c4b3aaa536c186ef2094d2fc5cccbcc1aad2592e0b7ef6"
+      },
+      "label": "PINN with soft BC | seed=1011",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "24_pinn-with-exact-bc---seed-1012",
+      "hashes": {
+        "F": "bd2c824f4cb65def238e32baf0152ed99cdc0d4db1bee58ff74efb3802301a86",
+        "G": "bf16b1cb0e9c7ec7719e057bbcdaeed760d34b90dcdc9e8acab96e5deaec05ff",
+        "a": "9f388c95b195572e460f633349ed545a25a863c52fdde2a70d9d5e09bafd0f39",
+        "loss": "a81ed170a42edbf5dd3e6afc312793ac40eac8e69fec03964b9a51958d9011fc",
+        "r": "ae7210db31476dba6d29ee1c6ac91a4af3b61cea0a8ceee69cf76984a1a62fe6",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "56b553c615e1a330bc27ec8121fd15e7cd8534a28f0d0513186882f0bb20c545"
+      },
+      "label": "PINN with exact BC | seed=1012",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "25_pinn-with-soft-bc---seed-1012",
+      "hashes": {
+        "F": "ec414ceeaa0f4f50e6d9b39acee4c64050a9ba44b8fb1638becd88199bdceb09",
+        "G": "20c958fb2a69a52e09aa5e0f19d0956c1942d36b822e769a311aaf3a87224b93",
+        "a": "f0ca0e3f2194fed1d5b8695e6f90ad476adcd908dfc70780461e13fe5888940a",
+        "loss": "681d674b7d4c93e1082cc07bf5052aa36fbf25148d7df85cb042f24801aa3254",
+        "loss_bc": "ff025344c2807dc25338eeee3d3cfade6128f8c2d9d4d8c1f0a5ac155b974885",
+        "loss_physics": "b7eecf6e0a1750c0ca3584cf4c844ba6f88c07b020800c7a7923122111943053",
+        "r": "054ce252cd75ec0f263a95ecdc6c86fb82dd8054e141d98209d0021fb9965e2c",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "69cf1ea747f58f5021ee83cfb57242b11a8ae9ab327611de9148cfc9065b7643"
+      },
+      "label": "PINN with soft BC | seed=1012",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "26_pinn-with-exact-bc---seed-1013",
+      "hashes": {
+        "F": "803b3f64905f0134f0bede17cd139db17c4268cdfbe9661339d6b13215836dfd",
+        "G": "ba5755bab097ccb8fe47a8c323860243aadbd8070517fa67ddc08913d4dbdf86",
+        "a": "ef9a0a9e16c0eb28ae46c8390f9b9130a4a3adb9b8222597cd27aec5a9cad787",
+        "loss": "7c2eba9a7b2e1bbd7a089e106d3b58cc58025a5c8b442bd94ac3545ff5837bad",
+        "r": "3d045fd851bc675d80c63f3b3ba7a63f32ff19620ab6a63449c804db46a3cd64",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "0fc6bd9b60fed04454d2d21dbb5a13f9d87be7878010179c5087bad1dbde2188"
+      },
+      "label": "PINN with exact BC | seed=1013",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "27_pinn-with-soft-bc---seed-1013",
+      "hashes": {
+        "F": "1dac2163b1f28374985dc2a5f5d285352ee7889eeb31bc0766e88384ca291dca",
+        "G": "52eb9556ff6148350733954d2b1235206b625b3dcdac9376fbdcc692414f7a7b",
+        "a": "4928e22ee770daa58e090c46e148bb8b243c5fb1ced851878bf4747bff04c34f",
+        "loss": "10876fd3bf3f9970a9949990c94e4950fe68cbbef3a6a223ee86c9573d7d1434",
+        "loss_bc": "9a7d9eb3d0f49d9d9b41ad3d975e3943cafc95f0614cf69c8f0cdd57614b4194",
+        "loss_physics": "12b950409f0d5cfc83d5aa1f9b7486b40801f0c42b929c4d89e291ff5f8640cb",
+        "r": "3ee798a2c8a89a392fcd037eed02ba954c63767290b5cf9f3fe6f236c2620b2f",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "4104af8f13f6248dd5c18167cc879448691fbf5cfd745cec717600bc25ee4edb"
+      },
+      "label": "PINN with soft BC | seed=1013",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "28_pinn-with-exact-bc---seed-1014",
+      "hashes": {
+        "F": "53fee3a859cc872b10ac4bf53ab57019dcd638273bffae73bb27ec46efb54fd3",
+        "G": "108dc253ce625185d96ca6cf9291954ccc1dc4ca79d5d5921c6c62ecaaa5c43e",
+        "a": "b17aa363cb4cbe3063305fb4c6a1e62f620a371f72128e6b4924681954e47db3",
+        "loss": "91dc2852aa20367ad88132130e934805fea950f783f937c4740c048f2223c3fd",
+        "r": "43252be00710f07d3d3ea46fe5d38ce1968035ed8b38d04d56642a22078666db",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "4f6fb399567a7ab7abb5aaeff7286b90a539487c2b5ef442e305b77be76148a7"
+      },
+      "label": "PINN with exact BC | seed=1014",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "29_pinn-with-soft-bc---seed-1014",
+      "hashes": {
+        "F": "66d45915fe758af39584b8e5626d9670d18b410e338f5f6e40885dfc15686edc",
+        "G": "dc8a75fe0ad69119d22a801bc108589a7627c36363ce849f64df2af019c96f05",
+        "a": "1a71d3f54c5f4087d630ab6d91df6beed8ba396583127d61c9097106206b450b",
+        "loss": "27f85f14f8887b976bfd0ad6a51b8b52da0713b79859b5667931c88ee94590c9",
+        "loss_bc": "9bb78da7334d3c1c4a4cbecdefda7dc572d276328237da8a65e700d3f1f7ee48",
+        "loss_physics": "c54e72fde6be9ba39b51a580e596682c6a57550789ec9a3ebd0e6146138a0f2a",
+        "r": "ad19012ef5df227fa77cd44331e555f6c8f8b86a805e0c7c050b7773258f1902",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "0b995599c53e4964c392ea6702e27d274102896783485bd5d6c8eca44616c920"
+      },
+      "label": "PINN with soft BC | seed=1014",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "30_pinn-with-exact-bc---seed-1015",
+      "hashes": {
+        "F": "c3698adf32859f38026636a3e6f9a0e7bf108366809af3f0353e3d8b34793d58",
+        "G": "0ce40972bb7e2da01b45b92f7da2cf204c517544a94a604adb7ed10cd1bb82af",
+        "a": "3ba35f49408b39262939d706d4c3f07b61fd939d7b3c9125985524d52e535bf5",
+        "loss": "2997e4e1e026da202c158c85db548e5625072224a804f9fabe4fd1e8ea001825",
+        "r": "7e7504074ede9aa87f9883d92fac2a2af4e544e8f389eeaa7d757d6d292dbcaf",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "3283e6fad19afd27cfbc4b028c592695700c9cde3ae380400a26236ee3bab2e4"
+      },
+      "label": "PINN with exact BC | seed=1015",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "31_pinn-with-soft-bc---seed-1015",
+      "hashes": {
+        "F": "b4cff5d69d896b4301e762f4fc4abf1c190682dde596ad990c2019a77586dae6",
+        "G": "bd84d7cf2dce0008f4217ae036f10c5dc07ac8f0f4040acd57530112d48ba56c",
+        "a": "6c46acd4b16257eda7ec19d5788a3c7cf695923921cd341e57be0fd34dd91bee",
+        "loss": "41692c40ad19225c30d6b3165cfb20e5867b1913d1dce79cc63e051dbc2cb106",
+        "loss_bc": "35c363fbe03c67191f10655b74770d7dca38ab43ee672e4e0fd804a5a1e41b1f",
+        "loss_physics": "2de8190d91bf444bb0e903c47f8438f5cf3c7039a864b450739a99278344bafe",
+        "r": "c64c2b96c3b37fd36bbfd2591e77cd6bfcafa4336f80af2443221cc6450442f5",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "ea9189d7a9a129fab99cfdf3b724faf9f41b8ca3460e6320556a8e4ccb42fe2e"
+      },
+      "label": "PINN with soft BC | seed=1015",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "32_pinn-with-exact-bc---seed-1016",
+      "hashes": {
+        "F": "15ad467f29410daa4754dd4ee0efc700984b92ad92dc711a2a5b34a6bf8dc259",
+        "G": "fc8731b89479639a74e8791427e7ea208a3f3eb8eb71d030227af063b71dd649",
+        "a": "bb228a4d39162d6b04c7bec376ab22c87d3e9d6d7ee97e7b526f26f86b985967",
+        "loss": "c5ccaba90e88e73466dcb396ffe1fc8e6469db4b5b1ccd617253261a7d1a30e3",
+        "r": "fb7a83cacb964bdb5cb584e3429adaaa08cb9eae19b6214aed2d34c72c6e1516",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "02e5b7478567771eaec7dea2b923a4377095dbd672b170d33cb3fb9aa6bb8bf9"
+      },
+      "label": "PINN with exact BC | seed=1016",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "33_pinn-with-soft-bc---seed-1016",
+      "hashes": {
+        "F": "137406edc0ae90f860cde72c15b0bc213f34dac89b465500a65e001baad233f6",
+        "G": "245e767e4aa8066fb99570012c8bf0e1373fad124fd6ee1ae51dc858e7ce3af6",
+        "a": "75cdcc4f982690b3010e2d562a8cbf5269c1710dce93345420dc2999386ce25e",
+        "loss": "057fd46fbb779638cec75a7a596d26ba5c9c82ff62b5745bd1155e1577af73af",
+        "loss_bc": "1b14dcdbde6ef6460643e917e88f67a36e0766a4d8365ee749c723b4a95703f0",
+        "loss_physics": "001bd13080b46ea0bd68d0de6e0aee0a1ac0dcf9b2605247fc994dbb214fc816",
+        "r": "4519e0d16da80e01d7044114b5ee6305aad254b9c0e9f658ef8a7ab1fd1b8be8",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "bb0ae2ad17581e74b47f06f07c1ab5812299569c06b64d902d1c2411294194bc"
+      },
+      "label": "PINN with soft BC | seed=1016",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "34_pinn-with-exact-bc---seed-1017",
+      "hashes": {
+        "F": "7101ba527fa188a280af2802655d1139d5ee04ffbd0d87cb29617444abc0043f",
+        "G": "caef8aa396a81875ca1398de18dee6560a41f4f2fa77a3796f6e3e946b192e8c",
+        "a": "1657b93303f5f900a0892684c37fec533fb80e28a00150d28e9d93bf90355058",
+        "loss": "be4ba85f28f8f106029dfa634941fcaa8c5502439e9e51b57902e3a4f48aa972",
+        "r": "dea2c4b01bd48d5cf4dfcdba2d779867b1ee985451121321dc8d9584c7a7944a",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "3abe81074da2d252b2f198e3489816d4d9c5ae53c969c22c88b729febc67ae68"
+      },
+      "label": "PINN with exact BC | seed=1017",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "35_pinn-with-soft-bc---seed-1017",
+      "hashes": {
+        "F": "2ead0e1cef20e7b740bc0a6ce75b9f2b29a985a7047792429c1a3e68f97ea0f6",
+        "G": "8b15e66eb2adb34b0731b4646916bf6fe03cf84fdc62b6e493fbe4b28642ce25",
+        "a": "de5054e376f3ef76098d56f352efebe8499df73329eb03efcedf2f6a87ae2067",
+        "loss": "dc1b2f7452c62dafded3edde05b9d0e17627270a9b8e84507b42be5c5232d119",
+        "loss_bc": "077d01fb1ee1577280458364033bf54a36003873a578fcf4ae8bbc7c67b6d119",
+        "loss_physics": "e97ade1a5e6e6aac5ce815fb7d3761dc1c8693044df8a4f5576bcc70448baf69",
+        "r": "44b03171eb1b092d3c512095f1c0c2c956f84ef48ae45c566a680daf4515648e",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "f416300c1d883fb1e267f8bdeac728fa5a112277ae8fd3876bf1b50604fef080"
+      },
+      "label": "PINN with soft BC | seed=1017",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "36_pinn-with-exact-bc---seed-1018",
+      "hashes": {
+        "F": "1c812c4b4f19f4e6dbb17a926bb1db46b44f23d4206a8979ec8f09dd5a048087",
+        "G": "39d9301d46bd20dad1a89b211c36bd63a62ed22018c252495c0d6f64ed719311",
+        "a": "09f229eadec91ae18577474f250396fcc3590da667e5d4eb82f9257062f15d77",
+        "loss": "fc69de8d58a17c9ddd88af3340c47f28ed0bcb3032bd66819e9d657105eca6ae",
+        "r": "41d0d9413ea6384cd5330eb79cf4c335f2e2a726d5b07dccf349317b59acf699",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "716641acf46abdd1d839fd6a6b3c8bed27067594b2567f823bec5b5b57c3c16a"
+      },
+      "label": "PINN with exact BC | seed=1018",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "37_pinn-with-soft-bc---seed-1018",
+      "hashes": {
+        "F": "c8c880c4d3af69632717b5acbf5cf6cec5084358b74e2f48522895f9924d3bfd",
+        "G": "bdd414540407c748bc11e89aa97afbb6464c29248ae4148556fb9e4433e43671",
+        "a": "f500905747b8f655c72a7c9e7632fd113a7835d75910bd0d7351e651912f1c20",
+        "loss": "aa7048d352be21c443b3228ce2087944df3eff6de8cf2d9d99496871da8c5bc8",
+        "loss_bc": "99ffd2bfa6320405b3c917e8f445923e984fd458f047b8ccd80d16fcf8f55c18",
+        "loss_physics": "3ee6907198669d0e082c16e0d1e45ef06c0c15114ffdb443ce32f6e92664fa57",
+        "r": "dc95c348c92d0a7e3173d5ea83d37f21833d93ab5703ec831efad8bba04bf3bf",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "cfc4e8fe0b71e764f242cbceb6203e22618e17cf034a94cd5e7fb941356b0686"
+      },
+      "label": "PINN with soft BC | seed=1018",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "38_pinn-with-exact-bc---seed-1019",
+      "hashes": {
+        "F": "f4b0ba6cfdf7ae081ea67bdd2ff808c39a70a36a1cd806ae686f7009167c934d",
+        "G": "a011c4cba1bc9b6c509fd22f7d0acea8df825c21a267b77386653392ccd73600",
+        "a": "c36410a3240bdc9d6063f07ed8d3f6ac895b67e300f79f5d069e0ae4084a8291",
+        "loss": "e393e88771b93a7ad15946313a2d4b27617c1572738618a6cd00b9cecd2e3fa2",
+        "r": "68b3f973784125efcde27eeb2ee4ca7e2f2615fea35dc91f55b1646aa990387c",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "4389a3d02bc95db819d99d3c07266cba04d04fc3f12017cefaa1334181b9490f"
+      },
+      "label": "PINN with exact BC | seed=1019",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "39_pinn-with-soft-bc---seed-1019",
+      "hashes": {
+        "F": "5c59d08019d655cad0d03c879c4f4bd7709368bcfff075bec958dead036a6251",
+        "G": "8cfb960f94621d8b637edd7d7d875da1565e74064f2ab5c088965f122171e8bd",
+        "a": "b09d367317abca94c6d67bdaf8626733f08f03cc83957be744675f8a06dc89a3",
+        "loss": "e586f0ae4754d37226f9b559f2e31e03a77b9e7ab7f4d4bd6cc02099a165a2a2",
+        "loss_bc": "a378fe4046fe6432c450578a8672995488ea4d78320fdb214151b5771756b403",
+        "loss_physics": "53e149f17b01a3ca4c120d151eb18b6e94fa00b81128d1f1d064063e34cc05a8",
+        "r": "2542ed7328edd6dd473fdb3157eb8cacbbac5fe06c017acc8c4fca4b938319c0",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "35b45bb31258a4ff7e921aa4c4079695c3ce93d495f59819c0a1d0366cf2b5dc"
+      },
+      "label": "PINN with soft BC | seed=1019",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "40_pinn-with-exact-bc---seed-1020",
+      "hashes": {
+        "F": "c43d23c9c3e396b72b83000ce8cc29e9916cee68bd55c201230f7d48a1aa0c31",
+        "G": "605a67defc59adf8fdb9afb073920f347050736577524194268afa4cac601b81",
+        "a": "7d47c3bdd82e5c7340633a701a72ed15fce7cb2e57793fb545404a0a937f6463",
+        "loss": "026e9df4163faa50e4acc4a291ff5fa7c19c2a9fce1ef07d4080b734fb763b20",
+        "r": "9cf62707c29194b238be17e6b742f7f1b4c1b93e5163aecd30d36409a21a5e1f",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "0bc608be74787cda0ec211018b825dd18c89914a1ca913106cb46e7437f93d2e"
+      },
+      "label": "PINN with exact BC | seed=1020",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "41_pinn-with-soft-bc---seed-1020",
+      "hashes": {
+        "F": "f9fbea5e48ab922c72ff84ffca3ae8b4f4b8d4a9515c593406cd42b20ed834b3",
+        "G": "262e4c7194b4581c1ac63c0428c051ad695c88a9db1f0a03c3fe290000410f9d",
+        "a": "5ff9c4553385f04c1ce8f0258078cc3b6ae9ace9cc5096dd3cabacc3b2d00e59",
+        "loss": "d0c32f054b0c55ff2a617418c6a55bb862f8c51d1bb10efd80bde22230bd1a8a",
+        "loss_bc": "52c7e202acfd9b959094640ece07ce0af54d8e8acb1cfec88fe7b58441dd0647",
+        "loss_physics": "cb42a7fd66c664c6517079b30b0a0ef74ea61ca62028229c5a96de2fa2d3dbff",
+        "r": "bd734ab6e111f017bd5e4a0981ea6dcc218bc71850e9d498b5a23dc4165a24f0",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "be036501c9c6a489122934d7d06b5c77927ce96438b6da0a456b2b4c8816dd63"
+      },
+      "label": "PINN with soft BC | seed=1020",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "42_pinn-with-exact-bc---seed-1021",
+      "hashes": {
+        "F": "6874b8045a72fa745f06aadfea6d7e5c0f08ece3bb3b4cb5b001ca594f85868e",
+        "G": "a96332f682cb65411d1ef6ade0c41bd7850dd013cbfdf8be36f70d2154e0f063",
+        "a": "39a60547d8d16729010becf9afd76ad31d6f71a757ea6d364c41204abe36d250",
+        "loss": "bd7463d45d3127f18179666257e42dc66b20a3915312ec3fd850d317f8beac01",
+        "r": "7761af5849cadc02381754abf993caa46e64962b69922a7cdc0c1f5902b21539",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "de1a13912e91cb11e75e8832321e0dc64d20074d22f7ecfe4bc75b63ada1de37"
+      },
+      "label": "PINN with exact BC | seed=1021",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "43_pinn-with-soft-bc---seed-1021",
+      "hashes": {
+        "F": "a87d0e43da90da9c7db19bec1fe435aa849a9b8ed9302a8bf6051b868661e012",
+        "G": "ab48033c0b3e1774e748b052f76b8eb8599ed3f40158d89b845453732dea0c47",
+        "a": "91a4fff1783b79db70e1a3f04429ebb19ce70e6c1e71c85f0d69d9ed59886282",
+        "loss": "eff45dcc65dbcf358b01d6cbfd8c9f285c7cec93ea3079876050c85f9a94568c",
+        "loss_bc": "b3ed2136f214c505b0ba31d9220737064566301594e6192f7b09fd5deb58f24b",
+        "loss_physics": "9606ce261e7d3debde303d01770844c5d8b551ca90dd1e6f8d225ea93110f957",
+        "r": "cd8d3b2cd9c55b54b5a8ca4b1f91f24555c7cf892a4638bceb8b076f7e6f672b",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "f0d172826dc5fe581166a88a41200a1e18920872bb92af122f31ce94866f7f01"
+      },
+      "label": "PINN with soft BC | seed=1021",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "44_pinn-with-exact-bc---seed-1022",
+      "hashes": {
+        "F": "392ad069ae7ace1749bee586ffd73b3d52c32880f3afd66988a9407b52ebccd8",
+        "G": "386281713e3bb01c5e9274a5987302d2c6d8bbb125325268247dda30d4d57466",
+        "a": "c289c86d5fca9609ef21f37950e9a42f45fd39a98c6d973f4acc1eafb534c31b",
+        "loss": "5eac69f96019abb215886374e123ca0d336aaebdb4e136aed82e2fa5446b1bda",
+        "r": "aaf19dd8710df2b6ad130eab883a375c5e2435fab32704cb7829be8c03fcbd95",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "508144b0792efd98aeecdb48a22729322c78ca52553227f81185743126e86bda"
+      },
+      "label": "PINN with exact BC | seed=1022",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "45_pinn-with-soft-bc---seed-1022",
+      "hashes": {
+        "F": "e98a7436f435fd371dfbbb639042eb66f55fe245e21467d7741c0c886aed150c",
+        "G": "b6f5d17322c741d6f691a2791bd00c0751453b16fbac4ca6643ac8b72628d70b",
+        "a": "b5306e2c4036309b3b43d3b1ce64ec393a21cc5c1bbb19570f57dd967cf64fd5",
+        "loss": "d2894bf453cdcd5261b6e3c04bb72da8db9cc1351a12a09a4e1c5a0260ff3390",
+        "loss_bc": "7b47e40cd184f86824ed365a573bdc0d1ef5431599bbe996be0d70fbaa8d72d6",
+        "loss_physics": "a5539b2f18bbf3d250a51bce7fb47cffa8cdf728ccb66d7d4b980062124b8c24",
+        "r": "411d3c5163d1b29708dc828de478db42218b08d1f203c95cae1f99c0ec2378a1",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "777381c19894693d60b9dc7272a004fa92fdcae2c0f7f0eeddd31cf7bc50dd44"
+      },
+      "label": "PINN with soft BC | seed=1022",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "46_pinn-with-exact-bc---seed-1023",
+      "hashes": {
+        "F": "afde20967886da70128fdf30ef86f77d94e398f6a899210d006a8124dc5e697c",
+        "G": "fb6f4a6f1504f259cc20536d110db2e39417aa7a794b5a2c1a2c8cf1aed988d1",
+        "a": "476d59b9a8e485ed75799c83a05a28a9980cf767cc73930e4dacee382d2f90b5",
+        "loss": "72c7cc867477cb8491a10bbc86c928d2a72aa960b6bd298d917de449439516d9",
+        "r": "90eda43fc28ce130f3ebce61b1c5ddb857d686fd00d710ad337c027a170366e7",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "6257348e470befcceb6c162e8d345df4105ee4dcf7d1a11064789f3b0eaecce0"
+      },
+      "label": "PINN with exact BC | seed=1023",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "47_pinn-with-soft-bc---seed-1023",
+      "hashes": {
+        "F": "ebad8c3db78d491ae233de869853cf44e83485f8b533e76748c4edfb489357f0",
+        "G": "5a099de04f9d26d254e1b18c728527c240328c7abc4199acaa33b0c47ef2ce82",
+        "a": "54c47e467c85ca6bfc58bb48bac77dabb0a39aad9018ce4314bc38d025089f05",
+        "loss": "ae869e25ae6986d066e09b849d99d0043658ba7da77da0ac4ed3a6b9947d246b",
+        "loss_bc": "87e5f1bd05265f2b6d478409dc84d3091d40c71a1721f0917a35302af40afb40",
+        "loss_physics": "97453c06b46e4cb1367c16b07bf6fa042914e40fc270cbdf30b36941255f4fad",
+        "r": "cf75a4fa094802cf0db1b78939f4a2c362f978c8cbe9a5cc3fd738d8f04873b9",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "ba3508b38864264c1bc7278fd4baa20c66bd2eb9a305cc752f951d53b0ddd0b2"
+      },
+      "label": "PINN with soft BC | seed=1023",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "48_pinn-with-exact-bc---seed-1024",
+      "hashes": {
+        "F": "0b9ac027e89b5992f6050e4e5203a827f622c502b4eda2388ab4686afcf74ea7",
+        "G": "1bc0920379f803a6589e397b55869be7c293b36675b6b8697d167946bd5afd88",
+        "a": "d9b662538c479d221660ebf2aebdd4c7771fd6f78a372fd7793ab191d8fd460c",
+        "loss": "92a06e6b09a40ab493c6378196b6d83250231ab1a3aa7f55b802d13485994039",
+        "r": "48e2f5cb2bf5b703abc6a80f8119cfc33f5e51a54e37db3b65410b60ad3720a6",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "1bd3361236876e95377961ae24c11e25c58e16fc83e1f00e09065ca3f597304d"
+      },
+      "label": "PINN with exact BC | seed=1024",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "49_pinn-with-soft-bc---seed-1024",
+      "hashes": {
+        "F": "b71d1d0bb7135a1e63ecbab1c5b2d5224d1b9ecf8e3a14830b325557b339526d",
+        "G": "a14853641f0a45a6f5b14d3b8b58c3bceda78a8b559145cab5774ecc7b62c44b",
+        "a": "931403037ec0ef8f59db64a8bc126563d90f4d0fbd25c0bb83716acc44b5ec88",
+        "loss": "2088e7804ed913e63fd90edca54ef27262daaf575a98ecafd74fac6028d6b242",
+        "loss_bc": "b569320d1f87c35f64fabf166baf060c368e15fc9a98b9d03ca6de3daa360ea1",
+        "loss_physics": "8eb2059db3cd266c07b9d705c4bcd039e888cb45857d1e103c140b521fb2f6bb",
+        "r": "c89bddb41cc79f8e39dc73ae9b8de04dbafc778d64881ef6c04539d4909cb058",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "b3becb5c3e422dd5527d20cd8a2c1fb82b360327f97b9aa97ef03de2bd76a00c"
+      },
+      "label": "PINN with soft BC | seed=1024",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "50_pinn-with-exact-bc---seed-1025",
+      "hashes": {
+        "F": "452dd7ef5fac92519a8a3816d8e58e2b219a3c81e434e12bc0ae78d318351bb8",
+        "G": "ef29e87570ef66e42d146966b7021d44f132f72150b15cd2629e56b2edb372c9",
+        "a": "2a910501eabc7803f394b3d84556d41396bc9261a23a852adb9000d529119439",
+        "loss": "f64815a67d14da9c4cdec6388441ed7907cc8804ab9956583f0cb851e54d478c",
+        "r": "03ed019d120832469f13736a63d67c15197728522bd3f0da016852f37c8885ea",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "29b00cbe19cbec2fb6fc093551ee7739a2026474ce308893e53534d5a0972acc"
+      },
+      "label": "PINN with exact BC | seed=1025",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "51_pinn-with-soft-bc---seed-1025",
+      "hashes": {
+        "F": "d85667ed29a2cd70ea27a4e7796667c875a227806cb6c375661baab8f908527c",
+        "G": "e41c38821f9453933d2e26c523512b2abd71c2df9479e62ca6bdaee726d4b935",
+        "a": "2a9d499635fa1c0f623cc6db53538c056d2e452ace94c0dbe21f1c3f52f48670",
+        "loss": "cdf6233988a186c275ca77dede3f80518d98712ed7c11c7744a4baf60d22d6d9",
+        "loss_bc": "aa92d45d306f55a6d69668d6c7746f5ed67dc1d86a938985d844bcdc502a76a4",
+        "loss_physics": "cabeaae75ff6973cf35d21ded47d613eabacbbd4afff5ebbdf777afdc222bf51",
+        "r": "50e1c741bb9bca8982ff79b3099ee4977e98dca24da716d9fc301b946dc5a93b",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "8e1dde9f2a35d63caf92d0a8da93e089a31bd755b7cbf495cf9cdffb17e9e9ac"
+      },
+      "label": "PINN with soft BC | seed=1025",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "52_pinn-with-exact-bc---seed-1026",
+      "hashes": {
+        "F": "a979af31c3d3a8ec6e65ef6e80957ec10f41f4cfa06009ddb7c500e82bea0607",
+        "G": "001d5947b2ef0bb23021bbd9533f4de4790728fbc9f92882adf304a47af12433",
+        "a": "b05edcfb4d4c825ef8626b0a80edacf3cf3ad8e8f5d98584def426a630d6e195",
+        "loss": "c5ee4f573fb8092b14aa97c3904f630a518858a62f079f33c35aeffea0a92ef0",
+        "r": "0b2ed60247fd2e97b1073611ece20343f6f09547704410db995d1851001f5603",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "6a24ed48ac20225887e8956cf8302a3794abce52150ade4e4aab2f7e5bda4b3f"
+      },
+      "label": "PINN with exact BC | seed=1026",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "53_pinn-with-soft-bc---seed-1026",
+      "hashes": {
+        "F": "13e817fd91a9d81828da4755a6fef281057be64cf812be6facf689c607bf99f8",
+        "G": "d771f8f773bd5beb2d8ba5eeee47683ea5e1f561cfaca467e97af4aa9d6c1c93",
+        "a": "3de5f2624fce48dfe0280329dc32bb58ed2ccac02b42463bcb310751443d3a17",
+        "loss": "5f042ee3a031464cea5d886f11cf68c09c5f3f2c50c9b21f326f1fa735fe27db",
+        "loss_bc": "40dbdba4d996f39899e0abb637a8960f6c846fd950b761a12ff61e3342f18e32",
+        "loss_physics": "7bb4ae4c4305f1d65ac8ef24466202e2ede51dfd04c7c9d57dac6d2e59c21e77",
+        "r": "a2d04d9ae2fbf633602ed2f5bf9971629fc4d6c950e835e8e831eac702bfb58c",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "6282e87ee44ca5f530bbfb3d9ba3e05b8762aa35b526459d189aff0b716a1171"
+      },
+      "label": "PINN with soft BC | seed=1026",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "54_pinn-with-exact-bc---seed-1027",
+      "hashes": {
+        "F": "163b2bf021ab5d829575ac697ffa46f36650118c05041870463839bdb5e41570",
+        "G": "0b37dc277b85b73de7cc0c68d0ded2d71de47191226206d7b4fb65cd409f314d",
+        "a": "fe992cb16fcb82bdc763777f4f319af0ae5c225f54c9cff73ca7567070ba1a64",
+        "loss": "939d28c56b51e2b16dc1504dcff88a4cdd5d782ec3010a9bee598be5cff6897a",
+        "r": "28e5f07fd215bb6c574f9b49eae7268864d87fa0a798ccd3a10bde30dcba6bc8",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "bc34c67f65a95ddb4663da71542fece25e6dfe6b16171106915eafe4e7b33ff9"
+      },
+      "label": "PINN with exact BC | seed=1027",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "55_pinn-with-soft-bc---seed-1027",
+      "hashes": {
+        "F": "ad14dfb1ce1bece905cbf6d12228970b870ba795477eae392b0f8b61dd7ded35",
+        "G": "812156a058fb2e46aa9a5022654fce2ce7f37cd53d60f3ed50e89d83edba599d",
+        "a": "b4536b849fb527ebc832fa656d472f57a5f95eb4263f8c9e5f02b2af241dc3d4",
+        "loss": "604af206973382d3daacf401e21c6afb0cb4c0d2309b31dcfbcf86faba3a8eb1",
+        "loss_bc": "308647e7554b84e87920ed84aa9a7692e27a677fcfc64c8c2ea755c98a262359",
+        "loss_physics": "e34b2e1b8c8e87e3fc86fadceef328a5a85e3eda7cce6339e11de300749d9530",
+        "r": "11dd8a74747652893e0d076bdb612e396ad72f78671f682f989ecae49682068e",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "23b3586f6625d7f8234829b4df6a2c1fd66eec3b23bcfdeca70bce67a179a651"
+      },
+      "label": "PINN with soft BC | seed=1027",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "56_pinn-with-exact-bc---seed-1028",
+      "hashes": {
+        "F": "8f2c8c80efd811465786f2e7cf0491cdcafcad956eefa641b988b240d34d09a7",
+        "G": "58e96d6ece1bf1110ee2d46d63fc85639cebdeebcea14f1cbe53e2e2119ea959",
+        "a": "50d640a1d00661c88f19eccc346d6ee2b99ef0b702a277f19582b46a58b1c267",
+        "loss": "4bfea73893fa2fae799eef96893bd343ffa2e7bf816c686e94b20f8b635b6582",
+        "r": "4dc3222c8de1b72617dc2249e408513dfe5bdd1d8164d15c838627c951cc4bd7",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "0474bdc2be117b7e235902c0ebe57b2f47040d8cba62b85d868e53bc93761965"
+      },
+      "label": "PINN with exact BC | seed=1028",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "57_pinn-with-soft-bc---seed-1028",
+      "hashes": {
+        "F": "cc3a6d159bed162fab295013e5f55ac428dec6430a8b0d068e0dc6d8560d85f9",
+        "G": "1420be57a4c4a354dded76cd86fbb6bf15fbb00073b3a3b8c1a659397d6e7f52",
+        "a": "7f67d45cc9115ae2511da92801e2d7f16437e5aa15067da20edeafb4875d63ed",
+        "loss": "b27ef6971011e539d2b92fdc5eca1ce3ac042764514907877d31d96a93d50b3e",
+        "loss_bc": "bbe21a2a95af3eccbb90935e31fc66d8a8d046bdb29d5d6e231371590d6be684",
+        "loss_physics": "8d0b2201f03619417b95226dab1de87ff12c1713f274144cd174affb1e311b63",
+        "r": "b79febbf74cf90992838a2c1cd324121dfc139a2b079a336fd62995680b4ea5f",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "6048e1b1f442b700526215ef1cd89105fa102ff2804f25b0a33bc9abe4136a4c"
+      },
+      "label": "PINN with soft BC | seed=1028",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "58_pinn-with-exact-bc---seed-1029",
+      "hashes": {
+        "F": "3d51ee9be9197134617a1ac384173a07232179f2e23a6671e95edd3d463201f3",
+        "G": "b1c688e5e9e2e1161815cbc00293ed63c2d154c888d594c9b60b6206c3cd49e9",
+        "a": "b692e77b3e718b2bc48ffad5db6e2e01cb5c7c709b782c1598d6f639c5b17fd2",
+        "loss": "3529be7662472ae6b21707d5e455d5168441f6d019e3e8dd7ffb4d0f97e52a2d",
+        "r": "c5f5b2113475a147c1507cbc9a4974536cbac6d066a27a481c077d4893457082",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "df6f8708a6ec81e2852af70813d1488297378380d66c534385494e567be413ec"
+      },
+      "label": "PINN with exact BC | seed=1029",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "59_pinn-with-soft-bc---seed-1029",
+      "hashes": {
+        "F": "dbbcbaf5275048446bd449f8f3464d647c03b0c9918454a8dff99e71674d1c13",
+        "G": "b28741e12cba1b90f13101ed782ed173705cdb7c6ada97a78c1fd7da80443424",
+        "a": "b612e207bd1b72b4f57dd883ad5df3a65fc082247bedd6f9b3535c60bd23666a",
+        "loss": "9547c35821a93725bb04d6906a9c5164f56673a10356d7e2fc4a5d15d8a286b3",
+        "loss_bc": "0a4d2ca0a1b79b131a9bbab9b5ebf75a4a5d1135747a7658ac9a6d3b148b3d17",
+        "loss_physics": "5199358f97859a03c09b7411df92e8b686002576298d2f236f90fa4f5a8431a6",
+        "r": "ba8110ee32500bd5ad13b1ffbb227ca5a3ab8ea516af49792d111dd69e1bf6e2",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "169eb88a7ac0ee53f8ca836b6a80b5f2c0b757dcee8405225875fd244b4b1125"
+      },
+      "label": "PINN with soft BC | seed=1029",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "60_pinn-with-exact-bc---seed-1030",
+      "hashes": {
+        "F": "76cd6c8ad35896fd8bca8f00be336cabee7cfad067eeca49ac498d6ee3cc35f2",
+        "G": "e14500497eea9cf60c08a347a5a34d984c1c6943759f8a5aee1348232006b40e",
+        "a": "4c3e8690cb5909c81fb5c47c1be41feb1539cc07b30b550370e3ed762cb1a42f",
+        "loss": "af8b5ef79a7f7f02ab0c2f5a338e53595073da5110f12594bcd3236e540dc1d3",
+        "r": "88374d5fdc29b6e34e1b1ef377ea04b8e1f7c2627817d65696d5b0e7791daefe",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "21f16ac56b6c540a5e52c438c7095fe9701ad21f144f7a75a8d2f114ee09a5fb"
+      },
+      "label": "PINN with exact BC | seed=1030",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "61_pinn-with-soft-bc---seed-1030",
+      "hashes": {
+        "F": "056064c82e378537996c2cd8ae30fd06042c7a4a916f9147945cfd7c14a9dece",
+        "G": "8b671a4f28bf1e927392f01b50e3449009ec87624e6f0aaba58ab37018761cf6",
+        "a": "582cc7e54c94285b56303855c3be3015c79db154c38e1acc0a5800d0c152a567",
+        "loss": "f7ce8a5f02e24713d66a6028ce315b91cd6e1664502e2124f6d83c369233701d",
+        "loss_bc": "3cab15f6fd920bad4b9770b8f949633e1700064fef55399924d0cb207b2b4db2",
+        "loss_physics": "f9fdfd1494f6edc4d4381c5527965c32db5fa0e3922c8a20a139a5bca626f1bc",
+        "r": "551a19c0623cbe635599e6b2567853b4c328d2a81747083eb864501aae898c62",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "0526d2dc15f7c5e7c776b470e61f371847e11cdaf7760b9ac1ab430942be5c77"
+      },
+      "label": "PINN with soft BC | seed=1030",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "62_pinn-with-exact-bc---seed-1031",
+      "hashes": {
+        "F": "f527d249b73d912a2f30e227b16356247a3000571721d8d546623215b3fc5219",
+        "G": "0a981bb920c0868eef84a2ddd451af09b728199f303333a6a9f8732c5df5eb4a",
+        "a": "20697a7284e3207889a3264fa5eb4cc0a60b061c322cdd01a48c62efe8c4db68",
+        "loss": "8584972bf7bb7c012c4bbf074bc8e8a3325310ea2b2450a5bd694e967c3de798",
+        "r": "a5d8446c7f18f28b98eb3b79b3c38f2a4345200e92e077db7c4e59d150af4069",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "c45bd3a1256dc1c9b7da467b2f025b052958d96a8126fd20d14ced6afc18e8a4"
+      },
+      "label": "PINN with exact BC | seed=1031",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "63_pinn-with-soft-bc---seed-1031",
+      "hashes": {
+        "F": "01116a51a40213f0d92d391f6538f645b71c9ce6b4a3da81885ef472d2c282fc",
+        "G": "7fe323b3b01b1c44f14e64dd61a7a4acbacffbff299a5cd672e9896630025c8a",
+        "a": "24d1a46137aa737b0bfe79125dc5a27e31b11d00185e4bf9efa52dc557da0faf",
+        "loss": "ff01ec15d92f8d61d6556b995141ba7f88031f26b88bed3b3190468c9d4d52d5",
+        "loss_bc": "43da1a8421ee959326ba6631fea4abe039cb6ffddafe2cde9afe373aa3c198b5",
+        "loss_physics": "92d3809d3b3cfa8f329f0d3b934070795ec9cb10beb182d74f8d250e31a60e41",
+        "r": "b6028bcbbcc85e5c3cee72e1dec86831c3c50f56796f5ad647d78c46865e392f",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "70e8f4b314ba68590d0ae398def9ca405026efaad667f4296309691d35b9a5af"
+      },
+      "label": "PINN with soft BC | seed=1031",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "64_pinn-with-exact-bc---seed-1032",
+      "hashes": {
+        "F": "c56fbc5f041aecc2c67bf13e6d47b8eebd5563b0d2f4440f0bc4b1e2ac766c38",
+        "G": "5aa573b0bff905a384184e1b1386c0b49de3a50c22268ffa22430321d1a4b70b",
+        "a": "e170ceba24ab939a406e5df36e43b4c24a390d8f03c06870d1ed2cd3d6b60b13",
+        "loss": "7d4e2201386c3ab5b092a70f5490ea8d02d480b7b65a06acf5856bd3e283bc89",
+        "r": "bbfb455666e279672c9c0b1bcb29addeb0c2d08062a279ad43a405f95cb46f5d",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "5c27bfb85dac8d7a06240e43c878c746ca09aec77bed1b7d0d2129d1673c2601"
+      },
+      "label": "PINN with exact BC | seed=1032",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "65_pinn-with-soft-bc---seed-1032",
+      "hashes": {
+        "F": "e441209072c06dfe831593cd1e884447d90d4eb6efaa7cefbb491b515202ed01",
+        "G": "af9e472c580d8bb611526d2861adbb83647b60255e485eb84c97430d05f7c02c",
+        "a": "758cafcef0c962217edf6cb7b0618811eeb65416218b3c4bff3a295ed0c53bac",
+        "loss": "fefcd9c615bd9563d47f17fca56ed40a76ff860d0b0b422c7a91f3bb0bcc7d7b",
+        "loss_bc": "075fa81d954379516e86c577214a7e95926a965d4dea845d8be7d6864916cc98",
+        "loss_physics": "2f12e441fd74c2353d1d66ed6951d79827fad442440ae565b60f6dd9cca5a964",
+        "r": "f70cab9cb260d9d297be931fa23499e6eee9fcfece344e6c5c19ccd88a45b288",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "d617c2b3bb3b256b2c816a22d7ca3939f0f0dd2b2a62f0eec1727d1501fd14ee"
+      },
+      "label": "PINN with soft BC | seed=1032",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "66_pinn-with-exact-bc---seed-1033",
+      "hashes": {
+        "F": "ca860d014e10e694cb885fc2a0704f861d3fec40c7bde8a29284a98fee5514de",
+        "G": "7b226dc654365e3940fb63c5d3756f6aed0223b6425ce6b2c759c722c2ff209e",
+        "a": "f38796145da9866c23c26e7ce1166567bb89a3a7ecaf3960fba9b9bdef0ebbfa",
+        "loss": "8b2410b5bebcac0273c575e6df2acebc303cb3ea93ebe218c5a604468a116e6d",
+        "r": "bd4024fdb7f401286b8cb68bdc651f2c1404586bfbdd14a8890fe67e2d2c1573",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "86a883c6d59a20bec91a2c092eaf1c9fb4281ad44abf7913be9edeae6243189b"
+      },
+      "label": "PINN with exact BC | seed=1033",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "67_pinn-with-soft-bc---seed-1033",
+      "hashes": {
+        "F": "d1b9055adb0b1f7018662d7dcc1d48ba0f51043ba7ae2580da9553e4af6bae8d",
+        "G": "e70723817c2182652ac7e982ac98e4c06a3b6b29eb06df4c624dcd667af67981",
+        "a": "12c792faee7a202a55a60714593c65965ea78adc2956ed0c1bb5654a5b1e17d8",
+        "loss": "1d5d0cb07ee4370fb9ad1cdf918c413a90e685d833ce2fcaa6e0c2d01ae1d394",
+        "loss_bc": "770899a75d2203ada28cdd9cb8158d4fa8d25327f1fc11b71f2ef5ddc507da29",
+        "loss_physics": "dd9aeaa617ec30d512ef3bdd3ec396ea21aa956cc4fc6a130e9d74a5bd06f38d",
+        "r": "cd4bad64c99dcd06fffffef6962a85676f72b1822cbcc9b5e6866ad65b605f57",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "835a5f97ec4933f40eccd98014124363c3d048e85385d433efaed2e883f7eda9"
+      },
+      "label": "PINN with soft BC | seed=1033",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "68_pinn-with-exact-bc---seed-1034",
+      "hashes": {
+        "F": "af96e8fa2a92bdab907caea0c7672d8e441826fbe4980b557c7f67e98ab6a9f6",
+        "G": "be1f6c20465709503fc103f27f8efce5bb2d45159292655ca698c5d873e0742d",
+        "a": "54bc568bf6cb70872057b9467ebed64c1ab392c13ce6252bc7427db52f326ecb",
+        "loss": "233f642f197a5fefd336e45fff63037dac63151420d4f8f5bb12cbe1eb555a43",
+        "r": "4474e150d6492232296956b95dbfd0e00e910e47f8628c001123882295318a2f",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "45bfd5c43281e5b6d2c44357e399366a5ed355b51aae4f3d0b8fa29b67343719"
+      },
+      "label": "PINN with exact BC | seed=1034",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "69_pinn-with-soft-bc---seed-1034",
+      "hashes": {
+        "F": "8deb87403f4e3946371c5526513d6a41766b72588f96833980f2ccf16f95d267",
+        "G": "934a5e68ac1183167ee0c7eb1f3baf1125858f2ec09f0439510f5a0ab6bd7513",
+        "a": "0bea4e6559d590429574a3f29b52eebf0e13b2ad1c9e9b614a08ae192b522f32",
+        "loss": "2023ecc8a4980c3c79545b9b6ba1466e39671fb48583ec0fe22fd19d04c16161",
+        "loss_bc": "b004c5787f97e47f253a347a1543a197cce644a2a9e6553b9eaaf707940eccce",
+        "loss_physics": "d76574d7a4bca1b624de4ad53d57c399ca5f100f7b711aae3c48c780e3cc44a7",
+        "r": "3f23146d9358a368ea4e2c9d27cd97ac1fe4e82a406d386d22dcea100049bf41",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "8692b19ab1b249b5c4e286b1c5455372dee0d100f25e27db85e9ae8344cf3c2b"
+      },
+      "label": "PINN with soft BC | seed=1034",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "70_pinn-with-exact-bc---seed-1035",
+      "hashes": {
+        "F": "cbd07ab8583d7f05464bdfe7606bcd44b39b77ce5ba189d38af4613cbe5cef89",
+        "G": "b0c1e617c024b979815478ce93fd255902eca9fad736bd1bc0df33147253a2bd",
+        "a": "b43cf507b1662b80fdad726926d8291cd35fef28b2442aa762f006ca18b22e99",
+        "loss": "8ea5b5446e71ff1e86facf92b292fa2e15840b944eb2033d161b72d9b2643d13",
+        "r": "ca29ffbf5a18096a160d5e5553b41fea19b53101ae2575005ff33840389fba5c",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "913b3b878819f745f859329aac59bf4326992355313df68b86565dc8d0a2a9c4"
+      },
+      "label": "PINN with exact BC | seed=1035",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "71_pinn-with-soft-bc---seed-1035",
+      "hashes": {
+        "F": "c35c5c80c812a8e93c2b60000c426fa9c118cf65224719df225e1528a4a23ae1",
+        "G": "ef28caa6acb7598484666634c61923bba9741eda3e53e7c6540e7ba167708bb9",
+        "a": "6caa7e28d060cc164d6c845803bb453760cc184e774c513ae36acb5376de45e0",
+        "loss": "087cf65167157e4fc2b952bc982ba3a7011b639d70550743f2f161277ffd0434",
+        "loss_bc": "7a93564ed33ecdb841edf5afc0b9113c508b7e4da48af17687b452d76a766d5e",
+        "loss_physics": "72b9c2d891b7d031470e306add0cc89a9fd22f2472460c07d8d72b38fbd6e5ce",
+        "r": "3fa619e2254240a64b10dc729edc9575c3ae41e57982d060409833228902ffe4",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "eeb56add5a9428548571f6c4a425f3f206e0e60d395f2904776ae04912f58582"
+      },
+      "label": "PINN with soft BC | seed=1035",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "72_pinn-with-exact-bc---seed-1036",
+      "hashes": {
+        "F": "81b6cc92b27efa19822c1e5adfeeb8a44ed354d4219b52e480351487dc3fef4a",
+        "G": "10bda9c49de94dc574be4569eb7fceb1bc4a9c225837f8e8636e5b0764396a63",
+        "a": "5cb7b9576b62384e547c31aee2e2f4dd37ad7b442d21036c03d76dad3a282fa2",
+        "loss": "bed0ead3755df720bd1c25f5c14b5d2a1f830173cacbe319bbdf0d07750bb846",
+        "r": "02be0df229a7d64499561b41eb1ee5122d5ddc7d0b31e4895b28e70d8923ea91",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "f33a5da1aade2d1a19fb3d3f972dd2d36e640b9d38101612b926576ea5604540"
+      },
+      "label": "PINN with exact BC | seed=1036",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "73_pinn-with-soft-bc---seed-1036",
+      "hashes": {
+        "F": "4293e7f660f4b971524b9a168fd70e1281ef4ced05278f28dea72a243e8c8fbb",
+        "G": "82724219074762f93fe08ee7c3ba005a6d006929f019865756750788666fd4b8",
+        "a": "a6ea0d1c879a2a4db3784f56a5cee2985e4ec8359fa86210b4bc40a180faed8d",
+        "loss": "f54b0067e4e173ebeaf3ffcd639a5bccc34274c8e55e44a579ffdc26110252e8",
+        "loss_bc": "2b537012a877d810ebbc7f9e9dd6fc6b715b0ace327c9b9878116e28c1b534d5",
+        "loss_physics": "b546015a42b92ec66a73cb333bfb293307db3419f0d68bba959e6809244106a2",
+        "r": "39243adfb6a911d4b2ef8a6ef5a3ee6d87a44bf76a2efa9a477c3b8897c1a7c9",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "c3b18a4b679acc2ec0b507c6c3334da3e1c1e4cc880233aa51f38dc9f441196d"
+      },
+      "label": "PINN with soft BC | seed=1036",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "74_pinn-with-exact-bc---seed-1037",
+      "hashes": {
+        "F": "c8d4c7687e877831e2c262edc4c789d55a3fc8b28ffeb4b57a769cae12b8f53f",
+        "G": "0686a70083165c1d5e25b72ba01151a14def66b2f3751fdc594aea32f735e719",
+        "a": "12ce5c4c4b744259c3861686a3ba38061f6ab2d663ec94b234e3aeb3c5b6ae24",
+        "loss": "ddf39a549487924f967358799e546f99bc892a4d7c6e745427b3c232695884f2",
+        "r": "cbfd631b1c1b2184f9fd55c8e139bcfc5c10288b7b8ea16eba35e9707ed0a35d",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "088dad4bb990f04e47cb07809f4215b268df2b4ffb84388b6ad636b812c00648"
+      },
+      "label": "PINN with exact BC | seed=1037",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "75_pinn-with-soft-bc---seed-1037",
+      "hashes": {
+        "F": "bddb8c9ec8a91685fa72a17a73f9626ebf24a55e842835c97b54173fb6e2be78",
+        "G": "7bb2eb2d4469630fecea647b34f17f89e6b199970ecea4bad229245ed1732c48",
+        "a": "19d634cf9bb363600e5bc179692c02647b84b49495c7ad0715b08cf460520ec1",
+        "loss": "96303ddb654007b472e3e162ff0882a5a9c610be5942de89a069c96f3873eaf6",
+        "loss_bc": "bb329e75e754c660186ac01fb8e7f5e263326d771cbaa1b3a8c948001142cbcd",
+        "loss_physics": "de3a0b85665ee805bf0b99e8239cc56264ef880f5528c837ccca69b2f64784d4",
+        "r": "becafe96c56a9bd57104ca404d67a05148c2473b77f8a9ad92ee5e292d90b9ce",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "d30ca4d31d6363339da29c7501fa72323d3da6928e4ae1c642c273b69a0d587c"
+      },
+      "label": "PINN with soft BC | seed=1037",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "76_pinn-with-exact-bc---seed-1038",
+      "hashes": {
+        "F": "de9d00ac602be4efef9fdf92210add4f55b196717485b7fb1b9b3c94d86ba690",
+        "G": "513ff7e2cc0d474f98e74db2eff077b7428c2824e5677c4087535a9575c02140",
+        "a": "a1bb908eb2156f896f4548faf54df61219d844800791dbf7171d3b8c861c0acf",
+        "loss": "89be8db27b640364ef7478e3662c95fa04f63d2156464859be1c32cd15b8ff0b",
+        "r": "664096246c04522a46b79c3a43628cb9068491b0a85895d0d1f1b03476c887f7",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "fde32c701d408b965934f4ed1b473780c5cce04666d6c11b6362a35a06dcc35c"
+      },
+      "label": "PINN with exact BC | seed=1038",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "77_pinn-with-soft-bc---seed-1038",
+      "hashes": {
+        "F": "a0669093c02655c7baf47c64eff3e5748662ccd5bc495d0f5b8d1aa24ca76033",
+        "G": "2b35a39c603a1cdf3e3bce336652f4bb8466a43901c1ee25d6634c33c72b0834",
+        "a": "41a274d422a02b6f7b9b814fe4c96580986d520c8679a56b40468ee5207c981b",
+        "loss": "231a6ccf6ec66ed3bdbb88eee6461c19eb088931d4f497b00b1abbff64cb095d",
+        "loss_bc": "213f7ae55f279ad16f74f78a9f7d7f9734a9288428e31410344e96b23f12ea7d",
+        "loss_physics": "aeddbfb61a3973d85f9c2dfa085df13b62508b1eee0e8597c6a629fefdadd2e6",
+        "r": "f6cc1eb8dae5463751d360d32e23c9c89967685d95050c6a60eb5e4ce3185768",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "e419be3178a5d6da2295bd7ccf21a75d914f13180d5727d928796eb5f703093b"
+      },
+      "label": "PINN with soft BC | seed=1038",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "78_pinn-with-exact-bc---seed-1039",
+      "hashes": {
+        "F": "944ad9ba4bc618603ca207c86cba87a28cf49c78156ea4d1ea02fbcb4d39e6c1",
+        "G": "8656816def8f068bd0a7761e35aa1ba2f4c8c20c01e3e8c23fe8577af4bf12bf",
+        "a": "d3df7ac429a5493858e95d9c87c3b983e649e2c18d16381ef8de816e6e07ab2d",
+        "loss": "d543923f445169d9590346cd0bf9e810072079491845c6890fe402007f560fd3",
+        "r": "e8b8678184c6b3cf57640f519dee596a1a65e369ea1daefde40e30e2bcda7d31",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "b223427644caca7b5d473877a5ac40a3105dc5587fd2c36f9f5a095dcfc903c3"
+      },
+      "label": "PINN with exact BC | seed=1039",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "79_pinn-with-soft-bc---seed-1039",
+      "hashes": {
+        "F": "0ced4e3b81930c3fefa3507d7e002174def1b9cfca25a59b31daf914010115d6",
+        "G": "6258c21ff3276bca65de72bcb9faa25d4c558e4ceb7a693b843b78f2df1b770d",
+        "a": "6c68565f06dde34447c786b51bb732772391f4ed6ba9466488717cc015692849",
+        "loss": "75e332491fd0c0f04f39f631f9d2daff318dc722eed8b84e0e3f80d3f9e8ec56",
+        "loss_bc": "e0c05338fbe6132beaccc8c0083fb483420d49921fe1f7012991d59707973fdc",
+        "loss_physics": "4e7320fb842c4295f73d7a0440969224bf6174d8f63f8d07a27fb201ef81fdb1",
+        "r": "5a2804d868d31eef4e42e4754fc7f90dba7a01a0f096cc6e319f0d467b8558b0",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "0a1fbc0a259c117533beb86e6a7eec0515b38cfc080fa7c40b60ac5b0f1f5d5f"
+      },
+      "label": "PINN with soft BC | seed=1039",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "80_pinn-with-exact-bc---seed-1040",
+      "hashes": {
+        "F": "3594872ab820216fbfbd3bd07b1015f87442c52e4b2d932a27f0a7932c389148",
+        "G": "e39e8c53083337a03c0582931d0b7a1d7a7951ba2e59b8a1b1e05ba2af177e53",
+        "a": "f22a723affe207b23fee5996df0a3ea7b078602e248855b043c08c3c56ebcbc6",
+        "loss": "5536430e172f4fbdca03c370463f518598306340d910d21bb39321e29e33584e",
+        "r": "59071ce44edcf09654c7bf64023153a36367ece01fbc28f5cce27cfa5110dfa5",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "d202eeae516d77c3de8c954ca99118b0cb7dbdc5c65fbfc94bb82effd39d5d80"
+      },
+      "label": "PINN with exact BC | seed=1040",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "81_pinn-with-soft-bc---seed-1040",
+      "hashes": {
+        "F": "5c72215f156884dfda049678348df95c29d870ca457d2d086dcb77c42214bf18",
+        "G": "4ff1307d903540ce3ddcf8ee601788ceda264c152e8422a70ec4346b8a70ee04",
+        "a": "66e22d7b7378645ef78d7ab9bed8d309ef6fc2563594ee3b7896a625bfd4ab23",
+        "loss": "21c24c05ed6a8b22383500c9bccd7eeb4d3389eec88c8ed939ebbb58ed7924e5",
+        "loss_bc": "daf00d3e879ea178447801ddcc7aee600c245f5b19c5d693c526c07549f47939",
+        "loss_physics": "8e5378fa7b405bb1fb82354792177414bba399d2352745b9352f14819286c010",
+        "r": "411990900ae25e167eb49b8f17f035b6a78c96bef87dbd709bacc6d7532ac799",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "fa6afedb1354e3295571a1c58449c324247e90a0f233fb0ec3baab864a7bbc11"
+      },
+      "label": "PINN with soft BC | seed=1040",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "82_pinn-with-exact-bc---seed-1041",
+      "hashes": {
+        "F": "0ed3c17da0a35b6c8618f756aad5923c7da7e1b5d009ec40fe52625833fb8eef",
+        "G": "50035720d47f56ec46fe4ac1f647fff613ddb08c89278fb3fa3a1b33916ec561",
+        "a": "799ec04797897bfe819d82b07ff2b2b37799ea0b79bdfa3bdee16716e34f2310",
+        "loss": "0e992410ec527d966427b452e7ddfd4ab58546e5e7d92ee41d3bb6225d141ed7",
+        "r": "9c69c1ce7a4499100d8d62b8af62539de5a5f13988c6be1df63e02c64cba0509",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "c64ccd7312b50cf10ed82bd43ffa00440341b97dda97f0f5405d946d90a74357"
+      },
+      "label": "PINN with exact BC | seed=1041",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "83_pinn-with-soft-bc---seed-1041",
+      "hashes": {
+        "F": "9e51ad445580e76d53228d79a8ad1e7d3570049a5a0b3cea27767edf6febefa3",
+        "G": "dda6994d5d93fa36b89860450fe9bc150e9bc2b793dc7d005a8221cabe6fc828",
+        "a": "515763b0d7157481f287ae78e8516ebbccd9645fcae22590cb3f775756af6f40",
+        "loss": "a1a5dff4270163e9850be04654a112861011a1001c4a50f3813ac3f462980996",
+        "loss_bc": "1ac6526afb5f834ab2896b58879f96b00b5083299c1bc3438f0dcfe126f0e0f0",
+        "loss_physics": "a62ec311cc173e98a5fbe5b915a634dae6ed265a4418732bb620de479049656b",
+        "r": "0cb0ed6a9f90aed7048d78565674aa9659739a0d4e1b47d7d9f3a233bc41720f",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "38f218841587b4d124bf9f8fc638076690af997d18e348f03ac9c69da0db3257"
+      },
+      "label": "PINN with soft BC | seed=1041",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "84_pinn-with-exact-bc---seed-1042",
+      "hashes": {
+        "F": "98b770a19d2c1fd73aa56d22d8d0e9de7448b52d9dcbff8dcee58e51639963a5",
+        "G": "f9ecfb3e623550415896e230368165117e082b20dad237f5dc66aefdb9e262ae",
+        "a": "94bb812e40b31af0c7423be703c5ee8283ff521ac4add0db571d6996cb9b2ba1",
+        "loss": "8e041c7f92d6de789bebed2c09dddba6a5b1c1ef73cbe7ca4de7a49612f7f84f",
+        "r": "7cc7b25db70b849116259a94bc9a68ac40ffe3202d05226b98b992014ea4ad98",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "671ad3ba6def4397ed54821cacf989fc9a487fb8ecdfe58870715e4f0a91c057"
+      },
+      "label": "PINN with exact BC | seed=1042",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "85_pinn-with-soft-bc---seed-1042",
+      "hashes": {
+        "F": "8b494d0e9a4c38d73952561ffc33384c2377e64fa0e51c6a6f61a6275ed52ade",
+        "G": "4c480610d88733be755aa7c7c56d9d56895b75ad57abfb2305e84757850f4911",
+        "a": "53c458c23eb77c4c8860f2d2e30857a7cd841b083c5e195cd78725b529f2da18",
+        "loss": "137aebaefd0bcc1bdf9ef5b4a79897080343080eb2461aa87e1b61ad57639248",
+        "loss_bc": "58a6dd431bdf6b4f9312b3839daeaddfa7268ad9ff165350fecc209225586a24",
+        "loss_physics": "e72bff5862bf2acf2328e5173e81394bd3bf23992535e44bd88f3e8ec3fccac1",
+        "r": "e03f82a0d4090cbe66bc5677b6d2586c71ed851e55ec62cdc9cd72ddb23e4ed7",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "55f5edbfd72f542dda0ccaf5f7726a0f91b5764af356a8ac3c6969f3e84f8685"
+      },
+      "label": "PINN with soft BC | seed=1042",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "86_pinn-with-exact-bc---seed-1043",
+      "hashes": {
+        "F": "7e3a08694d386e8ee0fe699039aaca6de0079957a8acc6a26ad33f22f564f55c",
+        "G": "40c059e2372764ca465b066361c2b2ccf4c48be030c9fb2794ea2bd50d406b43",
+        "a": "3752c681cd93fd6ef44f9664ea96234bba55448e1b396cd6423cdc547ff302d4",
+        "loss": "3c77e79c23f7c072e9c7de6d010b48437a539f0825b42e173fcf8f1d06a43a29",
+        "r": "84ba16a98991f4ee200a5ad7b6929bda672b9ddf0c53996c56f29b25c034e3e0",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "59b30db26e0e08b1349644d17affce6e73834bf35010198a75d3028aaea78a5c"
+      },
+      "label": "PINN with exact BC | seed=1043",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "87_pinn-with-soft-bc---seed-1043",
+      "hashes": {
+        "F": "36bc85dd6a41978ee59b870c7a806767a616ff7789f681e69f38f9749fbf413c",
+        "G": "dba2c6b136485d1d70bc09e290e7921f828d7c779ccf6e8b68512f0a1adf7ab9",
+        "a": "a992230468bec8a5cd4a2a94b5ac97ddc202270bc7cc70333adad7c23faf5cc4",
+        "loss": "28994863c4cd95a973995ca5676483c843bc3b4b10d1acf51d79f31e80c360eb",
+        "loss_bc": "23897f194932bece3649694f2bc4b202c585dd6240983776426ef106bcc0bbb6",
+        "loss_physics": "51cd1ffbb29ab793c78e76eefd245699fdd297867892bc5bba3640885132b109",
+        "r": "ff81a0f86e3897138721e8b7c7c8cc0dc5a4fe674c6b55e4a5c46b2ec0820f43",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "a93ae10e180d056bfabfcfc4f05abde56c8567fc7bd3f12600c6bd8dd7f91019"
+      },
+      "label": "PINN with soft BC | seed=1043",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "88_pinn-with-exact-bc---seed-1044",
+      "hashes": {
+        "F": "b2e12ae3152465eac72b8d2606fc364c419c0fc43f9aa3e608a4ddc3524c4b2d",
+        "G": "1c7d05aa0297dc45420d07f517a707b39fb8d89fc7a80135bcc9c2c26460ac84",
+        "a": "b7696b8867c229432f806c5ba61c38596570c1bf105c993ee2553135fcf41ba4",
+        "loss": "ebf326ef8b3dc6ae1e32f618fff2520aabbec7726b0f2c1d1f5cb7fcafff61bc",
+        "r": "a2f55dd6f61cad276b312406eff4832f93deddf522999f707d5632312988d3f1",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "06a736246a37d4e622f0dbcd3aa719f8feca48f9ba1c41d605a951d63413b9d1"
+      },
+      "label": "PINN with exact BC | seed=1044",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "89_pinn-with-soft-bc---seed-1044",
+      "hashes": {
+        "F": "574091f84c3acb16e66906ef02512195666b09dd97be972afe1118111274fa35",
+        "G": "7704e3579b9cd347b9c124db39e108a98c244f772eb7516413ae70ad7f46d373",
+        "a": "366623b129a977ff773158adb2970a2070557e2cd56460b9a4bc0ac03b6729da",
+        "loss": "1d116510bee842ea0b2f1e9ad3b19712e1d689f99b516e9a055158734fd7c49d",
+        "loss_bc": "4ada799a496c5eb1c86c91bf7f751939441d10ca92c4c6879955b15fc040e1a8",
+        "loss_physics": "00d22d60416903a93028dbd65600933272a4769530893cd407e197d585ddbb36",
+        "r": "f8d1c2fb40ba146a450f3ed687fdf4498a98eeb525fe40dbf3e72e116ba1a0df",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "f7e6509669d3c1a04f9217269958116dadc9581698ba9288f576938d15d5855d"
+      },
+      "label": "PINN with soft BC | seed=1044",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "90_pinn-with-exact-bc---seed-1045",
+      "hashes": {
+        "F": "f5327586a950cce9fb6f8c159c61a82fa388a46cc421cf177a8b2959945f5b93",
+        "G": "a0cd07c0fd0909820717a7fc23dd4011cf5f17544cfcd886b5623f8a4d7d4e0c",
+        "a": "a56a1d50ca9bf2a0cd1922cc50ce9a72cb0cddedcde24993794dbaab01ea45b5",
+        "loss": "1935f2934247d156fe58812542ffc81c8cef3a72927456871ad35434872a0409",
+        "r": "164581ea587674f142cf42f03bf400a119c360382c48834091920d4e76a872d9",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "3c5edf9d3a2875b14aa895513e41d8d912a5944c806d88751721fd18b3fbbb70"
+      },
+      "label": "PINN with exact BC | seed=1045",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "91_pinn-with-soft-bc---seed-1045",
+      "hashes": {
+        "F": "9d719eff96f795acd590d643df65fd37d83042162262471802b778720f2907f6",
+        "G": "a72e7dc7c329c2dce7568964d2f51f50c5b903fe5973ee067acde7db451f231f",
+        "a": "9bc926b26731ed8908bdf3117e99828954857319a17399456352947f48782d49",
+        "loss": "667d33df517b87cb48e819620ac1b7ba0cb833804c351964fd822b8dff7cc367",
+        "loss_bc": "5ec2297e3cbfc46f24f59efcecc5e8e35c7789d41944894ddac1bb1416694ecf",
+        "loss_physics": "1c0b31272602f45562fe63254ba4696b85c039ceb525a0d119c140f474988d60",
+        "r": "2473725628f836cef04d120559c06dbc047eaba5a430fa97aee187aa2e5838d2",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "017cafa45532fb3af11fbfb09cd3b23f22671916f39b25a6d4d30d7977f9e071"
+      },
+      "label": "PINN with soft BC | seed=1045",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "92_pinn-with-exact-bc---seed-1046",
+      "hashes": {
+        "F": "b813a8cc93eeb916274206c4f604655d90b6e17bc236e274e35ea9323cd99395",
+        "G": "46ef513ae4b79b30fc27b39bc626d43daa75d9340ffe52b2dae5fe1207266a3e",
+        "a": "45c36cdc0ece2f43fe843096f8db1918424cf07392e3253339ad9b4e60abc599",
+        "loss": "efa582088d92d37c6c932d0c26bd79c445d6c2c8c94604d4e6ea5379f49b3213",
+        "r": "56a21b9879269e8e4468b0d717c1ccf53682f17e204ead844fe5d474c7440cb7",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "79a4b035ea5c8679faa9d5ba47c92b45d0428d4620b6c987643a0c831926e55a"
+      },
+      "label": "PINN with exact BC | seed=1046",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "93_pinn-with-soft-bc---seed-1046",
+      "hashes": {
+        "F": "e1a8299e234ec3d7324b149703716d2f738da35dfa7764e8debf1c1d121a334d",
+        "G": "909d1a477935a4973a7e9c9180ff92aba421de9e3bbf6afa0833cd17c7a0aa39",
+        "a": "2acd473d154c2f5339b1acde570d3f90bb6926495126e53f2252e40c1c2cfd01",
+        "loss": "696ec7dd058f8c9d68900a0f6156399fef31fc848a4ace9fbd81dab8693d1ced",
+        "loss_bc": "3a854b34d3102f1bf8d42be0d9f49e2bc08c4d67a5e04316fb0aa29451dfa03e",
+        "loss_physics": "3853ba0c6d60cd70d8298f2df2d4441e1bdc5d07d660a8721509392280d0d57a",
+        "r": "f0bd798427a87934d0e9b62e24aef2478271efec29b34709f178ba242ae1735f",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "eabae1022324e1680e76aba67ec4c3c24dfee297986dd5da2546642f07f2e86c"
+      },
+      "label": "PINN with soft BC | seed=1046",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "94_pinn-with-exact-bc---seed-1047",
+      "hashes": {
+        "F": "f721a5715e10e2ff84a166a507eab7b01f6580b728ff99bd82da28ef016b80ff",
+        "G": "c78bfc6979c53c0459c0bf9e4797515745f801856d97d97b4c01669d70d173bc",
+        "a": "809501b9aa799087ef071047fef69131a03874840ff230b896497fcb367ca736",
+        "loss": "f051de76d60152abac169dff8c4a3c2b9e6c41365eb91e023a074240a6527949",
+        "r": "95a15e4c218e6d6e427ae3356284464b677ecd924e4bf72959107b1e01df73b0",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "15c5c13f3f54f07ede664b0fe003d1a982a8b866fa27e8fa4d269098032875e2"
+      },
+      "label": "PINN with exact BC | seed=1047",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "95_pinn-with-soft-bc---seed-1047",
+      "hashes": {
+        "F": "80b075e43bdc69afbbbe713bae01cca2654e477aefca419984751a73ab2cbbb4",
+        "G": "aa2686405677cb3f046a080ba058eefc3d3878dd7b05071a3c3c912f47462fe0",
+        "a": "fb3b9e0a1fba1dbe33a4b96189e8bdbdc98189b6130be4e55ab8786b4973e140",
+        "loss": "e7f58f83d6fe18a4655306b30b8fc3f45c4c1960b8cc3438e911e572a0f1c3e4",
+        "loss_bc": "b639185a11ec7390a4c65843861c1f9299a0aba260b11ecddeeda8e881c91a14",
+        "loss_physics": "9010f3e399227fa8f7b6a9d91210198ea8ad4b3cc787589ff48f21980db49790",
+        "r": "b3331519d2abf61ea761bdb08daa1d4471a6adeb733454599ad8ecea854daa81",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "05df4e51f35c5888a97a2553dda263bb25f958b4b9193b1aea3efce89c8bd27a"
+      },
+      "label": "PINN with soft BC | seed=1047",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "96_pinn-with-exact-bc---seed-1048",
+      "hashes": {
+        "F": "de8dcbfb7082db6da8b03600c584665a6361eb27e0b715e60925b6f6021bcd10",
+        "G": "e9c88955a448a7d37883cec41f8da7454c54b522f676d9d89044660510aa4166",
+        "a": "ae65f93fc9ac1fbe4f1a71fcaedf2f93668bb62087cdc01055564b7d46453e9f",
+        "loss": "7ef3c9eae632c13ebe699fa2faff4b41aaaaf9b40cf2b50bc6fe73e1978b6bee",
+        "r": "2d98d320fafdee8e14f5874a3e81adaf5d923f7f00dd762d45709ca285b9f75d",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "8f7f010133824cf9e964301b7bde2adc82656891bafac01b3e1c7a8571f4ac1c"
+      },
+      "label": "PINN with exact BC | seed=1048",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "97_pinn-with-soft-bc---seed-1048",
+      "hashes": {
+        "F": "18843e4665aaa8bddf5822005def19767de4131f13c07a350574b0f7b4d0bef1",
+        "G": "5f864950d6a4730451b8df83e2ff92569c0a3fdf96aa48a6656a951dec8f07cd",
+        "a": "77c2ed7d9a8b6a6995f08f5a50296f730dbaca6e4f0600aafe24a2a163b34500",
+        "loss": "d155703014af1e75d69242f1974f6ca32f661f3a011b0be92a78b704996730a1",
+        "loss_bc": "ce826f7032838e510d3c60e7d32df1abfb5c1ae76dbbd3b268d143300b93abb5",
+        "loss_physics": "103fac1acc878f9f4d14d3be8ce059c6d8a77c8a385a0f8d83c61a3e7974208b",
+        "r": "08027ec102b4326ba1b1712dfd7acae7eb253e9c0f20c4330699dbf857862ce6",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "b47f982a7833a317ed7eaa66bd660905ea09f76e5e9ae0b1ee46d7ca097c9543"
+      },
+      "label": "PINN with soft BC | seed=1048",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "98_pinn-with-exact-bc---seed-1049",
+      "hashes": {
+        "F": "17e8e9a7c5c45c2e5932c102986a83097b95826bd544472b3237cb037897704f",
+        "G": "2a4783e018982a41548b8b40a193ce0c16fad921f72d783520e0848bfe6c4974",
+        "a": "2083630c2dad88916d0ca4e92ac88722e43862c143772f77a0805130426acdc3",
+        "loss": "4d5c9730b4ef92669a9a76cc2735cdb1f752cd7b8c642af642f6ef28cf39b8dc",
+        "r": "0956a8cfff5e0a1f8260853331e5d14315267bc42767f0a9c457358d44aacae3",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "2aa685c70a5639eb7fd4365b570e052ccca36942b7ab2b7f8f335119afd2c5bd"
+      },
+      "label": "PINN with exact BC | seed=1049",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "99_pinn-with-soft-bc---seed-1049",
+      "hashes": {
+        "F": "4b76f88196ba75f6a90dcc1267f1c18f6d94a016a260e9ad3738a66098b800b7",
+        "G": "529837c6585b69e99ac6eea01bc372ea5f4535c4b8584ca659366056f8242362",
+        "a": "23b5b7fac1946b0f02ea8fbb45727491500bc457bde86e0cf26a5b6ea8321ab6",
+        "loss": "cec91611d7d4816645c1c36f747cf088ed7ff0a6a2d7adbfb9c6a25555bbd93e",
+        "loss_bc": "e78595a6b245b31e7fd2594f9b7a90f7fddee3156be45bfd79b885c04ca5eed0",
+        "loss_physics": "674d563b0f98ce4489b79f5485f586b29e34c871926d31c8f5a480a0353e939e",
+        "r": "51a877fa1077ca31a23a204e628248f242c4094728f4e4e8c488b21354cdf858",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "d29c6f4e38a39945011e977b777788d8a4beb354d809d7bb399bc4058d478550"
+      },
+      "label": "PINN with soft BC | seed=1049",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "100_pinn-with-exact-bc---seed-1050",
+      "hashes": {
+        "F": "ab29c93dd92d84ab8bfecbfd7bb237425db706fe7a84546a845d56c604dcabcd",
+        "G": "22b49801c3f8c8d99c9182b8022ec2acdd0524fe5cd2e0c4ee21150c0b79ad57",
+        "a": "557fdc7a300ff0549e4b356df0137dd0f8062a0e2b8ec2d40b2444323b70af8a",
+        "loss": "24739c5ce1fda81e272919f14cad4edf3caac9d3a8235eca76ed1c0305db3e5c",
+        "r": "8680c6a330c78175eb8943f8a615a5c66c6104bd260ac1d8cb1ac296f77aa8e8",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "16691198227f76b966758da5122421501b577704a6fb383f489247c60eb061f1"
+      },
+      "label": "PINN with exact BC | seed=1050",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "101_pinn-with-soft-bc---seed-1050",
+      "hashes": {
+        "F": "f96ca4face72471f9abc1bbc684043c3b06c8883ba5da250d169594d69791267",
+        "G": "08c0288659770b4503aac64960e237db7fd6d505dfe8338be70df52979216843",
+        "a": "a46729bbbfef10452b16642aadde5a1575b04d38af494058f4dafa0a7a6241be",
+        "loss": "8de9f158c60614ffcb94ba9ed818211fbbfc635da8f56c966433093e89f3d1e5",
+        "loss_bc": "3fc59d49438b158093d5dbd91a88e5777ea73b71245989d864eb172453b3341f",
+        "loss_physics": "5d516ee1bbd9a9eff3ad204b46284fd3ae4fc72906d910e7d7066f32d9a5a603",
+        "r": "cbc4e34e15b2849505cf0b12946ba1c8673a7a3450e8f63d6719d9ef227563d4",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "79f1460e3b4d3733af54710dd3ef7ef74ca3ba53e8d198bdc070ca145913fc6d"
+      },
+      "label": "PINN with soft BC | seed=1050",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "102_pinn-with-exact-bc---seed-1051",
+      "hashes": {
+        "F": "77f624cd456f0756e2bdb1323d559117f60b5296fe125962d05c4a6e9ef95fe0",
+        "G": "a11235afcac92b9de6d8794d145d3f68ae0fec7cc418ded6ff5726780bee021f",
+        "a": "840060bc0df2b2edb969cbae3a17b4e698c10a933c5ca29916e28e290eda7420",
+        "loss": "d728febec49af9c5c00aa155e232b3d11f21902e8a873b40e56c750691a94fd1",
+        "r": "45244992435603c4758450333b65f1dd2231af877693f62d1160b473fee63a9c",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "305dedbcd6f87a6675265ff4882ed86ea1db15a243614a9cfcc5001991f54a8c"
+      },
+      "label": "PINN with exact BC | seed=1051",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "103_pinn-with-soft-bc---seed-1051",
+      "hashes": {
+        "F": "4c97c4058a8b372c7efc36bef2438da1ce3d969decbb28f09c9c3896a297cc79",
+        "G": "12f9158dc7ad75f74599b56a5db88e2a5f96b0e3db0845042711f27ada2bc8a2",
+        "a": "a134cabb0c4254fc6be291cf4880e799ab9cb32c621eb95b22861f407ebb9760",
+        "loss": "f67fb55ecc512cc88e96ef5ce76e61b58b806a794431658b514f27b4931e1a22",
+        "loss_bc": "2f9d8cecd9c4c2ea6a3c5e5490de2292fee2bcca4094d02eee571e3cb92a8ba5",
+        "loss_physics": "29dc91115eae398fafd706f8fd1c9ee97c76b5be852b4a81ae0cb54896ef7a71",
+        "r": "d07e109eb8bb06eaba6aef1c70327f5646b6c331e655ee040de1db69e3441d11",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "21e266971a429834833da217af33f174fc06705f6ab8f8ad3a55fc75db05c565"
+      },
+      "label": "PINN with soft BC | seed=1051",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "104_pinn-with-exact-bc---seed-1052",
+      "hashes": {
+        "F": "7e7dd0b70b0c4356b17d3867587cc42664fed2482a986ed467a267d458ed9ff5",
+        "G": "2dd03f54051544bedabbfb7b3f0fab55c9faf0c57aedb5ae9d05814506cf2c9a",
+        "a": "1e93951c305886e5e103aa50953a2bebdeb07e0db0e06cd61d519cc65dd03d16",
+        "loss": "8e6b50e856b337e61eb7a9c744c7bc27e32472bcf2bb0934ab619367bdc80377",
+        "r": "eab16b5f9793395c9dba433c945baf08b5f28a485214c9f749944c519d0b7c8a",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "cb60e112282d11573330bc42d2c6f5761eabcdc3f323ce3571cec9dded1c1400"
+      },
+      "label": "PINN with exact BC | seed=1052",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "105_pinn-with-soft-bc---seed-1052",
+      "hashes": {
+        "F": "dc13517d0d3df9b5b7a4bded7555e8bc51edbd6973821ceab53a24c511f6e7b8",
+        "G": "0ae78b7cb8723559e287d2a3af0c1f580b1699f3513013939de38dd656f029dd",
+        "a": "f85f2c34eb2843d2aa5951ee6e8e76985655b2e3ae2cbdd76bdfd654ecf19997",
+        "loss": "891ea2e71766465ab0c7815f2d6e19a93b28ff9c78897dd46a679026082f40bc",
+        "loss_bc": "c0e9c0a6c26d12b0acf8c103702b9a35e80eca0436e02c93ed3d682efc746b48",
+        "loss_physics": "5f8c1fb83e01fd20b38ef05450f5b75953b0c9bdfc22d7097024b6eeba7db348",
+        "r": "4a147461dab3f8f8e7e3caa9f35e9b68b674051579e246956148d35bd0d42623",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "f85f2c34eb2843d2aa5951ee6e8e76985655b2e3ae2cbdd76bdfd654ecf19997"
+      },
+      "label": "PINN with soft BC | seed=1052",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "106_pinn-with-exact-bc---seed-1053",
+      "hashes": {
+        "F": "daf338cbd576241c513efdaf84133b48b5c6e050ec48f98cc98673b0428128b8",
+        "G": "427c29a02ff8a6db2c0e20deb7648d9a9511db5b3473de28366a082641ba209f",
+        "a": "d0729e266e4d6c4ade02e684e003fc7af916d1322c757121ff30f762744f921f",
+        "loss": "73c6a0c8b7f53107fffb8d14330f101a78432e376da2841a863e36cb3f848dd5",
+        "r": "172c9de0c3a9f4bfffe322f9830462fba38dcd7ede8bba990fb486fbdbc1cf19",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "6642997a442f0db2e496a9936dc4f2572c541bba347b54b11d78237079ddf31d"
+      },
+      "label": "PINN with exact BC | seed=1053",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "107_pinn-with-soft-bc---seed-1053",
+      "hashes": {
+        "F": "e3742b5d02c0cc2c3240f550e491b4b2841e25a24503d3e986ee670fa457ba1c",
+        "G": "92b5b9d22052e57aebf855db27f402bb182402a310427eaa57eca137854bb1f6",
+        "a": "597111b9d6ad5dd425d68792f02407cfc87d49d7a6229de93bae9d4114d2a6f2",
+        "loss": "8715073b164b989ec5132ccc42dc2d22a5ac4f34bb02ca4554553b42841107af",
+        "loss_bc": "ecd1621b056c8d393e049d40c45be19f7b4be32472fa0728d8b1c2104754a449",
+        "loss_physics": "4e64cd71c147347511e96de5c4238229072d2869e702a991e2d2c4737d84470e",
+        "r": "880fe780777d0c575967e49bc4e17273ab8c37bc3e18d58fb2e1b89331496989",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "0eb414d9e79fc234c41fb52accac465e40fe2e9c345f86e7ad150f0cad1a44cc"
+      },
+      "label": "PINN with soft BC | seed=1053",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "108_pinn-with-exact-bc---seed-1054",
+      "hashes": {
+        "F": "385c4c1e54bbc0c1a75b7278c13157d1185090f9938d7f51cd37f48c318dc81b",
+        "G": "fbefb83176d532a44fc42f01133ac0bb43500cf8f7e6248f3f55e6fad58c42db",
+        "a": "9d327b8fe2c36be1f7d5da5674d45dd3d02aee3bb20be8159973febb7cbea9b5",
+        "loss": "ba92a6ab8a3508ff74004010191d2a9a16ddf7cc6cf973b9b5e1d29cf0300312",
+        "r": "46833d17e47dc2645cef2f59a04c8d8727c9e40c3fd49de4c0ec6151ba4c679c",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "e2e98e11e7fc9636450c2bb52fcb16bb7fea9d9dbb2b0a11c0ab245abd311b8c"
+      },
+      "label": "PINN with exact BC | seed=1054",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "109_pinn-with-soft-bc---seed-1054",
+      "hashes": {
+        "F": "37347b0c2ea8e1e9922b448352eaf3623eec5522f8d08d1172153b468010e779",
+        "G": "0d14b0197d7ff701469ce4b362be623f369581394993e8587358af8ce8606f4d",
+        "a": "b45d32da3caafe83a8da47c3ed76ab53823d471bcb91936648cb57d45ba32487",
+        "loss": "e762d35c3fc0923f5c704701a870860e420ef86e42eb8716e9b92459a23571f8",
+        "loss_bc": "3d3666e4dc41486dddeb7034be504375fab2627369528400a3087161ea761fe2",
+        "loss_physics": "0580250a4ae91a165adaa953d179451dad8afe2aaf89f16e9416bebf2cb9aaaa",
+        "r": "4c3dd3809e607df35d38f8e8f4a65f2eadd43c55f783aeaccecdc5d80fae1981",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "feb6dcb4bf01adcf26e65ffe4fad46617ed9c1cb9539035fd4995ce1d68abd5b"
+      },
+      "label": "PINN with soft BC | seed=1054",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "110_pinn-with-exact-bc---seed-1055",
+      "hashes": {
+        "F": "b8b5dd96a11d3f096a169d066c96fb490e2c8a806d1ae6c378f3abf89cef47b2",
+        "G": "0e85af797c20ac185d1d91bda8c3af442243e8f4aa3c21a0ac3addc6ae4593cb",
+        "a": "46fb27ef8d5abc549f689d9df5ad76e05561e317debcc36a7b058995a398fd03",
+        "loss": "71e3d436c9cc04f4be6466487da18f1136eff6d61f2c8487e3785bbff563acb7",
+        "r": "55c6ca26acc069da625db2b0fabc5c24efa0b709225afd005e208e7e293c02a9",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "f731e42f372fa825363ef0164c194165a61d81a8c23e851b1207f571d68d7dc1"
+      },
+      "label": "PINN with exact BC | seed=1055",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "111_pinn-with-soft-bc---seed-1055",
+      "hashes": {
+        "F": "bbf66f96ad70f24b058ed870840f5390db476e428946f910ecc22fb3199fdf3e",
+        "G": "852545f6c73d8d582ddfd3cf15f986247dcbcc3ecdccd4953fbfcc074cf1415c",
+        "a": "c064dfdb12af349803384599a4dfa248de58d791c92f87d69cc83161f32d4cf0",
+        "loss": "f4287722475c57168f25f49800197afa2d1b09b19eceeb15b4797fa2143f98fb",
+        "loss_bc": "49536bb4f3f537ee6024a35d1d896a599caf767d38aa5226e92a9a9c651e6f3c",
+        "loss_physics": "27deb63b3651f38f5d0e892d5d13d37d4bce46f2d4c1281342906bb1e1bcfac2",
+        "r": "07d592e8bdd7e02af596152c9d26737ccfa5811a1f58eb939dce229aea32f52f",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "942e57ce022faca16641bcf4e3db487c9b0c29b2a29448c6bf57540f49e54a59"
+      },
+      "label": "PINN with soft BC | seed=1055",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "112_pinn-with-exact-bc---seed-1056",
+      "hashes": {
+        "F": "e88acf026cc950c371afe1569b9a8f81eeb6ccc25e9d2a75bb3fb426387a132d",
+        "G": "ab8a0e02f19ee4fd4ab27ad22b2f00ec00b03b3323115f85f96cb3453935716e",
+        "a": "3dbe5b02eba8eee608dfa1b4e8db0c8191f6a12553b805f1a920a014a1242edf",
+        "loss": "ec586ad9ca8489ad07764a9132357216ef5e4b87a3e95372fb2915aaafb2bff8",
+        "r": "aaee45b9614d2e1a1e0e1fd3a6740dc0cd038d7d96d3b26301af5ccd73bc6fc5",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "74005c22a7f64bb207c4cb64a47cb3a36eb358a45f86f1c1d61158594c4a2110"
+      },
+      "label": "PINN with exact BC | seed=1056",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "113_pinn-with-soft-bc---seed-1056",
+      "hashes": {
+        "F": "f4dd3de61c8574826a5ed73b98e0d3fa0f83e92e780647e5417bbd70c681bf3e",
+        "G": "5422449529cf5cba4d7bc591705c8891dfa144368d40da27b2235eeeaf0fa314",
+        "a": "48e5e68f3bd3e38fa67c4de9b9b281235c3068f99a6958a1962bdbf961b90048",
+        "loss": "be9b46c390d8bc2d93545cfc35f539265ef8fe3497fffb22db338180ca7be98d",
+        "loss_bc": "040f460739b528bb670cf6e535bd91de26c3ac9d48dcbaef0f2d44362565d1a1",
+        "loss_physics": "573563aa7f0fb27d7fb94b85c1c6115ebc125112a07a77726478d90f2967dbe0",
+        "r": "e693c05a8bcd92d3900671961e66c389dc018ef8911fe250a8241a8040d6b0ae",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "77422e4105581c84e06440ce101e2beb683063266e6def2f0ebb56a3847ab45d"
+      },
+      "label": "PINN with soft BC | seed=1056",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "114_pinn-with-exact-bc---seed-1057",
+      "hashes": {
+        "F": "9fab3c3fb5e6bab8ec8199ce32a8239a237a9f36d83af9baf12dd5621ff663dc",
+        "G": "bd914bb151cb4a0cc2f54534790f14662a14a555cbfaf9ac3842e38a97466e45",
+        "a": "64064bafbede869c1384da62d14145bc9300925df1858f5b823fbcdbbe945d49",
+        "loss": "8d6d728cc0f87e275641a3d1b579e7f7bd8ea48c184b2671f1b05ea7765886f4",
+        "r": "b887a83790e6b9f18b0f2ffb2c19db98ce23251be97bcece8ccc5100591a3c53",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "15a3939e8e6b718dd2021e9873726b4a8cc9492aeb0f8646a02c1c7a64b5bdcf"
+      },
+      "label": "PINN with exact BC | seed=1057",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "115_pinn-with-soft-bc---seed-1057",
+      "hashes": {
+        "F": "4ef77a450282ab9e70b8232d33a36a82e1d8533e4c2a39e3fd07cde27eb802df",
+        "G": "c551296ab8b00d6de35921c44b73ea0367583c1fe417f5143a554afb0b9267c4",
+        "a": "7ab1a81e546325dc222379724ef834bb596c032df54901a58a185ddae053ac84",
+        "loss": "f78b6cbd5e078953ca0c69e285aa00ba3df9ca757757704c543279e011d54ef1",
+        "loss_bc": "502b2e893e51e5b92db690ac05dce75115fea25e8dcf88e594a4ffe29224a857",
+        "loss_physics": "52a20460f4c5db137d3ab1b2c82e89e7d52586cf7c8e25fc42a48637f0db4742",
+        "r": "47497528a3b256b9562604455281a93ed73798f6a9a736dfba6d44036ea55935",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "36233cc959c5d541d079d06457548e69b39c2b04f8ed58cd1403f0c5182cb48f"
+      },
+      "label": "PINN with soft BC | seed=1057",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "116_pinn-with-exact-bc---seed-1058",
+      "hashes": {
+        "F": "308d0ac293fd07c62833a937ade3337f360badabde49a2421abbb5bb39874dbf",
+        "G": "1cff251c20a0a11fba257d2648e0cb87cfa2ca0351f7013a40f94eb24aeb0785",
+        "a": "dc93f9b05d7a4d214e4a25a46269a504903ac7b4f3c1e5229e3852709bba237e",
+        "loss": "f50d982ccdb003eb25412bacbedaf4d7f208b65cc10ec35f7ce716648f536744",
+        "r": "c6161ec03079e8dd952e23c26a4a603ee88d263f9a213bf3079d66fba88c2020",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "7e7056144ae33e3f0e165a90489d9cafae11dad23fdcffed1dbbaad1f542bf24"
+      },
+      "label": "PINN with exact BC | seed=1058",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "117_pinn-with-soft-bc---seed-1058",
+      "hashes": {
+        "F": "9d80028e7dcbf5d910d853d1a9f8629f6b88038bfdccc21c2d0a9e659e91e517",
+        "G": "90285e76bd173d40355305ee80d0c6d955ea783e96914a003fafb24297bc72ce",
+        "a": "019a5edf4cda0259bfbe575af541aeeb4d2d2ff85820a4f7da3f027ae3f4d3b7",
+        "loss": "543bd8ce599c31a23a1690a82c093d2060629a6d218e723e7077e3bf016f5fd1",
+        "loss_bc": "edae03c56ef74e8964ed7d0ca8f50c717fcc9dbd35d4c6aff9a3c8c6ecebd8b3",
+        "loss_physics": "8f88cb67d2ecdef4b3690373ac0214d8540029a39ec2d6536e9b2584728178d9",
+        "r": "66c064c7b0ba38315b6cf38a60a599f3d7bd0c98052d2b3c228627f365dfa3eb",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "0c131769105431a7c480715a200b687e2141971bb05dd6dc1e7061122c895a8f"
+      },
+      "label": "PINN with soft BC | seed=1058",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "118_pinn-with-exact-bc---seed-1059",
+      "hashes": {
+        "F": "a71c5e69f17d6727353c97eb7fb2b4c046281ec661b8522a32b160fb3634ec35",
+        "G": "7ad0061d5aae9ac954de42061b0795768983e26e4ac1fe4166d32ada11679d1e",
+        "a": "9604652d3100c69b63c4136f22d1324ac9b21ee4b8de5eada147f37e9d252a78",
+        "loss": "763d0744580a15c9f2e75b633e86d1ab4077a0020b68c4496c40ea74fe189fa7",
+        "r": "5e99f84282e43275687b469ecb592fbabd612bc40f6efc8eff44407b6dee4e67",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "325e111e0eb1e780c56b077bb03fffd2ed2c6e8402abff6b0b0a28d2475e7bdb"
+      },
+      "label": "PINN with exact BC | seed=1059",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "119_pinn-with-soft-bc---seed-1059",
+      "hashes": {
+        "F": "998e0d4ebcd2a11f28c523d99df656d7eb775d8eb33513fc0853bcac4d6f42b5",
+        "G": "84698f730dd85a4065f9cf45c46ac8c0c8f9a9ac188ebdfab11a74a104fc71b5",
+        "a": "7811f62ef5ed4a991f6053740a6736f7f62b22037de8fa06b098c1ee226aaeac",
+        "loss": "25a72c4c8b14322dbcbd604154b9418f0216da5cfbe71d0e84bbd085b0b1726a",
+        "loss_bc": "093ce158d3f7f375c8ea74a128bbb3912d211903e885024f9488dd5269852a27",
+        "loss_physics": "d4c2d68bf1731fb2d7d8d73f21fa187ac12d260a4a7cfd1b9f205966a20164e3",
+        "r": "8820930120fb71fb18a7a2f14dd0936763a80171e103d5fc7e9d7736beae1f3a",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "9f8f3c82e43cf88346acdeaad5e170f8f1ec5de67d190f961477dc9a9ca8a056"
+      },
+      "label": "PINN with soft BC | seed=1059",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "120_pinn-with-exact-bc---seed-1060",
+      "hashes": {
+        "F": "3b63ddf1be2bec9f89cbd59d42505b34b67f1b1132ff03424e6c54a74aefe280",
+        "G": "374fe1169cdf58b14efbb805f08af0ee5ccf8cd230ac1f0820b27d97e9dbe96a",
+        "a": "27eb0cd7f7c1c36ba58eb5a417bb9596c80d6252a4bc0ebf441728a76adf3477",
+        "loss": "ac0cc9ed52f27aad01db7a7dfc4ef91c0e780724530894208c55c95a74b9ca44",
+        "r": "a4bb93a800a840f8f8bdf621091d911744451ef9fbf9fe1054520c1b18fc738b",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "071951b83aa1ef4ae46a6846ffc067e560400ed623ab254bda350846a3e7176e"
+      },
+      "label": "PINN with exact BC | seed=1060",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "121_pinn-with-soft-bc---seed-1060",
+      "hashes": {
+        "F": "a939f22b05b2b9dda7b427ff101f18cda51704c35c0e3fa05523c185ad8efe21",
+        "G": "9b739f8f29e5cc7dbe84b2b01147cae3b54fc6659bfedab750880c841254fd7c",
+        "a": "14c37ed0c255ad26936d13de117b682cb9339e9dacd112a8ced64b5091551a42",
+        "loss": "65566525536b10fd979aa2c2c9b37d81612bfca93940931dc4a1f8b9961bfcb5",
+        "loss_bc": "65c7f95632036d5807814fca5accb7abf70978c67b84d0ecd3fbfbf1f7b3e3d2",
+        "loss_physics": "0cc93d690bf53cdd7affea144a19f39812c9f21e82ede7a0b64832cee6f85030",
+        "r": "96e512db205aa951a91e9be8fed08552604d3f4e03b813e95a86f58577a18e26",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "652be76cf883706df896a07d8fc0b9362d35ff1b65aa4b958ccb8aabf9fcb497"
+      },
+      "label": "PINN with soft BC | seed=1060",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "122_pinn-with-exact-bc---seed-1061",
+      "hashes": {
+        "F": "42b4132c237c2b780f206b4be678fda0e92fd2304eeab675df5f2aafeb2ffc7e",
+        "G": "d5b4bada971eb7c52393b18110788375409a2b9edfaffa81371414238f1317d5",
+        "a": "3d983643014abcde2adecbc201359ab73da7aadadb4d8dd8a44d3f51c3028b01",
+        "loss": "e5faec3624eefd559bc7b4c9794f07e2d6b5d5129210e276b0bfe90c8e3cd1b3",
+        "r": "8577c6e800cc77eafbaa6191151a00618a40843071eb75f80cb872dd66e126da",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "9b8e5c70c00b2f0c1306dcd4ae295749e5f854fbdd06073aa5054a5322ffcf0a"
+      },
+      "label": "PINN with exact BC | seed=1061",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "123_pinn-with-soft-bc---seed-1061",
+      "hashes": {
+        "F": "7539bf9b0f6058bdaa51af5da43cf3970e9fcad392bf67c1492b63af796639d4",
+        "G": "c5e8fee63c441e4953549b67cd023644afcc2ac09afbddbcc658fa7888fb9c99",
+        "a": "98a4a76f5cba1673943b91eba553fea7bec6ee27d923b8be8291eb6d0d68b9bb",
+        "loss": "e0544799528bdf83d1a91d833a063df351fd8500ac78df53a63629ecc553cb5a",
+        "loss_bc": "5d1589033719c8acded60f2e4b1d8cf7c56036b09f0b1aa6aa82705939a5650c",
+        "loss_physics": "b221a77f3272db4f675d0d889d28c30ff15f30a15e13213ecdcf63733244133f",
+        "r": "a22bd05b44d29bc54fb93dfd483f85c0c10cf592294eb99996a555f8705eb53b",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "a3177b785b6e95aabe48fa7579ec9d66a3fa1774d677927e9ebba313d4b7d656"
+      },
+      "label": "PINN with soft BC | seed=1061",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "124_pinn-with-exact-bc---seed-1062",
+      "hashes": {
+        "F": "1e153e181ddd497d1b3a5611fde8d5f4416fb315963f833cc616bdd470a731a0",
+        "G": "7f903feb1b5e2bd65037cf218a78daa563cfeff038910c1fa5628f03d483c1ff",
+        "a": "6aa93a8a598783b1bf6aae7639bc4524e35c8c6e76cb23c62c9542b1b2b26c60",
+        "loss": "8f463c004acae2b8772646cff059fc9084229571c46111167d154e55ada8355b",
+        "r": "59dc714d7a9064d58fb15cdb7d4c0f6916c351a1499ede8ac6a59053dcedb77c",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "b7c2708bc6334bf44e7d50be516ff2037b5eb2e0627c31b6ce5d4232f8cf6ab9"
+      },
+      "label": "PINN with exact BC | seed=1062",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "125_pinn-with-soft-bc---seed-1062",
+      "hashes": {
+        "F": "fc968c9e9f83736076cbdbdfeb4cd99ebb564ccfe3396f6a2ac89de9e73093a6",
+        "G": "a744006cbf11719148d5c93d5cb4c7a02bcc1575ec1f1beb5d0f1c31755ce730",
+        "a": "4fff3892c1555bf2b5b6817e5205b14a283f4d541cb7ac40f0d40f4982dd8655",
+        "loss": "b64c7a1119703a6b9d62e968138c6738c7e6d12cd1d139559e33cfdf5f298ada",
+        "loss_bc": "33336994cc6c67ca6d908d7d47ada06960b3ba243fa8fa1f145cf51116c8e05e",
+        "loss_physics": "019c490644547b3a4ff86a5ff564181c2ba04bbe9c9c49de0489caa40d8a7819",
+        "r": "e741cc63c16513328f7d89971582edf1567f91a35ef1ad9a0eada7147b039948",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "32967da22cf801ea1e34241be68afc325b8c46f78c28e070e9ca911400152250"
+      },
+      "label": "PINN with soft BC | seed=1062",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "126_pinn-with-exact-bc---seed-1063",
+      "hashes": {
+        "F": "43d2c8e6218b5ce0802b446b85832e09319ca5684a55fa89eb59dd6322c3080d",
+        "G": "c739b180334929c7f4cfaa49d70f1b1b9d6966866000f0da0027043605e8123c",
+        "a": "44fd46a8280b23e0edf9d216ccad605797a58e834af3b3b2028f372290f11eff",
+        "loss": "4a38f2ccae5694b093cd2d414daff034899db845a159c229555afef4a05f325f",
+        "r": "d39771f53c8143bdf46c3a399394c35c4c32cc66f23dbc3f62fdfd3d15d950e3",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "5c9dd9f7cb8733253f0b0821ac15297278651ce92c4a423cd3f2c31c83b2d361"
+      },
+      "label": "PINN with exact BC | seed=1063",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "127_pinn-with-soft-bc---seed-1063",
+      "hashes": {
+        "F": "3861f6ed25f014d9ff44bd38349e501e32a5d997aef7b138cf373871bd19bc22",
+        "G": "eba854340b38115bed16bfb05cce01885f44acbdd616691a890f438269bb8207",
+        "a": "aeb5be5f467c4a70793babc17e9ca7bf282f3f3bf5b73abc1933c85942dee096",
+        "loss": "5e6ae8d6d90a907a73e80f2315d8c38d30574a1a186d2dfde4f8ec3ce6b31751",
+        "loss_bc": "845d6a6e03adc7876da8ad2e7504b8aae5aadeb77a06931999e68401e253f497",
+        "loss_physics": "f087f05e6d39bdebc919e7a661de3ee88ce92edd89e97e3b615729dd659457fb",
+        "r": "0493f7d5333380f13d0844b262ae6b1b15e3ecde08d906cb0b7fd7bd68dd12ea",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "8504321593e78ed2d737b0e445646c54e00769a9cd1b5f3a982ed60151d1a903"
+      },
+      "label": "PINN with soft BC | seed=1063",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "128_pinn-with-exact-bc---seed-1064",
+      "hashes": {
+        "F": "314097c40dbc354833c3bee961fc74023280d58c1a3043234fbde19d3106526d",
+        "G": "30be2b2b16782f136b50881007231f602814fc8a2b6dee09d1164b7b5ea29ca4",
+        "a": "1a0dbbe87827af25ede42f02dc1181e6f8e55cc7b8b880225b7a867b0ac1877e",
+        "loss": "995f2efd0db28e3189e65cc7984440e338a585b5d04c51b52a45bb06d937efe3",
+        "r": "db2ec22b044df8329e4e00753c6fd0ec94337168398e1cea9bd79894c22b8c73",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "3deba9ede8d585fc34b241ab2f0a8323a454e9320f61bd8c015d6478122f0a2a"
+      },
+      "label": "PINN with exact BC | seed=1064",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "129_pinn-with-soft-bc---seed-1064",
+      "hashes": {
+        "F": "5d5e119f44845ee09bb82334697c57db0cdbabfe039e52bfc42600f45007fbcb",
+        "G": "4970f65eadb2f2758e991498e789da6289554d45b167c092e89c68c7bfbb2e5f",
+        "a": "419c9890fbfb3344d45bd038a87ffdc6d21cd0368740b5cbe72df8d495f90fb9",
+        "loss": "5ae95e30f1f756a0318ec91d39a2e33d9c89dc9e4a4c8077622262b7ef4d9c35",
+        "loss_bc": "e8ef2e3a602f9313309950399f796fb10110cea607bf39049f9b15e4153d3942",
+        "loss_physics": "3faba46642067cbea5ce5801d9bba88113dc759af8efc8067f7051615be536fe",
+        "r": "8f9b640b9a41ce97eefe1f4cd0d1d3bb38c922b5544d05f764fd17985250eb8a",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "2bda5ca464c43975fb7ddd57ba28a2654e59a83a01d813a32780b499d0b6c8ae"
+      },
+      "label": "PINN with soft BC | seed=1064",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "130_pinn-with-exact-bc---seed-1065",
+      "hashes": {
+        "F": "7e00322a461642aeda6429671b0a324975338fd6a78dd048b3a752a31d32b93d",
+        "G": "2d4037d84d2000c24a1ca234e099d7f2de0f96dd574f6d8456e9591ef67cfb27",
+        "a": "7be81957360f2ed29bd6280e34067971875979a18a6fd6583b74bd7588a6b8bb",
+        "loss": "a51fa89d4b5faaa418c2632a91ed6720ac703841b3b50572f20a82cbe19808c7",
+        "r": "dfcc0978c706468f20c0dabce75ef6f025a6221bb95a5adb1d556b94dcf0883b",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "7a51c4249a11419759209a3eaac52ac47907c2397d1105c7763628185fbf8824"
+      },
+      "label": "PINN with exact BC | seed=1065",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "131_pinn-with-soft-bc---seed-1065",
+      "hashes": {
+        "F": "3e85bfa1afe50115853ceeb917ceb2e103b8566cbf446db539a9c10cbb771849",
+        "G": "b200b13e26473bd57c0718e83a8792b0d879ffe98de90fb13b73f7c7b5237b77",
+        "a": "7d6dd3b03837e40c39a2936e85d0cab5096051ea45ee306e7f0b78497d39a100",
+        "loss": "42c0ed1bd83886ba463b07e9ae146dfe2d1b1b18331242e6f8601539486d250f",
+        "loss_bc": "7575e09d1be2556ce158f9610b4c01b9fe7c76c78e685e76187b753d9d7fdae5",
+        "loss_physics": "c7b367e389134c1f8db34026f4693e19c49ca506b97ff9e80772b7d90feb6476",
+        "r": "1c40d512c3d209785653435e3a045403078c548af442df3327190e8c5dec6f45",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "a9312c2c027a26a39c782252fd4d6399f5f7632d90d512b3b24761c6eee9bb5f"
+      },
+      "label": "PINN with soft BC | seed=1065",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "132_pinn-with-exact-bc---seed-1066",
+      "hashes": {
+        "F": "5bf5c14e58cae4f85f0ff9cb909bc855c9363d80b0cb3950b8c487f0c3f210a9",
+        "G": "47414a75b65b69b9ca7ef4b1a1cfd368a0c1a697a62120fa6cfadb9650d21945",
+        "a": "6afa0e598912ee8e74ad23d5dc0f8cbc2daa4f852bf885cccdfa82da7f7cf79b",
+        "loss": "73e4a4d0f75223857d87cfe971cb0b85a39c353cce85cab994bfc574918bb331",
+        "r": "f95d114548a5c4daacb7328e48a91bc254b7c749bf1014701eb6f48f25b69d70",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "8c9e7f90143b7396542d3249e2895d62240d4b6664c2a4f94f29635caf9741e2"
+      },
+      "label": "PINN with exact BC | seed=1066",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "133_pinn-with-soft-bc---seed-1066",
+      "hashes": {
+        "F": "a5ff4717edd7987b81d1b6146ee4088343b33f4ca2cccc5e00825c561de2720d",
+        "G": "c93735bbe6c229ac7f198466567922ff9ed253e3eafd9126b8600e1f7402bbe8",
+        "a": "2fb9217700f62d9bfb160b3f8f1f4d517c597271925e8cd7ccebd0eeb551a1a7",
+        "loss": "b7545ae43325aeafaad9e88234a9d1fa880eeaa63034a674d2736e9cc69ae125",
+        "loss_bc": "b2d1c7884ee6a29f4a7d9004391716bf07f30b6d7ae058d301fbd1948df79346",
+        "loss_physics": "9835d717371bdb0769f936140da752ab72e7008f69f30e3c2201b3337cb5dbe3",
+        "r": "3a526123b2b8781b6839498bc22f326202c9c9ff31d3dda2aadeca1f2add124e",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "1105c62f978607017dbcbc68b1625f19dd41fc6a8c930bc9812d9b0e29e465df"
+      },
+      "label": "PINN with soft BC | seed=1066",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "134_pinn-with-exact-bc---seed-1067",
+      "hashes": {
+        "F": "a9c4bba7db6d73b50982e4395939b31e186f70616d5ad19e4b47292ea457cc6f",
+        "G": "831a21979c5d2acd70ec941c49a1967b5415163e1c4bb42b133419b4bb68fb39",
+        "a": "755ef58cc9a68f54c311f265960f12efbb17873b52d374e1266dad197f914a6b",
+        "loss": "6ecf80e8b763da15eaa0581c7c81ab3198941e0d8d6d23b0367786e0b40d781b",
+        "r": "f5872d4bfff92d8c2f5d6ef4fff931ce4a8364004d6f17669c3ede774a55a10f",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "a25a7733a0f90a82625916c4893c65c9595712b6b22f69fb9b893f719b0c2168"
+      },
+      "label": "PINN with exact BC | seed=1067",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "135_pinn-with-soft-bc---seed-1067",
+      "hashes": {
+        "F": "48630524648a6838b3d0288cf5faef38e4c72b4d26dcc41507d6fcb4e184673c",
+        "G": "7d2e6ba478d327a3febd46ff43ecfb22178d76d28de0c83511cc94f35200e7ef",
+        "a": "99743ae5a9497044cfc7f6fbe4d0e411c16d114f493aee15dd708d0fc82ae18a",
+        "loss": "c769e83998c9c74f3d3130337862b8cb8a1d0ca4592bc91540ee090a5ec90618",
+        "loss_bc": "1aac5d1f34b1e952f8b5624bc780b3ca5ab46e916284fccac0d36ef934ccafaa",
+        "loss_physics": "c5b1b6f409296cebf5e4a8d244e4c1cc996b544cdbf382057b202f09e00a5a72",
+        "r": "f272e9ae65d757fba7ca796d4fab6dbf2b7aac573169cd0ec569e319210f7f00",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "58b2433da4ed13012541696dd1f34ae44a10eb08150be65f81c9cea0676d27bf"
+      },
+      "label": "PINN with soft BC | seed=1067",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "136_pinn-with-exact-bc---seed-1068",
+      "hashes": {
+        "F": "056f8db33dae3cc2d734221c7a1cd64e7429123c5867cda1ec6eb7a69a8bf5ae",
+        "G": "6385995c407314c54e848a4cc995357492bc573435854c04f1d7a31f7e773dbf",
+        "a": "2329c42380e4861e12391fe4038cdb1a9c53d80249b5f63075b72f8002bbeed5",
+        "loss": "9dec35a6b1b031faa791cd4c17b2768f11ddb20ede9575a68fda86c58d12ff27",
+        "r": "db1c11600486145f9268f2a9a96886195caaee94e7c8b83060207759017c45de",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "a62d2714e465acf855db254ece0e156e77afae814bb613eac7d6d7fcffcf8488"
+      },
+      "label": "PINN with exact BC | seed=1068",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "137_pinn-with-soft-bc---seed-1068",
+      "hashes": {
+        "F": "724ef15395da5ad0887b8dbaef70b826dd9441bd1f703bec332ccf281782f7e1",
+        "G": "7db89221de002d2ad732a6d4a1218301472adad77dfb4de1e3f90315437b3b04",
+        "a": "83a0c1f4741b1c5858d198c04fe11ef284079fec41dc0d52914c93e5c8edab07",
+        "loss": "c6867e395c67ef375769f5c0a92003926f75c60b3f5a8f54eb6e99142e1af14c",
+        "loss_bc": "e922b36573d38e1e3c1410502f73d379794f55f9a9db7d56980499475badc0d3",
+        "loss_physics": "203e825346afcf418a8e73a32dc37942c246be26bbdcee2ca347c58e9095406c",
+        "r": "62925d4a9f7f76d513269d722f62b7eb9922d2e45aead8639fe072a3a87beecd",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "3a12906c236f108dd08ecfce3e36d5d2d87ec6e81c36eb52d63210d047f95c78"
+      },
+      "label": "PINN with soft BC | seed=1068",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "138_pinn-with-exact-bc---seed-1069",
+      "hashes": {
+        "F": "d9f4119b535242160003d5de3e593f932914600a8d4b079f4475f366f5327bda",
+        "G": "3f5f3a293d560f91d866c223bb295290760671ceab356dc4cb807b985cd955b2",
+        "a": "cf31cd3d014a51ca7b67e2483e1e637a9acfeea3ed46c5e6cfe2d4bc2d20d0ee",
+        "loss": "93812d89beecd3413b7b44787e1cc8eaa25c7f663850738304a9302fbd4d3e11",
+        "r": "1ec480ce006789f21b4d8158734874fc11c0f24a06fee244771c9278f4601594",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "4520bb9b45eb6fc06377184c942901908165f17d35e986ad5cb08698fa49f95e"
+      },
+      "label": "PINN with exact BC | seed=1069",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "139_pinn-with-soft-bc---seed-1069",
+      "hashes": {
+        "F": "c239b9a8fa1d279ea3b9494f71c00c263990a81f3c326a4f111d950146bc6b75",
+        "G": "2990a7a602def1b93618ab0a11c1761b9d873a987ec9c05e2575b6e445adef57",
+        "a": "af969d367b7dfa0eab16e42383878de8bcb404529d9e2543e902a122c830114f",
+        "loss": "ce6170f7f601affece96cf6b6986311167bfb35c0b6f1bd3e75cd4fc9429cfd4",
+        "loss_bc": "3dfeb2a52e90c855400c5c8429ec66824326ab19defc5970262df0bc0eaaab82",
+        "loss_physics": "e719f42b2a881b049adb971e29ca08c4d8ab03618e7e553c9e6f823249a6e28a",
+        "r": "47f85d0710175a457c5dce9f144ab2e613c206a7136e6a5e8bf0354837761c13",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "53c1c4bd6e7e7d248a9370215aa73633b1d48d47af22f7413622c58038640eec"
+      },
+      "label": "PINN with soft BC | seed=1069",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "140_pinn-with-exact-bc---seed-1070",
+      "hashes": {
+        "F": "9af0e3f9beba63a7a24c7472e2bc046825bec9928c8c0a437ea91590c5a338c4",
+        "G": "68c30aa75854a4be2b3b30f0bc8b85194c9158bf9a6e3885979c886a56b85758",
+        "a": "8cef3069dd81a3998ca2065551e4b90f535a6768f23c0cf3ef515b38967436e7",
+        "loss": "c29f05c427057f1df0d7cc36eeee2ac5c83216f7e6c7ab51141b8b20843361da",
+        "r": "a0a242e302361ce7422faff65781ae788bcb6f627ec549ee3a19b02aa9de8a81",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "637af73c5ceba581ef1a660c35181b90836a426a186042273780dd6201be2a92"
+      },
+      "label": "PINN with exact BC | seed=1070",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "141_pinn-with-soft-bc---seed-1070",
+      "hashes": {
+        "F": "cfab59cbaf04076548331ccff038f22cead8522b13b9af1b159cefb4aba03cc4",
+        "G": "0a1d07917c30861e2ae2a579a72a515ccf08a688e38bd0d1b930ad122c2c986a",
+        "a": "1cc3cfb0ee1b4050b22fc1cc7fb5c1dcaaab51ee503a72452c5d6b856030b15e",
+        "loss": "2c44adec339870cd3e07ffccc53813288529388867c5e9981667d53dd199f1f6",
+        "loss_bc": "1d0436efca78a9788acbda82caaa217638f54d0d4802cbddf8090410c5029623",
+        "loss_physics": "3eb520bc24511b1f47713f50638642b0700979d8b4f67656a91343a8ff729a90",
+        "r": "4a09249e41d84f233246d33d9c5c32bf7e134d1138a5e9e4107899ac68bc2a6e",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "f67700b01c12bd858e8145af60fae9d20030cd8362eb0afa25853e46ce19a93d"
+      },
+      "label": "PINN with soft BC | seed=1070",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "142_pinn-with-exact-bc---seed-1071",
+      "hashes": {
+        "F": "d4594186052240fff72cf0ffbbd1a7eb4912a354491d3dfc247ce55194d6f40d",
+        "G": "5ad44a999cee907d6e15e50e554ffd0ae928667295c12620ab95edb70e30d753",
+        "a": "22da87af3461455d14ca2645c164b0174ca7777c43eb29ecaeaafef31ba7338f",
+        "loss": "d106e120dfeb8e05b1c22ca1d38eb171a28577ecb5d564dab3aa4b22d26439db",
+        "r": "06606c63db2b547f4a6d28d611c3795211cc77d3d45cc59b511287d2f56612f6",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "ad882559311117e440846f66ccf79b7745e286e39a14bfd676ecc73fc8bf8613"
+      },
+      "label": "PINN with exact BC | seed=1071",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "143_pinn-with-soft-bc---seed-1071",
+      "hashes": {
+        "F": "5493574bfa51abdade93d64af0a59b684ade0dbbcf60f122d1b7dea52589b61a",
+        "G": "ab802a427dbbf60f54f8316898b30aab3e7b129a065dc6ca9e56dc9b80ad3f3a",
+        "a": "c69d5620cb5d37328ff23c5740cc9ef555cd3326d5bae6034c1fc27e70568ae7",
+        "loss": "007feedb46243b39a163c1abec75767bb2a34e64751506c632e140d4cf27f5d1",
+        "loss_bc": "a4cd9a7269dda070e77263a154741e7fcc36163ea00fc9c1efc3363f89f4bc50",
+        "loss_physics": "b6efd529cfcc88e3a76f44dc626b6686d6e6319704a643c61eea33230692ce70",
+        "r": "4b9d1dc4ffe9e1ac03a6a0526bfed6966a8fd22c42c1e3218ad3cbd87f0aa9a2",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "4d2f398427028e909238934468dfb253fa1d0d7253501bf8911f54b14952ccec"
+      },
+      "label": "PINN with soft BC | seed=1071",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "144_pinn-with-exact-bc---seed-1072",
+      "hashes": {
+        "F": "c695f7f0459f30a46903440134d0a6352c58761b8bdad717382ac1538fd3a710",
+        "G": "b0ff9d2b79820c900fb24a7d05a5e224112c6b8f863aa16586818b6ea2751754",
+        "a": "d397590505fbc25cb4596600e7435295848e276d2ce12ee8760714a049434dae",
+        "loss": "464033bee778548a1e907e719ec18f35a5695c452bbc1aac7b8832284add3c14",
+        "r": "34ebfd1be7f1f25f21b6bd89f0ab38b25eb1a477899fc9463e2b22d190a17519",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "138d5dff605e8d6da3edbc24ccb677748cad14f9ca23eab06a05b23b687efbe9"
+      },
+      "label": "PINN with exact BC | seed=1072",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "145_pinn-with-soft-bc---seed-1072",
+      "hashes": {
+        "F": "e3eb502c44dc2bc02ee448af857920a369a3a0c6bc6ee4e4830b43be69abef57",
+        "G": "efd4ccb6b27991e585e876b8b22f1af616806de0dbc21bd482f0328db714ae9a",
+        "a": "0c3273cd31175c9a532d083ca6c19594dfe7a9fb6e1e1b9fb5793da7a931566f",
+        "loss": "58b5f0099aabbc9d5e5d39f6be7ec4f36295a4c0379388f5b29883724e1a172c",
+        "loss_bc": "4861b908d523b539c6d3c12a1fc3c4dd734d38e202dc57d37887f5358e4a9a1c",
+        "loss_physics": "f97b1cbd591b34a2ab9fdfb7c63aed769e24f40a707ed95c2d2ef96eced06a64",
+        "r": "13e22ac8e07642f240509621d7cef1d938c8b6c1118f8172d4266d876d13caf2",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "ad0e2c0cde735991a74fee52f34338d1a822c6008a6a0236b88b598b316740eb"
+      },
+      "label": "PINN with soft BC | seed=1072",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "146_pinn-with-exact-bc---seed-1073",
+      "hashes": {
+        "F": "7ac46823995e11de01199a3c6d2fd0579cf7992e30628595a0d6c829a8bbb9e2",
+        "G": "d5f5b2e7fcbc291a5feca8e58479b7cf9ba0da9b2f4ac1fa11fcbb7d2e490f3c",
+        "a": "fb1d4cc858d3200d20c06e23142d4cb19adb955e6a4fbc581d96778a973d7dd0",
+        "loss": "fd06ece19819a022c671ab34aa0bf0a315a2c75d2d1f029b2fc61d5b4e553244",
+        "r": "ac7a676d78ddacd1c94858c6d7966cde358e83e720918295783c1387c3bee9b4",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "ebbe7ea8269f97d10acf33559289cc5c8bc9bab7998411c049d13a0c65a1fa73"
+      },
+      "label": "PINN with exact BC | seed=1073",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "147_pinn-with-soft-bc---seed-1073",
+      "hashes": {
+        "F": "a73ac59aaadb17ea975868197a88d0783d4b729b803732a959bcae50be726628",
+        "G": "6e72a262c2e2f64a01c2191ae4209ce8b3c77aac1fe65f5b2eb185ce63f81018",
+        "a": "6bc07d367635f3abf2ecfae4884b310fcbbd2192295369d5e26237b76b0a465d",
+        "loss": "7200fc8bd9e5774f52342c796f08901ef7d57449f6b44e1268dc509f4ce1376a",
+        "loss_bc": "d6c3bd878aac931c89f47d791970af08cffe7cb705b7766d7586adb1ae4bd331",
+        "loss_physics": "722880234d89333f1e6b50950de5e23c8410d9d809bb0fa35122dd2bbd6e112c",
+        "r": "7c759d82f116030251910eebb8d4981c08269e52f6d15a5850894c2dc8769524",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "08b5990219c327d9abc2bc90ca2e75ab69aa4eeaccf5a8199c3c7a75e72d09b3"
+      },
+      "label": "PINN with soft BC | seed=1073",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "148_pinn-with-exact-bc---seed-1074",
+      "hashes": {
+        "F": "d4848e3283a8e89fc0acbe53d2f66d8695b101627102af1eb9c8eae3fe32c5a2",
+        "G": "aeae6b18a26b6ce24af919c07dff0facd6d100b1e7ac3663e023bf275e96f1b7",
+        "a": "17259768672fc3ddf2e2532a7e9bd60d781f08bbb473d36ef68109c3458d3113",
+        "loss": "34ed60e5c0046aa060bd7bbb1555fc9254f579b8d6944649cbfbcc65f152007b",
+        "r": "4ccd3248c6e8aa37f0f888f56c423a85662f96ed04e61190d998e0a499ede2de",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "5f7e87158a701f24fcec06a19f0145f6e0b3cf7782a1dc4b079e2d9e9bf2ad9f"
+      },
+      "label": "PINN with exact BC | seed=1074",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "149_pinn-with-soft-bc---seed-1074",
+      "hashes": {
+        "F": "002afc7497eab51dcace9fff63fe4f0e1a6d90019d24f9453054c2e036bb902d",
+        "G": "68f064754fdaaec5d63318feaea0853ae1aad96a3300f45b58dc227b2bfac5ca",
+        "a": "8abb75e56026c46da3c83c98d3243d72851ee7313265de1f71edfa2a79fa8564",
+        "loss": "c36fcadbc6624aeda36377b3cb6b0fc19e52713fdfecfbd2916e81310864dce5",
+        "loss_bc": "cc48d1ce85a301cb843b75b6a6bdf6e28ef4d173d57951e7d730ac5da240bc87",
+        "loss_physics": "6e126a2a92f8624083837777778b0ba87c98395f8c3ed952a13b96528680243f",
+        "r": "058f396ed19df95369b4fd32795494045557790c01505323eead8b4e97ba2893",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "49fd8e9ec89ce056a174302cd35a4a08abde2d79c786085859ca145b8873d945"
+      },
+      "label": "PINN with soft BC | seed=1074",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "150_pinn-with-exact-bc---seed-1075",
+      "hashes": {
+        "F": "796c528562d4402ff12d04495544e0c0063231afbaab7df530d41da6c5296e80",
+        "G": "ffaa856441080fd50e7c69396c29259651ebcb2a1e08765d6b6d4dc875766588",
+        "a": "12ca27a5acd00163dfcb4c09c3071eb5dfa9d87895c8aed50d0553f58effb234",
+        "loss": "e109c316a2e5e30c007c6fc05f9ed3eb95a010fb0e62c1e98495500725da893b",
+        "r": "f18f1768bcdea3bb5bdba590115dfead2a67e3939414a9aeda144a0a7162a91a",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "85e65a64d025524814a6272fbe65c2b2ad0160bebef8d8b891109c2616f865bf"
+      },
+      "label": "PINN with exact BC | seed=1075",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "151_pinn-with-soft-bc---seed-1075",
+      "hashes": {
+        "F": "df88ef7b596ed893b6d929b81645bfd64016673ac435f6f4fbb4bc4e453dc7ea",
+        "G": "13351bb6ad5d639beb409d0a549dfab594e6663be8de0c4d752c49e5e1ca4f08",
+        "a": "c2217ba36e68873e25f7a5c4857faf9cba6ed7c624c09c40d01e58e8b1120899",
+        "loss": "279a023cbca854cde46af5a5b63fb071224027e7b4ed3368e21f59551e28aa87",
+        "loss_bc": "b835c73d3041fe8ee3474b4a61fce650ccdd874114287c216847a84217f4b8cd",
+        "loss_physics": "4d9332dd51f98620d995a35241789134c91497c17553ebd79c4312e36fbe9ba4",
+        "r": "a7a67612f86f0fab77703320c1c33152eb722e42805056f9c2c3c0ad37e1c196",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "9e3b87406c523cd2f1d0e49bf9cf78a9210faafb94128d943e9e4b8d15b83fff"
+      },
+      "label": "PINN with soft BC | seed=1075",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "152_pinn-with-exact-bc---seed-1076",
+      "hashes": {
+        "F": "56990b45f2aa0ce21c2b040fd768f76d2eb9a8e73857f882e4a5664237e4833e",
+        "G": "38a140b5281c1c9794174af232ee731a965f88bbf27d3cb879db1220f5db3689",
+        "a": "f5bcea240ef23a842a321d4b027f95bca2f5dee5330b934d033a7684ed103baf",
+        "loss": "d88036f71b1fcb2522165cac7cf72b6077347f62c70196326912db40d554ab5a",
+        "r": "ab1dd22fb1a142871ef8caf4c384b6330311b7be42cd1dd7e2e0a878974879fb",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "18da32387558e35f8f9d6a6c8e57ac382e284f1b216a3721a01882eb4b5ea433"
+      },
+      "label": "PINN with exact BC | seed=1076",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "153_pinn-with-soft-bc---seed-1076",
+      "hashes": {
+        "F": "678b8c97b2d21e71b58b2bd4099e9f8fccbac47f85d00b3bc88c77529e77fe2f",
+        "G": "b9af840739ac2c70c3d1961ed0d60091cd9e9e00bb2ded27cc549cd1fa6831e8",
+        "a": "bf79ed317ab1fba2bc977fe3c4e0ea04c20402f3c107918e8970129d06ebdd4f",
+        "loss": "056f9358a4cd7363c49821d6e7554f2774634962fc6c2c35a9b9c644ee54d1e7",
+        "loss_bc": "c200214883b388817cae184dc13dab65214605649d7193ee062ce76616fd167f",
+        "loss_physics": "7fadc2a693fac59870a061b93236272afd565cc32fcf0e80f500e1e59d562c5b",
+        "r": "ff9322469f20526410f815bd1c6a7581006ef0aacedf0899032f32797b4745a1",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "1067f605e5dba49640a80d41ef98b7636609907ef42d5b375fe3178eb3fd6983"
+      },
+      "label": "PINN with soft BC | seed=1076",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "154_pinn-with-exact-bc---seed-1077",
+      "hashes": {
+        "F": "bab22096ae3051ddf394cb52f650579a2e1e961dc10d56ee7e34b4684c2a5827",
+        "G": "db5a4965bdd5a530211877f64bb81b67568d2d39b93b8d1c9d3851313b41d27d",
+        "a": "c3f66007ca0f970b353632f50ceb57380f36266c5cf316e713418a6bb94e1060",
+        "loss": "aff4a9fe268d7957f9b469b856713388e939bf10f58344205dbba8dc3d96a428",
+        "r": "dfd9b49c8890680039a6e0225989bb0f71be178ddde38ddd973531765e2a6a83",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "ea0f192a5026280a9b1b1f73af0720b4e6d356c49a8ef0ed528704a567141b07"
+      },
+      "label": "PINN with exact BC | seed=1077",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "155_pinn-with-soft-bc---seed-1077",
+      "hashes": {
+        "F": "6fe7b225dff0cb67fada58f8d27f306433c062220f7f9c708ec57593e0022792",
+        "G": "fe51896adb19f021ed92e333e8dc2412b0e62f5253af4fa730c02df87ba7a963",
+        "a": "104a7359c7b8c82296534cd180da3704db9e8588fc39c7be9d1094971076b22a",
+        "loss": "4476c11d075d744a10573b20157f1b542a753421b2d39201a1369fa8252ddb50",
+        "loss_bc": "a116ac012519a1b382aea6d8cb4d4db1663ad390184b1c104304bda2109cbecb",
+        "loss_physics": "a8c8241ab3baac769d856b409339d954e86ac8a6219dbc7b997dffcefda3aa12",
+        "r": "b7ed6003691253798dc80cbb1d3f373989e6075fd151d22ce81aab89f7037d9a",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "9a1faf3b85cd118bc51891f6d3e28ec1ec7332e3faf9efbd81b7a76df28fb8c3"
+      },
+      "label": "PINN with soft BC | seed=1077",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "156_pinn-with-exact-bc---seed-1078",
+      "hashes": {
+        "F": "71300d8d1def8b3fa1239ec1149eaf216ac640d598cc386a133df14580ba6eb6",
+        "G": "8a766f335ed147e03816f44e6ecfd8c10f09dc3a7e494345792ae6bf1078a3a6",
+        "a": "b74104d7805cebeb23f82153c6431e05882da243c40053542a6752748b894958",
+        "loss": "13eff54391264f1392af2ed4f3613de1bad8be13d65d6b707ce22fcd176e762f",
+        "r": "7a7ca37a1255b5b1ce4fec9661ee3d57031eb76675c15d55be63e510222edf42",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "1dc1e5223a7ea96276e471c46ac1a3b729f1460c5e734d6c48ea2432c09e1f43"
+      },
+      "label": "PINN with exact BC | seed=1078",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "157_pinn-with-soft-bc---seed-1078",
+      "hashes": {
+        "F": "5c225c00862a3159a180f0f99a43596b26e51db7a6497a4da463985f68d09b7b",
+        "G": "6bbcb68d551b4f313b4eadb0529e18ba4983683a5da467048928295db7f40313",
+        "a": "55ec521c4c2bdf12b1985ac62b821af913c85beb2099b90a8336163ba298e721",
+        "loss": "1503cb063c54c1acd084eb3d01d01f80f1c332522abfa6506f09521e78d3c2f5",
+        "loss_bc": "4f93f3caeb6bf2c868cacbf50b0b9bb154716c9b6dc457e1bf9dc8e8b09bcc0a",
+        "loss_physics": "aa526c537f5aaed9f35be5ad33902b464d769f2beeb3a92c77995570ccbc6c21",
+        "r": "8a23ccf30614ec2a8a7f301c9f519c759a9560334018baed101821cdeca979c1",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "fa27a0289ae208c4aaa4c130e5c873cb552d4f7ad9a165b7d5fb0174d13632b8"
+      },
+      "label": "PINN with soft BC | seed=1078",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "158_pinn-with-exact-bc---seed-1079",
+      "hashes": {
+        "F": "687f7ad2c0c5a517ec8b7f5d1eb7a0cfda11177062141ab2adb7ff27c228cf0e",
+        "G": "7697386d856bc97549f211ec1edb1aba25a97b7b00447897cea6958045e69335",
+        "a": "8303d6360e72b9bc9a556a9e1cdb5fd99089397426a7e806487253becacada1f",
+        "loss": "dc2b435c1f0cad8f28d537832e0a8ededb758b43ae4828fbd40e9eb86343d942",
+        "r": "0ed45a18fb425356e74d4419d35b1cfdd1c44a98a638158f3c784fbd2335e5e7",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "edb8e28e6e737a030ef57ba93ec76f7e10121e4bf2cde1ac3e787954a86ad6b5"
+      },
+      "label": "PINN with exact BC | seed=1079",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "159_pinn-with-soft-bc---seed-1079",
+      "hashes": {
+        "F": "6ec677351ec83e77aaf93d23406f44b2c80957e76210d434b6e4f6b80fa48edc",
+        "G": "367cad892ba8014bfef1db4e2058e8a66760c687531311b9cb93320caee49fab",
+        "a": "1d52eb8755acf38a5a74e26bac40f3b970dd40a634a3e55b2c72bb17a05063ea",
+        "loss": "f5bde52f98ce1dbea4044d00cd4557a4af84f3140cece71bf0f7cb336b1e3276",
+        "loss_bc": "a99aa4429f7e867e4fde61c48b56114ea416016c99d6ee35611479de63259045",
+        "loss_physics": "0be2aac4afd516b4c4d86201825a394cd9b52229850625c9ed84a4c3e78095ee",
+        "r": "b9b170f4c5b37e95af4f2124f01640a3598d5fb188ee04f3f52d6bcf032991cd",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "5a2caa8a6a6af87881983285490666bf81999cf9c562332665f56e37aa8b4566"
+      },
+      "label": "PINN with soft BC | seed=1079",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "160_pinn-with-exact-bc---seed-1080",
+      "hashes": {
+        "F": "b57f3a329d48862ce02f9615e15f0aa13981e7ee7de12dce2b028f6424bc3d36",
+        "G": "08f30c2b517dda50032f7c4d750c5818508841763fda9212f091524338a17af7",
+        "a": "498bb74521a0dec4495f93a6dffded054c0713445ad316de1eb4bba11df8a44a",
+        "loss": "197bad6bb51256b1b4f30709525e9015666aff010281088f57678ae22a7ddcb4",
+        "r": "c48c68f6898f9db374aef52135a2ac455c85637297210ce8b6a371be2ffc6e0d",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "c75f82de7d2f34215dc6871110735ae783484d774542d92627950999b2384064"
+      },
+      "label": "PINN with exact BC | seed=1080",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "161_pinn-with-soft-bc---seed-1080",
+      "hashes": {
+        "F": "cfe76e498500adf84929d1ca1633882e846fb4576a722e97f8cf5ed3ca54084d",
+        "G": "a1fb1c5824b3f0c968a44387224bd36a97899db0e8695516645fbac214026060",
+        "a": "235bb585056ff4972b3e93bf1959b053e8a541fe2c3a8f22969a0f0d06f54b4e",
+        "loss": "b9a1153405f813ceba20a778750a564335d3e5fb22012e3ec65d0fbb071915f9",
+        "loss_bc": "f99d6be9b47a21258549b7dbcf67632999ad4e49d0490cdbf84275ff0d4bb66e",
+        "loss_physics": "b7e80e173f220e564429786926dc5d0db26786ce85a56d889561a531a4a707c0",
+        "r": "32112893d311e779c38548ea7dae3285b7b6754dc98f83ec115f1f5e7efa232a",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "18bc79581453ce1d4db03235c827f81588c5356188f24a32b061e3a4da4f4138"
+      },
+      "label": "PINN with soft BC | seed=1080",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "162_pinn-with-exact-bc---seed-1081",
+      "hashes": {
+        "F": "e25520da36a3d9267e350f42414ac37f6ffe58e8754720d010c2db0016396eeb",
+        "G": "0137c800719c4a5ba42de8c5ac45c203768f7bf323084665636adb4083fbbfb0",
+        "a": "d5d84df7bf13adc3b36b998d4cb1a6cfc894b92d327fa25cbe393c4d2ee18bd6",
+        "loss": "eb45e874b9354bce6c6bfead5b31c9a5f328b04ff4f1bf34cea4f2cdb33a0c03",
+        "r": "2710b73361a75ea2c402e5c5fd0af0e5e567468c527b77399d69ee00d62129ef",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "60f252ddd2bceca6eda05cea15dcfed4bb545083361a09f90b7052dbaf35f0bf"
+      },
+      "label": "PINN with exact BC | seed=1081",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "163_pinn-with-soft-bc---seed-1081",
+      "hashes": {
+        "F": "3ee6ef29a1554a725e0095f1ca8d3bbdcea7b00c87f00197694f4f65491bce45",
+        "G": "ab0d28e01022cacf8864c2d801f5c4e6b5cfd04c38eb56dffa30e9ac852ac0ba",
+        "a": "31515c79c69ac0f883f93ab839361d991ce9cd1165dbf979c20303b5463faf3f",
+        "loss": "540768676486fca035473a34ef432da78d1d69e268f05119e3d53888803836f0",
+        "loss_bc": "792fbd968aba579cdb8887d9ed0cb1b905b4b5fa084c409914e8bf1fd469b516",
+        "loss_physics": "474b743b685491b027bee913bc5f791212373935fe3ff78b966a454300d47618",
+        "r": "a646cf20d24dd109e5cf0295ee4e6eaaee135db9192b4576c6f08b4fb8bd5b35",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "c2405edbc3e2cab387b2c6704a10b6368e0363b7079035acc738fc62577e9721"
+      },
+      "label": "PINN with soft BC | seed=1081",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "164_pinn-with-exact-bc---seed-1082",
+      "hashes": {
+        "F": "a2370e6c433d556d4927f4f73f064d873fa33100b9be559ee8a617db92c9cf20",
+        "G": "8c503879e63bf03b1c88e905202064f77f43f39453a787edba887daa4543c7f6",
+        "a": "1506b9e3d6ce92e61254d4e945063804a80c6dad3916aa01ef8d621ae34b8a10",
+        "loss": "ba29cd99ed2487661a3edce94727d8cf5cee3ee96e4e0f1f06d8075072ff134d",
+        "r": "d22ee7f72ef5281fd7ad8eef90f657e7a18054e50f7171dd6d6bcb0c6f0efbfd",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "f60e87d49db312f6248e16ee0443de44b80f8ee4c2d0be92cdfe7f9be2c0a07e"
+      },
+      "label": "PINN with exact BC | seed=1082",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "165_pinn-with-soft-bc---seed-1082",
+      "hashes": {
+        "F": "5f1d7b58f79e1324db71fc72f71850d7a7e3c8d5ef47be8262d6f463cbc6d181",
+        "G": "0a3478f5b4d1164de17722be7dd647f3884d543ff6881d8643b790dea606e703",
+        "a": "e83f347ee70392f33fbcfd7f689058ce53a6b82f843dcdb70becf365b1ef795c",
+        "loss": "f6ae49f0854e01ef4576d0939ce963af60f664e77cf9809b9e8d7c843f4ee610",
+        "loss_bc": "04d8859cfd20cfc63f7c128527f7d39f362de7d1af310af44cd9203eece5ece1",
+        "loss_physics": "066b438a5fe55d93b22a865c5c13b8a91436f50accc119fdeecaf5094db56e1b",
+        "r": "df1a9ce88ef3457a14a44bdd3ae13749ee9f34cd711425019574a12e798783d1",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "316c686f05c9eefa48e260713c417f88fa3ffe1a0b9714274713f0f44f1f24ac"
+      },
+      "label": "PINN with soft BC | seed=1082",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "166_pinn-with-exact-bc---seed-1083",
+      "hashes": {
+        "F": "6224e335da5e0e78cc86547a8002976a5029d2b26b52b1128899c3d18ce6c52a",
+        "G": "e409e2cd467775b585547b0fcf5aeb8da76a30abe3a1e3c74c129064175dd032",
+        "a": "6c258ab5d565413ad77f55f333988c9599b2a65338b12febb0d81efa82f153a8",
+        "loss": "0638dd4e7ac9dad7fed0a96050ff550cb566aaf1cc5fb096af9ef7f5246c97b3",
+        "r": "7111012973e8d9afc8bb532542546795e54244e83f3cb60bc4b44488954a192a",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "06f20475c32e2bf0a9072d307c114575f3e556db5f59bf74d45307f2e312ce25"
+      },
+      "label": "PINN with exact BC | seed=1083",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "167_pinn-with-soft-bc---seed-1083",
+      "hashes": {
+        "F": "baf21dfa80f0287c1dc46d07bc81aa8aa86ddcaf511d13694bbfbf2fd2cd908c",
+        "G": "018fefde17cf57c8e131cf10734d2a6ef47f53d1a2fea296d9d9d01d3cf37b5c",
+        "a": "02d276fd887e784786e33bc99fcbf831c1829b69e0311c5fb7e4bc45d056fda2",
+        "loss": "db8e1de43b09b6d33dd8a1f17ef882ed5fc09273f4365a7304d1eb9e346c4cd0",
+        "loss_bc": "28ebd940674fb4927bb3595de39f45d593ad8ec3b779876b7fc16a568024f696",
+        "loss_physics": "a89fb85e50ab04d3f9d0cd9a2ee7f9ecab45887a838651ef0aed0e97ea322043",
+        "r": "e571b76b490cae98001aa00b7b9627080f290273c133997ba3dccad7e2337664",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "d89feb5761eeb1477bf639faadafc782004dfead77aaf662bf3e0659b946dff3"
+      },
+      "label": "PINN with soft BC | seed=1083",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "168_pinn-with-exact-bc---seed-1084",
+      "hashes": {
+        "F": "f64d4e3e75250507c3fbbcf1f7458cda48f722836c4a1ef361dcb3a5842909c4",
+        "G": "59be2c6054607f9ff91f85dad410e56d61a08c06b9450fcd42a2c99892544248",
+        "a": "8030ef9356dbc449485d268e29c7d5edc3d77b2be288f73dc22129dbb483401f",
+        "loss": "0f93584d68cec477941933a4587a4bb336e4e599ae075ef7b6482d0632c0cf74",
+        "r": "b0fef7f742334550075a45d852407ea289b70cd1035a94cec85c67f77d0fd8aa",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "8e9ba5fd4dac05d3a6e5ebd06703f3564ed8ebbf84e4fac242c539fc1e74347b"
+      },
+      "label": "PINN with exact BC | seed=1084",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "169_pinn-with-soft-bc---seed-1084",
+      "hashes": {
+        "F": "f12321e4e90b3126d7c775e29d8ec15c73e36e6b7aa7e47a33fd01c0a35e137e",
+        "G": "c13a44260bb91027c9e93869fe27578f0cbd59133c9dcfbd5d451af2bbf1a83f",
+        "a": "0cda3882487cd4e40aa900c9d53e4a53163ec3157ad29e02466c12557c167dfa",
+        "loss": "a9430cb735a9ae3f36bf6038599aad89aea181719cf476de1fd0d0463074bb4a",
+        "loss_bc": "e70820834ee9bd72243d5879c0191af541db78869780762699e6e9d06563d7b0",
+        "loss_physics": "77fcbc968a947e0e19503d56f80001db8b09d834919082bed780781839af5d31",
+        "r": "2e391b54e876c9445b61631f4075d70ac939f2f4d94a747066d7aa1219691435",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "65bfcaf03ad5bcc2738e1bc47afb0fc2ca3d519b4b073a6c0136ae1fab7cd2ed"
+      },
+      "label": "PINN with soft BC | seed=1084",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "170_pinn-with-exact-bc---seed-1085",
+      "hashes": {
+        "F": "1c84c990bfa645adb9996d3da5269112abf8928c70a94153cb51f8c685e41f19",
+        "G": "46c1d546cd07742166729d40e9c719d4759b851662fbf1bcd3d264ed02cc4363",
+        "a": "2945684491234f1b403185d909a5562084fbe45090da06344b7da6d0b10a6f8e",
+        "loss": "6603ad912f7a98b338cd3f66d898221a73ab9b85e8256205ecf574f2a4309e6d",
+        "r": "609e2fbd6e3605f813954f43c382c7c7e697d93830d2e5c7d90c7398ae6ff874",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "c7eca4bc88aa83f813444bfdd276a979d2dd48bd1a191104593071ab59297cef"
+      },
+      "label": "PINN with exact BC | seed=1085",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "171_pinn-with-soft-bc---seed-1085",
+      "hashes": {
+        "F": "0456a28528510b3e0e3b3dc032cca7f6f60f70b2975f968a05b8422895148752",
+        "G": "636fde08daf32680ffdbad5c9b8404d9e7ca1e73696ae97dce788014b4fd0054",
+        "a": "6e2317c191a68af8773be4ea2f06303b56e5e1f9a573852d27209232905f4476",
+        "loss": "561250c5094bce47d6ca44fa2cbce36c55590d034fee330b23accd14a01d503f",
+        "loss_bc": "4186952afbe00a30e978363bfaae1f930d7d1477e33b28309a8fd8293943dbf1",
+        "loss_physics": "ef6d8704a032f649272ea7f60adb5928ddb8e9673b63f00d58ebf5c90ccf7836",
+        "r": "f7de9fc277463bce2c4a58e262c72df7a3c08a7b05ccb0815e0b1f2d9f8f862d",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "4dca04b37fff9fa3fe08b918a8a4f7bbefa91bd3ca4720a31c8dc6592a2a712d"
+      },
+      "label": "PINN with soft BC | seed=1085",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "172_pinn-with-exact-bc---seed-1086",
+      "hashes": {
+        "F": "70e4678daec4726665e64444cda24b19376787037a66a0685d5c9374f1013429",
+        "G": "1f5d4a40c3a47fca1e5df5a9ac5a19b515ea3f1d7c4d44a320e76765fa28104d",
+        "a": "d61fb20d11f24f6133fed580503fbe3f8dc65628342149f288072d987e5025b4",
+        "loss": "6745b639d00d889d77eb2196c963e423529c1481b6b614c29a1cccf21a508cfc",
+        "r": "72682fc29efb8fda19e72bcbab22698f2cb2f4880f8ad1150ed9e29ef9352cfa",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "31ee6939842a9b4af85927fb4e9c5d1042de0f4e646cf78fcb07187987a1cb5c"
+      },
+      "label": "PINN with exact BC | seed=1086",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "173_pinn-with-soft-bc---seed-1086",
+      "hashes": {
+        "F": "cb829333f1625c3831ef977ad7a8c3942067bf360f3d34ad5720bae8ba4f0e02",
+        "G": "c6ea8ff0db371756440b4a6fca9bba1a9771ad0db2e59c7118e430ceff7d7700",
+        "a": "f2b2945b25e6cf9ef0c0fc1c0e1e835bbe13f0a287a59733000160707250faaf",
+        "loss": "0d104c3fcb6bbd4ce5ec683786d158724ae0e3bef3854027e38b571b5ba3ade7",
+        "loss_bc": "9e9160ca50c0158e73737858a8c08d0f2d7890424bf4ed33101e94ed4921a7a1",
+        "loss_physics": "998b1067888b2672ac02d5ccbaf6f5510d4258cbe0317757a42c114b571b748c",
+        "r": "7d9c775a2d9cc389c183bce1f82ea46c5189ddcaa190918e678fc09009c1bde4",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "6a6781a34a691a5d472494f3b3da19bf13f3b0b9cac72de4a37d873262e0459a"
+      },
+      "label": "PINN with soft BC | seed=1086",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "174_pinn-with-exact-bc---seed-1087",
+      "hashes": {
+        "F": "47fc8b6ef5e659ab90939680833f8f4b13d26cd000546bb141ee61a3c1bdf43f",
+        "G": "4691fd72f729aa9f7edd01e5c308a7ad0ad33d809ef8e878dd872e604c03547c",
+        "a": "3306a84d7651897e25c5381d35e197e0a1900edf88bc5963aab332c26af1a564",
+        "loss": "f4ddc13901fc948a279762126cfe79d3a7270ddbaf5369843aa7ed89d18106b3",
+        "r": "c19f7c2f324edd01e58ad09b536e943d8071de6ca476b912a998aab907f3f2c1",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "9443027b3109e36a7a80ed7bb572fcd24bdf4079002aa1aa433830cffad2aae2"
+      },
+      "label": "PINN with exact BC | seed=1087",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "175_pinn-with-soft-bc---seed-1087",
+      "hashes": {
+        "F": "1b9f1c7f56f1ee04a731eca64d1ebcbd1cc21e6e8c0a5b6e4601ea06904a8367",
+        "G": "3dd375d234e9c420c5f16e60e754ae2922de18e1f0b6c53254defafa03f74108",
+        "a": "b7c6985b92719d580b42c8d7373bc8eed8b96e8f95579bf514aefd388605a8a0",
+        "loss": "99f909cc29cc44bdfede56793aec0d70fb0f0017c2be1532bd177bc4ab079684",
+        "loss_bc": "85ebf7bfbcecee712963c6dc62591727d4fe633b90b09fa9c45dcabc87026999",
+        "loss_physics": "1e930d5d73fbdb2014d40d7567d4d8b6363311bf3df4af3debff680e6ca57566",
+        "r": "e1371e6c37595bece01997443051a124c035714d3edb35305af847aa42c37870",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "ff43ffc017e09a89ca101a4cf14e272dd7448172ab76a5d8318964e9344879ca"
+      },
+      "label": "PINN with soft BC | seed=1087",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "176_pinn-with-exact-bc---seed-1088",
+      "hashes": {
+        "F": "d3c685d1fb4b259167861517a69d9c46ed5ff130b45c0868db01d59699085e6c",
+        "G": "add21c388bd95270cc97249558c6dd674799cab3ec2bf1e12658eef1ed307635",
+        "a": "1309b4c1d578091af1ea9559163676afa2145c8afb85fa6a74d5598c6a6f4099",
+        "loss": "e3bd5db7266468498f24490d0d385133b530ca2b34bfc6e7c6c086c4f73e1900",
+        "r": "47adf37fad13a17fc235b6c757304147f70fc07b773a875e2c7700cede34a328",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "3d8decb2c31c34fa56b049d14802c7d5921dc8525579a806e68a5e9a942a48a7"
+      },
+      "label": "PINN with exact BC | seed=1088",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "177_pinn-with-soft-bc---seed-1088",
+      "hashes": {
+        "F": "82b6383d0e639254a91d299cd1e762a3cad9de10e148394bd870ea63ce90a048",
+        "G": "724c3d635340ab9e9af43d2f7d43bb09cdb66fef61c97ecb811854b4ed4f1599",
+        "a": "83beab08ec9bcf6d6064804cdecbd84b066979408fdb512d898623a2e2b99e11",
+        "loss": "d9a7a9deca712e1b44a3a6dedf89c7da0ca08954929480dcb9f68c4470f12872",
+        "loss_bc": "72d1e9aa7fb46b957973f388f5cffd5be9fa7851b29a7ea8365981d57f3a0324",
+        "loss_physics": "96cadac9a4946aa216defcc88c5c38afac208d56d7bb61ea5b5fabaeb6479cd5",
+        "r": "811e834cb039d8c10a97e1f9ec4adac7bdaddd0c64ec8c8a3bfe4bc88a78e649",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "88dd53e2580cc6b91df4fc7e6b57f3516055893b56d7b1ccadb197a13291df48"
+      },
+      "label": "PINN with soft BC | seed=1088",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "178_pinn-with-exact-bc---seed-1089",
+      "hashes": {
+        "F": "87b431fcfc9810f699b0b4031fd327981634a536fae57223f9d86598c41a7491",
+        "G": "749ff4ef48ee743d2c918f8749f7b4b19492bec3fb0b24d6b0e766f40d35352c",
+        "a": "56558496849356e590f3f906e4c3a7ec1e6e21aa6644e8beaa9604d751d5c2bc",
+        "loss": "1f32b52bdfc8e70a7991e65d6b1c4ab9a381efaab22adab77f60312ab4c5f4a7",
+        "r": "a3b7c1c9e057ef62099419808989d761773abbf2122f4d68e407841a3635f0c3",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "a92285531b8f340dc04e05244dc383ce0c7a138b3c509c52a1badfd1c77baec4"
+      },
+      "label": "PINN with exact BC | seed=1089",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "179_pinn-with-soft-bc---seed-1089",
+      "hashes": {
+        "F": "dbe19b77790166d632a2014f2ca8d845cf8c666e55fbcae2b00016c22c7b3a8d",
+        "G": "1eacdde4be92ed18cfd47f6e9a15f1f489d867f1c4048b81ad75aa926a571405",
+        "a": "2685393733bae27c670324718d0648eb399dba2f22773fe5cbace639d864f1c5",
+        "loss": "51d43221f6ed980777a20da036fc3e59c2e80f28ef0e36121897fcf86ba5c9e0",
+        "loss_bc": "63b90f0b04940d9adf3b0768e6a7afda2d40f5b84a7e07a49d248aab4285fd71",
+        "loss_physics": "d8ef1fe69562e9f43a2029124d0a1a31b2bfa1a57d07bfa1eb8180d4a3b2d88f",
+        "r": "85a7030ab139a53fc2b0fc662fb784e05a521107ae33844f08e7e74fdd02a630",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "cb5100946388b94e16619b57158a6337943397167c57097009960f9a978422e4"
+      },
+      "label": "PINN with soft BC | seed=1089",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "180_pinn-with-exact-bc---seed-1090",
+      "hashes": {
+        "F": "fe3aadd0402d7ff6edaf7efba85b88f4a012bd55cc3c25f139d09f2d2fb24633",
+        "G": "9cf28cbd75b1fa49b1129bd3a494d9889c6e974cfdef5d7dab2290eb261ae866",
+        "a": "5acdce36b641555e410be9fbdc60c562a64d6971b5cb7e22e7b44fd8a5829956",
+        "loss": "75bb2c6cdee5af3f68acfbe1c513d0cc6dbe73216ff0ed2e2379f70ffacdac30",
+        "r": "c95de488844a03557088528e1bb3a2373a5651f0f3b0c295a17902509865ff63",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "ee0976c56753286ebfcd5cfe339b32c096fc53cf9053bbcea17b3f6b3c8e6fb7"
+      },
+      "label": "PINN with exact BC | seed=1090",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "181_pinn-with-soft-bc---seed-1090",
+      "hashes": {
+        "F": "a28e18f2ce6dff887503c58ef6227a87d70fb2b54971d8ff967564655dc675c1",
+        "G": "fe9ebea85b9db57f42a78e64dd9bf82dabf6af8083edce3279d1c5e049f0bab0",
+        "a": "6388054ea2b13659853daa17142527b49ffcae0d3374503935e28da151c368b5",
+        "loss": "72fc24a521ef8333e2fa6273e6c6934f865a00e55adc59f79985300cfe442959",
+        "loss_bc": "06672fa84e8fb0253f7f5125cf615bab57d3ea1d6566302d52e52a9f6d0ad214",
+        "loss_physics": "9323acaa192977c04b3029c0f7075890c7a88c908b2dab45f22dc05907c2b73e",
+        "r": "3fc4ff797673b12ab03f9c5f223af3d365ff72b44d7adfdc18a699f4e7141670",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "8d2ede19ed64d6d532e708a8327939adbc3dfeac9643d73489bc7a38f4d285cd"
+      },
+      "label": "PINN with soft BC | seed=1090",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "182_pinn-with-exact-bc---seed-1091",
+      "hashes": {
+        "F": "17cc4d425100ee6252a07443b4592517967b102f60db87a6fa45faea530e41a6",
+        "G": "7cf4b72dfed9766000db25e96c668fff97cbd8556bbd5cffc1f42da284a60f29",
+        "a": "1f76573f868eaeabaab7dcd16f688c09c144a0bc27ccbbf5c87174f7c390324c",
+        "loss": "5c07b58a0e63be1ab75cbf24ae951696039cf113fa2459a6a1622049a8f47942",
+        "r": "0dcfb0c42f99a1188bd6201f044778a705c896ef4c2221d6afb3f68b60e5482a",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "fc9364e324792ff5691ef3365c1d015057f3fc21dc3f2c9403c8f7772ff56527"
+      },
+      "label": "PINN with exact BC | seed=1091",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "183_pinn-with-soft-bc---seed-1091",
+      "hashes": {
+        "F": "936facb9906cbccc65a4a33a22db281e4e6ad78fb2c142ea3c1b3c1c5e85b616",
+        "G": "efa4deef91e3abdfdeb32b17dd5caa33034c75fee3836437572fc5dcd3c31054",
+        "a": "fba7b2759c3e594b545c75766155a57a589afbd1176a5f42de8a9c71ad24af4d",
+        "loss": "f3f4c281b7a245b680ad06e6b83bc077a8767439da0a7f88fa00a55c78a1f5cc",
+        "loss_bc": "bbe78596477cdfa8c10402e10578d107c11a74b4b02ffbc253e2d16e7fd85269",
+        "loss_physics": "5555f918a858fc741752b5a13a37f0fe83446fd382d06df986c009af858cc03d",
+        "r": "0b28343113ee834abf8a9b39cb01878bf878b8e1989ead1719bb4ef077c660f1",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "e46d55a1bbd184294b25a056b3af9c5d849653afe47e0d27a1124f88f1affe92"
+      },
+      "label": "PINN with soft BC | seed=1091",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "184_pinn-with-exact-bc---seed-1092",
+      "hashes": {
+        "F": "4b0bd744ce45d12398d0f064ba2474178e2500d881503d9a3e661f3bcd8b0f43",
+        "G": "67035085c823a887b0453140dd715fc32e6efbec5e836232de16845f94226aac",
+        "a": "f1bf929ab4ccbf62f8c1b7491a819c16d1683a3158c928b275dfea0ab7e8ce4e",
+        "loss": "f1501dc0bf533dcfbe2fd15d7a807de853dfc5813290243b48baf99e8a3f887c",
+        "r": "bbbfc2e7f110f6a390bafe481a13aa939044858ca25f7c292a1a7a0036ffd36c",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "a2c1e56f2634ab99616b8a45631bfc83095889b36fa1981f3ee8b665d58f9b4f"
+      },
+      "label": "PINN with exact BC | seed=1092",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "185_pinn-with-soft-bc---seed-1092",
+      "hashes": {
+        "F": "ec9fffcb25ac57f7665697ee4c8451b48e73487670f0e900fec99d44e6bba7f3",
+        "G": "a17bf2c8d789f146e006ab2aee63e135d4cad254dedccabe29811426072b1937",
+        "a": "f004e070924c6e6c8b68e811bbce540b01d331da544ef67b2cbdb9b8842bd260",
+        "loss": "0bbefc5f07545a9182de9f910d889d6665c19caf45d3f0f48f0d6392ac3c1b2f",
+        "loss_bc": "8c3a58399adc86faeb5acd9e51988b20f5ff6866bec6bcabdbcb4c19e0a1843e",
+        "loss_physics": "bd6adc0da040f16e1a86667fb99cd7aee625c6464fc3002c8b84026bc4419058",
+        "r": "9d2ee4df40dabb0b6448cfc82e034eb13ff68201f7498b25ec16f23fae505563",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "c775bc1accf49e1646fba84e801f3bb41215105a615446c08c258d940e89c026"
+      },
+      "label": "PINN with soft BC | seed=1092",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "186_pinn-with-exact-bc---seed-1093",
+      "hashes": {
+        "F": "84185a75ad75dfc5467653db8059736849614ad33533c09c3f230840667b2399",
+        "G": "ef8aed425e8a3382abf0eb567587d1c75e09a706b29a052c5f954dae772ea298",
+        "a": "411e72f2db2a19f4be24477e02cc9a8c62fe109acab0827290f54e5ae73fdf36",
+        "loss": "bff8cd607c4cedf07867801128adb2169d292210dfe4b532bb9ab4b14044e26b",
+        "r": "47fcc769a52f2b5af9eaa291768e470bd937441ff7d171dc8f068c42be407df6",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "195608ff2f89cb41a02701dce89ea0d5f68b661e5e89b42983519e82b6532cc6"
+      },
+      "label": "PINN with exact BC | seed=1093",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "187_pinn-with-soft-bc---seed-1093",
+      "hashes": {
+        "F": "3b60830c434eafa168c3a29a35f1f2bdd2d2041268a563f0102a549e1efbfbcb",
+        "G": "80688448ef5b7d78712fa062d2094a3c82c952894d04d9ea5db46ea2f6945436",
+        "a": "09bcd12e287e0e5c8c3c0bcbb3b05712473769e97aef159e06bc923774a71ff9",
+        "loss": "bea1124dbba35fe847143364eea4503f71ac720526a2addddfd971d36d25105b",
+        "loss_bc": "ef88e9769d3bb75e5c870da9ca37d58bb5d42ea4b946e36e5d8ed47f22f798ac",
+        "loss_physics": "90ec829e304c90353d994adbc6d231ac60422ec2252c22a35da243389181155f",
+        "r": "94004fc426996734a04f4fdb7dcd4fa2d9d3dc4bbc70acb6eba7b316d486b1e1",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "05d176c2fe60bcb6e1fbe54d56712e0b555881799ec45475d1c5583b0d8a95e4"
+      },
+      "label": "PINN with soft BC | seed=1093",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "188_pinn-with-exact-bc---seed-1094",
+      "hashes": {
+        "F": "2d67b25c1238fadd8e28b4c57877d9f7cf1a06c9eb1465a21b97643ffc56941b",
+        "G": "8aea8ef4b9445b53e13c4775280a6956f03e8a26884f5b0a30dc0c3ebf6ebc74",
+        "a": "f9c54f077e92849375261fb3fd06b158a6c248dc10d243c6aa2838d69eb55240",
+        "loss": "555b2f5183086b5a63025643dcf8b05c8aee7d9a9e58885a54dce61350fab141",
+        "r": "7de11b28e28a6d7ca7ec8ce907fbdf314095fb598edbaaa2b9ad2b35edd0f37d",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "1856e077c2b22aa08b1a414c597003ffa34298bbe8f4d23d0b290694b748acd0"
+      },
+      "label": "PINN with exact BC | seed=1094",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "189_pinn-with-soft-bc---seed-1094",
+      "hashes": {
+        "F": "b6d2d23ba0e31dd2eeee5ddee4c497e6235e1ea6091ccb6691ed4621599321b9",
+        "G": "cbb01a3f42c56a2c17be20abf81bfa391d067640ae4de9ba044766c901c0c0cc",
+        "a": "59eef42c637521805165608276d17b17f51e160b0163cdf2b8d172184488a28e",
+        "loss": "43a3ca5a5ec1442d76c20c56c1221bbc3392e19744454f9bd205962307a9821a",
+        "loss_bc": "4759765fae7d38f32186d7877932c2aa4cb75ef85bde5cafb22f580ede92d7b2",
+        "loss_physics": "91a33ffc4070699683e80289b9e4b84c0474c69ce9079e2353c2a2109dd0d75c",
+        "r": "57a7daf7bd8335280030f9d3d28aed183f5245d226cf25252d3b404524b5f329",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "81faa298cf2865133d39a7d2893c9ab8ddd12084889cdffb70234bf278449f7e"
+      },
+      "label": "PINN with soft BC | seed=1094",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "190_pinn-with-exact-bc---seed-1095",
+      "hashes": {
+        "F": "434ca82641e24fa1d14069b5b87a0d03ca68667cbabf06ccc7ab7a6b355fd6f1",
+        "G": "c9a88a2db60f4da3d24281e2052fb438716ed13f8d19c165e46391595f16f504",
+        "a": "9a2cf61453e49b0fdc22859e64fc3af492b1e32128a491348bd88b27f394e5f5",
+        "loss": "939c447bd9c3c56acdcc330e276aa21c5ee0d21b3f034bcf692aabe6b17c6c20",
+        "r": "a98d30a2218c79fb18e1713e55acd6733a0cd555c9c5577d38cb3b05d137bc18",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "1262a240895cd1a1fca45d1cc38298a10a66cbb779547996c469177e63e618ab"
+      },
+      "label": "PINN with exact BC | seed=1095",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "191_pinn-with-soft-bc---seed-1095",
+      "hashes": {
+        "F": "108fa655dac895eec39c5d91beef9c16f5753e014080f08a1c499f442bd2dfa0",
+        "G": "468ed067cc48fc72099be42213517e1ce5ee519dc619ef5b68da521cb1ca617f",
+        "a": "506c3cada619fca4b1800c98d5e4efe55982500b94ad4fdc2a9cf5745c8886bb",
+        "loss": "ca1421dfcd28c842a268ac8da49911c6bd3477622e6edcb0647ea5d27c0de4fc",
+        "loss_bc": "6121e79e1114cb7264dba9f88c06d7bda4f40844369f151ae7a1fb9f53705555",
+        "loss_physics": "8c133ce0611841bc0827bbcb5fda7760c59a1b65181a080034112e4d0de56704",
+        "r": "fd34c1bdb1eb240b4f395abffe0f397fc413d76ef42db2f9edb769be4feb15bb",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "7e69c24bfefc7091c793d9d9a3608b997d4170d60bd87ec3fbc6661af3df1429"
+      },
+      "label": "PINN with soft BC | seed=1095",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "192_pinn-with-exact-bc---seed-1096",
+      "hashes": {
+        "F": "35d35fbdb04e66655785adf1359f0174262e670c190a7f5d52741750a470a96d",
+        "G": "bcb2e4d5b78df7175d3d41c97672f84ed7c7d707df59fbcab44c730d0dd903b2",
+        "a": "93cab6e1e759895d00d6d209ec652071ef96e7dd0ceddb3a1c88202741735d8a",
+        "loss": "3a4b4c82b135cb17ea691b20e6e77802050012fdb7bcc4f03e28e65fb55e9448",
+        "r": "a8c7c67fe26331fe5f0d38c59e505ec29127bd1d33a4b16d2167093affccc6f2",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "afc3c26c151b8c4f75d25e1adc6c4598d000a9d8b35c9df87fe3201064ad5171"
+      },
+      "label": "PINN with exact BC | seed=1096",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "193_pinn-with-soft-bc---seed-1096",
+      "hashes": {
+        "F": "167e999a6bf1516ee471f2987019784981f69ca326dc9a2070fd199e2413d44d",
+        "G": "3d64781c14882e5bd1b14b377887a2ed34c8fa6ff387e080ec121e528047bae8",
+        "a": "0b5dbd519b7d7a58299de496a386edda63270b89144609f1880d15a07823b5e8",
+        "loss": "792363e3d7d96f4e746acc8fe4e45bfeec9c46d316c306cf493aa695a4704075",
+        "loss_bc": "81025c2656c711f40158de53e144ce874fa4c7cd5ab7309269c73e313b6d6ca9",
+        "loss_physics": "0f7fc680a7d9423f72cf05e2094aace74a7b840496e462495b50ecdb0ac10617",
+        "r": "9a6f47df9401e1a86b05bc2f54298091a6bdeb18dd2c57a137606181d610aa1c",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "3144fcb9ffbb51382e36c46b2dd9c887490e9a4c2fa00db5007114762dfceced"
+      },
+      "label": "PINN with soft BC | seed=1096",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "194_pinn-with-exact-bc---seed-1097",
+      "hashes": {
+        "F": "44365db4b17031d848e794fdb4c64c42709dbd1780295c2cf2d2623ff8b87d89",
+        "G": "a6b630365c50cef293732a149ed9e4d877d47c98b4cc0d2799d2efdec424c4c6",
+        "a": "9c2cb863428e5ed0dfc6cb8b969d824d29b8fe4f52d2c3b6fcd6058afeb6ce49",
+        "loss": "26036c113ff7a9c8f481cdee81567627dd9a95f400186143edd761eafa8cbd34",
+        "r": "5e94dfef6d9faf073714189eddd777cbdf103445790f7d172b3eaa780eb6014d",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "4d7cea9219ebb08c9527d4894ceaaa8cbdb27a5d388688f25c1f46f13536c5f6"
+      },
+      "label": "PINN with exact BC | seed=1097",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "195_pinn-with-soft-bc---seed-1097",
+      "hashes": {
+        "F": "81ec7a461d64688e7ec816603e09135ba2253e4df614742fa6bfadf2b2d5cd9f",
+        "G": "078e8cd5d77722d583e50986ecb14185866f0fabcdb5c98eac63932fdcfd4a71",
+        "a": "21b7830c1acdf3708d52e1b5f4197b8c5d43c33f360913f7c3cde00193a8af83",
+        "loss": "da2d7243f4e1a7139e676853c42edac9c8e678d474f4da9a6b9fa20f1dc4c175",
+        "loss_bc": "7c9c14b009cb8d374a0d49fb490577e6e1e5bdabb7a59b70f4b9228ae1178ceb",
+        "loss_physics": "d4dcf58210b98aeeddf3beab285c0dab19035d100bf151f68459572361492d43",
+        "r": "215b17498ed5e436e8c2baf00246d43b811efc8d4ebe1f57ac8a924e8cddb143",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "d98d6057d005ffbcf935646bcdd2292748d4104ffcf2cd839f0438b641299067"
+      },
+      "label": "PINN with soft BC | seed=1097",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "196_pinn-with-exact-bc---seed-1098",
+      "hashes": {
+        "F": "d23aae8de750af4ebed73415cb631e7ac2760f03f74e03a78de24006d948e070",
+        "G": "4bb2c8404249351494268f7e68331c6a245257f8869cee1d435a57264ad74135",
+        "a": "4398d1fd4ce4d440930cd4dbbdbdfa7e7bb0ebc09f88fde247ab4e891a8b6eb0",
+        "loss": "31bae3612ff0ddbe30b599855832ed763ba88e194900ad3e9230c760e2eb375d",
+        "r": "ed84e90d03d755ef1a3faa34ae87697db17b1c7bc53f2309c9ae9c04fc9eca6d",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "577d5e76163ae85ed2ca0cdc5f596f0b828cac02f13d49994ceb0ce278fbf802"
+      },
+      "label": "PINN with exact BC | seed=1098",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "197_pinn-with-soft-bc---seed-1098",
+      "hashes": {
+        "F": "6dd00485eee4cbfd259e48ff3a93b67cb77ff0bedda4c9a2ce4f4e3fa57ec1b3",
+        "G": "e10288ce09d15505d33b63ba044b1c8dc24d5011f7850223db320d16587cf0f9",
+        "a": "581ee23e96b0f74aa18289f0ffcaa01f550bc624c80d4157836760d7b59bcc4f",
+        "loss": "fe00080b4a772f7445002c931e8f455461cf5e89c395451e425c6dbd10c42df9",
+        "loss_bc": "6beb92d036b5ba9427b0efb4bc4c43918b632033bbe4f5e91a284e58986b5790",
+        "loss_physics": "4a85651454b2b0433ff795a034224de617dadabacdbcc19931f549fc4f4eb164",
+        "r": "48b0ff5d7a4ec5a310eb67d80ac3047047b8876504cac3dbe0066aad7f57a8ec",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "6c931898fbc58533c396f054fb85cfa5e23c49b7a02afad09d3850dba54402fb"
+      },
+      "label": "PINN with soft BC | seed=1098",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "198_pinn-with-exact-bc---seed-1099",
+      "hashes": {
+        "F": "95332b2730e8d80f3c6573d6debdebf5d9c095ca16da831f84f42cd6b54e61a1",
+        "G": "be3b588e0736b8bf666caf1586de1da567cedf5d2974246a76348dad84f52279",
+        "a": "8597b1dc37fc48169e39f2319d8c79d0195164eb0496e755cff496c5602a3e7e",
+        "loss": "0086ab32a01bc494e056f8a4da9400ee48afb11656387a9de9b6dc89b3ffbca8",
+        "r": "88d82a2e8894eaef4bf502bb35f485c2ec01086d5775e3551d25502c74996e4e",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "1e4719f33fe024ed34bc4eb0a474c4e8f1f115a41de4813c8b46981259b4e777"
+      },
+      "label": "PINN with exact BC | seed=1099",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "199_pinn-with-soft-bc---seed-1099",
+      "hashes": {
+        "F": "5f28ce9338ef6ec238b232f03096a235609981afebe9c6a36643de10ed112591",
+        "G": "44cc75c483ca04bd51f507007e9a839a18895d3e67957b35fcd01ac112b4124a",
+        "a": "ec71346f25e425e52afc2ed067e46d5c1f7d4d064eb19e074e90f2dc2acacdf8",
+        "loss": "f6d049bfaef4319d8aeaa450b9dc6eb615e57060b8c9f36e46a82755139fdb84",
+        "loss_bc": "2e560a0e6aaf7541f36305177bd3ebdaa134d2aaeccf44df076f573fff4d76c3",
+        "loss_physics": "1fbe25b68bb850dd1e4477d317f76880953690af265e43d772afce3f9b8ed966",
+        "r": "6c069875d471dddb0949b012b3eb0b6e4b33046497375e3912de1e9980ff3564",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "2098aa163df428417db072dc65d1163ef6b9996d58d5dabdc4f696d3f1e77871"
+      },
+      "label": "PINN with soft BC | seed=1099",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "200_baseline--opengoddard",
+      "hashes": {
+        "F": "cd3a8fb34d7593d947fb9c9d167f88835fad39d4867f6fe1a5656704edcc8ab8",
+        "G": "94c2f704ebf9182f90b587808566021f4bf8c23e2ca9ce42c7801a8d37ac723d",
+        "a": "4441efba1c062a25f025d11546e3985c678ff5d0d10535c5703eca51f170e263",
+        "loss": "70c58c8d66064e1f0ceb79875824f9158300686b1ec2af715283d56218b2fe98",
+        "r": "576b2e6fcac356404d9e17fe6d818b5132ad351ca72e4ea9147bc7531b3b61d9",
+        "t": "3e6dcbc961cf8b98ec6bd220d003a533adea1573177a72d9476f0a336644e5fd",
+        "v": "feaa4f57ed8c079eff9ffcb23ddce192a93dd45a08e1e50f2270ebd4c57d37f4"
+      },
+      "label": "Baseline (OpenGoddard)",
+      "source": "opengoddard"
+    }
+  ],
+  "record_id": "three_bodies_2d_monte_carlo",
+  "source_run_id": "20260415_070903_three_bodies_2d_monte_carlo"
+}

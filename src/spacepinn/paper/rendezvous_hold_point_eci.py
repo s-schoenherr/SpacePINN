@@ -11,15 +11,13 @@ import numpy as np
 import spacepinn
 import torch
 
-from spacepinn.config.config_orbit_transfer import circular_ot_kinematic_polar_config
-from spacepinn.config.transform_functions import (
-    kinematic_rendezvous_hold_point_eci_polar_alpha_guard_fn,
-    kinematic_rendezvous_hold_point_eci_polar_fn,
-)
+from spacepinn.config.config_orbit_transfer import R_EARTH, circular_ot_kinematic_polar_config
+from spacepinn.config.transform_functions import kinematic_rendezvous_hold_point_eci_polar_fn
 from spacepinn.paper.common import smoke_mode_enabled
 from spacepinn.paper._rendezvous_hold_point_eci_shared import (
     DEFAULT_T_FINAL_SECONDS,
     TARGET_RADIUS_KM,
+    TARGET_SPEED_KM_S,
     build_scenario,
     target_state_eci,
 )
@@ -28,6 +26,14 @@ from spacepinn.opengoddard.rendezvous_hold_point_eci_goddard import (
 )
 from spacepinn.paper._baseline_capture import capture_baseline_entry
 from spacepinn.paper._baseline_summary import print_baseline_delta_v_summary
+from spacepinn.paper._plot_style import (
+    LOSS_AXES_RECT,
+    LOSS_FIGSIZE as PAPER_LOSS_FIGSIZE,
+    MAIN_AXES_RECT,
+    MAIN_FIGSIZE as PAPER_MAIN_FIGSIZE,
+    configure_paper_plotter,
+)
+from spacepinn.plotting.paper_style import PAPER_STYLE
 from spacepinn.plotting.helpers import register_plot_artifact_if_possible, set_time_axis_labels
 from spacepinn.plotter import TrajectoryPlotter
 from spacepinn.runner import execute_single_experiment, print_collection_run_summary
@@ -37,24 +43,62 @@ RUN_ROOT = Path(spacepinn.__file__).resolve().parents[2] / "runs"
 COLLECTION_LABEL = "rendezvous_hold_point_eci"
 FIG_PREFIX = "rendezvous"
 PINN_LABEL = "PINN with exact BC"
-PINN_GUARDED_LABEL = "PINN with exact BC (alpha <= alpha_target)"
 BASELINE_LABEL = "OpenGoddard"
 WARMSTART_BASELINE_LABEL = "OpenGoddard (PINN initial guess)"
+BASELINE_PAPER_LABEL = "Baseline (OpenGoddard)"
+WARMSTART_BASELINE_PAPER_LABEL = "Baseline (OpenGoddard, PINN initial guess)"
 PINN_COLOR = "#2ca02c"
-PINN_GUARDED_COLOR = "#bc7c00"
 BASELINE_COLOR = "#4d4d4d"
 WARMSTART_BASELINE_COLOR = "#1f77b4"
 TARGET_COLOR = "#4d4d4d"
 HOLD_POINT_COLOR = "#d62728"
 EARTH_COLOR = "#1f77b4"
-MAIN_FIGSIZE = (7.4, 6.8)
-LOSS_FIGSIZE = MAIN_FIGSIZE
+MAIN_FIGSIZE = PAPER_MAIN_FIGSIZE
+LOSS_FIGSIZE = PAPER_LOSS_FIGSIZE
 PAPER_N_ADAM = 100_000
 PAPER_N_LBFGS = 0
 PAPER_CONVERGENCE_THRESHOLD = 1e-7
 BASELINE_MAX_ITERATION = 10
 BASELINE_FTOL = 1e-11
 BASELINE_SLSQP_MAXITER = 25
+
+
+def _paper_axes(
+    *,
+    figsize: tuple[float, float] = MAIN_FIGSIZE,
+    axes_rect: tuple[float, float, float, float] = MAIN_AXES_RECT,
+):
+    fig = plt.figure(figsize=figsize)
+    ax = fig.add_axes(axes_rect)
+    return fig, ax
+
+
+def _style_paper_axes(ax) -> None:
+    ax.xaxis.label.set_size(PAPER_STYLE.axis_label_fontsize)
+    ax.yaxis.label.set_size(PAPER_STYLE.axis_label_fontsize)
+    ax.tick_params(axis="both", which="both", labelsize=PAPER_STYLE.tick_label_fontsize)
+    ax.title.set_size(PAPER_STYLE.title_fontsize)
+
+
+def _style_paper_legend(legend) -> None:
+    if legend is None:
+        return
+    for text in legend.get_texts():
+        text.set_fontsize(PAPER_STYLE.legend_fontsize)
+    frame = legend.get_frame()
+    if frame is not None:
+        frame.set_alpha(PAPER_STYLE.legend_framealpha)
+        frame.set_edgecolor("black")
+        frame.set_linewidth(1.0)
+        frame.set_facecolor("white")
+
+
+def _save_paper_figure(fig, figure_path: Path) -> None:
+    fig.savefig(
+        figure_path,
+        bbox_inches=PAPER_STYLE.save_bbox_inches,
+        pad_inches=PAPER_STYLE.save_pad_inches,
+    )
 
 
 def _parse_args():
@@ -66,7 +110,6 @@ def _parse_args():
     parser.add_argument("--baseline-max-iteration", type=int, default=BASELINE_MAX_ITERATION)
     parser.add_argument("--baseline-ftol", type=float, default=BASELINE_FTOL)
     parser.add_argument("--baseline-slsqp-maxiter", type=int, default=BASELINE_SLSQP_MAXITER)
-    parser.add_argument("--include-alpha-guard", action="store_true")
     parser.add_argument("--skip-plots", action="store_true")
     parser.add_argument("--skip-summary", action="store_true")
     return parser.parse_args()
@@ -78,21 +121,16 @@ def build_config(
     n_adam: int = PAPER_N_ADAM,
     n_lbfgs: int = PAPER_N_LBFGS,
     convergence_threshold: float = PAPER_CONVERGENCE_THRESHOLD,
-    enforce_alpha_guard: bool = False,
     smoke: bool | None = None,
 ) -> dict:
     scenario = build_scenario(t_final_seconds=t_final_seconds)
     config = deepcopy(circular_ot_kinematic_polar_config)
 
-    config["label"] = PINN_GUARDED_LABEL if enforce_alpha_guard else PINN_LABEL
+    config["label"] = PINN_LABEL
     trainable_t_total = torch.nn.Parameter(torch.tensor(float(t_final_seconds), dtype=torch.float32), requires_grad=True)
     config["extra_parameters"] = {"t_total": trainable_t_total}
     config["pinn"]["output_transform_fn"] = partial(
-        (
-            kinematic_rendezvous_hold_point_eci_polar_alpha_guard_fn
-            if enforce_alpha_guard
-            else kinematic_rendezvous_hold_point_eci_polar_fn
-        ),
+        kinematic_rendezvous_hold_point_eci_polar_fn,
         x0=torch.tensor(scenario["chaser"]["start_position_polar"], dtype=torch.float32),
         v0=torch.tensor(scenario["chaser"]["start_velocity_polar"], dtype=torch.float32),
         target_radius=float(scenario["target"]["radius_km"]),
@@ -107,7 +145,7 @@ def build_config(
     config["optimizer"]["n_adam"] = int(n_adam)
     config["optimizer"]["n_lbfgs"] = int(n_lbfgs)
     config["optimizer"]["convergence_threshold"] = float(convergence_threshold)
-    config["plotting"]["color"] = PINN_GUARDED_COLOR if enforce_alpha_guard else PINN_COLOR
+    config["plotting"]["color"] = PINN_COLOR
     config["plotting"]["linestyle"] = "solid"
     config["plotting"]["trajectory_linestyle"] = "solid"
     config["scenario"] = scenario
@@ -161,9 +199,18 @@ def _time_seconds_from_result(result) -> np.ndarray:
     return time_values
 
 
-def _target_history(*, t_seconds: np.ndarray) -> np.ndarray:
+def _target_history(*, t_seconds: np.ndarray, scenario: dict | None = None) -> np.ndarray:
     t_seconds = np.asarray(t_seconds, dtype=float).reshape(-1)
-    return np.asarray([target_state_eci(t_seconds=float(t))["position"] for t in t_seconds], dtype=float)
+    target = (scenario or {}).get("target", {})
+    radius_km = float(target.get("radius_km", TARGET_RADIUS_KM))
+    speed_km_s = float(target.get("speed_km_s", TARGET_SPEED_KM_S))
+    return np.asarray(
+        [
+            target_state_eci(t_seconds=float(t), radius_km=radius_km, speed_km_s=speed_km_s)["position"]
+            for t in t_seconds
+        ],
+        dtype=float,
+    )
 
 
 def _relative_history_lvlh(*, target_history: np.ndarray, chaser_history: np.ndarray) -> np.ndarray:
@@ -205,21 +252,18 @@ def _entries_for_lvlh_view(entries: list[dict]) -> list[dict]:
 
 
 def _descriptive_plot_label(entry: dict) -> str:
-    return str(entry.get("label", "Method"))
+    label = str(entry.get("label", "Method"))
+    if label.startswith(PINN_LABEL):
+        return PINN_LABEL
+    if label == BASELINE_LABEL:
+        return BASELINE_PAPER_LABEL
+    if label == WARMSTART_BASELINE_LABEL:
+        return WARMSTART_BASELINE_PAPER_LABEL
+    return label
 
 
 def _entry_visual_style(entry: dict) -> dict[str, object]:
     label = str(entry.get("label", ""))
-    if label == PINN_GUARDED_LABEL:
-        return {
-            "color": PINN_GUARDED_COLOR,
-            "linestyle": "-",
-            "linewidth": 2.3,
-            "zorder": 3,
-            "alpha": 0.9,
-            "marker": None,
-            "markevery": None,
-        }
     if label == PINN_LABEL or entry.get("source") == "pinn":
         return {
             "color": PINN_COLOR,
@@ -266,28 +310,15 @@ def _slugify_label(label: str) -> str:
     return slug or "entry"
 
 
-def _gravity_style(entry: dict) -> tuple[object, float]:
-    label = str(entry.get("label", ""))
-    if label == PINN_GUARDED_LABEL:
-        return (0, (1.2, 1.2)), 2.0
-    if label == PINN_LABEL or entry.get("source") == "pinn":
-        return (0, (1.2, 1.2)), 1.9
-    if label == BASELINE_LABEL:
-        return (0, (7.0, 2.0, 1.5, 2.0)), 2.4
-    if label == WARMSTART_BASELINE_LABEL:
-        return (0, (4.5, 1.8)), 2.2
-    return ":", 2.0
-
-
 def plot_orbit_overview_figure(entries: list[dict], *, output_dir: str, scenario: dict) -> None:
     if not entries:
         return
 
-    fig, ax = plt.subplots(figsize=MAIN_FIGSIZE)
+    fig, ax = _paper_axes()
 
     reference_entry = _select_reference_entry(entries)
     reference_result = reference_entry["result"]
-    reference_target_history = _target_history(t_seconds=_time_seconds_from_result(reference_result))
+    reference_target_history = _target_history(t_seconds=_time_seconds_from_result(reference_result), scenario=scenario)
     start_target = scenario["target"]["start"]["position"]
     end_target = scenario["target"]["end"]["position"]
     target_theta = np.unwrap(np.arctan2(reference_target_history[:, 1], reference_target_history[:, 0]))
@@ -300,6 +331,7 @@ def plot_orbit_overview_figure(entries: list[dict], *, output_dir: str, scenario
         )
     )
 
+    target_altitude_km = float(scenario["target"]["radius_km"]) - R_EARTH
     ax.plot(
         leo_arc[:, 0],
         leo_arc[:, 1],
@@ -307,7 +339,7 @@ def plot_orbit_overview_figure(entries: list[dict], *, output_dir: str, scenario
         linestyle="--",
         linewidth=2.0,
         alpha=0.75,
-        label="LEO",
+        label=f"LEO ({target_altitude_km:.0f} km above Earth)",
         zorder=1,
     )
 
@@ -351,23 +383,25 @@ def plot_orbit_overview_figure(entries: list[dict], *, output_dir: str, scenario
     cy = 0.5 * (y_min + y_max)
     half = 0.5 * span + pad
 
-    ax.set_xlim(cx - half, cx + half)
+    x_shift = 0.18 * span
+    ax.set_xlim(cx - half - x_shift, cx + half - x_shift)
     ax.set_ylim(cy - half, cy + half)
     ax.set_aspect("equal")
+    ax.set_box_aspect(1)
     ax.set_xlabel("x / km")
     ax.set_ylabel("y / km")
-    ax.grid(alpha=0.25)
-    ax.legend(
+    _style_paper_axes(ax)
+    legend = ax.legend(
         loc="lower left",
         ncol=1,
         framealpha=0.95,
         columnspacing=1.2,
         handlelength=2.4,
     )
+    _style_paper_legend(legend)
 
-    fig.tight_layout()
     figure_path = Path(output_dir) / f"{FIG_PREFIX}_overview_orbit.pdf"
-    fig.savefig(figure_path, bbox_inches="tight", pad_inches=0.05)
+    _save_paper_figure(fig, figure_path)
     register_plot_artifact_if_possible(figure_path)
     plt.close(fig)
 
@@ -378,7 +412,7 @@ def plot_lvlh_figures(entries: list[dict], *, output_dir: str, scenario: dict) -
 
     relative_start = scenario["chaser"]["initial_relative_offset_km"]
     relative_hold_point = scenario["chaser"]["final_hold_point_offset_km"]
-    fig, ax = plt.subplots(figsize=MAIN_FIGSIZE)
+    fig, ax = _paper_axes()
     x_all = [relative_start[0], relative_hold_point[0], 0.0]
     y_all = [relative_start[1], relative_hold_point[1], 0.0]
 
@@ -386,7 +420,7 @@ def plot_lvlh_figures(entries: list[dict], *, output_dir: str, scenario: dict) -
         result = entry["result"]
         visual = _entry_visual_style(entry)
         color = visual["color"]
-        target_history = _target_history(t_seconds=_time_seconds_from_result(result))
+        target_history = _target_history(t_seconds=_time_seconds_from_result(result), scenario=scenario)
         relative_history = _relative_history_lvlh(target_history=target_history, chaser_history=np.asarray(result.r, dtype=float))
 
         ax.plot(
@@ -401,7 +435,7 @@ def plot_lvlh_figures(entries: list[dict], *, output_dir: str, scenario: dict) -
         x_all.extend(relative_history[:, 0].tolist())
         y_all.extend(relative_history[:, 1].tolist())
 
-    ax.scatter(relative_start[0], relative_start[1], color=PINN_COLOR, marker="o", s=55, label="Initial relative state")
+    ax.scatter(relative_start[0], relative_start[1], color="red", marker="o", s=55, label="Initial relative state")
     ax.scatter(relative_hold_point[0], relative_hold_point[1], color=HOLD_POINT_COLOR, marker="x", s=80, label="Desired hold point")
     ax.scatter(0.0, 0.0, color=TARGET_COLOR, marker="s", s=55, label="Target")
 
@@ -411,55 +445,62 @@ def plot_lvlh_figures(entries: list[dict], *, output_dir: str, scenario: dict) -
     y_span = max(float(np.max(y_values) - np.min(y_values)), 0.2)
     padding = 0.15 * max(x_span, y_span)
 
-    ax.set_xlabel("Radial offset / km")
-    ax.set_ylabel("Along-track offset / km")
-    ax.grid(alpha=0.25)
-    ax.set_xlim(float(np.min(x_values) - padding), float(np.max(x_values) + padding))
-    ax.set_ylim(float(np.min(y_values) - padding), float(np.max(y_values) + padding))
+    ax.set_xlabel("Radial relative offset / km")
+    ax.set_ylabel("Along-track relative offset / km")
+    ax.set_xlim(float(np.min(x_values) - padding), 0.1)
+    y_lower = float(np.min(y_values) - padding)
+    y_upper = float(np.max(y_values) + padding)
+    y_legend_pad = 0.64 * (y_upper - y_lower)
+    #ax.set_ylim(y_lower - y_legend_pad, y_upper)
     ax.set_aspect("auto")
-    ax.legend(
-        loc="lower right",
+    ax.set_box_aspect(1)
+    ax.set_ylim(bottom=-.5, top=0.2)
+    _style_paper_axes(ax)
+    legend = ax.legend(
+        loc="lower left",
+        ncol=1,
         framealpha=0.95,
         columnspacing=1.0,
-        handlelength=2.4,
+        handlelength=1.8,
+        labelspacing=0.18,
+        borderpad=0.28,
     )
+    _style_paper_legend(legend)
 
-    fig.tight_layout()
     figure_path = Path(output_dir) / f"{FIG_PREFIX}_lvlh.pdf"
-    fig.savefig(figure_path, bbox_inches="tight", pad_inches=0.05)
+    _save_paper_figure(fig, figure_path)
     register_plot_artifact_if_possible(figure_path)
     plt.close(fig)
 
 
-def plot_separation_figure(entries: list[dict], *, output_dir: str) -> None:
+def plot_separation_figure(entries: list[dict], *, output_dir: str, scenario: dict) -> None:
     if not entries:
         return
 
-    fig, ax = plt.subplots(figsize=LOSS_FIGSIZE)
+    fig, ax = _paper_axes(figsize=LOSS_FIGSIZE, axes_rect=LOSS_AXES_RECT)
     for entry in entries:
         result = entry["result"]
-        visual = _entry_visual_style(entry)
-        target_history = _target_history(t_seconds=_time_seconds_from_result(result))
+        target_history = _target_history(t_seconds=_time_seconds_from_result(result), scenario=scenario)
         separation_km = np.linalg.norm(np.asarray(result.r, dtype=float) - target_history, axis=1)
         time_seconds = _time_seconds_from_result(result)
         ax.plot(
             time_seconds,
             separation_km,
-            color=visual["color"],
-            linestyle=visual["linestyle"],
-            linewidth=visual["linewidth"],
-            alpha=visual["alpha"],
-            label=entry["label"],
-            zorder=visual["zorder"],
+            color=entry.get("color", PINN_COLOR),
+            linewidth=2.2,
+            label=_descriptive_plot_label(entry),
         )
     ax.set_xlabel("Time / s")
     ax.set_ylabel("Target separation / km")
-    ax.grid(alpha=0.25)
-    ax.legend(loc="best")
-    fig.tight_layout()
+    current_ymin, current_ymax = ax.get_ylim()
+    ax.set_ylim(min(current_ymin, -0.34), current_ymax)
+    ax.set_box_aspect(1)
+    _style_paper_axes(ax)
+    legend = ax.legend(loc="lower left")
+    _style_paper_legend(legend)
 
     figure_path = Path(output_dir) / f"{FIG_PREFIX}_separation.pdf"
-    fig.savefig(figure_path, bbox_inches="tight", pad_inches=0.05)
+    _save_paper_figure(fig, figure_path)
     register_plot_artifact_if_possible(figure_path)
     plt.close(fig)
 
@@ -468,31 +509,29 @@ def plot_thrust_figure(entries: list[dict], *, output_dir: str) -> None:
     if not entries:
         return
 
-    fig, ax = plt.subplots(figsize=MAIN_FIGSIZE)
+    fig, ax = _paper_axes()
     for entry in entries:
         result = entry["result"]
         visual = _entry_visual_style(entry)
-        is_primary_pinn = str(entry.get("label")) == PINN_LABEL
-        linewidth = visual["linewidth"] + 0.55 if is_primary_pinn else visual["linewidth"]
-        alpha = 0.82 if is_primary_pinn else visual["alpha"]
         ax.plot(
-            _time_seconds_from_result(result),
+            np.asarray(result.t, dtype=float).reshape(-1),
             np.clip(np.asarray(result.F_mag, dtype=float).reshape(-1), 1e-16, None),
             color=visual["color"],
             linestyle=visual["linestyle"],
-            linewidth=linewidth,
-            alpha=alpha,
-            label=entry["label"],
+            linewidth=visual["linewidth"],
+            alpha=visual["alpha"],
+            label=_descriptive_plot_label(entry),
             zorder=visual["zorder"],
         )
-    ax.set_xlabel("Time / s")
-    ax.set_ylabel("Thrust magnitude")
-    ax.legend(loc="best")
-    ax.grid(alpha=0.25)
+    ax.set_xlabel("Normalized time")
+    ax.set_ylabel(r"Thrust magnitude / km s$^{-2}$")
+    legend = ax.legend()
     ax.set_yscale("log")
-    fig.tight_layout()
+    ax.set_box_aspect(1)
+    _style_paper_axes(ax)
+    _style_paper_legend(legend)
     figure_path = Path(output_dir) / f"{FIG_PREFIX}_thrust.pdf"
-    fig.savefig(figure_path, bbox_inches="tight", pad_inches=0.05)
+    _save_paper_figure(fig, figure_path)
     register_plot_artifact_if_possible(figure_path)
     plt.close(fig)
 
@@ -501,51 +540,60 @@ def plot_gravity_figure(entries: list[dict], *, output_dir: str) -> None:
     if not entries:
         return
 
-    fig, ax = plt.subplots(figsize=MAIN_FIGSIZE)
+    fig, ax = _paper_axes()
+    max_force = 0.0
     for entry in entries:
         result = entry["result"]
         visual = _entry_visual_style(entry)
         time_values = np.asarray(result.t, dtype=float).reshape(-1)
+        rfm_values = np.clip(np.asarray(result.a_mag, dtype=float).reshape(-1), 1e-16, None)
+        gravity_values = np.clip(np.asarray(result.G_mag, dtype=float).reshape(-1), 1e-16, None)
+        max_force = max(max_force, float(np.max(rfm_values)), float(np.max(gravity_values)))
         ax.plot(
             time_values,
-            np.clip(np.asarray(result.a_mag, dtype=float).reshape(-1), 1e-16, None),
+            rfm_values,
             color=visual["color"],
             linestyle=visual["linestyle"],
             linewidth=visual["linewidth"],
             alpha=visual["alpha"],
-            label=f"{entry['label']} RFM",
+            label=f"{_descriptive_plot_label(entry)} RFM",
             zorder=visual["zorder"],
         )
-        gravity_linestyle, gravity_linewidth = _gravity_style(entry)
+        gravity_linestyle = ":" if visual["linestyle"] == "solid" else (0, (6, 2, 1.5, 2))
         ax.plot(
             time_values,
-            np.clip(np.asarray(result.G_mag, dtype=float).reshape(-1), 1e-16, None),
+            gravity_values,
             color=visual["color"],
             linestyle=gravity_linestyle,
-            linewidth=gravity_linewidth,
-            alpha=1.0,
-            label=f"{entry['label']} Gravity",
-            zorder=visual["zorder"] + 0.25,
+            linewidth=max(1.8, visual["linewidth"] - 0.4),
+            alpha=min(1.0, visual["alpha"] + 0.12),
+            label=f"{_descriptive_plot_label(entry)} Gravity",
+            zorder=visual["zorder"] + 0.1,
         )
 
     set_time_axis_labels(ax, "Gravity / Required Force magnitude", plot_legend=False)
     ax.set_yscale("log")
+    if max_force > 0:
+        ax.set_ylim(top=max(1e-1, max_force * 8.0))
+    ax.set_box_aspect(1)
     handles, labels = ax.get_legend_handles_labels()
     if handles:
-        ax.legend(
+        legend = ax.legend(
             handles,
             labels,
-            loc="lower left",
-            ncol=2,
+            loc="upper left",
+            ncol=1,
             framealpha=0.95,
             columnspacing=1.0,
             handlelength=1.8,
-            fontsize=9,
+            labelspacing=0.28,
+            borderaxespad=0.35,
         )
+        _style_paper_legend(legend)
 
-    fig.tight_layout()
+    _style_paper_axes(ax)
     figure_path = Path(output_dir) / f"{FIG_PREFIX}_gravity.pdf"
-    fig.savefig(figure_path, bbox_inches="tight", pad_inches=0.05)
+    _save_paper_figure(fig, figure_path)
     register_plot_artifact_if_possible(figure_path)
     plt.close(fig)
 
@@ -555,7 +603,56 @@ def plot_loss_figure(entries: list[dict], *, output_dir: str) -> None:
     if not pinn_entries:
         return
     plotter = TrajectoryPlotter(pinn_entries, dim=2, figsize=LOSS_FIGSIZE, fig_prefix=FIG_PREFIX, output_dir=output_dir)
-    plotter.plot_loss()
+    configure_paper_plotter(plotter)
+    fig, ax = _paper_axes(figsize=LOSS_FIGSIZE, axes_rect=LOSS_AXES_RECT)
+    visible_lengths: list[int] = []
+
+    for label, exp in plotter.experiments.items():
+        result = exp["result"]
+        if not getattr(result, "loss", None):
+            continue
+        descriptive_label = _descriptive_plot_label({"label": label})
+        visible_lengths.append(len(result.loss))
+        ax.plot(
+            result.loss,
+            linestyle="solid",
+            label=f"{descriptive_label} Total Loss",
+            color=exp["color"],
+            linewidth=plotter.main_linewidth,
+            zorder=exp["zorder"],
+        )
+        if getattr(result, "loss_bc", None):
+            ax.plot(
+                result.loss_bc,
+                linestyle="--",
+                label=descriptive_label + r" $\lambda_{BC}$$L_{BC}$",
+                color=exp["color"],
+                linewidth=plotter.secondary_linewidth,
+                zorder=exp["zorder"],
+            )
+        if getattr(result, "loss_physics", None):
+            ax.plot(
+                result.loss_physics,
+                linestyle="-.",
+                label=descriptive_label + r" $\lambda_{P}$$L_{P}$",
+                color=exp["color"],
+                linewidth=plotter.secondary_linewidth,
+                zorder=exp["zorder"],
+            )
+
+    if visible_lengths:
+        ax.set_xlim(0, max(visible_lengths))
+    ax.set_xlabel("Training Epochs")
+    ax.set_ylabel("Loss")
+    ax.set_yscale("log")
+    ax.set_box_aspect(1)
+    _style_paper_axes(ax)
+    legend = ax.legend(loc="best")
+    _style_paper_legend(legend)
+    figure_path = Path(output_dir) / f"{FIG_PREFIX}_loss.pdf"
+    _save_paper_figure(fig, figure_path)
+    register_plot_artifact_if_possible(figure_path)
+    plt.close(fig)
 
 
 def plot_results(entries: list[dict], *, output_dir: str, scenario: dict) -> None:
@@ -564,7 +661,7 @@ def plot_results(entries: list[dict], *, output_dir: str, scenario: dict) -> Non
     plot_gravity_figure(entries, output_dir=output_dir)
     plot_orbit_overview_figure(entries, output_dir=output_dir, scenario=scenario)
     plot_lvlh_figures(entries, output_dir=output_dir, scenario=scenario)
-    plot_separation_figure(entries, output_dir=output_dir)
+    plot_separation_figure(entries, output_dir=output_dir, scenario=scenario)
 
 
 def run_collection(
@@ -576,7 +673,6 @@ def run_collection(
     baseline_max_iteration: int = BASELINE_MAX_ITERATION,
     baseline_ftol: float = BASELINE_FTOL,
     baseline_slsqp_maxiter: int = BASELINE_SLSQP_MAXITER,
-    include_alpha_guard: bool = False,
     smoke: bool | None = None,
 ):
     config = build_config(
@@ -584,7 +680,6 @@ def run_collection(
         n_adam=n_adam,
         n_lbfgs=n_lbfgs,
         convergence_threshold=convergence_threshold,
-        enforce_alpha_guard=False,
         smoke=smoke,
     )
     smoke_enabled = smoke_mode_enabled() if smoke is None else smoke
@@ -614,33 +709,6 @@ def run_collection(
             }
         )
 
-        if include_alpha_guard:
-            guarded_config = build_config(
-                t_final_seconds=t_final_seconds,
-                n_adam=n_adam,
-                n_lbfgs=n_lbfgs,
-                convergence_threshold=convergence_threshold,
-                enforce_alpha_guard=True,
-                smoke=smoke,
-            )
-            guarded_model, guarded_result = execute_single_experiment(guarded_config)
-            _sync_dynamic_terminal_reference(guarded_result, scenario=guarded_config["scenario"])
-            collection_context.add_entry(
-                label=guarded_config["label"],
-                result=guarded_result,
-                config=guarded_config,
-                model=guarded_model,
-                source="pinn",
-            )
-            collection_results.append(
-                {
-                    "label": guarded_config["label"],
-                    "source": "pinn",
-                    "result": guarded_result,
-                    **guarded_config.get("plotting", {}),
-                    "model": guarded_model,
-                }
-            )
 
         cold_entry = capture_baseline_entry(
             lambda: build_baseline_entry(
@@ -729,7 +797,6 @@ def main(
     baseline_max_iteration: int = BASELINE_MAX_ITERATION,
     baseline_ftol: float = BASELINE_FTOL,
     baseline_slsqp_maxiter: int = BASELINE_SLSQP_MAXITER,
-    include_alpha_guard: bool = False,
     skip_plots: bool = False,
     print_summary: bool = True,
     smoke: bool | None = None,
@@ -742,7 +809,6 @@ def main(
         baseline_max_iteration=baseline_max_iteration,
         baseline_ftol=baseline_ftol,
         baseline_slsqp_maxiter=baseline_slsqp_maxiter,
-        include_alpha_guard=include_alpha_guard,
         smoke=smoke,
     )
     if print_summary:
@@ -771,7 +837,6 @@ if __name__ == "__main__":
         baseline_max_iteration=args.baseline_max_iteration,
         baseline_ftol=args.baseline_ftol,
         baseline_slsqp_maxiter=args.baseline_slsqp_maxiter,
-        include_alpha_guard=args.include_alpha_guard,
         skip_plots=args.skip_plots,
         print_summary=not args.skip_summary,
     )

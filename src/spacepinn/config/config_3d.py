@@ -70,10 +70,6 @@ ordinary_3d_config = {
     "plotting": plotting_style(color=PALETTE["vanilla"], linestyle="dashed"),
 }
 
-# Clearer aliases for the publication-facing release package.
-exact_bc_3d_config = geometric_3d_config
-soft_bc_3d_config = ordinary_3d_config
-
 kinematic_3d_config = {
     "label": "Kinematic tPINN",
     "seed": 2809,
@@ -102,5 +98,3 @@ kinematic_3d_config = {
     },
     "plotting": plotting_style(color=PALETTE["kinematic"], linestyle="dashdot"),
 }
-
-pretraining_3d_config = kinematic_3d_config

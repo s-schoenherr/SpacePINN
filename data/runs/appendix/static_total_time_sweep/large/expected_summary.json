@@ -1,0 +1,192 @@
+{
+  "entries": [
+    {
+      "entry_id": "00_t-1-00---mathrm-s",
+      "label": "$T=1.00\\,\\mathrm{s}$",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0017896761419251561,
+        "epochs_total": 2790,
+        "final_loss": 4.287885076337261e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 8.854904999999974,
+        "solver": null,
+        "t_total": 1.0
+      }
+    },
+    {
+      "entry_id": "01_t-1-25---mathrm-s",
+      "label": "$T=1.25\\,\\mathrm{s}$",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.002602824941277504,
+        "epochs_total": 2528,
+        "final_loss": 5.188912837184034e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 7.932919999999967,
+        "solver": null,
+        "t_total": 1.25
+      }
+    },
+    {
+      "entry_id": "02_t-1-50---mathrm-s",
+      "label": "$T=1.50\\,\\mathrm{s}$",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0027821757830679417,
+        "epochs_total": 2219,
+        "final_loss": 4.114730472792871e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 6.896022000000016,
+        "solver": null,
+        "t_total": 1.5
+      }
+    },
+    {
+      "entry_id": "03_t-1-75---mathrm-s",
+      "label": "$T=1.75\\,\\mathrm{s}$",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0016885761870071292,
+        "epochs_total": 1929,
+        "final_loss": 1.3681433301826473e-06,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 5.859463000000005,
+        "solver": null,
+        "t_total": 1.75
+      }
+    },
+    {
+      "entry_id": "04_t-2-00---mathrm-s",
+      "label": "$T=2.00\\,\\mathrm{s}$",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.0011778660118579865,
+        "epochs_total": 1917,
+        "final_loss": 5.32992885382555e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 5.925222000000019,
+        "solver": null,
+        "t_total": 2.0
+      }
+    },
+    {
+      "entry_id": "05_t-3-00---mathrm-s",
+      "label": "$T=3.00\\,\\mathrm{s}$",
+      "source": "pinn",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.001532598864287138,
+        "epochs_total": 1648,
+        "final_loss": 2.882586329633341e-07,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 4.902782000000002,
+        "solver": null,
+        "t_total": 3.0
+      }
+    },
+    {
+      "entry_id": "06_direct-collocation--t-1-00---mathrm-s",
+      "label": "Direct collocation $T=1.00\\,\\mathrm{s}$",
+      "source": "opengoddard",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 1.5870738448390665e-07,
+        "epochs_total": 1,
+        "final_loss": 6.690564877246214e-13,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 65.80221499999999,
+        "solver": {
+          "backend": "OpenGoddard",
+          "converged": false,
+          "ftol": 1e-12,
+          "message": "Iteration limit reached",
+          "objective_value": 7.759238827739712e-13,
+          "outer_iteration_budget": 5,
+          "outer_iterations_completed": 5,
+          "slsqp_maxiter": 25,
+          "status_code": 9,
+          "stopped_reason": "iteration_budget"
+        },
+        "t_total": 1.0000000149011612
+      }
+    },
+    {
+      "entry_id": "07_direct-collocation--t-2-00---mathrm-s",
+      "label": "Direct collocation $T=2.00\\,\\mathrm{s}$",
+      "source": "opengoddard",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 4.772957188256268e-07,
+        "epochs_total": 1,
+        "final_loss": 2.9452222871382765e-12,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 66.69592399999996,
+        "solver": {
+          "backend": "OpenGoddard",
+          "converged": false,
+          "ftol": 1e-12,
+          "message": "Iteration limit reached",
+          "objective_value": 1.7146327172573527e-12,
+          "outer_iteration_budget": 5,
+          "outer_iterations_completed": 5,
+          "slsqp_maxiter": 25,
+          "status_code": 9,
+          "stopped_reason": "iteration_budget"
+        },
+        "t_total": 2.000000014901161
+      }
+    },
+    {
+      "entry_id": "08_direct-collocation--t-3-00---mathrm-s",
+      "label": "Direct collocation $T=3.00\\,\\mathrm{s}$",
+      "source": "opengoddard",
+      "summary": {
+        "boundary_error_end": 0.0,
+        "boundary_error_start": 0.0,
+        "delta_v": 0.6808012302136038,
+        "epochs_total": 1,
+        "final_loss": 0.1797451768496697,
+        "final_loss_bc": null,
+        "final_loss_physics": null,
+        "runtime_seconds": 67.37615100000005,
+        "solver": {
+          "backend": "OpenGoddard",
+          "converged": false,
+          "ftol": 1e-12,
+          "message": "Iteration limit reached",
+          "objective_value": 0.11985002948534489,
+          "outer_iteration_budget": 5,
+          "outer_iterations_completed": 5,
+          "slsqp_maxiter": 25,
+          "status_code": 9,
+          "stopped_reason": "iteration_budget"
+        },
+        "t_total": 3.000000014901161
+      }
+    }
+  ],
+  "record_id": "paper_static_total_time_sweep_large",
+  "source_run_id": "20260526_135325_static_total_time_sweep_large"
+}

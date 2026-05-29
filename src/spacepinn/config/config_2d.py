@@ -67,7 +67,3 @@ ordinary_2d_config = {
     },
     "plotting": plotting_style(color=PALETTE["vanilla"], linestyle="dashed"),
 }
-
-# Clearer aliases for the publication-facing release package.
-exact_bc_2d_config = geometric_2d_config
-soft_bc_2d_config = ordinary_2d_config

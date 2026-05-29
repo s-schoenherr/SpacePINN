@@ -1,2 +1,1 @@
-"""Paper-ready experiment entry points."""
-
+"""Paper-facing experiments and reproduction utilities."""

@@ -57,11 +57,9 @@ def plot_orbit_traj(plotter, radii_names, plot_gravity=False, plot_thrust=True):
     ax.set_xlabel("x")
     ax.set_ylabel("y")
     ax.set_aspect("equal")
-    ax.legend(loc="lower right")
+    plotter.style_axes(ax)
+    legend = ax.legend(loc="lower right")
+    plotter.style_legend(legend)
     figure_path = plotter._build_figure_path("orbit_traj")
-    fig.savefig(
-        figure_path,
-        bbox_inches="tight",
-        pad_inches=0.05,
-    )
+    plotter.save_figure(fig, figure_path)
     register_plot_artifact_if_possible(figure_path)

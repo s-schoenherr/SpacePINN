@@ -1,0 +1,100 @@
+{
+  "baseline_comparison": {
+    "baselines": [
+      {
+        "comparisons": [
+          {
+            "delta_v_mean": 0.0044026404526084665,
+            "delta_v_variance_sample": 9.736460156652508e-09,
+            "label": "PINN with exact BC",
+            "n": 100,
+            "relative_mean_improvement_vs_baseline": 0.2012428192371595,
+            "runtime_seconds_mean": 5.345137739999999
+          }
+        ],
+        "delta_v": 0.005511863378059142,
+        "label": "OpenGoddard",
+        "runtime_seconds": 489.498086,
+        "solver": {
+          "backend": "OpenGoddard",
+          "converged": false,
+          "ftol": 1e-11,
+          "message": "Iteration limit reached",
+          "objective_value": 6.074433297005702e-10,
+          "outer_iteration_budget": 100,
+          "outer_iterations_completed": 100,
+          "slsqp_maxiter": 25,
+          "status_code": 9,
+          "stopped_reason": "iteration_budget"
+        }
+      },
+      {
+        "comparisons": [
+          {
+            "delta_v_mean": 0.0044026404526084665,
+            "delta_v_variance_sample": 9.736460156652508e-09,
+            "label": "PINN with exact BC",
+            "n": 100,
+            "relative_mean_improvement_vs_baseline": -0.035193563607015914,
+            "runtime_seconds_mean": 5.345137739999999
+          }
+        ],
+        "delta_v": 0.0042529635107737334,
+        "label": "OpenGoddard (PINN initial guess)",
+        "runtime_seconds": 487.65119400000003,
+        "solver": {
+          "backend": "OpenGoddard",
+          "converged": false,
+          "ftol": 1e-11,
+          "message": "Iteration limit reached",
+          "objective_value": 6.318464405866105e-11,
+          "outer_iteration_budget": 100,
+          "outer_iterations_completed": 100,
+          "slsqp_maxiter": 25,
+          "status_code": 9,
+          "stopped_reason": "iteration_budget"
+        }
+      }
+    ]
+  },
+  "label": "rendezvous_hold_point_eci_monte_carlo",
+  "monte_carlo_summary": {
+    "groups": [
+      {
+        "delta_v": {
+          "max": 0.004648564849048853,
+          "mean": 0.0044026404526084665,
+          "min": 0.004235608968883753,
+          "std_population": 9.817889567053594e-05,
+          "std_sample": 9.867350280927757e-05,
+          "variance_population": 9.639095555085982e-09,
+          "variance_sample": 9.736460156652508e-09
+        },
+        "label": "PINN with exact BC",
+        "n": 100,
+        "runtime_seconds": {
+          "max": 15.347088999999997,
+          "mean": 5.345137739999999,
+          "min": 0.7119320000000045,
+          "std_population": 3.4205082654891297,
+          "std_sample": 3.437740154223272,
+          "variance_population": 11.699876794279454,
+          "variance_sample": 11.818057367959046
+        },
+        "t_total": {
+          "max": 900.0084838867188,
+          "mean": 900.0023406982422,
+          "min": 900.0001220703125,
+          "std_population": 0.0021318903840504425,
+          "std_sample": 0.002142630453958179,
+          "variance_population": 4.5449566096067426e-06,
+          "variance_sample": 4.590865262229033e-06
+        }
+      }
+    ]
+  },
+  "num_entries": 102,
+  "run_dir": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo",
+  "run_id": "20260420_114254_rendezvous_hold_point_eci_monte_carlo",
+  "title": "rendezvous_hold_point_eci_monte_carlo"
+}

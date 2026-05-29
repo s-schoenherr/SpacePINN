@@ -1,0 +1,81 @@
+{
+  "hashes": {
+    "enabled": false
+  },
+  "summary": {
+    "boundary_error_end": {
+      "atol": 1e-07,
+      "rtol": 0.0
+    },
+    "boundary_error_start": {
+      "atol": 1e-07,
+      "rtol": 0.0
+    },
+    "delta_v": {
+      "atol": 1e-07,
+      "rtol": 1e-07
+    },
+    "epochs_total": {
+      "atol": 0.0,
+      "rtol": 0.0
+    },
+    "final_loss": {
+      "atol": 1e-07,
+      "rtol": 1e-07
+    },
+    "final_loss_bc": {
+      "atol": 1e-07,
+      "rtol": 1e-07
+    },
+    "final_loss_physics": {
+      "atol": 1e-07,
+      "rtol": 1e-07
+    },
+    "runtime_seconds": {
+      "atol": 0.0,
+      "rtol": 0.0
+    },
+    "t_total": {
+      "atol": 1e-09,
+      "rtol": 0.0
+    }
+  },
+  "timeseries": {
+    "F": {
+      "max_abs": 1e-06,
+      "rmse": 1e-07
+    },
+    "G": {
+      "max_abs": 1e-06,
+      "rmse": 1e-07
+    },
+    "a": {
+      "max_abs": 1e-06,
+      "rmse": 1e-07
+    },
+    "loss": {
+      "max_abs": 1e-07,
+      "rmse": 1e-07
+    },
+    "loss_bc": {
+      "max_abs": 1e-07,
+      "rmse": 1e-07
+    },
+    "loss_physics": {
+      "max_abs": 1e-07,
+      "rmse": 1e-07
+    },
+    "r": {
+      "max_abs": 1e-06,
+      "rmse": 1e-07
+    },
+    "t": {
+      "max_abs": 1e-12,
+      "rmse": 1e-12
+    },
+    "v": {
+      "max_abs": 1e-06,
+      "rmse": 1e-07
+    }
+  }
+}

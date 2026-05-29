@@ -1,0 +1,66 @@
+{
+  "backend": "OpenGoddard",
+  "constraints": {
+    "hard_boundary_position": true,
+    "hard_boundary_velocity": true,
+    "terminal_state_depends_on_time_final": true
+  },
+  "initial_guess": {
+    "controls": "pinn_thrust_seed",
+    "mode": "pinn_warm_start",
+    "source_label": "PINN with exact BC",
+    "source_t_total": 900.0074462890625,
+    "states": "trajectory_seed"
+  },
+  "problem": "rendezvous_hold_point_eci_polar",
+  "solver": {
+    "ftol": 1e-11,
+    "max_iteration": 100,
+    "n": [
+      100
+    ],
+    "num_controls": [
+      2
+    ],
+    "num_states": [
+      4
+    ],
+    "slsqp_maxiter": 25,
+    "time_final_upper_bound": null,
+    "time_init": [
+      0.0,
+      900.0074462890625
+    ]
+  },
+  "spaceship": {
+    "gravity_sources": [
+      [
+        0.0,
+        0.0,
+        398600.0
+      ]
+    ],
+    "hold_point_radial_offset": 0.03,
+    "mass": 1.0,
+    "r0_cart": [
+      6877.0,
+      -0.3
+    ],
+    "r0_polar": [
+      6877.0000065435515,
+      -4.3623673085603826e-05
+    ],
+    "target_radius": 6878.0,
+    "target_speed": 7.612679770155256,
+    "u_max": 0.05,
+    "v0_cart": [
+      -0.0,
+      7.612679770155256
+    ],
+    "v0_polar": [
+      -0.00033209305349331226,
+      7.6126797629116965
+    ]
+  },
+  "variant": "OpenGoddard (PINN initial guess)"
+}

@@ -24,7 +24,8 @@ def set_time_axis_labels(ax, ylabel, *, plot_legend=True):
     ax.set_ylabel(ylabel)
     ax.set_xlim(0, 1)
     if plot_legend:
-        ax.legend()
+        return ax.legend()
+    return None
 
 
 def get_gravity_sources(result):

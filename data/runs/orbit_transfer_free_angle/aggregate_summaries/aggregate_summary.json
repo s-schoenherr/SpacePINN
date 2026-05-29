@@ -1,0 +1,73 @@
+{
+  "baseline_comparison": {
+    "baselines": [
+      {
+        "comparisons": [
+          {
+            "delta_v_mean": 11.595408782958984,
+            "delta_v_variance_sample": 6.503930620818559e-06,
+            "label": "PINN with exact BC",
+            "n": 100,
+            "relative_mean_improvement_vs_baseline": 0.03613561434518388,
+            "runtime_seconds_mean": 9.627124689999999
+          }
+        ],
+        "delta_v": 12.030124730753968,
+        "label": "Baseline (OpenGoddard)",
+        "runtime_seconds": 413.061086,
+        "solver": {
+          "backend": "OpenGoddard",
+          "converged": false,
+          "ftol": 1e-11,
+          "message": "Iteration limit reached",
+          "objective_value": 2.4441118146928647e-05,
+          "outer_iteration_budget": 100,
+          "outer_iterations_completed": 100,
+          "slsqp_maxiter": 25,
+          "status_code": 9,
+          "stopped_reason": "iteration_budget"
+        }
+      }
+    ]
+  },
+  "label": "low_thrust_transfer_monte_carlo",
+  "monte_carlo_summary": {
+    "groups": [
+      {
+        "delta_v": {
+          "max": 11.601553916931152,
+          "mean": 11.595408782958984,
+          "min": 11.588316917419434,
+          "std_population": 0.0025374970570643768,
+          "std_sample": 0.0025502804984586618,
+          "variance_population": 6.4388913146103736e-06,
+          "variance_sample": 6.503930620818559e-06
+        },
+        "label": "PINN with exact BC",
+        "n": 100,
+        "runtime_seconds": {
+          "max": 12.508728999999988,
+          "mean": 9.627124689999999,
+          "min": 5.51527999999999,
+          "std_population": 1.1848450212796502,
+          "std_sample": 1.1908140516076542,
+          "variance_population": 1.4038577244511745,
+          "variance_sample": 1.418038105506237
+        },
+        "t_total": {
+          "max": 20826.4375,
+          "mean": 20826.4375,
+          "min": 20826.4375,
+          "std_population": 0.0,
+          "std_sample": 0.0,
+          "variance_population": 0.0,
+          "variance_sample": 0.0
+        }
+      }
+    ]
+  },
+  "num_entries": 101,
+  "run_dir": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo",
+  "run_id": "20260414_181609_low_thrust_transfer_monte_carlo",
+  "title": "low_thrust_transfer_monte_carlo"
+}

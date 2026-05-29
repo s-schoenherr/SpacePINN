@@ -18,15 +18,13 @@ def plot_thrust(plotter, plot_legend=True):
             linewidth=plotter.main_linewidth,
             zorder=exp["zorder"],
         )
-    set_time_axis_labels(ax, "Thrust magnitude", plot_legend=plot_legend)
+    legend = set_time_axis_labels(ax, "Thrust magnitude", plot_legend=plot_legend)
+    plotter.style_axes(ax)
+    plotter.style_legend(legend)
 
     fig.tight_layout()
     figure_path = plotter._build_figure_path("thrust")
-    fig.savefig(
-        figure_path,
-        bbox_inches="tight",
-        pad_inches=0.05,
-    )
+    plotter.save_figure(fig, figure_path)
     register_plot_artifact_if_possible(figure_path)
     plt.show()
 
@@ -56,11 +54,12 @@ def plot_gravity(plotter, legend_mode=None):
             zorder=exp["zorder"],
         )
     set_time_axis_labels(ax, "Gravity / Required Force magnitude", plot_legend=False)
+    legend = None
     if legend_mode == "spread":
         handles, labels = ax.get_legend_handles_labels()
         if handles:
             ncol = max(1, min(4, len(handles)))
-            ax.legend(
+            legend = ax.legend(
                 handles,
                 labels,
                 loc="lower left",
@@ -72,7 +71,7 @@ def plot_gravity(plotter, legend_mode=None):
     elif legend_mode == "compact":
         handles, labels = ax.get_legend_handles_labels()
         if handles:
-            ax.legend(
+            legend = ax.legend(
                 handles,
                 labels,
                 loc="lower center",
@@ -84,13 +83,11 @@ def plot_gravity(plotter, legend_mode=None):
                 labelspacing=0.35,
                 borderaxespad=0.0,
             )
+    plotter.style_axes(ax)
+    plotter.style_legend(legend)
 
     fig.tight_layout()
     figure_path = plotter._build_figure_path("gravity")
-    fig.savefig(
-        figure_path,
-        bbox_inches="tight",
-        pad_inches=0.05,
-    )
+    plotter.save_figure(fig, figure_path)
     register_plot_artifact_if_possible(figure_path)
     plt.show()

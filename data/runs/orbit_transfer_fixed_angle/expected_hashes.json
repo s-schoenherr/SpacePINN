@@ -1,0 +1,1420 @@
+{
+  "entries": [
+    {
+      "entry_id": "00_pinn-with-exact-bc---seed-4000",
+      "hashes": {
+        "F": "5f030cd88d2e56c4994aa68e2a2f10a62f13b2b786d167bdae5504695fb97fb9",
+        "G": "f2d779d3eaaf460207ac736fedad2e79e1bc3999f385f3de7a61ce1d245b8577",
+        "a": "a05c11e13f0fd652e187ea8a85aefaf8424974a1f46078160d21308313636e21",
+        "loss": "366a7b07c8124255a1529f3e15d2befb15d789d3b2d62aedc068fadb87e42e7e",
+        "r": "8adf78d16dec08625ac56b29d8e02c89b3049f0db37ba9e456585436c5b611bb",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "78c6142eac50b5a0fa3e8d449d4834f581f7433ab671e768fab415c66478be13"
+      },
+      "label": "PINN with exact BC | seed=4000",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "01_pinn-with-exact-bc---seed-4001",
+      "hashes": {
+        "F": "65567148769027ad09988e68a6a46910be069cc36598d0bd6a66f67bacc54378",
+        "G": "4c49b370b3d2e47d499c8bd1a1ecc55385f161132e82055143f0978ed3fd4301",
+        "a": "371e0489240df762d21e58a9b3637176449ccecffe0c978b6e14fcca0a435f9e",
+        "loss": "ba12bed8a5692b54760966cf1f9e78ebd517d49aa152b4be44d1c49276f6901e",
+        "r": "5b0fd3b6ad836271a8e4952dd4bceec1e45f308d13a603a2e514cd89b9948334",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "e4ea533f68dcf9ed8c269e80e739e8de378fb8857b0c64482e8bc71dfed755d0"
+      },
+      "label": "PINN with exact BC | seed=4001",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "02_pinn-with-exact-bc---seed-4002",
+      "hashes": {
+        "F": "4896ced981c1ffee81ef088358125c843e8d3f112584e5f1fcec499a3684d62f",
+        "G": "1a195281e7f8d390d5fe6c087901ea41159d098e0a9c74ae06e2aaf55b43ad83",
+        "a": "523dc14c75c00e0b509afbf09257242d70a01508e556b29ca834a0f26eac4b6c",
+        "loss": "8fa748aebe21c0a35ad1691eeeb7ce21f638892b55c0996f2bd9de3600e934b8",
+        "r": "c9c754a9debd00d870b51444dcc11ddbb299c89018bc4f60474d351141d034b7",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "9ef9e1131adb0ac18e22e3cb1dcb355c9ec66ed5f0819f56128f8d3773817c8e"
+      },
+      "label": "PINN with exact BC | seed=4002",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "03_pinn-with-exact-bc---seed-4003",
+      "hashes": {
+        "F": "f3846dcc1136eebc247424f77b6349f84128284de08397a1688cee9a07030258",
+        "G": "f38815a45a9a928b529f7f746d83b9619eebc02b96abab0522669ea0f3fe9d7e",
+        "a": "90c95619b1871283a24a1eb713bf591608ae47fc747a462637bcb11913e87ad3",
+        "loss": "3152c6bfa2d59a62f84b62c9ea0de25ff080be2bad6a3bc81fc653f30d659509",
+        "r": "3843a07c551a852c696924e6b40be3639c3cede4938438b99aeebcdcef005dfc",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "a8b64355a6686b99626cd4a0a69e926473b87d34ce74df335c5367964c15014b"
+      },
+      "label": "PINN with exact BC | seed=4003",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "04_pinn-with-exact-bc---seed-4004",
+      "hashes": {
+        "F": "7084c5b53000c86f02914bb4dd3f8a5383c0c57173e40861a65150d2bae62f05",
+        "G": "f73782dca1451c42244b74c2c056c349853d6bcac8e996936e5c942c3bda377a",
+        "a": "abe82c1ff050f896fae2cd16051e3602ba4a14c40e9e387cf7e6cbb833e95111",
+        "loss": "b5c0a31db12b6946e6125316d3daf7aefbc678c1d6a33dccb60d54eed6e5611c",
+        "r": "d2af73a33b35cda9e1ee22d45854daf264a2a054cdadeb2f4eab89dfc49ec0e8",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "f91a5fb9912c329c4c6c1e6c7c5b65d7cb50d46cdbd55ae629a707b191c479fe"
+      },
+      "label": "PINN with exact BC | seed=4004",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "05_pinn-with-exact-bc---seed-4005",
+      "hashes": {
+        "F": "48816a3e09147fc5918286a1853b2a223c3e4b40a4e8027b90ee24337444b65f",
+        "G": "953616234ffcb82563f7568524f2c746d07cebb096d03931091919203ba134db",
+        "a": "07731fdb7ce907cfabad19bdb87d529dbb61515cbca5e0951fa00d335e951862",
+        "loss": "932d3cbceea2b1cab95761f191b08ef624dac14a1f8ce22b8c9560505a3d5563",
+        "r": "c55ae2377c95052828dab5d9567a1e242f774ecdcd10b6603f6768068ebbfbcc",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "d8f37b7d01aab48c05e97acb0aaab719d38bfbf1ca35a06a4a1bb423883211e3"
+      },
+      "label": "PINN with exact BC | seed=4005",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "06_pinn-with-exact-bc---seed-4006",
+      "hashes": {
+        "F": "eee4f74e01c3809c285017f1fd50f175eef8115da6838ec0c8012aed42a97116",
+        "G": "fe7e1bb6d0fb867fdedc01d4332a81ffa263ff9217d5c90158398a4f99659fd3",
+        "a": "039cadcb858ab0364ce2a4bcc90f40d708ca374d70686df9ad26e5c322523a21",
+        "loss": "dfbe8d4c4fd3faabea8ea495c55c1111a16b4e37e206741ecab16ebb78300b95",
+        "r": "7bcc4033aa5274b981a24349dda263faa0e589d99a3cefa1e651916fa4d78e5e",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "d49ee8058932da64e212143209729df7b2159ea3819b4a97e5d16673fc60b903"
+      },
+      "label": "PINN with exact BC | seed=4006",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "07_pinn-with-exact-bc---seed-4007",
+      "hashes": {
+        "F": "c3b2395a9f5b8efbe8e680c34f1fbcad74bfb4003c88e9341c1061c5f67d21aa",
+        "G": "623f4fff470980943f1e56f889c38aad13ddfc96f3dad0f279aa42a6d4d51ad4",
+        "a": "5be8f553c0b41119255c5d04b352c757d204faa77cb5da9d9466be17bdf3996d",
+        "loss": "d72a1ba618287297de2a44904f1f66fe258d6fdacaae9d99ea4f6a302b7f8ae5",
+        "r": "a2026fc0e43c9461dac3f5a0f6f9b26ce1265f801519e687f0e177340bf16c03",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "703b5c164e54cf0330797cf317e4ed400854e65b3e9c14808b064cda4b3d8209"
+      },
+      "label": "PINN with exact BC | seed=4007",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "08_pinn-with-exact-bc---seed-4008",
+      "hashes": {
+        "F": "acd629d9e4af749df38b17727e6370cfe3e68e5b178ee35269e5bd88190b8b0c",
+        "G": "a9a8b55212dd5ece76ace10670d530d8f43e3c39a1f972b033cfaf0d3d3d2593",
+        "a": "6d99c10c1730602d6469b99f011ec0da182b9f354e943f10a0f8092a9587e8c5",
+        "loss": "071c9625539fa79044703370babf73500ae0109295a066c41c4abd1f485a0728",
+        "r": "00cd0a4431286ec620ebee71a27cdef990ae12c631aceba9033132e345a51617",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "c1a0a6dfd7ee7a1d1054d87d7600d02d1a99faa3efe07fc4cdc61139d2ff6e86"
+      },
+      "label": "PINN with exact BC | seed=4008",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "09_pinn-with-exact-bc---seed-4009",
+      "hashes": {
+        "F": "89e7ab5dfa1d095dd20d2dc94edc10f2943785e23dd94ca48e912970862d2504",
+        "G": "5341616f9b97db2a20ea22ac4f1a54f46955dd10cb7395cbfc5d999de3681c95",
+        "a": "4f85761314646818ecf2cbdbdbd3fabe82316e350a967757fca7c2ff90c8ebd2",
+        "loss": "e2580ba28b73aef1f6489795d70862d72a8935c7b439c0331c27a0e6cb7901e8",
+        "r": "4de7998d53c9a5df418c94a08d238e8ca052641eef98b03ae0b34cd0e583dcc0",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "f89793ac0d3a1eb51041306350c766e97d2ed477eab65909664b68554033144e"
+      },
+      "label": "PINN with exact BC | seed=4009",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "10_pinn-with-exact-bc---seed-4010",
+      "hashes": {
+        "F": "b0cf8e46e06928fbb55eb34497b76131dd930e98cf2228025339d593e6ba646b",
+        "G": "8ccb840cc0cab9c4684b59f36626eb886c1c371fd1d7d689e227e3eaa655acb7",
+        "a": "1c33ae18fb5a0918a9126c00d5d4127836d3b9f99884f9e4eee66c3f321fca2c",
+        "loss": "bc418fc46f8a3105547e6cd2a56085fa104aed0aa868df17392ac510f7c4a210",
+        "r": "ccad56557a5c22aafd0a00e1e6531a95f3bf0a44c8365b7ad5df74c1d011cb4b",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "6f1caf1bc42f2d5915bde69891b2c9d36dc09b50bc05b6dbceae04d16a7f61e8"
+      },
+      "label": "PINN with exact BC | seed=4010",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "11_pinn-with-exact-bc---seed-4011",
+      "hashes": {
+        "F": "837dd355da553c97e0fc72c3708ccb761f7a33ad29e3cbfce454261b59731a0c",
+        "G": "20d3cee446682b703b05fe24ca1b2a4d429859f2cc5488e7348612dff5540fe0",
+        "a": "f29688add4c837aa53cf6ce0aa3d5a92f54de9dbf5bb9f2f038e34b98fee0d49",
+        "loss": "5cad9104e39cec43bd50a70d533af9d14d67fcaaaf0b265225f83a019b58c840",
+        "r": "64489ce6178aecea365ed37de3f37ec1beb74b83fb88c96d5f7a0c03c8051e76",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "b40f9b802a5dd1b9edba453bdeedf65e25af9acb5a6d8640eca33f0f544d3735"
+      },
+      "label": "PINN with exact BC | seed=4011",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "12_pinn-with-exact-bc---seed-4012",
+      "hashes": {
+        "F": "da027a38af2218f3ed07a1da1c6fd5b33de2519373912da3dc61a4d6f94d4c0d",
+        "G": "4f835bddf5b1837cbde6c78a968031888c4d5e7ca415dbfcf382d5a28b2602ef",
+        "a": "c216285f4dd97b4ae93b04614e8c84f048d61041ed59227234bad942696f2889",
+        "loss": "68f265eb51fcff003fb48e686e12bb139b2af37ac372243cc6b49f34154579ad",
+        "r": "6d35698c227c79f8927538b0abbfc9b50114933b9b22b71331fb2cd30c8ae907",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "1ccdccea5f43e1f9e2b850a0272f63eec9a38544011ff6bd1508f5da3d879bc1"
+      },
+      "label": "PINN with exact BC | seed=4012",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "13_pinn-with-exact-bc---seed-4013",
+      "hashes": {
+        "F": "565d1c69eaa9a2b963b8821f808ced85eb9f65813c5483cb70a79f5305f22a46",
+        "G": "f4fdddacea3c2a993f332669b81c55d67334d8c48ccae21c2d50dbdc1e677979",
+        "a": "e7a4be3db887fede85c50b0274c59e42365371ba02d3ecca9e378f7bcf22e65a",
+        "loss": "c2135affa8cc6e9233698434df55b5295b6ae3546978bd6a2bd17d634a7b09a8",
+        "r": "821d85117a6624e1d349e5c41646c6b8b2a2f085f379e39f5364f299342f3ee0",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "6ced01f44b0f023ff6017b3843307f49e8ea3479d5e15b541a7767f7447f196d"
+      },
+      "label": "PINN with exact BC | seed=4013",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "14_pinn-with-exact-bc---seed-4014",
+      "hashes": {
+        "F": "de65dd9cb7ec81417b6d5468642c59a749a282bd05e64f58aa1ee45a71aa912a",
+        "G": "b765c4debe2b1336f0571b42b0dbae401cae293e1666b6bcc3b0a3752e3ad5c3",
+        "a": "51465f06bbffb92162476c09189dc0fb18d1fd53d0a6dcc0e6c81e79758f71b9",
+        "loss": "1fa99fee45f69bcb1df0ddd0aa8de6b4d176267ecd9a6a96862a22332efe2944",
+        "r": "b49f2773fa57158d9eceb57c9ce604969ca3569ca7b7e2f81df682718acc9cda",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "60ddf6a90840b02e203a0df68b0d002fa4da458909060c76c8927f170dfb4e1f"
+      },
+      "label": "PINN with exact BC | seed=4014",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "15_pinn-with-exact-bc---seed-4015",
+      "hashes": {
+        "F": "92f831e94ce72aacc67556b4adf76d23b05d3382412545fa0e9e605cd8c25fbd",
+        "G": "3389d267ed4d77427d29616a34520950dcbdfcd6cfefd793e048ffa029a23a28",
+        "a": "27f89977a20647ef7c6d3cd3f25a71ff5cbe9806381c27b7821c38ed884cb50f",
+        "loss": "c2fc9a0463a7224793415d322fb0319832e5955e8ca9a2186e26fdd0cd6e6a11",
+        "r": "b15e0236b3b5bf491f02f160ab1c27aa2a56c3129b4316179ba055907616d3d1",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "2b3440144d6808f6ee79ae04ea10092d9c660090d704c9c4ee9041dc70f1440d"
+      },
+      "label": "PINN with exact BC | seed=4015",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "16_pinn-with-exact-bc---seed-4016",
+      "hashes": {
+        "F": "218c6ac4d3342d74e24903997c24f297c23ad9f7d7a32953844bc2be1596e7d9",
+        "G": "70fad23ab7e09e992a7caa1642bf7d3fd5933d59ec684c0ea5200904578f6686",
+        "a": "9a6154edbffe2d2be2368a45df1dd540a72b166f6d204962506db99e6f4f1049",
+        "loss": "fcff19b4987fbd75e5664211eac5a05ec7160dd3074bd560ae9f841b839e57c6",
+        "r": "5e318a8ad57ac83e48cae1489e24c21fb841e5536103ace8f8e487b598a9abdc",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "5867d76d505a27116c942327d7c784b938d236ce3955bcdd60a151fd816a3e89"
+      },
+      "label": "PINN with exact BC | seed=4016",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "17_pinn-with-exact-bc---seed-4017",
+      "hashes": {
+        "F": "a3009452dc7e60d02ae60b393fb92ea773edb0734e905ff8de0f770829398d1c",
+        "G": "27d1e1bead223f241f4c6c3c5d2c391862d2517debba2b92cc3b25cbf96eebeb",
+        "a": "c540b237dbb74f4a4d3824c43b0a4151d025b5ba54c1d30c7472534ff461ef95",
+        "loss": "79032e2b0109c11d7c9448f0dd2ece858f009ef2f598d14d3113943f7cb47a63",
+        "r": "433d0a4e0a116716e2badf10b159452b6cbcff6d38ac188cf1022d73ab1b5266",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "d8f02d01406167bbfe5725bdf58b4fa128c367227c20770bc79bb8a1bace5241"
+      },
+      "label": "PINN with exact BC | seed=4017",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "18_pinn-with-exact-bc---seed-4018",
+      "hashes": {
+        "F": "8ba5e388128c61c1aed8714fd4a552e5eea1f7090e3ff0cc29db566f65f8e9f5",
+        "G": "672155ab1f2f9f5f027adf8cb0437b808104949b23825f82fecfeca6db1060ff",
+        "a": "73493d19d1f01458dec2b015b1c0c7927df94fcac141cf3c5bdcd7c0cd54075e",
+        "loss": "cf9d66a69ba17a7c812fc46891c92a2fe1fd28eecee320183a97343991e574cf",
+        "r": "6501fa52d2295d491ae28fe4c4a295b876209891dbab56ff8fa3c2b98af047ef",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "7ce41d65dc4c5c53eaa193571a1c1cc2a314cb36f77f6f225b5507e096c3cf99"
+      },
+      "label": "PINN with exact BC | seed=4018",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "19_pinn-with-exact-bc---seed-4019",
+      "hashes": {
+        "F": "cdff61058b46d9a30fc0dcd572bce4fb9310ed03408706dd2833db2be9b17cec",
+        "G": "0d0b49dea393b609a44a0f6f22790c8d2b64fbeb392eab2ae42fadb6ae775789",
+        "a": "bae5fd2946b64648e93ec08722091b529ddf774fb7b709e43829e01143a693f0",
+        "loss": "e8c70db75f4b48a607d98d3939c358e3bcde73a1f557d4cff0482ed69c648f1d",
+        "r": "d04cecd475db4635d9442eca79fec6bbd41419ff5d541f918feeca56d14b7699",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "a73412a49e6a48259f7749f23204b35ca8288eff6c6ce48381a8ca29b4d6308f"
+      },
+      "label": "PINN with exact BC | seed=4019",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "20_pinn-with-exact-bc---seed-4020",
+      "hashes": {
+        "F": "84bd3542880de0ad3a3c17ba26d4a82afa3c07820ae92d7317cc1dbc0977e682",
+        "G": "199fba92ddb9f4831bcf4dd87712af4933daeb72b4db7e2cf5a1cdfc1f0b4a85",
+        "a": "3f60cbdb9b332d6d8ec26cc83b889d795adcff5fff64e86becaa0f5f0c38c561",
+        "loss": "9096fc1714f5814eaa961143200fb38ac8c90f1d8f80ef95242c48891a9155a7",
+        "r": "82353ff7e3bc8f45273e082e123e18a0524a6d0e0333de644ccca73d61fee0d9",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "e948609897182a8c2d8c6a5e7a52a1155d3e2e5ec14e4c4696852a518f7e155a"
+      },
+      "label": "PINN with exact BC | seed=4020",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "21_pinn-with-exact-bc---seed-4021",
+      "hashes": {
+        "F": "dc81a48d85d6a249fc6d36bf6fea0c4108a4d2a341eb40a1be95e99ab3aac32c",
+        "G": "fd1fbf988895dc98b82ea195704445ac5f71a5ea583a47db0797638be7e3b8cb",
+        "a": "08deb82608e38ad0d3b127dad612d214c0e587a8fd5ecebc3fd31180a208d647",
+        "loss": "17909afa45c1364d948a0d27e47dd0a792914a4720efc06a13e6264e6e79629c",
+        "r": "5cc3a3d481ed29b08cdd66204c8e976a7bf91ccfd6711eb0fd662eeed7c67228",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "5dd171402eac7831a53517f3684d8dfdeaade3900ba2d4fd4c6bc281a0ca9f9f"
+      },
+      "label": "PINN with exact BC | seed=4021",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "22_pinn-with-exact-bc---seed-4022",
+      "hashes": {
+        "F": "eebaf3aab7b2431e69c5b51682638172a306493549c09b055e3e625b63acc9c4",
+        "G": "93bca05dc62c87a1f6f2876e708fb3c2dfb5aebef287b39f4aef75464b5f8b46",
+        "a": "2a3a23d12435f9a810793cab2f4d61776cf6d1987a90df72e66e325e25694e41",
+        "loss": "14a8c56abebf776c83b2d6a55984f68a4462d50483e7720d54316c52be55db7f",
+        "r": "58cabe60783d0b20567cc2bf1a41035c7f7207ca6bc72f7d80b48de07da3aa7a",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "037ec491cd828f0a7d6ff7e3b5baf14117f724382416052d5aaf17675c214634"
+      },
+      "label": "PINN with exact BC | seed=4022",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "23_pinn-with-exact-bc---seed-4023",
+      "hashes": {
+        "F": "8059ccc1eda3331ad43fe143e303458d98491c1dc72884d9e85287d396c73bbc",
+        "G": "b8c1e69484b747acfd94aef6eea9488eeb20203c411d67d74160eaf3d779fb8a",
+        "a": "c035e46c5c9c1d8f4c5bd945e982c95081359be7d16009d3763927a12cef7c65",
+        "loss": "53cd1a56fad499fe31e10cdb1a790c84f94c7f721c0547bc6b3b4732d8b287d0",
+        "r": "289553fa8aeb1dd98e8c286c9d1423a87c9a2ca37b9e0f59520b2f9ec861be4b",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "1d68ead56ca5004c4fbcd5e061838a0dd0894960488b6f0af5644ab3e781cc57"
+      },
+      "label": "PINN with exact BC | seed=4023",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "24_pinn-with-exact-bc---seed-4024",
+      "hashes": {
+        "F": "f48b0e206affa21e5a6956438f6c92ca40417024a86bfa2899275d2fbadb114c",
+        "G": "6f17dfb70c1c45d45f9bbc23349187f6c4ee0deb839564a0a9ceafb4f982ee94",
+        "a": "cf71d52a66048aa57aae9151a5a11ee74c5bfa60ffd359e249736369abd06e3f",
+        "loss": "1e53d3bb11cc9f4a1287245cc775329b2b45d0cdf5042d0da5687b6b074dab22",
+        "r": "d66fe8a5ffb4b5d0e00a22d211e083c62e42098e1b77791932841f04a6faf4b9",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "1570d65658c3ce0ca266249255762a92e06ff90e0c1489b06cbcca3ef1b9f77d"
+      },
+      "label": "PINN with exact BC | seed=4024",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "25_pinn-with-exact-bc---seed-4025",
+      "hashes": {
+        "F": "f3e09fb2752f11c64082bda9dc7bce0a3f4ca3a9ab1a118db6308cf74ee19623",
+        "G": "563d2c36c5cd0a4f24ad491b8c9e8ef69bad20fd8f0d0ee2db4d0d7e3d28a3d7",
+        "a": "5b272d80bcad1a81643983a799c51ded4be22a90cff502e57e2001bec18520ec",
+        "loss": "2bb6ace3f83b23db0a82afe90325b0544b2a76363949603c482da0a28213108f",
+        "r": "b63dec80283bae179e1b97c8f001c965e17e567403b1468bbe2ed9cb44df6aa8",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "2a9c860ba823038b410f6dbf5432a3af4abaa5ed60f1d9d8cb5852f10276c556"
+      },
+      "label": "PINN with exact BC | seed=4025",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "26_pinn-with-exact-bc---seed-4026",
+      "hashes": {
+        "F": "8cc8ffcc83a74366f1b861ab24ab36a905aca532084992785d889708964c7b12",
+        "G": "19716a94f24f25976e62f6aa2a0b169f4d4ff946728c81cd1a1a5c1591e590d4",
+        "a": "36cb77c443a240eb4f98795d38572394b3e1c16eeee2e0d09d3b6fd483f6df2a",
+        "loss": "5aad078a7d066217bfbabe7f41ad9765e70bb89b4b4f53d832c5c08277c5a70d",
+        "r": "0cac71e4505039986aa0f7638a8d812cd5e72f53f245c1ec73fc4ea319c7c291",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "a9a3f0b3e25e13c1cc62e84cd8d71504a340b8887fd5858653066520c65659aa"
+      },
+      "label": "PINN with exact BC | seed=4026",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "27_pinn-with-exact-bc---seed-4027",
+      "hashes": {
+        "F": "4860b4d3c6e4436b54690748e74e67caa2b153c431777aef20605df3c80d923a",
+        "G": "d9d8dbe2bef237cc9783ab63c407f9919719a7dd7ca959201412cb736c0f087f",
+        "a": "555e79ccdc8adc61865ec0b8e077772d3143d27cfd6c8f2c3f464c597031203b",
+        "loss": "a1c5fb22994ea7cb188baa0814d40650282eea858078d44a2c5cfe0bcfc4a014",
+        "r": "9528276e912935cb323c0c0920da809da7d66978ad2a7383aa72766db878a609",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "f67d9426201cf04be829f04976b031ed0d17666680412f444e72806c061666ab"
+      },
+      "label": "PINN with exact BC | seed=4027",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "28_pinn-with-exact-bc---seed-4028",
+      "hashes": {
+        "F": "a5e901ad5e372dcd501a6734b9f68fa25f865e68e8d38e1e2cd0faa221661a50",
+        "G": "e357cfc3370e4fee91eadf53617edbc2def2b80691cb5f46092542f4e5491ec2",
+        "a": "d79aa43a6457e4b8a1aebeb79a094f2da760fe5a2bee6630e2dd20a94f966588",
+        "loss": "3f14c2125b33aea63d327231d3eac83802a1058f138bd86004315f8753b8ea13",
+        "r": "470447da88c6021402afe09e3f9a76bbd62bcd79542eac3bfd5a91fbb0fa2543",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "b4bbd614109eabf097d82042f9398c0bb50c43e00f344fc7807a39213a089483"
+      },
+      "label": "PINN with exact BC | seed=4028",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "29_pinn-with-exact-bc---seed-4029",
+      "hashes": {
+        "F": "c756e44e80b789f1f14598e5be9392c95a292db03abb7c80d41e644580259c03",
+        "G": "c90c2921ddc7b333786f8fec9325c3dbce083a0d6d51eb07e7334e59f0dfd249",
+        "a": "1ca102591876d77cff7469a98f3bc0e62800d6bf4485837366215133c09770ac",
+        "loss": "acbf69faa3cad0e6d76201dc8e91f814f7dc91d7ce1ee4eef5a87e8888924881",
+        "r": "b3d5351785d56e2c1220838e6485869ca2dfc766a891984e68d3f53b5641ea20",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "f27f8762b030b6635210159893c91bf9e8d8150a30c901016b65ae51ac3c8d09"
+      },
+      "label": "PINN with exact BC | seed=4029",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "30_pinn-with-exact-bc---seed-4030",
+      "hashes": {
+        "F": "5abb309e1776d4827cc3a786c51ed8c4ad61b08c91c3fe9690e162b6c665e522",
+        "G": "159691556a5b91a9512fc984bbe8c4d0e4278f834bb813d07a61aca9b55cbc9b",
+        "a": "2830fa3bce41a40bacdbdc6641ac9cee439b6f8dbcd9578827039724948627bb",
+        "loss": "9824c6791f4ea98c1ae4ad63565dc30593774866719ee08513000148b7bd425b",
+        "r": "d591d2b0617d7abe6d1a8c8a77b862f29fb6ad5cd88aa1618216b09f9fd7241b",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "a9e09b01006b4be13931424638f83245ebd1bd1ffe253622e8f41362d631467d"
+      },
+      "label": "PINN with exact BC | seed=4030",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "31_pinn-with-exact-bc---seed-4031",
+      "hashes": {
+        "F": "efe1a1d98b15ba4dd19bb41bb17225f054b4a363787ce7adac8d0bf4887d341c",
+        "G": "4df4655e3ba85494cf58a39c7e9e5da793854e3654c1d94696db6c690ab5906f",
+        "a": "a054db7adbd360e59312c6da8e0399d847873e09294103f7c44afb6f693b5249",
+        "loss": "3f2d16c22091ab8a42d03b29b57a3afe5240b91099ad0862f121eeb0abffd69d",
+        "r": "64256b6649fb7ff9aa6e6b9a1b3b81c7f3b21a505952c6b78359bc1e4f03cc0e",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "41758a6c9b6e16980ae6dc4f72d973a4237981e0d75dd1bf767fdf34aeef1b1a"
+      },
+      "label": "PINN with exact BC | seed=4031",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "32_pinn-with-exact-bc---seed-4032",
+      "hashes": {
+        "F": "e705233d7e83d146e0a2b85c27c42e131e6dfef6f27759f992ff8d120059f1f6",
+        "G": "e7bc31e74e8a04426aa5b7c6f217dfde72633d0bee15d924fc0cd93db19e4153",
+        "a": "696d86701016562ab9b4a564fb9377baaf18ab970e5ac72cff9520e15e6c7e02",
+        "loss": "2e0e834477633f8b33f53279f4bf8e9dc99ebfb9cd053516c6a4049024a7242c",
+        "r": "6013d43dd4de4631f7be7a19d734e6a4a7b92586cd2cd5645511cd9d27538dd4",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "d40bfce608997d409a7a9a2a6da0db8662ce7d5dac947e4cd127e8fa98886193"
+      },
+      "label": "PINN with exact BC | seed=4032",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "33_pinn-with-exact-bc---seed-4033",
+      "hashes": {
+        "F": "e1ded8246aab68c3d2bf40d8bb69880ae9c67657faf0cd1f6a3032b2fa7b2b07",
+        "G": "ba1e42a8d19f4613aac30c5ca9f5a76e70a21e602ba01a1945bc14700ea2bcfe",
+        "a": "34ceed0c840cf1c9a0d330c7391f4cbd268742af1bc29a4abef556acd4e7eadf",
+        "loss": "9fb97ec08cdab6e673e831c3cc3c4dd9c9e21a9558f2f82a0f809b7c9efecd3b",
+        "r": "6c0982023ba3c18cd1df405c4cc98f579fce43b4470dfd2a1b201adcbc49601d",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "e7cb3028ee30ee38683cfb0f4ec0ba554242f8f9fb279b81db5aa77eb336c609"
+      },
+      "label": "PINN with exact BC | seed=4033",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "34_pinn-with-exact-bc---seed-4034",
+      "hashes": {
+        "F": "96631fc1c7477435124c2defef8cca8e7ca4f3406b7e148a5dcbb9ac1f8a020c",
+        "G": "f84e6d97d5c38f6d556f615b74608524f9dbc3094ffa109e8995369c48b2cd24",
+        "a": "6c35b385b94961ba359dafd0042d7b8632682a34277debdbb64832efb87eb125",
+        "loss": "c6ff4e95662e6e5d67ff2090bb6c4b59168a95092a1cb19fce558173d77ff33f",
+        "r": "4e76f6068aea1f416224a212b3376e6c4cfcc78b9e67b7395002885c0dd1e7d5",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "f144306eea508a6c49554164c4f08fa94f5527391e0b4967c8fc73cc42430f7f"
+      },
+      "label": "PINN with exact BC | seed=4034",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "35_pinn-with-exact-bc---seed-4035",
+      "hashes": {
+        "F": "f4294bcbb34dbdea317f359e123f1f9de672430bc42fb27cefffc977c2dfed34",
+        "G": "e52a347d1099f5992dd63915b6b68c50500641c7c44ab3f85e9743a812ea41fd",
+        "a": "e3a97014d11df01d5eedd1513336a6545d9049dbf9877dce74d976e7e1c66780",
+        "loss": "ba2fec84408417ff61c9b24508d30d2a1d38047a26106c13fdd6146c08fff13c",
+        "r": "343232fa18c35e16970ff9ba3644db56c0304b828d733323fe3e0a9caf45f7aa",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "aa460b25716d47748d12153c7d2c326f517c3cd12eafcb3db1e691a12837684c"
+      },
+      "label": "PINN with exact BC | seed=4035",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "36_pinn-with-exact-bc---seed-4036",
+      "hashes": {
+        "F": "c8c51cc6c8d0719ac516de445287a72f9dcb815714d33d74911f964e1de85b41",
+        "G": "01f2a026a80592ec0a0fe518b7763398831debba4ce8e8d983fbccac508872d7",
+        "a": "cc4426c620e7beb7af8ccca6d3cdc599d70e779eaa02c4a3f51d4efe087e773f",
+        "loss": "b002755a3500bb2576a3c5a7f6920a6367bcb4b6008ec6b7e047a1a567222ea2",
+        "r": "73bd6d1978f0d9c744c16b42bcdb82d965a04e87a16d8fcabdf6ddfd6014f0fe",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "b3bd725b10105a4a29875414bfffc685f03c1c9d5ca79f260f98249b36ec57dd"
+      },
+      "label": "PINN with exact BC | seed=4036",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "37_pinn-with-exact-bc---seed-4037",
+      "hashes": {
+        "F": "826f2b66bce9542dda33277e13a157927327eb3ba2c4750505285853438f5ebd",
+        "G": "663f8ff8a5c0802425b38e62cc43b4c9238268ff55737431e48fe57017e5d515",
+        "a": "a2dcd4600a0c4496c20367050e1417762ad9eeba77aab9324329b5700f9de90f",
+        "loss": "64989266bfa79d7ae063294ffdb8b3fc0c1e1870ff38c04baa3fc1bb762ee996",
+        "r": "b6d43f533ae999a9508af6914683c32117872c3c19ba2c6af24406c295a1df92",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "e21e44e60daa7f2308861cc18342d479baa6981751f37b69bb5ed34ce5d1d7bf"
+      },
+      "label": "PINN with exact BC | seed=4037",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "38_pinn-with-exact-bc---seed-4038",
+      "hashes": {
+        "F": "22d4f8b11c2d01238c6afb001d12906ac9ce2e24b6cafdbb6d27b90fa824093c",
+        "G": "c9239bf20783648d3fa35b3bf626e2c13def87543e7f51fa5cbd846558a8655d",
+        "a": "4d6e5a2aca813dcf0b311dedf4a83ebc8aa6b99e069afb31a3829dafa8d53099",
+        "loss": "eaa75a70fec70a59afb3c3586e77e0484f38a30460658b5603ab71a043edc345",
+        "r": "f1ee0abd0af7c78985e8c2f293adfc066fb7c2aaa813d50602ee370c93683a5a",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "c2d4ef043c139abdcb352382be229a25f500b77f862db484a9eb29c6e9083988"
+      },
+      "label": "PINN with exact BC | seed=4038",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "39_pinn-with-exact-bc---seed-4039",
+      "hashes": {
+        "F": "3a45c24c79e8fa4f91456686eec6c3f434a63486d4c462573da0b3df32bfe11a",
+        "G": "b13136c0a04abe5dcdaa21af07a4f1c270afc107f54ec5fde8837b212dbf99e2",
+        "a": "19df7a0ea0584462927ddfe67ccc5b60009b344bfd2bf41a1fd8bc18c65e0998",
+        "loss": "a43735ed73e09d1ee3f3ad3a0d9ce16175ae36dfcf9fd16833cea4ff4d37868d",
+        "r": "3db0e9148b0a13d36a030d024f890ad2b2b7b73a40611bba67db9b8021008fca",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "e4a6258a39744168589e9c84f06adbf6b8d31ae469e686fb6edf6c5009fdcdfe"
+      },
+      "label": "PINN with exact BC | seed=4039",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "40_pinn-with-exact-bc---seed-4040",
+      "hashes": {
+        "F": "149e264d671366dff6d500ecb4d884958ecaf7fbc5d4dc2dc39bc6d8f0ac4d68",
+        "G": "6aa138e2994b3727416a70a46b4afa6de431d81a8ef2fd149e829145b53df1f1",
+        "a": "4d24351bc7b617d55d109ee974a8fc96ca9359b64d5bfa53985ed2fcf71a49dc",
+        "loss": "e977f1ce37b99654111658bb057ac3b8d42ec9069975d0e1dce4eee1dad1d47b",
+        "r": "16096db267f21b9010c70d9f52c4dcb25fbe69d3f2a2369a2932db87cb5fbf76",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "df4fca95dc3ebe30e2f2f96a5835ebaa1ddfe27573a1204e75c25198941ca01b"
+      },
+      "label": "PINN with exact BC | seed=4040",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "41_pinn-with-exact-bc---seed-4041",
+      "hashes": {
+        "F": "4a87af2d37cca85e358df99ff5da39085d561ca85984d94f03113a179b95005f",
+        "G": "0a30978a4d9c26e5e69271e880440791efd248fb3b23de2929505e574b7e77e9",
+        "a": "5507032a664bba8359361563e8e8338b0005db01cd5f7e6189f6b0196809cd9c",
+        "loss": "1e2af56ce8d5ea1564aeaf6536ee5449e14b95cbd04d7762e6fe22bc8b28e76c",
+        "r": "d9cbd6ec09b2a12704c2a5c789cd8f85ca31be98a9d99ebed7595233d06c52b1",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "52aaace7a75221dd6c0e5176d9c4960b9310338cb8c63e4c43253263b67c6381"
+      },
+      "label": "PINN with exact BC | seed=4041",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "42_pinn-with-exact-bc---seed-4042",
+      "hashes": {
+        "F": "f57fc59a7c18f4e330b6683cc165823716ba9e43a6ac81827f1d5bfe06b2afda",
+        "G": "770414a0f0ea4e665db1f4fcbe8c4b279c308050f9fe0a9d6865e7c183e5d0a4",
+        "a": "32d44b213ad368268edbb9f7154dd0c1e6c4aac7fbe0b821099daef9b2b8d929",
+        "loss": "045738e93fe957a9482615850559e9859457e6c5df0813d4f6046446b9c81d0d",
+        "r": "c4b1cbe534471c6d1920a05f5c49943ffbebab86ec5365b896575c946654b463",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "a9c8680b794db89bddfc39843048a69c407adccd22f8c5d25ff0b9ba768a06f6"
+      },
+      "label": "PINN with exact BC | seed=4042",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "43_pinn-with-exact-bc---seed-4043",
+      "hashes": {
+        "F": "d3a123b20f583962eebab2be95c4745857995444d413f8613f8ed9430db59c3d",
+        "G": "9932f07305dfffe26af3df323c8254ebebbdeef911a89e410550df008a14597e",
+        "a": "d2bd648d39e60437c45acfeff2ce5d58c53ee87432bc8d521498d0830f170a2b",
+        "loss": "9db82f9a551d5be84e38eaa186774a0846f5ea01e17a44975c440d6f120f9cd5",
+        "r": "af97f70e4881f9bd7d3b18eec4111693f008dd284e01b1c870e34fd16db01241",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "32ee5abbba59204dc5f7dedb6df65990772e53a91a01b6d72614363e5af3dbf5"
+      },
+      "label": "PINN with exact BC | seed=4043",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "44_pinn-with-exact-bc---seed-4044",
+      "hashes": {
+        "F": "12f152f284fb3904b3ab4618b019c22afd86332173da0fa0185fb0f6b1339e7a",
+        "G": "b4ea04dcf439ac43aff482650a06b6f95a666221b1ee9ae8441fda176f476e07",
+        "a": "bd1f152aa7ca8f83bae5e009bd13fe86aa77968d2c05b19028cc17111fd2d3c0",
+        "loss": "a2dc304c6668cd93bb70e9719eb33a4f3d83da16769ad518d15ce554285f1096",
+        "r": "5b4474561d56cc5f61ea913aa7642af9893f67b23dfddc061d9cccdab6f15b40",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "f993d0e55e494bc834925465a13e6969331968a83be68b6b52c91cbbfdbe4fa8"
+      },
+      "label": "PINN with exact BC | seed=4044",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "45_pinn-with-exact-bc---seed-4045",
+      "hashes": {
+        "F": "2e82f79452f1a9c2d3d261dccf6e24140b235ba108dbce707b0b9d016bd51c3a",
+        "G": "f075f40aa35339b6c588f2ea1a5dcb76cd6379e64760125ee123bd24fcb80bf6",
+        "a": "da0551ab970ebf24a790da394e1098aa27191283094e908d3dcf922946433891",
+        "loss": "93b3a27b7f5ccad782f22d9b644e4e72cbd74902cce3b1b0d358ecfc39705dbe",
+        "r": "abb7b8cbb7f995f46eaa19c2ac65675a402f9320328bab642b0bb4bbfa9e496b",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "398d06b9db52eed15170d7dd76e8e8a9865e50e620bcefd1c53dea78347604a7"
+      },
+      "label": "PINN with exact BC | seed=4045",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "46_pinn-with-exact-bc---seed-4046",
+      "hashes": {
+        "F": "c6fcc718dfdbda31fbf2daa6a99387303ee0e189ef6eaf1e6575947d36fba4b5",
+        "G": "a00dfd2d457202cbc0f6da760ed5b6084948aa20461a820d46e6d20f0d5133f4",
+        "a": "43bac4c43c06a6a0b5d64f255d2c9fcf0eb4b76853c02a6e23f82d0d15a2eada",
+        "loss": "eadaeba03727ad569f8e9c9e499956d4f28b17304db5192c6449abb77608d84a",
+        "r": "aef1cd133371d6e252532559352141054776d588815583323d726193f5310a7d",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "21a202d163ee61445f2b5b743041c0b2ca8d650801538f0ac3f1c2d076fb0557"
+      },
+      "label": "PINN with exact BC | seed=4046",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "47_pinn-with-exact-bc---seed-4047",
+      "hashes": {
+        "F": "7b92986a9160068bd95100d01e7380a3ee66a7087b7b8cc956d4e738a2da50ce",
+        "G": "b6c53f4f374639868919a69f51fb564fa1174702ffdd9d5faf4745f12932596c",
+        "a": "4e74897e2cde1a68f25812e923e3cf47a114507789c457060a1508db2af64f99",
+        "loss": "6d57c51c3f53b5f371edd6f43e017b74a038e332480bc92021942ff18a751b68",
+        "r": "5dc0f91ae1237a79fd06ce02d9ccb01e6186bfd5e072d748f1915f65fd8a4914",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "4eac74d44cd295fc05543b86278cf8284ea28659e3a6ae1e20547ca7e626aa0e"
+      },
+      "label": "PINN with exact BC | seed=4047",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "48_pinn-with-exact-bc---seed-4048",
+      "hashes": {
+        "F": "7bb4cb0d930251977f102fff4e4a269090a33b816db2050049692a0a44206276",
+        "G": "7b781952ae2c7d146e785307e03dc1dc88a18ac201dbb4eb883ec8bba9e5899a",
+        "a": "3f5fb6b123e39f250a983aaca97b3683b80f1527a50691bfde985fa39bce8fe6",
+        "loss": "efdb9d9989d0264439045fc2ff28ae1374f76ee1c95acf07283f6580e7672054",
+        "r": "1a93c140687280d2ae3032ece2077398f1dcae0a65c2f53bd437ab6b0e27bd9d",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "94088775db03ce8d8931882e9704d90920a04489d11e2e3c4775a8de8496a5ef"
+      },
+      "label": "PINN with exact BC | seed=4048",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "49_pinn-with-exact-bc---seed-4049",
+      "hashes": {
+        "F": "8c406bfdea6296760ed1862b11f991d148c22d7a6a27c50ea604bfe242045c40",
+        "G": "c18007eb698c4c097aabcf3cc4f6e4d2999403005eeb3cfa0937282fcde19ac0",
+        "a": "a7db70e8b08879b94940d8f043094a4eea9bf2bd5692a6736bd29d2b2ca95899",
+        "loss": "6729b51e48ad9ddf430acab2160a783a11e752b9bbb149a51e5d5c36359229f7",
+        "r": "b81b18caaf99862aabbb51ff705b595b56de3d2f8a2a524de2d1486e7e80c22d",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "7664a1717140b32e030d9fff63d16bfd8418f9011937910fd44b4c8d956f35dc"
+      },
+      "label": "PINN with exact BC | seed=4049",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "50_pinn-with-exact-bc---seed-4050",
+      "hashes": {
+        "F": "62ec7b2736fea63b8f86624456fb24c9e6a2d4f3f2a8cea6b4ff0b81b956c4c0",
+        "G": "6db640ca1b96e69fdb4313d34b50331e6786af0d0df2a27e056e269ca040c083",
+        "a": "961bfcbbff11b2de42825d8d62688077d05307d9b1134423694cffa0ea09a4dc",
+        "loss": "88925016b0e7feccbcd9d875e659a932ed989056758260afde3dee3109a3d4f1",
+        "r": "360c1189e4f52be9fd189f7bf969c7ee9d7c79a62560470f325ddc1ad17de4c3",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "dd8fcd36527e833bc517d10e44197f4c918cf01e66e2c4322ed4066783c0f4f6"
+      },
+      "label": "PINN with exact BC | seed=4050",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "51_pinn-with-exact-bc---seed-4051",
+      "hashes": {
+        "F": "d5b1d1b247913478a62f7fea193d55277372a4179577dfac162f9f4aaa2b3aa9",
+        "G": "792518a2349e10f75212aa978e066e16db5316fd216dd1e82a0e3dc423677882",
+        "a": "a875d97f0005dc0a591cb521cc321f0b4f269d0c70265973c5c2354dea207ce9",
+        "loss": "d1768f7b689671f6da1871469122177f552810bb7326b125aa6cc55415d7b234",
+        "r": "86db9766456aceffe4c81aa1f04aacaf2b3534c1a0ce3a816db3bc1879670a76",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "6d606a2aad275834dffce021840b05d7035ad34a9e84a1bbe3146ad2dc4a508c"
+      },
+      "label": "PINN with exact BC | seed=4051",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "52_pinn-with-exact-bc---seed-4052",
+      "hashes": {
+        "F": "1eb3fc5c064f7794fedb58803a37b02708618fb687ec4a215d02ffc526b648f2",
+        "G": "5a6abdb79f3f294e9af50411488fb4b69ac2a782517323093010b5806fb0cb94",
+        "a": "987f041083cebfd2b8b1092950a27f8581ee844a13cc107cc64eddedb66f0ab0",
+        "loss": "69dac55bb35f8c54e848b30837c1347cc3439eddc7fd5befd7b55463dbbc51f9",
+        "r": "c3e74ba366344c0742ae8d07e8323065d62361cb664ddedf06601be8121839d3",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "063e66e31c4b4ae2a9b6d5c601d0838b25434b855593e94cfd486bc413808de9"
+      },
+      "label": "PINN with exact BC | seed=4052",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "53_pinn-with-exact-bc---seed-4053",
+      "hashes": {
+        "F": "10d496f26580aba44bf8e98844bbc7c37ca3932fdc715a459e69d3bcd87b3ffe",
+        "G": "64c4eab36aad52805bfbf0e7f09d4ab242a149c58bb097bd3b807e2fdbe45b53",
+        "a": "aab6958619b621532af7bda4cbdf4c8420b7a2352492e6174e62aea0636c59a7",
+        "loss": "203fd9b9159ab4e9357e21160140ea954a3fd61603751fd3d5ae8c038c45381a",
+        "r": "e1dd599f388a135bb9df04b0ba149001b69633e4d308f9d8b817e2e1141ed30d",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "2c8e9e4e65eed354aa83b453ec295a8514dceaf2bb877b571ce887d0eab10988"
+      },
+      "label": "PINN with exact BC | seed=4053",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "54_pinn-with-exact-bc---seed-4054",
+      "hashes": {
+        "F": "0f1dbb5e6abce6ad8d44414a0c64db6c241d2cf41d60b324fe72343fd70c5d88",
+        "G": "28252eb547e4847a0ace076950ae772eb4a2c591957121c56404048bc844f010",
+        "a": "9efc338e794f01aac17004d086e82e137b4a9c5cf9934fd7bcbed858e4bfebc9",
+        "loss": "bef3c8bc3d95b8445daeb72357912faa373699e580c3692144070a822561be50",
+        "r": "2699f88b851d1cb7438b1c12327c3a49bda3ff492fca8671362cb9cae53d6bb9",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "53181aa32102818c1847e9e08cb7ec0beaf71b08afc04b8e7461e4d7fbc0414d"
+      },
+      "label": "PINN with exact BC | seed=4054",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "55_pinn-with-exact-bc---seed-4055",
+      "hashes": {
+        "F": "fd5fde259ef4ef7afc92a5c6004d31ec993b97b33af4245b8273a6be4657332c",
+        "G": "5b3ab69d9beda250c011c9abb3f7a778f8f056db58206dc49dc1a94e720f2466",
+        "a": "62e4c12fae4825c16d24687522c37b09ef0c2ad4132d532ecc933192b1d1eba9",
+        "loss": "f2eecd32cf59fb30a670f57775a236e7ddd759f62dce1a740dfcf31b59211bb7",
+        "r": "44907acd013585df8ac3ff6439f0e2ddc054de8d5c9e9e5e226597eedd621074",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "f872cb58ab6ed1248378aced445c660e6b6aeaef2381889bcdcb49aae4431b5e"
+      },
+      "label": "PINN with exact BC | seed=4055",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "56_pinn-with-exact-bc---seed-4056",
+      "hashes": {
+        "F": "c2cd97f58017bfab543b7dec83a7bafa00e51054d873c81da18952e50206db10",
+        "G": "0f733b9b53a066f53a2a9c05f64a5cb0881ac857cf4c2a1c84c21130f25beaab",
+        "a": "3e1b18c27c99049322a35516d2ff3d311917f4c29c957c931ba242d5546588e2",
+        "loss": "cfec29f1b56771de6355ddd81eaca9e053076fd12ab61c8049a54f602a29d378",
+        "r": "c98597d9130ebdb033db2889514280b900cf0604a9072fd2d59b93078e77b3a2",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "54dcd2910c88156f17db3813a68405cb358716dda791d74db95425857c798964"
+      },
+      "label": "PINN with exact BC | seed=4056",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "57_pinn-with-exact-bc---seed-4057",
+      "hashes": {
+        "F": "1c3c67be49a4cbc4d1709b1f4a39ffffb7ab0f02a15ec0535c8132de4e5113d6",
+        "G": "30a5cb3352b9673180b64e03906b6f9af6a29c18ecebf9ceb2b14dee4e05dcfe",
+        "a": "4a8a6f8d0825c7e757c5839653b4f150670468ef980973e14c8b966aafe3c76d",
+        "loss": "b050b1a1835b4ab89694b470c715c231375326eadd2e74ceb841cf138ea5869b",
+        "r": "b525ad7eba2a57d82f1cd5d6c88533950f7de2fcdb434283b11213cba4085e1c",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "cd75fadacadeba4f576cc6d289fd7b2f90000344766176494e2384737dda9060"
+      },
+      "label": "PINN with exact BC | seed=4057",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "58_pinn-with-exact-bc---seed-4058",
+      "hashes": {
+        "F": "c754569d9ad3ed9401677e72b018803c03194031eb739e0d2d396ca692ea6c6c",
+        "G": "5dec519ae95d05d42d40a4e4a853e260c1c033be668e64031d4d1304d3dfafcf",
+        "a": "3d580e77a63e2027d3e7e302836db168be6ad679856f13a56efb9574d88fb425",
+        "loss": "b8b39663049c970b69b47423a149af23af17d01b7e6d16cb7f62f48ecc2e3ba6",
+        "r": "fd9d679a7621f63a289bd0169290feb4adb34d0debc589e1babb6fccd2bcaf17",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "0c55eec1b60858c3d3188de570511a7070f7cf6638fe3dda9202253474e20143"
+      },
+      "label": "PINN with exact BC | seed=4058",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "59_pinn-with-exact-bc---seed-4059",
+      "hashes": {
+        "F": "64b4ad10cc8ad9b25d3dcbe241c6adc8d12b9ad120b28f6be4443fa221e6ec17",
+        "G": "47aed76dcda3458b9424c4c42c7fffe631f39777cd54ef2587c48dc02f1764c5",
+        "a": "0469bd752063ce27afddc24a113a3dba1a425ea0c755140640a3ab2bcd32c09f",
+        "loss": "fa8e377335c4724bc647676e624358de12dd09ce8a5f520f6f006b8d16ff3801",
+        "r": "241bd5fccb8604b8fdf9f42c39a4ef567c0b1547b4df51e3ca410d8a9091ec3e",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "8b8be1ade3a619a96dd4e1fafdfb9bfd9023bbf929b75f91bae1b41f5a83f883"
+      },
+      "label": "PINN with exact BC | seed=4059",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "60_pinn-with-exact-bc---seed-4060",
+      "hashes": {
+        "F": "b4f2f1ec3df0a1eb6da30c39c0fcc2000ed6b8ef1bd80b3850fbea1c43009274",
+        "G": "3e4073902479b229b681da3bb4faa639abb84973687522694b492a72fe160185",
+        "a": "ed76a9301684d6b31ed1c500035fccd3c23b75ad96d5c04486503a60839ea3ad",
+        "loss": "1b074d70cb0ed820aa3663bb23e550f32fe6cc172fe3bb6c38d1c70ade1619a3",
+        "r": "cf4e4626f5a534e355777ebd4d4fecfc6e7674ad686d4e87ebdee2981fbd7cbc",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "abf0bce21812b9a6e3471e89b0c7d959c65bc070c07f73f8e78715904df3aca9"
+      },
+      "label": "PINN with exact BC | seed=4060",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "61_pinn-with-exact-bc---seed-4061",
+      "hashes": {
+        "F": "e9a43412094fde762257e7090f5b1ed39db3e32a8752f136361c3afdd6d0cc37",
+        "G": "827c2f329c236fdb9be1098b86707ab9d4b6559330461b30a08e70266ade0e6b",
+        "a": "c072a3016205bc2f8cb533ba3eb52b5c1ea922a9de4b3501820347a879aadfce",
+        "loss": "7700fd8d39cce743d0254d036ef994b9cfe2201dbdb99fc6fcacab54a9e761a4",
+        "r": "9890a7502d2efcc69db11ae3a1ef5a9b56260cd7171297f3ba4a5d069e89b912",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "1474d7d8d697c46031917cadee05f77e34bf0b28058bd7c6a1742b131f2b9b9c"
+      },
+      "label": "PINN with exact BC | seed=4061",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "62_pinn-with-exact-bc---seed-4062",
+      "hashes": {
+        "F": "363cb39f0845d29be10817007af50ce385de6af20237fbc0ec239a708d12f27e",
+        "G": "fc285d4b8a911e8ad65fed875421c5d3bd792e4fd9c95e283fab6127dd5a0c78",
+        "a": "c1057a750e6fa9bac71ebcd679ac4725ddea871fa3b4159bff59b885b0ee7da5",
+        "loss": "c911a30fa843edc278ef180e44382aba6c7f86c658f2923b31c9d1809575474e",
+        "r": "508e51101d0a57d81195c846b7c3d86d98241569d05759c5c26c90b8b10788fc",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "8ead3cedf69c7d16830ff59636458c457d5df2911bfb13cbbf92b60b2b3c3c7a"
+      },
+      "label": "PINN with exact BC | seed=4062",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "63_pinn-with-exact-bc---seed-4063",
+      "hashes": {
+        "F": "c28087f117fa7a7e229f638c8b120c353a7a0285d87adc7a8e506e78ceafd490",
+        "G": "01370b85e5b9952b126c8bb0bc4213387025a297a63e51557df0dfb8bc6a13c7",
+        "a": "c1358bbbbfd543cdee71063f4f7efe02347d37bf8d1f57508758126ad6035d39",
+        "loss": "5d067870d9777409550865eedcce7b85717d7ff6c7194977c033ec86d9be59bd",
+        "r": "b0db6ffae2dc50943b59cad678f41be80035ac556faaaf431b620ae261f7a8bb",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "d45d3ddc91ec27a7d2ac808d64864052dd9cada86dcacf5ed0f52694e7e0d4c2"
+      },
+      "label": "PINN with exact BC | seed=4063",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "64_pinn-with-exact-bc---seed-4064",
+      "hashes": {
+        "F": "bfafb9576734cc28379f897665eb6e950caadf2ebd41ecd329b551e737717629",
+        "G": "6874393236ac01a3bf154d14160f32038c7644bdb2f28ff2cf595f4dad1a231f",
+        "a": "93d3db39964bbed27940666fa7a50e69ab8878a93e18d6dcaa47d367de2ee9b8",
+        "loss": "f867261baac1791e5431fa5dc1fcbfabb32bb515b40accaa7d48f85aad7cf81d",
+        "r": "42e3da8aacb4d98ef40585e4d3f07612ff00b65abfb341a031fd9cf92c892d4d",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "7e25c6a6b7265a76d69e0d18571c6366b8a5b17d9d67998026ef5449173ed6cd"
+      },
+      "label": "PINN with exact BC | seed=4064",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "65_pinn-with-exact-bc---seed-4065",
+      "hashes": {
+        "F": "7ede22b282f36577b0bb5c79c9f66c9d994d24b08a4062441db59e6408412f48",
+        "G": "8f931db2ff742d13b6a5917841854e5594dff853edeb36c5b6ae4afa01a086a5",
+        "a": "328f1315f7dbb32e57dd1d102baffd8306673d042f40f50db4a96469ae8379f0",
+        "loss": "c1de5b1ced575f001b50b451e8d525ba446920625e43f115bf12a9df42d1a290",
+        "r": "953c6799ec256e293ce1441e7376d66f202fb639fd48e4c8cc8075d8653339a1",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "1d17f5d2752b63e4bea9944b77ff1c504a4ac7f0829f1dcc15e6f36eb3b7e476"
+      },
+      "label": "PINN with exact BC | seed=4065",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "66_pinn-with-exact-bc---seed-4066",
+      "hashes": {
+        "F": "0c59ff7d53a96ae82f20988455e06a4c457af7c92243a660fb31017dfc8f45fb",
+        "G": "242f1cfaf20930cfb765dd8ad7551ff11c19ce9204ebe582907316a07489199a",
+        "a": "27b1b78777680bed744c3af3080c75e50cd2a972e866d7289f9c391ecb7c4b03",
+        "loss": "46ee4116b838edc4dd9a406da0cef91bf755f9b26bab51862a3d9934773eb7f6",
+        "r": "0f4325e071e07ec3a782bba330ed032b011204c0c6e1f4d49fc4cb41bf9cac4a",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "3cecdb3dcfd7db80cdc0e54f0464d52cd7b54ab347a2b8f37e323fcfe0717bf8"
+      },
+      "label": "PINN with exact BC | seed=4066",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "67_pinn-with-exact-bc---seed-4067",
+      "hashes": {
+        "F": "75d201f1dcae1f1355a868c7ee4554a90c98eac6ca3574c75105be524a6c02ae",
+        "G": "a98bc7d567b176c5b6e992a4e987a76ffecea296c04be4c0a2bbf3884fc62a4e",
+        "a": "e02aac0f4c5b5da9d17fbc48034bf7c1d81ce2c2970d10add7fa80d064be3fec",
+        "loss": "e39295c1fec1360360c241f58d622ff21a51d5ef9030246c956a16e1bef9db68",
+        "r": "00de18508bbd26d698699ef8a0bb33456e8b3b745f634494f6e759f403f4f084",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "946dd42c566e5ee6fb1dc3cdbcde2e0d4a3c2ad28d1227314c2f50cc8dedeebd"
+      },
+      "label": "PINN with exact BC | seed=4067",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "68_pinn-with-exact-bc---seed-4068",
+      "hashes": {
+        "F": "ea92ff29082c624d1bcff4a7621e3de80fe9991bf03a7cd7ccea560d3c74cf5a",
+        "G": "1ae47aff42d2af468b9aead50d142f296f01351f0bb9b851bde34494a8e15850",
+        "a": "76410f789a5612271e30a7032065f654cc8163271565ea79a6692407e3b83f8f",
+        "loss": "2815d7f0310832b6bb8a970f089c4ee50eb0f6c4e4108dbfcc3a0b1cf500fc54",
+        "r": "3618d164507ca7e2bf8a09891d5f605ff2047d0462c132922bb37baf869fb611",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "e388eb58dc0a72370b084a9890be9c5d1d15ac8579f070685be966f6028113b4"
+      },
+      "label": "PINN with exact BC | seed=4068",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "69_pinn-with-exact-bc---seed-4069",
+      "hashes": {
+        "F": "48c60f05d6f3307e9a737c9417c2aa9f4339ca681f6a3d1dde04332ad1d4b296",
+        "G": "ebe13e020256458a04fba2900b8764babb40edd827d974280f5f5db61fe6b132",
+        "a": "f5404879853c18e96b17dfff7b1f6319ff238d1ce88d652d7cce5789e9b8b2aa",
+        "loss": "068312b62dc5ada043a27a13f1e3df4977eca9ad43c4d91522dce71163c4fa06",
+        "r": "1d07acbefeaf1c4f59b6413bf1c1250a2abf63db825e6be99b8203d96fc78d17",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "dbf84445445f1dc4b52d05f1891dd0a48436dec590a0d77f5acb4b2fe6446ea1"
+      },
+      "label": "PINN with exact BC | seed=4069",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "70_pinn-with-exact-bc---seed-4070",
+      "hashes": {
+        "F": "f262907ff9c4251e79fc5963f70ee9a351eee5e69d8125423002a3e581c586b0",
+        "G": "cb7b96b6b2a7461071cff4ec9a843ad2450080e0adaf758644c3583f16a7d33a",
+        "a": "ecd8f13d98bab9861271e3788e69eff97764a64ab80e7b684be1b7a8be41b14a",
+        "loss": "f123fc696fb04bd65a88c6991a73f30d8a91cfda1c87e6fb0b328a4589393aad",
+        "r": "ea9de034235b02650e9540979ebb55a321e60ad2bfe784bbb20186c1b3dbc1be",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "bc8d9a593b9001351da19363273f540a810723f74d503f4b38b909d9ce1624a2"
+      },
+      "label": "PINN with exact BC | seed=4070",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "71_pinn-with-exact-bc---seed-4071",
+      "hashes": {
+        "F": "73eaad4e1a610b223622ad129edfee5f7404cbd3b26ac61f933b69afff74963c",
+        "G": "da465efdaacf49a22bfe7af749c7a9537065cac76a2b119ed2c24c5d0e57a3f8",
+        "a": "830bdd429315ac6424b50ca8f760420240abc0f677c44d9b79d9baa2eec7d623",
+        "loss": "48769e0e5a6e3591e317fe238891df841f10ce17a5f00c4ea12b8acf67109146",
+        "r": "4b11ab172f271e00d738d7327cc3968ceae58865ddf8fdd7352a4d0be94f7a77",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "2c519d5041ab89216531d877ceb5de7bf317c73fe88e05e519dafa16a76ca5ce"
+      },
+      "label": "PINN with exact BC | seed=4071",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "72_pinn-with-exact-bc---seed-4072",
+      "hashes": {
+        "F": "0a886d924fc67572374697c8019d599b99d6047dd5b2382e0ae1e6e3192fc95f",
+        "G": "ebb95bd648a5ce6efc50108fa3f8a6d7eb0e3a14ce863e784d44d9effde2e6da",
+        "a": "4035f2bc0f54594e2fc955330adfec807b55079e0ae1db2f91d230fd1ebe7cf9",
+        "loss": "f9bd6c249bf336c53ffb5435ba703bba2fd9620be0cdd9e36dcbd82941724616",
+        "r": "de1e581b38a6f709405a5ccb7cc765213396eeda39f87bcd1191328fdab89ff5",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "35608b130d4f2690be1bc820cc623d26abf64a775aee5e62b653e5071e821063"
+      },
+      "label": "PINN with exact BC | seed=4072",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "73_pinn-with-exact-bc---seed-4073",
+      "hashes": {
+        "F": "ed5f533fc6b8ad0f4c4794fa324b8de5b5a44927c64b1781afdc95141974b6c5",
+        "G": "44f9ecb18dfdfe60e6fb587bfbe4fc736d5c6e2342ca285fe5d614768d3f1925",
+        "a": "60659ab5b6a348774f8b637fa8d018c710b6a10cad3e2b357324d65adc82a5dc",
+        "loss": "98d3405bc39337117092082b8ccacbb465d818cf1c7bf5efd19e7069bbb8e3e4",
+        "r": "5555b6c3705ca0df1e54e6c3343c5793125919ed04849ddf4b1b406605e2478e",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "c09ffa2a57e2253b9782dea8deced1839c72371103c8acb112195c8f94d4f236"
+      },
+      "label": "PINN with exact BC | seed=4073",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "74_pinn-with-exact-bc---seed-4074",
+      "hashes": {
+        "F": "38aac945843df640d459495e4df941fbfcc823a5fb854e154810a8d494df4dcb",
+        "G": "1b1f25049457afda518ebdd60fef31f8f72044ee04209d2c53ebd0d5408b7880",
+        "a": "731dc4b60de7ddf690488ea2c1dc38fca0f166d57886048be28fb19959753fea",
+        "loss": "b01bc9ab9dea75a909bbfd6b41f0b7c8a1430c3f503dbb7c315b9d2b099408d6",
+        "r": "48a8d1edd3d39cf63a95f56b6bd571716ffb19ae8e8f9e8a3815efb3d78c4866",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "21fd0df919cf89a5224ed0dc1b554ccf213054612246bc47c64eecc4b590d9ae"
+      },
+      "label": "PINN with exact BC | seed=4074",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "75_pinn-with-exact-bc---seed-4075",
+      "hashes": {
+        "F": "c8ec260a9d8a00ed896502731d2047d9fc9a0fc2d3c2a2b851696b3c3d83f605",
+        "G": "3986552aa50ccf1c87a47e90c814927149ecf28a8b20045eacf18ab63174bb32",
+        "a": "68cb789ffe9b6f09afdace2d16d1ef2ae5042f9cdc145d113280ecaf049d8838",
+        "loss": "bd013a8f846ac1faf2dd07b62ef6027b51538a33a5e75bd6626f7174bf499b44",
+        "r": "78fa964d5c5b3dc78709ddc8713c19adca3f4bd1b09a57c51c99d21ba1721ab8",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "280691f5ab8a013183495fa507f8a2f86b05b7e5590b2b6b07373b98f229ee25"
+      },
+      "label": "PINN with exact BC | seed=4075",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "76_pinn-with-exact-bc---seed-4076",
+      "hashes": {
+        "F": "da6430c015d92fea04a41255cd7f31c79779089e0f5512ecb1c8eb518ecd6975",
+        "G": "f16d91639d607fcb79c473fed2601cdac2c3cf8ee963323d8bbf2356ad9644a6",
+        "a": "296141fbed2a3c2e4261c0cac0364b3c863f59e30d96b1047e0235d9b78187ec",
+        "loss": "e3fbaec530c88ea7bcf27f4d0c408023a779c4d064341941f04071c19654b6d2",
+        "r": "6c14fe382aba4e3678e8804e4c14023fc21d7a9f89c155e99be94904d8e162df",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "30aa010c4fa6171d11ab24eabbd9bb324c92ae945b4375258c4435d80472324d"
+      },
+      "label": "PINN with exact BC | seed=4076",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "77_pinn-with-exact-bc---seed-4077",
+      "hashes": {
+        "F": "815a0320971d2020810e68b637a3056a28ede530ae753fbf39004d19399b4e21",
+        "G": "781a6ac0ebb9e188dec416bde273b8dd7283c95957bab2b7559c3d98ee8f3a68",
+        "a": "2e70b4a7513ddc9c2b2f5c47df2e4c5c79227fb1b6269fe066c256828bd6cbd4",
+        "loss": "ab8e690f1f051e5c0b864d5bba2464d68881763f8d4e996a7447c2f32046640b",
+        "r": "d69d5ef81ddd90b86be119577d82b436b6783a0d80740598ad25b21b535fc380",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "9908ac371a2926ab25c775ef31ccd4d2a0a01559a5b0934691b9476884130c99"
+      },
+      "label": "PINN with exact BC | seed=4077",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "78_pinn-with-exact-bc---seed-4078",
+      "hashes": {
+        "F": "c0c7ed61124c187a4c8a39e13a2cc2beea6e4750085b3338d881b4502ca902db",
+        "G": "0ad346d8361415fe6258c2deb832d83a7346a4917a22a3e7cdcbed26f1f8e687",
+        "a": "3f545960947a25036e5c119d1682e3a0bb243eee7336361d086a7933d9e9c8bf",
+        "loss": "de5bacdb5b70722071ecf358b0c2190984b27466f4955d69bc2970f93b64f2ab",
+        "r": "5b0007a0a7a655de20a2d4870049c66359c2308262fe7dc05dc2a435a33e01e5",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "1750c7bc201592aab76f51f795e0c928340af24c2ce60ba4f5b77b46cef36277"
+      },
+      "label": "PINN with exact BC | seed=4078",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "79_pinn-with-exact-bc---seed-4079",
+      "hashes": {
+        "F": "fe5c305925f3f6a362f41376fd82cbf141f3c8a24d536ce6d8cd307e1cec62f6",
+        "G": "173aa442e5016d6d1e572885404d925b8db85328a10556f39da1863ab912227f",
+        "a": "5b812d12726b90408a1f02e66a7ca15044207d27234f3d4ca1b6608de497205b",
+        "loss": "75fe95064afde060a05423e84e9696e9443ee0a887421bcc8fb01bd26282d279",
+        "r": "77b3b7900cb679f988e1881aafd7feb7daee8accb785d204ed392f55efd003d9",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "fada68d42ef6d4033e4f49ea3b74af07dfd5a59ac6d7fb6693fddc778bde4495"
+      },
+      "label": "PINN with exact BC | seed=4079",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "80_pinn-with-exact-bc---seed-4080",
+      "hashes": {
+        "F": "1f48f8a0270a6a12d7c2789266f72a5c9af4b7f4dc300dfb9bee8a6c1ad00950",
+        "G": "4bcbf751a2fe40c40e2a4f256a74d2fe5043306116bc24eaf6fb99606792585e",
+        "a": "57eac8c9a7dc80a5db85eae7409069734687b10acd3adbfe392c6e136734d802",
+        "loss": "188180dadcfefd69ff870881f8bd63c6ddb4d6519a9ff90a69a38a5cb706e5cc",
+        "r": "66cd44d89f5a6b5c6fcc7fdbbb885f0235f4d3da4f4aeaffcab38c369136904e",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "552cc1c0030bcb7b4fe3fee7a0a135053bbde72e1fe5b87543cadac942dabf33"
+      },
+      "label": "PINN with exact BC | seed=4080",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "81_pinn-with-exact-bc---seed-4081",
+      "hashes": {
+        "F": "0bfed89a558d08f8687165f3e71d546e43d4f4f6277b8facc92aa9cd44db64a5",
+        "G": "4c5505df10bc9c6796b8c7cadb2d0a77352bc7160bcee4b7378912a5771070ad",
+        "a": "c4ba96e57cf3c2c3baf7f324feb1cf0267f21fb2aa10e1c7e863c24b1cd9eca8",
+        "loss": "bf3370cb6be2189eb0a814045c0d1aef40e9bf6363e5947fe5b7a823bd07a9ad",
+        "r": "64ca394786dbb2e4089ec6de41f74c8e4f8f87069e74143807f969e5eb81cfc2",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "d100d08161d1d226192414d12a83689de04365ae86bf9f0eadf087b0857c62a9"
+      },
+      "label": "PINN with exact BC | seed=4081",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "82_pinn-with-exact-bc---seed-4082",
+      "hashes": {
+        "F": "5c679718c2f19443673fb23c6cb204e1a098fe3a67f3b6018b5e7860afcfaaa4",
+        "G": "eef4aafab1198335e463a927b1c0df4b161886b5f7c275703e8d91e257a7baa1",
+        "a": "4bc2dadf9148beb0c7ae9dbdd88c99e55a423a09dc45c5c10c4d6564014637e3",
+        "loss": "4a41813336dbfc4ed49e00fbbb0c3f035ef151a7af5eed8bdcad3190bf77d658",
+        "r": "839065691b42d4d0ca6473a2cbc3efc6a04f991c2c3c7a9ae037a534f5e67465",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "e3099a3c82f1f5c09a090fefc5a0d7b787cac094afc3b26a6d0923833a0e53bc"
+      },
+      "label": "PINN with exact BC | seed=4082",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "83_pinn-with-exact-bc---seed-4083",
+      "hashes": {
+        "F": "c584394c3f979f4e0beb0cc122c44394d918c6b2fa4bb6399f70a321cf000ad7",
+        "G": "6a797b3d443d8db4e3a87e450990631139dfa11d4142d1ec3a717a0588c80c4c",
+        "a": "46b0e2559bb308f86479750731b21f4f480817e4ca68970d0aadc92c0245fc79",
+        "loss": "705de80a9dd30a6074ddc1c142ffdf83d9fd8640f64e36541dc09bd995279fbd",
+        "r": "dcdc82e3306af6d4945008a049dd57fc773b2b616bd6e17bb7ce75e1d2c64c98",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "b3502c8aa916587a8b148fb2c7679624cc0c8133a06e91243f1abaecf8da2129"
+      },
+      "label": "PINN with exact BC | seed=4083",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "84_pinn-with-exact-bc---seed-4084",
+      "hashes": {
+        "F": "5765f6ce082da4f3018490cee119a0ef0562132e1aa523e235d42ad3490c79b7",
+        "G": "c4daae300f6fb034e7d0178a40059b4940438ff28aef1e18e07c2640172b464d",
+        "a": "25dfe91963b308dd8c54141332723d508f7c19a3a0045bc5e9fba960123c72d8",
+        "loss": "8ab70735e8ca780dcdfb9ab93be7d375cf011ae8b22ec0fc49e3c9c7a4ea2214",
+        "r": "9f675976461d48a736e6dc1d1f337f099c748ac339fda98ff80e80a4df3a73b7",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "db6c84edd80e6c82a7b7331cc158037c9f5969456bfd9034881d35bc6148b258"
+      },
+      "label": "PINN with exact BC | seed=4084",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "85_pinn-with-exact-bc---seed-4085",
+      "hashes": {
+        "F": "29fc2f2a71752c2cdf7f07bf750efaa15a1d306f7ec3c68a0ae642af84859d55",
+        "G": "e418e64d573545e38a1943557295163ba97cb271792fe2ec2e82667a6dfb64b5",
+        "a": "55d33fb263b24376968876e080084ed1d7032d7e24acadf27b09d81932093fe8",
+        "loss": "245fa3c00038f3b7ee0cb1adcdf16ae58b77205cc4141e286da58e206fd28d47",
+        "r": "8bb1d9984f9597bfd4cfe32b5e61b950a1492a59ffabedd9ebea97b55b1618d5",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "d63afc7901d13275fb91aab5c6956dc071cb4d1faf3115a8ebd9129fb495976f"
+      },
+      "label": "PINN with exact BC | seed=4085",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "86_pinn-with-exact-bc---seed-4086",
+      "hashes": {
+        "F": "d77ec55ec8896bcde4a5235aec8af1255b85b1af5a1bef7e7e1a3c8200ebdc26",
+        "G": "3699bb1cc475fb4a1c8f9e8ad9e5ea78d5cc55afd7eb2e324906c0eebe5cbb60",
+        "a": "7ab2029ddf5e0a3ee05808b097c696e6a9602572b2125cf5dfcbd18fe74312e8",
+        "loss": "11cd84ea7f5ce95d24df0158041459853bd83db10a8c706bf1d5be92fda33d77",
+        "r": "372db0be0620194bdfe037b6fc68e7b0eb2b086d4a5aaa088babe38b60aa719f",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "2090b6f18330e653b598acd1fbe05b10a2223c20c467ac6e266564df19181f9f"
+      },
+      "label": "PINN with exact BC | seed=4086",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "87_pinn-with-exact-bc---seed-4087",
+      "hashes": {
+        "F": "e55b0f748b2fbe271c3ff65532d929e7f4d232be675667b923d6eb4572d23365",
+        "G": "04590816f995488d0ad2fac0733fa2c2215eebec50d9056aebb9c805ce4a7615",
+        "a": "89d38e02879076f5a45cd225a5acb3139a421282c63e239c666ecccb338c7a35",
+        "loss": "974133a59c1dc219e1c7e90837537eb9a68d0f28304934f317ae06fcb2aaead5",
+        "r": "abbb6457e9fd61a614b0ff0e71a19feaa66b80a845c91b58d77e670216599a49",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "80b0371f2281ae09fac8dd8866e1f2261f8fa44b1f79f31c499345db3ae22a7f"
+      },
+      "label": "PINN with exact BC | seed=4087",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "88_pinn-with-exact-bc---seed-4088",
+      "hashes": {
+        "F": "f8df879ecb5651bdb967bd146d582a3c9bf7335af8151b503940a24dafff2438",
+        "G": "3a3b462040b4602403a7c0f08bc9d318eb7a7bfbcd06a9f7c98ddf3ae63279ac",
+        "a": "89211aed22e6900cae8da1a25821b7ffc88d2c78dc0c4dbd3f01e17959197499",
+        "loss": "2fe2398ebc00a0dbe590550cde2f4bfd168b24d6bf6c716f9ce2e350212d1f01",
+        "r": "90a202f77a730fb2cfcd83f3c5b4750ecb4bc22e3b4d20d4fe9463ef60ffd324",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "8150aa09f24d89c7e48095880431ac63ccf61b24efb6361abf2ff36836f1fae3"
+      },
+      "label": "PINN with exact BC | seed=4088",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "89_pinn-with-exact-bc---seed-4089",
+      "hashes": {
+        "F": "5529dc89fd52f27e01b1e2f171fb26632499148832937721107f5afddfa88ae5",
+        "G": "272be018a546604dcaaba781963208864cbd9eb306eaa77f965be0529c9d5bea",
+        "a": "89dc3b2cf7f159e8678c4080ec49c7724602cb8abfd6bb0ebd9418054a4ab7c5",
+        "loss": "138f95da8763e4cab5bcc9a15f41a867fae8814e33d6bd599d7afcde8162e89e",
+        "r": "24949a052bf9dffd40b90e3c7ea6bad74f2eecb717713ece484eaaf4e881d9b1",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "ef527bc63f2a363e8db4ca133d9d921c883b5d19fe12108a32991725dea94547"
+      },
+      "label": "PINN with exact BC | seed=4089",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "90_pinn-with-exact-bc---seed-4090",
+      "hashes": {
+        "F": "a5c687deec95bd06184486a45fba9a3107ee475361ae56fbe61a81e2f6ae0d90",
+        "G": "2197e4a4d7a75cefa8b28ccb9d3c888b5cbbe978d28df4569339755c8c27372b",
+        "a": "20920668063d30d8d88f04b5cef17cf7749e34a5782c7acf1714f156428091ae",
+        "loss": "cd13764a0e3f54aee3e90630a937c3b458dd09b54d69aa99a93e8d6e3e0786ed",
+        "r": "90a72aec9f9fc0f02e7e661ef7c42a605e1f4735d4e3a90a3f110dd261ae1c58",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "0ad417c919a2d4efc4da2eea0c4441880a61d869d8819c281d8ecd8b675ec928"
+      },
+      "label": "PINN with exact BC | seed=4090",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "91_pinn-with-exact-bc---seed-4091",
+      "hashes": {
+        "F": "6e74ac638ace96a31b0b038f11764da9e0d3d611a30fdfba58c1a7beca3232ff",
+        "G": "a6ea46487184dadd727770c4db4d723f64226b5e3e0c8d4b9b2ae6cf79dc0582",
+        "a": "a4067d5c97568e78f2b9c44f7b7db31d177836c86905bd97397a959df01ee193",
+        "loss": "9803c873cfa04d6f312f561ad8fff49a455bc66fb92e7343235f4bd7ce9f3bd1",
+        "r": "565429ab4363fee2d99533b36e108378e55140f8d398dc551c493c33a35eeed3",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "42c4722bdb6fe4f9190d2c1c792a95a20e8709b283fb7aa786f7b625a9b4d9ae"
+      },
+      "label": "PINN with exact BC | seed=4091",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "92_pinn-with-exact-bc---seed-4092",
+      "hashes": {
+        "F": "f6bdbc2f3f267e5f84ce3d3c1fabcaffba782bee3e58f5bd353170e6bc48c172",
+        "G": "d3a0cbb068be48bb5e732b59bd38600bdaa7198d8985e2f14ecacbcc89bf958b",
+        "a": "8fd55f5540ff2f7acfc2c174d3fb0ccdded5961c41a18a63cc9c80751cc5fd37",
+        "loss": "6abc402cc5aee98969ef746531647346442ec80643f813ea5ffc826489ab1bee",
+        "r": "a4839e7c968211ab54aedc7af139140ec6a3162e90904b5c496be889962a526a",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "8dfca219299e2efcaa78be2af9fcd1168087d760cf4d48b17ad8ef50c2476b26"
+      },
+      "label": "PINN with exact BC | seed=4092",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "93_pinn-with-exact-bc---seed-4093",
+      "hashes": {
+        "F": "86c1d3912fbb8ba3eef2d8f013b63550f5df93fa01419832fee63d9630ecad9b",
+        "G": "579c3b49725cf280a080ea6c9b16ed9fd8f1d28b71862cbe7f8c67e0f6d509de",
+        "a": "b8a8bff3616b3b1c4431390aa366ffdf498f4fe79b8751b93bb4e9e4dcbd44dc",
+        "loss": "170e0d46d502abca3134ac8d9fc6b4fefd8e511ff59c42a90dfb2e90df4e82c8",
+        "r": "39277da7a2083bf8b1d13c7fe539fe07e06bc909704894e6128e5e55240f19ee",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "feddd22eff2fa63d2f825bece86fe95f12ca54ff436ab8887bf5e4af6e8f9669"
+      },
+      "label": "PINN with exact BC | seed=4093",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "94_pinn-with-exact-bc---seed-4094",
+      "hashes": {
+        "F": "7954187d49a819a2bf5f364256d84472b986bd70e1ea9cccff97196a377869f1",
+        "G": "2680cb75b9aaed691d039c62d6e8f832522cfd280a2d205abe34ffeaff07bb88",
+        "a": "bcb7eda800c2abf1bf927cf0ca89525fdfb3037c0fc9885a52101d416047e9fa",
+        "loss": "83c092c042a6027a0091dca6d2cb0c170db04543e16b361a43e66994194bd0d4",
+        "r": "89b05b5992941696540637d1454cbe74b964bcb338b9a49d974ae0f756bd3676",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "eed286e312d4e39bc7ef78b18904cfe844f2f124efc7bcb2a8584b260096100a"
+      },
+      "label": "PINN with exact BC | seed=4094",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "95_pinn-with-exact-bc---seed-4095",
+      "hashes": {
+        "F": "ae635ba26ae6653ae9d23158391717d9f53561afad6c00e8d78a292e722a6d23",
+        "G": "589d91036cf058a34b751b87183fde026dbb319df4a1017921fa607e5e9a1fc5",
+        "a": "5fe1d616bbc5cc798faa14f3d5cf5c66f107c4f9656fe9e8b6c177dea1e30d46",
+        "loss": "8e1cb241a9efce639ef7f5ae5cd68c039c8e3107d18ecd1765e0720f902c1ce0",
+        "r": "12eae351f6b27b5ad466d3c3324f1e789b239a85a4da8e6c9fb00425bb0cedba",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "cb05b770bc3d0d1a14532b3007e5cc4cd9675a7f4f58fc4b2b013adc1c805299"
+      },
+      "label": "PINN with exact BC | seed=4095",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "96_pinn-with-exact-bc---seed-4096",
+      "hashes": {
+        "F": "18661359535e95f6814572a276c43cdf3058c74fdf4cda0ce19896cf149b4bdc",
+        "G": "c0b99187a20a2edc045d8a0a424f14e670b43afd5413681afb13a65b49163ff9",
+        "a": "d6638fc7a2281245f1df823dae7f766f4e7ff62c62a7f66e9c66165644fe9fa1",
+        "loss": "2419487ad75f8abeabfeccfbb65171c111e2c9f6f843c8bd236b1c20f76c3fa4",
+        "r": "789b7c8de80cee4f84fd762f1160d5faf17eb8d9c1293486c3981703ddcb3c23",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "bc33acc573c8f32bc89e686b9b49e8840251c70e9ade7d6ca3c2d3499c71947e"
+      },
+      "label": "PINN with exact BC | seed=4096",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "97_pinn-with-exact-bc---seed-4097",
+      "hashes": {
+        "F": "ee57866ddee76b525e54b2382252d23a6ecfcc528ece657619d4483cd9716911",
+        "G": "838bba5bcbdd764eab4c3c88a09cfd4f35553c3e10e365de8e831cbf33958817",
+        "a": "846444ede8442e762cf6171e2ebd5be3ae81573b2b2490269cb5b57198ee6604",
+        "loss": "65497cda77807c820423e5a9cd0c3f2981408c04c5fd04408fecff8d76943ebb",
+        "r": "d219465632c162d5a36157617a02da846ccd378483a78299e10e1b1977de777a",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "9b237f872affc4eb1020f3beebd0d86ae786fdf5a847235d3f83a58a371b3617"
+      },
+      "label": "PINN with exact BC | seed=4097",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "98_pinn-with-exact-bc---seed-4098",
+      "hashes": {
+        "F": "bc610176ee0616ca5bca0aaf5251d14ba1c2acc2882c85d7688d46d01c27cd65",
+        "G": "0b43dd5f8d73db61131a8afc95da4229c39de904ad23ce68437d64d646f60153",
+        "a": "ba5fc6b4634ffc256e1122613b5dd0525496086621377e9ec84231393459b4f4",
+        "loss": "e12b62bea274fb59e931c85bfc2388271b95c994d8e625f5ef1570dc9526981c",
+        "r": "464480dbad93ed48e76cbfb1669bb90dffdb65df98c42cb0561d4b5fb26475c9",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "622ca36f80e9214ec3eeda53d827c90f7ff551719451d90cfbbd5c6d2d6955df"
+      },
+      "label": "PINN with exact BC | seed=4098",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "99_pinn-with-exact-bc---seed-4099",
+      "hashes": {
+        "F": "4047348982589e0436220119d99c206d3dc343637670c42fc9f0fa7c93f8dd66",
+        "G": "1256c6ad580f7c37a355cf627cff8da8a8f1caa0cf134fbf79cd280117888428",
+        "a": "991605dccdc1971b76d116b5969215c1f01a2a9c0a23a43a9e496b73973779ee",
+        "loss": "1507731ce6e9659da3dc1bbc3bd17b505164655e98f9fb9c403844269a7a1aff",
+        "r": "4fd502d0c1e8bb7cab9dfa84a9ffb485b3d5d609fbde35d85bb9b113072eba81",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "5ce7156ecf2072712fdaa79a5ad869fa8a05e12c9ffb9ed2025e3a8016ac2d2e"
+      },
+      "label": "PINN with exact BC | seed=4099",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "100_baseline--opengoddard",
+      "hashes": {
+        "F": "024394a7cce94b895c3c04b6d95e6c5ee1847c7dddf034b81529a54b1d3b2c3c",
+        "G": "ca91ff04f94e91ad7ffdf7c71d2587655f075476aec77df05a7397a60d85ca33",
+        "a": "744dcd059687557f534cf512d71011391197bfae40de4f64b2066bea22bf18a4",
+        "loss": "bc4e1e1102de6869e7943312185d7f4695101837544a5447569a65e6cfff087b",
+        "r": "3ec333eaf353721405d5203cf9b348ba3d8312a74d9fb24ab455f0ac12e7c2e3",
+        "t": "a02b051878ba647b6f060e4e6ec42f54f60ee8c267b37d7c7cc48f20730928b8",
+        "v": "00c3c082d909f1bd31cd9ea81ad0eb9f6a6285c00383fb85894e9a1b2a084b88"
+      },
+      "label": "Baseline (OpenGoddard)",
+      "source": "opengoddard"
+    }
+  ],
+  "record_id": "hohnmann_transfer",
+  "source_run_id": "20260413_181745_hohnmann_transfer_monte_carlo"
+}

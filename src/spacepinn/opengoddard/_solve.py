@@ -26,16 +26,16 @@ def print_opengoddard_start(
     run_label = label or "OpenGoddard"
     print()
     print("*" * 92)
-    print(f"[SPACEPINN] Starting experiment | label={run_label} | source=opengoddard")
+    print(f"[SWINGBY] Starting experiment | label={run_label} | source=opengoddard")
     print(
-        "[SPACEPINN] OpenGoddard setup | "
+        "[SWINGBY] OpenGoddard setup | "
         f"sections={getattr(prob, 'number_of_section', 'n/a')} | "
         f"states={getattr(prob, 'number_of_states', 'n/a')} | "
         f"outer_iterations={getattr(prob, 'maxIterator', 'n/a')} | "
         f"slsqp_maxiter={maxiter} | ftol={ftol:.3g}"
     )
     for key, value in (details or {}).items():
-        print(f"[SPACEPINN] {key}: {_format_solver_detail(value)}")
+        print(f"[SWINGBY] {key}: {_format_solver_detail(value)}")
     print("*" * 92)
     print()
 

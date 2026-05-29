@@ -1,0 +1,822 @@
+{
+  "entries": [
+    {
+      "entry_id": "00_pinn-with-exact-bc---seed-9000",
+      "expected_config_json": "expected_configs/00_pinn-with-exact-bc---seed-9000.json",
+      "label": "PINN with exact BC | seed=9000",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/00_pinn-with-exact-bc---seed-9000.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "01_pinn-with-exact-bc---seed-9001",
+      "expected_config_json": "expected_configs/01_pinn-with-exact-bc---seed-9001.json",
+      "label": "PINN with exact BC | seed=9001",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/01_pinn-with-exact-bc---seed-9001.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "02_pinn-with-exact-bc---seed-9002",
+      "expected_config_json": "expected_configs/02_pinn-with-exact-bc---seed-9002.json",
+      "label": "PINN with exact BC | seed=9002",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/02_pinn-with-exact-bc---seed-9002.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "03_pinn-with-exact-bc---seed-9003",
+      "expected_config_json": "expected_configs/03_pinn-with-exact-bc---seed-9003.json",
+      "label": "PINN with exact BC | seed=9003",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/03_pinn-with-exact-bc---seed-9003.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "04_pinn-with-exact-bc---seed-9004",
+      "expected_config_json": "expected_configs/04_pinn-with-exact-bc---seed-9004.json",
+      "label": "PINN with exact BC | seed=9004",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/04_pinn-with-exact-bc---seed-9004.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "05_pinn-with-exact-bc---seed-9005",
+      "expected_config_json": "expected_configs/05_pinn-with-exact-bc---seed-9005.json",
+      "label": "PINN with exact BC | seed=9005",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/05_pinn-with-exact-bc---seed-9005.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "06_pinn-with-exact-bc---seed-9006",
+      "expected_config_json": "expected_configs/06_pinn-with-exact-bc---seed-9006.json",
+      "label": "PINN with exact BC | seed=9006",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/06_pinn-with-exact-bc---seed-9006.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "07_pinn-with-exact-bc---seed-9007",
+      "expected_config_json": "expected_configs/07_pinn-with-exact-bc---seed-9007.json",
+      "label": "PINN with exact BC | seed=9007",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/07_pinn-with-exact-bc---seed-9007.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "08_pinn-with-exact-bc---seed-9008",
+      "expected_config_json": "expected_configs/08_pinn-with-exact-bc---seed-9008.json",
+      "label": "PINN with exact BC | seed=9008",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/08_pinn-with-exact-bc---seed-9008.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "09_pinn-with-exact-bc---seed-9009",
+      "expected_config_json": "expected_configs/09_pinn-with-exact-bc---seed-9009.json",
+      "label": "PINN with exact BC | seed=9009",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/09_pinn-with-exact-bc---seed-9009.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "10_pinn-with-exact-bc---seed-9010",
+      "expected_config_json": "expected_configs/10_pinn-with-exact-bc---seed-9010.json",
+      "label": "PINN with exact BC | seed=9010",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/10_pinn-with-exact-bc---seed-9010.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "11_pinn-with-exact-bc---seed-9011",
+      "expected_config_json": "expected_configs/11_pinn-with-exact-bc---seed-9011.json",
+      "label": "PINN with exact BC | seed=9011",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/11_pinn-with-exact-bc---seed-9011.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "12_pinn-with-exact-bc---seed-9012",
+      "expected_config_json": "expected_configs/12_pinn-with-exact-bc---seed-9012.json",
+      "label": "PINN with exact BC | seed=9012",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/12_pinn-with-exact-bc---seed-9012.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "13_pinn-with-exact-bc---seed-9013",
+      "expected_config_json": "expected_configs/13_pinn-with-exact-bc---seed-9013.json",
+      "label": "PINN with exact BC | seed=9013",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/13_pinn-with-exact-bc---seed-9013.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "14_pinn-with-exact-bc---seed-9014",
+      "expected_config_json": "expected_configs/14_pinn-with-exact-bc---seed-9014.json",
+      "label": "PINN with exact BC | seed=9014",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/14_pinn-with-exact-bc---seed-9014.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "15_pinn-with-exact-bc---seed-9015",
+      "expected_config_json": "expected_configs/15_pinn-with-exact-bc---seed-9015.json",
+      "label": "PINN with exact BC | seed=9015",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/15_pinn-with-exact-bc---seed-9015.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "16_pinn-with-exact-bc---seed-9016",
+      "expected_config_json": "expected_configs/16_pinn-with-exact-bc---seed-9016.json",
+      "label": "PINN with exact BC | seed=9016",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/16_pinn-with-exact-bc---seed-9016.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "17_pinn-with-exact-bc---seed-9017",
+      "expected_config_json": "expected_configs/17_pinn-with-exact-bc---seed-9017.json",
+      "label": "PINN with exact BC | seed=9017",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/17_pinn-with-exact-bc---seed-9017.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "18_pinn-with-exact-bc---seed-9018",
+      "expected_config_json": "expected_configs/18_pinn-with-exact-bc---seed-9018.json",
+      "label": "PINN with exact BC | seed=9018",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/18_pinn-with-exact-bc---seed-9018.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "19_pinn-with-exact-bc---seed-9019",
+      "expected_config_json": "expected_configs/19_pinn-with-exact-bc---seed-9019.json",
+      "label": "PINN with exact BC | seed=9019",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/19_pinn-with-exact-bc---seed-9019.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "20_pinn-with-exact-bc---seed-9020",
+      "expected_config_json": "expected_configs/20_pinn-with-exact-bc---seed-9020.json",
+      "label": "PINN with exact BC | seed=9020",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/20_pinn-with-exact-bc---seed-9020.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "21_pinn-with-exact-bc---seed-9021",
+      "expected_config_json": "expected_configs/21_pinn-with-exact-bc---seed-9021.json",
+      "label": "PINN with exact BC | seed=9021",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/21_pinn-with-exact-bc---seed-9021.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "22_pinn-with-exact-bc---seed-9022",
+      "expected_config_json": "expected_configs/22_pinn-with-exact-bc---seed-9022.json",
+      "label": "PINN with exact BC | seed=9022",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/22_pinn-with-exact-bc---seed-9022.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "23_pinn-with-exact-bc---seed-9023",
+      "expected_config_json": "expected_configs/23_pinn-with-exact-bc---seed-9023.json",
+      "label": "PINN with exact BC | seed=9023",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/23_pinn-with-exact-bc---seed-9023.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "24_pinn-with-exact-bc---seed-9024",
+      "expected_config_json": "expected_configs/24_pinn-with-exact-bc---seed-9024.json",
+      "label": "PINN with exact BC | seed=9024",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/24_pinn-with-exact-bc---seed-9024.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "25_pinn-with-exact-bc---seed-9025",
+      "expected_config_json": "expected_configs/25_pinn-with-exact-bc---seed-9025.json",
+      "label": "PINN with exact BC | seed=9025",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/25_pinn-with-exact-bc---seed-9025.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "26_pinn-with-exact-bc---seed-9026",
+      "expected_config_json": "expected_configs/26_pinn-with-exact-bc---seed-9026.json",
+      "label": "PINN with exact BC | seed=9026",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/26_pinn-with-exact-bc---seed-9026.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "27_pinn-with-exact-bc---seed-9027",
+      "expected_config_json": "expected_configs/27_pinn-with-exact-bc---seed-9027.json",
+      "label": "PINN with exact BC | seed=9027",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/27_pinn-with-exact-bc---seed-9027.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "28_pinn-with-exact-bc---seed-9028",
+      "expected_config_json": "expected_configs/28_pinn-with-exact-bc---seed-9028.json",
+      "label": "PINN with exact BC | seed=9028",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/28_pinn-with-exact-bc---seed-9028.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "29_pinn-with-exact-bc---seed-9029",
+      "expected_config_json": "expected_configs/29_pinn-with-exact-bc---seed-9029.json",
+      "label": "PINN with exact BC | seed=9029",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/29_pinn-with-exact-bc---seed-9029.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "30_pinn-with-exact-bc---seed-9030",
+      "expected_config_json": "expected_configs/30_pinn-with-exact-bc---seed-9030.json",
+      "label": "PINN with exact BC | seed=9030",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/30_pinn-with-exact-bc---seed-9030.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "31_pinn-with-exact-bc---seed-9031",
+      "expected_config_json": "expected_configs/31_pinn-with-exact-bc---seed-9031.json",
+      "label": "PINN with exact BC | seed=9031",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/31_pinn-with-exact-bc---seed-9031.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "32_pinn-with-exact-bc---seed-9032",
+      "expected_config_json": "expected_configs/32_pinn-with-exact-bc---seed-9032.json",
+      "label": "PINN with exact BC | seed=9032",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/32_pinn-with-exact-bc---seed-9032.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "33_pinn-with-exact-bc---seed-9033",
+      "expected_config_json": "expected_configs/33_pinn-with-exact-bc---seed-9033.json",
+      "label": "PINN with exact BC | seed=9033",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/33_pinn-with-exact-bc---seed-9033.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "34_pinn-with-exact-bc---seed-9034",
+      "expected_config_json": "expected_configs/34_pinn-with-exact-bc---seed-9034.json",
+      "label": "PINN with exact BC | seed=9034",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/34_pinn-with-exact-bc---seed-9034.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "35_pinn-with-exact-bc---seed-9035",
+      "expected_config_json": "expected_configs/35_pinn-with-exact-bc---seed-9035.json",
+      "label": "PINN with exact BC | seed=9035",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/35_pinn-with-exact-bc---seed-9035.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "36_pinn-with-exact-bc---seed-9036",
+      "expected_config_json": "expected_configs/36_pinn-with-exact-bc---seed-9036.json",
+      "label": "PINN with exact BC | seed=9036",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/36_pinn-with-exact-bc---seed-9036.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "37_pinn-with-exact-bc---seed-9037",
+      "expected_config_json": "expected_configs/37_pinn-with-exact-bc---seed-9037.json",
+      "label": "PINN with exact BC | seed=9037",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/37_pinn-with-exact-bc---seed-9037.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "38_pinn-with-exact-bc---seed-9038",
+      "expected_config_json": "expected_configs/38_pinn-with-exact-bc---seed-9038.json",
+      "label": "PINN with exact BC | seed=9038",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/38_pinn-with-exact-bc---seed-9038.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "39_pinn-with-exact-bc---seed-9039",
+      "expected_config_json": "expected_configs/39_pinn-with-exact-bc---seed-9039.json",
+      "label": "PINN with exact BC | seed=9039",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/39_pinn-with-exact-bc---seed-9039.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "40_pinn-with-exact-bc---seed-9040",
+      "expected_config_json": "expected_configs/40_pinn-with-exact-bc---seed-9040.json",
+      "label": "PINN with exact BC | seed=9040",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/40_pinn-with-exact-bc---seed-9040.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "41_pinn-with-exact-bc---seed-9041",
+      "expected_config_json": "expected_configs/41_pinn-with-exact-bc---seed-9041.json",
+      "label": "PINN with exact BC | seed=9041",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/41_pinn-with-exact-bc---seed-9041.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "42_pinn-with-exact-bc---seed-9042",
+      "expected_config_json": "expected_configs/42_pinn-with-exact-bc---seed-9042.json",
+      "label": "PINN with exact BC | seed=9042",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/42_pinn-with-exact-bc---seed-9042.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "43_pinn-with-exact-bc---seed-9043",
+      "expected_config_json": "expected_configs/43_pinn-with-exact-bc---seed-9043.json",
+      "label": "PINN with exact BC | seed=9043",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/43_pinn-with-exact-bc---seed-9043.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "44_pinn-with-exact-bc---seed-9044",
+      "expected_config_json": "expected_configs/44_pinn-with-exact-bc---seed-9044.json",
+      "label": "PINN with exact BC | seed=9044",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/44_pinn-with-exact-bc---seed-9044.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "45_pinn-with-exact-bc---seed-9045",
+      "expected_config_json": "expected_configs/45_pinn-with-exact-bc---seed-9045.json",
+      "label": "PINN with exact BC | seed=9045",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/45_pinn-with-exact-bc---seed-9045.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "46_pinn-with-exact-bc---seed-9046",
+      "expected_config_json": "expected_configs/46_pinn-with-exact-bc---seed-9046.json",
+      "label": "PINN with exact BC | seed=9046",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/46_pinn-with-exact-bc---seed-9046.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "47_pinn-with-exact-bc---seed-9047",
+      "expected_config_json": "expected_configs/47_pinn-with-exact-bc---seed-9047.json",
+      "label": "PINN with exact BC | seed=9047",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/47_pinn-with-exact-bc---seed-9047.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "48_pinn-with-exact-bc---seed-9048",
+      "expected_config_json": "expected_configs/48_pinn-with-exact-bc---seed-9048.json",
+      "label": "PINN with exact BC | seed=9048",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/48_pinn-with-exact-bc---seed-9048.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "49_pinn-with-exact-bc---seed-9049",
+      "expected_config_json": "expected_configs/49_pinn-with-exact-bc---seed-9049.json",
+      "label": "PINN with exact BC | seed=9049",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/49_pinn-with-exact-bc---seed-9049.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "50_pinn-with-exact-bc---seed-9050",
+      "expected_config_json": "expected_configs/50_pinn-with-exact-bc---seed-9050.json",
+      "label": "PINN with exact BC | seed=9050",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/50_pinn-with-exact-bc---seed-9050.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "51_pinn-with-exact-bc---seed-9051",
+      "expected_config_json": "expected_configs/51_pinn-with-exact-bc---seed-9051.json",
+      "label": "PINN with exact BC | seed=9051",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/51_pinn-with-exact-bc---seed-9051.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "52_pinn-with-exact-bc---seed-9052",
+      "expected_config_json": "expected_configs/52_pinn-with-exact-bc---seed-9052.json",
+      "label": "PINN with exact BC | seed=9052",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/52_pinn-with-exact-bc---seed-9052.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "53_pinn-with-exact-bc---seed-9053",
+      "expected_config_json": "expected_configs/53_pinn-with-exact-bc---seed-9053.json",
+      "label": "PINN with exact BC | seed=9053",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/53_pinn-with-exact-bc---seed-9053.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "54_pinn-with-exact-bc---seed-9054",
+      "expected_config_json": "expected_configs/54_pinn-with-exact-bc---seed-9054.json",
+      "label": "PINN with exact BC | seed=9054",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/54_pinn-with-exact-bc---seed-9054.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "55_pinn-with-exact-bc---seed-9055",
+      "expected_config_json": "expected_configs/55_pinn-with-exact-bc---seed-9055.json",
+      "label": "PINN with exact BC | seed=9055",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/55_pinn-with-exact-bc---seed-9055.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "56_pinn-with-exact-bc---seed-9056",
+      "expected_config_json": "expected_configs/56_pinn-with-exact-bc---seed-9056.json",
+      "label": "PINN with exact BC | seed=9056",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/56_pinn-with-exact-bc---seed-9056.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "57_pinn-with-exact-bc---seed-9057",
+      "expected_config_json": "expected_configs/57_pinn-with-exact-bc---seed-9057.json",
+      "label": "PINN with exact BC | seed=9057",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/57_pinn-with-exact-bc---seed-9057.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "58_pinn-with-exact-bc---seed-9058",
+      "expected_config_json": "expected_configs/58_pinn-with-exact-bc---seed-9058.json",
+      "label": "PINN with exact BC | seed=9058",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/58_pinn-with-exact-bc---seed-9058.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "59_pinn-with-exact-bc---seed-9059",
+      "expected_config_json": "expected_configs/59_pinn-with-exact-bc---seed-9059.json",
+      "label": "PINN with exact BC | seed=9059",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/59_pinn-with-exact-bc---seed-9059.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "60_pinn-with-exact-bc---seed-9060",
+      "expected_config_json": "expected_configs/60_pinn-with-exact-bc---seed-9060.json",
+      "label": "PINN with exact BC | seed=9060",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/60_pinn-with-exact-bc---seed-9060.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "61_pinn-with-exact-bc---seed-9061",
+      "expected_config_json": "expected_configs/61_pinn-with-exact-bc---seed-9061.json",
+      "label": "PINN with exact BC | seed=9061",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/61_pinn-with-exact-bc---seed-9061.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "62_pinn-with-exact-bc---seed-9062",
+      "expected_config_json": "expected_configs/62_pinn-with-exact-bc---seed-9062.json",
+      "label": "PINN with exact BC | seed=9062",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/62_pinn-with-exact-bc---seed-9062.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "63_pinn-with-exact-bc---seed-9063",
+      "expected_config_json": "expected_configs/63_pinn-with-exact-bc---seed-9063.json",
+      "label": "PINN with exact BC | seed=9063",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/63_pinn-with-exact-bc---seed-9063.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "64_pinn-with-exact-bc---seed-9064",
+      "expected_config_json": "expected_configs/64_pinn-with-exact-bc---seed-9064.json",
+      "label": "PINN with exact BC | seed=9064",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/64_pinn-with-exact-bc---seed-9064.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "65_pinn-with-exact-bc---seed-9065",
+      "expected_config_json": "expected_configs/65_pinn-with-exact-bc---seed-9065.json",
+      "label": "PINN with exact BC | seed=9065",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/65_pinn-with-exact-bc---seed-9065.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "66_pinn-with-exact-bc---seed-9066",
+      "expected_config_json": "expected_configs/66_pinn-with-exact-bc---seed-9066.json",
+      "label": "PINN with exact BC | seed=9066",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/66_pinn-with-exact-bc---seed-9066.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "67_pinn-with-exact-bc---seed-9067",
+      "expected_config_json": "expected_configs/67_pinn-with-exact-bc---seed-9067.json",
+      "label": "PINN with exact BC | seed=9067",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/67_pinn-with-exact-bc---seed-9067.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "68_pinn-with-exact-bc---seed-9068",
+      "expected_config_json": "expected_configs/68_pinn-with-exact-bc---seed-9068.json",
+      "label": "PINN with exact BC | seed=9068",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/68_pinn-with-exact-bc---seed-9068.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "69_pinn-with-exact-bc---seed-9069",
+      "expected_config_json": "expected_configs/69_pinn-with-exact-bc---seed-9069.json",
+      "label": "PINN with exact BC | seed=9069",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/69_pinn-with-exact-bc---seed-9069.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "70_pinn-with-exact-bc---seed-9070",
+      "expected_config_json": "expected_configs/70_pinn-with-exact-bc---seed-9070.json",
+      "label": "PINN with exact BC | seed=9070",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/70_pinn-with-exact-bc---seed-9070.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "71_pinn-with-exact-bc---seed-9071",
+      "expected_config_json": "expected_configs/71_pinn-with-exact-bc---seed-9071.json",
+      "label": "PINN with exact BC | seed=9071",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/71_pinn-with-exact-bc---seed-9071.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "72_pinn-with-exact-bc---seed-9072",
+      "expected_config_json": "expected_configs/72_pinn-with-exact-bc---seed-9072.json",
+      "label": "PINN with exact BC | seed=9072",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/72_pinn-with-exact-bc---seed-9072.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "73_pinn-with-exact-bc---seed-9073",
+      "expected_config_json": "expected_configs/73_pinn-with-exact-bc---seed-9073.json",
+      "label": "PINN with exact BC | seed=9073",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/73_pinn-with-exact-bc---seed-9073.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "74_pinn-with-exact-bc---seed-9074",
+      "expected_config_json": "expected_configs/74_pinn-with-exact-bc---seed-9074.json",
+      "label": "PINN with exact BC | seed=9074",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/74_pinn-with-exact-bc---seed-9074.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "75_pinn-with-exact-bc---seed-9075",
+      "expected_config_json": "expected_configs/75_pinn-with-exact-bc---seed-9075.json",
+      "label": "PINN with exact BC | seed=9075",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/75_pinn-with-exact-bc---seed-9075.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "76_pinn-with-exact-bc---seed-9076",
+      "expected_config_json": "expected_configs/76_pinn-with-exact-bc---seed-9076.json",
+      "label": "PINN with exact BC | seed=9076",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/76_pinn-with-exact-bc---seed-9076.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "77_pinn-with-exact-bc---seed-9077",
+      "expected_config_json": "expected_configs/77_pinn-with-exact-bc---seed-9077.json",
+      "label": "PINN with exact BC | seed=9077",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/77_pinn-with-exact-bc---seed-9077.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "78_pinn-with-exact-bc---seed-9078",
+      "expected_config_json": "expected_configs/78_pinn-with-exact-bc---seed-9078.json",
+      "label": "PINN with exact BC | seed=9078",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/78_pinn-with-exact-bc---seed-9078.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "79_pinn-with-exact-bc---seed-9079",
+      "expected_config_json": "expected_configs/79_pinn-with-exact-bc---seed-9079.json",
+      "label": "PINN with exact BC | seed=9079",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/79_pinn-with-exact-bc---seed-9079.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "80_pinn-with-exact-bc---seed-9080",
+      "expected_config_json": "expected_configs/80_pinn-with-exact-bc---seed-9080.json",
+      "label": "PINN with exact BC | seed=9080",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/80_pinn-with-exact-bc---seed-9080.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "81_pinn-with-exact-bc---seed-9081",
+      "expected_config_json": "expected_configs/81_pinn-with-exact-bc---seed-9081.json",
+      "label": "PINN with exact BC | seed=9081",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/81_pinn-with-exact-bc---seed-9081.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "82_pinn-with-exact-bc---seed-9082",
+      "expected_config_json": "expected_configs/82_pinn-with-exact-bc---seed-9082.json",
+      "label": "PINN with exact BC | seed=9082",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/82_pinn-with-exact-bc---seed-9082.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "83_pinn-with-exact-bc---seed-9083",
+      "expected_config_json": "expected_configs/83_pinn-with-exact-bc---seed-9083.json",
+      "label": "PINN with exact BC | seed=9083",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/83_pinn-with-exact-bc---seed-9083.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "84_pinn-with-exact-bc---seed-9084",
+      "expected_config_json": "expected_configs/84_pinn-with-exact-bc---seed-9084.json",
+      "label": "PINN with exact BC | seed=9084",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/84_pinn-with-exact-bc---seed-9084.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "85_pinn-with-exact-bc---seed-9085",
+      "expected_config_json": "expected_configs/85_pinn-with-exact-bc---seed-9085.json",
+      "label": "PINN with exact BC | seed=9085",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/85_pinn-with-exact-bc---seed-9085.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "86_pinn-with-exact-bc---seed-9086",
+      "expected_config_json": "expected_configs/86_pinn-with-exact-bc---seed-9086.json",
+      "label": "PINN with exact BC | seed=9086",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/86_pinn-with-exact-bc---seed-9086.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "87_pinn-with-exact-bc---seed-9087",
+      "expected_config_json": "expected_configs/87_pinn-with-exact-bc---seed-9087.json",
+      "label": "PINN with exact BC | seed=9087",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/87_pinn-with-exact-bc---seed-9087.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "88_pinn-with-exact-bc---seed-9088",
+      "expected_config_json": "expected_configs/88_pinn-with-exact-bc---seed-9088.json",
+      "label": "PINN with exact BC | seed=9088",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/88_pinn-with-exact-bc---seed-9088.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "89_pinn-with-exact-bc---seed-9089",
+      "expected_config_json": "expected_configs/89_pinn-with-exact-bc---seed-9089.json",
+      "label": "PINN with exact BC | seed=9089",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/89_pinn-with-exact-bc---seed-9089.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "90_pinn-with-exact-bc---seed-9090",
+      "expected_config_json": "expected_configs/90_pinn-with-exact-bc---seed-9090.json",
+      "label": "PINN with exact BC | seed=9090",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/90_pinn-with-exact-bc---seed-9090.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "91_pinn-with-exact-bc---seed-9091",
+      "expected_config_json": "expected_configs/91_pinn-with-exact-bc---seed-9091.json",
+      "label": "PINN with exact BC | seed=9091",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/91_pinn-with-exact-bc---seed-9091.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "92_pinn-with-exact-bc---seed-9092",
+      "expected_config_json": "expected_configs/92_pinn-with-exact-bc---seed-9092.json",
+      "label": "PINN with exact BC | seed=9092",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/92_pinn-with-exact-bc---seed-9092.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "93_pinn-with-exact-bc---seed-9093",
+      "expected_config_json": "expected_configs/93_pinn-with-exact-bc---seed-9093.json",
+      "label": "PINN with exact BC | seed=9093",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/93_pinn-with-exact-bc---seed-9093.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "94_pinn-with-exact-bc---seed-9094",
+      "expected_config_json": "expected_configs/94_pinn-with-exact-bc---seed-9094.json",
+      "label": "PINN with exact BC | seed=9094",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/94_pinn-with-exact-bc---seed-9094.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "95_pinn-with-exact-bc---seed-9095",
+      "expected_config_json": "expected_configs/95_pinn-with-exact-bc---seed-9095.json",
+      "label": "PINN with exact BC | seed=9095",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/95_pinn-with-exact-bc---seed-9095.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "96_pinn-with-exact-bc---seed-9096",
+      "expected_config_json": "expected_configs/96_pinn-with-exact-bc---seed-9096.json",
+      "label": "PINN with exact BC | seed=9096",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/96_pinn-with-exact-bc---seed-9096.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "97_pinn-with-exact-bc---seed-9097",
+      "expected_config_json": "expected_configs/97_pinn-with-exact-bc---seed-9097.json",
+      "label": "PINN with exact BC | seed=9097",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/97_pinn-with-exact-bc---seed-9097.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "98_pinn-with-exact-bc---seed-9098",
+      "expected_config_json": "expected_configs/98_pinn-with-exact-bc---seed-9098.json",
+      "label": "PINN with exact BC | seed=9098",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/98_pinn-with-exact-bc---seed-9098.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "99_pinn-with-exact-bc---seed-9099",
+      "expected_config_json": "expected_configs/99_pinn-with-exact-bc---seed-9099.json",
+      "label": "PINN with exact BC | seed=9099",
+      "source": "pinn",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/99_pinn-with-exact-bc---seed-9099.json",
+      "source_log_file": null
+    },
+    {
+      "entry_id": "100_opengoddard",
+      "expected_config_json": "expected_configs/100_opengoddard.json",
+      "label": "OpenGoddard",
+      "source": "opengoddard",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/100_opengoddard.json",
+      "source_log_file": "source_logs/100_opengoddard.log"
+    },
+    {
+      "entry_id": "101_opengoddard--pinn-initial-guess",
+      "expected_config_json": "expected_configs/101_opengoddard--pinn-initial-guess.json",
+      "label": "OpenGoddard (PINN initial guess)",
+      "source": "opengoddard",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260420_114254_rendezvous_hold_point_eci_monte_carlo/configs/101_opengoddard--pinn-initial-guess.json",
+      "source_log_file": "source_logs/101_opengoddard--pinn-initial-guess.log"
+    }
+  ],
+  "record_id": "rendezvous_hold_point_eci",
+  "source_run_id": "20260420_114254_rendezvous_hold_point_eci_monte_carlo"
+}

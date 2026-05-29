@@ -1,0 +1,64 @@
+{
+  "entries": [
+    {
+      "entry_id": "00_pinn-with-exact-bc",
+      "hashes": {
+        "F": "d51fa1fcd57e97e0ee8972f2b2a1dce8e7796405ceae19d1f2e619602e565256",
+        "G": "8130e06f85ae1498f6222c9d2d851006e172f70626b3c33438b785bdb1c17b6a",
+        "a": "b040bcdf4a6c44d6645da880be9ee33233505f705ea47222795248d359e672eb",
+        "loss": "c7aa744164993cf0ba993279f070f0d9550949b7db784ad6e0f2b5f98e86ee00",
+        "r": "8bff78f46f0a2f32623b5d303d47277754ef9d2bc0e31da8877e627dc47f7d09",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "d0b5ec81b642d7a9ae81a8d4718707ee3acfc244052655324f2936076b36b895"
+      },
+      "label": "PINN with exact BC",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "01_pinn-with-soft-bc",
+      "hashes": {
+        "F": "3bb08b0c03b6005d2f240d07d28c9702791e9144d9d8a99ed756fa2540ccf4b3",
+        "G": "7ddcc1b40ed40742f29ce8a375aaff718b53a6b1076131073682335359effea6",
+        "a": "e6c156612f80a0e49b9fa8e4020051116dad827f28aa5ca7d457ceecfb6589c4",
+        "loss": "4043b211b9591b1d070701aff873683ef8f2d695e94cde7c42b2c64b3a3349b9",
+        "loss_bc": "b04158c6a47be097ef9dbbbee8208b2cc35ec831eedff3492f6af7d7e00bd24b",
+        "loss_physics": "b0d2f8d36f27ce5419e90f63533382799a30c312b736080dfbd05522227015ea",
+        "r": "00aa7a191a82c8c3e4bcf33135a94cb7178ddbacb142accb4e3ef285c0a02d0f",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "166c564bcbcf990e9ae3aebef8e46f47bf8e47b8647abbd89118d26481f7d4b3"
+      },
+      "label": "PINN with soft BC",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "02_pinn-with-exact-bc--pre-trained",
+      "hashes": {
+        "F": "67b9462829e4e5696074b6f786fe805c5cee4f2c37f070699d63fe8ff4188f83",
+        "G": "0b9acfb3e9d28e53be2951d47fd8a2072c607d413c9f151e157c60503ff2209e",
+        "a": "74b263ae2b6cf183d7a05f8ccb35bacc8506728272f11badb56a04cdc298c64e",
+        "loss": "5189723f87a889253534fb6f026cd70687e0e59bf6d2ffca022ac6532cb465a3",
+        "r": "fc9a286553cfe116ffda5dc412b1ce6a32ac4b92cc6b240f6ae0a77152f4e632",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "e400283acaa7bc87db21aacc592fd4e9b2a10146f3c41da0eb90a892b16b5e70"
+      },
+      "label": "PINN with exact BC (pre-trained)",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "03_baseline--opengoddard",
+      "hashes": {
+        "F": "a3d9650c7b0d3af98233dfd8876cc9ebcc054b88b6af5ef5e5e8018ec8c61040",
+        "G": "763301cec5528d1c6bfb421312ee7784da929706b464f79d270d67d848f6ce1b",
+        "a": "0db007e05b0d38405113015b5ef872815e7590a17a95642654ea08724a5bf5c3",
+        "loss": "9d6b53cca12ed3fc2a0190170f37655bbe61621f3ed4fa9dd164bff7c715be00",
+        "r": "fb6e9883e0d2e99842ceb5da6d2fe48ba2270a89ac4aa230c423d4f346a1f5ff",
+        "t": "91fa2d084b0ef3dfd00c290151cb802792b7be4d82628552fb6247dfcfda5d5c",
+        "v": "d7987e6521a813d7259501173d6b206bf1e6f92a7437c807bfd6eb7afc7b0aac"
+      },
+      "label": "Baseline (OpenGoddard)",
+      "source": "opengoddard"
+    }
+  ],
+  "record_id": "three_bodies_3d",
+  "source_run_id": "20260415_073900_three_bodies_3d"
+}

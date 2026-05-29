@@ -2,9 +2,9 @@ from __future__ import annotations
 
 import numpy as np
 
-from spacepinn.config.config_orbit_transfer import GM_EARTH, R_LEO
+from spacepinn.config.config_orbit_transfer import GM_EARTH
 
-TARGET_RADIUS_KM = float(R_LEO)
+TARGET_RADIUS_KM = 6778.0
 TARGET_MEAN_MOTION_RAD_S = np.sqrt(GM_EARTH / TARGET_RADIUS_KM**3)
 TARGET_SPEED_KM_S = TARGET_RADIUS_KM * TARGET_MEAN_MOTION_RAD_S
 INITIAL_RELATIVE_OFFSET_KM = np.array([-1.0, -0.3], dtype=float)

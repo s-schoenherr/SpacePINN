@@ -1,0 +1,132 @@
+{
+  "entries": [
+    {
+      "entry_id": "00_t-1-00---mathrm-s",
+      "hashes": {
+        "F": "72b44127176c41b0428cc0fb45f190a6d11e5fb4c6ee08903d9ad467c486532d",
+        "G": "3ad914033f4c17532c26033195ec143460f21e108d6f21dbfcb3986c666340d4",
+        "a": "a9e5d320265bf0436931ac8c9b7a4caa75764dffc0f14dd86e52fd6f60288a23",
+        "loss": "b788b866fda6574b8acebdfcf1e639ee4526646c7d0b0a50f475626a5ca177a8",
+        "r": "8dfa3508e7c9a11d317c4b4c64f310acfa01a0ead206f1b45b178b2c17b786c5",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "4c692e741d7e843a74c5e46cca6dac7b8f2ca95e5800c98727a31e11ff7ca5be"
+      },
+      "label": "$T=1.00\\,\\mathrm{s}$",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "01_t-1-25---mathrm-s",
+      "hashes": {
+        "F": "b8a1a5c8bdbe0e2acf39d253abbec3d8d14509d5854d619ea64ad9c27d9d773f",
+        "G": "6bee2cb3b22f55bbaf472c97233a49c06138cfea015343075915ae5b9ea340c1",
+        "a": "75afeeea59b148c4693576f4b8b25d121324867c63da98baa11e7b44069810a5",
+        "loss": "6eb47e1617a526dfedd23b430648ab62709b3a358de01130f9c8466102875b45",
+        "r": "ef62ceabf78b4fd0ee101d9b9638f9c5ab4ed1740d94a44b81d27f7a9b3cd069",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "e3d7d200a4268372945fa1eb33a4bfb47b8886d4255e53907b028dd5235fdf60"
+      },
+      "label": "$T=1.25\\,\\mathrm{s}$",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "02_t-1-50---mathrm-s",
+      "hashes": {
+        "F": "deb12e31d6a06bce2541331e0ef0aac868252652b613f185883663bae59bb4cc",
+        "G": "cbbf2e3e93056ad93e6248c11a7aa28b3b211f3c612939f474fa82f0a27c94b0",
+        "a": "aeea61d605781b66bae6aa07802cb3ad7068ae7490935ffad74d8b4f882b34b0",
+        "loss": "9243f5924d18c717914a07443273ecbf08f71936a510b30859d3ba8bc40f2e5e",
+        "r": "cbe7cbbe443700367462e8bfc976168c2aab8eaabb96ea09d6088cc4865b0b1b",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "98681f6076f86f7e776b10bcb85794e57f010e0ded06d84051ee03e12a512771"
+      },
+      "label": "$T=1.50\\,\\mathrm{s}$",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "03_t-1-75---mathrm-s",
+      "hashes": {
+        "F": "028fbf2c538a2bf1185406068ed2c061a6c7f057562333c05e773e415616c766",
+        "G": "7de1ae88ec640f2daf3c1e2a3294086bdd344bf4fb45bdebf2386819d6774371",
+        "a": "f13fde7003f66fe2e90dde413506895657099806e7bd15023bf0b72de5c8cc7b",
+        "loss": "652cfec487f903f58ba1359a51105eca77d8b6fd89d91df0d420db01c0bb4f8b",
+        "r": "f799da446c9276d35f1a65eecea97247bbebb557e7e9f017ac91523a5575e95a",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "5144e8603c55126a3f926c289b4e927f60815b1bf1036a217e7ab9f146f18352"
+      },
+      "label": "$T=1.75\\,\\mathrm{s}$",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "04_t-2-00---mathrm-s",
+      "hashes": {
+        "F": "59170f3b65777782fae77e817518a57cb22ae4eb8aa71361da3b18f312e8b6aa",
+        "G": "374ef216701516d72938ae18983eb00ee43968aaef86ffefea969a8e0c1f31e2",
+        "a": "3bc730a230d2fb492c963183d46e785c677931e6a884ddff9fb21e6345a09aa1",
+        "loss": "e5e13fafa3330503e371f9d1d9e2da3d6fca3b5f0242976e217bdbffa0e57905",
+        "r": "87a313002f100e218c7a1d444611af512592b0a9ae2eb6d2399b005b22ab9aca",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "1ddc1a12ca10ff14fa5a0055fe102fe0936b7176000185019d0505f5a99cfa36"
+      },
+      "label": "$T=2.00\\,\\mathrm{s}$",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "05_t-3-00---mathrm-s",
+      "hashes": {
+        "F": "0666e35daeec6c0d2876ae3313412c1fd331f49edba24367db3dba0bf530ccb0",
+        "G": "2de96cbb36f1312d4c5020c104648d1fa1a7645131c75a52bda36250355d600a",
+        "a": "a2941902f49790df3565f30993348900c683319d0b42e2224e5978d8e1f8040b",
+        "loss": "25e92988ed66b920871a1309ddbb56cb7ac5d71335bc2e9da2420c4389d47d18",
+        "r": "e687e56cdcc2899691f3031d91754a705ebf0794b8bb43b10309cabdc3f29850",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "1dfe9785e1621401d5369ea751592dcb1b143effacb1e147c25c4792abc154c2"
+      },
+      "label": "$T=3.00\\,\\mathrm{s}$",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "06_direct-collocation--t-1-00---mathrm-s",
+      "hashes": {
+        "F": "bbbf84c568f3bc29df3d776d5c7b3980d45ea09545491e51d1a04f998705fbbe",
+        "G": "0d1db2abbbfe583c835a154bdc07a368ce8d7b53128b232b902b97d5ddbf8b1f",
+        "a": "39950b25bab2d511f5d5c0b7d57ecc80c97863056b39d6de12dc3c01d4fa432f",
+        "loss": "bf9de90d828018ee6197c8d8982bb0d5076670849868f91bb7d036d711b63d95",
+        "r": "d7d508c70daced52f5a72e5f413574e016e6ada7b0c15d64c24924253a64bd62",
+        "t": "a19c358ef76c6a4a134aa104072c5f2fa27b6f3e5ac37b25564aa931eee17e0c",
+        "v": "907b2fae9491105c296f99360433fb6715304bfbc3eaef75fa97aab2526150bb"
+      },
+      "label": "Direct collocation $T=1.00\\,\\mathrm{s}$",
+      "source": "opengoddard"
+    },
+    {
+      "entry_id": "07_direct-collocation--t-2-00---mathrm-s",
+      "hashes": {
+        "F": "f3c231b0310aa9b291cf21afaa1c33ab226ffa2f53f1fa2301b7d4be142e7b1a",
+        "G": "92a3b036a381b5d89209e0ac535b31329b8e46fde1de5080e7830f641d621e81",
+        "a": "f632c9255ab453b4172ad17bd93098a1a3b20d78c8344044cd2502f8a88f4ba1",
+        "loss": "ee25b91a8a1629e62a9b48df611364764225e54d75e2b8481ca00a88942fb9c9",
+        "r": "666444e6c0c0e42541433adf08f7094a2982f2fb02774187e6925079ac997590",
+        "t": "58ab66136a40144b181e1779f77aceae53a86107a86266d49d530367166053cb",
+        "v": "456a0ec1fe6e590732f0c780c497aee4d839af0d18c1c30ae54c020b8dc2fb36"
+      },
+      "label": "Direct collocation $T=2.00\\,\\mathrm{s}$",
+      "source": "opengoddard"
+    },
+    {
+      "entry_id": "08_direct-collocation--t-3-00---mathrm-s",
+      "hashes": {
+        "F": "862a0d4bc01903d856d7abbc2a53307d846f86744704d1c4fa8c5d14498805b7",
+        "G": "4ee1625c5ead07ab34f0ddb3df1cff35db79817d90cd6925c2f7080227a30273",
+        "a": "1be48ae4435e2798a14e957387cf333b15bece1d552e1d075b89de396a99f41b",
+        "loss": "3a5f878d7e1c0b1d6db08e620a243c9b7c3ec43dc1633651ab488d3afc137efd",
+        "r": "3516a8a776dca2992b7df43bb938c3d79bcc64858b171131f8e0aa3c308b3c9a",
+        "t": "36cd9131f6afca171e15450290f11f675b5d1fbebeb09c58ec347cf23ffc9be8",
+        "v": "eb5e34bd0f1bc860f0e13639aa9ae0f9c9db98d975c592dc7650c384b4fe3b06"
+      },
+      "label": "Direct collocation $T=3.00\\,\\mathrm{s}$",
+      "source": "opengoddard"
+    }
+  ],
+  "record_id": "paper_static_total_time_sweep_large",
+  "source_run_id": "20260526_135325_static_total_time_sweep_large"
+}

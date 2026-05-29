@@ -117,9 +117,12 @@ def plot_traj_3d_projection(plotter, plot_quiver=True, plot_legend=True):
 
     plot_masses_3d(ax, get_gravity_sources(res), projection="2d")
 
+    for axis in (ax[0, 0], ax[0, 1], ax[1, 0]):
+        plotter.style_axes(axis)
     if plot_legend:
         handles, labels = ax[0, 0].get_legend_handles_labels()
-        ax[1, 1].legend(handles, labels, loc="center")
+        legend = ax[1, 1].legend(handles, labels, loc="center")
+        plotter.style_legend(legend)
         ax[1, 1].set_frame_on(False)
         ax[1, 1].set_xticks([])
         ax[1, 1].set_yticks([])
@@ -129,8 +132,8 @@ def plot_traj_3d_projection(plotter, plot_quiver=True, plot_legend=True):
     figure_path = plotter._build_figure_path("traj2d")
     fig.savefig(
         figure_path,
-        bbox_inches="tight",
-        pad_inches=0.05,
+        bbox_inches=plotter.save_bbox_inches,
+        pad_inches=plotter.save_pad_inches,
     )
     register_plot_artifact_if_possible(figure_path)
 
@@ -196,15 +199,13 @@ def plot_traj_2d(plotter, plot_quiver=True, plot_legend=True):
     ax.set_xlabel("x")
     ax.set_ylabel("y")
     ax.set_aspect("equal")
+    plotter.style_axes(ax)
     if plot_legend:
-        ax.legend(loc="upper left", ncol=2)
+        legend = ax.legend(loc="upper left", ncol=2)
+        plotter.style_legend(legend)
     fig.tight_layout()
     figure_path = plotter._build_figure_path("traj2d")
-    fig.savefig(
-        figure_path,
-        bbox_inches="tight",
-        pad_inches=0.05,
-    )
+    plotter.save_figure(fig, figure_path)
     register_plot_artifact_if_possible(figure_path)
     plt.show()
 
@@ -271,13 +272,11 @@ def plot_traj_3d(plotter, plot_quiver=True, plot_legend=True):
     ax.scatter(*res.rN, marker="x", color="red", label=r"$r(t=1)$")
 
     plot_masses_3d(ax, get_gravity_sources(res), projection="3d")
+    plotter.style_axes(ax)
     if plot_legend:
-        ax.legend(loc="upper center", ncol=3)
+        legend = ax.legend(loc="upper center", ncol=3)
+        plotter.style_legend(legend)
     figure_path = plotter._build_figure_path("traj3d")
-    fig.savefig(
-        figure_path,
-        bbox_inches="tight",
-        pad_inches=0.05,
-    )
+    plotter.save_figure(fig, figure_path)
     register_plot_artifact_if_possible(figure_path)
     plt.show()

@@ -104,6 +104,7 @@ def _solver_payload(
     max_iteration: int,
     ftol: float,
     slsqp_maxiter: int,
+    thrust_cap: float | None = None,
     time_final_upper_bound: float | None = None,
     warm_start_result=None,
 ) -> dict:
@@ -129,6 +130,7 @@ def _solver_payload(
             "max_iteration": max_iteration,
             "slsqp_maxiter": slsqp_maxiter,
             "ftol": ftol,
+            "thrust_cap": thrust_cap,
             "time_final_upper_bound": time_final_upper_bound,
         },
         "spaceship": {
@@ -152,6 +154,7 @@ def _orbit_transfer_goddard(
     max_iteration: int = 5,
     ftol: float = 1e-12,
     slsqp_maxiter: int = 25,
+    thrust_cap: float | None = None,
     transfer_bc: OrbitalTransferBC | None = None,
     alpha_final_guess: float | None = None,
     time_final_guess: float | None = None,
@@ -197,8 +200,14 @@ def _orbit_transfer_goddard(
         return result()
 
     def inequality(prob: Problem, obj: Spaceship):
+        del obj
+        ur = prob.controls_all_section(0)
+        ut = prob.controls_all_section(1)
+        thrust_mag = np.sqrt(ur**2 + ut**2)
         result = Condition()
         result.lower_bound(prob.time_final(-1), 0.0)
+        if thrust_cap is not None:
+            result.upper_bound(thrust_mag, float(thrust_cap))
         if time_final_upper_bound is not None:
             result.upper_bound(prob.time_final(-1), float(time_final_upper_bound))
         return result()
@@ -305,6 +314,7 @@ def _orbit_transfer_goddard(
             max_iteration=max_iteration,
             ftol=ftol,
             slsqp_maxiter=slsqp_maxiter,
+            thrust_cap=thrust_cap,
             time_final_upper_bound=time_final_upper_bound,
             warm_start_result=warm_start_result,
         ),
@@ -318,6 +328,7 @@ def kinematic_ot_goddard(
     max_iteration: int = 5,
     ftol: float = 1e-12,
     slsqp_maxiter: int = 25,
+    thrust_cap: float | None = None,
     transfer_bc=None,
 ):
     return _orbit_transfer_goddard(
@@ -328,6 +339,7 @@ def kinematic_ot_goddard(
         max_iteration=max_iteration,
         ftol=ftol,
         slsqp_maxiter=slsqp_maxiter,
+        thrust_cap=thrust_cap,
         transfer_bc=transfer_bc,
     )
 
@@ -339,6 +351,7 @@ def kinematic_ot_goddard_free_final_angle(
     max_iteration: int = 5,
     ftol: float = 1e-12,
     slsqp_maxiter: int = 25,
+    thrust_cap: float | None = None,
     transfer_bc=None,
     alpha_final_guess: float | None = None,
     time_final_guess: float | None = None,
@@ -352,6 +365,7 @@ def kinematic_ot_goddard_free_final_angle(
         max_iteration=max_iteration,
         ftol=ftol,
         slsqp_maxiter=slsqp_maxiter,
+        thrust_cap=thrust_cap,
         transfer_bc=transfer_bc,
         alpha_final_guess=alpha_final_guess,
         time_final_guess=time_final_guess,
@@ -366,6 +380,7 @@ def geometric_ot_goddard(
     max_iteration: int = 5,
     ftol: float = 1e-12,
     slsqp_maxiter: int = 25,
+    thrust_cap: float | None = None,
     transfer_bc=None,
 ):
     return _orbit_transfer_goddard(
@@ -376,6 +391,7 @@ def geometric_ot_goddard(
         max_iteration=max_iteration,
         ftol=ftol,
         slsqp_maxiter=slsqp_maxiter,
+        thrust_cap=thrust_cap,
         transfer_bc=transfer_bc,
     )
 

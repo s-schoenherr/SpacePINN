@@ -1,0 +1,45 @@
+---- iteration : 1 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 3.875745863029414e-08
+            Iterations: 25
+            Function evaluations: 22550
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 1.71590
+
+---- iteration : 2 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 1.358141922541313e-10
+            Iterations: 25
+            Function evaluations: 22550
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 1.71590
+
+---- iteration : 3 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 6.443840266897517e-12
+            Iterations: 25
+            Function evaluations: 22550
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 1.71590
+
+---- iteration : 4 ----
+Iteration limit reached    (Exit mode 9)
+            Current function value: 3.2763302551410655e-13
+            Iterations: 25
+            Function evaluations: 22550
+            Gradient evaluations: 25
+Iteration limit reached
+tf: 1.71590
+
+---- iteration : 5 ----
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 1.839496057317991e-13
+            Iterations: 9
+            Function evaluations: 8119
+            Gradient evaluations: 9
+Optimization terminated successfully
+tf: 1.71590
+

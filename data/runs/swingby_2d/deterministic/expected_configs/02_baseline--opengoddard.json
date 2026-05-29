@@ -1,0 +1,78 @@
+{
+  "backend": "OpenGoddard",
+  "initial_guess": {
+    "ux": {
+      "kind": "constant",
+      "value": 0.0
+    },
+    "uy": {
+      "kind": "constant",
+      "value": 0.0
+    },
+    "vx": {
+      "kind": "constant",
+      "value": 1.0
+    },
+    "vy": {
+      "kind": "constant",
+      "value": 1.0
+    },
+    "x": {
+      "end": 1.0,
+      "kind": "linear",
+      "start": -1.0
+    },
+    "y": {
+      "end": 1.0,
+      "kind": "linear",
+      "start": -1.0
+    }
+  },
+  "problem": "geometric_2d",
+  "solver": {
+    "ftol": 1e-11,
+    "max_iteration": 100,
+    "n": [
+      100
+    ],
+    "num_controls": [
+      2
+    ],
+    "num_states": [
+      4
+    ],
+    "slsqp_maxiter": 25,
+    "time_init": [
+      0.0,
+      1.0
+    ]
+  },
+  "spaceship": {
+    "gravity_sources": [
+      [
+        -0.5,
+        -1.0,
+        0.5
+      ],
+      [
+        -0.2,
+        0.4,
+        1.0
+      ],
+      [
+        0.8,
+        0.3,
+        0.5
+      ]
+    ],
+    "mass": 1.0,
+    "r0": [
+      -1.0,
+      -1.0
+    ],
+    "rN": [
+      1.0,
+      1.0
+    ]
+  }
+}

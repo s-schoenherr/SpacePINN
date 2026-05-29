@@ -1,0 +1,54 @@
+{
+  "backend": "OpenGoddard",
+  "initial_guess": {
+    "mode": "cold_start"
+  },
+  "problem": "circular_orbit_transfer_polar_no_alpha",
+  "solver": {
+    "ftol": 1e-11,
+    "max_iteration": 100,
+    "n": [
+      100
+    ],
+    "num_controls": [
+      2
+    ],
+    "num_states": [
+      3
+    ],
+    "slsqp_maxiter": 25,
+    "time_final_upper_bound": null,
+    "time_init": [
+      0.0,
+      20826.43760049683
+    ]
+  },
+  "spaceship": {
+    "gravity_sources": [
+      [
+        0.0,
+        0.0,
+        398600.0
+      ]
+    ],
+    "mass": 1.0,
+    "r0": [
+      6878.0,
+      0.0
+    ],
+    "rN": [
+      42164.0,
+      3.141592653589793
+    ],
+    "u_max": 0.01,
+    "v0": [
+      0.0,
+      7.612679770155256
+    ],
+    "vN": [
+      0.0,
+      3.0746645801808263
+    ]
+  },
+  "variant": "Baseline (OpenGoddard)"
+}

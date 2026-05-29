@@ -4,6 +4,7 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import numpy as np
 
+from .plotting.paper_style import PAPER_STYLE
 from .plotting.forces import plot_gravity as plot_gravity_impl
 from .plotting.forces import plot_thrust as plot_thrust_impl
 from .plotting.helpers import (
@@ -54,8 +55,17 @@ class TrajectoryPlotter:
         self.prefix = fig_prefix
         self.dim = dim
         self.figsize = figsize
-        self.main_linewidth = 2.2
-        self.secondary_linewidth = 1.8
+        self.main_linewidth = PAPER_STYLE.main_linewidth
+        self.secondary_linewidth = PAPER_STYLE.secondary_linewidth
+        self.axis_label_fontsize = PAPER_STYLE.axis_label_fontsize
+        self.tick_label_fontsize = PAPER_STYLE.tick_label_fontsize
+        self.legend_fontsize = PAPER_STYLE.legend_fontsize
+        self.title_fontsize = PAPER_STYLE.title_fontsize
+        self.legend_framealpha = PAPER_STYLE.legend_framealpha
+        self.legend_handlelength = PAPER_STYLE.legend_handlelength
+        self.legend_columnspacing = PAPER_STYLE.legend_columnspacing
+        self.save_pad_inches = PAPER_STYLE.save_pad_inches
+        self.save_bbox_inches = PAPER_STYLE.save_bbox_inches
         self.experiments = {}
         self.output_dir = Path(output_dir) if output_dir is not None else Path(".")
         self.output_dir.mkdir(parents=True, exist_ok=True)
@@ -115,6 +125,33 @@ class TrajectoryPlotter:
 
     def _build_figure_path(self, suffix):
         return str(self.output_dir / f"{self._generate_fig_name()}_{suffix}.pdf")
+
+    def style_axes(self, ax):
+        ax.xaxis.label.set_size(self.axis_label_fontsize)
+        ax.yaxis.label.set_size(self.axis_label_fontsize)
+        if hasattr(ax, "zaxis"):
+            ax.zaxis.label.set_size(self.axis_label_fontsize)
+        ax.tick_params(axis="both", which="both", labelsize=self.tick_label_fontsize)
+        if hasattr(ax, "zaxis"):
+            ax.tick_params(axis="z", which="both", labelsize=self.tick_label_fontsize)
+
+    def style_legend(self, legend):
+        if legend is None:
+            return
+        for text in legend.get_texts():
+            text.set_fontsize(self.legend_fontsize)
+        frame = legend.get_frame()
+        if frame is not None:
+            frame.set_alpha(self.legend_framealpha)
+            frame.set_edgecolor("black")
+            frame.set_linewidth(1.0)
+            frame.set_facecolor("white")
+
+    def save_figure(self, fig, figure_path):
+        save_kwargs = {"pad_inches": self.save_pad_inches}
+        if self.save_bbox_inches is not None:
+            save_kwargs["bbox_inches"] = self.save_bbox_inches
+        fig.savefig(figure_path, **save_kwargs)
 
     # Backward-compatible helper methods.
     def _get_quiver_data(self, result, step=10):

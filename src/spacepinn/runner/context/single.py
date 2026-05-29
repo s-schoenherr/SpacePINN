@@ -55,17 +55,23 @@ class RunContext:
             return None
         return (self.finished_at - self.started_at).total_seconds()
 
+    def update_config(self, config: dict[str, Any]) -> None:
+        self.config = config
+        self.config_jsonable = _to_jsonable(self.config)
+        self.config_sha256 = _config_hash(self.config_jsonable)
+        self._write_json(self.config_path, self.config_jsonable)
+        with self.config_pickle_path.open("wb") as fh:
+            import pickle
+
+            pickle.dump(self.config, fh)
+
     def start(self) -> None:
         self.plot_dir.mkdir(parents=True, exist_ok=True)
         self.model_dir.mkdir(parents=True, exist_ok=True)
         self.result_dir.mkdir(parents=True, exist_ok=True)
         self.system_dir.mkdir(parents=True, exist_ok=True)
 
-        self._write_json(self.config_path, self.config_jsonable)
-        with self.config_pickle_path.open("wb") as fh:
-            import pickle
-
-            pickle.dump(self.config, fh)
+        self.update_config(self.config)
 
         self._write_json(self.environment_path, capture_environment())
         self._write_json(self.git_path, capture_git_state())
@@ -151,4 +157,3 @@ class RunContext:
                 },
             },
         )
-

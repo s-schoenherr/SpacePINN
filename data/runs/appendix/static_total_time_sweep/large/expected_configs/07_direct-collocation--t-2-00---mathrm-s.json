@@ -1,0 +1,152 @@
+{
+  "backend": "OpenGoddard",
+  "constraints": {
+    "fixed_tof": 2.0
+  },
+  "initial_guess": {
+    "ux": {
+      "kind": "constant",
+      "value": 0.0
+    },
+    "uy": {
+      "kind": "constant",
+      "value": 0.0
+    },
+    "uz": {
+      "kind": "constant",
+      "value": 0.0
+    },
+    "vx": {
+      "kind": "constant",
+      "value": 1.0
+    },
+    "vy": {
+      "kind": "constant",
+      "value": 1.0
+    },
+    "vz": {
+      "kind": "constant",
+      "value": 0.0
+    },
+    "x": {
+      "end": 1.0,
+      "kind": "linear",
+      "start": -1.0
+    },
+    "y": {
+      "end": 1.0,
+      "kind": "linear",
+      "start": -1.0
+    },
+    "z": {
+      "kind": "constant",
+      "value": 0.0
+    }
+  },
+  "problem": "fixed_tof_3d",
+  "resolved_run_state": {
+    "final_trainable_parameters": null,
+    "initial_guess": null,
+    "terminal_state": {
+      "F_final": [
+        2.2145311688121177e-05,
+        4.9545119821629656e-05,
+        -3.692781374006305e-09
+      ],
+      "G_final": [
+        -0.8040748703748358,
+        -1.2195500613120698,
+        0.0
+      ],
+      "a_final": [
+        -0.8040527250631477,
+        -1.219500516192248,
+        -3.692781374006305e-09
+      ],
+      "coordinate_system": "cartesian",
+      "delta_v": 4.772957188256268e-07,
+      "r0_actual": [
+        -1.0,
+        -1.0,
+        0.0
+      ],
+      "r0_target": [
+        -1.0,
+        -1.0,
+        0.0
+      ],
+      "rN_target": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "r_final": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "t_total_final": 2.000000014901161,
+      "v0_actual": [
+        0.1582665161845625,
+        1.0232154656386812,
+        2.140359640548972e-09
+      ],
+      "v_final": [
+        0.713916432763984,
+        0.3686929821690649,
+        3.330140896700365e-09
+      ]
+    }
+  },
+  "solver": {
+    "ftol": 1e-12,
+    "max_iteration": 5,
+    "n": [
+      100
+    ],
+    "num_controls": [
+      3
+    ],
+    "num_states": [
+      6
+    ],
+    "slsqp_maxiter": 25,
+    "time_init": [
+      0.0,
+      2.0
+    ]
+  },
+  "spaceship": {
+    "gravity_sources": [
+      [
+        -0.5,
+        -1.0,
+        0.0,
+        0.5
+      ],
+      [
+        -0.2,
+        0.4,
+        0.0,
+        1.0
+      ],
+      [
+        0.8,
+        0.3,
+        0.0,
+        0.5
+      ]
+    ],
+    "mass": 1.0,
+    "r0": [
+      -1.0,
+      -1.0,
+      0.0
+    ],
+    "rN": [
+      1.0,
+      1.0,
+      0.0
+    ]
+  }
+}

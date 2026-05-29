@@ -1,0 +1,50 @@
+{
+  "entries": [
+    {
+      "entry_id": "00_pinn-with-exact-bc",
+      "hashes": {
+        "F": "072587caf9a3867d564d44fadb4b784595fb49a2330a489960323bfb1af51075",
+        "G": "54263110002be767baf9ba35261dedfd783c2851c0dc8daaa65c6a0d082d0138",
+        "a": "e7ae677287086bb4c39aabfb14c1c844f345f4748e97400b40e8b52a26355cec",
+        "loss": "c092a2b33548d02642cb2d29bc00cc6222401e690eb0d862f61eeedfcbaa37b5",
+        "r": "d11d2378198da5b2898189ac8b1e4626e16a94310adb3c04e20afeaeb1529c47",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "e0cc67fb152b0fb44a9d6ab61d1d1738627940f022fbf4081eceb4a6d8359ba0"
+      },
+      "label": "PINN with exact BC",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "01_pinn-with-soft-bc",
+      "hashes": {
+        "F": "8c77a7165b50343f494dc4d83b49758e1d40b00fe4932a7316cce691f672eeb5",
+        "G": "a13bfb36f2c649cdc1cad60f32eeb3da4098e7cc2259599a254cc71bd3da3edc",
+        "a": "15290b8e59be83044ddfed607ac7cac55037f518b7407d3f2a2160447a224379",
+        "loss": "b2a049d6448fd3554b33ce2c9ae3ed67a49798f00a2a96b49bb948ac4af24c59",
+        "loss_bc": "a8bccff40760384f6fc426d998fe861f08ee6cc8ff89ea92d2aebc5da695f453",
+        "loss_physics": "1a15b139febc5206944538daed9b134781fa7fc72be36769503ad702667721cf",
+        "r": "7cd0fa94f815377229c8b8485290d41b591e3d0241e03d7bd5b19b833e79b8cf",
+        "t": "735d90302444def0c50b61c7deae9c264ffb9c67d3aae50ce5c075685c3ce21d",
+        "v": "8592cfa41bce6ebdcfe8aa2df751894a948be72fc0c4af2a093926680aa8ad82"
+      },
+      "label": "PINN with soft BC",
+      "source": "pinn"
+    },
+    {
+      "entry_id": "02_baseline--opengoddard",
+      "hashes": {
+        "F": "cd3a8fb34d7593d947fb9c9d167f88835fad39d4867f6fe1a5656704edcc8ab8",
+        "G": "94c2f704ebf9182f90b587808566021f4bf8c23e2ca9ce42c7801a8d37ac723d",
+        "a": "4441efba1c062a25f025d11546e3985c678ff5d0d10535c5703eca51f170e263",
+        "loss": "70c58c8d66064e1f0ceb79875824f9158300686b1ec2af715283d56218b2fe98",
+        "r": "576b2e6fcac356404d9e17fe6d818b5132ad351ca72e4ea9147bc7531b3b61d9",
+        "t": "3e6dcbc961cf8b98ec6bd220d003a533adea1573177a72d9476f0a336644e5fd",
+        "v": "feaa4f57ed8c079eff9ffcb23ddce192a93dd45a08e1e50f2270ebd4c57d37f4"
+      },
+      "label": "Baseline (OpenGoddard)",
+      "source": "opengoddard"
+    }
+  ],
+  "record_id": "three_bodies_2d",
+  "source_run_id": "20260415_065546_three_bodies_2d"
+}

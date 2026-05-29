@@ -8,7 +8,7 @@ from pathlib import Path
 import spacepinn
 import torch
 
-from spacepinn.config.config_3d import exact_bc_3d_config, pretraining_3d_config
+from spacepinn.config.config_3d import geometric_3d_config, kinematic_3d_config
 from spacepinn.config.shared_parameters import x0_3d, xN_3d
 from spacepinn.config.transform_functions import kinematic_fn
 from spacepinn.experiment import (
@@ -25,7 +25,7 @@ PLANE_VELOCITY = torch.tensor([[1.0, 1.0, 0.0]])
 
 
 def _build_kinematic_pretrain_config() -> dict:
-    config = deepcopy(pretraining_3d_config)
+    config = deepcopy(kinematic_3d_config)
     config["label"] = "Kinematic tPINN pretrain"
     config["optimizer"]["n_adam"] = 2_000
     config["optimizer"]["n_lbfgs"] = 0
@@ -41,7 +41,7 @@ def _build_kinematic_pretrain_config() -> dict:
 
 
 def _build_geometric_finetune_config(*, initial_t_total: float) -> dict:
-    config = deepcopy(exact_bc_3d_config)
+    config = deepcopy(geometric_3d_config)
     config["label"] = "Geometric tPINN from kinematic pretrain"
     config["optimizer"]["n_adam"] = 2_000
     config["optimizer"]["n_lbfgs"] = 10_000

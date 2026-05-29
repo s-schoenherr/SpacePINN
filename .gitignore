@@ -21,6 +21,6 @@ Thumbs.db   # Windows
 **/*.docx
 
 temp/   
-runs/
+/runs/
 AGENTS.md
 agents/

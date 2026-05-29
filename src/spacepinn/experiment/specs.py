@@ -13,8 +13,6 @@ class PreparedEntry:
     config: dict[str, Any] | None
     plotting: dict[str, Any] = field(default_factory=dict)
     source: str = "pinn"
-    log_text: str | None = None
-    log_filename: str | None = None
 
     def as_collection_entry(self) -> dict[str, Any]:
         return {
@@ -24,8 +22,6 @@ class PreparedEntry:
             "config": self.config,
             "plotting": dict(self.plotting),
             "source": self.source,
-            "log_text": self.log_text,
-            "log_filename": self.log_filename,
         }
 
 
@@ -45,8 +41,6 @@ class ExternalEntrySpec:
     config: dict[str, Any] | None = None
     plotting: dict[str, Any] = field(default_factory=dict)
     source: str = "external"
-    log_text: str | None = None
-    log_filename: str | None = None
 
 
 @dataclass

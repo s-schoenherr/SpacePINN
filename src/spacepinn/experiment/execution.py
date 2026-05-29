@@ -27,8 +27,6 @@ def build_prepared_entry(
     config: dict[str, Any] | None,
     plotting: dict[str, Any] | None = None,
     source: str = "pinn",
-    log_text: str | None = None,
-    log_filename: str | None = None,
 ) -> PreparedEntry:
     return PreparedEntry(
         label=label,
@@ -37,8 +35,6 @@ def build_prepared_entry(
         config=config,
         plotting={} if plotting is None else dict(plotting),
         source=source,
-        log_text=log_text,
-        log_filename=log_filename,
     )
 
 
@@ -50,8 +46,6 @@ def prepare_external_entry(spec: ExternalEntrySpec) -> PreparedEntry:
         config=spec.config,
         plotting=spec.plotting,
         source=spec.source,
-        log_text=spec.log_text,
-        log_filename=spec.log_filename,
     )
 
 

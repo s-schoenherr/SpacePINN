@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import functools
 from dataclasses import dataclass
+from typing import Any
 
 import numpy as np
 import torch
@@ -66,6 +67,8 @@ class OptimizationEngine:
         self.history = OptimizationHistory(loss=[], loss_physics=[], loss_bc=[])
         self.state: DynamicsState | None = None
         self.losses: LossBreakdown | None = None
+        self.best_loss = float("inf")
+        self.best_model_state: dict[str, torch.Tensor] | None = None
 
     def _current_t_total(self):
         model_t_total = getattr(self.model, "t_total", None)
@@ -77,47 +80,55 @@ class OptimizationEngine:
         adam_optimizer = _instantiate_optimizer(self.config.opt_adam, self.model.parameters())
         lbfgs_optimizer = _instantiate_optimizer(self.config.opt_lbfgs, self.model.parameters())
 
-        prev_loss = float("inf")
         total_iterations = self.config.n_adam + self.config.n_lbfgs
+        completed_iterations = 0
+        final_phase = "adam"
+        final_loss = float("nan")
+        final_loss_change = float("nan")
+        final_reason = "completed"
 
-        with tqdm(range(total_iterations), disable=not self.config.show_progress, leave=False) as process_bar:
-            for iteration in process_bar:
-                if iteration < self.config.n_adam:
-                    current_loss = self._adam_step(adam_optimizer)
-                else:
-                    current_loss = self._lbfgs_step(lbfgs_optimizer)
+        with tqdm(total=total_iterations, disable=not self.config.show_progress, leave=False) as process_bar:
+            _, completed_iterations, final_loss, final_loss_change, final_reason = self._run_phase(
+                optimizer=adam_optimizer,
+                optimizer_name="adam",
+                phase_iterations=self.config.n_adam,
+                total_iterations=total_iterations,
+                process_bar=process_bar,
+                completed_iterations=completed_iterations,
+            )
+            final_phase = "adam"
 
-                loss_change = abs((current_loss - prev_loss) / (prev_loss + self.eps))
-                prev_loss = current_loss
-
-                if self.config.show_progress:
-                    process_bar.set_postfix(
-                        {
-                            "current loss": f"{current_loss:.4e}",
-                            "rel loss change": f"{loss_change:.4e}",
-                        }
-                    )
-                elif self.config.progress_print_interval > 0 and (
-                    iteration == 0 or (iteration + 1) % self.config.progress_print_interval == 0
-                ):
-                    phase = "adam" if iteration < self.config.n_adam else "lbfgs"
+            if final_reason == "nan":
+                _print_training_separator("nan", completed_iterations - 1, final_loss)
+            elif self.config.n_lbfgs > 0:
+                _, completed_iterations, final_loss, final_loss_change, final_reason = self._run_phase(
+                    optimizer=lbfgs_optimizer,
+                    optimizer_name="lbfgs",
+                    phase_iterations=self.config.n_lbfgs,
+                    total_iterations=total_iterations,
+                    process_bar=process_bar,
+                    completed_iterations=completed_iterations,
+                )
+                final_phase = "lbfgs"
+                if final_reason == "nan":
+                    _print_training_separator("nan", completed_iterations - 1, final_loss)
+                elif final_reason == "converged":
                     print(
-                        f"[progress] iter={iteration + 1}/{total_iterations} "
-                        f"phase={phase} loss={current_loss:.6e} rel_change={loss_change:.6e}"
+                        f"Convergence reached in {final_phase} at iteration {completed_iterations - 1} "
+                        f"with loss change {final_loss_change:.6f}."
                     )
-
-                if self._should_stop_for_convergence(iteration=iteration, loss_change=loss_change):
-                    print(f"Convergence reached at iteration {iteration} with loss change {loss_change:.6f}.")
-                    _print_training_separator("converged", iteration, current_loss, loss_change)
-                    break
-                if np.isnan(current_loss):
-                    print(f"Training ended at iteration {iteration} because loss is nan.")
-                    _print_training_separator("nan", iteration, current_loss)
-                    break
+                    _print_training_separator("converged", completed_iterations - 1, final_loss, final_loss_change)
+            elif final_reason == "converged":
+                print(
+                    f"Convergence reached in {final_phase} at iteration {completed_iterations - 1} "
+                    f"with loss change {final_loss_change:.6f}."
+                )
+                _print_training_separator("converged", completed_iterations - 1, final_loss, final_loss_change)
 
         if self.state is None or self.losses is None:
             raise RuntimeError("Training did not execute any optimization step.")
 
+        self._restore_best_model_state()
         self._refresh_final_state()
 
         return OptimizationRun(
@@ -137,16 +148,90 @@ class OptimizationEngine:
             residual=getattr(self.model, "residual", None),
         )
 
-    def _should_stop_for_convergence(self, *, iteration: int, loss_change: float) -> bool:
+    def _capture_best_model_state(self, current_loss: float) -> None:
+        if not np.isfinite(current_loss) or current_loss >= self.best_loss:
+            return
+
+        self.best_loss = float(current_loss)
+        self.best_model_state = {
+            key: value.detach().cpu().clone()
+            for key, value in self.model.state_dict().items()
+        }
+
+    def _restore_best_model_state(self) -> None:
+        if self.best_model_state is None:
+            return
+        restored_state: dict[str, Any] = {
+            key: value.to(device=param.device, dtype=param.dtype) if (param := self.model.state_dict()[key]).is_floating_point() else value.to(device=param.device)
+            for key, value in self.best_model_state.items()
+        }
+        self.model.load_state_dict(restored_state, strict=True)
+
+    def _should_stop_for_convergence(self, *, phase_iteration: int, phase_iterations: int, loss_change: float) -> bool:
         if not np.isfinite(loss_change) or loss_change >= self.config.convergence_threshold:
             return False
 
-        completed_iterations = iteration + 1
-        if self.config.n_lbfgs > 0:
-            return completed_iterations > self.config.n_adam
+        minimum_phase_iterations = max(1, min(phase_iterations, max(250, self.config.progress_print_interval)))
+        return (phase_iteration + 1) >= minimum_phase_iterations
 
-        minimum_adam_iterations = min(self.config.n_adam, max(250, self.config.progress_print_interval))
-        return completed_iterations >= max(1, minimum_adam_iterations)
+    def _run_phase(
+        self,
+        *,
+        optimizer,
+        optimizer_name: str,
+        phase_iterations: int,
+        total_iterations: int,
+        process_bar,
+        completed_iterations: int,
+    ) -> tuple[bool, int, float, float, str]:
+        if phase_iterations <= 0:
+            return True, completed_iterations, float("nan"), float("nan"), "skipped"
+
+        prev_loss = float("inf")
+        current_loss = float("nan")
+        loss_change = float("nan")
+
+        for phase_iteration in range(phase_iterations):
+            if optimizer_name == "adam":
+                current_loss = self._adam_step(optimizer)
+            else:
+                current_loss = self._lbfgs_step(optimizer)
+
+            loss_change = abs((current_loss - prev_loss) / (prev_loss + self.eps))
+            prev_loss = current_loss
+            completed_iterations += 1
+
+            if self.config.show_progress:
+                process_bar.set_postfix(
+                    {
+                        "current loss": f"{current_loss:.4e}",
+                        "rel loss change": f"{loss_change:.4e}",
+                    }
+                )
+            elif self.config.progress_print_interval > 0 and (
+                phase_iteration == 0 or completed_iterations % self.config.progress_print_interval == 0
+            ):
+                print(
+                    f"[progress] iter={completed_iterations}/{total_iterations} "
+                    f"phase={optimizer_name} loss={current_loss:.6e} rel_change={loss_change:.6e}"
+                )
+
+            process_bar.update(1)
+
+            if np.isnan(current_loss):
+                print(f"Training ended in {optimizer_name} at iteration {completed_iterations - 1} because loss is nan.")
+                return False, completed_iterations, current_loss, loss_change, "nan"
+
+            self._capture_best_model_state(current_loss)
+
+            if self._should_stop_for_convergence(
+                phase_iteration=phase_iteration,
+                phase_iterations=phase_iterations,
+                loss_change=loss_change,
+            ):
+                return False, completed_iterations, current_loss, loss_change, "converged"
+
+        return True, completed_iterations, current_loss, loss_change, "completed"
 
     def _refresh_final_state(self) -> None:
         with torch.enable_grad():
