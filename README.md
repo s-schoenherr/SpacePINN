@@ -14,18 +14,11 @@ The saved run records are available under `data/runs/`. Each record contains the
 git clone https://github.com/s-schoenherr/SpacePINN.git
 cd SpacePINN
 uv sync --extra dev
-uv run pytest -q
 ```
 
 If `uv` is not installed, see https://docs.astral.sh/uv/.
 
 ## Quick Start
-
-Run the curated smoke tests:
-
-```bash
-uv run pytest -q
-```
 
 Run a paper experiment:
 
@@ -54,30 +47,25 @@ uv run python examples/inspect_paper_record.py
 uv run python examples/inspect_paper_record.py data/runs/orbit_transfer_free_angle
 ```
 
-## Repository Layout
+Run the core physics checks:
 
-```text
-src/spacepinn/
-|-- config/            curated boundary-condition presets and output transforms
-|-- optimization/      PINN dynamics, loss terms, and training loop
-|-- runner/            experiment execution, persistence, and saved-run loading
-|-- experiment/        small helpers for composing reusable experiment entries
-|-- plotting/          reusable plot helpers and paper plotting style
-|-- opengoddard/       direct-collocation baselines used in the paper
-|-- pretraining/       3D kinematic-to-geometric pre-conditioning helper
-`-- paper/             paper-facing experiment entry points
-    |-- swingby_2d.py          single-seed and Monte-Carlo swing-by runs
-    |-- swingby_3d.py          single-seed and Monte-Carlo swing-by runs
-    |-- appendix/              boundary-weight and static-TOF appendix utilities
-    |-- orbit_transfer_fixed_angle.py
-    |-- orbit_transfer_free_angle.py
-    `-- rendezvous_hold_point_eci.py
-
-data/runs/           exported configurations, time series, summaries, and source plots
-data/figure1-8/       figure-numbered copies of the manuscript plot PDFs
-examples/             minimal script for inspecting exported paper records
-tests/                smoke tests plus core physics and transform validation
+```bash
+uv run pytest tests/physics/test_core_physics.py -q
 ```
+
+Validate a specific saved run:
+
+```bash
+uv run pytest tests/physics/test_saved_run_physics.py --run-dir runs/YYYY/MM/<run_id>
+```
+
+This command expects a generated training run with `manifest.json`; the exported paper records under `data/runs/` are inspected with the example script above.
+
+For maintainers, `uv run pytest -q` also runs smoke checks for the paper entry points. Saved-run tests are skipped unless `--run-dir` or `RUN_DIRS` is provided.
+
+## Repository Structure
+
+The main paper entry points live in `src/spacepinn/paper/`. Exported paper records are stored in `data/runs/`, while `data/figure1/` through `data/figure8/` provide figure-numbered PDF copies for quick inspection and manuscript inclusion. The reusable PINN, plotting, runner, and OpenGoddard code lives under `src/spacepinn/`.
 
 ## Physical Conventions
 
