@@ -1,8 +1,6 @@
 # SpacePINN
 
-SpacePINN studies spacecraft swing-by, orbit-transfer, and rendezvous problems with physics-informed neural networks under gravitational and thrust-driven dynamics in Cartesian and polar coordinates. Its main research question is how strongly constrained PINN formulations behave relative to standard soft-penalty approaches: the hard-constrained variants transform the network output with distance functions so boundary conditions are satisfied by construction, while the vanilla formulations enforce the same conditions through loss terms. The repository benchmarks both against OpenGoddard, a direct optimal-control method based on collocation and nonlinear programming, and provides the persistence, plotting, and validation tooling needed to compare the resulting trajectories quantitatively.
-
-This publication repository is intentionally smaller than the internal research repository: it contains the reusable core functionality, the paper-facing experiment entry points, and the saved paper data used to generate the reported figures.
+SpacePINN is the code base for the paper "Physics-informed neural networks for spacecraft trajectory optimization with exact boundary conditions" in the Journal of Guidance, Control, and Dynamics. It contains the swing-by, orbit-transfer, and rendezvous experiments from the paper, compares PINNs with exact boundary conditions against soft-penalty PINNs and OpenGoddard baselines, and includes the data and plotting code needed to reproduce the figures.
 
 ## Data and Figures
 
