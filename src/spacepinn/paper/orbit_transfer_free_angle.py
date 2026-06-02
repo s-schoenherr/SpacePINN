@@ -251,6 +251,40 @@ def _target_radius_symbol(target_orbit: str) -> str:
     return r"$R_{\mathrm{GEO}}$"
 
 
+def _as_float(value) -> float:
+    if hasattr(value, "detach"):
+        value = value.detach().cpu().numpy()
+    return float(np.asarray(value, dtype=float).reshape(-1)[0])
+
+
+def _initial_terminal_angle_guess_point(entry: dict, *, target_orbit: str) -> np.ndarray:
+    target_radius = R_HEO if target_orbit == "heo" else R_GEO
+    config = entry.get("config") or {}
+    optimizer_config = config.get("optimizer") or {}
+    initial_rN = optimizer_config.get("rN")
+    if initial_rN is not None:
+        initial_rN_values = np.asarray(initial_rN.detach().cpu().numpy() if hasattr(initial_rN, "detach") else initial_rN, dtype=float).reshape(-1)
+        if len(initial_rN_values) >= 2:
+            target_radius = float(initial_rN_values[0])
+            alpha_guess = float(initial_rN_values[1])
+            return np.array([target_radius * np.cos(alpha_guess), target_radius * np.sin(alpha_guess)], dtype=float)
+
+    extra_parameters = config.get("extra_parameters") or {}
+    alpha_parameter = extra_parameters.get("alpha_N")
+    if alpha_parameter is not None:
+        alpha_guess = _as_float(alpha_parameter)
+    else:
+        alpha_guess, _ = _resolve_initial_guess_parameters(
+            target_orbit=target_orbit,
+            terminal_angle_pi=None,
+            time_guess_scale=None,
+            extra_turns=None,
+            tof_scale=None,
+        )
+        alpha_guess = float(np.pi * alpha_guess)
+    return np.array([target_radius * np.cos(alpha_guess), target_radius * np.sin(alpha_guess)], dtype=float)
+
+
 def plot_thrust_figure(entries: list[dict], *, output_dir: str) -> None:
     plotter = TrajectoryPlotter(entries, dim=2, figsize=MAIN_FIGSIZE, fig_prefix=FIG_PREFIX, output_dir=output_dir)
     configure_paper_plotter(plotter)
@@ -386,7 +420,7 @@ def plot_orbit_figure(entries: list[dict], *, output_dir: str, target_orbit: str
         markersize=6,
         label=r"$\mathbf{r}(t_0)=(R_{\mathrm{LEO}},0)$",
     )
-    terminal_point = np.asarray(reference_result.r[-1], dtype=float).reshape(-1)
+    terminal_point = _initial_terminal_angle_guess_point(reference_entry, target_orbit=target_orbit)
     ax.plot(
         terminal_point[0],
         terminal_point[1],
@@ -394,7 +428,7 @@ def plot_orbit_figure(entries: list[dict], *, output_dir: str, target_orbit: str
         color="red",
         markersize=8,
         markeredgewidth=1.8,
-        label=rf"$\mathbf{{r}}(T)$ = ({_target_radius_symbol(target_orbit)}, free terminal angle)",
+        label=rf"$\mathbf{{r}}(T)$ = ({_target_radius_symbol(target_orbit)}, initial angle guess)",
     )
 
     for idx, (radius, name) in enumerate(

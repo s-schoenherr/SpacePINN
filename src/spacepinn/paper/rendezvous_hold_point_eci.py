@@ -26,6 +26,7 @@ from spacepinn.opengoddard.rendezvous_hold_point_eci_goddard import (
 )
 from spacepinn.paper._aggregate_summary import persist_paper_monte_carlo_aggregate_summary
 from spacepinn.paper._baseline_capture import capture_baseline_entry
+from spacepinn.paper._baseline_defaults import PAPER_BASELINE_MAX_ITERATION
 from spacepinn.paper._baseline_summary import print_baseline_delta_v_summary
 from spacepinn.paper._mc_mode import (
     add_single_mc_arguments,
@@ -69,7 +70,7 @@ LOSS_FIGSIZE = PAPER_LOSS_FIGSIZE
 PAPER_N_ADAM = 100_000
 PAPER_N_LBFGS = 0
 PAPER_CONVERGENCE_THRESHOLD = 1e-7
-BASELINE_MAX_ITERATION = 10
+BASELINE_MAX_ITERATION = PAPER_BASELINE_MAX_ITERATION
 BASELINE_FTOL = 1e-11
 BASELINE_SLSQP_MAXITER = 25
 REPRESENTATIVE_SEED = 9058
@@ -807,7 +808,7 @@ def run_collection(
 
         warm_start_result = _select_representative_result(
             collection_results,
-            representative_seed=representative_seed if mode == "mc" else None,
+            representative_seed=None,
         )
         warm_entry = capture_baseline_entry(
             lambda: build_baseline_entry(

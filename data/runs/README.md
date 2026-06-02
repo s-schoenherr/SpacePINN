@@ -18,6 +18,6 @@ Main paper records are grouped by experiment:
 
 Appendix records are grouped under `appendix/` and contain the boundary-loss sweeps and the static total-time sweep.
 
-A minimal loading example is available at `examples/load_paper_timeseries.py`.
+A minimal loading example is available at `examples/inspect_paper_record.py`.
 
 For quick figure-oriented access, the same plot PDFs are copied into `data/figure1/` through `data/figure8/` at the repository root. Those directories are convenience copies; this `data/runs/` tree remains the provenance-preserving export with configurations, time series, summaries, and metadata.

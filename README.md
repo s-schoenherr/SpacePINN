@@ -30,14 +30,14 @@ uv run pytest -q
 Run a paper experiment:
 
 ```bash
-uv run python -m spacepinn.paper.swingby_2d --mode single
-uv run python -m spacepinn.paper.swingby_3d --mode single
-uv run python -m spacepinn.paper.orbit_transfer_fixed_angle --mode single
-uv run python -m spacepinn.paper.orbit_transfer_free_angle --mode single
-uv run python -m spacepinn.paper.rendezvous_hold_point_eci --mode single
+uv run python -m spacepinn.paper.swingby_2d
+uv run python -m spacepinn.paper.swingby_3d
+uv run python -m spacepinn.paper.orbit_transfer_fixed_angle
+uv run python -m spacepinn.paper.orbit_transfer_free_angle
+uv run python -m spacepinn.paper.rendezvous_hold_point_eci
 ```
 
-Use `--mode mc` on the same entry points to run the full Monte Carlo variant and generate the corresponding boxplots.
+Use `--mode mc` or `--mc` on the same entry points to run the full Monte Carlo variant and generate the corresponding boxplots.
 
 Run appendix utilities:
 
@@ -50,13 +50,8 @@ uv run python -m spacepinn.paper.appendix.static_total_time_sweep
 Inspect exported paper data:
 
 ```bash
-uv run python examples/load_paper_timeseries.py
-```
-
-Re-render the saved static total-time sweep plots from the exported data:
-
-```bash
-uv run python examples/rerender_static_sweep.py
+uv run python examples/inspect_paper_record.py
+uv run python examples/inspect_paper_record.py data/runs/orbit_transfer_free_angle
 ```
 
 ## Repository Layout
@@ -80,7 +75,7 @@ src/spacepinn/
 
 data/runs/           exported configurations, time series, summaries, and source plots
 data/figure1-8/       figure-numbered copies of the manuscript plot PDFs
-examples/             small scripts for loading data and re-rendering saved records
+examples/             minimal script for inspecting exported paper records
 tests/                smoke tests plus core physics and transform validation
 ```
 

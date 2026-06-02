@@ -54,6 +54,7 @@ REPRESENTATIVE_SEEDS = {
     ORDINARY_LABEL: 1056,
 }
 QUIVER_COUNT = 10
+NOMINAL_BRANCH_PATH_LENGTH_FACTOR = 1.05
 BOXPLOT_FIGSIZE = (17.2, 4.8)
 BOXPLOT_AXIS_LABEL_FONTSIZE = 18
 BOXPLOT_DELTA_V_LABEL_FONTSIZE = 20
@@ -269,6 +270,29 @@ def select_best_entry(entries: list[dict]) -> dict:
     return min(entries, key=lambda entry: float(entry["result"].delta_v))
 
 
+def trajectory_path_length(entry: dict) -> float:
+    r = np.asarray(entry["result"].r, dtype=float)
+    if len(r) < 2:
+        return 0.0
+    return float(np.sum(np.linalg.norm(np.diff(r, axis=0), axis=1)))
+
+
+def select_best_nominal_branch_entry(entries: list[dict], *, reference_entry: dict | None = None) -> dict:
+    if reference_entry is None:
+        return select_best_entry(entries)
+
+    reference_length = trajectory_path_length(reference_entry)
+    if reference_length <= 0:
+        return select_best_entry(entries)
+
+    max_path_length = NOMINAL_BRANCH_PATH_LENGTH_FACTOR * reference_length
+    nominal_entries = [entry for entry in entries if trajectory_path_length(entry) <= max_path_length]
+    if not nominal_entries:
+        return select_best_entry(entries)
+
+    return select_best_entry(nominal_entries)
+
+
 def _execute_config(config: dict) -> tuple[dict, object, object]:
     config_runtime = _prepare_runtime_config(deepcopy(config))
     model, result = execute_single_experiment(config_runtime)
@@ -332,12 +356,13 @@ def _build_plotter(entries: list[dict], *, output_dir: str | Path) -> Trajectory
 
 def _representative_entries(collection_run: dict, *, include_baseline: bool = True) -> list[dict]:
     grouped_entries = group_entries(collection_run["entries"])
+    baseline_entry = get_baseline_entry(collection_run)
     entries: list[dict] = []
     for group_name in (GEOMETRIC_LABEL, ORDINARY_LABEL):
         method_entries = grouped_entries.get(group_name, [])
         if not method_entries:
             continue
-        best_entry = select_best_entry(method_entries)
+        best_entry = select_best_nominal_branch_entry(method_entries, reference_entry=baseline_entry)
         plotting = dict(best_entry.get("plotting", {}))
         plotting["color"] = COLORS[group_name]
         plotting["linestyle"] = "solid"
@@ -355,7 +380,6 @@ def _representative_entries(collection_run: dict, *, include_baseline: bool = Tr
             }
         )
     if include_baseline:
-        baseline_entry = get_baseline_entry(collection_run)
         plotting = dict(baseline_entry.get("plotting", {}))
         plotting["color"] = PALETTE["opengoddard"]
         plotting["linestyle"] = "solid"
@@ -645,7 +669,7 @@ def plot_collection_run(
         include_variance=True,
     )
 
-    representative_entries = _representative_entries(collection_run, include_baseline=False)
+    representative_entries = _representative_entries(collection_run, include_baseline=True)
     plot_traj_figure(representative_entries, output_dir=target_dir)
     if include_boxplots:
         plot_monte_carlo_boxplots_paper(

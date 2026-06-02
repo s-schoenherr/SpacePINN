@@ -1244,6 +1244,7 @@ def _run_representative_entries(*, smoke: bool | None = None) -> list[dict]:
     finetune_runtime = _prepare_runtime_config(deepcopy(finetune_config))
     finetune_model = build_pretrained_model(finetune_runtime, pretrain_model)
     _finetune_model, finetune_result = execute_single_experiment(finetune_runtime, model=finetune_model)
+    _prepend_pretraining_history(pretrain_result=pretrain_result, finetune_result=finetune_result)
     entries.append(_entry_payload(label=PRETRAINED_LABEL, result=finetune_result, config=finetune_runtime))
 
     return entries
