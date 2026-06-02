@@ -10,8 +10,8 @@ This directory contains the exported records used for the paper figures. Each re
 
 Main paper records are grouped by experiment:
 
-- `three_bodies_2d/deterministic` and `three_bodies_2d/monte_carlo`
-- `three_bodies_3d/deterministic` and `three_bodies_3d/monte_carlo`
+- `swingby_2d`
+- `swingby_3d`
 - `orbit_transfer_fixed_angle`
 - `orbit_transfer_free_angle`
 - `rendezvous_hold_point_eci`

@@ -5,10 +5,8 @@ from pathlib import Path
 
 
 CURATED_MODULES = [
-    "spacepinn.paper.swingby_2d.experiment",
-    "spacepinn.paper.swingby_2d.monte_carlo",
-    "spacepinn.paper.swingby_3d.experiment",
-    "spacepinn.paper.swingby_3d.monte_carlo",
+    "spacepinn.paper.swingby_2d",
+    "spacepinn.paper.swingby_3d",
     "spacepinn.paper.orbit_transfer_fixed_angle",
     "spacepinn.paper.orbit_transfer_free_angle",
     "spacepinn.paper.rendezvous_hold_point_eci",
@@ -27,10 +25,8 @@ def test_curated_paper_entry_points_smoke(monkeypatch, tmp_path):
     monkeypatch.setenv("FAST_SMOKE", "1")
 
     training_modules = [
-        "spacepinn.paper.swingby_2d.experiment",
-        "spacepinn.paper.swingby_2d.monte_carlo",
-        "spacepinn.paper.swingby_3d.experiment",
-        "spacepinn.paper.swingby_3d.monte_carlo",
+        "spacepinn.paper.swingby_2d",
+        "spacepinn.paper.swingby_3d",
         "spacepinn.paper.orbit_transfer_fixed_angle",
         "spacepinn.paper.orbit_transfer_free_angle",
         "spacepinn.paper.rendezvous_hold_point_eci",
@@ -38,7 +34,7 @@ def test_curated_paper_entry_points_smoke(monkeypatch, tmp_path):
     for module_name in training_modules:
         module = importlib.import_module(module_name)
         kwargs = {"skip_plots": True, "print_summary": False, "smoke": True}
-        if module_name.endswith("monte_carlo"):
+        if module_name in {"spacepinn.paper.swingby_2d", "spacepinn.paper.swingby_3d"}:
             kwargs["workers"] = 1
         module.main(**kwargs)
 

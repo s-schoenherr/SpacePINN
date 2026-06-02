@@ -55,8 +55,9 @@ from spacepinn.runner.runtime import _prepare_runtime_config
 
 DTYPE = "float32"
 RUN_ROOT = Path(spacepinn.__file__).resolve().parents[2] / "runs"
-COLLECTION_LABEL = "swingby_3d_monte_carlo"
-FIG_PREFIX = "swingby_3d_monte_carlo"
+COLLECTION_LABEL = "swingby_3d"
+MC_COLLECTION_LABEL = f"{COLLECTION_LABEL}_monte_carlo"
+FIG_PREFIX = "swingby_3d"
 BASELINE_LABEL = "Baseline (OpenGoddard)"
 GEOMETRIC_LABEL = "PINN with exact BC"
 ORDINARY_LABEL = "PINN with soft BC"
@@ -65,6 +66,11 @@ PRETRAINED_LABEL = "PINN with exact BC and pre-conditioning"
 NUM_SEEDS = 100
 SEEDS = [2000 + index for index in range(NUM_SEEDS)]
 SMOKE_NUM_SEEDS = 2
+REPRESENTATIVE_SEEDS = {
+    GEOMETRIC_LABEL: 2076,
+    ORDINARY_LABEL: 2040,
+    PRETRAINED_LABEL: 2092,
+}
 BOXPLOT_FIGSIZE = (17.2, 4.8)
 BOXPLOT_AXIS_LABEL_FONTSIZE = 18
 BOXPLOT_DELTA_V_LABEL_FONTSIZE = 20
@@ -137,7 +143,9 @@ def _save_figure(fig, figure_path: Path) -> None:
 
 
 def _parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Paper Monte Carlo for geometric vs ordinary 3D.")
+    parser = argparse.ArgumentParser(description="Paper swingby 3D experiment.")
+    parser.add_argument("--mode", choices=("single", "mc"), default="single")
+    parser.add_argument("--mc", action="store_true", help="Shortcut for --mode mc.")
     parser.add_argument(
         "--from-run",
         default=None,
@@ -1019,7 +1027,12 @@ def plot_monte_carlo_gravity_paper(
     plt.show()
 
 
-def plot_collection_run(collection_run: dict, *, output_dir: str | Path | None = None) -> dict[str, list[dict]]:
+def plot_collection_run(
+    collection_run: dict,
+    *,
+    output_dir: str | Path | None = None,
+    include_boxplots: bool = True,
+) -> dict[str, list[dict]]:
     target_dir = Path(output_dir) if output_dir is not None else Path(collection_run["plot_output_dir"])
     target_dir.mkdir(parents=True, exist_ok=True)
 
@@ -1053,13 +1066,14 @@ def plot_collection_run(collection_run: dict, *, output_dir: str | Path | None =
         baseline_entry=baseline_entry,
     )
 
-    plot_monte_carlo_boxplots_paper(
-        grouped_entries,
-        colors=COLORS,
-        output_dir=target_dir,
-        fig_name=f"{FIG_PREFIX}_boxplots",
-        baseline_entry=baseline_entry,
-    )
+    if include_boxplots:
+        plot_monte_carlo_boxplots_paper(
+            grouped_entries,
+            colors=COLORS,
+            output_dir=target_dir,
+            fig_name=f"{FIG_PREFIX}_boxplots",
+            baseline_entry=baseline_entry,
+        )
     plot_loss_figure(representative_entries, output_dir=target_dir)
     plot_monte_carlo_thrust_paper(
         grouped_entries,
@@ -1095,22 +1109,23 @@ def replot_saved_run(run_dir: str | Path, *, output_dir: str | Path | None = Non
     return collection_run
 
 
-def run_collection(*, smoke: bool | None = None, workers: int = 1) -> dict:
-    seeds = get_seeds(smoke=smoke)
+def run_collection(*, smoke: bool | None = None, workers: int = 1, label: str = MC_COLLECTION_LABEL) -> dict:
+    smoke_enabled = smoke_mode_enabled() if smoke is None else smoke
+    seeds = get_seeds(smoke=smoke_enabled)
 
     if workers <= 1:
         entries = []
         for seed in seeds:
-            entries.extend(_run_seed(seed, smoke=bool(smoke)))
-        return _finalize_collection_entries(entries, smoke=smoke)
+            entries.extend(_run_seed(seed, smoke=smoke_enabled))
+        return _finalize_collection_entries(entries, smoke=smoke_enabled, label=label)
 
-    collection_context = RunCollectionContext(label=COLLECTION_LABEL, run_root=str(RUN_ROOT))
+    collection_context = RunCollectionContext(label=label, run_root=str(RUN_ROOT))
     collection_context.start()
     collection_results = []
 
     try:
         with mp.get_context("spawn").Pool(processes=workers) as pool:
-            completed_by_seed = pool.starmap(_run_seed, [(seed, bool(smoke)) for seed in seeds])
+            completed_by_seed = pool.starmap(_run_seed, [(seed, smoke_enabled) for seed in seeds])
 
         for seed_entries in completed_by_seed:
             for entry in seed_entries:
@@ -1137,7 +1152,7 @@ def run_collection(*, smoke: bool | None = None, workers: int = 1) -> dict:
                 )
 
         baseline_entry = capture_baseline_entry(
-            lambda: build_baseline_entry(smoke=smoke),
+            lambda: build_baseline_entry(smoke=smoke_enabled),
             log_filename="baseline_opengoddard.log",
         )
         _add_collection_entry(
@@ -1166,7 +1181,7 @@ def run_collection(*, smoke: bool | None = None, workers: int = 1) -> dict:
         collection_context.finalize_success()
 
         return {
-            "label": COLLECTION_LABEL,
+            "label": label,
             "entries": collection_results,
             "run_id": collection_context.run_id,
             "run_dir": str(collection_context.run_dir),
@@ -1180,10 +1195,10 @@ def run_collection(*, smoke: bool | None = None, workers: int = 1) -> dict:
         raise
 
 
-def _finalize_collection_entries(entries: list[dict], *, smoke: bool | None = None) -> dict:
+def _finalize_collection_entries(entries: list[dict], *, smoke: bool | None = None, label: str = MC_COLLECTION_LABEL) -> dict:
     collection_run = run_experiment_collection(
         configs=[],
-        label=COLLECTION_LABEL,
+        label=label,
         run_root=str(RUN_ROOT),
         additional_entries=[
             {
@@ -1206,8 +1221,37 @@ def _finalize_collection_entries(entries: list[dict], *, smoke: bool | None = No
     return collection_run
 
 
+def _run_representative_entries(*, smoke: bool | None = None) -> list[dict]:
+    smoke_enabled = smoke_mode_enabled() if smoke is None else smoke
+    entries: list[dict] = []
+
+    exact_config = _build_geometric_config(REPRESENTATIVE_SEEDS[GEOMETRIC_LABEL], smoke=smoke_enabled)
+    exact_runtime, _exact_model, exact_result = _execute_config(exact_config)
+    entries.append(_entry_payload(label=GEOMETRIC_LABEL, result=exact_result, config=exact_runtime))
+
+    soft_config = _build_ordinary_config(REPRESENTATIVE_SEEDS[ORDINARY_LABEL], smoke=smoke_enabled)
+    soft_runtime, _soft_model, soft_result = _execute_config(soft_config)
+    entries.append(_entry_payload(label=ORDINARY_LABEL, result=soft_result, config=soft_runtime))
+
+    pretrain_seed = REPRESENTATIVE_SEEDS[PRETRAINED_LABEL]
+    pretrain_config = _build_kinematic_pretrain_config(pretrain_seed, smoke=smoke_enabled)
+    pretrain_runtime, pretrain_model, pretrain_result = _execute_config(pretrain_config)
+    finetune_config = _build_pretrained_finetune_config(
+        pretrain_seed,
+        initial_t_total=float(pretrain_result.t_total),
+        smoke=smoke_enabled,
+    )
+    finetune_runtime = _prepare_runtime_config(deepcopy(finetune_config))
+    finetune_model = build_pretrained_model(finetune_runtime, pretrain_model)
+    _finetune_model, finetune_result = execute_single_experiment(finetune_runtime, model=finetune_model)
+    entries.append(_entry_payload(label=PRETRAINED_LABEL, result=finetune_result, config=finetune_runtime))
+
+    return entries
+
+
 def main(
     *,
+    mode: str = "single",
     skip_plots: bool = False,
     print_summary: bool = True,
     smoke: bool | None = None,
@@ -1218,19 +1262,26 @@ def main(
     if from_run is not None:
         return replot_saved_run(from_run, output_dir=output_dir, print_summary=print_summary)
 
-    collection_run = run_collection(smoke=smoke, workers=workers)
-    persist_paper_monte_carlo_aggregate_summary(
-        collection_run,
-        title=COLLECTION_LABEL,
-        baseline_labels=(BASELINE_LABEL,),
-        group_key=monte_carlo_group_key,
-    )
+    if mode == "mc":
+        collection_run = run_collection(smoke=smoke, workers=workers, label=MC_COLLECTION_LABEL)
+        persist_paper_monte_carlo_aggregate_summary(
+            collection_run,
+            title=MC_COLLECTION_LABEL,
+            baseline_labels=(BASELINE_LABEL,),
+            group_key=monte_carlo_group_key,
+        )
+    else:
+        collection_run = _finalize_collection_entries(
+            _run_representative_entries(smoke=smoke),
+            smoke=smoke,
+            label=COLLECTION_LABEL,
+        )
 
     if print_summary:
         print_collection_run_summary(collection_run)
 
     if not skip_plots:
-        plot_collection_run(collection_run, output_dir=output_dir)
+        plot_collection_run(collection_run, output_dir=output_dir, include_boxplots=mode == "mc")
 
     return collection_run
 
@@ -1238,6 +1289,7 @@ def main(
 if __name__ == "__main__":
     args = _parse_args()
     main(
+        mode="mc" if args.mc else args.mode,
         skip_plots=args.skip_plots,
         print_summary=not args.skip_summary,
         from_run=args.from_run,

@@ -24,8 +24,18 @@ from spacepinn.paper._rendezvous_hold_point_eci_shared import (
 from spacepinn.opengoddard.rendezvous_hold_point_eci_goddard import (
     kinematic_rendezvous_hold_point_eci_goddard,
 )
+from spacepinn.paper._aggregate_summary import persist_paper_monte_carlo_aggregate_summary
 from spacepinn.paper._baseline_capture import capture_baseline_entry
 from spacepinn.paper._baseline_summary import print_baseline_delta_v_summary
+from spacepinn.paper._mc_mode import (
+    add_single_mc_arguments,
+    label_with_seed,
+    plot_single_group_boxplots,
+    representative_entries,
+    resolve_mode,
+    seed_sequence,
+    single_group_key,
+)
 from spacepinn.paper._plot_style import (
     LOSS_AXES_RECT,
     LOSS_FIGSIZE as PAPER_LOSS_FIGSIZE,
@@ -35,6 +45,7 @@ from spacepinn.paper._plot_style import (
 )
 from spacepinn.plotting.paper_style import PAPER_STYLE
 from spacepinn.plotting.helpers import register_plot_artifact_if_possible, set_time_axis_labels
+from spacepinn.plotting.monte_carlo import print_monte_carlo_summary
 from spacepinn.plotter import TrajectoryPlotter
 from spacepinn.runner import execute_single_experiment, print_collection_run_summary
 from spacepinn.runner.context import RunCollectionContext
@@ -61,6 +72,9 @@ PAPER_CONVERGENCE_THRESHOLD = 1e-7
 BASELINE_MAX_ITERATION = 10
 BASELINE_FTOL = 1e-11
 BASELINE_SLSQP_MAXITER = 25
+REPRESENTATIVE_SEED = 9058
+MC_SEED_START = 9000
+MC_NUM_SEEDS = 100
 
 
 def _paper_axes(
@@ -103,6 +117,7 @@ def _save_paper_figure(fig, figure_path: Path) -> None:
 
 def _parse_args():
     parser = argparse.ArgumentParser(description="ECI rendezvous-to-hold-point experiment.")
+    add_single_mc_arguments(parser, default_mode="single")
     parser.add_argument("--t-final-seconds", type=float, default=DEFAULT_T_FINAL_SECONDS)
     parser.add_argument("--n-adam", type=int, default=PAPER_N_ADAM)
     parser.add_argument("--n-lbfgs", type=int, default=PAPER_N_LBFGS)
@@ -121,12 +136,16 @@ def build_config(
     n_adam: int = PAPER_N_ADAM,
     n_lbfgs: int = PAPER_N_LBFGS,
     convergence_threshold: float = PAPER_CONVERGENCE_THRESHOLD,
+    seed: int | None = None,
+    label_seed: bool = False,
     smoke: bool | None = None,
 ) -> dict:
     scenario = build_scenario(t_final_seconds=t_final_seconds)
     config = deepcopy(circular_ot_kinematic_polar_config)
 
-    config["label"] = PINN_LABEL
+    if seed is not None:
+        config["seed"] = int(seed)
+    config["label"] = label_with_seed(PINN_LABEL, seed) if label_seed and seed is not None else PINN_LABEL
     trainable_t_total = torch.nn.Parameter(torch.tensor(float(t_final_seconds), dtype=torch.float32), requires_grad=True)
     config["extra_parameters"] = {"t_total": trainable_t_total}
     config["pinn"]["output_transform_fn"] = partial(
@@ -664,8 +683,58 @@ def plot_results(entries: list[dict], *, output_dir: str, scenario: dict) -> Non
     plot_separation_figure(entries, output_dir=output_dir, scenario=scenario)
 
 
+def monte_carlo_group_key(entry: dict) -> str | None:
+    return single_group_key(entry, base_label=PINN_LABEL)
+
+
+def _append_context_entry(
+    collection_context: RunCollectionContext,
+    collection_results: list[dict],
+    *,
+    entry: dict,
+    config: dict | None = None,
+    model=None,
+    source: str,
+) -> None:
+    collection_context.add_entry(
+        label=entry["label"],
+        result=entry["result"],
+        config=config if config is not None else entry.get("config"),
+        model=model if model is not None else entry.get("model"),
+        source=source,
+        log_text=entry.get("log_text"),
+        log_filename=entry.get("log_filename"),
+    )
+    collection_results.append(
+        {
+            "label": entry["label"],
+            "source": source,
+            "result": entry["result"],
+            **entry.get("plotting", {}),
+            "config": config if config is not None else entry.get("config"),
+            "model": model if model is not None else entry.get("model"),
+        }
+    )
+
+
+def _select_representative_result(entries: list[dict], *, representative_seed: int | None):
+    if representative_seed is not None:
+        suffix = f"seed={int(representative_seed)}"
+        for entry in entries:
+            if entry.get("source") == "pinn" and suffix in str(entry.get("label", "")):
+                return entry["result"]
+    pinn_entries = [entry for entry in entries if entry.get("source") == "pinn"]
+    if not pinn_entries:
+        return None
+    return min(pinn_entries, key=lambda entry: float(entry["result"].delta_v))["result"]
+
+
 def run_collection(
     *,
+    mode: str = "single",
+    representative_seed: int = REPRESENTATIVE_SEED,
+    seed_start: int = MC_SEED_START,
+    num_seeds: int = MC_NUM_SEEDS,
     t_final_seconds: float = DEFAULT_T_FINAL_SECONDS,
     n_adam: int = PAPER_N_ADAM,
     n_lbfgs: int = PAPER_N_LBFGS,
@@ -675,40 +744,48 @@ def run_collection(
     baseline_slsqp_maxiter: int = BASELINE_SLSQP_MAXITER,
     smoke: bool | None = None,
 ):
-    config = build_config(
-        t_final_seconds=t_final_seconds,
-        n_adam=n_adam,
-        n_lbfgs=n_lbfgs,
-        convergence_threshold=convergence_threshold,
-        smoke=smoke,
-    )
     smoke_enabled = smoke_mode_enabled() if smoke is None else smoke
     effective_baseline_max_iteration = 1 if smoke_enabled else int(baseline_max_iteration)
+    seeds = (
+        seed_sequence(start=seed_start, count=num_seeds, smoke=smoke_enabled)
+        if mode == "mc"
+        else [int(representative_seed)]
+    )
+    configs = [
+        build_config(
+            t_final_seconds=t_final_seconds,
+            n_adam=n_adam,
+            n_lbfgs=n_lbfgs,
+            convergence_threshold=convergence_threshold,
+            seed=seed,
+            label_seed=mode == "mc",
+            smoke=smoke_enabled,
+        )
+        for seed in seeds
+    ]
+    scenario = configs[0]["scenario"]
 
-    collection_context = RunCollectionContext(label=COLLECTION_LABEL, run_root=str(RUN_ROOT))
+    collection_label = f"{COLLECTION_LABEL}_monte_carlo" if mode == "mc" else COLLECTION_LABEL
+    collection_context = RunCollectionContext(label=collection_label, run_root=str(RUN_ROOT))
     collection_context.start()
     collection_results: list[dict] = []
 
     try:
-        pinn_model, pinn_result = execute_single_experiment(config)
-        _sync_dynamic_terminal_reference(pinn_result, scenario=config["scenario"])
-        collection_context.add_entry(
-            label=config["label"],
-            result=pinn_result,
-            config=config,
-            model=pinn_model,
-            source="pinn",
-        )
-        collection_results.append(
-            {
-                "label": config["label"],
-                "source": "pinn",
-                "result": pinn_result,
-                **config.get("plotting", {}),
-                "model": pinn_model,
-            }
-        )
-
+        for config in configs:
+            pinn_model, pinn_result = execute_single_experiment(config)
+            _sync_dynamic_terminal_reference(pinn_result, scenario=config["scenario"])
+            _append_context_entry(
+                collection_context,
+                collection_results,
+                entry={
+                    "label": config["label"],
+                    "result": pinn_result,
+                    "plotting": config.get("plotting", {}),
+                },
+                config=config,
+                model=pinn_model,
+                source="pinn",
+            )
 
         cold_entry = capture_baseline_entry(
             lambda: build_baseline_entry(
@@ -720,60 +797,40 @@ def run_collection(
             ),
             log_filename="baseline_opengoddard.log",
         )
-        _sync_dynamic_terminal_reference(cold_entry["result"], scenario=config["scenario"])
-        collection_context.add_entry(
-            label=cold_entry["label"],
-            result=cold_entry["result"],
-            config=cold_entry.get("config"),
-            model=cold_entry.get("model"),
+        _sync_dynamic_terminal_reference(cold_entry["result"], scenario=scenario)
+        _append_context_entry(
+            collection_context,
+            collection_results,
+            entry=cold_entry,
             source="opengoddard",
-            log_text=cold_entry.get("log_text"),
-            log_filename=cold_entry.get("log_filename"),
-        )
-        collection_results.append(
-            {
-                "label": cold_entry["label"],
-                "source": "opengoddard",
-                "result": cold_entry["result"],
-                **cold_entry.get("plotting", {}),
-                "model": cold_entry.get("model"),
-            }
         )
 
+        warm_start_result = _select_representative_result(
+            collection_results,
+            representative_seed=representative_seed if mode == "mc" else None,
+        )
         warm_entry = capture_baseline_entry(
             lambda: build_baseline_entry(
                 label=WARMSTART_BASELINE_LABEL,
                 t_final_seconds=t_final_seconds,
-                warm_start_result=pinn_result,
+                warm_start_result=warm_start_result,
                 max_iteration=effective_baseline_max_iteration,
                 ftol=baseline_ftol,
                 slsqp_maxiter=baseline_slsqp_maxiter,
             ),
             log_filename="baseline_opengoddard_pinn_warmstart.log",
         )
-        _sync_dynamic_terminal_reference(warm_entry["result"], scenario=config["scenario"])
-        collection_context.add_entry(
-            label=warm_entry["label"],
-            result=warm_entry["result"],
-            config=warm_entry.get("config"),
-            model=warm_entry.get("model"),
+        _sync_dynamic_terminal_reference(warm_entry["result"], scenario=scenario)
+        _append_context_entry(
+            collection_context,
+            collection_results,
+            entry=warm_entry,
             source="opengoddard",
-            log_text=warm_entry.get("log_text"),
-            log_filename=warm_entry.get("log_filename"),
-        )
-        collection_results.append(
-            {
-                "label": warm_entry["label"],
-                "source": "opengoddard",
-                "result": warm_entry["result"],
-                **warm_entry.get("plotting", {}),
-                "model": warm_entry.get("model"),
-            }
         )
 
         collection_context.finalize_success()
         return {
-            "label": COLLECTION_LABEL,
+            "label": collection_label,
             "entries": collection_results,
             "run_id": collection_context.run_id,
             "run_dir": str(collection_context.run_dir),
@@ -781,7 +838,7 @@ def run_collection(
             "summary_path": str(collection_context.summary_path),
             "manifest_path": str(collection_context.manifest_path),
             "config_path": str(collection_context.config_path),
-            "scenario": config["scenario"],
+            "scenario": scenario,
         }
     except Exception as error:
         collection_context.finalize_failure(error)
@@ -790,6 +847,7 @@ def run_collection(
 
 def main(
     *,
+    mode: str = "single",
     t_final_seconds: float = DEFAULT_T_FINAL_SECONDS,
     n_adam: int = PAPER_N_ADAM,
     n_lbfgs: int = PAPER_N_LBFGS,
@@ -800,8 +858,16 @@ def main(
     skip_plots: bool = False,
     print_summary: bool = True,
     smoke: bool | None = None,
+    representative_seed: int | None = None,
+    seed_start: int | None = None,
+    num_seeds: int | None = None,
 ):
+    representative_seed = REPRESENTATIVE_SEED if representative_seed is None else int(representative_seed)
     collection_run = run_collection(
+        mode=mode,
+        representative_seed=representative_seed,
+        seed_start=MC_SEED_START if seed_start is None else int(seed_start),
+        num_seeds=MC_NUM_SEEDS if num_seeds is None else int(num_seeds),
         t_final_seconds=t_final_seconds,
         n_adam=n_adam,
         n_lbfgs=n_lbfgs,
@@ -811,25 +877,51 @@ def main(
         baseline_slsqp_maxiter=baseline_slsqp_maxiter,
         smoke=smoke,
     )
+    if mode == "mc":
+        persist_paper_monte_carlo_aggregate_summary(
+            collection_run,
+            title=collection_run["label"],
+            baseline_labels=(BASELINE_LABEL, WARMSTART_BASELINE_LABEL),
+            group_key=monte_carlo_group_key,
+        )
     if print_summary:
         print_collection_run_summary(collection_run)
+        if mode == "mc":
+            grouped = {PINN_LABEL: [entry for entry in collection_run["entries"] if entry.get("source") == "pinn"]}
+            print_monte_carlo_summary(grouped, title=collection_run["label"])
         print_baseline_delta_v_summary(
             collection_run["entries"],
             title="Rendezvous Hold Point ECI",
             baseline_labels=(BASELINE_LABEL, WARMSTART_BASELINE_LABEL),
+            group_key=monte_carlo_group_key if mode == "mc" else None,
+            include_variance=mode == "mc",
         )
     if not skip_plots:
-        plot_results(
+        plot_entries = representative_entries(
             collection_run["entries"],
+            representative_seed=representative_seed,
+            base_label=PINN_LABEL,
+        )
+        plot_results(
+            plot_entries,
             output_dir=collection_run["plot_output_dir"],
             scenario=collection_run["scenario"],
         )
+        if mode == "mc":
+            plot_single_group_boxplots(
+                collection_run["entries"],
+                output_dir=collection_run["plot_output_dir"],
+                fig_prefix=FIG_PREFIX,
+                base_label=PINN_LABEL,
+                baseline_labels=(BASELINE_LABEL, WARMSTART_BASELINE_LABEL),
+            )
     return collection_run
 
 
 if __name__ == "__main__":
     args = _parse_args()
     main(
+        mode=resolve_mode(args),
         t_final_seconds=args.t_final_seconds,
         n_adam=args.n_adam,
         n_lbfgs=args.n_lbfgs,
@@ -839,4 +931,7 @@ if __name__ == "__main__":
         baseline_slsqp_maxiter=args.baseline_slsqp_maxiter,
         skip_plots=args.skip_plots,
         print_summary=not args.skip_summary,
+        representative_seed=args.representative_seed,
+        seed_start=args.seed_start,
+        num_seeds=args.num_seeds,
     )

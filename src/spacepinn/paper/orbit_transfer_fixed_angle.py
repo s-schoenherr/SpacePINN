@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import argparse
 from copy import deepcopy
 from pathlib import Path
 
@@ -28,7 +29,17 @@ from spacepinn.paper._plot_style import (
     SECONDARY_LINEWIDTH,
     configure_paper_plotter,
 )
+from spacepinn.paper._aggregate_summary import persist_paper_monte_carlo_aggregate_summary
 from spacepinn.paper._baseline_summary import print_baseline_delta_v_summary
+from spacepinn.paper._mc_mode import (
+    add_single_mc_arguments,
+    label_with_seed,
+    plot_single_group_boxplots,
+    representative_entries,
+    resolve_mode,
+    seed_sequence,
+    single_group_key,
+)
 from spacepinn.opengoddard.circular_orbit_transfer_goddard import (
     kinematic_ot_goddard,
 )
@@ -36,10 +47,11 @@ from spacepinn.plotting.helpers import get_quiver_data, register_plot_artifact_i
 from spacepinn.plotting.style import PALETTE
 from spacepinn.plotter import TrajectoryPlotter
 from spacepinn.runner import print_collection_run_summary, run_experiment_collection
+from spacepinn.plotting.monte_carlo import print_monte_carlo_summary
 
 RUN_ROOT = Path(spacepinn.__file__).resolve().parents[2] / "runs"
-COLLECTION_LABEL = "hohnmann_transfer"
-FIG_PREFIX = "hohnmann_transfer"
+COLLECTION_LABEL = "orbit_transfer_fixed_angle"
+FIG_PREFIX = "fixed_terminal_angle"
 TIME_AXIS_PADDING_FRACTION = 0.02
 BASELINE_LABEL = "Baseline (OpenGoddard)"
 KINEMATIC_LABEL = "PINN with exact BC"
@@ -54,7 +66,19 @@ PAPER_N_ADAM = 10_000
 PAPER_N_LBFGS = 0
 PAPER_CONVERGENCE_THRESHOLD = 1e-5
 OPENGODDARD_MAX_ITERATION = PAPER_BASELINE_MAX_ITERATION
-OPENGODDARD_THRUST_CAP = 5e-3
+PLOT_QUIVER = False
+REPRESENTATIVE_SEED = 4047
+MC_SEED_START = 4000
+MC_NUM_SEEDS = 100
+
+
+def _parse_args():
+    parser = argparse.ArgumentParser(description="Paper circular orbit transfer with fixed terminal angle.")
+    add_single_mc_arguments(parser, default_mode="single")
+    parser.add_argument("--skip-plots", action="store_true")
+    parser.add_argument("--skip-summary", action="store_true")
+    return parser.parse_args()
+
 def physical_time_minutes(result) -> tuple:
     t_total_minutes = float(result.t_total) / 60.0
     t_minutes = np.asarray(result.t, dtype=float).reshape(-1) * t_total_minutes
@@ -70,9 +94,11 @@ def _paper_label(label: str) -> str:
     return label
 
 
-def build_config(*, smoke: bool | None = None) -> dict:
+def build_config(*, seed: int | None = None, label_seed: bool = False, smoke: bool | None = None) -> dict:
     config = deepcopy(circular_ot_kinematic_polar_config)
-    config["label"] = KINEMATIC_LABEL
+    if seed is not None:
+        config["seed"] = int(seed)
+    config["label"] = label_with_seed(KINEMATIC_LABEL, seed) if label_seed and seed is not None else KINEMATIC_LABEL
     config["plotting"]["linestyle"] = "solid"
     config["plotting"]["trajectory_linestyle"] = "solid"
     config["optimizer"]["n_adam"] = PAPER_N_ADAM
@@ -90,7 +116,6 @@ def build_baseline_entry(*, smoke: bool | None = None) -> dict:
     smoke_enabled = smoke_mode_enabled() if smoke is None else smoke
     conventional_result = kinematic_ot_goddard(
         BASELINE_LABEL,
-        thrust_cap=OPENGODDARD_THRUST_CAP,
         **paper_baseline_solver_kwargs(smoke_enabled=smoke_enabled),
     )
     conventional_result["color"] = DIRECT_COLLOCATION_COLOR
@@ -290,7 +315,7 @@ def plot_gravity_figure(entries: list[dict], *, output_dir: str) -> None:
     plt.show()
 
 
-def plot_orbit_figure(entries: list[dict], *, output_dir: str) -> None:
+def plot_orbit_figure(entries: list[dict], *, output_dir: str, plot_quiver: bool = PLOT_QUIVER) -> None:
     plotter = TrajectoryPlotter(
         entries,
         dim=2,
@@ -315,16 +340,17 @@ def plot_orbit_figure(entries: list[dict], *, output_dir: str) -> None:
             linewidth=linewidth,
             zorder=zorder,
         )
-        r_q, _, T_q = get_quiver_data(result)
-        ax.quiver(
-            r_q[:, 0],
-            r_q[:, 1],
-            T_q[:, 0],
-            T_q[:, 1],
-            color="k",
-            scale=quiver_scale,
-            label="_nolegend_",
-        )
+        if plot_quiver:
+            r_q, _, T_q = get_quiver_data(result)
+            ax.quiver(
+                r_q[:, 0],
+                r_q[:, 1],
+                T_q[:, 0],
+                T_q[:, 1],
+                color="k",
+                scale=quiver_scale,
+                label="_nolegend_",
+            )
 
     reference_result = entries[0]["result"]
     ax.plot(
@@ -383,45 +409,123 @@ def plot_orbit_figure(entries: list[dict], *, output_dir: str) -> None:
     plt.show()
 
 
-def main(*, skip_plots: bool = False, print_summary: bool = True, smoke: bool | None = None):
-    collection_run = run_experiment_collection(
-        configs=[build_config(smoke=smoke)],
+def monte_carlo_group_key(entry: dict) -> str | None:
+    return single_group_key(entry, base_label=KINEMATIC_LABEL)
+
+
+def _baseline_entry(*, smoke: bool | None = None) -> dict:
+    return capture_baseline_entry(
+        lambda: build_baseline_entry(smoke=smoke),
+        log_filename="baseline_opengoddard.log",
+    )
+
+
+def _plot_representative(entries: list[dict], *, output_dir: str) -> None:
+    plotter = TrajectoryPlotter(
+        entries,
+        dim=2,
+        figsize=MAIN_FIGSIZE,
+        fig_prefix=FIG_PREFIX,
+        output_dir=output_dir,
+    )
+    plotter.main_linewidth = MAIN_LINEWIDTH
+    plotter.secondary_linewidth = SECONDARY_LINEWIDTH
+    plotter.plot_traj_2d(plot_quiver=PLOT_QUIVER)
+    plot_thrust_figure(entries, output_dir=output_dir)
+    plot_gravity_figure(entries, output_dir=output_dir)
+    plot_orbit_figure(entries, output_dir=output_dir, plot_quiver=PLOT_QUIVER)
+    plot_loss_figure(entries, output_dir=output_dir)
+
+
+def run_single(*, representative_seed: int = REPRESENTATIVE_SEED, smoke: bool | None = None) -> dict:
+    return run_experiment_collection(
+        configs=[build_config(seed=representative_seed, label_seed=False, smoke=smoke)],
         label=COLLECTION_LABEL,
         run_root=str(RUN_ROOT),
-        additional_entries=[
-            capture_baseline_entry(
-                lambda: build_baseline_entry(smoke=smoke),
-                log_filename="baseline_opengoddard.log",
-            ),
-        ],
+        additional_entries=[_baseline_entry(smoke=smoke)],
     )
+
+
+def run_monte_carlo(
+    *,
+    seed_start: int = MC_SEED_START,
+    num_seeds: int = MC_NUM_SEEDS,
+    smoke: bool | None = None,
+) -> dict:
+    seeds = seed_sequence(start=seed_start, count=num_seeds, smoke=smoke)
+    configs = [build_config(seed=seed, label_seed=True, smoke=smoke) for seed in seeds]
+    return run_experiment_collection(
+        configs=configs,
+        label=f"{COLLECTION_LABEL}_monte_carlo",
+        run_root=str(RUN_ROOT),
+        additional_entries=[_baseline_entry(smoke=smoke)],
+    )
+
+
+def main(
+    *,
+    mode: str = "single",
+    skip_plots: bool = False,
+    print_summary: bool = True,
+    smoke: bool | None = None,
+    representative_seed: int | None = None,
+    seed_start: int | None = None,
+    num_seeds: int | None = None,
+):
+    representative_seed = REPRESENTATIVE_SEED if representative_seed is None else int(representative_seed)
+    if mode == "mc":
+        collection_run = run_monte_carlo(
+            seed_start=MC_SEED_START if seed_start is None else int(seed_start),
+            num_seeds=MC_NUM_SEEDS if num_seeds is None else int(num_seeds),
+            smoke=smoke,
+        )
+        persist_paper_monte_carlo_aggregate_summary(
+            collection_run,
+            title=collection_run["label"],
+            baseline_labels=(BASELINE_LABEL,),
+            group_key=monte_carlo_group_key,
+        )
+    else:
+        collection_run = run_single(representative_seed=representative_seed, smoke=smoke)
 
     if print_summary:
         print_collection_run_summary(collection_run)
+        if mode == "mc":
+            grouped = {KINEMATIC_LABEL: [entry for entry in collection_run["entries"] if entry.get("source") == "pinn"]}
+            print_monte_carlo_summary(grouped, title=collection_run["label"])
         print_baseline_delta_v_summary(
             collection_run["entries"],
-            title=COLLECTION_LABEL,
+            title=collection_run["label"],
             baseline_labels=(BASELINE_LABEL,),
+            group_key=monte_carlo_group_key if mode == "mc" else None,
+            include_variance=mode == "mc",
         )
 
     if not skip_plots:
-        plotter = TrajectoryPlotter(
+        plot_entries = representative_entries(
             collection_run["entries"],
-            dim=2,
-            figsize=MAIN_FIGSIZE,
-            fig_prefix=FIG_PREFIX,
-            output_dir=collection_run["plot_output_dir"],
+            representative_seed=representative_seed,
+            base_label=KINEMATIC_LABEL,
         )
-        plotter.main_linewidth = MAIN_LINEWIDTH
-        plotter.secondary_linewidth = SECONDARY_LINEWIDTH
-        plotter.plot_traj_2d()
-
-        plot_thrust_figure(collection_run["entries"], output_dir=collection_run["plot_output_dir"])
-        plot_gravity_figure(collection_run["entries"], output_dir=collection_run["plot_output_dir"])
-        plot_orbit_figure(collection_run["entries"], output_dir=collection_run["plot_output_dir"])
-        plot_loss_figure(collection_run["entries"], output_dir=collection_run["plot_output_dir"])
+        _plot_representative(plot_entries, output_dir=collection_run["plot_output_dir"])
+        if mode == "mc":
+            plot_single_group_boxplots(
+                collection_run["entries"],
+                output_dir=collection_run["plot_output_dir"],
+                fig_prefix=FIG_PREFIX,
+                base_label=KINEMATIC_LABEL,
+                baseline_labels=(BASELINE_LABEL,),
+            )
     return collection_run
 
 
 if __name__ == "__main__":
-    main()
+    args = _parse_args()
+    main(
+        mode=resolve_mode(args),
+        skip_plots=args.skip_plots,
+        print_summary=not args.skip_summary,
+        representative_seed=args.representative_seed,
+        seed_start=args.seed_start,
+        num_seeds=args.num_seeds,
+    )

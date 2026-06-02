@@ -27,18 +27,29 @@ from spacepinn.paper._baseline_defaults import (
     PAPER_BASELINE_MAX_ITERATION,
     paper_baseline_solver_kwargs,
 )
+from spacepinn.paper._aggregate_summary import persist_paper_monte_carlo_aggregate_summary
 from spacepinn.paper._baseline_summary import print_baseline_delta_v_summary
+from spacepinn.paper._mc_mode import (
+    add_single_mc_arguments,
+    label_with_seed,
+    plot_single_group_boxplots,
+    representative_entries,
+    resolve_mode,
+    seed_sequence,
+    single_group_key,
+)
 from spacepinn.paper._plot_style import MAIN_AXES_RECT, MAIN_FIGSIZE as PAPER_MAIN_FIGSIZE, configure_paper_plotter
 from spacepinn.opengoddard.circular_orbit_transfer_goddard_no_alpha import (
     kinematic_ot_goddard_free_final_angle_no_alpha,
 )
 from spacepinn.plotting.helpers import register_plot_artifact_if_possible
+from spacepinn.plotting.monte_carlo import print_monte_carlo_summary
 from spacepinn.plotter import TrajectoryPlotter
 from spacepinn.runner import print_collection_run_summary, run_experiment_collection
 
 RUN_ROOT = Path(spacepinn.__file__).resolve().parents[2] / "runs"
-COLLECTION_LABEL = "low_thrust_transfer"
-FIG_PREFIX = "low_thrust_transfer"
+COLLECTION_LABEL = "orbit_transfer_free_angle"
+FIG_PREFIX = "free_terminal_angle"
 MAIN_FIGSIZE = PAPER_MAIN_FIGSIZE
 TIME_AXIS_PADDING_FRACTION = 0.02
 TARGET_ORBITS = {
@@ -55,10 +66,14 @@ OPENGODDARD_MAX_ITERATION = PAPER_BASELINE_MAX_ITERATION
 PAPER_N_ADAM = 10_000
 PAPER_N_LBFGS = 0
 PAPER_CONVERGENCE_THRESHOLD = 1e-5
+REPRESENTATIVE_SEED = 5099
+MC_SEED_START = 5000
+MC_NUM_SEEDS = 100
 
 
 def _parse_args():
-    parser = argparse.ArgumentParser(description="Paper low-thrust free-final-angle orbit transfer.")
+    parser = argparse.ArgumentParser(description="Paper circular orbit transfer with free terminal angle.")
+    add_single_mc_arguments(parser, default_mode="single")
     parser.add_argument("--terminal-angle-pi", type=float, default=None)
     parser.add_argument("--time-guess-scale", type=float, default=None)
     parser.add_argument("--extra-turns", type=int, default=None)
@@ -80,8 +95,8 @@ def _resolve_initial_guess_parameters(
     default_terminal_angle_pi = 1.0
     default_time_guess_scale = 1.0
     if target_orbit == "geo":
-        default_terminal_angle_pi = 5.0
-        default_time_guess_scale = 2.0
+        default_terminal_angle_pi = 2.10
+        default_time_guess_scale = 1.09
     resolved_terminal_angle_pi = terminal_angle_pi
     if resolved_terminal_angle_pi is None and extra_turns is not None:
         resolved_terminal_angle_pi = 1.0 + 2.0 * float(extra_turns)
@@ -126,6 +141,8 @@ def build_config(
     time_guess_scale: float | None = None,
     extra_turns: int | None = None,
     tof_scale: float | None = None,
+    seed: int | None = None,
+    label_seed: bool = False,
     smoke: bool | None = None,
 ) -> dict:
     terminal_angle_pi, time_guess_scale = _resolve_initial_guess_parameters(
@@ -141,7 +158,9 @@ def build_config(
     alpha_N_initial = float(np.pi * terminal_angle_pi)
     t_total_initial = float(transfer_bc.T_hohnmann * time_guess_scale)
 
-    config["label"] = PINN_LABEL
+    if seed is not None:
+        config["seed"] = int(seed)
+    config["label"] = label_with_seed(PINN_LABEL, seed) if label_seed and seed is not None else PINN_LABEL
     config["extra_parameters"] = {
         "t_total": torch.nn.Parameter(torch.tensor(t_total_initial, dtype=torch.float32)),
         "alpha_N": torch.nn.Parameter(torch.tensor(alpha_N_initial, dtype=torch.float32)),
@@ -359,21 +378,6 @@ def plot_orbit_figure(entries: list[dict], *, output_dir: str, target_orbit: str
 
     reference_entry = entries[0]
     reference_result = reference_entry["result"]
-    optimizer_cfg = (reference_entry.get("config") or {}).get("optimizer", {})
-    initial_terminal_polar = optimizer_cfg.get("rN")
-    if isinstance(initial_terminal_polar, dict):
-        initial_terminal_polar = initial_terminal_polar.get("value")
-    initial_terminal_guess_xy = None
-    if initial_terminal_polar is not None:
-        initial_terminal_polar = np.asarray(initial_terminal_polar, dtype=float).reshape(-1)
-        if initial_terminal_polar.size >= 2:
-            radius_guess = float(initial_terminal_polar[0])
-            alpha_guess = float(initial_terminal_polar[1])
-            initial_terminal_guess_xy = (
-                radius_guess * np.cos(alpha_guess),
-                radius_guess * np.sin(alpha_guess),
-            )
-
     ax.plot(
         reference_result.r0[0],
         reference_result.r0[1],
@@ -382,16 +386,16 @@ def plot_orbit_figure(entries: list[dict], *, output_dir: str, target_orbit: str
         markersize=6,
         label=r"$\mathbf{r}(t_0)=(R_{\mathrm{LEO}},0)$",
     )
-    if initial_terminal_guess_xy is not None:
-        ax.plot(
-            initial_terminal_guess_xy[0],
-            initial_terminal_guess_xy[1],
-            "x",
-            color="red",
-            markersize=8,
-            markeredgewidth=1.8,
-            label=rf"$\mathbf{{r}}(T)$ = ({_target_radius_symbol(target_orbit)}, initial angle guess)",
-        )
+    terminal_point = np.asarray(reference_result.r[-1], dtype=float).reshape(-1)
+    ax.plot(
+        terminal_point[0],
+        terminal_point[1],
+        "x",
+        color="red",
+        markersize=8,
+        markeredgewidth=1.8,
+        label=rf"$\mathbf{{r}}(T)$ = ({_target_radius_symbol(target_orbit)}, free terminal angle)",
+    )
 
     for idx, (radius, name) in enumerate(
         (
@@ -435,26 +439,18 @@ def plot_orbit_figure(entries: list[dict], *, output_dir: str, target_orbit: str
     register_plot_artifact_if_possible(figure_path)
 
 
-def main(
+def monte_carlo_group_key(entry: dict) -> str | None:
+    return single_group_key(entry, base_label=PINN_LABEL)
+
+
+def _baseline_entry(
     *,
-    skip_plots: bool = False,
-    print_summary: bool = True,
     target_orbit: str = "geo",
-    terminal_angle_pi: float | None = None,
     time_guess_scale: float | None = None,
-    extra_turns: int | None = None,
     tof_scale: float | None = None,
     smoke: bool | None = None,
-):
-    config = build_config(
-        target_orbit=target_orbit,
-        terminal_angle_pi=terminal_angle_pi,
-        time_guess_scale=time_guess_scale,
-        extra_turns=extra_turns,
-        tof_scale=tof_scale,
-        smoke=smoke,
-    )
-    baseline_entry = capture_baseline_entry(
+) -> dict:
+    return capture_baseline_entry(
         lambda: build_baseline_entry(
             target_orbit=target_orbit,
             time_guess_scale=time_guess_scale,
@@ -463,39 +459,171 @@ def main(
         ),
         log_filename="baseline_opengoddard.log",
     )
-    collection_run = run_experiment_collection(
+
+
+def _plot_representative(entries: list[dict], *, output_dir: str, target_orbit: str) -> None:
+    plotter = TrajectoryPlotter(
+        entries,
+        dim=2,
+        figsize=MAIN_FIGSIZE,
+        fig_prefix=FIG_PREFIX,
+        output_dir=output_dir,
+    )
+    plotter.main_linewidth = MAIN_LINEWIDTH
+    plotter.secondary_linewidth = SECONDARY_LINEWIDTH
+    plotter.plot_loss()
+    plot_thrust_figure(entries, output_dir=output_dir)
+    plot_gravity_figure(entries, output_dir=output_dir)
+    plot_orbit_figure(entries, output_dir=output_dir, target_orbit=target_orbit)
+
+
+def run_single(
+    *,
+    representative_seed: int = REPRESENTATIVE_SEED,
+    target_orbit: str = "geo",
+    terminal_angle_pi: float | None = None,
+    time_guess_scale: float | None = None,
+    extra_turns: int | None = None,
+    tof_scale: float | None = None,
+    smoke: bool | None = None,
+) -> dict:
+    config = build_config(
+        target_orbit=target_orbit,
+        terminal_angle_pi=terminal_angle_pi,
+        time_guess_scale=time_guess_scale,
+        extra_turns=extra_turns,
+        tof_scale=tof_scale,
+        seed=representative_seed,
+        label_seed=False,
+        smoke=smoke,
+    )
+    return run_experiment_collection(
         configs=[config],
-        additional_entries=[baseline_entry],
+        additional_entries=[
+            _baseline_entry(
+                target_orbit=target_orbit,
+                time_guess_scale=time_guess_scale,
+                tof_scale=tof_scale,
+                smoke=smoke,
+            )
+        ],
         label=COLLECTION_LABEL,
         run_root=str(RUN_ROOT),
     )
 
+
+def run_monte_carlo(
+    *,
+    seed_start: int = MC_SEED_START,
+    num_seeds: int = MC_NUM_SEEDS,
+    target_orbit: str = "geo",
+    terminal_angle_pi: float | None = None,
+    time_guess_scale: float | None = None,
+    extra_turns: int | None = None,
+    tof_scale: float | None = None,
+    smoke: bool | None = None,
+) -> dict:
+    seeds = seed_sequence(start=seed_start, count=num_seeds, smoke=smoke)
+    configs = [
+        build_config(
+            target_orbit=target_orbit,
+            terminal_angle_pi=terminal_angle_pi,
+            time_guess_scale=time_guess_scale,
+            extra_turns=extra_turns,
+            tof_scale=tof_scale,
+            seed=seed,
+            label_seed=True,
+            smoke=smoke,
+        )
+        for seed in seeds
+    ]
+    return run_experiment_collection(
+        configs=configs,
+        additional_entries=[
+            _baseline_entry(
+                target_orbit=target_orbit,
+                time_guess_scale=time_guess_scale,
+                tof_scale=tof_scale,
+                smoke=smoke,
+            )
+        ],
+        label=f"{COLLECTION_LABEL}_monte_carlo",
+        run_root=str(RUN_ROOT),
+    )
+
+
+def main(
+    *,
+    mode: str = "single",
+    skip_plots: bool = False,
+    print_summary: bool = True,
+    target_orbit: str = "geo",
+    terminal_angle_pi: float | None = None,
+    time_guess_scale: float | None = None,
+    extra_turns: int | None = None,
+    tof_scale: float | None = None,
+    smoke: bool | None = None,
+    representative_seed: int | None = None,
+    seed_start: int | None = None,
+    num_seeds: int | None = None,
+):
+    representative_seed = REPRESENTATIVE_SEED if representative_seed is None else int(representative_seed)
+    if mode == "mc":
+        collection_run = run_monte_carlo(
+            seed_start=MC_SEED_START if seed_start is None else int(seed_start),
+            num_seeds=MC_NUM_SEEDS if num_seeds is None else int(num_seeds),
+            target_orbit=target_orbit,
+            terminal_angle_pi=terminal_angle_pi,
+            time_guess_scale=time_guess_scale,
+            extra_turns=extra_turns,
+            tof_scale=tof_scale,
+            smoke=smoke,
+        )
+        persist_paper_monte_carlo_aggregate_summary(
+            collection_run,
+            title=collection_run["label"],
+            baseline_labels=(BASELINE_LABEL,),
+            group_key=monte_carlo_group_key,
+        )
+    else:
+        collection_run = run_single(
+            representative_seed=representative_seed,
+            target_orbit=target_orbit,
+            terminal_angle_pi=terminal_angle_pi,
+            time_guess_scale=time_guess_scale,
+            extra_turns=extra_turns,
+            tof_scale=tof_scale,
+            smoke=smoke,
+        )
+
     if print_summary:
         print_collection_run_summary(collection_run)
+        if mode == "mc":
+            grouped = {PINN_LABEL: [entry for entry in collection_run["entries"] if entry.get("source") == "pinn"]}
+            print_monte_carlo_summary(grouped, title=collection_run["label"])
         print_baseline_delta_v_summary(
             collection_run["entries"],
-            title=COLLECTION_LABEL,
+            title=collection_run["label"],
             baseline_labels=(BASELINE_LABEL,),
+            group_key=monte_carlo_group_key if mode == "mc" else None,
+            include_variance=mode == "mc",
         )
 
     if not skip_plots:
-        plotter = TrajectoryPlotter(
+        plot_entries = representative_entries(
             collection_run["entries"],
-            dim=2,
-            figsize=MAIN_FIGSIZE,
-            fig_prefix=FIG_PREFIX,
-            output_dir=collection_run["plot_output_dir"],
+            representative_seed=representative_seed,
+            base_label=PINN_LABEL,
         )
-        plotter.main_linewidth = MAIN_LINEWIDTH
-        plotter.secondary_linewidth = SECONDARY_LINEWIDTH
-        plotter.plot_loss()
-        plot_thrust_figure(collection_run["entries"], output_dir=collection_run["plot_output_dir"])
-        plot_gravity_figure(collection_run["entries"], output_dir=collection_run["plot_output_dir"])
-        plot_orbit_figure(
-            collection_run["entries"],
-            output_dir=collection_run["plot_output_dir"],
-            target_orbit=target_orbit,
-        )
+        _plot_representative(plot_entries, output_dir=collection_run["plot_output_dir"], target_orbit=target_orbit)
+        if mode == "mc":
+            plot_single_group_boxplots(
+                collection_run["entries"],
+                output_dir=collection_run["plot_output_dir"],
+                fig_prefix=FIG_PREFIX,
+                base_label=PINN_LABEL,
+                baseline_labels=(BASELINE_LABEL,),
+            )
 
     return collection_run
 
@@ -503,6 +631,7 @@ def main(
 if __name__ == "__main__":
     args = _parse_args()
     main(
+        mode=resolve_mode(args),
         skip_plots=args.skip_plots,
         print_summary=not args.skip_summary,
         target_orbit=args.target_orbit,
@@ -510,4 +639,7 @@ if __name__ == "__main__":
         time_guess_scale=args.time_guess_scale,
         extra_turns=args.extra_turns,
         tof_scale=args.tof_scale,
+        representative_seed=args.representative_seed,
+        seed_start=args.seed_start,
+        num_seeds=args.num_seeds,
     )

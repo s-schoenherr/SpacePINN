@@ -20,14 +20,20 @@ from spacepinn.paper._baseline_summary import (
     get_baseline_entries,
     print_baseline_delta_v_summary,
 )
-from spacepinn.opengoddard.geometric_2d_goddard import geometric_2d_opengoddard
-from spacepinn.plotting.helpers import (
-    get_gravity_sources,
-    plot_masses_2d,
-    register_plot_artifact_if_possible,
+from spacepinn.paper._plot_style import (
+    MAIN_AXES_RECT,
+    MAIN_FIGSIZE,
+    MAIN_LINEWIDTH,
+    SECONDARY_LINEWIDTH,
+    TRAJECTORY_AXES_RECT,
+    TRAJECTORY_FIGSIZE,
+    configure_paper_plotter,
 )
+from spacepinn.opengoddard.geometric_2d_goddard import geometric_2d_opengoddard
+from spacepinn.plotting.helpers import get_gravity_sources, get_quiver_data, register_plot_artifact_if_possible, set_time_axis_labels
 from spacepinn.plotting.monte_carlo import print_monte_carlo_summary
 from spacepinn.plotting.style import PALETTE
+from spacepinn.plotter import TrajectoryPlotter
 from spacepinn.runner import load_run, print_collection_run_summary, run_experiment_collection
 from spacepinn.runner.context import RunCollectionContext
 from spacepinn.runner.execution import execute_single_experiment
@@ -35,15 +41,19 @@ from spacepinn.runner.runtime import _prepare_runtime_config
 
 DTYPE = "float32"
 RUN_ROOT = Path(spacepinn.__file__).resolve().parents[2] / "runs"
-COLLECTION_LABEL = "swingby_2d_monte_carlo"
-FIG_PREFIX = "swingby_2d_monte_carlo"
+COLLECTION_LABEL = "swingby_2d"
+MC_COLLECTION_LABEL = f"{COLLECTION_LABEL}_monte_carlo"
+FIG_PREFIX = "swingby_2d"
 GEOMETRIC_LABEL = "PINN with exact BC"
 ORDINARY_LABEL = "PINN with soft BC"
 NUM_SEEDS = 100
 SEEDS = [1000 + index for index in range(NUM_SEEDS)]
 SMOKE_NUM_SEEDS = 2
-MAIN_LINEWIDTH = 2.4
-SECONDARY_LINEWIDTH = 2.0
+REPRESENTATIVE_SEEDS = {
+    GEOMETRIC_LABEL: 1079,
+    ORDINARY_LABEL: 1056,
+}
+QUIVER_COUNT = 10
 BOXPLOT_FIGSIZE = (17.2, 4.8)
 BOXPLOT_AXIS_LABEL_FONTSIZE = 18
 BOXPLOT_DELTA_V_LABEL_FONTSIZE = 20
@@ -126,7 +136,9 @@ def _trim_soft_bc_display_outliers(values: list[list[float]]) -> list[list[float
 
 
 def _parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Paper Monte Carlo for geometric vs ordinary 2D.")
+    parser = argparse.ArgumentParser(description="Paper swingby 2D experiment.")
+    parser.add_argument("--mode", choices=("single", "mc"), default="single")
+    parser.add_argument("--mc", action="store_true", help="Shortcut for --mode mc.")
     parser.add_argument(
         "--from-run",
         default=None,
@@ -185,6 +197,10 @@ def _build_geometric_config(seed: int) -> dict:
     config["label"] = f"{GEOMETRIC_LABEL} | seed={seed}"
     config["seed"] = seed
     config["numeric_dtype"] = DTYPE
+    config["plotting"]["color"] = COLORS[GEOMETRIC_LABEL]
+    config["plotting"]["linestyle"] = "solid"
+    config["plotting"]["trajectory_linestyle"] = "solid"
+    config["plotting"]["quiver_count"] = QUIVER_COUNT
     return config
 
 
@@ -194,8 +210,10 @@ def _build_ordinary_config(seed: int) -> dict:
     config["seed"] = seed
     config["numeric_dtype"] = DTYPE
     config["optimizer"]["w_bc"] = ORDINARY_LAMBDA_BC
+    config["plotting"]["color"] = COLORS[ORDINARY_LABEL]
     config["plotting"]["linestyle"] = "solid"
     config["plotting"]["trajectory_linestyle"] = "solid"
+    config["plotting"]["quiver_count"] = QUIVER_COUNT
     return config
 
 
@@ -217,6 +235,15 @@ def build_baseline_entry(*, smoke: bool | None = None) -> dict:
         **paper_baseline_solver_kwargs(smoke_enabled=smoke_enabled),
     )
     baseline_entry["source"] = "opengoddard"
+    baseline_entry["plotting"] = dict(baseline_entry.get("plotting", {}))
+    baseline_entry["plotting"]["color"] = PALETTE["opengoddard"]
+    baseline_entry["plotting"]["linestyle"] = "solid"
+    baseline_entry["plotting"]["trajectory_linestyle"] = "solid"
+    baseline_entry["plotting"]["quiver_count"] = QUIVER_COUNT
+    baseline_entry["color"] = PALETTE["opengoddard"]
+    baseline_entry["linestyle"] = "solid"
+    baseline_entry["trajectory_linestyle"] = "solid"
+    baseline_entry["quiver_count"] = QUIVER_COUNT
     return baseline_entry
 
 
@@ -292,99 +319,232 @@ def monte_carlo_group_key(entry: dict) -> str | None:
     return None
 
 
-def plot_monte_carlo_traj_2d_paper(
-    grouped_entries: dict[str, list[dict]],
-    *,
-    colors: dict[str, str],
-    output_dir: str | Path,
-    fig_name: str,
-    figsize: tuple[float, float] = (7, 7),
-) -> None:
-    fig, ax = plt.subplots(figsize=figsize)
-    any_entry = next(entry for entries in grouped_entries.values() for entry in entries)
-
-    for group_name, entries in grouped_entries.items():
-        color = colors[group_name]
-        best_entry = select_best_entry(entries)
-        best_result = best_entry["result"]
-        ax.plot(best_result.r[:, 0], best_result.r[:, 1], color=color, linewidth=MAIN_LINEWIDTH, label=group_name)
-
-    ax.plot(any_entry["result"].r0[0], any_entry["result"].r0[1], "o", color="red", label=r"$r(t=0)$")
-    ax.plot(any_entry["result"].rN[0], any_entry["result"].rN[1], "x", color="red", label=r"$r(t=1)$")
-    plot_masses_2d(ax, get_gravity_sources(any_entry["result"]))
-    ax.set_xlabel("x")
-    ax.set_ylabel("y")
-    ax.set_aspect("equal")
-    ax.legend(loc="lower right")
-    fig.tight_layout()
-
-    figure_path = Path(output_dir) / f"{fig_name}.pdf"
-    fig.savefig(figure_path, bbox_inches="tight", pad_inches=0.05)
-    register_plot_artifact_if_possible(figure_path)
-    plt.show()
+def _build_plotter(entries: list[dict], *, output_dir: str | Path) -> TrajectoryPlotter:
+    plotter = TrajectoryPlotter(
+        entries,
+        dim=2,
+        figsize=MAIN_FIGSIZE,
+        fig_prefix=FIG_PREFIX,
+        output_dir=output_dir,
+    )
+    return configure_paper_plotter(plotter)
 
 
-def plot_monte_carlo_thrust_paper(
-    grouped_entries: dict[str, list[dict]],
-    *,
-    colors: dict[str, str],
-    output_dir: str | Path,
-    fig_name: str,
-    figsize: tuple[float, float] = (7, 4.5),
-) -> None:
-    fig, ax = plt.subplots(figsize=figsize)
+def _representative_entries(collection_run: dict, *, include_baseline: bool = True) -> list[dict]:
+    grouped_entries = group_entries(collection_run["entries"])
+    entries: list[dict] = []
+    for group_name in (GEOMETRIC_LABEL, ORDINARY_LABEL):
+        method_entries = grouped_entries.get(group_name, [])
+        if not method_entries:
+            continue
+        best_entry = select_best_entry(method_entries)
+        plotting = dict(best_entry.get("plotting", {}))
+        plotting["color"] = COLORS[group_name]
+        plotting["linestyle"] = "solid"
+        plotting["trajectory_linestyle"] = "solid"
+        plotting["quiver_count"] = QUIVER_COUNT
+        entries.append(
+            {
+                "label": group_name,
+                "result": best_entry["result"],
+                "model": None,
+                "config": best_entry.get("config"),
+                "source": best_entry.get("source", "pinn"),
+                "plotting": plotting,
+                **plotting,
+            }
+        )
+    if include_baseline:
+        baseline_entry = get_baseline_entry(collection_run)
+        plotting = dict(baseline_entry.get("plotting", {}))
+        plotting["color"] = PALETTE["opengoddard"]
+        plotting["linestyle"] = "solid"
+        plotting["trajectory_linestyle"] = "solid"
+        plotting["quiver_count"] = QUIVER_COUNT
+        entries.append(
+            {
+                "label": BASELINE_LABEL,
+                "result": baseline_entry["result"],
+                "model": baseline_entry.get("model"),
+                "config": baseline_entry.get("config"),
+                "source": baseline_entry.get("source", "opengoddard"),
+                "plotting": plotting,
+                **plotting,
+            }
+        )
+    return entries
 
-    for group_name, entries in grouped_entries.items():
-        color = colors[group_name]
-        best_entry = select_best_entry(entries)
-        best_result = best_entry["result"]
-        ax.plot(best_result.t, best_result.F_mag, color=color, linewidth=MAIN_LINEWIDTH, label=group_name)
 
-    ax.set_xlabel("Normalized time")
-    ax.set_ylabel("Thrust magnitude")
-    ax.set_xlim(0, 1)
-    ax.legend()
-    fig.tight_layout()
+def plot_traj_figure(entries: list[dict], *, output_dir: str | Path) -> None:
+    plotter = _build_plotter(entries, output_dir=output_dir)
+    fig = plt.figure(figsize=TRAJECTORY_FIGSIZE)
+    ax = fig.add_axes(TRAJECTORY_AXES_RECT)
 
-    figure_path = Path(output_dir) / f"{fig_name}.pdf"
-    fig.savefig(figure_path, bbox_inches="tight", pad_inches=0.05)
-    register_plot_artifact_if_possible(figure_path)
-    plt.show()
-
-
-def plot_monte_carlo_gravity_paper(
-    grouped_entries: dict[str, list[dict]],
-    *,
-    colors: dict[str, str],
-    output_dir: str | Path,
-    fig_name: str,
-    figsize: tuple[float, float] = (7, 4.5),
-) -> None:
-    fig, ax = plt.subplots(figsize=figsize)
-
-    for group_name, entries in grouped_entries.items():
-        color = colors[group_name]
-        best_entry = select_best_entry(entries)
-        best_result = best_entry["result"]
-        ax.plot(best_result.t, best_result.a_mag, color=color, linewidth=MAIN_LINEWIDTH, label=f"{group_name} RFM")
+    for label, exp in plotter.experiments.items():
+        result = exp["result"]
         ax.plot(
-            best_result.t,
-            best_result.G_mag,
-            color=color,
-            linewidth=SECONDARY_LINEWIDTH,
-            linestyle="--",
-            label=f"{group_name} Gravity",
+            result.r[:, 0],
+            result.r[:, 1],
+            linestyle=exp.get("trajectory_linestyle", exp["linestyle"]),
+            color=exp["color"],
+            label=label,
+            linewidth=plotter.main_linewidth,
+            zorder=exp["zorder"],
+        )
+        r_q, G_q, _ = get_quiver_data(
+            result,
+            step=exp.get("quiver_step", 10),
+            count=exp.get("quiver_count"),
+        )
+        ax.quiver(
+            r_q[:, 0],
+            r_q[:, 1],
+            G_q[:, 0],
+            G_q[:, 1],
+            color=exp["color"],
+            scale=exp["quiver_scale"],
+            label="_nolegend_",
         )
 
-    ax.set_xlabel("Normalized time")
-    ax.set_ylabel("Gravity / Required Force magnitude")
-    ax.set_xlim(0, 1)
-    ax.legend(ncol=2)
-    fig.tight_layout()
+    reference_result = entries[0]["result"]
+    ax.plot(reference_result.r0[0], reference_result.r0[1], "o", color="red", label=r"$\mathbf{r}(t_0)$")
+    ax.plot(
+        reference_result.rN[0],
+        reference_result.rN[1],
+        "x",
+        color="red",
+        markersize=7,
+        markeredgewidth=1.5,
+        label=r"$\mathbf{r}(T)$",
+    )
+    gravity_sources = get_gravity_sources(reference_result)
+    mass_colors = ["#006400", "#228B22", "#6B8E23"]
+    mass_labels = [r"$GM_1 = 0.5$", r"$GM_2 = 1.0$", r"$GM_3 = 0.5$"]
+    mass_marker_sizes = [170, 300, 170]
+    annotation_offsets = [(12, 10), (12, 2), None]
+    for index, (x, y, _gm) in enumerate(gravity_sources):
+        ax.scatter(x, y, s=mass_marker_sizes[index], color=mass_colors[index], marker="o", zorder=4)
+        if index < 2:
+            ax.annotate(
+                mass_labels[index],
+                (x, y),
+                xytext=annotation_offsets[index],
+                textcoords="offset points",
+                ha="left",
+                va="center",
+                fontsize=plotter.legend_fontsize + 3.0,
+                color="black",
+            )
+        else:
+            ax.text(
+                0.7,
+                0.2,
+                mass_labels[index],
+                ha="left",
+                va="center",
+                fontsize=plotter.legend_fontsize + 3.0,
+                color="black",
+            )
+    ax.set_xlabel("x / normalized units", labelpad=10)
+    ax.set_ylabel("y / normalized units")
+    ax.set_box_aspect(1)
+    ax.set_aspect("equal")
+    plotter.style_axes(ax)
+    legend = ax.legend(
+        loc="upper left",
+        ncol=1,
+        frameon=True,
+        facecolor="white",
+        edgecolor="0.3",
+        columnspacing=plotter.legend_columnspacing,
+        handlelength=plotter.legend_handlelength,
+        labelspacing=0.30,
+        borderaxespad=0.35,
+    )
+    plotter.style_legend(legend)
+    figure_path = Path(output_dir) / f"{FIG_PREFIX}_traj2d.pdf"
+    plotter.save_figure(fig, figure_path)
+    register_plot_artifact_if_possible(str(figure_path))
+    plt.show()
 
-    figure_path = Path(output_dir) / f"{fig_name}.pdf"
-    fig.savefig(figure_path, bbox_inches="tight", pad_inches=0.05)
-    register_plot_artifact_if_possible(figure_path)
+
+def plot_thrust_figure(entries: list[dict], *, output_dir: str | Path) -> None:
+    plotter = _build_plotter(entries, output_dir=output_dir)
+    fig = plt.figure(figsize=MAIN_FIGSIZE)
+    ax = fig.add_axes(MAIN_AXES_RECT)
+
+    for label, exp in plotter.experiments.items():
+        result = exp["result"]
+        ax.plot(
+            result.t,
+            result.F_mag,
+            linestyle=exp["linestyle"],
+            color=exp["color"],
+            label=label,
+            linewidth=plotter.main_linewidth,
+            zorder=exp["zorder"],
+        )
+
+    set_time_axis_labels(ax, "Thrust magnitude", plot_legend=True)
+    ax.set_box_aspect(1)
+    plotter.style_axes(ax)
+    plotter.style_legend(ax.get_legend())
+    figure_path = Path(output_dir) / f"{FIG_PREFIX}_thrust.pdf"
+    plotter.save_figure(fig, figure_path)
+    register_plot_artifact_if_possible(str(figure_path))
+    plt.show()
+
+
+def plot_gravity_figure(entries: list[dict], *, output_dir: str | Path) -> None:
+    plotter = _build_plotter(entries, output_dir=output_dir)
+    fig = plt.figure(figsize=MAIN_FIGSIZE)
+    ax = fig.add_axes(MAIN_AXES_RECT)
+
+    ymax = 0.0
+    for label, exp in plotter.experiments.items():
+        result = exp["result"]
+        ax.plot(
+            result.t,
+            result.a_mag,
+            linestyle=exp["linestyle"],
+            color=exp["color"],
+            label=f"{label} RFM",
+            linewidth=plotter.main_linewidth,
+            zorder=exp["zorder"],
+        )
+        ax.plot(
+            result.t,
+            result.G_mag,
+            linestyle="dashed" if exp["linestyle"] == "solid" else exp["linestyle"],
+            color=exp["color"],
+            label=f"{label} Gravity",
+            linewidth=plotter.secondary_linewidth,
+            zorder=exp["zorder"],
+        )
+        ymax = max(ymax, max(result.a_mag), max(result.G_mag))
+
+    set_time_axis_labels(ax, "Gravity / Required Force magnitude", plot_legend=False)
+    ax.set_box_aspect(1)
+    ymin = min(min(min(exp["result"].a_mag), min(exp["result"].G_mag)) for exp in plotter.experiments.values())
+    lower_margin = max(0.06, 0.08 * (ymax - ymin))
+    upper_margin = max(0.30, 0.36 * ymax)
+    ax.set_ylim(max(0.0, ymin - lower_margin), ymax + upper_margin)
+    plotter.style_axes(ax)
+    legend = ax.legend(
+        loc="upper left",
+        ncol=1,
+        frameon=True,
+        facecolor="white",
+        edgecolor="0.3",
+        columnspacing=plotter.legend_columnspacing,
+        handlelength=plotter.legend_handlelength,
+        labelspacing=0.28,
+        borderaxespad=0.35,
+    )
+    plotter.style_legend(legend)
+    figure_path = Path(output_dir) / f"{FIG_PREFIX}_gravity.pdf"
+    plotter.save_figure(fig, figure_path)
+    register_plot_artifact_if_possible(str(figure_path))
     plt.show()
 
 
@@ -462,7 +622,12 @@ def plot_monte_carlo_boxplots_paper(
     plt.show()
 
 
-def plot_collection_run(collection_run: dict, *, output_dir: str | Path | None = None) -> dict[str, list[dict]]:
+def plot_collection_run(
+    collection_run: dict,
+    *,
+    output_dir: str | Path | None = None,
+    include_boxplots: bool = True,
+) -> dict[str, list[dict]]:
     target_dir = Path(output_dir) if output_dir is not None else Path(collection_run["plot_output_dir"])
     target_dir.mkdir(parents=True, exist_ok=True)
 
@@ -480,31 +645,18 @@ def plot_collection_run(collection_run: dict, *, output_dir: str | Path | None =
         include_variance=True,
     )
 
-    plot_monte_carlo_traj_2d_paper(
-        grouped_entries,
-        colors=COLORS,
-        output_dir=target_dir,
-        fig_name=f"{FIG_PREFIX}_traj2d",
-    )
-    plot_monte_carlo_boxplots_paper(
-        grouped_entries,
-        colors=COLORS,
-        output_dir=target_dir,
-        fig_name=f"{FIG_PREFIX}_boxplots",
-        baseline_entry=baseline_entry,
-    )
-    plot_monte_carlo_thrust_paper(
-        grouped_entries,
-        colors=COLORS,
-        output_dir=target_dir,
-        fig_name=f"{FIG_PREFIX}_thrust",
-    )
-    plot_monte_carlo_gravity_paper(
-        grouped_entries,
-        colors=COLORS,
-        output_dir=target_dir,
-        fig_name=f"{FIG_PREFIX}_gravity",
-    )
+    representative_entries = _representative_entries(collection_run, include_baseline=False)
+    plot_traj_figure(representative_entries, output_dir=target_dir)
+    if include_boxplots:
+        plot_monte_carlo_boxplots_paper(
+            grouped_entries,
+            colors=COLORS,
+            output_dir=target_dir,
+            fig_name=f"{FIG_PREFIX}_boxplots",
+            baseline_entry=baseline_entry,
+        )
+    plot_thrust_figure(representative_entries, output_dir=target_dir)
+    plot_gravity_figure(representative_entries, output_dir=target_dir)
     return grouped_entries
 
 
@@ -525,8 +677,26 @@ def replot_saved_run(run_dir: str | Path, *, output_dir: str | Path | None = Non
     return collection_run
 
 
+def _run_representative_entries(*, smoke: bool | None = None) -> list[dict]:
+    smoke_enabled = smoke_mode_enabled() if smoke is None else smoke
+    configs = [
+        _build_geometric_config(REPRESENTATIVE_SEEDS[GEOMETRIC_LABEL]),
+        _build_ordinary_config(REPRESENTATIVE_SEEDS[ORDINARY_LABEL]),
+    ]
+    entries: list[dict] = []
+    for config in configs:
+        if smoke_enabled:
+            config["optimizer"]["n_adam"] = 1
+            config["optimizer"]["n_lbfgs"] = 0
+        runtime_config, _model, result = _execute_config(config)
+        label = GEOMETRIC_LABEL if runtime_config["label"].startswith(GEOMETRIC_LABEL) else ORDINARY_LABEL
+        entries.append(_entry_payload(label=label, result=result, config=runtime_config))
+    return entries
+
+
 def main(
     *,
+    mode: str = "single",
     skip_plots: bool = False,
     print_summary: bool = True,
     smoke: bool | None = None,
@@ -537,33 +707,58 @@ def main(
     if from_run is not None:
         return replot_saved_run(from_run, output_dir=output_dir, print_summary=print_summary)
 
-    collection_run = run_collection(smoke=smoke, workers=workers)
-    persist_paper_monte_carlo_aggregate_summary(
-        collection_run,
-        title=COLLECTION_LABEL,
-        baseline_labels=(BASELINE_LABEL,),
-        group_key=monte_carlo_group_key,
-    )
+    if mode == "mc":
+        collection_run = run_collection(smoke=smoke, workers=workers, label=MC_COLLECTION_LABEL)
+        persist_paper_monte_carlo_aggregate_summary(
+            collection_run,
+            title=MC_COLLECTION_LABEL,
+            baseline_labels=(BASELINE_LABEL,),
+            group_key=monte_carlo_group_key,
+        )
+    else:
+        collection_run = run_experiment_collection(
+            configs=[],
+            label=COLLECTION_LABEL,
+            run_root=str(RUN_ROOT),
+            additional_entries=[
+                {
+                    "label": entry["label"],
+                    "result": entry["result"],
+                    "config": entry["config"],
+                    "model": None,
+                    "plotting": entry["plotting"],
+                    "source": entry["source"],
+                }
+                for entry in _run_representative_entries(smoke=smoke)
+            ]
+            + [
+                capture_baseline_entry(
+                    lambda: build_baseline_entry(smoke=smoke),
+                    log_filename="baseline_opengoddard.log",
+                )
+            ],
+        )
 
     if print_summary:
         print_collection_run_summary(collection_run)
 
     if not skip_plots:
-        plot_collection_run(collection_run, output_dir=output_dir)
+        plot_collection_run(collection_run, output_dir=output_dir, include_boxplots=mode == "mc")
 
     return collection_run
 
 
-def run_collection(*, smoke: bool | None = None, workers: int = 1) -> dict:
-    seeds = get_seeds(smoke=smoke)
+def run_collection(*, smoke: bool | None = None, workers: int = 1, label: str = MC_COLLECTION_LABEL) -> dict:
+    smoke_enabled = smoke_mode_enabled() if smoke is None else smoke
+    seeds = get_seeds(smoke=smoke_enabled)
 
     if workers <= 1:
         entries = []
         for seed in seeds:
-            entries.extend(_run_seed(seed, smoke=bool(smoke)))
+            entries.extend(_run_seed(seed, smoke=smoke_enabled))
         return run_experiment_collection(
             configs=[],
-            label=COLLECTION_LABEL,
+            label=label,
             run_root=str(RUN_ROOT),
             additional_entries=[
                 {
@@ -578,19 +773,19 @@ def run_collection(*, smoke: bool | None = None, workers: int = 1) -> dict:
             ]
             + [
                 capture_baseline_entry(
-                    lambda: build_baseline_entry(smoke=smoke),
+                    lambda: build_baseline_entry(smoke=smoke_enabled),
                     log_filename="baseline_opengoddard.log",
                 )
             ],
         )
 
-    collection_context = RunCollectionContext(label=COLLECTION_LABEL, run_root=str(RUN_ROOT))
+    collection_context = RunCollectionContext(label=label, run_root=str(RUN_ROOT))
     collection_context.start()
     collection_results = []
 
     try:
         with mp.get_context("spawn").Pool(processes=workers) as pool:
-            completed_by_seed = pool.starmap(_run_seed, [(seed, bool(smoke)) for seed in seeds])
+            completed_by_seed = pool.starmap(_run_seed, [(seed, smoke_enabled) for seed in seeds])
 
         for seed_entries in completed_by_seed:
             for entry in seed_entries:
@@ -617,7 +812,7 @@ def run_collection(*, smoke: bool | None = None, workers: int = 1) -> dict:
                 )
 
         baseline_entry = capture_baseline_entry(
-            lambda: build_baseline_entry(smoke=smoke),
+            lambda: build_baseline_entry(smoke=smoke_enabled),
             log_filename="baseline_opengoddard.log",
         )
         _add_collection_entry(
@@ -646,7 +841,7 @@ def run_collection(*, smoke: bool | None = None, workers: int = 1) -> dict:
         collection_context.finalize_success()
 
         return {
-            "label": COLLECTION_LABEL,
+            "label": label,
             "entries": collection_results,
             "run_id": collection_context.run_id,
             "run_dir": str(collection_context.run_dir),
@@ -663,6 +858,7 @@ def run_collection(*, smoke: bool | None = None, workers: int = 1) -> dict:
 if __name__ == "__main__":
     args = _parse_args()
     main(
+        mode="mc" if args.mc else args.mode,
         skip_plots=args.skip_plots,
         print_summary=not args.skip_summary,
         from_run=args.from_run,

@@ -30,14 +30,14 @@ uv run pytest -q
 Run a paper experiment:
 
 ```bash
-uv run python -m spacepinn.paper.swingby_2d.experiment
-uv run python -m spacepinn.paper.swingby_2d.monte_carlo
-uv run python -m spacepinn.paper.swingby_3d.experiment
-uv run python -m spacepinn.paper.swingby_3d.monte_carlo
-uv run python -m spacepinn.paper.orbit_transfer_fixed_angle
-uv run python -m spacepinn.paper.orbit_transfer_free_angle
-uv run python -m spacepinn.paper.rendezvous_hold_point_eci
+uv run python -m spacepinn.paper.swingby_2d --mode single
+uv run python -m spacepinn.paper.swingby_3d --mode single
+uv run python -m spacepinn.paper.orbit_transfer_fixed_angle --mode single
+uv run python -m spacepinn.paper.orbit_transfer_free_angle --mode single
+uv run python -m spacepinn.paper.rendezvous_hold_point_eci --mode single
 ```
+
+Use `--mode mc` on the same entry points to run the full Monte Carlo variant and generate the corresponding boxplots.
 
 Run appendix utilities:
 
@@ -71,8 +71,8 @@ src/spacepinn/
 |-- opengoddard/       direct-collocation baselines used in the paper
 |-- pretraining/       3D kinematic-to-geometric pre-conditioning helper
 `-- paper/             paper-facing experiment entry points
-    |-- swingby_2d/            deterministic and Monte-Carlo swing-by runs
-    |-- swingby_3d/            deterministic and Monte-Carlo swing-by runs
+    |-- swingby_2d.py          single-seed and Monte-Carlo swing-by runs
+    |-- swingby_3d.py          single-seed and Monte-Carlo swing-by runs
     |-- appendix/              boundary-weight and static-TOF appendix utilities
     |-- orbit_transfer_fixed_angle.py
     |-- orbit_transfer_free_angle.py
