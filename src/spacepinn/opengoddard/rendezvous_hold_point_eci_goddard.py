@@ -6,7 +6,7 @@ from OpenGoddard.optimize import Condition, Dynamics, Guess, Problem
 
 from spacepinn.config.config_goddard import config_goddard
 from spacepinn.config.config_orbit_transfer import GM_EARTH
-from spacepinn.paper._rendezvous_hold_point_eci_shared import (
+from spacepinn.problems.rendezvous_hold_point_eci import (
     TARGET_RADIUS_KM,
     TARGET_SPEED_KM_S,
     build_scenario,

@@ -20,7 +20,7 @@ import torch
 
 from spacepinn.config.config_2d import ordinary_2d_config
 from spacepinn.config.config_3d import ordinary_3d_config
-from spacepinn.paper.common import smoke_mode_enabled
+from spacepinn.paper.runtime import smoke_mode_enabled
 from spacepinn.plotting.paper_style import PAPER_STYLE
 from spacepinn.runner.context import RunCollectionContext
 from spacepinn.runner.loading import load_run
