@@ -29,25 +29,19 @@ from spacepinn.paper._plot_style import (
     SECONDARY_LINEWIDTH,
     configure_paper_plotter,
 )
-from spacepinn.paper._aggregate_summary import persist_paper_monte_carlo_aggregate_summary
-from spacepinn.paper._baseline_summary import print_baseline_delta_v_summary
 from spacepinn.paper._mc_mode import (
     add_single_mc_arguments,
     label_with_seed,
-    plot_single_group_boxplots,
-    representative_entries,
     resolve_mode,
-    seed_sequence,
     single_group_key,
 )
+from spacepinn.paper._suite import ExperimentSuite, run_experiment_suite
 from spacepinn.opengoddard.circular_orbit_transfer_goddard import (
     kinematic_ot_goddard,
 )
 from spacepinn.plotting.helpers import get_quiver_data, register_plot_artifact_if_possible
 from spacepinn.plotting.style import PALETTE
 from spacepinn.plotter import TrajectoryPlotter
-from spacepinn.runner import print_collection_run_summary, run_experiment_collection
-from spacepinn.plotting.monte_carlo import print_monte_carlo_summary
 
 RUN_ROOT = Path(spacepinn.__file__).resolve().parents[2] / "runs"
 COLLECTION_LABEL = "orbit_transfer_fixed_angle"
@@ -78,6 +72,7 @@ def _parse_args():
     parser.add_argument("--skip-plots", action="store_true")
     parser.add_argument("--skip-summary", action="store_true")
     return parser.parse_args()
+
 
 def physical_time_minutes(result) -> tuple:
     t_total_minutes = float(result.t_total) / 60.0
@@ -420,6 +415,10 @@ def _baseline_entry(*, smoke: bool | None = None) -> dict:
     )
 
 
+def _baseline_entries(*, smoke: bool | None = None) -> list[dict]:
+    return [_baseline_entry(smoke=smoke)]
+
+
 def _plot_representative(entries: list[dict], *, output_dir: str) -> None:
     plotter = TrajectoryPlotter(
         entries,
@@ -437,29 +436,20 @@ def _plot_representative(entries: list[dict], *, output_dir: str) -> None:
     plot_loss_figure(entries, output_dir=output_dir)
 
 
-def run_single(*, representative_seed: int = REPRESENTATIVE_SEED, smoke: bool | None = None) -> dict:
-    return run_experiment_collection(
-        configs=[build_config(seed=representative_seed, label_seed=False, smoke=smoke)],
-        label=COLLECTION_LABEL,
-        run_root=str(RUN_ROOT),
-        additional_entries=[_baseline_entry(smoke=smoke)],
-    )
-
-
-def run_monte_carlo(
-    *,
-    seed_start: int = MC_SEED_START,
-    num_seeds: int = MC_NUM_SEEDS,
-    smoke: bool | None = None,
-) -> dict:
-    seeds = seed_sequence(start=seed_start, count=num_seeds, smoke=smoke)
-    configs = [build_config(seed=seed, label_seed=True, smoke=smoke) for seed in seeds]
-    return run_experiment_collection(
-        configs=configs,
-        label=f"{COLLECTION_LABEL}_monte_carlo",
-        run_root=str(RUN_ROOT),
-        additional_entries=[_baseline_entry(smoke=smoke)],
-    )
+SUITE = ExperimentSuite(
+    label=COLLECTION_LABEL,
+    run_root=RUN_ROOT,
+    representative_seed=REPRESENTATIVE_SEED,
+    mc_seed_start=MC_SEED_START,
+    mc_num_seeds=MC_NUM_SEEDS,
+    build_config=build_config,
+    build_baseline_entries=_baseline_entries,
+    plot_representative=lambda entries, output_dir: _plot_representative(entries, output_dir=output_dir),
+    group_key=monte_carlo_group_key,
+    base_label=KINEMATIC_LABEL,
+    baseline_labels=(BASELINE_LABEL,),
+    fig_prefix=FIG_PREFIX,
+)
 
 
 def main(
@@ -472,51 +462,16 @@ def main(
     seed_start: int | None = None,
     num_seeds: int | None = None,
 ):
-    representative_seed = REPRESENTATIVE_SEED if representative_seed is None else int(representative_seed)
-    if mode == "mc":
-        collection_run = run_monte_carlo(
-            seed_start=MC_SEED_START if seed_start is None else int(seed_start),
-            num_seeds=MC_NUM_SEEDS if num_seeds is None else int(num_seeds),
-            smoke=smoke,
-        )
-        persist_paper_monte_carlo_aggregate_summary(
-            collection_run,
-            title=collection_run["label"],
-            baseline_labels=(BASELINE_LABEL,),
-            group_key=monte_carlo_group_key,
-        )
-    else:
-        collection_run = run_single(representative_seed=representative_seed, smoke=smoke)
-
-    if print_summary:
-        print_collection_run_summary(collection_run)
-        if mode == "mc":
-            grouped = {KINEMATIC_LABEL: [entry for entry in collection_run["entries"] if entry.get("source") == "pinn"]}
-            print_monte_carlo_summary(grouped, title=collection_run["label"])
-        print_baseline_delta_v_summary(
-            collection_run["entries"],
-            title=collection_run["label"],
-            baseline_labels=(BASELINE_LABEL,),
-            group_key=monte_carlo_group_key if mode == "mc" else None,
-            include_variance=mode == "mc",
-        )
-
-    if not skip_plots:
-        plot_entries = representative_entries(
-            collection_run["entries"],
-            representative_seed=representative_seed,
-            base_label=KINEMATIC_LABEL,
-        )
-        _plot_representative(plot_entries, output_dir=collection_run["plot_output_dir"])
-        if mode == "mc":
-            plot_single_group_boxplots(
-                collection_run["entries"],
-                output_dir=collection_run["plot_output_dir"],
-                fig_prefix=FIG_PREFIX,
-                base_label=KINEMATIC_LABEL,
-                baseline_labels=(BASELINE_LABEL,),
-            )
-    return collection_run
+    return run_experiment_suite(
+        SUITE,
+        mode=mode,
+        skip_plots=skip_plots,
+        print_summary=print_summary,
+        smoke=smoke,
+        representative_seed=representative_seed,
+        seed_start=seed_start,
+        num_seeds=num_seeds,
+    )
 
 
 if __name__ == "__main__":

@@ -29,12 +29,13 @@ from spacepinn.paper._plot_style import (
     TRAJECTORY_FIGSIZE,
     configure_paper_plotter,
 )
+from spacepinn.paper._suite import run_entry_collection
 from spacepinn.opengoddard.geometric_2d_goddard import geometric_2d_opengoddard
 from spacepinn.plotting.helpers import get_gravity_sources, get_quiver_data, register_plot_artifact_if_possible, set_time_axis_labels
 from spacepinn.plotting.monte_carlo import print_monte_carlo_summary
 from spacepinn.plotting.style import PALETTE
 from spacepinn.plotter import TrajectoryPlotter
-from spacepinn.runner import load_run, print_collection_run_summary, run_experiment_collection
+from spacepinn.runner import load_run, print_collection_run_summary
 from spacepinn.runner.context import RunCollectionContext
 from spacepinn.runner.execution import execute_single_experiment
 from spacepinn.runner.runtime import _prepare_runtime_config
@@ -246,6 +247,15 @@ def build_baseline_entry(*, smoke: bool | None = None) -> dict:
     baseline_entry["trajectory_linestyle"] = "solid"
     baseline_entry["quiver_count"] = QUIVER_COUNT
     return baseline_entry
+
+
+def _baseline_entries(*, smoke: bool | None = None) -> list[dict]:
+    return [
+        capture_baseline_entry(
+            lambda: build_baseline_entry(smoke=smoke),
+            log_filename="baseline_opengoddard.log",
+        )
+    ]
 
 
 def is_baseline_entry(entry: dict) -> bool:
@@ -740,27 +750,11 @@ def main(
             group_key=monte_carlo_group_key,
         )
     else:
-        collection_run = run_experiment_collection(
-            configs=[],
+        collection_run = run_entry_collection(
+            entries=_run_representative_entries(smoke=smoke),
             label=COLLECTION_LABEL,
-            run_root=str(RUN_ROOT),
-            additional_entries=[
-                {
-                    "label": entry["label"],
-                    "result": entry["result"],
-                    "config": entry["config"],
-                    "model": None,
-                    "plotting": entry["plotting"],
-                    "source": entry["source"],
-                }
-                for entry in _run_representative_entries(smoke=smoke)
-            ]
-            + [
-                capture_baseline_entry(
-                    lambda: build_baseline_entry(smoke=smoke),
-                    log_filename="baseline_opengoddard.log",
-                )
-            ],
+            run_root=RUN_ROOT,
+            baseline_entries=_baseline_entries(smoke=smoke),
         )
 
     if print_summary:
@@ -780,27 +774,11 @@ def run_collection(*, smoke: bool | None = None, workers: int = 1, label: str = 
         entries = []
         for seed in seeds:
             entries.extend(_run_seed(seed, smoke=smoke_enabled))
-        return run_experiment_collection(
-            configs=[],
+        return run_entry_collection(
+            entries=entries,
             label=label,
-            run_root=str(RUN_ROOT),
-            additional_entries=[
-                {
-                    "label": entry["label"],
-                    "result": entry["result"],
-                    "config": entry["config"],
-                    "model": None,
-                    "plotting": entry["plotting"],
-                    "source": entry["source"],
-                }
-                for entry in entries
-            ]
-            + [
-                capture_baseline_entry(
-                    lambda: build_baseline_entry(smoke=smoke_enabled),
-                    log_filename="baseline_opengoddard.log",
-                )
-            ],
+            run_root=RUN_ROOT,
+            baseline_entries=_baseline_entries(smoke=smoke_enabled),
         )
 
     collection_context = RunCollectionContext(label=label, run_root=str(RUN_ROOT))
@@ -835,10 +813,7 @@ def run_collection(*, smoke: bool | None = None, workers: int = 1, label: str = 
                     }
                 )
 
-        baseline_entry = capture_baseline_entry(
-            lambda: build_baseline_entry(smoke=smoke_enabled),
-            log_filename="baseline_opengoddard.log",
-        )
+        baseline_entry = _baseline_entries(smoke=smoke_enabled)[0]
         _add_collection_entry(
             collection_context,
             label=baseline_entry["label"],

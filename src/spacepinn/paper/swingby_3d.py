@@ -38,6 +38,7 @@ from spacepinn.paper._baseline_summary import (
     get_baseline_entries,
     print_baseline_delta_v_summary,
 )
+from spacepinn.paper._suite import run_entry_collection
 from spacepinn.experiment import build_pretrained_model
 from spacepinn.pretraining.kinematic_to_geometric_pretraining_3d import (
     PLANE_VELOCITY,
@@ -48,7 +49,7 @@ from spacepinn.plotting.paper_style import PAPER_STYLE
 from spacepinn.plotting.monte_carlo import print_monte_carlo_summary
 from spacepinn.plotting.style import PALETTE
 from spacepinn.plotter import TrajectoryPlotter
-from spacepinn.runner import load_run, print_collection_run_summary, run_experiment_collection
+from spacepinn.runner import load_run, print_collection_run_summary
 from spacepinn.runner.context import RunCollectionContext
 from spacepinn.runner.execution import execute_single_experiment
 from spacepinn.runner.runtime import _prepare_runtime_config
@@ -272,6 +273,15 @@ def build_baseline_entry(*, smoke: bool | None = None) -> dict:
     )
     baseline_entry["source"] = "opengoddard"
     return baseline_entry
+
+
+def _baseline_entries(*, smoke: bool | None = None) -> list[dict]:
+    return [
+        capture_baseline_entry(
+            lambda: build_baseline_entry(smoke=smoke),
+            log_filename="baseline_opengoddard.log",
+        )
+    ]
 
 
 def get_baseline_entry(collection_run: dict) -> dict:
@@ -1151,10 +1161,7 @@ def run_collection(*, smoke: bool | None = None, workers: int = 1, label: str = 
                     }
                 )
 
-        baseline_entry = capture_baseline_entry(
-            lambda: build_baseline_entry(smoke=smoke_enabled),
-            log_filename="baseline_opengoddard.log",
-        )
+        baseline_entry = _baseline_entries(smoke=smoke_enabled)[0]
         _add_collection_entry(
             collection_context,
             label=baseline_entry["label"],
@@ -1196,29 +1203,12 @@ def run_collection(*, smoke: bool | None = None, workers: int = 1, label: str = 
 
 
 def _finalize_collection_entries(entries: list[dict], *, smoke: bool | None = None, label: str = MC_COLLECTION_LABEL) -> dict:
-    collection_run = run_experiment_collection(
-        configs=[],
+    return run_entry_collection(
+        entries=entries,
         label=label,
-        run_root=str(RUN_ROOT),
-        additional_entries=[
-            {
-                "label": entry["label"],
-                "result": entry["result"],
-                "config": entry["config"],
-                "model": None,
-                "plotting": entry["plotting"],
-                "source": entry["source"],
-            }
-            for entry in entries
-        ]
-        + [
-            capture_baseline_entry(
-                lambda: build_baseline_entry(smoke=smoke),
-                log_filename="baseline_opengoddard.log",
-            )
-        ],
+        run_root=RUN_ROOT,
+        baseline_entries=_baseline_entries(smoke=smoke),
     )
-    return collection_run
 
 
 def _run_representative_entries(*, smoke: bool | None = None) -> list[dict]:

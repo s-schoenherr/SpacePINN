@@ -27,25 +27,19 @@ from spacepinn.paper._baseline_defaults import (
     PAPER_BASELINE_MAX_ITERATION,
     paper_baseline_solver_kwargs,
 )
-from spacepinn.paper._aggregate_summary import persist_paper_monte_carlo_aggregate_summary
-from spacepinn.paper._baseline_summary import print_baseline_delta_v_summary
 from spacepinn.paper._mc_mode import (
     add_single_mc_arguments,
     label_with_seed,
-    plot_single_group_boxplots,
-    representative_entries,
     resolve_mode,
-    seed_sequence,
     single_group_key,
 )
 from spacepinn.paper._plot_style import MAIN_AXES_RECT, MAIN_FIGSIZE as PAPER_MAIN_FIGSIZE, configure_paper_plotter
+from spacepinn.paper._suite import ExperimentSuite, run_experiment_suite
 from spacepinn.opengoddard.circular_orbit_transfer_goddard_no_alpha import (
     kinematic_ot_goddard_free_final_angle_no_alpha,
 )
 from spacepinn.plotting.helpers import register_plot_artifact_if_possible
-from spacepinn.plotting.monte_carlo import print_monte_carlo_summary
 from spacepinn.plotter import TrajectoryPlotter
-from spacepinn.runner import print_collection_run_summary, run_experiment_collection
 
 RUN_ROOT = Path(spacepinn.__file__).resolve().parents[2] / "runs"
 COLLECTION_LABEL = "orbit_transfer_free_angle"
@@ -495,6 +489,23 @@ def _baseline_entry(
     )
 
 
+def _baseline_entries(
+    *,
+    target_orbit: str = "geo",
+    time_guess_scale: float | None = None,
+    tof_scale: float | None = None,
+    smoke: bool | None = None,
+) -> list[dict]:
+    return [
+        _baseline_entry(
+            target_orbit=target_orbit,
+            time_guess_scale=time_guess_scale,
+            tof_scale=tof_scale,
+            smoke=smoke,
+        )
+    ]
+
+
 def _plot_representative(entries: list[dict], *, output_dir: str, target_orbit: str) -> None:
     plotter = TrajectoryPlotter(
         entries,
@@ -509,81 +520,6 @@ def _plot_representative(entries: list[dict], *, output_dir: str, target_orbit: 
     plot_thrust_figure(entries, output_dir=output_dir)
     plot_gravity_figure(entries, output_dir=output_dir)
     plot_orbit_figure(entries, output_dir=output_dir, target_orbit=target_orbit)
-
-
-def run_single(
-    *,
-    representative_seed: int = REPRESENTATIVE_SEED,
-    target_orbit: str = "geo",
-    terminal_angle_pi: float | None = None,
-    time_guess_scale: float | None = None,
-    extra_turns: int | None = None,
-    tof_scale: float | None = None,
-    smoke: bool | None = None,
-) -> dict:
-    config = build_config(
-        target_orbit=target_orbit,
-        terminal_angle_pi=terminal_angle_pi,
-        time_guess_scale=time_guess_scale,
-        extra_turns=extra_turns,
-        tof_scale=tof_scale,
-        seed=representative_seed,
-        label_seed=False,
-        smoke=smoke,
-    )
-    return run_experiment_collection(
-        configs=[config],
-        additional_entries=[
-            _baseline_entry(
-                target_orbit=target_orbit,
-                time_guess_scale=time_guess_scale,
-                tof_scale=tof_scale,
-                smoke=smoke,
-            )
-        ],
-        label=COLLECTION_LABEL,
-        run_root=str(RUN_ROOT),
-    )
-
-
-def run_monte_carlo(
-    *,
-    seed_start: int = MC_SEED_START,
-    num_seeds: int = MC_NUM_SEEDS,
-    target_orbit: str = "geo",
-    terminal_angle_pi: float | None = None,
-    time_guess_scale: float | None = None,
-    extra_turns: int | None = None,
-    tof_scale: float | None = None,
-    smoke: bool | None = None,
-) -> dict:
-    seeds = seed_sequence(start=seed_start, count=num_seeds, smoke=smoke)
-    configs = [
-        build_config(
-            target_orbit=target_orbit,
-            terminal_angle_pi=terminal_angle_pi,
-            time_guess_scale=time_guess_scale,
-            extra_turns=extra_turns,
-            tof_scale=tof_scale,
-            seed=seed,
-            label_seed=True,
-            smoke=smoke,
-        )
-        for seed in seeds
-    ]
-    return run_experiment_collection(
-        configs=configs,
-        additional_entries=[
-            _baseline_entry(
-                target_orbit=target_orbit,
-                time_guess_scale=time_guess_scale,
-                tof_scale=tof_scale,
-                smoke=smoke,
-            )
-        ],
-        label=f"{COLLECTION_LABEL}_monte_carlo",
-        run_root=str(RUN_ROOT),
-    )
 
 
 def main(
@@ -601,65 +537,48 @@ def main(
     seed_start: int | None = None,
     num_seeds: int | None = None,
 ):
-    representative_seed = REPRESENTATIVE_SEED if representative_seed is None else int(representative_seed)
-    if mode == "mc":
-        collection_run = run_monte_carlo(
-            seed_start=MC_SEED_START if seed_start is None else int(seed_start),
-            num_seeds=MC_NUM_SEEDS if num_seeds is None else int(num_seeds),
+    suite = ExperimentSuite(
+        label=COLLECTION_LABEL,
+        run_root=RUN_ROOT,
+        representative_seed=REPRESENTATIVE_SEED,
+        mc_seed_start=MC_SEED_START,
+        mc_num_seeds=MC_NUM_SEEDS,
+        build_config=lambda seed, label_seed, smoke: build_config(
             target_orbit=target_orbit,
             terminal_angle_pi=terminal_angle_pi,
             time_guess_scale=time_guess_scale,
             extra_turns=extra_turns,
             tof_scale=tof_scale,
+            seed=seed,
+            label_seed=label_seed,
             smoke=smoke,
-        )
-        persist_paper_monte_carlo_aggregate_summary(
-            collection_run,
-            title=collection_run["label"],
-            baseline_labels=(BASELINE_LABEL,),
-            group_key=monte_carlo_group_key,
-        )
-    else:
-        collection_run = run_single(
-            representative_seed=representative_seed,
+        ),
+        build_baseline_entries=lambda smoke: _baseline_entries(
             target_orbit=target_orbit,
-            terminal_angle_pi=terminal_angle_pi,
             time_guess_scale=time_guess_scale,
-            extra_turns=extra_turns,
             tof_scale=tof_scale,
             smoke=smoke,
-        )
-
-    if print_summary:
-        print_collection_run_summary(collection_run)
-        if mode == "mc":
-            grouped = {PINN_LABEL: [entry for entry in collection_run["entries"] if entry.get("source") == "pinn"]}
-            print_monte_carlo_summary(grouped, title=collection_run["label"])
-        print_baseline_delta_v_summary(
-            collection_run["entries"],
-            title=collection_run["label"],
-            baseline_labels=(BASELINE_LABEL,),
-            group_key=monte_carlo_group_key if mode == "mc" else None,
-            include_variance=mode == "mc",
-        )
-
-    if not skip_plots:
-        plot_entries = representative_entries(
-            collection_run["entries"],
-            representative_seed=representative_seed,
-            base_label=PINN_LABEL,
-        )
-        _plot_representative(plot_entries, output_dir=collection_run["plot_output_dir"], target_orbit=target_orbit)
-        if mode == "mc":
-            plot_single_group_boxplots(
-                collection_run["entries"],
-                output_dir=collection_run["plot_output_dir"],
-                fig_prefix=FIG_PREFIX,
-                base_label=PINN_LABEL,
-                baseline_labels=(BASELINE_LABEL,),
-            )
-
-    return collection_run
+        ),
+        plot_representative=lambda entries, output_dir: _plot_representative(
+            entries,
+            output_dir=output_dir,
+            target_orbit=target_orbit,
+        ),
+        group_key=monte_carlo_group_key,
+        base_label=PINN_LABEL,
+        baseline_labels=(BASELINE_LABEL,),
+        fig_prefix=FIG_PREFIX,
+    )
+    return run_experiment_suite(
+        suite,
+        mode=mode,
+        skip_plots=skip_plots,
+        print_summary=print_summary,
+        smoke=smoke,
+        representative_seed=representative_seed,
+        seed_start=seed_start,
+        num_seeds=num_seeds,
+    )
 
 
 if __name__ == "__main__":

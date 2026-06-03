@@ -44,12 +44,12 @@ from spacepinn.paper._plot_style import (
     MAIN_FIGSIZE as PAPER_MAIN_FIGSIZE,
     configure_paper_plotter,
 )
+from spacepinn.paper._suite import run_entry_collection
 from spacepinn.plotting.paper_style import PAPER_STYLE
 from spacepinn.plotting.helpers import register_plot_artifact_if_possible, set_time_axis_labels
 from spacepinn.plotting.monte_carlo import print_monte_carlo_summary
 from spacepinn.plotter import TrajectoryPlotter
 from spacepinn.runner import execute_single_experiment, print_collection_run_summary
-from spacepinn.runner.context import RunCollectionContext
 
 RUN_ROOT = Path(spacepinn.__file__).resolve().parents[2] / "runs"
 COLLECTION_LABEL = "rendezvous_hold_point_eci"
@@ -688,36 +688,6 @@ def monte_carlo_group_key(entry: dict) -> str | None:
     return single_group_key(entry, base_label=PINN_LABEL)
 
 
-def _append_context_entry(
-    collection_context: RunCollectionContext,
-    collection_results: list[dict],
-    *,
-    entry: dict,
-    config: dict | None = None,
-    model=None,
-    source: str,
-) -> None:
-    collection_context.add_entry(
-        label=entry["label"],
-        result=entry["result"],
-        config=config if config is not None else entry.get("config"),
-        model=model if model is not None else entry.get("model"),
-        source=source,
-        log_text=entry.get("log_text"),
-        log_filename=entry.get("log_filename"),
-    )
-    collection_results.append(
-        {
-            "label": entry["label"],
-            "source": source,
-            "result": entry["result"],
-            **entry.get("plotting", {}),
-            "config": config if config is not None else entry.get("config"),
-            "model": model if model is not None else entry.get("model"),
-        }
-    )
-
-
 def _select_representative_result(entries: list[dict], *, representative_seed: int | None):
     if representative_seed is not None:
         suffix = f"seed={int(representative_seed)}"
@@ -766,84 +736,62 @@ def run_collection(
     ]
     scenario = configs[0]["scenario"]
 
+    collection_entries: list[dict] = []
+    for config in configs:
+        pinn_model, pinn_result = execute_single_experiment(config)
+        _sync_dynamic_terminal_reference(pinn_result, scenario=config["scenario"])
+        plotting = dict(config.get("plotting", {}))
+        collection_entries.append(
+            {
+                "label": config["label"],
+                "source": "pinn",
+                "result": pinn_result,
+                "config": config,
+                "model": pinn_model,
+                "plotting": plotting,
+                **plotting,
+            }
+        )
+
+    cold_entry = capture_baseline_entry(
+        lambda: build_baseline_entry(
+            label=BASELINE_LABEL,
+            t_final_seconds=t_final_seconds,
+            max_iteration=effective_baseline_max_iteration,
+            ftol=baseline_ftol,
+            slsqp_maxiter=baseline_slsqp_maxiter,
+        ),
+        log_filename="baseline_opengoddard.log",
+    )
+    _sync_dynamic_terminal_reference(cold_entry["result"], scenario=scenario)
+    collection_entries.append(cold_entry)
+
+    warm_start_result = _select_representative_result(
+        collection_entries,
+        representative_seed=None,
+    )
+    warm_entry = capture_baseline_entry(
+        lambda: build_baseline_entry(
+            label=WARMSTART_BASELINE_LABEL,
+            t_final_seconds=t_final_seconds,
+            warm_start_result=warm_start_result,
+            max_iteration=effective_baseline_max_iteration,
+            ftol=baseline_ftol,
+            slsqp_maxiter=baseline_slsqp_maxiter,
+        ),
+        log_filename="baseline_opengoddard_pinn_warmstart.log",
+    )
+    _sync_dynamic_terminal_reference(warm_entry["result"], scenario=scenario)
+    collection_entries.append(warm_entry)
+
     collection_label = f"{COLLECTION_LABEL}_monte_carlo" if mode == "mc" else COLLECTION_LABEL
-    collection_context = RunCollectionContext(label=collection_label, run_root=str(RUN_ROOT))
-    collection_context.start()
-    collection_results: list[dict] = []
-
-    try:
-        for config in configs:
-            pinn_model, pinn_result = execute_single_experiment(config)
-            _sync_dynamic_terminal_reference(pinn_result, scenario=config["scenario"])
-            _append_context_entry(
-                collection_context,
-                collection_results,
-                entry={
-                    "label": config["label"],
-                    "result": pinn_result,
-                    "plotting": config.get("plotting", {}),
-                },
-                config=config,
-                model=pinn_model,
-                source="pinn",
-            )
-
-        cold_entry = capture_baseline_entry(
-            lambda: build_baseline_entry(
-                label=BASELINE_LABEL,
-                t_final_seconds=t_final_seconds,
-                max_iteration=effective_baseline_max_iteration,
-                ftol=baseline_ftol,
-                slsqp_maxiter=baseline_slsqp_maxiter,
-            ),
-            log_filename="baseline_opengoddard.log",
-        )
-        _sync_dynamic_terminal_reference(cold_entry["result"], scenario=scenario)
-        _append_context_entry(
-            collection_context,
-            collection_results,
-            entry=cold_entry,
-            source="opengoddard",
-        )
-
-        warm_start_result = _select_representative_result(
-            collection_results,
-            representative_seed=None,
-        )
-        warm_entry = capture_baseline_entry(
-            lambda: build_baseline_entry(
-                label=WARMSTART_BASELINE_LABEL,
-                t_final_seconds=t_final_seconds,
-                warm_start_result=warm_start_result,
-                max_iteration=effective_baseline_max_iteration,
-                ftol=baseline_ftol,
-                slsqp_maxiter=baseline_slsqp_maxiter,
-            ),
-            log_filename="baseline_opengoddard_pinn_warmstart.log",
-        )
-        _sync_dynamic_terminal_reference(warm_entry["result"], scenario=scenario)
-        _append_context_entry(
-            collection_context,
-            collection_results,
-            entry=warm_entry,
-            source="opengoddard",
-        )
-
-        collection_context.finalize_success()
-        return {
-            "label": collection_label,
-            "entries": collection_results,
-            "run_id": collection_context.run_id,
-            "run_dir": str(collection_context.run_dir),
-            "plot_output_dir": str(collection_context.plot_dir),
-            "summary_path": str(collection_context.summary_path),
-            "manifest_path": str(collection_context.manifest_path),
-            "config_path": str(collection_context.config_path),
-            "scenario": scenario,
-        }
-    except Exception as error:
-        collection_context.finalize_failure(error)
-        raise
+    collection_run = run_entry_collection(
+        entries=collection_entries,
+        label=collection_label,
+        run_root=RUN_ROOT,
+    )
+    collection_run["scenario"] = scenario
+    return collection_run
 
 
 def main(
