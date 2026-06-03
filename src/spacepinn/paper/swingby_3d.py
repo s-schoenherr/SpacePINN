@@ -34,9 +34,6 @@ from spacepinn.paper.plots.swingby_3d import (
 )
 from spacepinn.paper.runtime import smoke_mode_enabled
 from spacepinn.paper.suite import run_entry_collection
-from spacepinn.pretraining.kinematic_to_geometric_pretraining_3d import (
-    PLANE_VELOCITY,
-)
 from spacepinn.plotting.monte_carlo import print_monte_carlo_summary
 from spacepinn.plotting.style import PALETTE
 from spacepinn.runner import load_run, print_collection_run_summary
@@ -68,6 +65,7 @@ COLORS = {
     PRETRAINED_LABEL: PALETTE["kinematic"],
 }
 ORDINARY_LAMBDA_BC = 0.42133217438472903
+PLANE_VELOCITY = torch.tensor([[1.0, 1.0, 0.0]])
 
 
 def _parse_args() -> argparse.Namespace:
