@@ -91,7 +91,7 @@ def _resolve_initial_guess_parameters(
 
 
 def _resolve_baseline_time_guess(*, transfer_bc: OrbitalTransferBC, time_guess_scale: float) -> float:
-    return float(transfer_bc.T_hohnmann * time_guess_scale)
+    return float(transfer_bc.T_hohmann * time_guess_scale)
 
 
 def kinematic_polar_free_final_angle_fn(t, x, x0, rho_N, vt_0, vt_N, model):
@@ -137,7 +137,7 @@ def build_config(
     config = deepcopy(circular_ot_kinematic_polar_config)
 
     alpha_N_initial = float(np.pi * terminal_angle_pi)
-    t_total_initial = float(transfer_bc.T_hohnmann * time_guess_scale)
+    t_total_initial = float(transfer_bc.T_hohmann * time_guess_scale)
 
     if seed is not None:
         config["seed"] = int(seed)

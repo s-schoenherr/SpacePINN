@@ -37,19 +37,19 @@
     "source_plots": "source_plots",
     "source_run_config": "source_run_config.json"
   },
-  "record_id": "low_thrust_transfer_monte_carlo",
+  "record_id": "orbit_transfer_free_angle",
   "source_logs": [],
   "source_plots": [
-    "source_plots/low_thrust_transfer_gravity.pdf",
-    "source_plots/low_thrust_transfer_monte_carlo_boxplots.pdf",
-    "source_plots/low_thrust_transfer_monte_carlo_loss.pdf",
-    "source_plots/low_thrust_transfer_orbit_traj.pdf",
-    "source_plots/low_thrust_transfer_thrust.pdf"
+    "source_plots/orbit_transfer_free_angle_gravity.pdf",
+    "source_plots/orbit_transfer_free_angle_monte_carlo_boxplots.pdf",
+    "source_plots/orbit_transfer_free_angle_monte_carlo_loss.pdf",
+    "source_plots/orbit_transfer_free_angle_orbit_traj.pdf",
+    "source_plots/orbit_transfer_free_angle_thrust.pdf"
   ],
   "source_run": {
-    "label": "low_thrust_transfer_monte_carlo",
+    "label": "orbit_transfer_free_angle_monte_carlo",
     "num_entries": 101,
-    "run_dir": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo",
-    "run_id": "20260414_181609_low_thrust_transfer_monte_carlo"
+    "run_dir": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo",
+    "run_id": "20260414_181609_orbit_transfer_free_angle_monte_carlo"
   }
 }

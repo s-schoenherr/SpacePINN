@@ -30,7 +30,7 @@
       }
     ]
   },
-  "label": "hohnmann_transfer_monte_carlo",
+  "label": "orbit_transfer_fixed_angle_monte_carlo",
   "monte_carlo_summary": {
     "groups": [
       {
@@ -67,7 +67,7 @@
     ]
   },
   "num_entries": 101,
-  "run_dir": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260413_181745_hohnmann_transfer_monte_carlo",
-  "run_id": "20260413_181745_hohnmann_transfer_monte_carlo",
-  "title": "hohnmann_transfer_monte_carlo"
+  "run_dir": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260413_181745_orbit_transfer_fixed_angle_monte_carlo",
+  "run_id": "20260413_181745_orbit_transfer_fixed_angle_monte_carlo",
+  "title": "orbit_transfer_fixed_angle_monte_carlo"
 }

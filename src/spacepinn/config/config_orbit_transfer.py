@@ -66,11 +66,11 @@ class OrbitalTransferBC:
         else:
             raise ValueError(f"Unsupported coordinate system: {coordinate_system!r}")
 
-        self.T_hohnmann = self.hohnmann_transfer_time(orbit_from.R, orbit_to.R)
+        self.T_hohmann = self.hohmann_transfer_time(orbit_from.R, orbit_to.R)
         self.T_from = self.orbit_loop_time(orbit_from.R)
         self.T_to = self.orbit_loop_time(orbit_to.R)
 
-    def hohnmann_transfer_time(self, r0, rN):
+    def hohmann_transfer_time(self, r0, rN):
         return np.pi * np.sqrt((r0 + rN) ** 3 / (8 * GM_EARTH))
 
     def orbit_loop_time(self, r):
@@ -82,7 +82,7 @@ leo_heo = OrbitalTransferBC(Orbit.LEO, Orbit.HEO)
 circular_ot_kinematic_polar_config = {
     "label": "Kinematic tPINN",
     "seed": 2809,
-    "extra_parameters": {"t_total": torch.nn.Parameter(torch.tensor(leo_heo.T_hohnmann))},
+    "extra_parameters": {"t_total": torch.nn.Parameter(torch.tensor(leo_heo.T_hohmann))},
     "pinn": {
         "N_INPUT": 1,
         "N_OUTPUT": 2,
@@ -102,7 +102,7 @@ circular_ot_kinematic_polar_config = {
         "coordinate_system": "polar",
         "ao_rgm": [[0, 0, GM_EARTH]],
         "t_colloc": torch.linspace(0, 1, 100).view(-1, 1).requires_grad_(True),
-        "t_total": torch.tensor(leo_heo.T_hohnmann).float(),
+        "t_total": torch.tensor(leo_heo.T_hohmann).float(),
         "r0": leo_heo.x0,
         "rN": leo_heo.xN,
         "opt_adam": partial(torch.optim.Adam, lr=1e-3),

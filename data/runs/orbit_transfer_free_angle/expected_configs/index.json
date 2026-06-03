@@ -5,7 +5,7 @@
       "expected_config_json": "expected_configs/00_pinn-with-exact-bc---seed-5000.json",
       "label": "PINN with exact BC | seed=5000",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/00_pinn-with-exact-bc---seed-5000.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/00_pinn-with-exact-bc---seed-5000.json",
       "source_log_file": null
     },
     {
@@ -13,7 +13,7 @@
       "expected_config_json": "expected_configs/01_pinn-with-exact-bc---seed-5001.json",
       "label": "PINN with exact BC | seed=5001",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/01_pinn-with-exact-bc---seed-5001.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/01_pinn-with-exact-bc---seed-5001.json",
       "source_log_file": null
     },
     {
@@ -21,7 +21,7 @@
       "expected_config_json": "expected_configs/02_pinn-with-exact-bc---seed-5002.json",
       "label": "PINN with exact BC | seed=5002",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/02_pinn-with-exact-bc---seed-5002.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/02_pinn-with-exact-bc---seed-5002.json",
       "source_log_file": null
     },
     {
@@ -29,7 +29,7 @@
       "expected_config_json": "expected_configs/03_pinn-with-exact-bc---seed-5003.json",
       "label": "PINN with exact BC | seed=5003",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/03_pinn-with-exact-bc---seed-5003.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/03_pinn-with-exact-bc---seed-5003.json",
       "source_log_file": null
     },
     {
@@ -37,7 +37,7 @@
       "expected_config_json": "expected_configs/04_pinn-with-exact-bc---seed-5004.json",
       "label": "PINN with exact BC | seed=5004",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/04_pinn-with-exact-bc---seed-5004.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/04_pinn-with-exact-bc---seed-5004.json",
       "source_log_file": null
     },
     {
@@ -45,7 +45,7 @@
       "expected_config_json": "expected_configs/05_pinn-with-exact-bc---seed-5005.json",
       "label": "PINN with exact BC | seed=5005",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/05_pinn-with-exact-bc---seed-5005.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/05_pinn-with-exact-bc---seed-5005.json",
       "source_log_file": null
     },
     {
@@ -53,7 +53,7 @@
       "expected_config_json": "expected_configs/06_pinn-with-exact-bc---seed-5006.json",
       "label": "PINN with exact BC | seed=5006",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/06_pinn-with-exact-bc---seed-5006.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/06_pinn-with-exact-bc---seed-5006.json",
       "source_log_file": null
     },
     {
@@ -61,7 +61,7 @@
       "expected_config_json": "expected_configs/07_pinn-with-exact-bc---seed-5007.json",
       "label": "PINN with exact BC | seed=5007",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/07_pinn-with-exact-bc---seed-5007.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/07_pinn-with-exact-bc---seed-5007.json",
       "source_log_file": null
     },
     {
@@ -69,7 +69,7 @@
       "expected_config_json": "expected_configs/08_pinn-with-exact-bc---seed-5008.json",
       "label": "PINN with exact BC | seed=5008",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/08_pinn-with-exact-bc---seed-5008.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/08_pinn-with-exact-bc---seed-5008.json",
       "source_log_file": null
     },
     {
@@ -77,7 +77,7 @@
       "expected_config_json": "expected_configs/09_pinn-with-exact-bc---seed-5009.json",
       "label": "PINN with exact BC | seed=5009",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/09_pinn-with-exact-bc---seed-5009.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/09_pinn-with-exact-bc---seed-5009.json",
       "source_log_file": null
     },
     {
@@ -85,7 +85,7 @@
       "expected_config_json": "expected_configs/10_pinn-with-exact-bc---seed-5010.json",
       "label": "PINN with exact BC | seed=5010",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/10_pinn-with-exact-bc---seed-5010.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/10_pinn-with-exact-bc---seed-5010.json",
       "source_log_file": null
     },
     {
@@ -93,7 +93,7 @@
       "expected_config_json": "expected_configs/11_pinn-with-exact-bc---seed-5011.json",
       "label": "PINN with exact BC | seed=5011",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/11_pinn-with-exact-bc---seed-5011.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/11_pinn-with-exact-bc---seed-5011.json",
       "source_log_file": null
     },
     {
@@ -101,7 +101,7 @@
       "expected_config_json": "expected_configs/12_pinn-with-exact-bc---seed-5012.json",
       "label": "PINN with exact BC | seed=5012",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/12_pinn-with-exact-bc---seed-5012.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/12_pinn-with-exact-bc---seed-5012.json",
       "source_log_file": null
     },
     {
@@ -109,7 +109,7 @@
       "expected_config_json": "expected_configs/13_pinn-with-exact-bc---seed-5013.json",
       "label": "PINN with exact BC | seed=5013",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/13_pinn-with-exact-bc---seed-5013.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/13_pinn-with-exact-bc---seed-5013.json",
       "source_log_file": null
     },
     {
@@ -117,7 +117,7 @@
       "expected_config_json": "expected_configs/14_pinn-with-exact-bc---seed-5014.json",
       "label": "PINN with exact BC | seed=5014",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/14_pinn-with-exact-bc---seed-5014.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/14_pinn-with-exact-bc---seed-5014.json",
       "source_log_file": null
     },
     {
@@ -125,7 +125,7 @@
       "expected_config_json": "expected_configs/15_pinn-with-exact-bc---seed-5015.json",
       "label": "PINN with exact BC | seed=5015",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/15_pinn-with-exact-bc---seed-5015.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/15_pinn-with-exact-bc---seed-5015.json",
       "source_log_file": null
     },
     {
@@ -133,7 +133,7 @@
       "expected_config_json": "expected_configs/16_pinn-with-exact-bc---seed-5016.json",
       "label": "PINN with exact BC | seed=5016",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/16_pinn-with-exact-bc---seed-5016.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/16_pinn-with-exact-bc---seed-5016.json",
       "source_log_file": null
     },
     {
@@ -141,7 +141,7 @@
       "expected_config_json": "expected_configs/17_pinn-with-exact-bc---seed-5017.json",
       "label": "PINN with exact BC | seed=5017",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/17_pinn-with-exact-bc---seed-5017.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/17_pinn-with-exact-bc---seed-5017.json",
       "source_log_file": null
     },
     {
@@ -149,7 +149,7 @@
       "expected_config_json": "expected_configs/18_pinn-with-exact-bc---seed-5018.json",
       "label": "PINN with exact BC | seed=5018",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/18_pinn-with-exact-bc---seed-5018.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/18_pinn-with-exact-bc---seed-5018.json",
       "source_log_file": null
     },
     {
@@ -157,7 +157,7 @@
       "expected_config_json": "expected_configs/19_pinn-with-exact-bc---seed-5019.json",
       "label": "PINN with exact BC | seed=5019",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/19_pinn-with-exact-bc---seed-5019.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/19_pinn-with-exact-bc---seed-5019.json",
       "source_log_file": null
     },
     {
@@ -165,7 +165,7 @@
       "expected_config_json": "expected_configs/20_pinn-with-exact-bc---seed-5020.json",
       "label": "PINN with exact BC | seed=5020",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/20_pinn-with-exact-bc---seed-5020.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/20_pinn-with-exact-bc---seed-5020.json",
       "source_log_file": null
     },
     {
@@ -173,7 +173,7 @@
       "expected_config_json": "expected_configs/21_pinn-with-exact-bc---seed-5021.json",
       "label": "PINN with exact BC | seed=5021",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/21_pinn-with-exact-bc---seed-5021.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/21_pinn-with-exact-bc---seed-5021.json",
       "source_log_file": null
     },
     {
@@ -181,7 +181,7 @@
       "expected_config_json": "expected_configs/22_pinn-with-exact-bc---seed-5022.json",
       "label": "PINN with exact BC | seed=5022",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/22_pinn-with-exact-bc---seed-5022.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/22_pinn-with-exact-bc---seed-5022.json",
       "source_log_file": null
     },
     {
@@ -189,7 +189,7 @@
       "expected_config_json": "expected_configs/23_pinn-with-exact-bc---seed-5023.json",
       "label": "PINN with exact BC | seed=5023",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/23_pinn-with-exact-bc---seed-5023.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/23_pinn-with-exact-bc---seed-5023.json",
       "source_log_file": null
     },
     {
@@ -197,7 +197,7 @@
       "expected_config_json": "expected_configs/24_pinn-with-exact-bc---seed-5024.json",
       "label": "PINN with exact BC | seed=5024",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/24_pinn-with-exact-bc---seed-5024.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/24_pinn-with-exact-bc---seed-5024.json",
       "source_log_file": null
     },
     {
@@ -205,7 +205,7 @@
       "expected_config_json": "expected_configs/25_pinn-with-exact-bc---seed-5025.json",
       "label": "PINN with exact BC | seed=5025",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/25_pinn-with-exact-bc---seed-5025.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/25_pinn-with-exact-bc---seed-5025.json",
       "source_log_file": null
     },
     {
@@ -213,7 +213,7 @@
       "expected_config_json": "expected_configs/26_pinn-with-exact-bc---seed-5026.json",
       "label": "PINN with exact BC | seed=5026",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/26_pinn-with-exact-bc---seed-5026.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/26_pinn-with-exact-bc---seed-5026.json",
       "source_log_file": null
     },
     {
@@ -221,7 +221,7 @@
       "expected_config_json": "expected_configs/27_pinn-with-exact-bc---seed-5027.json",
       "label": "PINN with exact BC | seed=5027",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/27_pinn-with-exact-bc---seed-5027.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/27_pinn-with-exact-bc---seed-5027.json",
       "source_log_file": null
     },
     {
@@ -229,7 +229,7 @@
       "expected_config_json": "expected_configs/28_pinn-with-exact-bc---seed-5028.json",
       "label": "PINN with exact BC | seed=5028",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/28_pinn-with-exact-bc---seed-5028.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/28_pinn-with-exact-bc---seed-5028.json",
       "source_log_file": null
     },
     {
@@ -237,7 +237,7 @@
       "expected_config_json": "expected_configs/29_pinn-with-exact-bc---seed-5029.json",
       "label": "PINN with exact BC | seed=5029",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/29_pinn-with-exact-bc---seed-5029.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/29_pinn-with-exact-bc---seed-5029.json",
       "source_log_file": null
     },
     {
@@ -245,7 +245,7 @@
       "expected_config_json": "expected_configs/30_pinn-with-exact-bc---seed-5030.json",
       "label": "PINN with exact BC | seed=5030",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/30_pinn-with-exact-bc---seed-5030.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/30_pinn-with-exact-bc---seed-5030.json",
       "source_log_file": null
     },
     {
@@ -253,7 +253,7 @@
       "expected_config_json": "expected_configs/31_pinn-with-exact-bc---seed-5031.json",
       "label": "PINN with exact BC | seed=5031",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/31_pinn-with-exact-bc---seed-5031.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/31_pinn-with-exact-bc---seed-5031.json",
       "source_log_file": null
     },
     {
@@ -261,7 +261,7 @@
       "expected_config_json": "expected_configs/32_pinn-with-exact-bc---seed-5032.json",
       "label": "PINN with exact BC | seed=5032",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/32_pinn-with-exact-bc---seed-5032.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/32_pinn-with-exact-bc---seed-5032.json",
       "source_log_file": null
     },
     {
@@ -269,7 +269,7 @@
       "expected_config_json": "expected_configs/33_pinn-with-exact-bc---seed-5033.json",
       "label": "PINN with exact BC | seed=5033",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/33_pinn-with-exact-bc---seed-5033.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/33_pinn-with-exact-bc---seed-5033.json",
       "source_log_file": null
     },
     {
@@ -277,7 +277,7 @@
       "expected_config_json": "expected_configs/34_pinn-with-exact-bc---seed-5034.json",
       "label": "PINN with exact BC | seed=5034",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/34_pinn-with-exact-bc---seed-5034.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/34_pinn-with-exact-bc---seed-5034.json",
       "source_log_file": null
     },
     {
@@ -285,7 +285,7 @@
       "expected_config_json": "expected_configs/35_pinn-with-exact-bc---seed-5035.json",
       "label": "PINN with exact BC | seed=5035",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/35_pinn-with-exact-bc---seed-5035.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/35_pinn-with-exact-bc---seed-5035.json",
       "source_log_file": null
     },
     {
@@ -293,7 +293,7 @@
       "expected_config_json": "expected_configs/36_pinn-with-exact-bc---seed-5036.json",
       "label": "PINN with exact BC | seed=5036",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/36_pinn-with-exact-bc---seed-5036.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/36_pinn-with-exact-bc---seed-5036.json",
       "source_log_file": null
     },
     {
@@ -301,7 +301,7 @@
       "expected_config_json": "expected_configs/37_pinn-with-exact-bc---seed-5037.json",
       "label": "PINN with exact BC | seed=5037",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/37_pinn-with-exact-bc---seed-5037.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/37_pinn-with-exact-bc---seed-5037.json",
       "source_log_file": null
     },
     {
@@ -309,7 +309,7 @@
       "expected_config_json": "expected_configs/38_pinn-with-exact-bc---seed-5038.json",
       "label": "PINN with exact BC | seed=5038",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/38_pinn-with-exact-bc---seed-5038.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/38_pinn-with-exact-bc---seed-5038.json",
       "source_log_file": null
     },
     {
@@ -317,7 +317,7 @@
       "expected_config_json": "expected_configs/39_pinn-with-exact-bc---seed-5039.json",
       "label": "PINN with exact BC | seed=5039",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/39_pinn-with-exact-bc---seed-5039.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/39_pinn-with-exact-bc---seed-5039.json",
       "source_log_file": null
     },
     {
@@ -325,7 +325,7 @@
       "expected_config_json": "expected_configs/40_pinn-with-exact-bc---seed-5040.json",
       "label": "PINN with exact BC | seed=5040",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/40_pinn-with-exact-bc---seed-5040.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/40_pinn-with-exact-bc---seed-5040.json",
       "source_log_file": null
     },
     {
@@ -333,7 +333,7 @@
       "expected_config_json": "expected_configs/41_pinn-with-exact-bc---seed-5041.json",
       "label": "PINN with exact BC | seed=5041",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/41_pinn-with-exact-bc---seed-5041.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/41_pinn-with-exact-bc---seed-5041.json",
       "source_log_file": null
     },
     {
@@ -341,7 +341,7 @@
       "expected_config_json": "expected_configs/42_pinn-with-exact-bc---seed-5042.json",
       "label": "PINN with exact BC | seed=5042",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/42_pinn-with-exact-bc---seed-5042.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/42_pinn-with-exact-bc---seed-5042.json",
       "source_log_file": null
     },
     {
@@ -349,7 +349,7 @@
       "expected_config_json": "expected_configs/43_pinn-with-exact-bc---seed-5043.json",
       "label": "PINN with exact BC | seed=5043",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/43_pinn-with-exact-bc---seed-5043.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/43_pinn-with-exact-bc---seed-5043.json",
       "source_log_file": null
     },
     {
@@ -357,7 +357,7 @@
       "expected_config_json": "expected_configs/44_pinn-with-exact-bc---seed-5044.json",
       "label": "PINN with exact BC | seed=5044",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/44_pinn-with-exact-bc---seed-5044.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/44_pinn-with-exact-bc---seed-5044.json",
       "source_log_file": null
     },
     {
@@ -365,7 +365,7 @@
       "expected_config_json": "expected_configs/45_pinn-with-exact-bc---seed-5045.json",
       "label": "PINN with exact BC | seed=5045",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/45_pinn-with-exact-bc---seed-5045.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/45_pinn-with-exact-bc---seed-5045.json",
       "source_log_file": null
     },
     {
@@ -373,7 +373,7 @@
       "expected_config_json": "expected_configs/46_pinn-with-exact-bc---seed-5046.json",
       "label": "PINN with exact BC | seed=5046",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/46_pinn-with-exact-bc---seed-5046.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/46_pinn-with-exact-bc---seed-5046.json",
       "source_log_file": null
     },
     {
@@ -381,7 +381,7 @@
       "expected_config_json": "expected_configs/47_pinn-with-exact-bc---seed-5047.json",
       "label": "PINN with exact BC | seed=5047",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/47_pinn-with-exact-bc---seed-5047.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/47_pinn-with-exact-bc---seed-5047.json",
       "source_log_file": null
     },
     {
@@ -389,7 +389,7 @@
       "expected_config_json": "expected_configs/48_pinn-with-exact-bc---seed-5048.json",
       "label": "PINN with exact BC | seed=5048",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/48_pinn-with-exact-bc---seed-5048.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/48_pinn-with-exact-bc---seed-5048.json",
       "source_log_file": null
     },
     {
@@ -397,7 +397,7 @@
       "expected_config_json": "expected_configs/49_pinn-with-exact-bc---seed-5049.json",
       "label": "PINN with exact BC | seed=5049",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/49_pinn-with-exact-bc---seed-5049.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/49_pinn-with-exact-bc---seed-5049.json",
       "source_log_file": null
     },
     {
@@ -405,7 +405,7 @@
       "expected_config_json": "expected_configs/50_pinn-with-exact-bc---seed-5050.json",
       "label": "PINN with exact BC | seed=5050",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/50_pinn-with-exact-bc---seed-5050.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/50_pinn-with-exact-bc---seed-5050.json",
       "source_log_file": null
     },
     {
@@ -413,7 +413,7 @@
       "expected_config_json": "expected_configs/51_pinn-with-exact-bc---seed-5051.json",
       "label": "PINN with exact BC | seed=5051",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/51_pinn-with-exact-bc---seed-5051.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/51_pinn-with-exact-bc---seed-5051.json",
       "source_log_file": null
     },
     {
@@ -421,7 +421,7 @@
       "expected_config_json": "expected_configs/52_pinn-with-exact-bc---seed-5052.json",
       "label": "PINN with exact BC | seed=5052",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/52_pinn-with-exact-bc---seed-5052.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/52_pinn-with-exact-bc---seed-5052.json",
       "source_log_file": null
     },
     {
@@ -429,7 +429,7 @@
       "expected_config_json": "expected_configs/53_pinn-with-exact-bc---seed-5053.json",
       "label": "PINN with exact BC | seed=5053",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/53_pinn-with-exact-bc---seed-5053.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/53_pinn-with-exact-bc---seed-5053.json",
       "source_log_file": null
     },
     {
@@ -437,7 +437,7 @@
       "expected_config_json": "expected_configs/54_pinn-with-exact-bc---seed-5054.json",
       "label": "PINN with exact BC | seed=5054",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/54_pinn-with-exact-bc---seed-5054.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/54_pinn-with-exact-bc---seed-5054.json",
       "source_log_file": null
     },
     {
@@ -445,7 +445,7 @@
       "expected_config_json": "expected_configs/55_pinn-with-exact-bc---seed-5055.json",
       "label": "PINN with exact BC | seed=5055",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/55_pinn-with-exact-bc---seed-5055.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/55_pinn-with-exact-bc---seed-5055.json",
       "source_log_file": null
     },
     {
@@ -453,7 +453,7 @@
       "expected_config_json": "expected_configs/56_pinn-with-exact-bc---seed-5056.json",
       "label": "PINN with exact BC | seed=5056",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/56_pinn-with-exact-bc---seed-5056.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/56_pinn-with-exact-bc---seed-5056.json",
       "source_log_file": null
     },
     {
@@ -461,7 +461,7 @@
       "expected_config_json": "expected_configs/57_pinn-with-exact-bc---seed-5057.json",
       "label": "PINN with exact BC | seed=5057",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/57_pinn-with-exact-bc---seed-5057.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/57_pinn-with-exact-bc---seed-5057.json",
       "source_log_file": null
     },
     {
@@ -469,7 +469,7 @@
       "expected_config_json": "expected_configs/58_pinn-with-exact-bc---seed-5058.json",
       "label": "PINN with exact BC | seed=5058",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/58_pinn-with-exact-bc---seed-5058.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/58_pinn-with-exact-bc---seed-5058.json",
       "source_log_file": null
     },
     {
@@ -477,7 +477,7 @@
       "expected_config_json": "expected_configs/59_pinn-with-exact-bc---seed-5059.json",
       "label": "PINN with exact BC | seed=5059",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/59_pinn-with-exact-bc---seed-5059.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/59_pinn-with-exact-bc---seed-5059.json",
       "source_log_file": null
     },
     {
@@ -485,7 +485,7 @@
       "expected_config_json": "expected_configs/60_pinn-with-exact-bc---seed-5060.json",
       "label": "PINN with exact BC | seed=5060",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/60_pinn-with-exact-bc---seed-5060.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/60_pinn-with-exact-bc---seed-5060.json",
       "source_log_file": null
     },
     {
@@ -493,7 +493,7 @@
       "expected_config_json": "expected_configs/61_pinn-with-exact-bc---seed-5061.json",
       "label": "PINN with exact BC | seed=5061",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/61_pinn-with-exact-bc---seed-5061.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/61_pinn-with-exact-bc---seed-5061.json",
       "source_log_file": null
     },
     {
@@ -501,7 +501,7 @@
       "expected_config_json": "expected_configs/62_pinn-with-exact-bc---seed-5062.json",
       "label": "PINN with exact BC | seed=5062",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/62_pinn-with-exact-bc---seed-5062.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/62_pinn-with-exact-bc---seed-5062.json",
       "source_log_file": null
     },
     {
@@ -509,7 +509,7 @@
       "expected_config_json": "expected_configs/63_pinn-with-exact-bc---seed-5063.json",
       "label": "PINN with exact BC | seed=5063",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/63_pinn-with-exact-bc---seed-5063.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/63_pinn-with-exact-bc---seed-5063.json",
       "source_log_file": null
     },
     {
@@ -517,7 +517,7 @@
       "expected_config_json": "expected_configs/64_pinn-with-exact-bc---seed-5064.json",
       "label": "PINN with exact BC | seed=5064",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/64_pinn-with-exact-bc---seed-5064.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/64_pinn-with-exact-bc---seed-5064.json",
       "source_log_file": null
     },
     {
@@ -525,7 +525,7 @@
       "expected_config_json": "expected_configs/65_pinn-with-exact-bc---seed-5065.json",
       "label": "PINN with exact BC | seed=5065",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/65_pinn-with-exact-bc---seed-5065.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/65_pinn-with-exact-bc---seed-5065.json",
       "source_log_file": null
     },
     {
@@ -533,7 +533,7 @@
       "expected_config_json": "expected_configs/66_pinn-with-exact-bc---seed-5066.json",
       "label": "PINN with exact BC | seed=5066",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/66_pinn-with-exact-bc---seed-5066.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/66_pinn-with-exact-bc---seed-5066.json",
       "source_log_file": null
     },
     {
@@ -541,7 +541,7 @@
       "expected_config_json": "expected_configs/67_pinn-with-exact-bc---seed-5067.json",
       "label": "PINN with exact BC | seed=5067",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/67_pinn-with-exact-bc---seed-5067.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/67_pinn-with-exact-bc---seed-5067.json",
       "source_log_file": null
     },
     {
@@ -549,7 +549,7 @@
       "expected_config_json": "expected_configs/68_pinn-with-exact-bc---seed-5068.json",
       "label": "PINN with exact BC | seed=5068",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/68_pinn-with-exact-bc---seed-5068.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/68_pinn-with-exact-bc---seed-5068.json",
       "source_log_file": null
     },
     {
@@ -557,7 +557,7 @@
       "expected_config_json": "expected_configs/69_pinn-with-exact-bc---seed-5069.json",
       "label": "PINN with exact BC | seed=5069",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/69_pinn-with-exact-bc---seed-5069.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/69_pinn-with-exact-bc---seed-5069.json",
       "source_log_file": null
     },
     {
@@ -565,7 +565,7 @@
       "expected_config_json": "expected_configs/70_pinn-with-exact-bc---seed-5070.json",
       "label": "PINN with exact BC | seed=5070",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/70_pinn-with-exact-bc---seed-5070.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/70_pinn-with-exact-bc---seed-5070.json",
       "source_log_file": null
     },
     {
@@ -573,7 +573,7 @@
       "expected_config_json": "expected_configs/71_pinn-with-exact-bc---seed-5071.json",
       "label": "PINN with exact BC | seed=5071",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/71_pinn-with-exact-bc---seed-5071.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/71_pinn-with-exact-bc---seed-5071.json",
       "source_log_file": null
     },
     {
@@ -581,7 +581,7 @@
       "expected_config_json": "expected_configs/72_pinn-with-exact-bc---seed-5072.json",
       "label": "PINN with exact BC | seed=5072",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/72_pinn-with-exact-bc---seed-5072.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/72_pinn-with-exact-bc---seed-5072.json",
       "source_log_file": null
     },
     {
@@ -589,7 +589,7 @@
       "expected_config_json": "expected_configs/73_pinn-with-exact-bc---seed-5073.json",
       "label": "PINN with exact BC | seed=5073",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/73_pinn-with-exact-bc---seed-5073.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/73_pinn-with-exact-bc---seed-5073.json",
       "source_log_file": null
     },
     {
@@ -597,7 +597,7 @@
       "expected_config_json": "expected_configs/74_pinn-with-exact-bc---seed-5074.json",
       "label": "PINN with exact BC | seed=5074",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/74_pinn-with-exact-bc---seed-5074.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/74_pinn-with-exact-bc---seed-5074.json",
       "source_log_file": null
     },
     {
@@ -605,7 +605,7 @@
       "expected_config_json": "expected_configs/75_pinn-with-exact-bc---seed-5075.json",
       "label": "PINN with exact BC | seed=5075",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/75_pinn-with-exact-bc---seed-5075.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/75_pinn-with-exact-bc---seed-5075.json",
       "source_log_file": null
     },
     {
@@ -613,7 +613,7 @@
       "expected_config_json": "expected_configs/76_pinn-with-exact-bc---seed-5076.json",
       "label": "PINN with exact BC | seed=5076",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/76_pinn-with-exact-bc---seed-5076.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/76_pinn-with-exact-bc---seed-5076.json",
       "source_log_file": null
     },
     {
@@ -621,7 +621,7 @@
       "expected_config_json": "expected_configs/77_pinn-with-exact-bc---seed-5077.json",
       "label": "PINN with exact BC | seed=5077",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/77_pinn-with-exact-bc---seed-5077.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/77_pinn-with-exact-bc---seed-5077.json",
       "source_log_file": null
     },
     {
@@ -629,7 +629,7 @@
       "expected_config_json": "expected_configs/78_pinn-with-exact-bc---seed-5078.json",
       "label": "PINN with exact BC | seed=5078",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/78_pinn-with-exact-bc---seed-5078.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/78_pinn-with-exact-bc---seed-5078.json",
       "source_log_file": null
     },
     {
@@ -637,7 +637,7 @@
       "expected_config_json": "expected_configs/79_pinn-with-exact-bc---seed-5079.json",
       "label": "PINN with exact BC | seed=5079",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/79_pinn-with-exact-bc---seed-5079.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/79_pinn-with-exact-bc---seed-5079.json",
       "source_log_file": null
     },
     {
@@ -645,7 +645,7 @@
       "expected_config_json": "expected_configs/80_pinn-with-exact-bc---seed-5080.json",
       "label": "PINN with exact BC | seed=5080",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/80_pinn-with-exact-bc---seed-5080.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/80_pinn-with-exact-bc---seed-5080.json",
       "source_log_file": null
     },
     {
@@ -653,7 +653,7 @@
       "expected_config_json": "expected_configs/81_pinn-with-exact-bc---seed-5081.json",
       "label": "PINN with exact BC | seed=5081",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/81_pinn-with-exact-bc---seed-5081.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/81_pinn-with-exact-bc---seed-5081.json",
       "source_log_file": null
     },
     {
@@ -661,7 +661,7 @@
       "expected_config_json": "expected_configs/82_pinn-with-exact-bc---seed-5082.json",
       "label": "PINN with exact BC | seed=5082",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/82_pinn-with-exact-bc---seed-5082.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/82_pinn-with-exact-bc---seed-5082.json",
       "source_log_file": null
     },
     {
@@ -669,7 +669,7 @@
       "expected_config_json": "expected_configs/83_pinn-with-exact-bc---seed-5083.json",
       "label": "PINN with exact BC | seed=5083",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/83_pinn-with-exact-bc---seed-5083.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/83_pinn-with-exact-bc---seed-5083.json",
       "source_log_file": null
     },
     {
@@ -677,7 +677,7 @@
       "expected_config_json": "expected_configs/84_pinn-with-exact-bc---seed-5084.json",
       "label": "PINN with exact BC | seed=5084",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/84_pinn-with-exact-bc---seed-5084.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/84_pinn-with-exact-bc---seed-5084.json",
       "source_log_file": null
     },
     {
@@ -685,7 +685,7 @@
       "expected_config_json": "expected_configs/85_pinn-with-exact-bc---seed-5085.json",
       "label": "PINN with exact BC | seed=5085",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/85_pinn-with-exact-bc---seed-5085.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/85_pinn-with-exact-bc---seed-5085.json",
       "source_log_file": null
     },
     {
@@ -693,7 +693,7 @@
       "expected_config_json": "expected_configs/86_pinn-with-exact-bc---seed-5086.json",
       "label": "PINN with exact BC | seed=5086",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/86_pinn-with-exact-bc---seed-5086.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/86_pinn-with-exact-bc---seed-5086.json",
       "source_log_file": null
     },
     {
@@ -701,7 +701,7 @@
       "expected_config_json": "expected_configs/87_pinn-with-exact-bc---seed-5087.json",
       "label": "PINN with exact BC | seed=5087",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/87_pinn-with-exact-bc---seed-5087.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/87_pinn-with-exact-bc---seed-5087.json",
       "source_log_file": null
     },
     {
@@ -709,7 +709,7 @@
       "expected_config_json": "expected_configs/88_pinn-with-exact-bc---seed-5088.json",
       "label": "PINN with exact BC | seed=5088",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/88_pinn-with-exact-bc---seed-5088.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/88_pinn-with-exact-bc---seed-5088.json",
       "source_log_file": null
     },
     {
@@ -717,7 +717,7 @@
       "expected_config_json": "expected_configs/89_pinn-with-exact-bc---seed-5089.json",
       "label": "PINN with exact BC | seed=5089",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/89_pinn-with-exact-bc---seed-5089.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/89_pinn-with-exact-bc---seed-5089.json",
       "source_log_file": null
     },
     {
@@ -725,7 +725,7 @@
       "expected_config_json": "expected_configs/90_pinn-with-exact-bc---seed-5090.json",
       "label": "PINN with exact BC | seed=5090",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/90_pinn-with-exact-bc---seed-5090.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/90_pinn-with-exact-bc---seed-5090.json",
       "source_log_file": null
     },
     {
@@ -733,7 +733,7 @@
       "expected_config_json": "expected_configs/91_pinn-with-exact-bc---seed-5091.json",
       "label": "PINN with exact BC | seed=5091",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/91_pinn-with-exact-bc---seed-5091.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/91_pinn-with-exact-bc---seed-5091.json",
       "source_log_file": null
     },
     {
@@ -741,7 +741,7 @@
       "expected_config_json": "expected_configs/92_pinn-with-exact-bc---seed-5092.json",
       "label": "PINN with exact BC | seed=5092",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/92_pinn-with-exact-bc---seed-5092.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/92_pinn-with-exact-bc---seed-5092.json",
       "source_log_file": null
     },
     {
@@ -749,7 +749,7 @@
       "expected_config_json": "expected_configs/93_pinn-with-exact-bc---seed-5093.json",
       "label": "PINN with exact BC | seed=5093",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/93_pinn-with-exact-bc---seed-5093.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/93_pinn-with-exact-bc---seed-5093.json",
       "source_log_file": null
     },
     {
@@ -757,7 +757,7 @@
       "expected_config_json": "expected_configs/94_pinn-with-exact-bc---seed-5094.json",
       "label": "PINN with exact BC | seed=5094",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/94_pinn-with-exact-bc---seed-5094.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/94_pinn-with-exact-bc---seed-5094.json",
       "source_log_file": null
     },
     {
@@ -765,7 +765,7 @@
       "expected_config_json": "expected_configs/95_pinn-with-exact-bc---seed-5095.json",
       "label": "PINN with exact BC | seed=5095",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/95_pinn-with-exact-bc---seed-5095.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/95_pinn-with-exact-bc---seed-5095.json",
       "source_log_file": null
     },
     {
@@ -773,7 +773,7 @@
       "expected_config_json": "expected_configs/96_pinn-with-exact-bc---seed-5096.json",
       "label": "PINN with exact BC | seed=5096",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/96_pinn-with-exact-bc---seed-5096.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/96_pinn-with-exact-bc---seed-5096.json",
       "source_log_file": null
     },
     {
@@ -781,7 +781,7 @@
       "expected_config_json": "expected_configs/97_pinn-with-exact-bc---seed-5097.json",
       "label": "PINN with exact BC | seed=5097",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/97_pinn-with-exact-bc---seed-5097.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/97_pinn-with-exact-bc---seed-5097.json",
       "source_log_file": null
     },
     {
@@ -789,7 +789,7 @@
       "expected_config_json": "expected_configs/98_pinn-with-exact-bc---seed-5098.json",
       "label": "PINN with exact BC | seed=5098",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/98_pinn-with-exact-bc---seed-5098.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/98_pinn-with-exact-bc---seed-5098.json",
       "source_log_file": null
     },
     {
@@ -797,7 +797,7 @@
       "expected_config_json": "expected_configs/99_pinn-with-exact-bc---seed-5099.json",
       "label": "PINN with exact BC | seed=5099",
       "source": "pinn",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/99_pinn-with-exact-bc---seed-5099.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/99_pinn-with-exact-bc---seed-5099.json",
       "source_log_file": null
     },
     {
@@ -805,10 +805,10 @@
       "expected_config_json": "expected_configs/100_baseline--opengoddard.json",
       "label": "Baseline (OpenGoddard)",
       "source": "opengoddard",
-      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_low_thrust_transfer_monte_carlo/configs/100_baseline--opengoddard.json",
+      "source_config_json": "/Users/sami/proj/Swingby-Trajectory/runs/2026/04/20260414_181609_orbit_transfer_free_angle_monte_carlo/configs/100_baseline--opengoddard.json",
       "source_log_file": null
     }
   ],
-  "record_id": "low_thrust_transfer_monte_carlo",
-  "source_run_id": "20260414_181609_low_thrust_transfer_monte_carlo"
+  "record_id": "orbit_transfer_free_angle",
+  "source_run_id": "20260414_181609_orbit_transfer_free_angle_monte_carlo"
 }

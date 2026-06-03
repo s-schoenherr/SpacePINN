@@ -403,7 +403,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -839,7 +839,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -1275,7 +1275,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -1711,7 +1711,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -2147,7 +2147,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -2583,7 +2583,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -3019,7 +3019,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -3455,7 +3455,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -3891,7 +3891,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -4327,7 +4327,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -4763,7 +4763,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -5199,7 +5199,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -5635,7 +5635,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -6071,7 +6071,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -6507,7 +6507,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -6943,7 +6943,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -7379,7 +7379,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -7815,7 +7815,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -8251,7 +8251,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -8687,7 +8687,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -9123,7 +9123,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -9559,7 +9559,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -9995,7 +9995,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -10431,7 +10431,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -10867,7 +10867,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -11303,7 +11303,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -11739,7 +11739,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -12175,7 +12175,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -12611,7 +12611,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -13047,7 +13047,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -13483,7 +13483,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -13919,7 +13919,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -14355,7 +14355,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -14791,7 +14791,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -15227,7 +15227,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -15663,7 +15663,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -16099,7 +16099,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -16535,7 +16535,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -16971,7 +16971,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -17407,7 +17407,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -17843,7 +17843,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -18279,7 +18279,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -18715,7 +18715,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -19151,7 +19151,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -19587,7 +19587,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -20023,7 +20023,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -20459,7 +20459,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -20895,7 +20895,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -21331,7 +21331,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -21767,7 +21767,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -22203,7 +22203,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -22639,7 +22639,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -23075,7 +23075,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -23511,7 +23511,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -23947,7 +23947,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -24383,7 +24383,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -24819,7 +24819,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -25255,7 +25255,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -25691,7 +25691,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -26127,7 +26127,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -26563,7 +26563,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -26999,7 +26999,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -27435,7 +27435,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -27871,7 +27871,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -28307,7 +28307,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -28743,7 +28743,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -29179,7 +29179,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -29615,7 +29615,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -30051,7 +30051,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -30487,7 +30487,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -30923,7 +30923,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -31359,7 +31359,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -31795,7 +31795,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -32231,7 +32231,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -32667,7 +32667,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -33103,7 +33103,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -33539,7 +33539,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -33975,7 +33975,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -34411,7 +34411,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -34847,7 +34847,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -35283,7 +35283,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -35719,7 +35719,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -36155,7 +36155,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -36591,7 +36591,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -37027,7 +37027,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -37463,7 +37463,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -37899,7 +37899,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -38335,7 +38335,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -38771,7 +38771,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -39207,7 +39207,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -39643,7 +39643,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -40079,7 +40079,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -40515,7 +40515,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -40951,7 +40951,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -41387,7 +41387,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -41823,7 +41823,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -42259,7 +42259,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -42695,7 +42695,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -43131,7 +43131,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -43567,7 +43567,7 @@
           "output_transform_fn": {
             "__type__": "functools.partial",
             "args": [],
-            "func": "swingby_trajectory.experiments.paper.low_thrust_transfer.kinematic_polar_free_final_angle_fn",
+            "func": "swingby_trajectory.experiments.paper.orbit_transfer_free_angle.kinematic_polar_free_final_angle_fn",
             "keywords": {
               "rho_N": 42164.0,
               "vt_0": 7.612679770155256,
@@ -43661,6 +43661,6 @@
       "source": "opengoddard"
     }
   ],
-  "label": "low_thrust_transfer_monte_carlo",
-  "run_id": "20260414_181609_low_thrust_transfer_monte_carlo"
+  "label": "orbit_transfer_free_angle_monte_carlo",
+  "run_id": "20260414_181609_orbit_transfer_free_angle_monte_carlo"
 }

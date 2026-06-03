@@ -206,7 +206,7 @@ def _orbit_transfer_goddard_no_alpha(
 
     transfer_bc = transfer_bc or leo_heo
     obj = Spaceship(transfer_bc)
-    default_tof = transfer_bc.T_hohnmann
+    default_tof = transfer_bc.T_hohmann
     solved_time_final_guess = (
         float(time_final_guess)
         if time_final_guess is not None
