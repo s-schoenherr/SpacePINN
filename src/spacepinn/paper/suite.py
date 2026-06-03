@@ -5,9 +5,9 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
-from spacepinn.paper._aggregate_summary import persist_paper_monte_carlo_aggregate_summary
-from spacepinn.paper._baseline_summary import print_baseline_delta_v_summary
-from spacepinn.paper._mc_mode import (
+from spacepinn.paper.baseline import print_baseline_delta_v_summary
+from spacepinn.paper.monte_carlo import (
+    persist_paper_monte_carlo_aggregate_summary,
     plot_single_group_boxplots,
     representative_entries,
     seed_sequence,

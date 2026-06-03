@@ -5,47 +5,36 @@ from copy import deepcopy
 from functools import partial
 from pathlib import Path
 
-import matplotlib.pyplot as plt
 import numpy as np
 import spacepinn
 import torch
 from spacepinn.config.config_orbit_transfer import (
-    H_GEO,
-    H_HEO,
-    H_LEO,
     Orbit,
-    R_GEO,
-    R_HEO,
-    R_LEO,
     OrbitalTransferBC,
     circular_ot_kinematic_polar_config,
 )
 from spacepinn.config.transform_functions import kinematic_polar_fn
-from spacepinn.paper.common import smoke_mode_enabled
-from spacepinn.paper._baseline_capture import capture_baseline_entry
-from spacepinn.paper._baseline_defaults import (
+from spacepinn.paper.baseline import (
     PAPER_BASELINE_MAX_ITERATION,
+    capture_baseline_entry,
     paper_baseline_solver_kwargs,
 )
-from spacepinn.paper._mc_mode import (
+from spacepinn.paper.monte_carlo import (
     add_single_mc_arguments,
     label_with_seed,
     resolve_mode,
     single_group_key,
 )
-from spacepinn.paper._plot_style import MAIN_AXES_RECT, MAIN_FIGSIZE as PAPER_MAIN_FIGSIZE, configure_paper_plotter
-from spacepinn.paper._suite import ExperimentSuite, run_experiment_suite
+from spacepinn.paper.plots.orbit_transfer import plot_free_orbit_transfer
+from spacepinn.paper.runtime import smoke_mode_enabled
+from spacepinn.paper.suite import ExperimentSuite, run_experiment_suite
 from spacepinn.opengoddard.circular_orbit_transfer_goddard_no_alpha import (
     kinematic_ot_goddard_free_final_angle_no_alpha,
 )
-from spacepinn.plotting.helpers import register_plot_artifact_if_possible
-from spacepinn.plotter import TrajectoryPlotter
 
 RUN_ROOT = Path(spacepinn.__file__).resolve().parents[2] / "runs"
 COLLECTION_LABEL = "orbit_transfer_free_angle"
 FIG_PREFIX = "free_terminal_angle"
-MAIN_FIGSIZE = PAPER_MAIN_FIGSIZE
-TIME_AXIS_PADDING_FRACTION = 0.02
 TARGET_ORBITS = {
     "heo": Orbit.HEO,
     "geo": Orbit.GEO,
@@ -54,8 +43,6 @@ PINN_LABEL = "PINN with exact BC"
 BASELINE_LABEL = "Baseline (OpenGoddard)"
 PINN_COLOR = "#2ca02c"
 BASELINE_COLOR = "#4d4d4d"
-MAIN_LINEWIDTH = 2.8
-SECONDARY_LINEWIDTH = 2.4
 OPENGODDARD_MAX_ITERATION = PAPER_BASELINE_MAX_ITERATION
 PAPER_N_ADAM = 10_000
 PAPER_N_LBFGS = 0
@@ -226,247 +213,6 @@ def build_baseline_entry(
     }
 
 
-def _physical_time_minutes(result) -> tuple[np.ndarray, float]:
-    t_total_minutes = float(result.t_total) / 60.0
-    t_minutes = np.asarray(result.t, dtype=float).reshape(-1) * t_total_minutes
-    t_padding = TIME_AXIS_PADDING_FRACTION * t_total_minutes
-    return t_minutes, t_padding
-
-
-def _target_orbit_label(target_orbit: str) -> str:
-    if target_orbit == "heo":
-        return f"MEO ({H_HEO:.0f} km above Earth)"
-    return f"GEO ({H_GEO:.0f} km above Earth)"
-
-
-def _target_radius_symbol(target_orbit: str) -> str:
-    if target_orbit == "heo":
-        return r"$R_{\mathrm{MEO}}$"
-    return r"$R_{\mathrm{GEO}}$"
-
-
-def _as_float(value) -> float:
-    if hasattr(value, "detach"):
-        value = value.detach().cpu().numpy()
-    return float(np.asarray(value, dtype=float).reshape(-1)[0])
-
-
-def _initial_terminal_angle_guess_point(entry: dict, *, target_orbit: str) -> np.ndarray:
-    target_radius = R_HEO if target_orbit == "heo" else R_GEO
-    config = entry.get("config") or {}
-    optimizer_config = config.get("optimizer") or {}
-    initial_rN = optimizer_config.get("rN")
-    if initial_rN is not None:
-        initial_rN_values = np.asarray(initial_rN.detach().cpu().numpy() if hasattr(initial_rN, "detach") else initial_rN, dtype=float).reshape(-1)
-        if len(initial_rN_values) >= 2:
-            target_radius = float(initial_rN_values[0])
-            alpha_guess = float(initial_rN_values[1])
-            return np.array([target_radius * np.cos(alpha_guess), target_radius * np.sin(alpha_guess)], dtype=float)
-
-    extra_parameters = config.get("extra_parameters") or {}
-    alpha_parameter = extra_parameters.get("alpha_N")
-    if alpha_parameter is not None:
-        alpha_guess = _as_float(alpha_parameter)
-    else:
-        alpha_guess, _ = _resolve_initial_guess_parameters(
-            target_orbit=target_orbit,
-            terminal_angle_pi=None,
-            time_guess_scale=None,
-            extra_turns=None,
-            tof_scale=None,
-        )
-        alpha_guess = float(np.pi * alpha_guess)
-    return np.array([target_radius * np.cos(alpha_guess), target_radius * np.sin(alpha_guess)], dtype=float)
-
-
-def plot_thrust_figure(entries: list[dict], *, output_dir: str) -> None:
-    plotter = TrajectoryPlotter(entries, dim=2, figsize=MAIN_FIGSIZE, fig_prefix=FIG_PREFIX, output_dir=output_dir)
-    configure_paper_plotter(plotter)
-    plotter.main_linewidth = MAIN_LINEWIDTH
-    fig = plt.figure(figsize=MAIN_FIGSIZE)
-    ax = fig.add_axes(MAIN_AXES_RECT)
-
-    for label, exp in plotter.experiments.items():
-        result = exp["result"]
-        t_minutes, _ = _physical_time_minutes(result)
-        ax.plot(
-            t_minutes,
-            np.maximum(result.F_mag, 1e-12),
-            linestyle=exp["linestyle"],
-            color=exp["color"],
-            label=label,
-            linewidth=plotter.main_linewidth,
-            zorder=exp["zorder"],
-        )
-
-    max_t_minutes = 0.0
-    max_t_padding = 0.0
-    for exp in plotter.experiments.values():
-        _, t_padding = _physical_time_minutes(exp["result"])
-        max_t_minutes = max(max_t_minutes, float(exp["result"].t_total) / 60.0)
-        max_t_padding = max(max_t_padding, t_padding)
-    ax.set_yscale("log")
-    ax.set_xlim(-max_t_padding, max_t_minutes + max_t_padding)
-    ax.set_xlabel("Time / min")
-    ax.set_ylabel(r"Thrust magnitude / km s$^{-2}$")
-    ax.set_box_aspect(1)
-    plotter.style_axes(ax)
-    legend = ax.legend(loc="upper center", framealpha=0.98, facecolor="white", edgecolor="0.3")
-    plotter.style_legend(legend)
-    figure_path = plotter._build_figure_path("thrust")
-    plotter.save_figure(fig, figure_path)
-    register_plot_artifact_if_possible(figure_path)
-
-
-def plot_gravity_figure(entries: list[dict], *, output_dir: str) -> None:
-    plotter = TrajectoryPlotter(entries, dim=2, figsize=MAIN_FIGSIZE, fig_prefix=FIG_PREFIX, output_dir=output_dir)
-    configure_paper_plotter(plotter)
-    plotter.main_linewidth = MAIN_LINEWIDTH
-    plotter.secondary_linewidth = SECONDARY_LINEWIDTH
-    fig = plt.figure(figsize=MAIN_FIGSIZE)
-    ax = fig.add_axes(MAIN_AXES_RECT)
-
-    for label, exp in plotter.experiments.items():
-        result = exp["result"]
-        t_minutes, _ = _physical_time_minutes(result)
-        ax.plot(
-            t_minutes,
-            np.maximum(result.a_mag, 1e-12),
-            linestyle=exp["linestyle"],
-            color=exp["color"],
-            label=f"{label} RFM",
-            linewidth=plotter.main_linewidth,
-            zorder=exp["zorder"],
-        )
-        ax.plot(
-            t_minutes,
-            np.maximum(result.G_mag, 1e-12),
-            linestyle="dashed" if exp["linestyle"] == "solid" else exp["linestyle"],
-            color=exp["color"],
-            label=f"{label} Gravity",
-            linewidth=plotter.secondary_linewidth,
-            zorder=exp["zorder"],
-        )
-
-    max_t_minutes = 0.0
-    max_t_padding = 0.0
-    max_force = 0.0
-    for exp in plotter.experiments.values():
-        _, t_padding = _physical_time_minutes(exp["result"])
-        max_t_minutes = max(max_t_minutes, float(exp["result"].t_total) / 60.0)
-        max_t_padding = max(max_t_padding, t_padding)
-        result = exp["result"]
-        max_force = max(
-            max_force,
-            float(np.max(np.asarray(result.a_mag, dtype=float))),
-            float(np.max(np.asarray(result.G_mag, dtype=float))),
-        )
-    ax.set_yscale("log")
-    ax.set_xlim(-max_t_padding, max_t_minutes + max_t_padding)
-    ax.set_ylim(top=max_force * 8.0 if max_force > 0 else None)
-    ax.set_xlabel("Time / min")
-    ax.set_ylabel(r"Gravity / Required Force magnitude / km s$^{-2}$")
-    ax.set_box_aspect(1)
-    plotter.style_axes(ax)
-    legend = ax.legend(
-        loc="upper left",
-        ncol=1,
-        columnspacing=1.0,
-        handlelength=1.6,
-        labelspacing=0.28,
-        borderaxespad=0.35,
-        framealpha=0.98,
-        facecolor="white",
-        edgecolor="0.3",
-    )
-    plotter.style_legend(legend)
-    figure_path = plotter._build_figure_path("gravity")
-    plotter.save_figure(fig, figure_path)
-    register_plot_artifact_if_possible(figure_path)
-
-
-def plot_orbit_figure(entries: list[dict], *, output_dir: str, target_orbit: str) -> None:
-    plotter = TrajectoryPlotter(entries, dim=2, figsize=MAIN_FIGSIZE, fig_prefix=FIG_PREFIX, output_dir=output_dir)
-    configure_paper_plotter(plotter)
-    plotter.main_linewidth = MAIN_LINEWIDTH
-    fig = plt.figure(figsize=MAIN_FIGSIZE)
-    ax = fig.add_axes(MAIN_AXES_RECT)
-
-    for label, exp in plotter.experiments.items():
-        result = exp["result"]
-        ax.plot(
-            result.r[:, 0],
-            result.r[:, 1],
-            linestyle=exp["linestyle"],
-            color=exp["color"],
-            label=label,
-            linewidth=plotter.main_linewidth,
-            zorder=exp["zorder"],
-        )
-
-    reference_entry = entries[0]
-    reference_result = reference_entry["result"]
-    ax.plot(
-        reference_result.r0[0],
-        reference_result.r0[1],
-        "o",
-        color="red",
-        markersize=6,
-        label=r"$\mathbf{r}(t_0)=(R_{\mathrm{LEO}},0)$",
-    )
-    terminal_point = _initial_terminal_angle_guess_point(reference_entry, target_orbit=target_orbit)
-    ax.plot(
-        terminal_point[0],
-        terminal_point[1],
-        "x",
-        color="red",
-        markersize=8,
-        markeredgewidth=1.8,
-        label=rf"$\mathbf{{r}}(T)$ = ({_target_radius_symbol(target_orbit)}, initial angle guess)",
-    )
-
-    for idx, (radius, name) in enumerate(
-        (
-            (R_LEO, f"LEO ({H_LEO:.0f} km above Earth)"),
-            (R_HEO if target_orbit == "heo" else R_GEO, _target_orbit_label(target_orbit)),
-        )
-    ):
-        ax.add_patch(
-            plt.Circle(
-                (0, 0),
-                radius,
-                color="black" if idx == 0 else "darkgrey",
-                fill=False,
-                linestyle="dashed",
-                linewidth=plotter.secondary_linewidth,
-                label=name,
-            )
-        )
-
-    ax.scatter(0, 0, color="green", marker="o", s=100, label="_nolegend_", zorder=5)
-    ax.annotate(
-        "Earth",
-        (0, 0),
-        xytext=(0, -7),
-        textcoords="offset points",
-        ha="center",
-        va="top",
-        fontsize=plotter.legend_fontsize + 2.0,
-        color="black",
-        zorder=6,
-    )
-    ax.set_xlabel("x / km")
-    ax.set_ylabel("y / km")
-    ax.set_aspect("equal")
-    ax.set_box_aspect(1)
-    plotter.style_axes(ax)
-    legend = ax.legend(loc="upper left", framealpha=0.98, facecolor="white", edgecolor="0.3")
-    plotter.style_legend(legend)
-    figure_path = plotter._build_figure_path("orbit_traj")
-    plotter.save_figure(fig, figure_path)
-    register_plot_artifact_if_possible(figure_path)
-
-
 def monte_carlo_group_key(entry: dict) -> str | None:
     return single_group_key(entry, base_label=PINN_LABEL)
 
@@ -506,22 +252,6 @@ def _baseline_entries(
     ]
 
 
-def _plot_representative(entries: list[dict], *, output_dir: str, target_orbit: str) -> None:
-    plotter = TrajectoryPlotter(
-        entries,
-        dim=2,
-        figsize=MAIN_FIGSIZE,
-        fig_prefix=FIG_PREFIX,
-        output_dir=output_dir,
-    )
-    plotter.main_linewidth = MAIN_LINEWIDTH
-    plotter.secondary_linewidth = SECONDARY_LINEWIDTH
-    plotter.plot_loss()
-    plot_thrust_figure(entries, output_dir=output_dir)
-    plot_gravity_figure(entries, output_dir=output_dir)
-    plot_orbit_figure(entries, output_dir=output_dir, target_orbit=target_orbit)
-
-
 def main(
     *,
     mode: str = "single",
@@ -559,7 +289,7 @@ def main(
             tof_scale=tof_scale,
             smoke=smoke,
         ),
-        plot_representative=lambda entries, output_dir: _plot_representative(
+        plot_representative=lambda entries, output_dir: plot_free_orbit_transfer(
             entries,
             output_dir=output_dir,
             target_orbit=target_orbit,

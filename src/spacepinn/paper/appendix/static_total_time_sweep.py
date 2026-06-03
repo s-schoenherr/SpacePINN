@@ -12,7 +12,7 @@ from matplotlib.patches import ConnectionPatch, Rectangle
 from mpl_toolkits.mplot3d import Axes3D  # noqa: F401
 import spacepinn
 
-from spacepinn.paper._plot_style import MAIN_AXES_RECT, MAIN_FIGSIZE
+from spacepinn.paper.style import MAIN_AXES_RECT, MAIN_FIGSIZE
 from spacepinn.plotting.helpers import get_gravity_sources
 from spacepinn.plotting.paper_style import PAPER_STYLE
 from spacepinn.plotting.style import PALETTE

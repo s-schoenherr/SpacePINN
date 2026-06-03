@@ -1,13 +1,62 @@
 from __future__ import annotations
 
 from collections import OrderedDict
-from typing import Callable, Optional
+from contextlib import redirect_stderr, redirect_stdout
+from io import StringIO
+import sys
+from typing import Callable, Optional, TextIO
 
 import numpy as np
 
 
 Entry = dict
 GroupKeyFn = Callable[[Entry], Optional[str]]
+
+PAPER_BASELINE_FTOL = 1e-11
+PAPER_BASELINE_MAX_ITERATION = 100
+PAPER_BASELINE_SLSQP_MAXITER = 25
+
+
+class _Tee:
+    def __init__(self, *streams: TextIO):
+        self._streams = streams
+
+    def write(self, text: str) -> int:
+        for stream in self._streams:
+            stream.write(text)
+        return len(text)
+
+    def flush(self) -> None:
+        for stream in self._streams:
+            stream.flush()
+
+
+def paper_baseline_solver_kwargs(*, smoke_enabled: bool) -> dict[str, float | int]:
+    return {
+        "ftol": PAPER_BASELINE_FTOL,
+        "max_iteration": 1 if smoke_enabled else PAPER_BASELINE_MAX_ITERATION,
+        "slsqp_maxiter": PAPER_BASELINE_SLSQP_MAXITER,
+    }
+
+
+def capture_baseline_entry(builder: Callable[[], dict], *, log_filename: str) -> dict:
+    stdout_buffer = StringIO()
+    stderr_buffer = StringIO()
+    with redirect_stdout(_Tee(sys.stdout, stdout_buffer)), redirect_stderr(_Tee(sys.stderr, stderr_buffer)):
+        entry = builder()
+
+    stdout_text = stdout_buffer.getvalue()
+    stderr_text = stderr_buffer.getvalue()
+    combined_log = stdout_text
+    if stderr_text:
+        combined_log = combined_log + ("\n" if combined_log and not combined_log.endswith("\n") else "")
+        combined_log += "[stderr]\n" + stderr_text
+
+    captured_entry = dict(entry)
+    if combined_log:
+        captured_entry["log_text"] = combined_log
+        captured_entry["log_filename"] = log_filename
+    return captured_entry
 
 
 def is_baseline_entry(entry: Entry, *, baseline_labels: tuple[str, ...], baseline_sources: tuple[str, ...]) -> bool:
