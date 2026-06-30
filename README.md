@@ -1,6 +1,6 @@
 # SpacePINN
 
-SpacePINN is the code base for the paper "Physics-informed neural networks for spacecraft trajectory optimization with exact boundary conditions" in the Journal of Guidance, Control, and Dynamics. It contains the swing-by, orbit-transfer, and rendezvous experiments from the paper, compares PINNs with exact boundary conditions against soft-penalty PINNs and OpenGoddard baselines, and includes the data and plotting code needed to reproduce the figures.
+SpacePINN is the code base for the paper "Physics-informed neural networks for spacecraft trajectory optimization with exact boundary conditions" in the Journal of XXX. It contains the swing-by, orbit-transfer, and rendezvous experiments from the paper, compares PINNs with exact boundary conditions against soft-penalty PINNs and OpenGoddard baselines, and includes the data and plotting code needed to reproduce the figures.
 
 ## Data and Figures
 
